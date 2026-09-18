@@ -58,6 +58,15 @@ Every commit and path below resolves against the local custody repository, not t
 - **Local-custody commit:** `dafe88872724f016f388f20f72c7f934243857a3`
 - **Local-custody path:** `formal/tooling/scientific_compute/model1_installation_preparation/route_c02_background_baa_repair_20260910_v2/PAUSE_CHECKPOINT.md`
 
+### Strict Model-1 SU(5) BNV operator-interface control
+
+- **Result:** Independently reconstructed dimension-six BNV weak-basis SMEFT tensor lift and endpoint-sign controls within a restricted low-energy matching contract.
+- **Scientific disposition:** The four weak-basis tensor rows and specified sign controls were accepted as a control, but matching, RG evolution, widths, lifetimes, and model viability were not executed. A later independent qualification found the exact common-heavy-threshold domain empty in the strict Model-1 scope; unequal-threshold kernels remained open.
+- **Carry-forward role:** Operator-basis, flavor/sign, threshold, lattice-interface, and fail-closed methodology comparator for the active SO(10) matching calculation. No SU(5) coefficient, kernel, or scientific conclusion transfers automatically.
+- **Local-custody commit:** `a7ac8ddb2457ed4f44dca8ddab6aa6874dd610e3`
+- **Local-custody path:** `formal/docs/release/STRICT_NONSUPERSYMMETRIC_SU5_MODEL_1_LOW_ENERGY_MATCHING_AND_HADRONIC_INPUT_CONTROLLED_EXECUTION_OPERATOR_LIFT_SIGN_AND_THRESHOLD_DOMAIN_AMENDMENT_INDEPENDENT_REVIEW_RESULT_20260809_v1.json`
+- **Later qualification path:** `formal/docs/release/STRICT_NONSUPERSYMMETRIC_SU5_MODEL_1_EXACT_COMMON_HEAVY_THRESHOLD_RESTRICTED_LOW_ENERGY_PIPELINE_QUALIFICATION_PACKET_INDEPENDENT_REVIEW_RESULT_20260809_v0.json`
+
 ### VPC finite exact S2 calibration
 
 - **Result:** Claim-scoped finite exact S2 basis-map calibration.

@@ -2,9 +2,15 @@
 
 ## Current state
 
-There are no active seams.
+There is exactly one active seam:
 
-This does not claim that fundamental physics is complete. The initial [dependency scaffold](DEPENDENCY_SCAFFOLD.md) identifies broad candidate relation classes, and the first [seam-selection comparison](SEAM_SELECTION.md) finds none currently admissible. The [source-theory comparison](SOURCE_THEORY_COMPARISON.md) selects one working candidate for seam evaluation, but its endpoint conventions, inputs, assumptions, acceptance conditions, and authority ceiling have not yet been frozen in a calculation record. No relation has earned active status.
+```text
+BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT
+```
+
+It connects the Babu-Khan model's GUT-scale heavy-vector exchange to a gauge-covariant baryon-number-violating operator boundary across the Pati-Salam intermediate regime and then to the standard dimension-six SMEFT operator basis. Its first calculation and authority ceiling are frozen in [BABU_KHAN_SO10_BNV_MATCHING.md](BABU_KHAN_SO10_BNV_MATCHING.md).
+
+No downstream running, LEFT/chiral matching, lifetime calculation, other source theory, or other relation class is active.
 
 ## Definition
 

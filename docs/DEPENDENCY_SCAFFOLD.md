@@ -138,8 +138,8 @@ The first physics calculation will be chosen only after a candidate relation can
 5. assumptions, known limits, numerical controls, stopping rule, and authority ceiling can be frozen in advance;
 6. the dependency and storage surface is proportionate to the claim.
 
-Until then, `active_physics_calculation` remains `null` and `active_seams` remains empty in [project_state.json](../project_state.json).
+Until a relation passes these requirements, `active_physics_calculation` remains `null` and `active_seams` remains empty in [project_state.json](../project_state.json).
 
 ## Current boundary
 
-The initial ecosystem audit and documentary scaffold are complete enough to evaluate candidate relations. [SEAM_SELECTION.md](SEAM_SELECTION.md) identifies the unified/UV particle candidate to SMEFT/WET class as the leading class. [SOURCE_THEORY_COMPARISON.md](SOURCE_THEORY_COMPARISON.md) selects one published SO(10) construction as a working candidate for evaluating a narrow baryon-number-violating recovery relation. The relation still lacks frozen calculation inputs and is not an active seam; no calculation is authorized.
+The initial ecosystem audit and documentary scaffold are complete enough to evaluate candidate relations. [SEAM_SELECTION.md](SEAM_SELECTION.md) identifies the unified/UV particle candidate to SMEFT/WET class as the leading class. [SOURCE_THEORY_COMPARISON.md](SOURCE_THEORY_COMPARISON.md) selects one published SO(10) construction as a working candidate. [BABU_KHAN_SO10_BNV_MATCHING.md](BABU_KHAN_SO10_BNV_MATCHING.md) admits exactly one model-specific seam and freezes its first calculation. The direct SO(10)-to-SMEFT shorthand is corrected there: the model's Pati-Salam intermediate symmetry must remain explicit.

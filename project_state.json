@@ -1,26 +1,41 @@
 {
-  "state_version": 5,
-  "updated_utc": "2026-09-18T23:10:01Z",
+  "state_version": 6,
+  "updated_utc": "2026-09-18T23:23:47Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
-    "active_physics_calculation": null,
-    "active_seams": []
+    "active_physics_calculation": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1",
+    "active_seams": [
+      "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT"
+    ]
   },
   "scaffold": {
     "ecosystem_survey": "INITIAL_NO_INSTALL_AUDIT_COMPLETE",
     "dependency_scaffold": "INITIAL_MAP_ESTABLISHED",
     "seam_selection": {
-      "outcome": "NONE_CURRENTLY_ADMISSIBLE",
+      "outcome": "LEADING_CLASS_SELECTED_AND_ONE_SEAM_SUBSEQUENTLY_ADMITTED",
+      "initial_outcome": "NONE_CURRENTLY_ADMISSIBLE",
       "leading_relation_class": "UV_OR_UNIFIED_PARTICLE_CANDIDATE_TO_SMEFT_OR_WET"
     },
     "source_theory_selection": {
-      "outcome": "ONE_WORKING_CANDIDATE_SELECTED_FOR_SEAM_EVALUATION",
+      "outcome": "ONE_WORKING_CANDIDATE_ADVANCED_TO_SEAM_ADMISSION",
       "candidate": "BABU_KHAN_2015_NONSUPERSYMMETRIC_SO10_54H_126H_10H",
       "authority": "WORKING_CANDIDATE_NOT_ACCEPTED",
-      "candidate_relation": "HEAVY_VECTOR_TO_DIMENSION_6_BNV_SMEFT_TO_NUCLEON_DECAY"
+      "candidate_relation": "HEAVY_VECTOR_TO_PATI_SALAM_BNV_EFT_TO_DIMENSION_6_BNV_SMEFT_TO_NUCLEON_DECAY"
     },
-    "active_focus": null
+    "seam_admission": {
+      "outcome": "ADMITTED",
+      "seam": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT",
+      "calculation": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1",
+      "status": "READY_NOT_STARTED",
+      "scope": "TREE_LEVEL_HEAVY_VECTOR_MATCHING_AND_INTERMEDIATE_SYMMETRY_OPERATOR_MAP_ONLY"
+    },
+    "legacy_relevance_audit": {
+      "scope": "STRICT_SU5_FOR_BK_SO10_SOURCE_SELECTION_AND_MATCHING",
+      "outcome": "NO_MATERIAL_CHANGE_REUSABLE_METHODS_IDENTIFIED",
+      "local_custody_freeze_commit": "a7ac8ddb2457ed4f44dca8ddab6aa6874dd610e3"
+    },
+    "active_focus": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

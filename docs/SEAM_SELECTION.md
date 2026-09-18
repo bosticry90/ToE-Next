@@ -1,6 +1,6 @@
 # First Seam-Selection Brief
 
-## Decision
+## Decision at the time of comparison
 
 ```text
 ACTIVE SEAM: NONE
@@ -91,11 +91,13 @@ Meeting these conditions authorizes a proposal for seam activation; it does not 
 
 ## Next scientific boundary
 
-The bounded source-theory comparison is now recorded in [SOURCE_THEORY_COMPARISON.md](SOURCE_THEORY_COMPARISON.md). It selects one published non-supersymmetric SO(10) construction as a working source candidate for evaluating a narrow baryon-number-violating EFT relation. This is candidate selection for seam evaluation, not theory acceptance or seam activation.
+The bounded source-theory comparison is recorded in [SOURCE_THEORY_COMPARISON.md](SOURCE_THEORY_COMPARISON.md). It selects one published non-supersymmetric SO(10) construction as a working source candidate for evaluating a narrow baryon-number-violating EFT relation. The subsequent [model-specific admission decision](BABU_KHAN_SO10_BNV_MATCHING.md) activates only the heavy-vector, intermediate-symmetry, dimension-six matching seam.
 
-[project_state.json](../project_state.json) therefore correctly retains:
+The original selection decision retained:
 
 ```text
 active_physics_calculation = null
 active_seams = []
 ```
+
+That historical boundary has now been superseded only by the admitted seam recorded in [project_state.json](../project_state.json). No other relation class or candidate was activated.

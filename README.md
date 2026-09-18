@@ -2,7 +2,7 @@
 
 ToE-Next is a research project seeking the most coherent and complete unification obtainable from established physics, serious existing unification frameworks, surviving project results, and new physics only where evidence or mathematical consistency requires it.
 
-The project has an initial documentary dependency scaffold but no active physics calculation and no active seams. A calculation begins only after the scaffold exposes a precise missing relation that meets the seam-admission requirements.
+The project has an initial dependency scaffold and one active, model-specific recovery seam. Its first calculation is defined but not yet executed: the Babu-Khan non-supersymmetric SO(10) heavy-vector sector is to be matched through the model's Pati-Salam intermediate symmetry into the standard dimension-six baryon-number-violating SMEFT basis.
 
 ## Scientific posture
 
@@ -25,9 +25,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 6. [`docs/DEPENDENCY_SCAFFOLD.md`](docs/DEPENDENCY_SCAFFOLD.md)
 7. [`docs/SEAM_SELECTION.md`](docs/SEAM_SELECTION.md)
 8. [`docs/SOURCE_THEORY_COMPARISON.md`](docs/SOURCE_THEORY_COMPARISON.md)
-9. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-10. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-11. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+9. [`docs/BABU_KHAN_SO10_BNV_MATCHING.md`](docs/BABU_KHAN_SO10_BNV_MATCHING.md)
+10. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+11. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+12. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
