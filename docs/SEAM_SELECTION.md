@@ -91,9 +91,9 @@ Meeting these conditions authorizes a proposal for seam activation; it does not 
 
 ## Next scientific boundary
 
-The next work is candidate admission within the leading relation class: compare serious, explicitly specified unified or ultraviolet particle constructions for one narrow matching relation that satisfies the activation conditions above. That comparison should prefer a candidate with an accessible cheap falsifier and a maintained path into established EFT or observable infrastructure.
+The bounded source-theory comparison is now recorded in [SOURCE_THEORY_COMPARISON.md](SOURCE_THEORY_COMPARISON.md). It selects one published non-supersymmetric SO(10) construction as a working source candidate for evaluating a narrow baryon-number-violating EFT relation. This is candidate selection for seam evaluation, not theory acceptance or seam activation.
 
-Until such a candidate is identified, [project_state.json](../project_state.json) correctly retains:
+[project_state.json](../project_state.json) therefore correctly retains:
 
 ```text
 active_physics_calculation = null

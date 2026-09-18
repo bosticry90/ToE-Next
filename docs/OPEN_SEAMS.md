@@ -4,7 +4,7 @@
 
 There are no active seams.
 
-This does not claim that fundamental physics is complete. The initial [dependency scaffold](DEPENDENCY_SCAFFOLD.md) identifies broad candidate relation classes, and the first [seam-selection comparison](SEAM_SELECTION.md) finds none currently admissible. No class yet has a selected candidate plus frozen endpoints, assumptions, acceptance conditions, and an authority ceiling precise enough to earn active status.
+This does not claim that fundamental physics is complete. The initial [dependency scaffold](DEPENDENCY_SCAFFOLD.md) identifies broad candidate relation classes, and the first [seam-selection comparison](SEAM_SELECTION.md) finds none currently admissible. The [source-theory comparison](SOURCE_THEORY_COMPARISON.md) selects one working candidate for seam evaluation, but its endpoint conventions, inputs, assumptions, acceptance conditions, and authority ceiling have not yet been frozen in a calculation record. No relation has earned active status.
 
 ## Definition
 

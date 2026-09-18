@@ -1,6 +1,6 @@
 {
-  "state_version": 4,
-  "updated_utc": "2026-09-18T22:57:51Z",
+  "state_version": 5,
+  "updated_utc": "2026-09-18T23:10:01Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -13,6 +13,12 @@
     "seam_selection": {
       "outcome": "NONE_CURRENTLY_ADMISSIBLE",
       "leading_relation_class": "UV_OR_UNIFIED_PARTICLE_CANDIDATE_TO_SMEFT_OR_WET"
+    },
+    "source_theory_selection": {
+      "outcome": "ONE_WORKING_CANDIDATE_SELECTED_FOR_SEAM_EVALUATION",
+      "candidate": "BABU_KHAN_2015_NONSUPERSYMMETRIC_SO10_54H_126H_10H",
+      "authority": "WORKING_CANDIDATE_NOT_ACCEPTED",
+      "candidate_relation": "HEAVY_VECTOR_TO_DIMENSION_6_BNV_SMEFT_TO_NUCLEON_DECAY"
     },
     "active_focus": null
   },
