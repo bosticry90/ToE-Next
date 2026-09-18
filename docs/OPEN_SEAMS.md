@@ -4,7 +4,7 @@
 
 There are no active seams.
 
-This does not claim that fundamental physics is complete. It records that ToE-Next has not yet constructed enough of its scaffold to identify a precise missing connection that has earned active status.
+This does not claim that fundamental physics is complete. The initial [dependency scaffold](DEPENDENCY_SCAFFOLD.md) identifies broad candidate relation classes, but none yet has frozen endpoints, assumptions, acceptance conditions, and an authority ceiling precise enough to earn active status.
 
 ## Definition
 

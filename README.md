@@ -2,7 +2,7 @@
 
 ToE-Next is a research project seeking the most coherent and complete unification obtainable from established physics, serious existing unification frameworks, surviving project results, and new physics only where evidence or mathematical consistency requires it.
 
-The project begins with no active physics calculation and no active seams. Its first task is to construct a defensible scientific scaffold before selecting a concrete calculation.
+The project has an initial documentary dependency scaffold but no active physics calculation and no active seams. A calculation begins only after the scaffold exposes a precise missing relation that meets the seam-admission requirements.
 
 ## Scientific posture
 
@@ -21,10 +21,11 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 2. [`CHARTER.md`](CHARTER.md)
 3. [`project_state.json`](project_state.json)
 4. [`docs/SCIENTIFIC_BASELINE.md`](docs/SCIENTIFIC_BASELINE.md)
-5. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-6. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-7. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
-8. [`docs/ECOSYSTEM_SURVEY.md`](docs/ECOSYSTEM_SURVEY.md)
+5. [`docs/ECOSYSTEM_SURVEY.md`](docs/ECOSYSTEM_SURVEY.md)
+6. [`docs/DEPENDENCY_SCAFFOLD.md`](docs/DEPENDENCY_SCAFFOLD.md)
+7. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+8. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+9. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
