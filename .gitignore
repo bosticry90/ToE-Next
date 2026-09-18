@@ -1,0 +1,46 @@
+# Operating-system and editor state
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Environments and package state
+.venv/
+venv/
+env/
+.julia/
+.lake/
+lake-packages/
+
+# Caches and generated build state
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.ipynb_checkpoints/
+build/
+dist/
+target/
+
+# Compiled and transient files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.log
+*.tmp
+*.bak

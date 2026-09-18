@@ -1,0 +1,42 @@
+{
+  "state_version": 1,
+  "updated_utc": "2026-09-18T21:10:30Z",
+  "research": {
+    "toe_research": "ACTIVE",
+    "theory_integration": "ACTIVE",
+    "active_physics_calculation": null,
+    "active_seams": []
+  },
+  "scientific_disposition": {
+    "ccft_uefm": "CLOSED",
+    "ccft_as_toe": "REJECTED_IN_TESTED_HISTORICAL_CORPUS",
+    "novelty_required": false,
+    "new_physics_policy": "EXPLORATION_ALLOWED_PROMOTION_REQUIRES_EVIDENCE",
+    "provenance_required": true
+  },
+  "legacy": {
+    "public_repository": "bosticry90/ToE",
+    "public_reachability_checked_utc": "2026-09-18T21:10:30Z",
+    "public_reachability": {
+      "local_custody_freeze_commit": false,
+      "local_custody_freeze_tag_alias": false,
+      "ccft_closeout_commit": false,
+      "ccft_closeout_tag_alias": false
+    },
+    "local_custody": {
+      "path": "D:\\DATA D\\VS Code Projects\\ToE-Legacy",
+      "freeze_commit": "a7ac8ddb2457ed4f44dca8ddab6aa6874dd610e3",
+      "freeze_tag_alias": "legacy-toe-freeze-v1",
+      "ccft_closeout_commit": "106aa9fa8a5d1e121fe7eccfbf98a90b07b3fd23",
+      "ccft_closeout_tag_alias": "ccft-uefm-final-v1"
+    }
+  },
+  "computational_science": {
+    "mode": "EXTERNAL_TOOLING",
+    "ai_assisted": true,
+    "tooling_vendored": false,
+    "tool_selection": "CLAIM_DRIVEN",
+    "independent_replay": "RISK_SCALED",
+    "external_frameworks_installed_for_project": []
+  }
+}
