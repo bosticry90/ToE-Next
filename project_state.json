@@ -1,6 +1,6 @@
 {
-  "state_version": 1,
-  "updated_utc": "2026-09-18T21:10:30Z",
+  "state_version": 2,
+  "updated_utc": "2026-09-18T21:41:24Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -32,11 +32,17 @@
     }
   },
   "computational_science": {
-    "mode": "EXTERNAL_TOOLING",
+    "mode": "EXTERNAL_TOOLING_WITH_PROMOTED_ACTIVE_TOOLS",
     "ai_assisted": true,
-    "tooling_vendored": false,
+    "tooling_vendored": true,
     "tool_selection": "CLAIM_DRIVEN",
     "independent_replay": "RISK_SCALED",
-    "external_frameworks_installed_for_project": []
+    "promoted_active_tools": [
+      "VPC_EXACT_CORE"
+    ],
+    "external_frameworks_installed_for_project": [
+      "Nemo",
+      "OrdinaryDiffEq"
+    ]
   }
 }

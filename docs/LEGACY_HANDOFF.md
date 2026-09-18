@@ -62,10 +62,12 @@ Every commit and path below resolves against the local custody repository, not t
 
 - **Result:** Claim-scoped finite exact S2 basis-map calibration.
 - **Scientific disposition:** The recorded exact replay passed within the finite basis-map scope, including corruption rejection; the broader S2 scientific status did not change.
-- **Carry-forward role:** Evidence that VPC can serve as a selective secondary verifier when a future claim fits its trusted operations; not general VPC qualification or physics authority.
+- **Carry-forward role:** Evidence supporting the bounded promotion at [`tools/vpc/`](../tools/vpc/). The promoted tool remains a selective secondary verifier for claims fitting its trusted operations; it is not general VPC qualification or physics authority.
 - **Local-custody commit:** `aaee713fbf2132d3d049b236609fda141b19dd82`
 - **Local-custody path:** `formal/docs/research/s2_vpc_toolchain_calibration_v1/CALIBRATION_RESULT.json`
 
 ## Consultation rule
 
 Consult local custody only when a concrete provenance question, suspected prior result, or known failure boundary warrants it. Confirm the cited commit and path before use. If a receipt cannot be verified or is superseded, omit or replace it rather than paraphrasing from memory.
+
+The promoted VPC source is self-contained on C: and provenance-bound by [`tools/vpc/PROVENANCE.json`](../tools/vpc/PROVENANCE.json). Its runtime must never fall back to this legacy custody tree.

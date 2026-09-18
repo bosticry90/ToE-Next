@@ -1,0 +1,35 @@
+{
+  "schema_id": "VPCTrustedExactOperationsV1",
+  "profile_kind": "BOUNDARY_DEFINITION_NOT_A_CLAIM_PROFILE",
+  "authority_ceiling": "EXACT_DAG_RECOMPUTATION_ONLY",
+  "source_policy": "LOCAL_HASH_BOUND_DECLARED_JSON",
+  "numeric_domain": "EXACT_RATIONAL_OR_DECLARED_ALGEBRAIC_FIELD",
+  "trusted_operations": [
+    "SOURCE_DECODE",
+    "LITERAL",
+    "OUTPUT_BIND",
+    "ADD",
+    "SUB",
+    "MUL",
+    "DIV",
+    "NEG",
+    "POW_INT",
+    "MAKE_TENSOR",
+    "INDEX",
+    "MATMUL",
+    "EQUAL",
+    "ALL",
+    "SELECT",
+    "CLASSIFY_ZERO"
+  ],
+  "claim_profile_rule": "A calculation must define a narrower PhysicsProfileV1 with only the operations and sources required by that claim.",
+  "not_supported": [
+    "arbitrary code execution",
+    "unevaluated functional integrals",
+    "unrestricted tensor calculus",
+    "ODE or PDE evolution",
+    "floating-point or interval certification",
+    "stochastic simulation",
+    "scientific-model authority"
+  ]
+}

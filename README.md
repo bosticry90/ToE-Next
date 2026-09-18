@@ -26,4 +26,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 7. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 8. [`docs/ECOSYSTEM_SURVEY.md`](docs/ECOSYSTEM_SURVEY.md)
 
-Repository structure is created only when concrete scientific work requires it. This foundation therefore contains no code, tests, model hierarchy, calculation hierarchy, external framework, dataset, or project dependency.
+Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
+
+- [`tools/vpc/`](tools/vpc/) contains a promoted exact-DAG secondary verifier with a frozen applicability boundary and minimal tests;
+- [`tools/julia/`](tools/julia/) contains a small locked environment for Nemo and OrdinaryDiffEq plus one readiness smoke test;
+- [`tools/readiness/check-c-only.ps1`](tools/readiness/check-c-only.ps1) checks that the active project and its computational stack operate from C: without the legacy custody drive.
+
+No model hierarchy, calculation hierarchy, dataset, historical scientific tree, environment payload, or generated result is stored here. The machine-level runtimes and package caches remain external to Git.

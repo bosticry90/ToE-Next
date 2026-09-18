@@ -2,38 +2,41 @@
 
 ## Purpose
 
-This is a preliminary capability map whose primary rule is: know what exists so ToE-Next does not rebuild it casually. Listing a tool or framework does not adopt it, install it, or make it a project dependency.
+This is a preliminary capability map whose primary rule is: know what exists so ToE-Next does not rebuild it casually. Listing a tool or framework does not by itself adopt it or make it scientific authority.
 
-The empty `external_frameworks_installed_for_project` array in [`project_state.json`](../project_state.json) means that ToE-Next has adopted no external framework as a project dependency. It does not mean this machine lacks scientific software.
+[project_state.json](../project_state.json) now records VPC as a promoted active tool and Nemo plus OrdinaryDiffEq as the two adopted project frameworks. `tooling_vendored: true` refers only to the bounded, provenance-identified VPC source promotion; no runtime, package cache, legacy environment, or third-party framework source was copied into Git. Machine-level scientific software not listed there remains an external capability, not a project dependency.
+
+Status labels mean:
+
+- `READY_ON_C` — launched or imported from C: during the current readiness audit;
+- `PROMOTED_ACTIVE_TOOL` — bounded source and tests are tracked by ToE-Next;
+- `AVAILABLE_BUT_REVALIDATE_WHEN_USED` — callable now, but claim-specific readiness must be checked again.
 
 ## Existing computational capabilities
 
-The following capabilities were detected on the machine. They must still be revalidated in the calculation-local environment when used.
-
-| Capability | Verified status | Potential role | ToE-Next dependency |
+| Capability | Status | Verified observation | Potential role |
 |---|---|---|---|
-| Python 3.10 | Installed at an explicit machine path | Orchestration and calculation-local environments | No |
-| SymPy 1.14.0 | Importable | General symbolic mathematics | No |
-| Python-FLINT 0.9.0 | Importable | Exact integers, rationals, polynomials, and matrices | No |
-| NumPy 2.2.6 / SciPy 1.15.3 / mpmath 1.3.0 | Importable | Numerical algebra, integration, optimization, roots, and precision replay | No |
-| Z3 Python bindings | Importable | Logical consistency and constraint systems | No |
-| cvc5 Python bindings 1.3.4 | Importable | Independent satisfiability and constraint checks | No |
-| Hypothesis 6.165.1 | Importable | Property-based and adversarial testing | No |
-| Cadabra 2.5.14 | Installed and callable by explicit path; not assumed on PATH | Tensor, covariant, spinor, gamma, GR, and QFT algebra | No |
-| Julia 1.12.6 | Installed and callable by explicit path; not on PATH | High-performance numerical and exact calculation host | No |
-| Lean / Lake | Launchers detected on PATH; toolchain readiness requires revalidation before use | Narrow exact theorems and decisive formal claims | No |
+| Python 3.10 | `READY_ON_C` | Interpreter at `C:\Program Files\Python310\python.exe` | Orchestration and calculation-local execution |
+| SymPy 1.14.0 / Python-FLINT 0.9.0 | `READY_ON_C` | Imported successfully | Symbolic and exact algebra |
+| NumPy 2.2.6 / SciPy 1.15.3 / mpmath 1.3.0 | `READY_ON_C` | Imported successfully | Numerical algebra, integration, optimization, roots, and precision replay |
+| Z3 / cvc5 1.3.4 / Hypothesis 6.165.1 | `READY_ON_C` | Python bindings imported successfully | Constraints, satisfiability, property-based and adversarial testing |
+| Cadabra 2.5.14 | `AVAILABLE_BUT_REVALIDATE_WHEN_USED` | Launched by explicit C: path | Tensor, covariant, spinor, gamma, GR, and QFT algebra |
+| Julia 1.12.6 | `READY_ON_C` | Launched by explicit C: path; not on PATH | Host for exact and numerical replay |
+| Nemo 0.56.1 | `READY_ON_C` | Fresh locked ToE-Next environment resolved offline and exact-matrix smoke passed | Independent exact-algebra replay |
+| OrdinaryDiffEq 7.2.1 | `READY_ON_C` | Fresh locked ToE-Next environment resolved offline and elementary ODE smoke passed | ODE dynamics, flow, evolution, and stability |
+| Lean 4.34.0 / Lake 5.0.0 | `READY_ON_C` | Launchers executed and a trivial theorem compiled | Narrow exact theorems and decisive formal claims |
+| VPC exact core | `PROMOTED_ACTIVE_TOOL` | Minimal pass/fail tests execute from [tools/vpc/](../tools/vpc/) | Selective secondary verification of supported exact DAG claims |
 
-Detection is not adoption. Versions are recorded here as an initial capability observation; authoritative reproduction versions belong in the calculation that uses them.
+Readiness is not scientific authority. Versions recorded here are capability observations; calculation-specific reproduction records remain controlling for actual results.
 
 ## Preserved/recoverable capabilities
 
 | Capability | Status | Potential role | Required action before use |
 |---|---|---|---|
-| Julia Nemo | Recorded in a legacy-scoped Julia environment, not configured for ToE-Next | Independent exact-algebra replay | Build or select a calculation-local environment and verify the package |
-| Julia OrdinaryDiffEq | Recorded in a legacy-scoped Julia environment, not configured for ToE-Next | ODE/PDE dynamics, flow, evolution, and stability | Build or select a calculation-local environment and verify the package |
-| VPC | Preserved external capability with a bounded historical calibration | Selective independent verification for claims fitting trusted operations | Recover deliberately, define a claim-specific profile, and revalidate scope |
+| Legacy VPC product shell, numerical extensions, and historical profiles | Historical custody only; intentionally not promoted | Possible provenance or implementation reference | Reconnect custody deliberately, audit the exact need, and promote no more than the claim requires |
+| Historical Lean proof corpora and scientific calculation trees | Historical custody only | Comparator or prior-result evidence | Consult by exact receipt; never make them hidden runtime dependencies |
 
-Preserved capability does not authorize a live dependency on the legacy custody tree. Any recovered tool or environment must be established independently for the active calculation.
+Historical custody is not an active environment. No promoted tool may import, execute, or silently retrieve material from it.
 
 ## External ecosystem candidates
 

@@ -1,0 +1,65 @@
+{
+  "schema_id": "ToENextVPCPromotionProvenanceV1",
+  "promoted_utc": "2026-09-18T21:30:20Z",
+  "authority": "SELECTIVE_SECONDARY_VERIFIER_FOR_SUPPORTED_EXACT_CLAIMS",
+  "not_authority_for": [
+    "physical assumptions",
+    "model adequacy",
+    "scientific promotion",
+    "claims outside the declared trusted operations"
+  ],
+  "local_legacy_custody": {
+    "path": "D:\\DATA D\\VS Code Projects\\ToE-Legacy",
+    "freeze_commit": "a7ac8ddb2457ed4f44dca8ddab6aa6874dd610e3",
+    "source_base_path": "formal/python/toe/generic_runner/verified_calculator",
+    "last_source_change_commit": "c796ab39282bb68c4ea2e31b1d07896dacd3c92d",
+    "source_unchanged_from_calibration_through_freeze": true
+  },
+  "historical_calibration": {
+    "commit": "aaee713fbf2132d3d049b236609fda141b19dd82",
+    "path": "formal/docs/research/s2_vpc_toolchain_calibration_v1/CALIBRATION_RESULT.json",
+    "sha256": "3ad0bd576bf3b1d531f90423f7ec860cac3ebe43ab34b1199406cba6cca89b94",
+    "status": "PASS",
+    "scope": "FINITE_EXACT_S2_BASIS_MAP_ONLY",
+    "copied_into_toe_next": false
+  },
+  "promoted_source_files": [
+    {
+      "file": "canonical.py",
+      "legacy_git_blob_sha1": "435621d3dfdc3ccf562130bca32b598e6fdc45b0",
+      "legacy_sha256": "a4fb47f3d818093a26ea23cab1262fab3b2593148e466210c9673902fe6b9d9b"
+    },
+    {
+      "file": "contracts.py",
+      "legacy_git_blob_sha1": "94afd4610045717c49ef6056417f335b299fe57f",
+      "legacy_sha256": "9af2ad8a52c3c0a2dfc10ac51c3c4be45aef4c85c7cd07ac19354a8b245d6a93"
+    },
+    {
+      "file": "dag.py",
+      "legacy_git_blob_sha1": "ec357b2c02ef0083ff0774cb5fd946ce8feeecac",
+      "legacy_sha256": "bc0f58273b7b930e603e1eacc2fd74ce34fcd7ef4211c5f7f46f96305f0dbce0"
+    },
+    {
+      "file": "dimensions.py",
+      "legacy_git_blob_sha1": "7b8d9253c310b12baa941b413e5f73bd2c178632",
+      "legacy_sha256": "b93d5fcf53cca4d4555c1751b58dece2a6ff67d750a497cd4df4ad7f487e6604"
+    },
+    {
+      "file": "errors.py",
+      "legacy_git_blob_sha1": "40f80e4027cf3ba430ae0329da3f442b4bf8fd05",
+      "legacy_sha256": "583112483413965f46934ba4950bb4b981f1bb85dc50c2ddf1853d660ce20714"
+    },
+    {
+      "file": "exact.py",
+      "legacy_git_blob_sha1": "50d3ba305d6fc63deda83e7e6b9b6990349a765a",
+      "legacy_sha256": "f5b6bd1bb9a0f9d75903880ceb81f42c36b42fa48eec84b41141d819b1757a99"
+    },
+    {
+      "file": "sources.py",
+      "legacy_git_blob_sha1": "3a61bec9a721fcd8daa19de2794450a651588f48",
+      "legacy_sha256": "f6d87c98cfda4ea545194d76b549936768a989e6dab18c32be1ddefedf265d8d"
+    }
+  ],
+  "copy_rule": "The seven listed modules are byte-identical promotions. New ToE-Next wrappers, tests, and boundary definitions are not represented as legacy source.",
+  "public_reachability_inferred": false
+}
