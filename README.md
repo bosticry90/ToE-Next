@@ -23,9 +23,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 4. [`docs/SCIENTIFIC_BASELINE.md`](docs/SCIENTIFIC_BASELINE.md)
 5. [`docs/ECOSYSTEM_SURVEY.md`](docs/ECOSYSTEM_SURVEY.md)
 6. [`docs/DEPENDENCY_SCAFFOLD.md`](docs/DEPENDENCY_SCAFFOLD.md)
-7. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-8. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-9. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+7. [`docs/SEAM_SELECTION.md`](docs/SEAM_SELECTION.md)
+8. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+9. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+10. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 

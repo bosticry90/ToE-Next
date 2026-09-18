@@ -142,4 +142,4 @@ Until then, `active_physics_calculation` remains `null` and `active_seams` remai
 
 ## Current boundary
 
-The initial ecosystem audit and documentary scaffold are complete enough to evaluate candidate relations. They do not select a unification, establish a missing recovery map, or authorize a calculation. The next scientific decision is to compare candidate relation classes against these admission rules and activate at most one precisely bounded seam.
+The initial ecosystem audit and documentary scaffold are complete enough to evaluate candidate relations. The first comparison is recorded in [SEAM_SELECTION.md](SEAM_SELECTION.md): no seam is currently admissible, and the unified/UV particle candidate to SMEFT/WET class is the leading class in which to seek a fully specified relation. This priority is not a candidate selection and does not authorize a calculation.

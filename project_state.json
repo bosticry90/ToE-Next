@@ -1,6 +1,6 @@
 {
-  "state_version": 3,
-  "updated_utc": "2026-09-18T22:43:13Z",
+  "state_version": 4,
+  "updated_utc": "2026-09-18T22:57:51Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -10,6 +10,10 @@
   "scaffold": {
     "ecosystem_survey": "INITIAL_NO_INSTALL_AUDIT_COMPLETE",
     "dependency_scaffold": "INITIAL_MAP_ESTABLISHED",
+    "seam_selection": {
+      "outcome": "NONE_CURRENTLY_ADMISSIBLE",
+      "leading_relation_class": "UV_OR_UNIFIED_PARTICLE_CANDIDATE_TO_SMEFT_OR_WET"
+    },
     "active_focus": null
   },
   "scientific_disposition": {
