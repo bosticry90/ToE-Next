@@ -20,6 +20,8 @@ A bounded [joint Standard-Model-plus-gravity EFT reference audit](docs/JOINT_SM_
 
 A [massless-spin-2 assumption-compression audit](docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md) compares soft-graviton, self-coupling, and geometric-uniqueness derivations against that ledger. It identifies conditional leading-order relations but no demonstrated net ToE assumption compression or new active seam.
 
+A [quasiclassical recovery reference audit](docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md) separates decoherence, stable variables, effective classical dynamics, probability calculus, shared records, definite outcomes, and Born weights. Established mechanisms recover several of these conditionally, but no interpretation or active seam is selected.
+
 ## Scientific posture
 
 - Novelty is not a requirement.
@@ -54,9 +56,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 19. [`docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md`](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md)
 20. [`docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md`](docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md)
 21. [`docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md`](docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md)
-22. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-23. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-24. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+22. [`docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md`](docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md)
+23. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+24. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+25. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 

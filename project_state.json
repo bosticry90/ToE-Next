@@ -1,6 +1,6 @@
 {
-  "state_version": 18,
-  "updated_utc": "2026-09-19T16:01:41Z",
+  "state_version": 19,
+  "updated_utc": "2026-09-19T16:28:13Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -80,6 +80,13 @@
       "outcome": "CONDITIONAL_LEADING_ORDER_RELATION_NO_NET_COMPRESSION_OR_ACTIVE_SEAM",
       "authority": "SOFT_POLE_BOOTSTRAP_AND_METRIC_UNIQUENESS_UNDER_DISTINCT_PREMISES",
       "result": "docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md",
+      "calculation_started": false
+    },
+    "quasiclassical_recovery_reference_audit": {
+      "outcome": "CONDITIONAL_RECOVERY_LEDGER_ESTABLISHED_NONE_FOR_ACTIVE_SEAM",
+      "authority": "ESTABLISHED_QUANTUM_MECHANISMS_IN_SPECIFIED_REGIMES_NOT_OUTCOME_OR_BORN_RULE_DERIVATION",
+      "result": "docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md",
+      "interpretation_selected": false,
       "calculation_started": false
     },
     "active_focus": null
