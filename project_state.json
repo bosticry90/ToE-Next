@@ -1,6 +1,6 @@
 {
-  "state_version": 22,
-  "updated_utc": "2026-09-19T18:40:42Z",
+  "state_version": 23,
+  "updated_utc": "2026-09-19T19:15:26Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,11 +42,11 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "BK_PS_FLAVOR_RGE_AND_MI_MATCHING_KERNEL_V1",
-      "completed_utc": "2026-09-19T18:40:42Z",
-      "outcome": "STOPPED_AT_SOURCE_PROJECTOR_INCONSISTENCY",
-      "authority": "UNIVERSAL_ONE_LOOP_YUKAWA_GAUGE_TERMS_AND_EXACT_PRINTED_D11_COUNTEREXAMPLE_ONLY",
-      "result": "calculations/bk_ps_flavor_kernel/RESULT.md",
+      "calculation": "BK_LIGHT_DOUBLET_PROJECTOR_RECONCILIATION_V1",
+      "completed_utc": "2026-09-19T19:15:26Z",
+      "outcome": "PUBLISHED_SAMPLE_POINTS_REQUIRE_REPAIR",
+      "authority": "PRINTED_TABLE_2_SCALAR_POINT_CONTRADICTION_AND_PROJECTOR_SOURCE_BOUNDARY_ONLY",
+      "result": "calculations/bk_light_doublet_projector_reconciliation/RESULT.md",
       "complete_ps_yukawa_rges": false,
       "mi_light_higgs_matching": false,
       "fermion_fit_started": false,
@@ -59,6 +59,15 @@
       "calculation": "BK_PS_FLAVOR_RGE_AND_MI_MATCHING_KERNEL_V1",
       "status": "STOPPED_AT_SOURCE_PROJECTOR_INCONSISTENCY",
       "result": "calculations/bk_ps_flavor_kernel/RESULT.md",
+      "active": false
+    },
+    "babu_khan_light_doublet_projector_reconciliation": {
+      "outcome": "PUBLISHED_SAMPLE_POINTS_REQUIRE_REPAIR",
+      "qualified_scope": "TABLE_2_AS_PRINTED_REQUIRES_REPAIR_TABLE_4_NOT_REFUTED",
+      "eq36_numerical_use": "UNRESOLVED",
+      "potential_to_matrix_tensor_hessian": "NOT_INDEPENDENTLY_COMPLETED",
+      "result": "calculations/bk_light_doublet_projector_reconciliation/RESULT.md",
+      "flavor_kernel_resumed": false,
       "active": false
     },
     "last_completed_audit": {

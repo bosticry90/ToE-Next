@@ -108,6 +108,14 @@ the printed positivity restriction relying on the `D11` expression must not
 be applied unchanged. This is not a model no-go or a verdict on its scalar
 sample points.
 
+A subsequent [projector/sample reconciliation](../calculations/bk_light_doublet_projector_reconciliation/RESULT.md)
+also shows that Table 2's *printed* `sigma` exponent makes its doublet
+`D11` negative and a separate scalar mass about ten times Table 3's value.
+Changing that exponent by one power removes those large contradictions but
+does not reconstruct the unpublished full-precision sample or establish
+whether the erroneous reduced `D11` identity entered the authors' numerical
+procedure. Do not use either rounded table as a frozen flavor projector.
+
 A naive charged-sector parameter count is not a no-go: after a common Takagi
 choice for one symmetric matrix, `h` has 3 real diagonal entries, `f` has 12
 real entries, and real `r,s` add 2 (17 continuous parameters before scalar
