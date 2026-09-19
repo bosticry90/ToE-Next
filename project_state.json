@@ -1,6 +1,6 @@
 {
-  "state_version": 25,
-  "updated_utc": "2026-09-19T19:44:50Z",
+  "state_version": 26,
+  "updated_utc": "2026-09-19T20:06:07Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -96,6 +96,18 @@
       "result": "calculations/bk_scalar_source_convention/RESULT.md",
       "active": false
     },
+    "canonical_so10_scalar_reconstruction": {
+      "lane": "EXPLORATORY_SOURCE_DERIVED_VARIANT",
+      "status": "ACTION_DEFINITION_GATE_OPEN",
+      "current_outcome": "CANONICAL_MODEL_UNDERDEFINED",
+      "record": "calculations/canonical_so10_scalar_reconstruction/RECORD.md",
+      "charge_selection_rules_checked": true,
+      "complete_independent_invariant_basis": false,
+      "single_parent_action_frozen": false,
+      "scalar_benchmark_search_started": false,
+      "published_scalar_formula_identity_claimed": false,
+      "inherited_bnv_scalar_authority": false
+    },
     "last_completed_audit": {
       "audit": "REAL_120_PARENT_SO10_REALITY_SIGN_V1",
       "completed_utc": "2026-09-19T03:30:36Z",
@@ -154,7 +166,7 @@
       "interpretation_selected": false,
       "calculation_started": false
     },
-    "active_focus": null
+    "active_focus": "CANONICAL_SO10_SCALAR_ACTION_DEFINITION_EXPLORATORY"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
