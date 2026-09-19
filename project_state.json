@@ -1,6 +1,6 @@
 {
-  "state_version": 24,
-  "updated_utc": "2026-09-19T19:29:15Z",
+  "state_version": 25,
+  "updated_utc": "2026-09-19T19:44:50Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,11 +42,11 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "BK_SCALAR_TENSOR_NORMALIZATION_AND_POSITIVITY_V1",
-      "completed_utc": "2026-09-19T19:29:15Z",
-      "outcome": "TENSOR_NORMALIZATION_BLOCKED",
-      "authority": "PARTIAL_PARENT_TENSOR_FACTORS_AND_GENERIC_DOUBLET_POSITIVITY_ONLY",
-      "result": "calculations/bk_scalar_tensor_recovery/RESULT.md",
+      "calculation": "BK_SCALAR_SOURCE_CONVENTION_TRANSLATION_V1",
+      "completed_utc": "2026-09-19T19:44:50Z",
+      "outcome": "NO_SINGLE_TRANSLATION_RECONCILES_SOURCE",
+      "authority": "PRINTED_EQ24_EQ27_EQ28_AND_ACCESSIBLE_SINGLET_EQ30_CONSISTENCY_ONLY",
+      "result": "calculations/bk_scalar_source_convention/RESULT.md",
       "published_full_doublet_matrix_confirmed": false,
       "published_full_doublet_matrix_refuted": false,
       "new_scalar_benchmark_found": false,
@@ -83,6 +83,17 @@
       "published_full_doublet_matrix": "UNRESOLVED",
       "new_scalar_benchmark": "NOT_STARTED",
       "result": "calculations/bk_scalar_tensor_recovery/RESULT.md",
+      "active": false
+    },
+    "babu_khan_scalar_source_convention": {
+      "outcome": "NO_SINGLE_TRANSLATION_RECONCILES_SOURCE",
+      "qualified_scope": "PRINTED_EQUATIONS_SAME_SYMBOL_GLOBAL_TRANSLATION_GENERIC_NONZERO_LAMBDA0_SIGMA",
+      "eq27_eq28_tadpole_integrability": "FAIL",
+      "eq27_eq30_accessible_singlet_hessian": "FAIL_IN_126_RADIAL_LAMBDA0_ENTRY",
+      "canonical_source_derived_variant": "NOT_ADMITTED",
+      "published_full_doublet_matrix": "UNRESOLVED",
+      "scalar_benchmark_search": "NOT_STARTED",
+      "result": "calculations/bk_scalar_source_convention/RESULT.md",
       "active": false
     },
     "last_completed_audit": {
