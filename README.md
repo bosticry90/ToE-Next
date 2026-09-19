@@ -16,6 +16,8 @@ A bounded [audit of the explicit 2024 normal-ordering point](calculations/bdfss_
 
 The particle-unification route is paused at its model-specific flavor boundary, preserving both passed gauge-sector recovery steps. A separate [gravity source-framework comparison](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md) retains low-energy GR EFT as the baseline/control but admits no gravity source or active seam; no gravity calculation has begun.
 
+A bounded [joint Standard-Model-plus-gravity EFT reference audit](docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md) now records a finite-order common low-energy control surface, its coefficient and assumption ledgers, and the limits of its observable authority. It admits no active cross-domain seam or new calculation.
+
 ## Scientific posture
 
 - Novelty is not a requirement.
@@ -48,9 +50,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 17. [`docs/FERMION_SOURCE_ROUTE_DECISION.md`](docs/FERMION_SOURCE_ROUTE_DECISION.md)
 18. [`calculations/bdfss_2024_point_audit/RESULT.md`](calculations/bdfss_2024_point_audit/RESULT.md)
 19. [`docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md`](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md)
-20. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-21. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-22. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+20. [`docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md`](docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md)
+21. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+22. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+23. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
