@@ -15,6 +15,8 @@ The focused [Pati-Salam literature audit and admission record](BABU_KHAN_PS_RUNN
 
 The subsequent [`H_T` threshold audit](BABU_KHAN_HT_THRESHOLD_AUDIT.md) corrected the interval sextet attribution: `Sigma_1=(6,1,1)` from `126_H`, not high-scale `H_T`, supplies the published Pati-Salam beta contribution. The numerical running result is unchanged. The proposed separate `H_T` running branch was not admitted; a future numerical high-scale threshold-systematics seam requires a frozen spectrum benchmark and downstream quantitative need.
 
+The focused [SMEFT-plus-`N` running and singlet-neutrino threshold audit](BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md) found that the complete one-loop BNV gauge-plus-Yukawa running equations already exist. It did not admit the proposed `M_I`-to-first-`N`-threshold seam because the source construction does not freeze the numerical fermion fit, physical singlet-neutrino masses and ordering, or common flavor basis needed by those equations. The `Q_qqdN` threshold must also be either matched into a declared dimension-seven BNV basis or omitted under an explicit bounded truncation. The next prerequisite is to identify and validate one attributable Babu-compatible fermion-fit benchmark; it is not an active seam or calculation.
+
 No SMEFT/SMNEFT evolution below `M_I`, right-handed-neutrino threshold, LEFT/chiral matching, lifetime calculation, other source theory, or other relation class is active.
 
 ## Definition

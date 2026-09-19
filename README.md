@@ -4,7 +4,9 @@ ToE-Next is a research project seeking the most coherent and complete unificatio
 
 The project has an initial dependency scaffold and one model-specific recovery chain with two completed bounded steps. Its first calculation passed: the Babu–Khan non-supersymmetric SO(10) heavy-vector boundary maps through the model's Pati–Salam intermediate symmetry into `Q_qque` and `Q_duql` in standard dimension-six BNV SMEFT, while the right-handed-neutrino term remains separately identified as `Q_qqdN`.
 
-A focused primary-literature audit admitted the next calculation, which also passed. The single Pati-Salam BNV coefficient now has a verified one-loop gauge-leading-log evolution factor and is projected only afterward at `M_I` into the full-flavor SMEFT and SMEFT-plus-`N` boundary. A subsequent source audit corrected the interval sextet's identity from high-scale `H_T` to intermediate-scale `Sigma_1` without changing the beta coefficients or recovery map. Running below `M_I`, right-handed-neutrino threshold matching, hadronic work, and proton-lifetime calculation remain inactive.
+A focused primary-literature audit admitted the next calculation, which also passed. The single Pati-Salam BNV coefficient now has a verified one-loop gauge-leading-log evolution factor and is projected only afterward at `M_I` into the full-flavor SMEFT and SMEFT-plus-`N` boundary. A subsequent source audit corrected the interval sextet's identity from high-scale `H_T` to intermediate-scale `Sigma_1` without changing the beta coefficients or recovery map.
+
+The [downstream admission audit](docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md) found complete one-loop BNV SMEFT-plus-`N` running machinery, but the Babu-Khan source does not freeze the numerical fermion fit, singlet-neutrino masses, ordering, or flavor rotations required to use it. The physical `Q_qqdN` threshold carry-forward also requires an explicit dimension-seven disposition. The proposed running-and-threshold seam is therefore not admitted, and no calculation below `M_I` has begun.
 
 ## Scientific posture
 
@@ -33,9 +35,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 12. [`calculations/bk_ps_bnv_running_mi_matching/RESULT.md`](calculations/bk_ps_bnv_running_mi_matching/RESULT.md)
 13. [`docs/BABU_KHAN_HT_THRESHOLD_AUDIT.md`](docs/BABU_KHAN_HT_THRESHOLD_AUDIT.md)
 14. [`calculations/bk_ht_threshold_audit/RESULT.md`](calculations/bk_ht_threshold_audit/RESULT.md)
-15. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-16. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-17. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+15. [`docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md`](docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md)
+16. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+17. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+18. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 

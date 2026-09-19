@@ -1,6 +1,6 @@
 {
-  "state_version": 10,
-  "updated_utc": "2026-09-19T01:31:28Z",
+  "state_version": 11,
+  "updated_utc": "2026-09-19T01:45:39Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -11,12 +11,12 @@
     "ecosystem_survey": "INITIAL_NO_INSTALL_AUDIT_COMPLETE",
     "dependency_scaffold": "INITIAL_MAP_ESTABLISHED",
     "seam_selection": {
-      "outcome": "SELECTED_PROGRAM_TWO_BOUNDARIES_RESOLVED_PASS_THRESHOLD_ATTRIBUTION_CORRECTED",
+      "outcome": "SELECTED_PROGRAM_TWO_BOUNDARIES_RESOLVED_PASS_DOWNSTREAM_INPUT_BLOCK_IDENTIFIED",
       "initial_outcome": "NONE_CURRENTLY_ADMISSIBLE",
       "leading_relation_class": "UV_OR_UNIFIED_PARTICLE_CANDIDATE_TO_SMEFT_OR_WET"
     },
     "source_theory_selection": {
-      "outcome": "WORKING_CANDIDATE_SECOND_BOUNDARY_PASSED_THRESHOLD_ATTRIBUTION_CORRECTED",
+      "outcome": "WORKING_CANDIDATE_SECOND_BOUNDARY_PASSED_DOWNSTREAM_NEUTRINO_INPUTS_UNFROZEN",
       "candidate": "BABU_KHAN_2015_NONSUPERSYMMETRIC_SO10_54H_126H_10H",
       "authority": "WORKING_CANDIDATE_NOT_ACCEPTED",
       "candidate_relation": "HEAVY_VECTOR_TO_PATI_SALAM_BNV_EFT_TO_DIMENSION_6_BNV_SMEFT_TO_NUCLEON_DECAY"
@@ -40,12 +40,14 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_audit": {
-      "audit": "BK_HT_THRESHOLD_ATTRIBUTION_AND_BRANCH_AUDIT_V1",
-      "completed_utc": "2026-09-19T01:31:28Z",
-      "outcome": "CORRECTION_APPLIED_SEPARATE_HT_RUNNING_SEAM_NOT_ADMITTED",
-      "authority": "SOURCE_ATTRIBUTION_AND_ONE_LOOP_SYMBOLIC_BRANCH_COMPARISON_ONLY",
-      "result": "calculations/bk_ht_threshold_audit/RESULT.md",
-      "future_threshold_seam": "NOT_ADMITTED_NOW"
+      "audit": "BK_SMEFT_N_RUNNING_AND_N_THRESHOLD_ADMISSION_AUDIT_V1",
+      "completed_utc": "2026-09-19T01:45:39Z",
+      "outcome": "NOT_ADMITTED_SOURCE_MODEL_INPUTS_AND_THRESHOLD_MATCHING_UNFROZEN",
+      "authority": "PRIMARY_LITERATURE_AND_ADMISSION_AUDIT_ONLY",
+      "result": "docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md",
+      "proposed_seam": "BK_MI_TO_FIRST_N_THRESHOLD_BNV_NUSMEFT_RUNNING_AND_MATCHING",
+      "next_prerequisite": "FREEZE_AND_VALIDATE_ONE_BABU_KHAN_COMPATIBLE_FERMION_FIT",
+      "calculation_started": false
     },
     "legacy_relevance_audit": {
       "scope": "STRICT_SU5_FOR_BK_SO10_SOURCE_SELECTION_AND_MATCHING",

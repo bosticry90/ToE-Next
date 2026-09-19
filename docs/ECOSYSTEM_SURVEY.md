@@ -68,6 +68,7 @@ HEPData's [analysis-resource guidance](https://hepdata-submission.readthedocs.io
 | [SMEFTsim](https://github.com/SMEFTsim/SMEFTsim) | Maintained SMEFT FeynRules/UFO models with declared flavor and input-scheme choices | Compare with or reuse rather than creating a generic SMEFT encoding | Scheme, flavor assumptions, perturbative order, and documented limitations remain controlling |
 | [WCxf](https://wcxf.github.io/) | Unambiguous JSON/YAML exchange of Wilson coefficients, EFTs, bases, and metadata | Adopt for coefficient interchange when an active calculation crosses compatible tools | A shared format does not remove matching, scale, or convention assumptions |
 | [`wilson`](https://wilson-eft.github.io/wilson/) | SMEFT/WET running, matching, and basis translation | Reuse before implementing equivalent evolution machinery | Its implemented orders, sectors, and conventions define the supported claim boundary |
+| [`wilson` `nuSMEFT` extension](https://arxiv.org/abs/2411.07220) | Full-flavor numerical `nuSMEFT` evolution, including the two dimension-six BNV singlet-neutrino operators and the Alonso BNV running | Consider for evolution between frozen thresholds; it is not installed or adopted | Requires the neutrino Yukawa matrix as input; the documented basis assumes no Majorana mass and does not supply model-specific sequential threshold matching |
 | [`flavio`](https://flav-io.github.io/docs/) | Flavor predictions, measurements, likelihoods, and Wilson-coefficient interfaces | Reuse for supported flavor observables | It is a domain engine, not a universal observable layer |
 | [MadGraph5_aMC@NLO](https://cp3.irmp.ucl.ac.be/projects/madgraph/) | Matrix elements, cross sections, hard events, and matching for SM/BSM phenomenology | Invoke externally for a frozen collider claim; do not rebuild | Generator settings, perturbative accuracy, showering, cuts, and validation must be recorded |
 | [LHAPDF](https://www.lhapdf.org/) | Standard PDF-set format and evaluation library | Reuse named sets with version/member and uncertainty treatment recorded | PDFs are fitted external inputs and can be material storage payloads |
@@ -101,6 +102,8 @@ Each arrow remains a scientific relation whose conventions, approximations, and 
 | Generator model interchange | UFO | Record identity, hash, supported order, and modifications |
 | EFT coefficient exchange | WCxf | Define the physical matching claim and its authority ceiling |
 | SMEFT/WET evolution and translation | `wilson` | Audit domain, scales, orders, and independent limits |
+| Dimension-six BNV SMEFT-plus-`N` evolution | Alonso anomalous dimensions; `wilson` `nuSMEFT` extension | Supply a frozen source-model flavor basis and Yukawa matrices; independently validate conventions and thresholds |
+| Higher-dimensional BNV carry-forward | Published dimension-seven SMEFT bases and RGEs | Derive the claim-specific singlet-neutrino threshold map rather than dropping a physical contribution silently |
 | Flavor observables | `flavio` | Connect a specific coefficient claim to data |
 | Collider matrix elements/events | MadGraph5_aMC@NLO | Freeze inputs and control perturbative/numerical assumptions |
 | Parton distributions | LHAPDF | Select, version, and propagate PDF uncertainty |
