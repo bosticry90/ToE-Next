@@ -26,6 +26,7 @@ def main():
     assert simplify(on_shell[1, 1]-8*coefficients["lambdaSigma1"]*sigma*sigma) == 0
     assert simplify(on_shell[2, 2]-2*coefficients["lambdaS"]*v*v) == 0
     print("SINGLET_RADIAL_HESSIAN_PASS; no positivity claim")
+    return on_shell
 
 
 if __name__ == "__main__":

@@ -51,6 +51,10 @@
     block is incomplete calculation, not evidence that the model lacks a
     physical vacuum or is refuted.
 12. **Result:** [`FULL_HESSIAN_BLOCKED`](RESULT.md). The exact irrep census,
-    Goldstone-irrep distribution, and action-derived `10_H` self-block are
-    earned, but the complete mixed and colored Hessian, explicit matrix
-    nullity, and generic-witness rank remain unearned.
+    Goldstone-irrep distribution, action-derived `10_H` self-block, explicit
+    33+1 orbit-vector rank, and complete neutral-singlet `5x5` Hessian with
+    its two checked null vectors are earned. Exact directional parent-action
+    quadratics vanish for all 45 Lie-basis directions after tadpoles, and
+    four mixed `Phi+Sigma` bilinear probes pass. Mixed and remaining colored
+    blocks, 34-vector *full-Hessian* multiplication, and full generic-witness
+    nullity remain unearned.

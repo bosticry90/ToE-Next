@@ -6,9 +6,11 @@
 accounts for every one of the **328 real tangent directions** after
 complexification, and locates all 33 broken-gauge directions by irrep. The
 action-derived `10_H` quadratic self-block, including its colored entries,
-is explicit. The mixed `126_H`--`10_H` colored blocks, remaining `54_H` and
-`126_H` scalar blocks, direct full-Hessian Goldstone multiplication, and
-generic-witness rank are **not** complete. Thus no complete physical scalar
+is explicit. The complete neutral-singlet `5x5` block is also derived and
+annihilates its two independent symmetry-phase vectors. The mixed
+`126_H`--`10_H` colored blocks, remaining `54_H` and `126_H` scalar blocks,
+direct **full-Hessian** Goldstone multiplication, and full generic-witness
+rank are **not** complete. Thus no complete physical scalar
 spectrum, one-light-Higgs condition, or scalar benchmark is claimed.
 
 This calculation uses only [parent action v1](../canonical_so10_scalar_reconstruction/PARENT_ACTION_V1.md)
@@ -48,12 +50,44 @@ character gives the **33** broken-gauge complexified directions:
 ```
 
 Here `c.c.` denotes the conjugate SM irrep. Every broken-gauge irrep occurs
-in the scalar tangent. PQ adds an **independent neutral-singlet real** orbit
-direction because the PQ-charged singlet has a nonzero VEV. Therefore the
+in the scalar tangent. The [explicit orbit calculation](construct_symmetry_orbits.py)
+builds all 45 gauge tangent vectors on the VEV in an injective real tensor
+coordinate representation: rank **33**. Adding the PQ tangent vector raises
+the rank to **34**, because the PQ-charged singlet has a nonzero VEV. Therefore the
 stationary full Hessian must have **at least 34 real symmetry zeros**: 33
 gauge plus one PQ. A deliberately massless SM Higgs doublet would add four
 different real zero directions; none was tuned here. The number **exactly**
 34 at a generic stationary witness is not yet verified.
+
+An [exact parent-invariant directional evaluator](check_gauge_orbit_quadratics.py)
+also computes the `t²` coefficient along each of the 45 standard Lie-basis
+generator orbit tangents. All vanish after the action-derived tadpoles;
+the 45 tangents span the 33-dimensional gauge orbit, because the 12
+stabilizer generators are nontrivial linear combinations of this basis.
+The evaluator includes the surviving `Phi`, `Sigma`, and singlet-VEV
+invariants, including all four independent `Sigma² Sigma*²` contractions.
+It finds three exact raw quadratic patterns (multiplicities 5, 16, 24).
+A [focused charged-singlet replay](check_charged_singlet_goldstone.py) and
+four [mixed `Phi+Sigma` polarization probes](probe_mixed_orbit_bilinear.py)
+pass as adversarial checks. These verify `g^T H g=0` for the Lie basis and
+`g^T H h=0` for the four chosen mixed probes. They do **not** establish
+`H g=0` against a basis of all 328 real fields; `phi`/`S` mixed probes and
+complete irrep blocks remain absent.
+
+## Complete neutral-singlet block
+
+The [five-real-direction derivation](derive_neutral_singlet_block.py) extends
+the *generated* VEV polynomial to the unique real `54` singlet and Cartesian
+real/imaginary parts of the unique complex `126` and `S` singlets. In the
+canonical coordinate order `(omega,sigmaR,sigmaI,vR,vI)`, after substituting
+only the action-derived tadpoles, its exact Hessian is the previously
+derived `3x3` radial block on indices `(0,1,3)` and **zero rows/columns**
+at phase indices `(2,4)`. The script verifies multiplication by the
+neutral gauge vector `(0,0,sigma,0,0)` and independent PQ vector
+`(0,0,2sigma,0,-4v)`. An exact rational parameter witness gives rank three
+for this block; hence a third neutral-singlet zero is not structurally
+forced by the action. This is not a full-spectrum generic-witness test and
+does not imply a stable vacuum.
 
 ## `10_H` vector self-block, including colored components
 
@@ -103,6 +137,11 @@ Reproduce the earned portion from repository root:
 
 ```powershell
 python calculations/canonical_so10_full_hessian/decompose_sm_tangent.py
+python calculations/canonical_so10_full_hessian/construct_symmetry_orbits.py
+python calculations/canonical_so10_full_hessian/derive_neutral_singlet_block.py
 python calculations/canonical_so10_full_hessian/derive_vector10_self_block.py
 & "$env:LOCALAPPDATA\Programs\Julia-1.12.6\bin\julia.exe" --startup-file=no calculations/canonical_so10_full_hessian/verify_vector10_self_block.jl
+python calculations/canonical_so10_full_hessian/check_charged_singlet_goldstone.py
+python calculations/canonical_so10_full_hessian/check_gauge_orbit_quadratics.py
+python calculations/canonical_so10_full_hessian/probe_mixed_orbit_bilinear.py
 ```
