@@ -2,7 +2,9 @@
 
 ToE-Next is a research project seeking the most coherent and complete unification obtainable from established physics, serious existing unification frameworks, surviving project results, and new physics only where evidence or mathematical consistency requires it.
 
-The project has an initial dependency scaffold and one completed, model-specific recovery map. Its first calculation passed: the Babu–Khan non-supersymmetric SO(10) heavy-vector boundary maps through the model's Pati–Salam intermediate symmetry into `Q_qque` and `Q_duql` in standard dimension-six BNV SMEFT, while the right-handed-neutrino term remains separately identified as `Q_qqdN`. No downstream running or proton-lifetime calculation is active.
+The project has an initial dependency scaffold and one completed, model-specific recovery map. Its first calculation passed: the Babu–Khan non-supersymmetric SO(10) heavy-vector boundary maps through the model's Pati–Salam intermediate symmetry into `Q_qque` and `Q_duql` in standard dimension-six BNV SMEFT, while the right-handed-neutrino term remains separately identified as `Q_qqdN`.
+
+A focused primary-literature audit has admitted the next calculation but has not executed it. The active seam is limited to one-loop gauge-only leading-log evolution of the single Pati-Salam BNV coefficient and tree-level matching at `M_I`. Running below `M_I`, right-handed-neutrino threshold matching, hadronic work, and proton-lifetime calculation remain inactive.
 
 ## Scientific posture
 
@@ -27,9 +29,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 8. [`docs/SOURCE_THEORY_COMPARISON.md`](docs/SOURCE_THEORY_COMPARISON.md)
 9. [`docs/BABU_KHAN_SO10_BNV_MATCHING.md`](docs/BABU_KHAN_SO10_BNV_MATCHING.md)
 10. [`calculations/bk_so10_bnv_matching/RESULT.md`](calculations/bk_so10_bnv_matching/RESULT.md)
-11. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-12. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-13. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+11. [`docs/BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md`](docs/BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md)
+12. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+13. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+14. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 

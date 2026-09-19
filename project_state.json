@@ -1,11 +1,13 @@
 {
-  "state_version": 7,
-  "updated_utc": "2026-09-18T23:59:00Z",
+  "state_version": 8,
+  "updated_utc": "2026-09-19T00:57:01Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
-    "active_physics_calculation": null,
-    "active_seams": []
+    "active_physics_calculation": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1",
+    "active_seams": [
+      "BK_PS_BNV_GAUGE_LL_TO_MI_TREE_MATCH"
+    ]
   },
   "scaffold": {
     "ecosystem_survey": "INITIAL_NO_INSTALL_AUDIT_COMPLETE",
@@ -22,11 +24,12 @@
       "candidate_relation": "HEAVY_VECTOR_TO_PATI_SALAM_BNV_EFT_TO_DIMENSION_6_BNV_SMEFT_TO_NUCLEON_DECAY"
     },
     "seam_admission": {
-      "outcome": "ADMITTED_AND_RESOLVED",
-      "seam": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT",
-      "calculation": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1",
-      "status": "PASS",
-      "scope": "TREE_LEVEL_HEAVY_VECTOR_MATCHING_AND_INTERMEDIATE_SYMMETRY_OPERATOR_MAP_ONLY"
+      "outcome": "ADMITTED",
+      "seam": "BK_PS_BNV_GAUGE_LL_TO_MI_TREE_MATCH",
+      "calculation": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1",
+      "status": "READY_NOT_STARTED",
+      "scope": "ONE_LOOP_GAUGE_LEADING_LOG_PS_RUNNING_AND_TREE_LEVEL_MI_MATCHING_ONLY",
+      "literature_audit": "REUSABLE_PARTIAL_MACHINERY_FOUND_MODEL_SPECIFIC_COMPLETION_REQUIRED"
     },
     "last_completed_calculation": {
       "calculation": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1",
@@ -42,7 +45,7 @@
       "outcome": "NO_MATERIAL_CHANGE_REUSABLE_METHODS_IDENTIFIED",
       "local_custody_freeze_commit": "a7ac8ddb2457ed4f44dca8ddab6aa6874dd610e3"
     },
-    "active_focus": null
+    "active_focus": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

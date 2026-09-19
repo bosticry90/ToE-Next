@@ -113,7 +113,7 @@ independent assumptions required by the candidate plus its recovery maps
 
 Record whether an apparent reduction is genuine, merely relocates assumptions into boundary conditions or parameters, or trades them for unverified dynamics. A candidate that compresses assumptions but fails an empirical obligation does not advance the scaffold.
 
-## Candidate seam families, not active seams
+## Candidate seam families
 
 The initial map exposes relation classes that may later yield a precise seam:
 
@@ -125,11 +125,11 @@ The initial map exposes relation classes that may later yield a precise seam:
 | Candidate cosmology -> effective parameters -> CMB/LSS/expansion observables | Separates mechanism claims from successful effective phenomenology | A selected mechanism, initial conditions, parameter map, dataset and likelihood |
 | Cross-domain proposal -> shared assumption ledger | Tests whether one principle genuinely explains multiple sectors | A specific proposal and at least two independently recoverable domain maps |
 
-None is active. The [open-seam criteria](OPEN_SEAMS.md) remain controlling.
+The unified/ultraviolet-particle relation class has now produced one resolved seam and one bounded active successor. The other relation classes remain inactive. The [open-seam criteria](OPEN_SEAMS.md) remain controlling.
 
-## First-calculation selection rule
+## Calculation-selection rule
 
-The first physics calculation will be chosen only after a candidate relation can satisfy all of the following:
+A physics calculation is admitted only after a candidate relation can satisfy all of the following:
 
 1. both endpoints and their authority are explicit;
 2. the missing relation is narrower than a field-wide open problem;
@@ -138,8 +138,10 @@ The first physics calculation will be chosen only after a candidate relation can
 5. assumptions, known limits, numerical controls, stopping rule, and authority ceiling can be frozen in advance;
 6. the dependency and storage surface is proportionate to the claim.
 
-Until a relation passes these requirements, `active_physics_calculation` remains `null` and `active_seams` remains empty in [project_state.json](../project_state.json).
+Until a relation passes these requirements, it does not enter the active state in [project_state.json](../project_state.json).
 
 ## Current boundary
 
 The initial ecosystem audit and documentary scaffold are complete enough to evaluate candidate relations. [SEAM_SELECTION.md](SEAM_SELECTION.md) identifies the unified/UV particle candidate to SMEFT/WET class as the leading class. [SOURCE_THEORY_COMPARISON.md](SOURCE_THEORY_COMPARISON.md) selects one published SO(10) construction as a working candidate. [BABU_KHAN_SO10_BNV_MATCHING.md](BABU_KHAN_SO10_BNV_MATCHING.md) admitted one model-specific seam, and its [first calculation](../calculations/bk_so10_bnv_matching/RESULT.md) resolved `PASS` at the tree-level operator-map ceiling. The direct SO(10)-to-SMEFT shorthand is corrected there: the model's Pati-Salam intermediate symmetry remains explicit, and unequal heavy-vector pole coefficients enter only as a symmetry-breaking threshold projection.
+
+The [next admission record](BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md) finds that published work already supplies the unique Pati-Salam operator, gauge-leading-log anomalous exponents, and a simplified tree-level Standard Model projection. It admits only the model-specific completion needed to verify the Babu-Khan spectrum, preserve the full flavor and right-handed-neutrino structure, and apply the qualified `M_I` projector. The calculation is `READY_NOT_STARTED`; no downstream running or phenomenology has been performed.
