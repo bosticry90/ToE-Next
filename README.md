@@ -8,6 +8,8 @@ A focused primary-literature audit admitted the next calculation, which also pas
 
 The [downstream admission audit](docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md) found complete one-loop BNV SMEFT-plus-`N` running machinery, but the Babu-Khan source does not freeze the numerical fermion fit, singlet-neutrino masses, ordering, or flavor rotations required to use it. The physical `Q_qqdN` threshold carry-forward also requires an explicit dimension-seven disposition. The proposed running-and-threshold seam is therefore not admitted, and no calculation below `M_I` has begun.
 
+A [published-fit provenance audit](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md) located the numerical point Babu-Khan quoted and a later full-RGE fit. Both are informative comparators but cannot be adopted unchanged under the frozen intermediate-spectrum and scalar-vev assumptions. No fermion benchmark has been selected or reconstructed.
+
 ## Scientific posture
 
 - Novelty is not a requirement.
@@ -36,9 +38,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 13. [`docs/BABU_KHAN_HT_THRESHOLD_AUDIT.md`](docs/BABU_KHAN_HT_THRESHOLD_AUDIT.md)
 14. [`calculations/bk_ht_threshold_audit/RESULT.md`](calculations/bk_ht_threshold_audit/RESULT.md)
 15. [`docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md`](docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md)
-16. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-17. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-18. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+16. [`docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md`](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md)
+17. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+18. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+19. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 

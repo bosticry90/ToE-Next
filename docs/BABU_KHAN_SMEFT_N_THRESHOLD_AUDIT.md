@@ -253,6 +253,14 @@ FREEZE_AND_VALIDATE_ONE_BABU_KHAN_COMPATIBLE_FERMION_FIT
 ```
 
 That task should first determine whether a published fit can be adopted without
-changing the source model. It must return `NONE` if no sufficiently specified
-and compatible benchmark can be reconstructed. Until it passes, the proposed
-downstream seam is not active.
+changing the source model. It may find a directly reconstructible compatible
+fit, a numerically specified but incompatible fit, an underdefined fit, or no
+relevant fit. It must not construct a texture simply to keep the chain moving.
+Until a compatible benchmark is validated, the proposed downstream seam is
+not active.
+
+The subsequent [fit provenance audit](BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md)
+found published, numerically specified *related* fits but no fit directly
+adoptable under the frozen source-model assumptions. Its outcome is
+`FIT_FOUND_BUT_INCOMPATIBLE_WITH_FROZEN_MODEL` for as-published use; it did
+not execute a fit reconstruction or admit the downstream seam.
