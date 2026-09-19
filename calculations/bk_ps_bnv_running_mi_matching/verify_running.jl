@@ -40,7 +40,9 @@ const fields = (
     Field("three_F_L", :weyl, 3, ("4", "2", "1"), QQ(1, 2)),
     Field("three_F_R", :weyl, 3, ("4bar", "1", "2"), QQ(1, 2)),
     Field("H_D", :scalar, 1, ("1", "2", "2"), QQ(2)),
-    Field("H_T", :scalar, 1, ("6", "1", "1"), QQ(2)),
+    # Sigma_1 from 126_H is active down to M_I.  H_T from 10_H is an M_U
+    # threshold field and is not part of this interval ledger.
+    Field("Sigma_1", :scalar, 1, ("6", "1", "1"), QQ(2)),
     Field("Sigma_2", :scalar, 1, ("10", "3", "1"), QQ(2)),
     Field("Sigma_3", :scalar, 1, ("10bar", "1", "3"), QQ(2)),
     Field("Sigma_4", :scalar, 1, ("15", "2", "2"), QQ(2)),
@@ -97,8 +99,10 @@ expected_two = matrix(QQ, 3, 3, [
 ])
 @assert two_loop == expected_two
 
-without_ht = Tuple(field for field in fields if field.name != "H_T")
-one_without, two_without = beta_ledger(without_ht)
+@assert any(field.name == "Sigma_1" for field in fields)
+@assert all(field.name != "H_T" for field in fields)
+without_sigma1 = Tuple(field for field in fields if field.name != "Sigma_1")
+one_without, two_without = beta_ledger(without_sigma1)
 @assert one_without == [QQ(2, 3), QQ(26, 3), QQ(26, 3)]
 @assert two_without[1, 1] == QQ(3551, 6)
 for i in 1:3, j in 1:3

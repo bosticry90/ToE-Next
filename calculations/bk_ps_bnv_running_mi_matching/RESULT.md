@@ -75,7 +75,7 @@ The field ledger is:
 | `F_L` | Weyl fermion | `(4,2,1)` | three families |
 | `F_R` | Weyl fermion | `(4bar,1,2)` | three families |
 | `H_D` | complex scalar | `(1,2,2)` | one |
-| `H_T` | complex scalar | `(6,1,1)` | high-scale boundary multiplet |
+| `Sigma_1` | complex scalar | `(6,1,1)` | active `126_H` multiplet at `M_I` |
 | `Sigma_2` | complex scalar | `(10,3,1)` | one |
 | `Sigma_3` | complex scalar | `(10bar,1,3)` | one |
 | `Sigma_4` | complex scalar | `(15,2,2)` | one |
@@ -89,28 +89,33 @@ b_PS = [[1209/2, 249/2, 249/2],
         [1245/2,    48, 779/3]].
 ```
 
-### High-scale sextet qualification
+### Sextet attribution correction
 
-The reconstruction exposes a boundary convention that must remain visible.
-The published `a_4C=1` and `b_4C,4C=1209/2` are obtained only when the complex
-`H_T=(6,1,1)` field is included. Removing it while leaving all other fields
-fixed gives
+The published `a_4C=1` and `b_4C,4C=1209/2` require one active complex
+`(6,1,1)` multiplet. The exact beta ledger alone cannot identify it because
+`Sigma_1` from `126_H` and `H_T` from `10_H` have the same Pati-Salam quantum
+numbers. Babu-Khan Section 2.2 states that the whole `126_H`, including
+`Sigma_1`, is brought to `M_I`; Equation (13) includes its components in the
+intermediate threshold ledger. Table 1 and Equation (17) instead place `H_T`
+in the `M_U` threshold ledger. The source-consistent interval field is therefore
+`Sigma_1`, and `H_T` is not part of this beta ledger.
+
+Removing `Sigma_1` while leaving all other interval fields fixed gives
 
 ```text
 a_4C = 2/3
 b_4C,4C = 3551/6,
 ```
 
-with every other entry unchanged. Babu-Khan Table 1 locates `H_T` at the
-unification scale, while its published beta ledger includes it. Therefore this
-result applies to the paper's published step-spectrum convention. It does not
-claim to resolve the finite `M_U` threshold placement of `H_T`; changing that
-decoupling prescription would require a separate threshold/systematics
-calculation.
+with every other entry unchanged. That is a changed spectrum with the active
+intermediate sextet removed; it is not an `H_T`-decoupling branch.
 
-This qualification does not trigger `FAIL`: the frozen published coefficient
-set and its complete two-loop cross-check were reproduced rather than assumed.
-It does bound the result's authority.
+Table 1 displays `Sigma_1` at `M_U`, in tension with the explicit placement
+prose and the intermediate threshold equation. This source presentation
+inconsistency is preserved in the dedicated
+[`H_T` threshold audit](../bk_ht_threshold_audit/RESULT.md). It does not change
+the published coefficients or the Wilson-running factor. The earlier
+high-scale-`H_T` attribution has been corrected.
 
 ## Anomalous factors and sign reconciliation
 
@@ -253,7 +258,8 @@ ordering is presumed, and no `N` threshold is crossed.
 |---|---|
 | Babu-Khan one-loop beta coefficients reconstructed | `PASS` |
 | Babu-Khan two-loop beta matrix cross-check | `PASS` |
-| High-scale-sextet inclusion isolated | `PASS_WITH_QUALIFICATION` |
+| Intermediate `Sigma_1` sextet contribution isolated | `PASS` |
+| `H_T` separated into the `M_U` threshold ledger | `PASS_AFTER_CORRECTION` |
 | Casimir reconstruction of anomalous factors | `PASS` |
 | Mambrini/Babu-Khan exponent orientation reconciled | `PASS` |
 | Analytic RGE and first-log expansion | `PASS` |
@@ -296,9 +302,9 @@ SHA-256:
 
 ```text
 verify_running.py
-  7de98bc5223dca877eb1e42bb6710378d7d232f0345589be30ea13a2bb6f23bd
+  ea163c2c35d1e78bcc411b050b7a1c4f28988cc1d301eda9f7868a07c5770083
 verify_running.jl
-  f3c56f1e9fe4dd85488fccb5191742e0071cca986e7eec6f1efb92e4598dd0dd
+  429f7a886d0e9ee563efd24e625c611fe704edb54d38792235e9e514036db543
 ```
 
 The compact machine-readable result is [`result.json`](result.json).

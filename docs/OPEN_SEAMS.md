@@ -11,7 +11,9 @@ active_physics_calculation = null
 
 The first admitted seam, `BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT`, resolved `PASS` at its tree-level authority ceiling. The [admission record](BABU_KHAN_SO10_BNV_MATCHING.md) and [calculation result](../calculations/bk_so10_bnv_matching/RESULT.md) preserve the derivation and qualification.
 
-The focused [Pati-Salam literature audit and admission record](BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md) found reusable gauge-leading-log and tree-level matching machinery and admitted the next bounded seam. Its [calculation result](../calculations/bk_ps_bnv_running_mi_matching/RESULT.md) resolved `PASS` at the one-loop gauge-leading-log and tree-level `M_I` matching ceiling. The result is qualified by the published high-scale-sextet beta convention.
+The focused [Pati-Salam literature audit and admission record](BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md) found reusable gauge-leading-log and tree-level matching machinery and admitted the next bounded seam. Its [calculation result](../calculations/bk_ps_bnv_running_mi_matching/RESULT.md) resolved `PASS` at the one-loop gauge-leading-log and tree-level `M_I` matching ceiling.
+
+The subsequent [`H_T` threshold audit](BABU_KHAN_HT_THRESHOLD_AUDIT.md) corrected the interval sextet attribution: `Sigma_1=(6,1,1)` from `126_H`, not high-scale `H_T`, supplies the published Pati-Salam beta contribution. The numerical running result is unchanged. The proposed separate `H_T` running branch was not admitted; a future numerical high-scale threshold-systematics seam requires a frozen spectrum benchmark and downstream quantitative need.
 
 No SMEFT/SMNEFT evolution below `M_I`, right-handed-neutrino threshold, LEFT/chiral matching, lifetime calculation, other source theory, or other relation class is active.
 

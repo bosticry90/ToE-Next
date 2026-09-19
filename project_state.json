@@ -1,6 +1,6 @@
 {
-  "state_version": 9,
-  "updated_utc": "2026-09-19T01:12:37Z",
+  "state_version": 10,
+  "updated_utc": "2026-09-19T01:31:28Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -11,12 +11,12 @@
     "ecosystem_survey": "INITIAL_NO_INSTALL_AUDIT_COMPLETE",
     "dependency_scaffold": "INITIAL_MAP_ESTABLISHED",
     "seam_selection": {
-      "outcome": "SELECTED_PROGRAM_TWO_BOUNDARIES_RESOLVED_PASS",
+      "outcome": "SELECTED_PROGRAM_TWO_BOUNDARIES_RESOLVED_PASS_THRESHOLD_ATTRIBUTION_CORRECTED",
       "initial_outcome": "NONE_CURRENTLY_ADMISSIBLE",
       "leading_relation_class": "UV_OR_UNIFIED_PARTICLE_CANDIDATE_TO_SMEFT_OR_WET"
     },
     "source_theory_selection": {
-      "outcome": "WORKING_CANDIDATE_SECOND_BOUNDARY_PASSED",
+      "outcome": "WORKING_CANDIDATE_SECOND_BOUNDARY_PASSED_THRESHOLD_ATTRIBUTION_CORRECTED",
       "candidate": "BABU_KHAN_2015_NONSUPERSYMMETRIC_SO10_54H_126H_10H",
       "authority": "WORKING_CANDIDATE_NOT_ACCEPTED",
       "candidate_relation": "HEAVY_VECTOR_TO_PATI_SALAM_BNV_EFT_TO_DIMENSION_6_BNV_SMEFT_TO_NUCLEON_DECAY"
@@ -36,8 +36,16 @@
       "authority": "ONE_LOOP_GAUGE_LEADING_LOG_PS_RUNNING_AND_TREE_LEVEL_MI_MATCHING_ONLY",
       "result": "calculations/bk_ps_bnv_running_mi_matching/RESULT.md",
       "threshold_qualification": "ONE_PS_COEFFICIENT_RUNS_BEFORE_K1_K2_BROKEN_PHASE_PROJECTION",
-      "spectrum_qualification": "PUBLISHED_BETA_LEDGER_INCLUDES_HIGH_SCALE_HT_SEXTET",
+      "spectrum_qualification": "PUBLISHED_BETA_LEDGER_INCLUDES_INTERMEDIATE_SIGMA1_SEXTET_HT_IS_MU_THRESHOLD_FIELD",
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
+    },
+    "last_completed_audit": {
+      "audit": "BK_HT_THRESHOLD_ATTRIBUTION_AND_BRANCH_AUDIT_V1",
+      "completed_utc": "2026-09-19T01:31:28Z",
+      "outcome": "CORRECTION_APPLIED_SEPARATE_HT_RUNNING_SEAM_NOT_ADMITTED",
+      "authority": "SOURCE_ATTRIBUTION_AND_ONE_LOOP_SYMBOLIC_BRANCH_COMPARISON_ONLY",
+      "result": "calculations/bk_ht_threshold_audit/RESULT.md",
+      "future_threshold_seam": "NOT_ADMITTED_NOW"
     },
     "legacy_relevance_audit": {
       "scope": "STRICT_SU5_FOR_BK_SO10_SOURCE_SELECTION_AND_MATCHING",

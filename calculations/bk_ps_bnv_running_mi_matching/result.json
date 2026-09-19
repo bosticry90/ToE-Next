@@ -1,6 +1,7 @@
 {
   "calculation": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1",
   "completed_utc": "2026-09-19T01:12:37Z",
+  "corrected_utc": "2026-09-19T01:31:28Z",
   "disposition": "PASS",
   "authority": "ONE_LOOP_GAUGE_LEADING_LOG_PS_RUNNING_AND_TREE_LEVEL_MI_MATCHING_ONLY",
   "source_model": "BABU_KHAN_2015_NONSUPERSYMMETRIC_SO10_54H_126H_10H",
@@ -55,18 +56,19 @@
   },
   "threshold_ordering": "ONE_COMMON_PS_COEFFICIENT_RUNS_TO_MI_BEFORE_K1_K2_BROKEN_PHASE_PROJECTION",
   "right_handed_neutrino": "RETAINED_IN_SMEFT_PLUS_N_NO_N_THRESHOLD_TAKEN",
-  "high_scale_sextet_qualification": {
-    "field": "H_T=(6,1,1)",
-    "published_convention": "INCLUDED_IN_BABU_KHAN_PS_BETA_LEDGER",
+  "sextet_attribution": {
+    "interval_field": "Sigma_1=(6,1,1)_FROM_126H",
+    "high_scale_threshold_field": "H_T=(6,1,1)_FROM_10H",
+    "published_convention": "SIGMA_1_INCLUDED_IN_BABU_KHAN_PS_BETA_LEDGER_HT_RESERVED_FOR_MU_THRESHOLD_MATCHING",
     "with_field": {
       "a_4C": "1",
       "b_4C_4C": "1209/2"
     },
-    "without_field": {
+    "without_interval_sigma_1": {
       "a_4C": "2/3",
       "b_4C_4C": "3551/6"
     },
-    "authority_effect": "RESULT_APPLIES_TO_PUBLISHED_STEP_SPECTRUM_CONVENTION_FINITE_MU_THRESHOLD_NOT_RESOLVED"
+    "authority_effect": "NUMERICAL_BETA_AND_WILSON_RESULTS_UNCHANGED_PRIOR_HT_ATTRIBUTION_CORRECTED"
   },
   "verification": {
     "python_sympy_primary": "PASS",
@@ -87,8 +89,8 @@
     "nemo": "0.56.1"
   },
   "source_hashes_sha256": {
-    "verify_running.py": "7de98bc5223dca877eb1e42bb6710378d7d232f0345589be30ea13a2bb6f23bd",
-    "verify_running.jl": "f3c56f1e9fe4dd85488fccb5191742e0071cca986e7eec6f1efb92e4598dd0dd"
+    "verify_running.py": "ea163c2c35d1e78bcc411b050b7a1c4f28988cc1d301eda9f7868a07c5770083",
+    "verify_running.jl": "429f7a886d0e9ee563efd24e625c611fe704edb54d38792235e9e514036db543"
   },
   "downstream": {
     "status": "AUTHORIZED_FOR_SEPARATE_ADMISSION",

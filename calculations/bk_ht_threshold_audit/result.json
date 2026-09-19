@@ -1,0 +1,40 @@
+{
+  "audit": "BK_HT_THRESHOLD_ATTRIBUTION_AND_BRANCH_AUDIT_V1",
+  "completed_utc": "2026-09-19T01:31:28Z",
+  "disposition": "CORRECTION_APPLIED",
+  "authority": "SOURCE_ATTRIBUTION_AND_ONE_LOOP_SYMBOLIC_BRANCH_COMPARISON_ONLY",
+  "corrected_attribution": {
+    "interval_sextet": "Sigma_1=(6,1,1)_FROM_126H",
+    "high_scale_threshold_sextet": "H_T=(6,1,1)_FROM_10H",
+    "published_interval_a_4C": "1",
+    "published_interval_exponent": "-15/4"
+  },
+  "branch_comparison": {
+    "published_spectrum": "A4=(1+x)^(15/4)",
+    "ht_decoupled_at_mu": "SAME_INTERVAL_FACTOR_BECAUSE_SIGMA_1_REMAINS_ACTIVE",
+    "sigma_1_removed_changed_spectrum": "A4=(1+(2/3)*x)^(45/8)",
+    "log_ratio_series": "log(A_changed/A_published)=(5/8)*x^2+O(x^3)"
+  },
+  "high_scale_matching": {
+    "rho": "M_HT/M_U",
+    "lambda_4C_ht": "2*ln(rho)",
+    "delta_alpha_4C_inverse": "-ln(rho)/(6*pi)",
+    "unification_scale_sensitivity": "dln(M_U)/dln(M_HT)=1/23_WITH_OTHER_EQ19_MASSES_FIXED"
+  },
+  "future_threshold_seam": {
+    "name": "BK_HT_MU_THRESHOLD_SYSTEMATICS",
+    "status": "NOT_ADMITTED_NOW",
+    "reason": "NO_FROZEN_NUMERICAL_SPECTRUM_OR_DOWNSTREAM_OBSERVABLE_REQUIREMENT"
+  },
+  "source_hashes_sha256": {
+    "verify_threshold.py": "b10bb931455d44ed4fdd6917e6d135bf163920fdd1059e993f4dd7a4e1dbd60f"
+  },
+  "downstream_not_performed": [
+    "NUMERICAL_HIGH_SCALE_THRESHOLD_BENCHMARK",
+    "FINITE_BNV_WILSON_THRESHOLD_MATCHING",
+    "RUNNING_BELOW_MI",
+    "RIGHT_HANDED_NEUTRINO_THRESHOLD",
+    "HADRONIC_MATCHING",
+    "PROTON_LIFETIME"
+  ]
+}

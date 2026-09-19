@@ -53,10 +53,11 @@ FIELDS = (
     Field("three_F_L", "weyl", 3, ("4", "2", "1"), Q(1, 2)),
     Field("three_F_R", "weyl", 3, ("4bar", "1", "2"), Q(1, 2)),
     Field("H_D", "scalar", 1, ("1", "2", "2"), Q(2)),
-    # Reproducing both Babu--Khan Eq. (7) coefficients requires the complex
-    # H_T=(6,1,1) boundary multiplet.  RESULT.md records the associated
-    # high-scale threshold qualification.
-    Field("H_T", "scalar", 1, ("6", "1", "1"), Q(2)),
+    # Babu--Khan Sec. 2.2 places the whole 126_H at M_I.  Its
+    # Sigma_1=(6,1,1) component supplies the sextet contribution in the
+    # Pati--Salam interval.  H_T=(6,1,1) from 10_H is instead an M_U
+    # threshold field and is deliberately absent from this active ledger.
+    Field("Sigma_1", "scalar", 1, ("6", "1", "1"), Q(2)),
     Field("Sigma_2", "scalar", 1, ("10", "3", "1"), Q(2)),
     Field("Sigma_3", "scalar", 1, ("10bar", "1", "3"), Q(2)),
     Field("Sigma_4", "scalar", 1, ("15", "2", "2"), Q(2)),
@@ -115,8 +116,13 @@ def verify_beta_and_anomalous_dimensions() -> None:
     assert one_loop == expected_one
     assert two_loop == expected_two
 
-    without_high_scale_sextet = tuple(field for field in FIELDS if field.name != "H_T")
-    one_without, two_without = beta_ledger(without_high_scale_sextet)
+    assert any(field.name == "Sigma_1" for field in FIELDS)
+    assert all(field.name != "H_T" for field in FIELDS)
+
+    without_intermediate_sextet = tuple(
+        field for field in FIELDS if field.name != "Sigma_1"
+    )
+    one_without, two_without = beta_ledger(without_intermediate_sextet)
     assert one_without == (Q(2, 3), Q(26, 3), Q(26, 3))
     assert two_without[0][0] == Q(3551, 6)
     assert all(two_without[i][j] == expected_two[i][j] for i, j in product(range(3), repeat=2) if (i, j) != (0, 0))

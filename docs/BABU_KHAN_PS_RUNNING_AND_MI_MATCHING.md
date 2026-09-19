@@ -269,7 +269,7 @@ to earn the next arrow. It is not evidence for or against proton decay.
 ### 12. Result and reproducibility record
 
 The calculation resolved `PASS`. The complete derivation, exact coefficient
-factor, group ledger, high-scale-sextet qualification, threshold map, tool
+factor, corrected interval-sextet ledger, threshold map, tool
 versions, independent replay, and test matrix are preserved in the
 [calculation result](../calculations/bk_ps_bnv_running_mi_matching/RESULT.md).
 
@@ -285,10 +285,11 @@ The seam was admitted because both endpoints and the established middle
 machinery were precise, the missing model-specific work was bounded, and
 several cheap falsifiers preceded any phenomenology. It has now resolved
 `PASS`, including independent Python/SymPy and Julia/Nemo replays. The result
-applies to Babu-Khan's published step-spectrum beta convention; the audit found
-that reproducing its `a_4C=1` requires inclusion of the high-scale
-`H_T=(6,1,1)` boundary multiplet. Finite `M_U` threshold placement remains
-outside the result.
+applies to Babu-Khan's published intermediate spectrum. A later
+[`H_T` threshold audit](BABU_KHAN_HT_THRESHOLD_AUDIT.md) corrected the active
+complex sextet's identity to `Sigma_1=(6,1,1)` from `126_H`; `H_T` from `10_H`
+belongs to the `M_U` threshold ledger. The numerical beta coefficients,
+running factor, and `M_I` projection are unchanged.
 
 The pass does not authorize work below `M_I`, selection of a numerical
 benchmark, or calculation of a proton lifetime without a separate admission.
