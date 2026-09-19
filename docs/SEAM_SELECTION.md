@@ -91,7 +91,7 @@ Meeting these conditions authorizes a proposal for seam activation; it does not 
 
 ## Next scientific boundary
 
-The bounded source-theory comparison is recorded in [SOURCE_THEORY_COMPARISON.md](SOURCE_THEORY_COMPARISON.md). It selects one published non-supersymmetric SO(10) construction as a working source candidate for evaluating a narrow baryon-number-violating EFT relation. The subsequent [model-specific admission decision](BABU_KHAN_SO10_BNV_MATCHING.md) activates only the heavy-vector, intermediate-symmetry, dimension-six matching seam.
+The bounded source-theory comparison is recorded in [SOURCE_THEORY_COMPARISON.md](SOURCE_THEORY_COMPARISON.md). It selects one published non-supersymmetric SO(10) construction as a working source candidate for evaluating a narrow baryon-number-violating EFT relation. The subsequent [model-specific admission decision](BABU_KHAN_SO10_BNV_MATCHING.md) activated only the heavy-vector, intermediate-symmetry, dimension-six matching seam; its [first calculation](../calculations/bk_so10_bnv_matching/RESULT.md) has since resolved `PASS` at that narrow ceiling.
 
 The original selection decision retained:
 

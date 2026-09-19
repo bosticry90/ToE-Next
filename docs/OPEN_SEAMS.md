@@ -2,15 +2,16 @@
 
 ## Current state
 
-There is exactly one active seam:
+There are no active seams and no active physics calculation.
 
 ```text
-BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT
+active_seams = []
+active_physics_calculation = null
 ```
 
-It connects the Babu-Khan model's GUT-scale heavy-vector exchange to a gauge-covariant baryon-number-violating operator boundary across the Pati-Salam intermediate regime and then to the standard dimension-six SMEFT operator basis. Its first calculation and authority ceiling are frozen in [BABU_KHAN_SO10_BNV_MATCHING.md](BABU_KHAN_SO10_BNV_MATCHING.md).
+The first admitted seam, `BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT`, resolved `PASS` at its tree-level authority ceiling. The [admission record](BABU_KHAN_SO10_BNV_MATCHING.md) and [calculation result](../calculations/bk_so10_bnv_matching/RESULT.md) preserve the derivation and qualification.
 
-No downstream running, LEFT/chiral matching, lifetime calculation, other source theory, or other relation class is active.
+The pass authorizes consideration of a separate Pati–Salam-running and `M_I` threshold-matching seam. It does not activate it. No running, LEFT/chiral matching, lifetime calculation, other source theory, or other relation class is active.
 
 ## Definition
 

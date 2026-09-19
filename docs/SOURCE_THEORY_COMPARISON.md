@@ -20,7 +20,7 @@ CANDIDATE RELATION:
         -> nucleon-decay observables
 ```
 
-This comparison selected at most one source theory for evaluating whether a precise seam could be activated. It did not accept SO(10), this model, its symmetry-breaking history, or any predicted lifetime as established physics. The later [model-specific admission decision](BABU_KHAN_SO10_BNV_MATCHING.md) authorizes only a tree-level operator-matching calculation and no tool installation.
+This comparison selected at most one source theory for evaluating whether a precise seam could be activated. It did not accept SO(10), this model, its symmetry-breaking history, or any predicted lifetime as established physics. The later [model-specific admission decision](BABU_KHAN_SO10_BNV_MATCHING.md) authorized only a tree-level operator-matching calculation and no tool installation; that [calculation](../calculations/bk_so10_bnv_matching/RESULT.md) resolved `PASS` without broadening the source theory's authority.
 
 ## Question and method
 
@@ -142,7 +142,7 @@ A recent systematic treatment of baryon-number-violating UV-to-SMEFT-to-LEFT-to-
 8. exact decay channels, experimental datasets, and statistical comparison rule;
 9. the independent-replay route and a failure interpretation for each stage.
 
-These inputs are now narrowed for the first link in [BABU_KHAN_SO10_BNV_MATCHING.md](BABU_KHAN_SO10_BNV_MATCHING.md). Later running and observable stages remain inactive and require their own calculation-local freezes.
+These inputs were narrowed for the first link in [BABU_KHAN_SO10_BNV_MATCHING.md](BABU_KHAN_SO10_BNV_MATCHING.md), which now has a completed [tree-level result](../calculations/bk_so10_bnv_matching/RESULT.md). Later running and observable stages remain inactive and require their own calculation-local freezes.
 
 ## Cheap falsifier and stopping rule
 
@@ -225,4 +225,4 @@ The preserved strict SU(5)/Route-C result remains an unfinished benchmark checkp
 
 ## State consequence
 
-The comparison selected one working source candidate and initially left the seam inactive. The subsequent admission decision in [BABU_KHAN_SO10_BNV_MATCHING.md](BABU_KHAN_SO10_BNV_MATCHING.md) activates one corrected, model-specific relation that retains the Pati-Salam intermediate stage. It does not broaden the source theory's authority.
+The comparison selected one working source candidate and initially left the seam inactive. The subsequent admission decision in [BABU_KHAN_SO10_BNV_MATCHING.md](BABU_KHAN_SO10_BNV_MATCHING.md) activated one corrected, model-specific relation that retained the Pati-Salam intermediate stage. Its [tree-level calculation](../calculations/bk_so10_bnv_matching/RESULT.md) resolved `PASS`; no downstream seam is active, and the source theory's authority remains unchanged.

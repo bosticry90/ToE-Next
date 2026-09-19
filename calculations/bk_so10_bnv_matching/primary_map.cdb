@@ -1,0 +1,23 @@
+# Cadabra checks for the exact index signs used in the analytic primary map.
+# The spinor Fierz identity is stated in RESULT.md and independently expanded
+# into Grassmann components by verify_map.py.
+
+{i,j,k}::Indices(name=color, position=independent).
+{a,b}::Indices(name=weak, position=independent).
+\epsilon_{i j k}::EpsilonTensor(delta=\delta).
+\epsilon_{a b}::EpsilonTensor(delta=\delta).
+
+# Cyclic color permutations are even; exchanging the last two indices is odd.
+color_cyclic := \epsilon_{i j k} - \epsilon_{j k i};
+canonicalise(color_cyclic);
+assert color_cyclic == Ex(0)
+
+color_swap := \epsilon_{i j k} + \epsilon_{i k j};
+canonicalise(color_swap);
+assert color_swap == Ex(0)
+
+weak_swap := \epsilon_{a b} + \epsilon_{b a};
+canonicalise(weak_swap);
+assert weak_swap == Ex(0)
+
+print("PASS: Cadabra color/weak epsilon sign checks")

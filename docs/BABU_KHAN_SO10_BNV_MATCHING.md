@@ -4,13 +4,13 @@
 
 ```text
 SEAM: BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT
-ADMISSION: ADMITTED
+ADMISSION: ADMITTED_AND_RESOLVED
 SOURCE AUTHORITY: WORKING_CANDIDATE_NOT_ACCEPTED
-ACTIVE CALCULATION: BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1
-CALCULATION STATUS: READY_NOT_STARTED
+CALCULATION: BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1
+CALCULATION STATUS: PASS
 ```
 
-Exactly one seam is active. It is model-specific:
+The resolved seam is model-specific:
 
 ```text
 Babu-Khan 2015 non-supersymmetric SO(10)
@@ -175,25 +175,27 @@ A blocked result means the first arrow is underdefined; it is not evidence for o
 
 ### 12. Result and reproducibility record
 
-Current result:
+Result:
 
 ```text
-READY_NOT_STARTED
+PASS
+AUTHORITY = TREE_LEVEL_WEAK_BASIS_OPERATOR_MAP_ONLY
+DOWNSTREAM = AUTHORIZED_FOR_SEPARATE_ADMISSION
 ```
 
-When executed, the same record will receive:
+The complete derivation, coefficient tensors, convention ledger, executable replays, hashes, and adversarial-test matrix are in [`calculations/bk_so10_bnv_matching/RESULT.md`](../calculations/bk_so10_bnv_matching/RESULT.md). The result establishes:
 
-- the primary derivation and calculation-local source;
-- exact tool/runtime versions actually used;
-- a machine-readable coefficient map and convention ledger;
-- independent replay evidence and adversarial-test results;
-- compact hashes for every input and output;
-- the final `PASS`, `FAIL`, or `BLOCKED` disposition;
-- a statement of whether a downstream Pati-Salam running calculation is scientifically authorized.
+- `O_I -> +2 k1^2 Q_qque`;
+- `O_II + O_III -> Q_duql` with distinct, explicit flavor wirings and `k1^2`, `k2^2` provenance;
+- `O_IV -> -2 k2^2 Q_qqdN`, kept outside the four-operator standard SMEFT sector;
+- `Q_qqql`, `Q_duue`, and `Q_uddN` are zero at this tree-level gauge boundary;
+- the unequal pole coefficients are Pati–Salam-breaking threshold projections, not independent Pati–Salam-covariant coefficients above `M_I`.
+
+No downstream work was executed. A separate Pati–Salam-running and intermediate-threshold calculation may be considered for admission.
 
 ## Downstream anchors, not active inputs
 
-If the first calculation passes, later records may evaluate the chain through Pati-Salam running, SMEFT/LEFT evolution, and hadronic observables. Candidate frozen anchors for that later review are:
+Later records may evaluate the chain through Pati-Salam running, SMEFT/LEFT evolution, and hadronic observables. Candidate frozen anchors for that later review are:
 
 - lattice matrix elements: J.-S. Yoo et al., arXiv [`2111.01608v1`](https://arxiv.org/abs/2111.01608v1), with scheme, scale, sign, units, momentum transfer, and uncertainties revalidated;
 - charged-lepton channel: Super-Kamiokande, arXiv [`2010.16098v2`](https://arxiv.org/abs/2010.16098v2), `p -> e+ pi0` and `p -> mu+ pi0`;

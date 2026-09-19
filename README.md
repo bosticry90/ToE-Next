@@ -2,7 +2,7 @@
 
 ToE-Next is a research project seeking the most coherent and complete unification obtainable from established physics, serious existing unification frameworks, surviving project results, and new physics only where evidence or mathematical consistency requires it.
 
-The project has an initial dependency scaffold and one active, model-specific recovery seam. Its first calculation is defined but not yet executed: the Babu-Khan non-supersymmetric SO(10) heavy-vector sector is to be matched through the model's Pati-Salam intermediate symmetry into the standard dimension-six baryon-number-violating SMEFT basis.
+The project has an initial dependency scaffold and one completed, model-specific recovery map. Its first calculation passed: the Babu–Khan non-supersymmetric SO(10) heavy-vector boundary maps through the model's Pati–Salam intermediate symmetry into `Q_qque` and `Q_duql` in standard dimension-six BNV SMEFT, while the right-handed-neutrino term remains separately identified as `Q_qqdN`. No downstream running or proton-lifetime calculation is active.
 
 ## Scientific posture
 
@@ -26,14 +26,16 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 7. [`docs/SEAM_SELECTION.md`](docs/SEAM_SELECTION.md)
 8. [`docs/SOURCE_THEORY_COMPARISON.md`](docs/SOURCE_THEORY_COMPARISON.md)
 9. [`docs/BABU_KHAN_SO10_BNV_MATCHING.md`](docs/BABU_KHAN_SO10_BNV_MATCHING.md)
-10. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-11. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-12. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+10. [`calculations/bk_so10_bnv_matching/RESULT.md`](calculations/bk_so10_bnv_matching/RESULT.md)
+11. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+12. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+13. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
 - [`tools/vpc/`](tools/vpc/) contains a promoted exact-DAG secondary verifier with a frozen applicability boundary and minimal tests;
 - [`tools/julia/`](tools/julia/) contains a small locked environment for Nemo and OrdinaryDiffEq plus one readiness smoke test;
 - [`tools/readiness/check-c-only.ps1`](tools/readiness/check-c-only.ps1) checks that the active project and its computational stack operate from C: without the legacy custody drive.
+- [`calculations/bk_so10_bnv_matching/`](calculations/bk_so10_bnv_matching/) contains the first calculation's compact derivation, coefficient map, and independent exact replays.
 
-No model hierarchy, calculation hierarchy, dataset, historical scientific tree, environment payload, or generated result is stored here. The machine-level runtimes and package caches remain external to Git.
+No model hierarchy, broad calculation framework, dataset, historical scientific tree, environment payload, or bulk generated result is stored here. The machine-level runtimes and package caches remain external to Git.

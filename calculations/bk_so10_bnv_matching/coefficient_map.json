@@ -1,0 +1,70 @@
+{
+  "calculation": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1",
+  "completed_utc": "2026-09-18T23:50:50Z",
+  "disposition": "PASS",
+  "authority": "TREE_LEVEL_WEAK_BASIS_OPERATOR_MAP_ONLY",
+  "source": {
+    "model": "BABU_KHAN_2015_NONSUPERSYMMETRIC_SO10_54H_126H_10H",
+    "arxiv": "1507.06712v2",
+    "source_operator_equation": 61,
+    "source_rotation_equations": [62, 63, 64]
+  },
+  "destination": {
+    "standard_smeft_basis": "Banik_Crivellin_Naterop_Stoffer_2510.08682v2_TABLE_1",
+    "right_handed_neutrino_extension": "Alonso_Chang_Jenkins_Manohar_Shotwell_1405.0486v2_EQ_2"
+  },
+  "conventions": {
+    "metric": "+---",
+    "charge_conjugation_matrix": "C=i*gamma^2*gamma^0",
+    "epsilon_color_123": 1,
+    "epsilon_weak_12": 1,
+    "lagrangian_sign": "Babu-Khan Eq. (61) is taken with the displayed sign",
+    "fierz_identity": "(xi_dagger barsigma^mu chi)(eta_dagger barsigma_mu rho)=-2(xi_dagger eta_dagger)(chi rho)"
+  },
+  "pole_coefficients": {
+    "k1_squared": "g_U^2/(2*M_XY^2)=1/(2*omega_s^2)",
+    "k2_squared": "g_U^2/(2*M_XpYp^2)=1/(2*(omega_s^2+sigma^2))",
+    "mass_dimension": -2
+  },
+  "pati_salam_bridge": {
+    "broken_vector_representation": "(6,2,2)",
+    "current": "J_mu^[AB]a_alpha=(F_R_dagger)^[A_alpha]*barsigma_mu*F_L^[B_a]-(A<->B)",
+    "singlet_boundary": "k_PS_squared*epsilon_ABCD*epsilon_ab*epsilon_alpha_beta*J_mu^[AB]a_alpha*J^mu[CD]b_beta+h.c.",
+    "unbroken_boundary_coefficient": "k_PS^2=1/(2*omega_s^2)",
+    "inverse_mass_projector": "k1_squared*P_XY+k2_squared*P_XpYp",
+    "qualification": "The unequal coefficients are a Pati-Salam-breaking threshold projection. They are not two independent Pati-Salam-covariant coefficients above M_I."
+  },
+  "source_to_basis_fierz_map": {
+    "O_I": "+2*Q_qque",
+    "O_II": "+2*Q_duql",
+    "O_III": "+2*Q_duql",
+    "O_IV": "-2*Q_qqdN"
+  },
+  "coefficient_tensors": {
+    "C_qque_prst": "k1_squared*(delta_ps*delta_rt+delta_rs*delta_pt)",
+    "C_duql_prst": "2*k1_squared*delta_rs*delta_pt+2*k2_squared*delta_ps*delta_rt",
+    "C_qqql_prst": "0",
+    "C_duue_prst": "0",
+    "C_qqdN_prst": "-k2_squared*(delta_ps*delta_rt+delta_rs*delta_pt)",
+    "C_uddN_prst": "0"
+  },
+  "sector_disposition": {
+    "standard_smeft": ["Q_qque", "Q_duql"],
+    "standard_smeft_zero_at_tree_level": ["Q_qqql", "Q_duue"],
+    "smeft_plus_N": ["Q_qqdN"],
+    "smeft_plus_N_zero_at_tree_level": ["Q_uddN"]
+  },
+  "verification": {
+    "cadabra_index_signs": "PASS",
+    "python_explicit_grassmann_replay": "PASS",
+    "julia_nemo_exact_tensor_replay": "PASS",
+    "gauge_and_dimension_checks": "PASS",
+    "physical_basis_rotation_identities": "PASS",
+    "rg_or_lifetime_work_performed": false
+  },
+  "downstream": {
+    "status": "AUTHORIZED_FOR_SEPARATE_ADMISSION",
+    "required_next_boundary": "PATI_SALAM_OPERATOR_RUNNING_AND_MI_THRESHOLD_MATCHING",
+    "automatic_activation": false
+  }
+}
