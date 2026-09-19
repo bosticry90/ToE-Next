@@ -1,6 +1,6 @@
 {
-  "state_version": 28,
-  "updated_utc": "2026-09-19T21:16:41Z",
+  "state_version": 29,
+  "updated_utc": "2026-09-19T21:41:52Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_SCALAR_ACTION_DEFINITION_V2",
-      "completed_utc": "2026-09-19T21:16:41Z",
-      "outcome": "INVARIANT_BASIS_CLOSED",
-      "authority": "EXACT_34_SLOT_RENORMALIZABLE_SCALAR_ACTION_AND_ETA1_DOUBLET_MIXING_ONLY",
-      "result": "calculations/canonical_so10_scalar_reconstruction/RESULT_V2.md",
-      "eta1_neutral_invariant": "DOUBLET_MIXING_CONFIRMED_IN_FROZEN_CONVENTION",
+      "calculation": "CANONICAL_SO10_SCALAR_VACUUM_KERNEL_V1",
+      "completed_utc": "2026-09-19T21:41:52Z",
+      "outcome": "VACUUM_KERNEL_BLOCKED",
+      "authority": "EXACT_V0_TADPOLES_CONNECTED_STABILIZERS_RADIAL_HESSIAN_AND_SPECIFIED_COLOR_SINGLET_DOUBLET_SUBSPACE_ONLY",
+      "result": "calculations/canonical_so10_vacuum_kernel/RESULT.md",
+      "qualified_stop": "FULL_COLORED_SCALAR_HESSIAN_AND_EXPLICIT_FULL_GOLDSTONE_NULLITY_NOT_YET_DERIVED",
       "complete_explicit_tensor_basis": true,
       "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
       "new_scalar_benchmark_found": false,
@@ -96,7 +96,7 @@
     },
     "canonical_so10_scalar_reconstruction": {
       "lane": "EXPLORATORY_SOURCE_DERIVED_VARIANT",
-      "status": "PARENT_ACTION_DEFINED_VACUUM_GATE_NEXT",
+      "status": "PARENT_ACTION_DEFINED_PARTIAL_VACUUM_KERNEL_FULL_HESSIAN_PENDING",
       "current_outcome": "INVARIANT_BASIS_CLOSED",
       "record": "calculations/canonical_so10_scalar_reconstruction/RECORD.md",
       "result": "calculations/canonical_so10_scalar_reconstruction/RESULT_V2.md",
@@ -114,6 +114,14 @@
       "scalar_benchmark_search_started": false,
       "published_scalar_formula_identity_claimed": false,
       "inherited_bnv_scalar_authority": false
+    },
+    "canonical_so10_vacuum_kernel": {
+      "outcome": "VACUUM_KERNEL_BLOCKED",
+      "qualified_scope": "V0_TADPOLES_SM_STABILIZERS_WARD_GOLDSTONE_OBLIGATION_RADIAL_HESSIAN_AND_SPECIFIED_COLOR_SINGLET_DOUBLET_SUBSPACE_DERIVED",
+      "full_colored_hessian": false,
+      "explicit_full_hessian_goldstone_replay": false,
+      "scalar_benchmark_search_started": false,
+      "result": "calculations/canonical_so10_vacuum_kernel/RESULT.md"
     },
     "last_completed_audit": {
       "audit": "REAL_120_PARENT_SO10_REALITY_SIGN_V1",
@@ -173,7 +181,7 @@
       "interpretation_selected": false,
       "calculation_started": false
     },
-    "active_focus": "CANONICAL_SO10_SCALAR_PARENT_ACTION_DEFINED_VACUUM_DERIVATION_NEXT"
+    "active_focus": "CANONICAL_SO10_FULL_SCALAR_HESSIAN_EXTRACTION_PENDING"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
