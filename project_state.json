@@ -1,6 +1,6 @@
 {
-  "state_version": 23,
-  "updated_utc": "2026-09-19T19:15:26Z",
+  "state_version": 24,
+  "updated_utc": "2026-09-19T19:29:15Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,11 +42,15 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "BK_LIGHT_DOUBLET_PROJECTOR_RECONCILIATION_V1",
-      "completed_utc": "2026-09-19T19:15:26Z",
-      "outcome": "PUBLISHED_SAMPLE_POINTS_REQUIRE_REPAIR",
-      "authority": "PRINTED_TABLE_2_SCALAR_POINT_CONTRADICTION_AND_PROJECTOR_SOURCE_BOUNDARY_ONLY",
-      "result": "calculations/bk_light_doublet_projector_reconciliation/RESULT.md",
+      "calculation": "BK_SCALAR_TENSOR_NORMALIZATION_AND_POSITIVITY_V1",
+      "completed_utc": "2026-09-19T19:29:15Z",
+      "outcome": "TENSOR_NORMALIZATION_BLOCKED",
+      "authority": "PARTIAL_PARENT_TENSOR_FACTORS_AND_GENERIC_DOUBLET_POSITIVITY_ONLY",
+      "result": "calculations/bk_scalar_tensor_recovery/RESULT.md",
+      "published_full_doublet_matrix_confirmed": false,
+      "published_full_doublet_matrix_refuted": false,
+      "new_scalar_benchmark_found": false,
+      "scalar_point_search_started": false,
       "complete_ps_yukawa_rges": false,
       "mi_light_higgs_matching": false,
       "fermion_fit_started": false,
@@ -68,6 +72,17 @@
       "potential_to_matrix_tensor_hessian": "NOT_INDEPENDENTLY_COMPLETED",
       "result": "calculations/bk_light_doublet_projector_reconciliation/RESULT.md",
       "flavor_kernel_resumed": false,
+      "active": false
+    },
+    "babu_khan_scalar_tensor_recovery": {
+      "outcome": "TENSOR_NORMALIZATION_BLOCKED",
+      "source_gate": "EQ24_EQ27_SAME_SYMBOL_126_QUADRATIC_AND_QUARTIC_NORMALIZATIONS_INCOMPATIBLE_UNDER_LITERAL_ALL_INDEX_SUMMATION",
+      "partial_parent_tensor_coefficients": "VERIFIED",
+      "generic_one_light_positive_heavy_criterion": "VERIFIED_ON_MIXED_BRANCH",
+      "full_126_doublet_triplet_hessian": "NOT_ESTABLISHED",
+      "published_full_doublet_matrix": "UNRESOLVED",
+      "new_scalar_benchmark": "NOT_STARTED",
+      "result": "calculations/bk_scalar_tensor_recovery/RESULT.md",
       "active": false
     },
     "last_completed_audit": {
