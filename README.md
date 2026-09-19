@@ -18,6 +18,8 @@ The particle-unification route is paused at its model-specific flavor boundary, 
 
 A bounded [joint Standard-Model-plus-gravity EFT reference audit](docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md) now records a finite-order common low-energy control surface, its coefficient and assumption ledgers, and the limits of its observable authority. It admits no active cross-domain seam or new calculation.
 
+A [massless-spin-2 assumption-compression audit](docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md) compares soft-graviton, self-coupling, and geometric-uniqueness derivations against that ledger. It identifies conditional leading-order relations but no demonstrated net ToE assumption compression or new active seam.
+
 ## Scientific posture
 
 - Novelty is not a requirement.
@@ -51,9 +53,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 18. [`calculations/bdfss_2024_point_audit/RESULT.md`](calculations/bdfss_2024_point_audit/RESULT.md)
 19. [`docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md`](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md)
 20. [`docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md`](docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md)
-21. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-22. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-23. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+21. [`docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md`](docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md)
+22. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+23. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+24. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
