@@ -1,6 +1,6 @@
 {
-  "state_version": 13,
-  "updated_utc": "2026-09-19T02:08:14Z",
+  "state_version": 14,
+  "updated_utc": "2026-09-19T03:15:57Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -40,14 +40,15 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_audit": {
-      "audit": "BK_FERMION_FIT_PROVENANCE_AND_RECONSTRUCTIBILITY_V1",
-      "completed_utc": "2026-09-19T01:56:04Z",
-      "outcome": "FIT_FOUND_BUT_INCOMPATIBLE_WITH_FROZEN_MODEL",
-      "authority": "PUBLISHED_FIT_PROVENANCE_AND_DIRECT_ADOPTION_TEST_ONLY",
-      "result": "docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md",
-      "fit_selected": null,
+      "audit": "BDFSS_2024_NORMAL_ORDERING_POINT_INTERNAL_CONSISTENCY_V1",
+      "completed_utc": "2026-09-19T03:15:57Z",
+      "outcome": "POINT_INTERNALLY_INCONSISTENT_FOR_OUR_PURPOSE",
+      "authority": "ONE_PRINTED_POINT_MATRIX_RECONSTRUCTION_REAL_120_CONSTRAINT_AND_SCALE_AUDIT_ONLY",
+      "result": "calculations/bdfss_2024_point_audit/RESULT.md",
+      "replacement_source_selected": false,
       "downstream_seam": "NOT_ADMITTED",
-      "calculation_started": false
+      "printed_point_reconstruction_performed": true,
+      "downstream_running_started": false
     },
     "last_completed_decision": {
       "decision": "BABU_KHAN_REFIT_VS_PUBLISHED_FIT_SOURCE_V1",

@@ -12,6 +12,8 @@ A [published-fit provenance audit](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.m
 
 A [fermion-source continuation decision](docs/FERMION_SOURCE_ROUTE_DECISION.md) compared a Babu-Khan-specific refit with switching to a published-fit SO(10) source model. Neither route is admitted for execution yet: the former requires a costed coupled-fit protocol, while the most explicit alternate prints matrices but approximates its Pati-Salam flavor interval. The two passed Babu-Khan gauge-sector boundaries remain intact.
 
+A bounded [audit of the explicit 2024 normal-ordering point](calculations/bdfss_2024_point_audit/RESULT.md) independently reconstructs its printed mass matrices and heavy-neutrino spectrum. It also finds that the unchanged point does not satisfy the later published real-`120_H` reality relation, while its Pati-Salam flavor-running approximation and co-frozen threshold ordering remain uncontrolled. This specific point is not admitted as a replacement source; no refit or downstream BNV running began.
+
 ## Scientific posture
 
 - Novelty is not a requirement.
@@ -42,9 +44,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 15. [`docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md`](docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md)
 16. [`docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md`](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md)
 17. [`docs/FERMION_SOURCE_ROUTE_DECISION.md`](docs/FERMION_SOURCE_ROUTE_DECISION.md)
-18. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-19. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-20. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+18. [`calculations/bdfss_2024_point_audit/RESULT.md`](calculations/bdfss_2024_point_audit/RESULT.md)
+19. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+20. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+21. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
