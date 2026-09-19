@@ -100,4 +100,4 @@ active_physics_calculation = null
 active_seams = []
 ```
 
-That historical boundary has now been superseded only by the admitted seam recorded in [project_state.json](../project_state.json). No other relation class or candidate was activated.
+That historical boundary was followed by two bounded particle-sector seams, both now resolved. The current no-active-seam decision is in the [project-wide refresh](PROJECT_WIDE_SEAM_REFRESH.md) and [project state](../project_state.json); no other relation class was activated.

@@ -22,6 +22,8 @@ A [massless-spin-2 assumption-compression audit](docs/MASSLESS_SPIN2_ASSUMPTION_
 
 A [quasiclassical recovery reference audit](docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md) separates decoherence, stable variables, effective classical dynamics, probability calculus, shared records, definite outcomes, and Born weights. Established mechanisms recover several of these conditionally, but no interpretation or active seam is selected.
 
+A [project-wide seam-selection refresh](docs/PROJECT_WIDE_SEAM_REFRESH.md) applies the current admission rubric across particle, gravity, joint-interface, quantum-foundations, cosmological, thermodynamic, and cross-domain relations. No next calculation is currently admissible; the earlier bounded results and reference controls remain intact.
+
 ## Scientific posture
 
 - Novelty is not a requirement.
@@ -57,9 +59,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 20. [`docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md`](docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md)
 21. [`docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md`](docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md)
 22. [`docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md`](docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md)
-23. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-24. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-25. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+23. [`docs/PROJECT_WIDE_SEAM_REFRESH.md`](docs/PROJECT_WIDE_SEAM_REFRESH.md)
+24. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+25. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+26. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 

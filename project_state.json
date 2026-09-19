@@ -1,6 +1,6 @@
 {
-  "state_version": 19,
-  "updated_utc": "2026-09-19T16:28:13Z",
+  "state_version": 20,
+  "updated_utc": "2026-09-19T17:18:50Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -11,9 +11,11 @@
     "ecosystem_survey": "INITIAL_NO_INSTALL_AUDIT_COMPLETE",
     "dependency_scaffold": "INITIAL_MAP_ESTABLISHED",
     "seam_selection": {
-      "outcome": "SELECTED_PROGRAM_TWO_BOUNDARIES_RESOLVED_PASS_NO_DIRECTLY_ADOPTABLE_PUBLISHED_FERMION_FIT",
+      "outcome": "NONE_CURRENTLY_ADMISSIBLE",
       "initial_outcome": "NONE_CURRENTLY_ADMISSIBLE",
-      "leading_relation_class": "UV_OR_UNIFIED_PARTICLE_CANDIDATE_TO_SMEFT_OR_WET"
+      "leading_relation_class": null,
+      "result": "docs/PROJECT_WIDE_SEAM_REFRESH.md",
+      "calculation_started": false
     },
     "source_theory_selection": {
       "outcome": "WORKING_CANDIDATE_SECOND_BOUNDARY_PASSED_PUBLISHED_FERMION_FITS_NOT_DIRECTLY_ADOPTABLE",

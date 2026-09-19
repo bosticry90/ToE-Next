@@ -125,7 +125,7 @@ The initial map exposes relation classes that may later yield a precise seam:
 | Candidate cosmology -> effective parameters -> CMB/LSS/expansion observables | Separates mechanism claims from successful effective phenomenology | A selected mechanism, initial conditions, parameter map, dataset and likelihood |
 | Cross-domain proposal -> shared assumption ledger | Tests whether one principle genuinely explains multiple sectors | A specific proposal and at least two independently recoverable domain maps |
 
-The unified/ultraviolet-particle relation class has now produced one resolved seam and one bounded active successor. The other relation classes remain inactive. The [open-seam criteria](OPEN_SEAMS.md) remain controlling.
+The unified/ultraviolet-particle relation class has produced two resolved bounded seams; its downstream flavor-dependent continuation is not admitted. The other relation classes remain inactive. The [project-wide refresh](PROJECT_WIDE_SEAM_REFRESH.md) applies the [open-seam criteria](OPEN_SEAMS.md) to the current evidence.
 
 ## Calculation-selection rule
 
