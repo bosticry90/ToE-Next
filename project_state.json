@@ -1,6 +1,6 @@
 {
-  "state_version": 29,
-  "updated_utc": "2026-09-19T21:41:52Z",
+  "state_version": 30,
+  "updated_utc": "2026-09-19T21:56:50Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_SCALAR_VACUUM_KERNEL_V1",
-      "completed_utc": "2026-09-19T21:41:52Z",
-      "outcome": "VACUUM_KERNEL_BLOCKED",
-      "authority": "EXACT_V0_TADPOLES_CONNECTED_STABILIZERS_RADIAL_HESSIAN_AND_SPECIFIED_COLOR_SINGLET_DOUBLET_SUBSPACE_ONLY",
-      "result": "calculations/canonical_so10_vacuum_kernel/RESULT.md",
-      "qualified_stop": "FULL_COLORED_SCALAR_HESSIAN_AND_EXPLICIT_FULL_GOLDSTONE_NULLITY_NOT_YET_DERIVED",
+      "calculation": "CANONICAL_SO10_FULL_SCALAR_HESSIAN_BLOCKS_V1",
+      "completed_utc": "2026-09-19T21:56:50Z",
+      "outcome": "FULL_HESSIAN_BLOCKED",
+      "authority": "EXACT_328_DIMENSION_SM_IRREP_CENSUS_33_GAUGE_GOLDSTONE_IRREPS_AND_10H_SELF_BLOCK_ONLY",
+      "result": "calculations/canonical_so10_full_hessian/RESULT.md",
+      "qualified_stop": "MIXED_126_SECTORS_ALL_PHYSICAL_BLOCKS_AND_EXPLICIT_34_VECTOR_HESSIAN_NULLITY_NOT_YET_DERIVED",
       "complete_explicit_tensor_basis": true,
       "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
       "new_scalar_benchmark_found": false,
@@ -123,6 +123,18 @@
       "scalar_benchmark_search_started": false,
       "result": "calculations/canonical_so10_vacuum_kernel/RESULT.md"
     },
+    "canonical_so10_full_hessian": {
+      "outcome": "FULL_HESSIAN_BLOCKED",
+      "complexified_tangent_dimension_certified": 328,
+      "broken_gauge_irrep_dimension_certified": 33,
+      "independent_pq_goldstone_expected": true,
+      "10h_vector_self_block_derived": true,
+      "all_colored_and_mixed_blocks_derived": false,
+      "explicit_full_hessian_goldstone_replay": false,
+      "generic_exact_witness_rank_checked": false,
+      "scalar_benchmark_search_started": false,
+      "result": "calculations/canonical_so10_full_hessian/RESULT.md"
+    },
     "last_completed_audit": {
       "audit": "REAL_120_PARENT_SO10_REALITY_SIGN_V1",
       "completed_utc": "2026-09-19T03:30:36Z",
@@ -181,7 +193,7 @@
       "interpretation_selected": false,
       "calculation_started": false
     },
-    "active_focus": "CANONICAL_SO10_FULL_SCALAR_HESSIAN_EXTRACTION_PENDING"
+    "active_focus": "CANONICAL_SO10_FULL_SCALAR_HESSIAN_MIXED_BLOCK_EXTRACTION_PENDING"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

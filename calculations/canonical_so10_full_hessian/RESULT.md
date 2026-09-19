@@ -1,0 +1,108 @@
+# Canonical scalar full-Hessian gate: bounded result
+
+## Disposition
+
+**`FULL_HESSIAN_BLOCKED`.** Exact Standard-Model-irrep decomposition now
+accounts for every one of the **328 real tangent directions** after
+complexification, and locates all 33 broken-gauge directions by irrep. The
+action-derived `10_H` quadratic self-block, including its colored entries,
+is explicit. The mixed `126_H`--`10_H` colored blocks, remaining `54_H` and
+`126_H` scalar blocks, direct full-Hessian Goldstone multiplication, and
+generic-witness rank are **not** complete. Thus no complete physical scalar
+spectrum, one-light-Higgs condition, or scalar benchmark is claimed.
+
+This calculation uses only [parent action v1](../canonical_so10_scalar_reconstruction/PARENT_ACTION_V1.md)
+and the previously derived [normalized vacuum](../canonical_so10_vacuum_kernel/RESULT.md).
+The published Babu--Khan scalar matrix was not imported.
+
+## Exact SM-irrep census
+
+The [character calculation](decompose_sm_tangent.py) restricts the D5
+characters of `54`, `126`, `bar126`, two complexified vector `10` copies,
+and the two real singlet directions to the exact unbroken SM embedding.
+For a dominant weight `w=(w0,...,w4)`, the labels are
+
+```text
+SU(3) Dynkin labels: (p,q)=(w0-w1,w1-w2)
+SU(2)L Dynkin label:  n=w3-w4
+six times hypercharge: 6Y=2(w0+w1+w2)-3(w3+w4).
+```
+
+The complexified dimensions are `54+126+126+10+10+2=328`; the full
+irrep table, multiplicities, and exact dimension sum print from the script.
+The largest multiplicity is **five**, so an SM-equivariant Hessian can be
+specified on multiplicity spaces no larger than `5x5` (with appropriate
+real/conjugate pairing). The neutral-singlet multiplicity is five, and the
+`(1,2,+/-1/2)` multiplicities are four on each conjugate side. All
+conjugate-irrep counts agree. These checks also match the prior independent
+SM fixed-subspace and stabilizer calculations.
+
+Subtracting the unbroken SM adjoint (`8+3+1`) from the exact `45` adjoint
+character gives the **33** broken-gauge complexified directions:
+
+```text
+(1,1)_{-1,0,+1}:          3 dimensions total
+(3,1)_{-2/3} + c.c.:      6 dimensions total
+(3,2)_{-1/6} + c.c.:     12 dimensions total
+(3,2)_{+5/6} + c.c.:     12 dimensions total
+```
+
+Here `c.c.` denotes the conjugate SM irrep. Every broken-gauge irrep occurs
+in the scalar tangent. PQ adds an **independent neutral-singlet real** orbit
+direction because the PQ-charged singlet has a nonzero VEV. Therefore the
+stationary full Hessian must have **at least 34 real symmetry zeros**: 33
+gauge plus one PQ. A deliberately massless SM Higgs doublet would add four
+different real zero directions; none was tuned here. The number **exactly**
+34 at a generic stationary witness is not yet verified.
+
+## `10_H` vector self-block, including colored components
+
+The [exact tensor derivation](derive_vector10_self_block.py) obtains, on
+the frozen VEV, `K_ij=16(I_10-iJ_5)_ij` for the unnormalized singlet
+five-form, and `T_ij=0`. An [independent Julia index-loop replay](verify_vector10_self_block.jl)
+confirms both tensors. Write
+
+```text
+b_c=-2 omega/sqrt(60),       b_w=+3 omega/sqrt(60),
+S0=v exp(i thetaS)/sqrt(2), J_5=diag(J_2,J_2,J_2,J_2,J_2),
+J_2=[[0,-1],[1,0]].
+```
+
+On either color (`r=c`, six vector coordinates) or weak (`r=w`, four
+coordinates) subspace, the `10_H` self-quadratic form is
+
+```text
+phi_r^dagger B_r phi_r + [phi_r^T D_r phi_r + h.c.],
+B_r = [mphi² + muPhiPhi b_r + lambdaPhiphi1 omega²
+       + lambdaPhiphi2 b_r² + lambdaSigmaphi1 sigma²
+       + (lambdaVectorS/2) v²] I_r
+       + (lambdaSigmaphi2/2) sigma² (I_r-iJ_r),
+D_r = (z6+zK b_r) conjugate(S0) I_r.
+```
+
+The weak restriction agrees with the previously derived doublet `B,D`
+subblock. The `zK` term splits the *self-block* color and weak holomorphic
+coefficients through `b_c != b_w`; the full physical triplet and doublet
+masses also require their `126_H` mixings. Since `T(Sigma0,Sigma0)=0`,
+`zD` contributes no `10_H` self-quadratic term at this vacuum. No positivity
+or triplet safety is inferred from an isolated self-block.
+
+## Exact stopping boundary
+
+The representation decomposition makes the rest of the job finite and
+small-block, but it does not itself produce Hessian coefficients. The next
+calculation must construct representatives of every SM multiplicity space,
+evaluate every block as second directional derivatives of all 34 parent
+invariants, and independently replay the doublet block. After substituting
+the three action-derived tadpoles, multiply the resulting blocks by the
+**explicit** 33 gauge and one PQ orbit vectors, then test a generic exact
+stationary witness for additional nullity. Only a passing full calculation
+can turn this gate into `CANONICAL_VACUUM_KERNEL_PASS`.
+
+Reproduce the earned portion from repository root:
+
+```powershell
+python calculations/canonical_so10_full_hessian/decompose_sm_tangent.py
+python calculations/canonical_so10_full_hessian/derive_vector10_self_block.py
+& "$env:LOCALAPPDATA\Programs\Julia-1.12.6\bin\julia.exe" --startup-file=no calculations/canonical_so10_full_hessian/verify_vector10_self_block.jl
+```
