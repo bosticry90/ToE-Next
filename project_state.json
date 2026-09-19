@@ -1,6 +1,6 @@
 {
-  "state_version": 12,
-  "updated_utc": "2026-09-19T01:56:04Z",
+  "state_version": 13,
+  "updated_utc": "2026-09-19T02:08:14Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -47,6 +47,16 @@
       "result": "docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md",
       "fit_selected": null,
       "downstream_seam": "NOT_ADMITTED",
+      "calculation_started": false
+    },
+    "last_completed_decision": {
+      "decision": "BABU_KHAN_REFIT_VS_PUBLISHED_FIT_SOURCE_V1",
+      "completed_utc": "2026-09-19T02:08:14Z",
+      "outcome": "NONE_FOR_EXECUTION",
+      "authority": "COMPARATIVE_ROUTE_ADMISSION_ONLY",
+      "result": "docs/FERMION_SOURCE_ROUTE_DECISION.md",
+      "babu_khan_refit_admitted": false,
+      "source_switch_admitted": false,
       "calculation_started": false
     },
     "legacy_relevance_audit": {

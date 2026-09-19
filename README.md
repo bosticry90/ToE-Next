@@ -10,6 +10,8 @@ The [downstream admission audit](docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md) foun
 
 A [published-fit provenance audit](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md) located the numerical point Babu-Khan quoted and a later full-RGE fit. Both are informative comparators but cannot be adopted unchanged under the frozen intermediate-spectrum and scalar-vev assumptions. No fermion benchmark has been selected or reconstructed.
 
+A [fermion-source continuation decision](docs/FERMION_SOURCE_ROUTE_DECISION.md) compared a Babu-Khan-specific refit with switching to a published-fit SO(10) source model. Neither route is admitted for execution yet: the former requires a costed coupled-fit protocol, while the most explicit alternate prints matrices but approximates its Pati-Salam flavor interval. The two passed Babu-Khan gauge-sector boundaries remain intact.
+
 ## Scientific posture
 
 - Novelty is not a requirement.
@@ -39,9 +41,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 14. [`calculations/bk_ht_threshold_audit/RESULT.md`](calculations/bk_ht_threshold_audit/RESULT.md)
 15. [`docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md`](docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md)
 16. [`docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md`](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md)
-17. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-18. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-19. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+17. [`docs/FERMION_SOURCE_ROUTE_DECISION.md`](docs/FERMION_SOURCE_ROUTE_DECISION.md)
+18. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+19. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+20. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
