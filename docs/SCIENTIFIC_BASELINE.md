@@ -51,6 +51,8 @@ This baseline does not choose among proposed explanations of dark matter, dark e
 
 An explanation becomes part of the project only through a precise claim, adequate provenance, explicit assumptions, a recovery obligation, and evidence appropriate to its authority ceiling.
 
+A construction that modifies quantum or gravitational foundations must recover observed quasiclassical behavior in a specified regime, including appropriate interference suppression, stable coarse-grained variables, and effective classical dynamics; this requirement selects no particular interpretation of quantum mechanics.
+
 ## Recovery standard
 
 “Recovering” established physics means more than reproducing suggestive notation. The broader construction must identify the domain, variables, approximations, parameter map, observables, limiting procedure, and error or control conditions under which the accepted lower-level description follows.
