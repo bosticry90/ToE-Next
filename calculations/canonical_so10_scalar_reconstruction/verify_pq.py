@@ -35,7 +35,7 @@ def main():
             if charge(VARIANT, *fields) == 0
         )
         print(f"degree {degree}: {len(neutral)} PQ-neutral scalar field multisets (SO(10) screening pending)")
-    print("PQ arithmetic PASS; SO(10) singlet existence and invariant completeness NOT TESTED")
+    print("PQ arithmetic PASS; SO(10) multiplicities are checked separately in count_d5_singlets.py")
 
 
 if __name__ == "__main__":
