@@ -99,6 +99,15 @@ allowed scalar examples; these conditions have not failed for the model as a
 whole. The quoted complex-`s` literature point fails the Babu-Khan vacuum
 restriction **as-is**, not every possible refit.
 
+**Later calculation qualification:** the admitted [flavor-kernel fail-fast
+attempt](../calculations/bk_ps_flavor_kernel/RESULT.md) found that the
+published `D11` identity (PDF Eq. (36), numbered differently in the HTML
+rendering) omits `1/r` in its `D12` term relative to the paper's own zero-mode
+equations and definitions of `r,s`. The determinant identity remains valid;
+the printed positivity restriction relying on the `D11` expression must not
+be applied unchanged. This is not a model no-go or a verdict on its scalar
+sample points.
+
 A naive charged-sector parameter count is not a no-go: after a common Takagi
 choice for one symmetric matrix, `h` has 3 real diagonal entries, `f` has 12
 real entries, and real `r,s` add 2 (17 continuous parameters before scalar

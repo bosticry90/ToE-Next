@@ -1,6 +1,6 @@
 {
-  "state_version": 21,
-  "updated_utc": "2026-09-19T17:51:17Z",
+  "state_version": 22,
+  "updated_utc": "2026-09-19T18:40:42Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -31,7 +31,7 @@
       "scope": "ONE_LOOP_GAUGE_LEADING_LOG_PS_RUNNING_AND_TREE_LEVEL_MI_MATCHING_ONLY",
       "literature_audit": "REUSABLE_PARTIAL_MACHINERY_FOUND_MODEL_SPECIFIC_COMPLETION_REQUIRED"
     },
-    "last_completed_calculation": {
+    "last_passed_calculation": {
       "calculation": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1",
       "completed_utc": "2026-09-19T01:12:37Z",
       "outcome": "PASS",
@@ -40,6 +40,26 @@
       "threshold_qualification": "ONE_PS_COEFFICIENT_RUNS_BEFORE_K1_K2_BROKEN_PHASE_PROJECTION",
       "spectrum_qualification": "PUBLISHED_BETA_LEDGER_INCLUDES_INTERMEDIATE_SIGMA1_SEXTET_HT_IS_MU_THRESHOLD_FIELD",
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
+    },
+    "last_completed_calculation": {
+      "calculation": "BK_PS_FLAVOR_RGE_AND_MI_MATCHING_KERNEL_V1",
+      "completed_utc": "2026-09-19T18:40:42Z",
+      "outcome": "STOPPED_AT_SOURCE_PROJECTOR_INCONSISTENCY",
+      "authority": "UNIVERSAL_ONE_LOOP_YUKAWA_GAUGE_TERMS_AND_EXACT_PRINTED_D11_COUNTEREXAMPLE_ONLY",
+      "result": "calculations/bk_ps_flavor_kernel/RESULT.md",
+      "complete_ps_yukawa_rges": false,
+      "mi_light_higgs_matching": false,
+      "fermion_fit_started": false,
+      "downstream_running_started": false,
+      "model_refuted": false
+    },
+    "babu_khan_flavor_kernel_admission": {
+      "outcome": "ADMITTED_EXECUTED_STOPPED_AT_FAIL_FAST_BOUNDARY",
+      "seam": "BK_PS_FLAVOR_RGE_AND_MI_MATCHING_KERNEL",
+      "calculation": "BK_PS_FLAVOR_RGE_AND_MI_MATCHING_KERNEL_V1",
+      "status": "STOPPED_AT_SOURCE_PROJECTOR_INCONSISTENCY",
+      "result": "calculations/bk_ps_flavor_kernel/RESULT.md",
+      "active": false
     },
     "last_completed_audit": {
       "audit": "REAL_120_PARENT_SO10_REALITY_SIGN_V1",
