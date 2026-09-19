@@ -12,6 +12,8 @@ A [published-fit provenance audit](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.m
 
 A [fermion-source continuation decision](docs/FERMION_SOURCE_ROUTE_DECISION.md) compared a Babu-Khan-specific refit with switching to a published-fit SO(10) source model. Neither route is admitted for execution yet: the former requires a costed coupled-fit protocol, while the most explicit alternate prints matrices but approximates its Pati-Salam flavor interval. The two passed Babu-Khan gauge-sector boundaries remain intact.
 
+A [proactive Babu-Khan fit-feasibility analysis](docs/BABU_KHAN_FIT_FEASIBILITY.md) derives exact two-matrix and scalar candidate-point checks, then identifies the missing model-specific Pati-Salam flavor-running and one-light-doublet matching kernel. It finds no optimization-free model no-go, but does not admit a fit before that theory kernel is derived and validated; no optimizer was run.
+
 A bounded [audit of the explicit 2024 normal-ordering point](calculations/bdfss_2024_point_audit/RESULT.md) independently reconstructs its printed mass matrices and heavy-neutrino spectrum. An [independent parent-`SO(10)` sign derivation](calculations/real_120_sign_audit/RESULT.md) confirms that its unchanged real-`120_H` point violates the required opposite bidoublet conjugation signs. Its Pati-Salam flavor-running approximation and co-frozen threshold ordering remain uncontrolled. This specific point is not admitted as a replacement source; no refit or downstream BNV running began.
 
 The particle-unification route is paused at its model-specific flavor boundary, preserving both passed gauge-sector recovery steps. A separate [gravity source-framework comparison](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md) retains low-energy GR EFT as the baseline/control but admits no gravity source or active seam; no gravity calculation has begun.
@@ -54,15 +56,16 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 15. [`docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md`](docs/BABU_KHAN_SMEFT_N_THRESHOLD_AUDIT.md)
 16. [`docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md`](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md)
 17. [`docs/FERMION_SOURCE_ROUTE_DECISION.md`](docs/FERMION_SOURCE_ROUTE_DECISION.md)
-18. [`calculations/bdfss_2024_point_audit/RESULT.md`](calculations/bdfss_2024_point_audit/RESULT.md)
-19. [`docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md`](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md)
-20. [`docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md`](docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md)
-21. [`docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md`](docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md)
-22. [`docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md`](docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md)
-23. [`docs/PROJECT_WIDE_SEAM_REFRESH.md`](docs/PROJECT_WIDE_SEAM_REFRESH.md)
-24. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-25. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-26. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+18. [`docs/BABU_KHAN_FIT_FEASIBILITY.md`](docs/BABU_KHAN_FIT_FEASIBILITY.md)
+19. [`calculations/bdfss_2024_point_audit/RESULT.md`](calculations/bdfss_2024_point_audit/RESULT.md)
+20. [`docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md`](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md)
+21. [`docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md`](docs/JOINT_SM_GR_EFT_REFERENCE_AUDIT.md)
+22. [`docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md`](docs/MASSLESS_SPIN2_ASSUMPTION_COMPRESSION_AUDIT.md)
+23. [`docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md`](docs/QUASICLASSICAL_RECOVERY_REFERENCE_AUDIT.md)
+24. [`docs/PROJECT_WIDE_SEAM_REFRESH.md`](docs/PROJECT_WIDE_SEAM_REFRESH.md)
+25. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+26. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+27. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
