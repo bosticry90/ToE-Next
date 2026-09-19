@@ -178,7 +178,7 @@ def main():
     assert counts == {2: 6, 3: 12, 4: 26}
     print(f"TOTAL PQ-neutral field multisets={sum(counts.values())}; singlet-bearing multisets={sum(supported.values())}; complex singlet slots={total}")
     print(f"SINGLET_BEARING_BY_DEGREE {dict(supported)}")
-    print("Explicit contraction rank, Hermitian conjugation, phase quotient, and accidental symmetries UNRESOLVED")
+    print("This character-count script supplies upper bounds; explicit rank and Hermitian closure are checked separately in the v2 action gate.")
 
 
 if __name__ == "__main__":

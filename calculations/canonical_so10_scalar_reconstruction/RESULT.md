@@ -1,5 +1,9 @@
 # Canonical SO(10) scalar invariant gate: representation count and eta1 witness
 
+**Historical v1 gate.** The later [v2 result](RESULT_V2.md) confirms the
+doublet component and closes the complete explicit basis. The unresolved
+status below records what had *not yet* been earned at this earlier gate.
+
 ## Disposition
 
 **`ETA1_NEUTRAL_INVARIANT_EXISTS`**, with multiplicity **one** in `Sym²(126) x bar126 x 10`. The broader outcome is **`INVARIANT_BASIS_UNRESOLVED`**: all renormalizable PQ-neutral scalar *singlet multiplicities* have been counted, but an explicit, exact-rank `delta/epsilon` contraction basis has not been certified for every multiset. Consequently there is still no frozen parent scalar action, vacuum calculation, benchmark search, or fermion fit. The [canonical variant definition](RECORD.md) remains distinct from the [printed Babu–Khan scalar model](https://arxiv.org/html/1507.06712v2).
