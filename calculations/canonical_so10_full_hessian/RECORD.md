@@ -55,6 +55,10 @@
     33+1 orbit-vector rank, and complete neutral-singlet `5x5` Hessian with
     its two checked null vectors are earned. Exact directional parent-action
     quadratics vanish for all 45 Lie-basis directions after tadpoles, and
-    four mixed `Phi+Sigma` bilinear probes pass. Mixed and remaining colored
-    blocks, 34-vector *full-Hessian* multiplication, and full generic-witness
-    nullity remain unearned.
+    four mixed `Phi+Sigma` bilinear probes pass. An exact all-29-monomial
+    bilinear oracle now reproduces the known `10_H` self and `eta` doublet
+    entries and passes four additional off-diagonal `B(e,g)=0` probes. A
+    nonzero-coupling exact stationary witness and per-irrep rank targets are
+    frozen; its neutral radial rank is three. Mixed and remaining colored
+    blocks, 34-vector *full-Hessian* multiplication, and full witness rank
+    remain unearned.

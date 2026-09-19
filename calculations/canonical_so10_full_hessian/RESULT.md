@@ -13,6 +13,47 @@ direct **full-Hessian** Goldstone multiplication, and full generic-witness
 rank are **not** complete. Thus no complete physical scalar
 spectrum, one-light-Higgs condition, or scalar benchmark is claimed.
 
+## Exact bilinear oracle and stronger row probes
+
+[`parent_bilinear_oracle.py`](parent_bilinear_oracle.py) evaluates every one
+of the 24 Hermitian and five complex frozen parent monomials on exact raw
+tensor states. For a real tangent direction `u`, it extracts the exact
+quadratic coefficient `Q(u)` using five-point interpolation (valid because
+the parent potential is quartic). Polarization gives
+
+```text
+B(u,v) = Q(u+v) - Q(u) - Q(v).
+```
+
+The module checks the frozen parent-action SHA-256 before evaluation. Its
+[`regression controls`](verify_oracle_controls.py) reproduce the known
+`10_H` color/weak self terms, `z6`, `z4`, the new `zK` contribution, and
+the independently derived `eta` doublet mixing. The raw `126` doublet
+representative is `sqrt(3)` times the previously normalized one, so the
+raw `z4` bilinear is `-60` rather than `-20`; the `eta` mixed bilinear is
+`192` in the same raw convention.
+
+[`verify_oracle_goldstone_rows.py`](verify_oracle_goldstone_rows.py) then
+computes **off-diagonal** `B(e,g)` values for four probes spanning `54`,
+`126`, and `10` sectors against two broken generators. All four vanish
+exactly after the three action-derived tadpole masses are substituted;
+the complex monomial coefficients separately vanish in these probes.
+These are stronger than `B(g,g)=0`, but four rows are **not** a basis of the
+Goldstone-containing SM blocks and therefore do not certify all 34
+full-Hessian null vectors.
+
+[`define_generic_nullity_test.py`](define_generic_nullity_test.py) freezes a
+nonzero rational/Gaussian-rational coefficient assignment at the raw VEV
+`omega=sqrt(60), sigma=4sqrt(2), v=sqrt(2)`, solves only the three radial
+tadpoles for `mPhi2,mSigma2,mS2`, and verifies them against the generated
+vacuum polynomial. Its neutral radial block has rank three. The script
+prints the required nullity and target rank for every exact SM irrep. Their
+dimension-weighted totals are **34 null directions and rank 294**. This is
+an *acceptance specification*, not an attained full-Hessian result. Once
+every block is calculated, attaining rank 294 at this exact witness would
+prove maximal generic rank on the stationary parameter branch, because
+the 34 symmetry directions provide the opposite rank bound.
+
 This calculation uses only [parent action v1](../canonical_so10_scalar_reconstruction/PARENT_ACTION_V1.md)
 and the previously derived [normalized vacuum](../canonical_so10_vacuum_kernel/RESULT.md).
 The published Babu--Khan scalar matrix was not imported.
@@ -70,9 +111,10 @@ It finds three exact raw quadratic patterns (multiplicities 5, 16, 24).
 A [focused charged-singlet replay](check_charged_singlet_goldstone.py) and
 four [mixed `Phi+Sigma` polarization probes](probe_mixed_orbit_bilinear.py)
 pass as adversarial checks. These verify `g^T H g=0` for the Lie basis and
-`g^T H h=0` for the four chosen mixed probes. They do **not** establish
-`H g=0` against a basis of all 328 real fields; `phi`/`S` mixed probes and
-complete irrep blocks remain absent.
+`g^T H h=0` for the four chosen mixed probes. The new bilinear oracle
+adds four more `B(e,g)=0` checks, including a `10_H` probe. These still do
+**not** establish `H g=0` against a basis of all 328 real fields; complete
+irrep blocks remain absent.
 
 ## Complete neutral-singlet block
 
@@ -144,4 +186,8 @@ python calculations/canonical_so10_full_hessian/derive_vector10_self_block.py
 python calculations/canonical_so10_full_hessian/check_charged_singlet_goldstone.py
 python calculations/canonical_so10_full_hessian/check_gauge_orbit_quadratics.py
 python calculations/canonical_so10_full_hessian/probe_mixed_orbit_bilinear.py
+python calculations/canonical_so10_full_hessian/parent_bilinear_oracle.py
+python calculations/canonical_so10_full_hessian/verify_oracle_controls.py
+python calculations/canonical_so10_full_hessian/verify_oracle_goldstone_rows.py
+python calculations/canonical_so10_full_hessian/define_generic_nullity_test.py
 ```
