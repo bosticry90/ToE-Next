@@ -2,9 +2,9 @@
 
 ToE-Next is a research project seeking the most coherent and complete unification obtainable from established physics, serious existing unification frameworks, surviving project results, and new physics only where evidence or mathematical consistency requires it.
 
-The project has an initial dependency scaffold and one completed, model-specific recovery map. Its first calculation passed: the Babu–Khan non-supersymmetric SO(10) heavy-vector boundary maps through the model's Pati–Salam intermediate symmetry into `Q_qque` and `Q_duql` in standard dimension-six BNV SMEFT, while the right-handed-neutrino term remains separately identified as `Q_qqdN`.
+The project has an initial dependency scaffold and one model-specific recovery chain with two completed bounded steps. Its first calculation passed: the Babu–Khan non-supersymmetric SO(10) heavy-vector boundary maps through the model's Pati–Salam intermediate symmetry into `Q_qque` and `Q_duql` in standard dimension-six BNV SMEFT, while the right-handed-neutrino term remains separately identified as `Q_qqdN`.
 
-A focused primary-literature audit has admitted the next calculation but has not executed it. The active seam is limited to one-loop gauge-only leading-log evolution of the single Pati-Salam BNV coefficient and tree-level matching at `M_I`. Running below `M_I`, right-handed-neutrino threshold matching, hadronic work, and proton-lifetime calculation remain inactive.
+A focused primary-literature audit admitted the next calculation, which also passed. The single Pati-Salam BNV coefficient now has a verified one-loop gauge-leading-log evolution factor and is projected only afterward at `M_I` into the full-flavor SMEFT and SMEFT-plus-`N` boundary. The result is explicitly qualified by Babu-Khan's published high-scale-sextet beta convention. Running below `M_I`, right-handed-neutrino threshold matching, hadronic work, and proton-lifetime calculation remain inactive.
 
 ## Scientific posture
 
@@ -30,9 +30,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 9. [`docs/BABU_KHAN_SO10_BNV_MATCHING.md`](docs/BABU_KHAN_SO10_BNV_MATCHING.md)
 10. [`calculations/bk_so10_bnv_matching/RESULT.md`](calculations/bk_so10_bnv_matching/RESULT.md)
 11. [`docs/BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md`](docs/BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md)
-12. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-13. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-14. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+12. [`calculations/bk_ps_bnv_running_mi_matching/RESULT.md`](calculations/bk_ps_bnv_running_mi_matching/RESULT.md)
+13. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+14. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+15. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
@@ -40,5 +41,6 @@ Repository structure is created only when concrete scientific work requires it. 
 - [`tools/julia/`](tools/julia/) contains a small locked environment for Nemo and OrdinaryDiffEq plus one readiness smoke test;
 - [`tools/readiness/check-c-only.ps1`](tools/readiness/check-c-only.ps1) checks that the active project and its computational stack operate from C: without the legacy custody drive.
 - [`calculations/bk_so10_bnv_matching/`](calculations/bk_so10_bnv_matching/) contains the first calculation's compact derivation, coefficient map, and independent exact replays.
+- [`calculations/bk_ps_bnv_running_mi_matching/`](calculations/bk_ps_bnv_running_mi_matching/) contains the exact Pati-Salam beta ledger, gauge-running derivation, `M_I` projector, and independent replay.
 
 No model hierarchy, broad calculation framework, dataset, historical scientific tree, environment payload, or bulk generated result is stored here. The machine-level runtimes and package caches remain external to Git.

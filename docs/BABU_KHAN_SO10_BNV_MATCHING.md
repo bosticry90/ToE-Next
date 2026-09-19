@@ -191,7 +191,7 @@ The complete derivation, coefficient tensors, convention ledger, executable repl
 - `Q_qqql`, `Q_duue`, and `Q_uddN` are zero at this tree-level gauge boundary;
 - the unequal pole coefficients are Pati–Salam-breaking threshold projections, not independent Pati–Salam-covariant coefficients above `M_I`.
 
-No downstream work was executed in this calculation. The subsequent [focused literature audit and admission decision](BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md) admits one gauge-leading-log Pati-Salam-running and tree-level intermediate-threshold calculation. That later calculation remains `READY_NOT_STARTED`.
+No downstream work was executed in this calculation. The subsequent [focused literature audit and admission decision](BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md) admitted one gauge-leading-log Pati-Salam-running and tree-level intermediate-threshold calculation, which later resolved [`PASS`](../calculations/bk_ps_bnv_running_mi_matching/RESULT.md) at its bounded authority ceiling.
 
 ## Downstream anchors, not active inputs
 

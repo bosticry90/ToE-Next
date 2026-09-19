@@ -1,43 +1,42 @@
 {
-  "state_version": 8,
-  "updated_utc": "2026-09-19T00:57:01Z",
+  "state_version": 9,
+  "updated_utc": "2026-09-19T01:12:37Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
-    "active_physics_calculation": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1",
-    "active_seams": [
-      "BK_PS_BNV_GAUGE_LL_TO_MI_TREE_MATCH"
-    ]
+    "active_physics_calculation": null,
+    "active_seams": []
   },
   "scaffold": {
     "ecosystem_survey": "INITIAL_NO_INSTALL_AUDIT_COMPLETE",
     "dependency_scaffold": "INITIAL_MAP_ESTABLISHED",
     "seam_selection": {
-      "outcome": "FIRST_SELECTED_SEAM_RESOLVED_PASS",
+      "outcome": "SELECTED_PROGRAM_TWO_BOUNDARIES_RESOLVED_PASS",
       "initial_outcome": "NONE_CURRENTLY_ADMISSIBLE",
       "leading_relation_class": "UV_OR_UNIFIED_PARTICLE_CANDIDATE_TO_SMEFT_OR_WET"
     },
     "source_theory_selection": {
-      "outcome": "WORKING_CANDIDATE_FIRST_BOUNDARY_PASSED",
+      "outcome": "WORKING_CANDIDATE_SECOND_BOUNDARY_PASSED",
       "candidate": "BABU_KHAN_2015_NONSUPERSYMMETRIC_SO10_54H_126H_10H",
       "authority": "WORKING_CANDIDATE_NOT_ACCEPTED",
       "candidate_relation": "HEAVY_VECTOR_TO_PATI_SALAM_BNV_EFT_TO_DIMENSION_6_BNV_SMEFT_TO_NUCLEON_DECAY"
     },
     "seam_admission": {
-      "outcome": "ADMITTED",
+      "outcome": "ADMITTED_AND_RESOLVED",
       "seam": "BK_PS_BNV_GAUGE_LL_TO_MI_TREE_MATCH",
       "calculation": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1",
-      "status": "READY_NOT_STARTED",
+      "status": "PASS",
       "scope": "ONE_LOOP_GAUGE_LEADING_LOG_PS_RUNNING_AND_TREE_LEVEL_MI_MATCHING_ONLY",
       "literature_audit": "REUSABLE_PARTIAL_MACHINERY_FOUND_MODEL_SPECIFIC_COMPLETION_REQUIRED"
     },
     "last_completed_calculation": {
-      "calculation": "BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT_TREE_MATCHING_V1",
-      "completed_utc": "2026-09-18T23:50:50Z",
+      "calculation": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1",
+      "completed_utc": "2026-09-19T01:12:37Z",
       "outcome": "PASS",
-      "authority": "TREE_LEVEL_WEAK_BASIS_OPERATOR_MAP_ONLY",
-      "result": "calculations/bk_so10_bnv_matching/RESULT.md",
-      "threshold_qualification": "UNEQUAL_K1_K2_ARE_PATI_SALAM_BREAKING_PROJECTIONS_NOT_INDEPENDENT_PS_COEFFICIENTS",
+      "authority": "ONE_LOOP_GAUGE_LEADING_LOG_PS_RUNNING_AND_TREE_LEVEL_MI_MATCHING_ONLY",
+      "result": "calculations/bk_ps_bnv_running_mi_matching/RESULT.md",
+      "threshold_qualification": "ONE_PS_COEFFICIENT_RUNS_BEFORE_K1_K2_BROKEN_PHASE_PROJECTION",
+      "spectrum_qualification": "PUBLISHED_BETA_LEDGER_INCLUDES_HIGH_SCALE_HT_SEXTET",
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "legacy_relevance_audit": {
@@ -45,7 +44,7 @@
       "outcome": "NO_MATERIAL_CHANGE_REUSABLE_METHODS_IDENTIFIED",
       "local_custody_freeze_commit": "a7ac8ddb2457ed4f44dca8ddab6aa6874dd610e3"
     },
-    "active_focus": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1"
+    "active_focus": null
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

@@ -2,17 +2,18 @@
 
 ## Current state
 
-There is one active seam and one admitted calculation that has not started.
+There are no active seams and no active physics calculation.
 
 ```text
-active_seams = [BK_PS_BNV_GAUGE_LL_TO_MI_TREE_MATCH]
-active_physics_calculation = BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1
-status = READY_NOT_STARTED
+active_seams = []
+active_physics_calculation = null
 ```
 
 The first admitted seam, `BK_SO10_HEAVY_VECTOR_PS_TO_D6_BNV_SMEFT`, resolved `PASS` at its tree-level authority ceiling. The [admission record](BABU_KHAN_SO10_BNV_MATCHING.md) and [calculation result](../calculations/bk_so10_bnv_matching/RESULT.md) preserve the derivation and qualification.
 
-The focused [Pati-Salam literature audit and admission record](BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md) found reusable gauge-leading-log and tree-level matching machinery and admitted the next bounded seam. The calculation is limited to one-loop gauge-only running of the single Pati-Salam coefficient and tree-level projection at `M_I`. No running has yet been executed. No SMEFT/SMNEFT evolution below `M_I`, right-handed-neutrino threshold, LEFT/chiral matching, lifetime calculation, other source theory, or other relation class is active.
+The focused [Pati-Salam literature audit and admission record](BABU_KHAN_PS_RUNNING_AND_MI_MATCHING.md) found reusable gauge-leading-log and tree-level matching machinery and admitted the next bounded seam. Its [calculation result](../calculations/bk_ps_bnv_running_mi_matching/RESULT.md) resolved `PASS` at the one-loop gauge-leading-log and tree-level `M_I` matching ceiling. The result is qualified by the published high-scale-sextet beta convention.
+
+No SMEFT/SMNEFT evolution below `M_I`, right-handed-neutrino threshold, LEFT/chiral matching, lifetime calculation, other source theory, or other relation class is active.
 
 ## Definition
 

@@ -1,0 +1,103 @@
+{
+  "calculation": "BK_PS_BNV_GAUGE_LL_RUNNING_AND_MI_TREE_MATCHING_V1",
+  "completed_utc": "2026-09-19T01:12:37Z",
+  "disposition": "PASS",
+  "authority": "ONE_LOOP_GAUGE_LEADING_LOG_PS_RUNNING_AND_TREE_LEVEL_MI_MATCHING_ONLY",
+  "source_model": "BABU_KHAN_2015_NONSUPERSYMMETRIC_SO10_54H_126H_10H",
+  "intermediate_group": "SU4C_X_SU2L_X_SU2R_X_D",
+  "beta_convention": "d(alpha_i^-1)/dln(mu)=-a_i/(2*pi)",
+  "wilson_rge": "dln(C_PS)/dln(mu)=-sum_i(gamma_i*alpha_i)/(2*pi)",
+  "one_loop_beta_coefficients": {
+    "group_order": [
+      "SU4C",
+      "SU2L",
+      "SU2R"
+    ],
+    "values": [
+      "1",
+      "26/3",
+      "26/3"
+    ]
+  },
+  "gauge_anomalous_factors": {
+    "group_order": [
+      "SU4C",
+      "SU2L",
+      "SU2R"
+    ],
+    "values": [
+      "15/4",
+      "9/4",
+      "9/4"
+    ]
+  },
+  "running_exponents": {
+    "group_order": [
+      "SU4C",
+      "SU2L",
+      "SU2R"
+    ],
+    "values": [
+      "-15/4",
+      "-27/104",
+      "-27/104"
+    ],
+    "d_parity_reduction": "A_PS=r4^(-15/4)*r2^(-27/52)"
+  },
+  "running_factor": "A_PS=[alpha_4(M_I)/alpha_U]^(-15/4)*[alpha_2L(M_I)/alpha_U]^(-27/104)*[alpha_2R(M_I)/alpha_U]^(-27/104)",
+  "coefficient_boundary": {
+    "C_qque_prst": "A_PS*k1_squared*(delta_ps*delta_rt+delta_rs*delta_pt)",
+    "C_duql_prst": "2*A_PS*(k1_squared*delta_rs*delta_pt+k2_squared*delta_ps*delta_rt)",
+    "C_qqql_prst": "0",
+    "C_duue_prst": "0",
+    "C_qqdN_prst": "-A_PS*k2_squared*(delta_ps*delta_rt+delta_rs*delta_pt)",
+    "C_uddN_prst": "0"
+  },
+  "threshold_ordering": "ONE_COMMON_PS_COEFFICIENT_RUNS_TO_MI_BEFORE_K1_K2_BROKEN_PHASE_PROJECTION",
+  "right_handed_neutrino": "RETAINED_IN_SMEFT_PLUS_N_NO_N_THRESHOLD_TAKEN",
+  "high_scale_sextet_qualification": {
+    "field": "H_T=(6,1,1)",
+    "published_convention": "INCLUDED_IN_BABU_KHAN_PS_BETA_LEDGER",
+    "with_field": {
+      "a_4C": "1",
+      "b_4C_4C": "1209/2"
+    },
+    "without_field": {
+      "a_4C": "2/3",
+      "b_4C_4C": "3551/6"
+    },
+    "authority_effect": "RESULT_APPLIES_TO_PUBLISHED_STEP_SPECTRUM_CONVENTION_FINITE_MU_THRESHOLD_NOT_RESOLVED"
+  },
+  "verification": {
+    "python_sympy_primary": "PASS",
+    "julia_nemo_independent_replay": "PASS",
+    "published_one_loop_beta_ledger": "PASS",
+    "published_two_loop_beta_matrix_cross_check": "PASS",
+    "anomalous_casimir_reconstruction": "PASS",
+    "sign_orientation_reconciliation": "PASS",
+    "d_parity": "PASS",
+    "full_flavor_tensor": "PASS",
+    "zero_running_tree_boundary": "PASS",
+    "right_handed_neutrino_retention": "PASS"
+  },
+  "tool_versions": {
+    "python": "3.10.11",
+    "sympy": "1.14.0",
+    "julia": "1.12.6",
+    "nemo": "0.56.1"
+  },
+  "source_hashes_sha256": {
+    "verify_running.py": "7de98bc5223dca877eb1e42bb6710378d7d232f0345589be30ea13a2bb6f23bd",
+    "verify_running.jl": "f3c56f1e9fe4dd85488fccb5191742e0071cca986e7eec6f1efb92e4598dd0dd"
+  },
+  "downstream": {
+    "status": "AUTHORIZED_FOR_SEPARATE_ADMISSION",
+    "not_performed": [
+      "SMEFT_OR_SMNEFT_RUNNING_BELOW_MI",
+      "RIGHT_HANDED_NEUTRINO_THRESHOLD",
+      "LEFT_OR_CHIRAL_MATCHING",
+      "HADRONIC_MATRIX_ELEMENTS",
+      "PROTON_LIFETIME_OR_EXPERIMENTAL_COMPARISON"
+    ]
+  }
+}
