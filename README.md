@@ -14,6 +14,8 @@ A [fermion-source continuation decision](docs/FERMION_SOURCE_ROUTE_DECISION.md) 
 
 A bounded [audit of the explicit 2024 normal-ordering point](calculations/bdfss_2024_point_audit/RESULT.md) independently reconstructs its printed mass matrices and heavy-neutrino spectrum. An [independent parent-`SO(10)` sign derivation](calculations/real_120_sign_audit/RESULT.md) confirms that its unchanged real-`120_H` point violates the required opposite bidoublet conjugation signs. Its Pati-Salam flavor-running approximation and co-frozen threshold ordering remain uncontrolled. This specific point is not admitted as a replacement source; no refit or downstream BNV running began.
 
+The particle-unification route is paused at its model-specific flavor boundary, preserving both passed gauge-sector recovery steps. A separate [gravity source-framework comparison](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md) retains low-energy GR EFT as the baseline/control but admits no gravity source or active seam; no gravity calculation has begun.
+
 ## Scientific posture
 
 - Novelty is not a requirement.
@@ -45,9 +47,10 @@ The sole machine-readable project-state authority is [`project_state.json`](proj
 16. [`docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md`](docs/BABU_KHAN_FERMION_FIT_PROVENANCE_AUDIT.md)
 17. [`docs/FERMION_SOURCE_ROUTE_DECISION.md`](docs/FERMION_SOURCE_ROUTE_DECISION.md)
 18. [`calculations/bdfss_2024_point_audit/RESULT.md`](calculations/bdfss_2024_point_audit/RESULT.md)
-19. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
-20. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
-21. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
+19. [`docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md`](docs/GRAVITY_SOURCE_FRAMEWORK_COMPARISON.md)
+20. [`docs/OPEN_SEAMS.md`](docs/OPEN_SEAMS.md)
+21. [`docs/PROVENANCE_AND_AUTHORITY.md`](docs/PROVENANCE_AND_AUTHORITY.md)
+22. [`docs/LEGACY_HANDOFF.md`](docs/LEGACY_HANDOFF.md)
 
 Repository structure is created only when concrete scientific work requires it. The first earned implementation surface is deliberately narrow:
 
