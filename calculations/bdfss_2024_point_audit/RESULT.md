@@ -21,6 +21,9 @@ this printed point, not a refutation of the `10_R+120_R+126bar` model class.
 The later reality-condition result is a 2026 primary preprint; its parent-group
 sign derivation has not been reproduced here. The conditional algebraic
 consequence for the 2024 point *has* been independently checked.
+The separate [parent-SO(10) sign audit](../real_120_sign_audit/RESULT.md)
+subsequently reconstructed the opposite signs independently, so this
+historical conditional qualification is now resolved for the unchanged point.
 
 ## Sources and frozen inputs
 
