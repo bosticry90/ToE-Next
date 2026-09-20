@@ -1,0 +1,35 @@
+{
+  "authority": "coarse_complete_multiplets_only_not_canonical_threshold_matching",
+  "inputs": {
+    "MZ_GeV": 91.1876,
+    "alpha_em_MSbar_inverse_MZ": 127.93,
+    "sin2theta_MSbar_MZ": 0.23122,
+    "alpha_s_MSbar_MZ": 0.118
+  },
+  "SM_one_loop_b": [
+    4.1,
+    -3.1666666666666665,
+    -7
+  ],
+  "PS_one_loop_b_4_L_R": [
+    1.333333333333334,
+    8.666666666666668,
+    8.666666666666668
+  ],
+  "log_MI_over_MZ": 27.040687546779058,
+  "MI_GeV": 50530916343109.64,
+  "log_MU_over_MI": 3.948158148061944,
+  "MU_over_MI": 51.83979761796426,
+  "MU_GeV": 2619512476677083.5,
+  "alpha_U_inverse": 37.76236470440305,
+  "g_U": 0.5768665288016357,
+  "vector_hierarchy_mass_ratio_range": [
+    4.08248290463863,
+    9.128709291752768
+  ],
+  "inverse_coupling_difference_shift_needed_for_vector_ratio_range": [
+    2.0270050124930576,
+    2.966221676825481
+  ],
+  "comparison_only": "The canonical vector Gram hierarchy is much shorter than the coarse crossing ratio; split thresholds and matching are essential before judging the point."
+}

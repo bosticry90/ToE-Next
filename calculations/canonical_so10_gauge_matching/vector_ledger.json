@@ -1,0 +1,54 @@
+{
+  "normalization": "Tr_10(T_a T_b)=delta_ab; raw generators divided by sqrt(2)",
+  "formula": "M_vector^2/(g10^2 omega^2)=raw_kinetic_orbit_Gram_eigenvalue/120",
+  "omega_squared": 60,
+  "unbroken_SM_vectors": 12,
+  "mass_sets": [
+    {
+      "raw_gram_eigenvalue": 0.6,
+      "real_vectors": 8,
+      "mass_squared_over_g10_squared_omega_squared": 0.005,
+      "mass_over_g10_omega": 0.07071067811865475,
+      "hypercharge_y6_squared_multiplicities": {
+        "16": 6,
+        "36": 2
+      },
+      "sm_representations_inferred_from_adjoint_branching": "(3,1,+2/3)+c.c. and (1,1,+1)+c.c."
+    },
+    {
+      "raw_gram_eigenvalue": 3.0,
+      "real_vectors": 1,
+      "mass_squared_over_g10_squared_omega_squared": 0.025,
+      "mass_over_g10_omega": 0.15811388300841897,
+      "hypercharge_y6_squared_multiplicities": {
+        "0": 1
+      },
+      "sm_representations_inferred_from_adjoint_branching": "(1,1,0)"
+    },
+    {
+      "raw_gram_eigenvalue": 50.0,
+      "real_vectors": 12,
+      "mass_squared_over_g10_squared_omega_squared": 0.4166666666666667,
+      "mass_over_g10_omega": 0.6454972243679028,
+      "hypercharge_y6_squared_multiplicities": {
+        "25": 12
+      },
+      "sm_representations_inferred_from_adjoint_branching": "(3,2,+5/6)+c.c."
+    },
+    {
+      "raw_gram_eigenvalue": 50.6,
+      "real_vectors": 12,
+      "mass_squared_over_g10_squared_omega_squared": 0.4216666666666667,
+      "mass_over_g10_omega": 0.649358657959272,
+      "hypercharge_y6_squared_multiplicities": {
+        "1": 12
+      },
+      "sm_representations_inferred_from_adjoint_branching": "(3,2,+1/6)+c.c."
+    }
+  ],
+  "PS_to_SM_broken": 9,
+  "Spin10_to_PS_broken": 24,
+  "min_high_over_max_intermediate_mass": 4.08248290463863,
+  "min_high_over_min_intermediate_mass": 9.128709291752768,
+  "assignment_caveat": "SM labels use adjoint branching plus exact hypercharge-eigenspace counts; a full SU3/SU2 projector and one-loop massive-vector threshold matching have not been independently frozen."
+}

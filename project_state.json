@@ -1,6 +1,6 @@
 {
-  "state_version": 34,
-  "updated_utc": "2026-09-20T02:48:32Z",
+  "state_version": 35,
+  "updated_utc": "2026-09-20T16:45:07Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,18 +42,16 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_POSITIVE_SCALAR_BENCHMARK_SEARCH_V1",
-      "completed_utc": "2026-09-20T02:48:32Z",
-      "outcome": "CANONICAL_SCALAR_BENCHMARK_FOUND",
-      "authority": "LOCAL_HIGH_SCALE_SCALAR_POSITIVITY_AND_ONE_ALGEBRAIC_LIGHT_HIGGS_TUNING_ONLY",
-      "result": "calculations/canonical_so10_scalar_benchmark/RESULT.md",
-      "qualified_stop": "GLOBAL_BOUNDEDNESS_LOOP_PERTURBATIVITY_FLAVOR_BNV_AND_PHENOMENOLOGICAL_VIABILITY_NOT_ESTABLISHED",
-      "complete_explicit_tensor_basis": true,
-      "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
-      "new_scalar_benchmark_found": true,
-      "scalar_point_search_started": true,
+      "calculation": "CANONICAL_SO10_GAUGE_MATCHING_V1",
+      "completed_utc": "2026-09-20T16:45:07Z",
+      "outcome": "GAUGE_MATCHING_BLOCKED",
+      "authority": "CANONICAL_SM_SCALAR_VECTOR_THRESHOLD_INGREDIENTS_AND_COARSE_ONE_LOOP_DIAGNOSTIC_ONLY",
+      "result": "calculations/canonical_so10_gauge_matching/RESULT.md",
+      "qualified_stop": "PS_COVARIANT_SPLIT_THRESHOLD_AND_ONE_LOOP_MATCHING_KERNEL_NOT_DERIVED",
+      "bfb_status": "BFB_UNRESOLVED",
+      "physical_scale_fixed": false,
       "fermion_fit_started": false,
-      "downstream_running_started": false
+      "proton_decay_started": false
     },
     "babu_khan_flavor_kernel_admission": {
       "outcome": "ADMITTED_EXECUTED_STOPPED_AT_FAIL_FAST_BOUNDARY",
@@ -226,7 +224,18 @@
       "fermion_fit_started": false,
       "result": "calculations/canonical_so10_scalar_benchmark/RESULT.md"
     },
-    "active_focus": "CANONICAL_SO10_SCALAR_BENCHMARK_FOUND_FLAVOR_KERNEL_NOT_YET_RESUMED"
+    "canonical_so10_gauge_matching": {
+      "outcome": "GAUGE_MATCHING_BLOCKED",
+      "bfb_status": "BFB_UNRESOLVED",
+      "sm_scalar_ledger_complete": true,
+      "heavy_vector_mass_ledger_complete": true,
+      "tree_hypercharge_normalization_checked": true,
+      "coarse_one_loop_crossing": "DIAGNOSTIC_ONLY",
+      "ps_split_threshold_matching_complete": false,
+      "physical_scale_fixed": false,
+      "result": "calculations/canonical_so10_gauge_matching/RESULT.md"
+    },
+    "active_focus": "CANONICAL_SO10_PS_SPLIT_THRESHOLD_MATCHING_KERNEL_MISSING_FLAVOR_NOT_RESUMED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

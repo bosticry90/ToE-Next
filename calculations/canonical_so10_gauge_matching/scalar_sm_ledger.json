@@ -1,0 +1,776 @@
+{
+  "status": "SM_SCALAR_LEDGER_ONLY",
+  "units": "m^2/omega^2 (physical kinetic normalization)",
+  "point_sha256": "476645438ea8a7ada42fea90e80174b772d45ce3e729d013d134e9848950c816",
+  "blocks": [
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "-12/6"
+      },
+      "real_dimension_per_eigenvalue": 1,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.39999999999999997,
+        0.0,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        0.11362007760000013
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "-6/6"
+      },
+      "real_dimension_per_eigenvalue": 1,
+      "multiplicity": 1,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.09999999999999999,
+        0.0,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        5.859510407743882e-17
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "0/6"
+      },
+      "real_dimension_per_eigenvalue": 1,
+      "multiplicity": 5,
+      "zero_multiplicity": 2,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        0.0,
+        5.921189464667499e-17,
+        0.0014426926299895904,
+        0.020000000000000014,
+        0.049927192039717946
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "6/6"
+      },
+      "real_dimension_per_eigenvalue": 1,
+      "multiplicity": 1,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.09999999999999999,
+        0.0,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        5.859510407743882e-17
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "12/6"
+      },
+      "real_dimension_per_eigenvalue": 1,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.39999999999999997,
+        0.0,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        0.11362007760000013
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 2,
+        "hypercharge": "-3/6"
+      },
+      "real_dimension_per_eigenvalue": 2,
+      "multiplicity": 4,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.049999999999999996,
+        0.08333333333333333,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        1.3204621960879691e-17,
+        0.011785773863100646,
+        0.34446986360791204,
+        0.42041607328535896
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 2,
+        "hypercharge": "3/6"
+      },
+      "real_dimension_per_eigenvalue": 2,
+      "multiplicity": 4,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.049999999999999996,
+        0.08333333333333333,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        3.3299268092692155e-18,
+        0.011785773863100635,
+        0.34446986360791176,
+        0.4204160732853592
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 3,
+        "hypercharge": "-6/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 2,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.3,
+        0.3333333333333333,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        0.028841406695381672,
+        0.2018446396364892
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 3,
+        "hypercharge": "0/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.0,
+        0.3333333333333333,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        0.025401412681870687
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          0
+        ],
+        "su2_dim": 3,
+        "hypercharge": "6/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 2,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.3,
+        0.3333333333333333,
+        0.0
+      ],
+      "mass_squared_over_omega_squared": [
+        0.028841406695381672,
+        0.2018446396364892
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          1
+        ],
+        "su2_dim": 1,
+        "hypercharge": "-8/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.5333333333333332,
+        0.0,
+        0.08333333333333333
+      ],
+      "mass_squared_over_omega_squared": [
+        0.1326546636000001
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          1
+        ],
+        "su2_dim": 1,
+        "hypercharge": "-2/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 5,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.033333333333333326,
+        0.0,
+        0.08333333333333333
+      ],
+      "mass_squared_over_omega_squared": [
+        0.0017183148840695206,
+        0.008968544370353122,
+        0.07937839464399145,
+        1.2380493240602986,
+        1.2860473739515608
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          1
+        ],
+        "su2_dim": 1,
+        "hypercharge": "4/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 1,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.1333333333333333,
+        0.0,
+        0.08333333333333333
+      ],
+      "mass_squared_over_omega_squared": [
+        5.859510407743882e-17
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          1
+        ],
+        "su2_dim": 2,
+        "hypercharge": "-5/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 1,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.4166666666666667,
+        0.25,
+        0.16666666666666666
+      ],
+      "mass_squared_over_omega_squared": [
+        -1.8503717077085942e-18
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          1
+        ],
+        "su2_dim": 2,
+        "hypercharge": "1/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 3,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.016666666666666663,
+        0.25,
+        0.16666666666666666
+      ],
+      "mass_squared_over_omega_squared": [
+        -1.5044434985788474e-18,
+        0.29014967008265347,
+        0.4891323052340137
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          1
+        ],
+        "su2_dim": 2,
+        "hypercharge": "7/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 2,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.8166666666666668,
+        0.25,
+        0.16666666666666666
+      ],
+      "mass_squared_over_omega_squared": [
+        0.3979663396965914,
+        0.4223057431700761
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          1
+        ],
+        "su2_dim": 3,
+        "hypercharge": "-2/6"
+      },
+      "real_dimension_per_eigenvalue": 9,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.09999999999999998,
+        1.0,
+        0.25
+      ],
+      "mass_squared_over_omega_squared": [
+        0.1326546636000001
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          2
+        ],
+        "su2_dim": 1,
+        "hypercharge": "-4/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 2,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.2666666666666666,
+        0.0,
+        0.4166666666666667
+      ],
+      "mass_squared_over_omega_squared": [
+        0.028735217112616694,
+        0.20184463718884615
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          2
+        ],
+        "su2_dim": 1,
+        "hypercharge": "2/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.06666666666666665,
+        0.0,
+        0.4166666666666667
+      ],
+      "mass_squared_over_omega_squared": [
+        0.1326546636000001
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          2
+        ],
+        "su2_dim": 1,
+        "hypercharge": "8/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        1.0666666666666664,
+        0.0,
+        0.4166666666666667
+      ],
+      "mass_squared_over_omega_squared": [
+        0.11362007760000013
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          0,
+          2
+        ],
+        "su2_dim": 3,
+        "hypercharge": "2/6"
+      },
+      "real_dimension_per_eigenvalue": 18,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.19999999999999996,
+        2.0,
+        1.25
+      ],
+      "mass_squared_over_omega_squared": [
+        0.11362007760000013
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "-4/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 1,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.1333333333333333,
+        0.0,
+        0.08333333333333333
+      ],
+      "mass_squared_over_omega_squared": [
+        5.859510407743882e-17
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "2/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 5,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.033333333333333326,
+        0.0,
+        0.08333333333333333
+      ],
+      "mass_squared_over_omega_squared": [
+        0.0017183148840695056,
+        0.008968544370353113,
+        0.07937839464399128,
+        1.2380493240602983,
+        1.2860473739515603
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "8/6"
+      },
+      "real_dimension_per_eigenvalue": 3,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.5333333333333332,
+        0.0,
+        0.08333333333333333
+      ],
+      "mass_squared_over_omega_squared": [
+        0.1326546636000001
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          0
+        ],
+        "su2_dim": 2,
+        "hypercharge": "-7/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 2,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.8166666666666668,
+        0.25,
+        0.16666666666666666
+      ],
+      "mass_squared_over_omega_squared": [
+        0.3979663396965916,
+        0.4223057431700759
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          0
+        ],
+        "su2_dim": 2,
+        "hypercharge": "-1/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 3,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.016666666666666663,
+        0.25,
+        0.16666666666666666
+      ],
+      "mass_squared_over_omega_squared": [
+        -2.4296293529716735e-18,
+        0.2901496700826534,
+        0.4891323052340135
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          0
+        ],
+        "su2_dim": 2,
+        "hypercharge": "5/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 1,
+      "zero_multiplicity": 1,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.4166666666666667,
+        0.25,
+        0.16666666666666666
+      ],
+      "mass_squared_over_omega_squared": [
+        -1.8503717077085942e-18
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          0
+        ],
+        "su2_dim": 3,
+        "hypercharge": "2/6"
+      },
+      "real_dimension_per_eigenvalue": 9,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.09999999999999998,
+        1.0,
+        0.25
+      ],
+      "mass_squared_over_omega_squared": [
+        0.1326546636000001
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          1
+        ],
+        "su2_dim": 1,
+        "hypercharge": "0/6"
+      },
+      "real_dimension_per_eigenvalue": 8,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "mass_squared_over_omega_squared": [
+        0.02529522065146265
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          1
+        ],
+        "su2_dim": 2,
+        "hypercharge": "-3/6"
+      },
+      "real_dimension_per_eigenvalue": 16,
+      "multiplicity": 2,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.39999999999999997,
+        0.6666666666666666,
+        1.0
+      ],
+      "mass_squared_over_omega_squared": [
+        0.3979663396965914,
+        0.4223057431700761
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          1,
+          1
+        ],
+        "su2_dim": 2,
+        "hypercharge": "3/6"
+      },
+      "real_dimension_per_eigenvalue": 16,
+      "multiplicity": 2,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.39999999999999997,
+        0.6666666666666666,
+        1.0
+      ],
+      "mass_squared_over_omega_squared": [
+        0.3979663396965916,
+        0.4223057431700759
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          2,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "-8/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        1.0666666666666664,
+        0.0,
+        0.4166666666666667
+      ],
+      "mass_squared_over_omega_squared": [
+        0.11362007760000013
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          2,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "-2/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.06666666666666665,
+        0.0,
+        0.4166666666666667
+      ],
+      "mass_squared_over_omega_squared": [
+        0.1326546636000001
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          2,
+          0
+        ],
+        "su2_dim": 1,
+        "hypercharge": "4/6"
+      },
+      "real_dimension_per_eigenvalue": 6,
+      "multiplicity": 2,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.2666666666666666,
+        0.0,
+        0.4166666666666667
+      ],
+      "mass_squared_over_omega_squared": [
+        0.028735217112616694,
+        0.20184463718884615
+      ]
+    },
+    {
+      "sm_irrep": {
+        "su3_dynkin": [
+          2,
+          0
+        ],
+        "su2_dim": 3,
+        "hypercharge": "-2/6"
+      },
+      "real_dimension_per_eigenvalue": 18,
+      "multiplicity": 1,
+      "zero_multiplicity": 0,
+      "one_loop_b_per_physical_eigenvalue": [
+        0.19999999999999996,
+        2.0,
+        1.25
+      ],
+      "mass_squared_over_omega_squared": [
+        0.11362007760000013
+      ]
+    }
+  ],
+  "real_dimension": 328,
+  "zero_real_dimension": 38,
+  "heavy_real_dimension": 290,
+  "min_heavy_m2_over_omega2": 0.0014426926299895904
+}
