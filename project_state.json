@@ -1,6 +1,6 @@
 {
-  "state_version": 39,
-  "updated_utc": "2026-09-20T18:41:29Z",
+  "state_version": 40,
+  "updated_utc": "2026-09-20T19:25:38Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_LOWER_F2_V1",
-      "completed_utc": "2026-09-20T18:41:29Z",
-      "outcome": "LOWER_BOUNDARY_MATCHING_BLOCKED",
-      "authority": "LOWER_PHYSICAL_PS_SM_VECTOR_GOLDSTONE_GHOST_FINITE_AND_LOG_F2_COEFFICIENT_IN_PARTIAL_BFM_ZETA_1_ONLY_NOT_COMPLETE_MATCHING",
-      "result": "calculations/canonical_so10_lower_f2/RESULT.md",
-      "qualified_stop": "DELAYED_SCALAR_SCHEME_LOG_BETA_CHECKSUM_ONLY_PS_COVARIANT_EFT_AND_FULL_UV_EFT_HARD_REGION_SUBTRACTION_UNDERIVED",
+      "calculation": "CANONICAL_SO10_PS_INTERVAL_EFT_V1",
+      "completed_utc": "2026-09-20T19:25:38Z",
+      "outcome": "PS_INTERVAL_EFT_BLOCKED",
+      "authority": "SAME_COEFFICIENT_STATIONARY_PS_BACKGROUND_AND_PROVISIONAL_328_REAL_QUADRATIC_CENSUS_ONLY_NO_COVARIANT_INTERVAL_EFT",
+      "result": "calculations/canonical_so10_ps_interval_eft/RESULT.md",
+      "qualified_stop": "MULTI_SPURION_HEAVY_LIGHT_SPLIT_UNFROZEN_NO_UNIFORM_SCHUR_BOUND_OR_INDUCED_OPERATOR_LEDGER",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -284,7 +284,23 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_lower_f2/RESULT.md"
     },
-    "active_focus": "CANONICAL_SO10_LOWER_VECTOR_F2_DONE_PS_SIDE_SCALAR_EFT_AND_FULL_LOWER_HARD_REGION_SUBTRACTION_MISSING_UPPER_KERNEL_NOT_STARTED_FLAVOR_NOT_RESUMED"
+    "canonical_so10_ps_interval_eft": {
+      "outcome": "PS_INTERVAL_EFT_BLOCKED",
+      "same_coefficient_stationary_ps_background": "FOUND_SADDLE",
+      "stationary_ps_quadratic_real_dimensions": 328,
+      "stationary_ps_symmetry_zeros": "24_GAUGE_PLUS_1_PQ",
+      "stationary_ps_126_triplet_real_tachyon_directions": 120,
+      "tadpole_tracked_scaling_family": "EXPLORATORY_DIFFERENT_THEORY_FAMILY_NOT_THRESHOLD_AUTHORITY",
+      "complete_retained_field_list": false,
+      "uniform_heavy_block_schur_bound": false,
+      "covariant_tree_level_operator_match": false,
+      "lower_f2_induced_operator_error_bound": false,
+      "lower_one_loop_matching_resumed": false,
+      "upper_one_loop_matching_started": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_ps_interval_eft/RESULT.md"
+    },
+    "active_focus": "CANONICAL_SO10_PS_INTERVAL_EFT_BLOCKED_AT_MULTI_SPURION_FIELD_SPLIT_LOWER_VECTOR_F2_RETAINED_NO_FULL_BOUNDARY_OR_SCALE_SOLVE"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
