@@ -1,0 +1,27 @@
+{
+  "parent_action": "PARENT_ACTION_V1.md",
+  "inherits": "../canonical_so10_scalar_benchmark/STAGE1_POINT.json",
+  "omega": "sqrt(60)",
+  "sigma_over_omega": "0.1",
+  "v_over_omega": "0.1",
+  "changed_free_coefficients": {
+    "z6:re": "0.03",
+    "zK:re": "0.03",
+    "zEta:re": "0.3",
+    "lambdaPhiphi1": "-0.002"
+  },
+  "pure_10_quartics_unchanged": {
+    "lambdaPhiVector1": "0.1",
+    "lambdaPhiVector2": "0.1"
+  },
+  "exact_tuning": "mphi2/omega^2 = w + 1/500, where w is the unique root of A*w^2+(B0+B1*sqrt(15))*w+(C0+C1*sqrt(15))=0 in (0.00530,0.00531)",
+  "determinant_polynomial": {
+    "A": "6492806043811656927050000000000000000000",
+    "B0": "27742848624084393772215402325000000000",
+    "B1": "-5147704401327283584786905600000000000",
+    "C0": "-90789563450807267174066977762963533",
+    "C1": "-34371810837887003978986540928067200"
+  },
+  "approximate_w": "0.0053020478610224449141002650695760429386083297898366145688633542340",
+  "approximate_mphi2_over_omega2": "0.0073020478610224449141002650695760429386083297898366145688633542340"
+}
