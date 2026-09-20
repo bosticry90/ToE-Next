@@ -1,6 +1,6 @@
 {
-  "state_version": 38,
-  "updated_utc": "2026-09-20T18:26:46Z",
+  "state_version": 39,
+  "updated_utc": "2026-09-20T18:41:29Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_LOWER_BFM_V1",
-      "completed_utc": "2026-09-20T18:26:46Z",
+      "calculation": "CANONICAL_SO10_LOWER_F2_V1",
+      "completed_utc": "2026-09-20T18:41:29Z",
       "outcome": "LOWER_BOUNDARY_MATCHING_BLOCKED",
-      "authority": "PHYSICAL_PS_SM_QUADRATIC_VECTOR_GOLDSTONE_GHOST_ORBIT_MASS_PAIRING_ONLY_NOT_ONE_LOOP_F2_MATCHING",
-      "result": "calculations/canonical_so10_lower_bfm/RESULT.md",
-      "qualified_stop": "COMPLETE_HARD_REGION_F2_MATCHING_FINITE_TERMS_AND_PS_SIDE_EFT_SUBTRACTION_UNDERIVED",
+      "authority": "LOWER_PHYSICAL_PS_SM_VECTOR_GOLDSTONE_GHOST_FINITE_AND_LOG_F2_COEFFICIENT_IN_PARTIAL_BFM_ZETA_1_ONLY_NOT_COMPLETE_MATCHING",
+      "result": "calculations/canonical_so10_lower_f2/RESULT.md",
+      "qualified_stop": "DELAYED_SCALAR_SCHEME_LOG_BETA_CHECKSUM_ONLY_PS_COVARIANT_EFT_AND_FULL_UV_EFT_HARD_REGION_SUBTRACTION_UNDERIVED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -269,7 +269,22 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_lower_bfm/RESULT.md"
     },
-    "active_focus": "CANONICAL_SO10_LOWER_BFM_HARD_REGION_F2_MATCHING_AND_PS_EFT_SUBTRACTION_MISSING_UPPER_KERNEL_NOT_STARTED_FLAVOR_NOT_RESUMED"
+    "canonical_so10_lower_f2": {
+      "outcome": "LOWER_BOUNDARY_MATCHING_BLOCKED",
+      "partial_bfm_gauge": "ZETA_1_FROZEN",
+      "vector_goldstone_ghost_finite_log_f2": "PASS_WITH_PRIMARY_LITERATURE_COMPARATOR",
+      "lower_vector_index": "14_OVER_5_0_1",
+      "complete_16f_projected_fermion_beta_jump": "ZERO",
+      "candidate_delayed_scalar_full_lower_log_checksum": "PASS_CONDITIONAL_ON_UNCERTIFIED_PS_EFT",
+      "ps_side_scalar_eft_defined": false,
+      "full_uv_eft_hard_region_subtraction": false,
+      "full_lower_matching_scale_cancellation": false,
+      "upper_kernel_started": false,
+      "coupled_gauge_scale_solve_started": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_lower_f2/RESULT.md"
+    },
+    "active_focus": "CANONICAL_SO10_LOWER_VECTOR_F2_DONE_PS_SIDE_SCALAR_EFT_AND_FULL_LOWER_HARD_REGION_SUBTRACTION_MISSING_UPPER_KERNEL_NOT_STARTED_FLAVOR_NOT_RESUMED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
