@@ -27,11 +27,12 @@
 7. **Independent replay:** Cross-check the irrep census against the
    previously computed exact generator stabilizers and fixed-subspace
    counts. The vacuum `K,T` tensors in the `10_H` self-block receive an
-   independent Julia index-loop replay. Every complete quadratic block,
-   especially the inherited
-   doublet subspace, requires independent contraction or representation
-   replay before physical interpretation. Full Hessian nullity requires
-   both Ward identity and explicit block-matrix multiplication.
+   independent Julia index-loop replay. The complete electroweak-doublet
+   blocks require entrywise replay against the earlier direct tensor
+   derivation. Remaining blocks are checked through exact character counts,
+   conjugate pairing, Ward null vectors, and exact rank; their entries need
+   separate replay before physical mass interpretation. Full Hessian
+   nullity requires both Ward identity and explicit block-matrix multiplication.
 8. **Adversarial checks:** Complexified tangent dimensions must sum to 328;
    conjugate-irrep multiplicities must agree; the broken adjoint minus SM
    adjoint must sum to 33 and embed in the scalar tangent. At a stationary
@@ -50,15 +51,15 @@
     real inconsistency for this implementation/ansatz. An unmaterialized
     block is incomplete calculation, not evidence that the model lacks a
     physical vacuum or is refuted.
-12. **Result:** [`FULL_HESSIAN_BLOCKED`](RESULT.md). The exact irrep census,
-    Goldstone-irrep distribution, action-derived `10_H` self-block, explicit
-    33+1 orbit-vector rank, and complete neutral-singlet `5x5` Hessian with
-    its two checked null vectors are earned. Exact directional parent-action
-    quadratics vanish for all 45 Lie-basis directions after tadpoles, and
-    four mixed `Phi+Sigma` bilinear probes pass. An exact all-29-monomial
-    bilinear oracle now reproduces the known `10_H` self and `eta` doublet
-    entries and passes four additional off-diagonal `B(e,g)=0` probes. A
-    nonzero-coupling exact stationary witness and per-irrep rank targets are
-    frozen; its neutral radial rank is three. Mixed and remaining colored
-    blocks, 34-vector *full-Hessian* multiplication, and full witness rank
-    remain unearned.
+12. **Result:** [`CANONICAL_VACUUM_KERNEL_PASS`](RESULT.md) at the exact
+    generic-nullity authority ceiling. The exact all-29-monomial bilinear
+    oracle is evaluated on normalized-then-rationally-rescaled highest-weight
+    representatives for all 35 SM irrep classes. Every colored, mixed,
+    neutral, and doublet multiplicity block reaches its target rank at the
+    frozen exact stationary witness; the dimension-weighted real rank is
+    `294` and nullity `34`. All eight charged broken-gauge blocks multiply
+    their projected orbit vectors to zero. The neutral block annihilates
+    independent gauge and PQ vectors. Both complete doublet blocks agree
+    entrywise with an independent tensor derivation after correcting that
+    comparator's `K` transpose convention. No positivity, scalar benchmark,
+    or physical mass spectrum is earned by this rank gate.

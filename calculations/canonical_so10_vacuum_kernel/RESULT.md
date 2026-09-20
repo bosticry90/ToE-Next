@@ -122,7 +122,7 @@ B0 = mphi2 + (3muPhiPhi omega/sqrt(60))
    + lambdaPhiphi1 omega² + (3lambdaPhiphi2/20) omega²
    + lambdaSigmaphi1 sigma² + (lambdaSigmaphi2/2) sigma²
    + (lambdaVectorS/2) v²;
-BJ = (lambdaSigmaphi2/2) sigma².
+BJ = -(lambdaSigmaphi2/2) sigma².
 ```
 
 The holomorphic blocks `C,D` are proportional to `I_4`, and
@@ -136,6 +136,12 @@ s = v exp(i thetaS)/sqrt(2).
 
 The script prints the complete `A,B` coefficient expressions and exact
 tensor Gram matrices. It checks Hermiticity of `A,B` and symmetry of `C,D`.
+The sign of `BJ` reflects the displayed `y_a conjugate(y_b) B_ab`
+coordinate convention: the parent term `phi*_i K_ij phi_j` contributes
+`K^T` to that `B` matrix. The earlier script used `K` there; an independent
+full-block replay against the parent-action bilinear oracle identified and
+corrected this transpose convention. The `phi^dagger K phi` tensor result
+itself was unchanged.
 In particular, `zK` contributes directly to the `10` holomorphic bilinear;
 the inherited sparse source matrix is not the canonical one. No doublet
 eigenvalue, heavy-mode positivity, or light-Higgs projector has been claimed.

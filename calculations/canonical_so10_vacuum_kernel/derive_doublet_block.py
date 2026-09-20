@@ -75,7 +75,7 @@ def crossed_pair(a, b):
     return c(result)
 
 
-def main():
+def main(verbose=True):
     v = vacuum_form()
     e = [doublet_form(a) for a in range(6, 10)]
     d = [-2]*6 + [3]*4
@@ -121,7 +121,9 @@ def main():
                    + z["lambdaPhiphi2"]*b**2
                    + z["lambdaSigmaphi1"]*sigma**2
                    + z["lambdaVectorS"]*vS**2/2)
-    bmat += z["lambdaSigmaphi2"]*sigma**2*kweak/32
+    # The displayed polynomial uses y_a conjugate(y_b) B_ab, whereas the
+    # parent invariant is phi*_i K_ij phi_j. Thus B_ab=K_ba, not K_ab.
+    bmat += z["lambdaSigmaphi2"]*sigma**2*kweak.T/32
     cmat = z4*s*omega*tgram/sqrt(60)
     dmat = (z6+zK*b)*sbar*eye(4)
     emat = zEta*sigma**2*eta/(32*sqrt(3))
@@ -129,19 +131,21 @@ def main():
     assert bmat.applyfunc(simplify) == bmat.conjugate().T.applyfunc(simplify)
     assert cmat == cmat.T and dmat == dmat.T
 
-    print("N gram=", ngram)
-    print("L(weak) gram=", lgram)
-    print("T holomorphic gram=", tgram)
-    print("Q1 gram=", q1gram)
-    print("Q2 gram=", q2gram)
-    print("X131 gram=", xgram)
-    print("K weak raw=", kweak)
-    print("A (Sigma hermitian)=", a.applyfunc(simplify))
-    print("B (10 hermitian)=", bmat.applyfunc(simplify))
-    print("C (Sigma holomorphic)=", cmat.applyfunc(simplify))
-    print("D (10 holomorphic)=", dmat.applyfunc(simplify))
-    print("E (eta mixed holomorphic)=", emat.applyfunc(simplify))
-    print("DOUBLEt_QUADRATIC_BLOCK_DERIVED; no inertia/nullity claim")
+    if verbose:
+        print("N gram=", ngram)
+        print("L(weak) gram=", lgram)
+        print("T holomorphic gram=", tgram)
+        print("Q1 gram=", q1gram)
+        print("Q2 gram=", q2gram)
+        print("X131 gram=", xgram)
+        print("K weak raw=", kweak)
+        print("A (Sigma hermitian)=", a.applyfunc(simplify))
+        print("B (10 hermitian)=", bmat.applyfunc(simplify))
+        print("C (Sigma holomorphic)=", cmat.applyfunc(simplify))
+        print("D (10 holomorphic)=", dmat.applyfunc(simplify))
+        print("E (eta mixed holomorphic)=", emat.applyfunc(simplify))
+        print("DOUBLEt_QUADRATIC_BLOCK_DERIVED; no inertia/nullity claim")
+    return (a, bmat, cmat, dmat, emat), (omega, sigma, vS, s, sbar)
 
 
 if __name__ == "__main__":

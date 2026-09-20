@@ -1,17 +1,23 @@
-# Canonical scalar full-Hessian gate: bounded result
+# Canonical scalar full-Hessian gate: exact generic-nullity result
 
 ## Disposition
 
-**`FULL_HESSIAN_BLOCKED`.** Exact Standard-Model-irrep decomposition now
-accounts for every one of the **328 real tangent directions** after
-complexification, and locates all 33 broken-gauge directions by irrep. The
-action-derived `10_H` quadratic self-block, including its colored entries,
-is explicit. The complete neutral-singlet `5x5` block is also derived and
-annihilates its two independent symmetry-phase vectors. The mixed
-`126_H`--`10_H` colored blocks, remaining `54_H` and `126_H` scalar blocks,
-direct **full-Hessian** Goldstone multiplication, and full generic-witness
-rank are **not** complete. Thus no complete physical scalar
-spectrum, one-light-Higgs condition, or scalar benchmark is claimed.
+**`CANONICAL_VACUUM_KERNEL_PASS`**, with an analytic/generic-nullity
+authority ceiling. Exact SM-irrep representatives account for every one of
+the **328 real scalar directions** after complexification. The parent-action
+bilinear oracle evaluates all 35 multiplicity blocks at one exact stationary
+witness. Every broken-gauge block annihilates its explicitly projected orbit
+vector; the neutral block also annihilates the independent PQ vector. The
+dimension-weighted real rank is **294**, hence nullity **34**: exactly 33
+gauge plus one PQ direction before Higgs tuning.
+
+This proves that additional scalar flat directions are not generic on this
+stationary branch. It does **not** establish positive physical masses, a
+minimum, a light-Higgs tuning, triplet safety, viable scales, a scalar
+benchmark, or phenomenological success. Complete symbolic coefficient tables
+for every block are not published; the exact calculation-local evaluator
+accepts arbitrary parent-action coefficients at the frozen raw VEV
+orientation.
 
 ## Exact bilinear oracle and stronger row probes
 
@@ -38,9 +44,8 @@ computes **off-diagonal** `B(e,g)` values for four probes spanning `54`,
 `126`, and `10` sectors against two broken generators. All four vanish
 exactly after the three action-derived tadpole masses are substituted;
 the complex monomial coefficients separately vanish in these probes.
-These are stronger than `B(g,g)=0`, but four rows are **not** a basis of the
-Goldstone-containing SM blocks and therefore do not certify all 34
-full-Hessian null vectors.
+These are stronger than `B(g,g)=0`. They were a preliminary check; the
+complete blockwise Goldstone multiplication is reported below.
 
 [`define_generic_nullity_test.py`](define_generic_nullity_test.py) freezes a
 nonzero rational/Gaussian-rational coefficient assignment at the raw VEV
@@ -48,11 +53,55 @@ nonzero rational/Gaussian-rational coefficient assignment at the raw VEV
 tadpoles for `mPhi2,mSigma2,mS2`, and verifies them against the generated
 vacuum polynomial. Its neutral radial block has rank three. The script
 prints the required nullity and target rank for every exact SM irrep. Their
-dimension-weighted totals are **34 null directions and rank 294**. This is
-an *acceptance specification*, not an attained full-Hessian result. Once
-every block is calculated, attaining rank 294 at this exact witness would
-prove maximal generic rank on the stationary parameter branch, because
-the 34 symmetry directions provide the opposite rank bound.
+dimension-weighted targets are **34 null directions and rank 294**. The
+later exact block run attained those targets.
+
+## Exact multiplicity bases, blocks, and real rank
+
+[`compile_sm_multiplicity_representatives.py`](compile_sm_multiplicity_representatives.py)
+constructs exact weight vectors of the `10`, traceless symmetric `54`, and
+both Hodge eigenspaces of `Lambda^5(10)`. It solves the three SM
+raising-operator kernels at dominant weights and normalizes every copy in
+the frozen kinetic metric. It obtains **65 highest-weight representatives
+in 35 irrep classes**, exactly matching the independent D5 character
+multiplicities. It separately constructs adjoint highest weights, whose
+vacuum orbits project exactly back into the scalar bases.
+
+[`evaluate_sm_hessian_blocks.py`](evaluate_sm_hessian_blocks.py) maps each
+complexified representative into real physical tangent directions and
+computes `B_C(conjugate(e_R,a),e_R,b)`. Thus a complex irrep is paired with
+its conjugate *lowest*-weight direction, not another highest weight.
+For efficient exact contractions, each normalized representative is
+rationally rescaled; this invertible diagonal congruence changes neither
+rank nor the zero-vector equation. No floating-point Hessian entry is
+accepted. A non-self-conjugate `R,bar R` pair is counted as two conjugate
+irrep spaces in the dimension-weighted real rank; self-conjugate sectors
+are counted once.
+
+[`check_full_block_rank_witness.py`](check_full_block_rank_witness.py) checks
+all 35 exact blocks, Hermiticity, and target multiplicity ranks. In all
+eight non-neutral broken-gauge irrep classes it multiplies the block by
+the explicitly projected adjoint-orbit vector; all products vanish exactly.
+The two three-copy charged blocks each have rank two; the six one-copy
+charged blocks vanish. The neutral `5x5` block has rank three and
+annihilates its independent gauge and PQ vectors. Both Higgs-doublet
+conjugate blocks have rank four at this **untuned** witness. Every other
+colored/non-singlet block reaches full target rank, and conjugate ranks
+agree. The real rank is exactly `294`, with nullity `328-294=34`.
+
+Gauge and PQ Ward identities bound stationary rank by 294. Attaining that
+rank at one exact point proves it is the maximal rank on a nonempty open
+subset of the fixed-orientation stationary parameter branch. It says
+nothing about eigenvalue signs.
+
+[`verify_doublet_block_independent.py`](verify_doublet_block_independent.py)
+projects both complete `4x4` Higgs blocks into the earlier tensor-derived
+weak-vector quadratic matrices `A,B,C,D,E`; every entry agrees. This
+replay exposed one coordinate-order error in that earlier comparator:
+its polynomial was written `y_a conjugate(y_b) B_ab`, so the parent
+`phi*_i K_ij phi_j` term requires `B=K^T`, not `K`. The comparator and
+its written `BJ` sign were corrected. The frozen parent action, bilinear
+oracle, and `phi^dagger K phi` tensor calculation were unchanged.
 
 This calculation uses only [parent action v1](../canonical_so10_scalar_reconstruction/PARENT_ACTION_V1.md)
 and the previously derived [normalized vacuum](../canonical_so10_vacuum_kernel/RESULT.md).
@@ -97,8 +146,8 @@ coordinate representation: rank **33**. Adding the PQ tangent vector raises
 the rank to **34**, because the PQ-charged singlet has a nonzero VEV. Therefore the
 stationary full Hessian must have **at least 34 real symmetry zeros**: 33
 gauge plus one PQ. A deliberately massless SM Higgs doublet would add four
-different real zero directions; none was tuned here. The number **exactly**
-34 at a generic stationary witness is not yet verified.
+different real zero directions; none was tuned here. The exact blockwise
+witness verifies the number is **exactly 34** at one stationary point.
 
 An [exact parent-invariant directional evaluator](check_gauge_orbit_quadratics.py)
 also computes the `t²` coefficient along each of the 45 standard Lie-basis
@@ -112,9 +161,9 @@ A [focused charged-singlet replay](check_charged_singlet_goldstone.py) and
 four [mixed `Phi+Sigma` polarization probes](probe_mixed_orbit_bilinear.py)
 pass as adversarial checks. These verify `g^T H g=0` for the Lie basis and
 `g^T H h=0` for the four chosen mixed probes. The new bilinear oracle
-adds four more `B(e,g)=0` checks, including a `10_H` probe. These still do
-**not** establish `H g=0` against a basis of all 328 real fields; complete
-irrep blocks remain absent.
+adds four more `B(e,g)=0` checks, including a `10_H` probe. The complete
+irrep blocks now establish the stronger matrix-vector Goldstone equations
+at the exact witness.
 
 ## Complete neutral-singlet block
 
@@ -128,8 +177,8 @@ at phase indices `(2,4)`. The script verifies multiplication by the
 neutral gauge vector `(0,0,sigma,0,0)` and independent PQ vector
 `(0,0,2sigma,0,-4v)`. An exact rational parameter witness gives rank three
 for this block; hence a third neutral-singlet zero is not structurally
-forced by the action. This is not a full-spectrum generic-witness test and
-does not imply a stable vacuum.
+forced by the action. The full-spectrum witness independently reproduces
+rank three in its neutral block. Neither result implies a stable vacuum.
 
 ## `10_H` vector self-block, including colored components
 
@@ -156,24 +205,23 @@ B_r = [mphi² + muPhiPhi b_r + lambdaPhiphi1 omega²
 D_r = (z6+zK b_r) conjugate(S0) I_r.
 ```
 
-The weak restriction agrees with the previously derived doublet `B,D`
-subblock. The `zK` term splits the *self-block* color and weak holomorphic
+The weak restriction agrees with the corrected doublet `B,D` subblock
+after accounting for its transposed `y_a conjugate(y_b)` coordinate
+convention. The `zK` term splits the *self-block* color and weak holomorphic
 coefficients through `b_c != b_w`; the full physical triplet and doublet
 masses also require their `126_H` mixings. Since `T(Sigma0,Sigma0)=0`,
 `zD` contributes no `10_H` self-quadratic term at this vacuum. No positivity
 or triplet safety is inferred from an isolated self-block.
 
-## Exact stopping boundary
+## Authority boundary and next calculation
 
-The representation decomposition makes the rest of the job finite and
-small-block, but it does not itself produce Hessian coefficients. The next
-calculation must construct representatives of every SM multiplicity space,
-evaluate every block as second directional derivatives of all 34 parent
-invariants, and independently replay the doublet block. After substituting
-the three action-derived tadpoles, multiply the resulting blocks by the
-**explicit** 33 gauge and one PQ orbit vectors, then test a generic exact
-stationary witness for additional nullity. Only a passing full calculation
-can turn this gate into `CANONICAL_VACUUM_KERNEL_PASS`.
+This gate tests the quadratic scalar kernel, not vacuum viability. The
+next separately admitted calculation is a positive-mass scalar benchmark
+search using all physical blocks, with the three tadpole masses eliminated
+and one light SM Higgs doublet tuned only *after* generic symmetry nullity.
+A scan failure in a finite declared domain is not a no-go theorem. No
+fermion fit, flavor running, proton decay, or source-Babu--Khan scalar
+authority is inherited from this pass.
 
 Reproduce the earned portion from repository root:
 
@@ -190,4 +238,7 @@ python calculations/canonical_so10_full_hessian/parent_bilinear_oracle.py
 python calculations/canonical_so10_full_hessian/verify_oracle_controls.py
 python calculations/canonical_so10_full_hessian/verify_oracle_goldstone_rows.py
 python calculations/canonical_so10_full_hessian/define_generic_nullity_test.py
+python calculations/canonical_so10_full_hessian/compile_sm_multiplicity_representatives.py
+python -u calculations/canonical_so10_full_hessian/check_full_block_rank_witness.py
+python -u calculations/canonical_so10_full_hessian/verify_doublet_block_independent.py
 ```
