@@ -1,6 +1,6 @@
 {
-  "state_version": 33,
-  "updated_utc": "2026-09-20T00:57:34Z",
+  "state_version": 34,
+  "updated_utc": "2026-09-20T02:48:32Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,16 +42,16 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_FULL_SCALAR_HESSIAN_BLOCKS_V1",
-      "completed_utc": "2026-09-20T00:57:34Z",
-      "outcome": "CANONICAL_VACUUM_KERNEL_PASS",
-      "authority": "EXACT_ALL_IRREP_BLOCK_GENERIC_RANK_294_NULLITY_34_AND_DOUBLET_REPLAY_ONLY_NO_POSITIVITY_OR_BENCHMARK",
-      "result": "calculations/canonical_so10_full_hessian/RESULT.md",
-      "qualified_stop": "SCALAR_POSITIVITY_LIGHT_HIGGS_TUNING_TRIPLET_SAFETY_AND_BENCHMARK_NOT_TESTED",
+      "calculation": "CANONICAL_SO10_POSITIVE_SCALAR_BENCHMARK_SEARCH_V1",
+      "completed_utc": "2026-09-20T02:48:32Z",
+      "outcome": "CANONICAL_SCALAR_BENCHMARK_FOUND",
+      "authority": "LOCAL_HIGH_SCALE_SCALAR_POSITIVITY_AND_ONE_ALGEBRAIC_LIGHT_HIGGS_TUNING_ONLY",
+      "result": "calculations/canonical_so10_scalar_benchmark/RESULT.md",
+      "qualified_stop": "GLOBAL_BOUNDEDNESS_LOOP_PERTURBATIVITY_FLAVOR_BNV_AND_PHENOMENOLOGICAL_VIABILITY_NOT_ESTABLISHED",
       "complete_explicit_tensor_basis": true,
       "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
-      "new_scalar_benchmark_found": false,
-      "scalar_point_search_started": false,
+      "new_scalar_benchmark_found": true,
+      "scalar_point_search_started": true,
       "fermion_fit_started": false,
       "downstream_running_started": false
     },
@@ -96,7 +96,7 @@
     },
     "canonical_so10_scalar_reconstruction": {
       "lane": "EXPLORATORY_SOURCE_DERIVED_VARIANT",
-      "status": "PARENT_ACTION_DEFINED_GENERIC_FULL_HESSIAN_RANK_GATE_PASSED_BENCHMARK_PENDING",
+      "status": "PARENT_ACTION_DEFINED_LOCAL_POSITIVE_SCALAR_BENCHMARK_FOUND_FLAVOR_PENDING",
       "current_outcome": "INVARIANT_BASIS_CLOSED",
       "record": "calculations/canonical_so10_scalar_reconstruction/RECORD.md",
       "result": "calculations/canonical_so10_scalar_reconstruction/RESULT_V2.md",
@@ -111,7 +111,8 @@
       "generic_connected_commuting_internal_symmetry": "PQ_ONLY_IF_CHI4_AND_CHI6_NONZERO",
       "complete_explicit_invariant_basis": true,
       "single_parent_action_frozen": true,
-      "scalar_benchmark_search_started": false,
+      "scalar_benchmark_search_started": true,
+      "scalar_benchmark_result": "calculations/canonical_so10_scalar_benchmark/RESULT.md",
       "published_scalar_formula_identity_claimed": false,
       "inherited_bnv_scalar_authority": false
     },
@@ -148,7 +149,7 @@
       "all_colored_and_mixed_blocks_derived": "EXACT_AT_FROZEN_STATIONARY_WITNESS_SYMBOLIC_TABLES_NOT_PUBLISHED",
       "explicit_full_hessian_goldstone_replay": true,
       "generic_exact_witness_rank_checked": true,
-      "scalar_benchmark_search_started": false,
+      "scalar_benchmark_search_started": true,
       "result": "calculations/canonical_so10_full_hessian/RESULT.md"
     },
     "last_completed_audit": {
@@ -209,7 +210,23 @@
       "interpretation_selected": false,
       "calculation_started": false
     },
-    "active_focus": "CANONICAL_SO10_FULL_SCALAR_HESSIAN_MIXED_BLOCK_EXTRACTION_PENDING"
+    "canonical_so10_scalar_benchmark": {
+      "outcome": "CANONICAL_SCALAR_BENCHMARK_FOUND",
+      "lane": "EXPLORATORY_SOURCE_DERIVED_VARIANT",
+      "authority": "LOCAL_SCALAR_QUADRATIC_STABILITY_AND_EXACT_ONE_LIGHT_COMPLEX_HIGGS_TUNING_ONLY",
+      "stage1_rank": 294,
+      "stage1_nullity": 34,
+      "stage2_rank": 290,
+      "stage2_nullity": 38,
+      "all_35_blocks_direct_parent_stage1_replay": true,
+      "stage2_four_affected_blocks_direct_parent_replay": true,
+      "stage2_unchanged_blocks_inherited_from_stage1": 31,
+      "colored_floor_passed": true,
+      "global_boundedness_established": false,
+      "fermion_fit_started": false,
+      "result": "calculations/canonical_so10_scalar_benchmark/RESULT.md"
+    },
+    "active_focus": "CANONICAL_SO10_SCALAR_BENCHMARK_FOUND_FLAVOR_KERNEL_NOT_YET_RESUMED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

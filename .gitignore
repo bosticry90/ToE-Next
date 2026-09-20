@@ -44,3 +44,6 @@ target/
 *.log
 *.tmp
 *.bak
+
+# Regenerable canonical scalar benchmark search caches
+calculations/canonical_so10_scalar_benchmark/generated_*.npz

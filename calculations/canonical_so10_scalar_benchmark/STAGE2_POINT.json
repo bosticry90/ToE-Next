@@ -1,0 +1,20 @@
+{
+  "inherits": "STAGE1_POINT.json",
+  "x_sigma_over_omega": "0.1",
+  "y_v_over_omega": "0.1",
+  "changed_free_coefficients": {
+    "z6:re": "0.3",
+    "zK:re": "0.3",
+    "zEta:re": "0.3"
+  },
+  "tuned_parameter": "mphi2/omega^2",
+  "tuned_parameter_definition": "Unique real root of A*u^2+(B0+B1*sqrt(15))*u+(C0+C1*sqrt(15))=0 in (-0.14,-0.13)",
+  "determinant_polynomial": {
+    "A": "6492806043811656927050000000000000000000",
+    "B0": "2521566929545758598846205099325000000000",
+    "B1": "-5147704401327283584786905600000000000",
+    "C0": "231394817876610857387579023207666801717",
+    "C1": "-3336999651715007934458217240654019200"
+  },
+  "approximate_tuned_parameter": "-0.1337864654296790720007946799333010773637"
+}
