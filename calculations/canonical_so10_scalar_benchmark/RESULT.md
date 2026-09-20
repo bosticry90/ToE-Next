@@ -43,9 +43,12 @@ is `1.54582347066555928`). The 31 unaffected blocks inherit the exact
 Stage 1 certificate because every changed interaction contains `10_H`,
 whose VEV is zero. Thus the tuned real Hessian has rank `290`, nullity
 `38 = 33 gauge + 1 PQ + 4 light-doublet` with no other zero modes.
-The tuned point is marginal in those Higgs directions; stability of its
-effective light-Higgs quartic after heavy-field relaxation has not been
-established.
+The tuned point is marginal in those Higgs directions at quadratic order.
+A subsequent [tree-level heavy-relaxed Higgs calculation](../canonical_so10_light_higgs_quartic/RESULT.md)
+found `lambda_eff = -56.4898353734894` in the standard `(H†H)^2`
+normalization. Thus this particular Stage 2 point is not a local scalar
+minimum, despite its correct quadratic nullity and positive heavy masses.
+The Stage 1 local-minimum certificate remains unchanged.
 The Stage 2 point SHA-256 is
 `26bd69eb2f1341bca3576b72da666b0ca4d71a38a3e1c39f362908704dc16b6b`.
 
