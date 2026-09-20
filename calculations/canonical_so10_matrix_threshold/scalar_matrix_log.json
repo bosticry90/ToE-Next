@@ -1,0 +1,22 @@
+{
+  "scope": "physical_stationary_broken_phase_SM_scalar_log_trace_only",
+  "scale": "mu=omega; m2 in units omega2",
+  "lambda_scalar_SM_order_1_2_3": [
+    -65.49183411174657,
+    -68.10818386449702,
+    -70.24021592399315
+  ],
+  "d_lambda_d_log_mu": [
+    -75.39999999999999,
+    -77.0,
+    -79.0
+  ],
+  "heavy_scalar_beta_SM_order_1_2_3": [
+    12.566666666666665,
+    12.833333333333334,
+    13.166666666666666
+  ],
+  "heavy_real_directions": 290,
+  "zero_real_directions_excluded": 38,
+  "two_boundary_allocation_claimed": false
+}

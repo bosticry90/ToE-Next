@@ -1,6 +1,6 @@
 {
-  "state_version": 36,
-  "updated_utc": "2026-09-20T17:32:56Z",
+  "state_version": 37,
+  "updated_utc": "2026-09-20T18:14:40Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_PS_THRESHOLD_KERNEL_V1",
-      "completed_utc": "2026-09-20T17:32:56Z",
+      "calculation": "CANONICAL_SO10_MATRIX_THRESHOLD_V1",
+      "completed_utc": "2026-09-20T18:14:40Z",
       "outcome": "PS_THRESHOLD_KERNEL_BLOCKED",
-      "authority": "EXACT_PS_PROJECTORS_RESTORATION_CHECKS_AND_WHOLE_SPECTRUM_ONE_LOOP_LOG_SUM_RULE_ONLY",
-      "result": "calculations/canonical_so10_ps_threshold_kernel/RESULT.md",
-      "qualified_stop": "TWO_BOUNDARY_ACTIVE_FIELD_MAP_AND_FINITE_VECTOR_GOLDSTONE_GHOST_MATCHING_NOT_DERIVED",
+      "authority": "PHYSICAL_VACUUM_SM_SCALAR_AND_VECTOR_MATRIX_LOG_CHECKS_ONLY_NOT_TWO_BOUNDARY_MATCHING",
+      "result": "calculations/canonical_so10_matrix_threshold/RESULT.md",
+      "qualified_stop": "NONCOMMUTING_PS_SIDE_MASS_OPERATORS_AND_FINITE_VECTOR_GOLDSTONE_GHOST_MATCHING_UNDERIVED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -246,7 +246,18 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_ps_threshold_kernel/RESULT.md"
     },
-    "active_focus": "CANONICAL_SO10_TWO_BOUNDARY_DECOUPLING_AND_FINITE_ONE_LOOP_MATCHING_MISSING_FLAVOR_NOT_RESUMED"
+    "canonical_so10_matrix_threshold": {
+      "outcome": "PS_THRESHOLD_KERNEL_BLOCKED",
+      "physical_sm_scalar_matrix_log": "PASS",
+      "physical_sm_vector_matrix_log": "PASS",
+      "broken_ps_vector_mass_generator_commutator": "NONZERO",
+      "finite_vector_goldstone_ghost_matching_complete": false,
+      "two_boundary_active_field_ledger_complete": false,
+      "physical_scale_fixed": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_matrix_threshold/RESULT.md"
+    },
+    "active_focus": "CANONICAL_SO10_TWO_BOUNDARY_NONDEGENERATE_BFM_MATCHING_AND_EFT_INTERVAL_PRESCRIPTION_MISSING_FLAVOR_NOT_RESUMED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
