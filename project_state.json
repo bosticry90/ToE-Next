@@ -1,6 +1,6 @@
 {
-  "state_version": 35,
-  "updated_utc": "2026-09-20T16:45:07Z",
+  "state_version": 36,
+  "updated_utc": "2026-09-20T17:32:56Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_GAUGE_MATCHING_V1",
-      "completed_utc": "2026-09-20T16:45:07Z",
-      "outcome": "GAUGE_MATCHING_BLOCKED",
-      "authority": "CANONICAL_SM_SCALAR_VECTOR_THRESHOLD_INGREDIENTS_AND_COARSE_ONE_LOOP_DIAGNOSTIC_ONLY",
-      "result": "calculations/canonical_so10_gauge_matching/RESULT.md",
-      "qualified_stop": "PS_COVARIANT_SPLIT_THRESHOLD_AND_ONE_LOOP_MATCHING_KERNEL_NOT_DERIVED",
+      "calculation": "CANONICAL_SO10_PS_THRESHOLD_KERNEL_V1",
+      "completed_utc": "2026-09-20T17:32:56Z",
+      "outcome": "PS_THRESHOLD_KERNEL_BLOCKED",
+      "authority": "EXACT_PS_PROJECTORS_RESTORATION_CHECKS_AND_WHOLE_SPECTRUM_ONE_LOOP_LOG_SUM_RULE_ONLY",
+      "result": "calculations/canonical_so10_ps_threshold_kernel/RESULT.md",
+      "qualified_stop": "TWO_BOUNDARY_ACTIVE_FIELD_MAP_AND_FINITE_VECTOR_GOLDSTONE_GHOST_MATCHING_NOT_DERIVED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -235,7 +235,18 @@
       "physical_scale_fixed": false,
       "result": "calculations/canonical_so10_gauge_matching/RESULT.md"
     },
-    "active_focus": "CANONICAL_SO10_PS_SPLIT_THRESHOLD_MATCHING_KERNEL_MISSING_FLAVOR_NOT_RESUMED"
+    "canonical_so10_ps_threshold_kernel": {
+      "outcome": "PS_THRESHOLD_KERNEL_BLOCKED",
+      "ps_projector_ranks_checked": true,
+      "ps_and_spin10_restoration_recombination_checked": true,
+      "whole_spectrum_one_loop_log_checksum": "PASS",
+      "two_boundary_interval_map_complete": false,
+      "finite_vector_goldstone_ghost_matching_complete": false,
+      "actual_spectrum_gauge_solve_started": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_ps_threshold_kernel/RESULT.md"
+    },
+    "active_focus": "CANONICAL_SO10_TWO_BOUNDARY_DECOUPLING_AND_FINITE_ONE_LOOP_MATCHING_MISSING_FLAVOR_NOT_RESUMED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
