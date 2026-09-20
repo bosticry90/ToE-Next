@@ -1,6 +1,6 @@
 {
-  "state_version": 37,
-  "updated_utc": "2026-09-20T18:14:40Z",
+  "state_version": 38,
+  "updated_utc": "2026-09-20T18:26:46Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_MATRIX_THRESHOLD_V1",
-      "completed_utc": "2026-09-20T18:14:40Z",
-      "outcome": "PS_THRESHOLD_KERNEL_BLOCKED",
-      "authority": "PHYSICAL_VACUUM_SM_SCALAR_AND_VECTOR_MATRIX_LOG_CHECKS_ONLY_NOT_TWO_BOUNDARY_MATCHING",
-      "result": "calculations/canonical_so10_matrix_threshold/RESULT.md",
-      "qualified_stop": "NONCOMMUTING_PS_SIDE_MASS_OPERATORS_AND_FINITE_VECTOR_GOLDSTONE_GHOST_MATCHING_UNDERIVED",
+      "calculation": "CANONICAL_SO10_LOWER_BFM_V1",
+      "completed_utc": "2026-09-20T18:26:46Z",
+      "outcome": "LOWER_BOUNDARY_MATCHING_BLOCKED",
+      "authority": "PHYSICAL_PS_SM_QUADRATIC_VECTOR_GOLDSTONE_GHOST_ORBIT_MASS_PAIRING_ONLY_NOT_ONE_LOOP_F2_MATCHING",
+      "result": "calculations/canonical_so10_lower_bfm/RESULT.md",
+      "qualified_stop": "COMPLETE_HARD_REGION_F2_MATCHING_FINITE_TERMS_AND_PS_SIDE_EFT_SUBTRACTION_UNDERIVED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -257,7 +257,19 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_matrix_threshold/RESULT.md"
     },
-    "active_focus": "CANONICAL_SO10_TWO_BOUNDARY_NONDEGENERATE_BFM_MATCHING_AND_EFT_INTERVAL_PRESCRIPTION_MISSING_FLAVOR_NOT_RESUMED"
+    "canonical_so10_lower_bfm": {
+      "outcome": "LOWER_BOUNDARY_MATCHING_BLOCKED",
+      "quadratic_ps_generator_split": "12_UNBROKEN_PLUS_9_BROKEN_PASS",
+      "physical_lower_vector_goldstone_ghost_mass_pairing": "PASS_IN_PARTIAL_R_ZETA_GAUGE",
+      "full_hard_region_f2_match": false,
+      "finite_vector_goldstone_ghost_matching_complete": false,
+      "matched_gauge_parameter_check_complete": false,
+      "upper_kernel_started": false,
+      "coupled_gauge_scale_solve_started": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_lower_bfm/RESULT.md"
+    },
+    "active_focus": "CANONICAL_SO10_LOWER_BFM_HARD_REGION_F2_MATCHING_AND_PS_EFT_SUBTRACTION_MISSING_UPPER_KERNEL_NOT_STARTED_FLAVOR_NOT_RESUMED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
