@@ -1,6 +1,6 @@
 {
-  "state_version": 54,
-  "updated_utc": "2026-09-21T20:06:14Z",
+  "state_version": 55,
+  "updated_utc": "2026-09-21T20:45:50Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "TWO_LOOP_QFT_COMPILER_V1_LAYER4",
-      "completed_utc": "2026-09-21T20:06:14Z",
-      "outcome": "TWO_LOOP_DIAGRAM_GENERATOR_PASS",
-      "authority": "COMPLETE_1900_RECORD_GAUGE_SCALAR_TWO_LOOP_INVENTORY_WITH_ORDERED_QUARTIC_GHOST_CHANNELS_AND_INDEPENDENT_REPLAY",
-      "result": "tools/two_loop_qft_compiler_v1/LAYER4_RESULT.md",
-      "qualified_stop": "LAYER5_COUNTERTERM_COMPILER_AUTHORIZED_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED",
+      "calculation": "TWO_LOOP_QFT_COMPILER_V1_LAYER5_COUNTERTERM_GATE",
+      "completed_utc": "2026-09-21T20:45:50Z",
+      "outcome": "ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED",
+      "authority": "BARE_ACTION_COUNTERTERM_STRUCTURE_29_PARENT_MONOMIAL_FAMILIES_21_SLOT_DISPATCHES_GAUGE_WARD_SUBPASS_AND_INDEPENDENT_ROUNDTRIP",
+      "result": "tools/two_loop_qft_compiler_v1/LAYER5_RESULT.md",
+      "qualified_stop": "MISSING_ONE_LOOP_PARENT_SCALAR_AND_PARTIAL_BFM_UV_POLE_RESIDUES_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -459,7 +459,7 @@
       "finite_C1_GS_comparison": "PREREGISTERED_BEFORE_RESULT",
       "finite_C1_GS": null,
       "diagram_generator": "TWO_LOOP_DIAGRAM_GENERATOR_PASS_VIA_TWO_LOOP_QFT_COMPILER_V1",
-      "one_loop_counterterm_layer": "NOT_IMPLEMENTED",
+      "one_loop_counterterm_layer": "STRUCTURE_PASS_UV_POLE_RESIDUES_BLOCKED",
       "two_loop_reduction_and_master_layer": "NOT_IMPLEMENTED",
       "gauge_parameter_cancellation": "ONE_LOOP_LAYER3_PASS_TWO_LOOP_NOT_YET_TESTED",
       "gauge_refit_performed": false,
@@ -470,7 +470,7 @@
       "result": "calculations/canonical_so10_direct_two_loop_gauge_scalar_threshold/RESULT.md"
     },
     "two_loop_qft_compiler_v1": {
-      "outcome": "TWO_LOOP_DIAGRAM_GENERATOR_PASS",
+      "outcome": "ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED",
       "scientific_target": "FINITE_CENTERED_C1_GS_FOR_FROZEN_CANONICAL_BENCHMARK",
       "program_admitted": true,
       "component_basis_gate": "CANONICAL_328_REAL_COMPONENT_BASIS_PASS",
@@ -540,12 +540,24 @@
       "layer4_one_loop_inventory_regression": "PASS_6_REQUIRED_HEAVY_VECTOR_GOLDSTONE_GHOST_CLASSES",
       "layer4_blocker": null,
       "layer5_counterterm_derivation_authorized": true,
+      "layer4_outcome_preserved": "TWO_LOOP_DIAGRAM_GENERATOR_PASS",
+      "layer5_counterterm_action_structure": "PASS_29_PARENT_MONOMIAL_FAMILIES_AND_21_SLOT_DISPATCHES",
+      "layer5_counterterm_contract_sha256": "87cf0b4966451c62168552284cb1c709c5e3247d8e1b8241e34d4b78116c48f1",
+      "layer5_bare_action_independent_roundtrip": "LAYER5_BARE_ACTION_ROUNDTRIP_PASS",
+      "layer5_parent_gauge_counterterm": "PASS_B10_MINUS_34_OVER_3_AND_BACKGROUND_WARD_IDENTITY",
+      "layer5_tadpole_VEV_prescription": "FROZEN_FJ_LIKE_EXPLICIT_TADPOLE_SHIFT",
+      "layer5_parent_operator_bare_expansion_closure": "PASS",
+      "layer5_parent_operator_radiative_pole_closure": "BLOCKED_MISSING_ONE_LOOP_POLE_EVALUATOR",
+      "layer5_slot_structures_populated": 21,
+      "layer5_slot_complete_pole_residues_derived": 0,
+      "layer5_blocker": "ONE_LOOP_1PI_UV_POLE_EVALUATOR_FOR_PARENT_SCALAR_1_2_3_4_POINT_AND_PARTIAL_BFM_QUANTUM_VECTOR_GHOST_AMPLITUDES",
+      "layer6_tensor_IBP_reduction_authorized": false,
       "counterterm_reduction_master_layers_started": false,
       "finite_C1_GS": null,
       "bfb_status": "BFB_UNRESOLVED",
-      "result": "tools/two_loop_qft_compiler_v1/LAYER4_RESULT.md"
+      "result": "tools/two_loop_qft_compiler_v1/LAYER5_RESULT.md"
     },
-    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER4_PASS_LAYER5_COUNTERTERM_COMPILER_AUTHORIZED_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED"
+    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5_BLOCKED_BUILD_ONE_LOOP_UV_POLE_EVALUATOR_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

@@ -1,0 +1,16 @@
+{
+  "outcome": "ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED",
+  "earned_subgates": [
+    "LAYER5_COUNTERTERM_ACTION_STRUCTURE_PASS_RESIDUES_BLOCKED",
+    "LAYER5_BARE_ACTION_ROUNDTRIP_PASS",
+    "PARENT_GAUGE_COUNTERTERM_AND_BACKGROUND_WARD_IDENTITY_PASS",
+    "FJ_LIKE_TADPOLE_VEV_PRESCRIPTION_FROZEN"
+  ],
+  "counterterm_contract_sha256": "87cf0b4966451c62168552284cb1c709c5e3247d8e1b8241e34d4b78116c48f1",
+  "slot_structures_populated": 21,
+  "slot_pole_residues_derived": 0,
+  "missing_required_residue_groups": 18,
+  "blocker": "one_loop_1PI_UV_pole_evaluator_for_parent_scalar_1_2_3_4_point_and_partial_BFM_quantum_vector_ghost_amplitudes",
+  "layer6_authorized": false,
+  "finite_C1_GS": null
+}

@@ -1,0 +1,8 @@
+{
+  "outcome": "LAYER5_BARE_ACTION_ROUNDTRIP_PASS",
+  "imports_primary_compiler": false,
+  "parent_monomial_families_replayed": 29,
+  "counterterm_slots_replayed": 21,
+  "background_Ward_identity_residual": "0",
+  "qualification": "structural bare-action expansion only; one-loop pole residues remain uncalculated"
+}

@@ -52,8 +52,19 @@ graphs containing the equivariant quartic heavy-ghost vertex are differentiated
 into direct/exchange ordered Grassmann channels, giving 1,900 final records.
 An independent recursive enumerator reproduces the complete set and every
 symmetry denominator, while five field-colored control theories pass. Layer 5
-is authorized but has not started. See [`LAYER4_RESULT.md`](LAYER4_RESULT.md).
-No amplitude, finite `C1_GS`, gauge refit, or new physics verdict is inferred.
+was therefore authorized. See [`LAYER4_RESULT.md`](LAYER4_RESULT.md).
+
+The first layer-5 execution derives the complete bare-action counterterm
+structure for all 29 parent monomial families, populates the structural
+dispatch expression for every one of the 21 preregistered insertion slots,
+fixes a single FJ-like tadpole/VEV convention, and independently replays the
+bare-action expansion. The earned parent `b10=-34/3` coefficient also fixes
+the gauge/background-field counterterm and its Ward identity. Promotion is
+nevertheless blocked because the one-loop scalar, quantum-vector, ghost,
+gauge-parameter, VEV, and tadpole UV-pole residues have not been calculated.
+The disposition is `ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED`; layer 6 remains
+locked. See [`LAYER5_RESULT.md`](LAYER5_RESULT.md). No amplitude, finite
+`C1_GS`, gauge refit, or new physics verdict is inferred.
 
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and

@@ -1,0 +1,650 @@
+{
+  "outcome": "LAYER5_COUNTERTERM_ACTION_STRUCTURE_PASS_RESIDUES_BLOCKED",
+  "immutable_inputs": {
+    "partial_bfm_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+    "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
+    "layer4_topology_sha256": "778fe1a80234f7f5fc3c9cbdd02d465bf351f2958d509ef16fc9d2a6c0806021",
+    "layer4_vertex_catalog_sha256": "1a7ddef7a9df34c8827317325ee4f34d0ac09e684c4cba99dded88da6667b567",
+    "layer4_species_inventory_sha256": "46f35ed04bff58cd9afd3673da724c376209cac0cd3cd4a15ff252d6ad1ae837"
+  },
+  "scheme": {
+    "regularization": "dimensional_regularization_d_4_minus_2epsilon",
+    "subtraction": "MSbar",
+    "field_renormalization": "q0=Z_q^(1/2)*q",
+    "coefficient_scaling": "c_n0=mu^((n-2)*epsilon)*(c_n+delta_c_n)",
+    "tadpole_VEV_prescription": "FJ_like_explicit_tadpole_shift: parent parameters remain MSbar; v0=Z_background_scalar^(1/2)*(v+Delta_v); Delta_v and delta_t are fixed from the same renormalized one_point conditions and are used in scalar, Goldstone, ghost, and vector sectors",
+    "forbidden": "mixing_tadpole_or_VEV_prescriptions_between_sectors"
+  },
+  "parent_operator_basis": {
+    "real_coefficient_families": 24,
+    "complex_coefficient_families": 5,
+    "real_Hermitian_directions": 34,
+    "rows": [
+      {
+        "coefficient": "mPhi2",
+        "coefficient_reality": "real",
+        "field_degree": 2,
+        "field_multiplicities": {
+          "Phi": 2
+        },
+        "bare_definition": "mPhi2_0=mu^(0*epsilon)*(mPhi2+delta_mPhi2)",
+        "expanded_operator_coefficient": "delta_mPhi2 + mPhi2*(2/2*deltaZ_Phi)"
+      },
+      {
+        "coefficient": "mSigma2",
+        "coefficient_reality": "real",
+        "field_degree": 2,
+        "field_multiplicities": {
+          "Sigma": 2
+        },
+        "bare_definition": "mSigma2_0=mu^(0*epsilon)*(mSigma2+delta_mSigma2)",
+        "expanded_operator_coefficient": "delta_mSigma2 + mSigma2*(2/2*deltaZ_Sigma)"
+      },
+      {
+        "coefficient": "mphi2",
+        "coefficient_reality": "real",
+        "field_degree": 2,
+        "field_multiplicities": {
+          "phi": 2
+        },
+        "bare_definition": "mphi2_0=mu^(0*epsilon)*(mphi2+delta_mphi2)",
+        "expanded_operator_coefficient": "delta_mphi2 + mphi2*(2/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "mS2",
+        "coefficient_reality": "real",
+        "field_degree": 2,
+        "field_multiplicities": {
+          "S": 2
+        },
+        "bare_definition": "mS2_0=mu^(0*epsilon)*(mS2+delta_mS2)",
+        "expanded_operator_coefficient": "delta_mS2 + mS2*(2/2*deltaZ_S)"
+      },
+      {
+        "coefficient": "muPhi",
+        "coefficient_reality": "real",
+        "field_degree": 3,
+        "field_multiplicities": {
+          "Phi": 3
+        },
+        "bare_definition": "muPhi_0=mu^(1*epsilon)*(muPhi+delta_muPhi)",
+        "expanded_operator_coefficient": "delta_muPhi + muPhi*(3/2*deltaZ_Phi)"
+      },
+      {
+        "coefficient": "muPhiPhi",
+        "coefficient_reality": "real",
+        "field_degree": 3,
+        "field_multiplicities": {
+          "Phi": 1,
+          "phi": 2
+        },
+        "bare_definition": "muPhiPhi_0=mu^(1*epsilon)*(muPhiPhi+delta_muPhiPhi)",
+        "expanded_operator_coefficient": "delta_muPhiPhi + muPhiPhi*(1/2*deltaZ_Phi + 2/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "z6",
+        "coefficient_reality": "complex_plus_Hermitian_conjugate",
+        "field_degree": 3,
+        "field_multiplicities": {
+          "phi": 2,
+          "S": 1
+        },
+        "bare_definition": "z6_0=mu^(1*epsilon)*(z6+delta_z6)",
+        "expanded_operator_coefficient": "delta_z6 + z6*(2/2*deltaZ_phi + 1/2*deltaZ_S)"
+      },
+      {
+        "coefficient": "lambdaPhi1",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 4
+        },
+        "bare_definition": "lambdaPhi1_0=mu^(2*epsilon)*(lambdaPhi1+delta_lambdaPhi1)",
+        "expanded_operator_coefficient": "delta_lambdaPhi1 + lambdaPhi1*(4/2*deltaZ_Phi)"
+      },
+      {
+        "coefficient": "lambdaPhi2",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 4
+        },
+        "bare_definition": "lambdaPhi2_0=mu^(2*epsilon)*(lambdaPhi2+delta_lambdaPhi2)",
+        "expanded_operator_coefficient": "delta_lambdaPhi2 + lambdaPhi2*(4/2*deltaZ_Phi)"
+      },
+      {
+        "coefficient": "lambdaPhiSigma1",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 2,
+          "Sigma": 2
+        },
+        "bare_definition": "lambdaPhiSigma1_0=mu^(2*epsilon)*(lambdaPhiSigma1+delta_lambdaPhiSigma1)",
+        "expanded_operator_coefficient": "delta_lambdaPhiSigma1 + lambdaPhiSigma1*(2/2*deltaZ_Phi + 2/2*deltaZ_Sigma)"
+      },
+      {
+        "coefficient": "lambdaPhiSigma2",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 2,
+          "Sigma": 2
+        },
+        "bare_definition": "lambdaPhiSigma2_0=mu^(2*epsilon)*(lambdaPhiSigma2+delta_lambdaPhiSigma2)",
+        "expanded_operator_coefficient": "delta_lambdaPhiSigma2 + lambdaPhiSigma2*(2/2*deltaZ_Phi + 2/2*deltaZ_Sigma)"
+      },
+      {
+        "coefficient": "lambdaPhiphi1",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 2,
+          "phi": 2
+        },
+        "bare_definition": "lambdaPhiphi1_0=mu^(2*epsilon)*(lambdaPhiphi1+delta_lambdaPhiphi1)",
+        "expanded_operator_coefficient": "delta_lambdaPhiphi1 + lambdaPhiphi1*(2/2*deltaZ_Phi + 2/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "lambdaPhiphi2",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 2,
+          "phi": 2
+        },
+        "bare_definition": "lambdaPhiphi2_0=mu^(2*epsilon)*(lambdaPhiphi2+delta_lambdaPhiphi2)",
+        "expanded_operator_coefficient": "delta_lambdaPhiphi2 + lambdaPhiphi2*(2/2*deltaZ_Phi + 2/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "lambdaPhiS",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 2,
+          "S": 2
+        },
+        "bare_definition": "lambdaPhiS_0=mu^(2*epsilon)*(lambdaPhiS+delta_lambdaPhiS)",
+        "expanded_operator_coefficient": "delta_lambdaPhiS + lambdaPhiS*(2/2*deltaZ_Phi + 2/2*deltaZ_S)"
+      },
+      {
+        "coefficient": "lambdaSigma1",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 4
+        },
+        "bare_definition": "lambdaSigma1_0=mu^(2*epsilon)*(lambdaSigma1+delta_lambdaSigma1)",
+        "expanded_operator_coefficient": "delta_lambdaSigma1 + lambdaSigma1*(4/2*deltaZ_Sigma)"
+      },
+      {
+        "coefficient": "lambdaSigma2",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 4
+        },
+        "bare_definition": "lambdaSigma2_0=mu^(2*epsilon)*(lambdaSigma2+delta_lambdaSigma2)",
+        "expanded_operator_coefficient": "delta_lambdaSigma2 + lambdaSigma2*(4/2*deltaZ_Sigma)"
+      },
+      {
+        "coefficient": "lambdaSigma3",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 4
+        },
+        "bare_definition": "lambdaSigma3_0=mu^(2*epsilon)*(lambdaSigma3+delta_lambdaSigma3)",
+        "expanded_operator_coefficient": "delta_lambdaSigma3 + lambdaSigma3*(4/2*deltaZ_Sigma)"
+      },
+      {
+        "coefficient": "lambdaSigma4",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 4
+        },
+        "bare_definition": "lambdaSigma4_0=mu^(2*epsilon)*(lambdaSigma4+delta_lambdaSigma4)",
+        "expanded_operator_coefficient": "delta_lambdaSigma4 + lambdaSigma4*(4/2*deltaZ_Sigma)"
+      },
+      {
+        "coefficient": "lambdaSigmaphi1",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 2,
+          "phi": 2
+        },
+        "bare_definition": "lambdaSigmaphi1_0=mu^(2*epsilon)*(lambdaSigmaphi1+delta_lambdaSigmaphi1)",
+        "expanded_operator_coefficient": "delta_lambdaSigmaphi1 + lambdaSigmaphi1*(2/2*deltaZ_Sigma + 2/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "lambdaSigmaphi2",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 2,
+          "phi": 2
+        },
+        "bare_definition": "lambdaSigmaphi2_0=mu^(2*epsilon)*(lambdaSigmaphi2+delta_lambdaSigmaphi2)",
+        "expanded_operator_coefficient": "delta_lambdaSigmaphi2 + lambdaSigmaphi2*(2/2*deltaZ_Sigma + 2/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "lambdaPhiVector1",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "phi": 4
+        },
+        "bare_definition": "lambdaPhiVector1_0=mu^(2*epsilon)*(lambdaPhiVector1+delta_lambdaPhiVector1)",
+        "expanded_operator_coefficient": "delta_lambdaPhiVector1 + lambdaPhiVector1*(4/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "lambdaPhiVector2",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "phi": 4
+        },
+        "bare_definition": "lambdaPhiVector2_0=mu^(2*epsilon)*(lambdaPhiVector2+delta_lambdaPhiVector2)",
+        "expanded_operator_coefficient": "delta_lambdaPhiVector2 + lambdaPhiVector2*(4/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "lambdaSigmaS",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 2,
+          "S": 2
+        },
+        "bare_definition": "lambdaSigmaS_0=mu^(2*epsilon)*(lambdaSigmaS+delta_lambdaSigmaS)",
+        "expanded_operator_coefficient": "delta_lambdaSigmaS + lambdaSigmaS*(2/2*deltaZ_Sigma + 2/2*deltaZ_S)"
+      },
+      {
+        "coefficient": "lambdaVectorS",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "phi": 2,
+          "S": 2
+        },
+        "bare_definition": "lambdaVectorS_0=mu^(2*epsilon)*(lambdaVectorS+delta_lambdaVectorS)",
+        "expanded_operator_coefficient": "delta_lambdaVectorS + lambdaVectorS*(2/2*deltaZ_phi + 2/2*deltaZ_S)"
+      },
+      {
+        "coefficient": "lambdaS",
+        "coefficient_reality": "real",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "S": 4
+        },
+        "bare_definition": "lambdaS_0=mu^(2*epsilon)*(lambdaS+delta_lambdaS)",
+        "expanded_operator_coefficient": "delta_lambdaS + lambdaS*(4/2*deltaZ_S)"
+      },
+      {
+        "coefficient": "z4",
+        "coefficient_reality": "complex_plus_Hermitian_conjugate",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 1,
+          "Sigma": 2,
+          "S": 1
+        },
+        "bare_definition": "z4_0=mu^(2*epsilon)*(z4+delta_z4)",
+        "expanded_operator_coefficient": "delta_z4 + z4*(1/2*deltaZ_Phi + 2/2*deltaZ_Sigma + 1/2*deltaZ_S)"
+      },
+      {
+        "coefficient": "zK",
+        "coefficient_reality": "complex_plus_Hermitian_conjugate",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Phi": 1,
+          "phi": 2,
+          "S": 1
+        },
+        "bare_definition": "zK_0=mu^(2*epsilon)*(zK+delta_zK)",
+        "expanded_operator_coefficient": "delta_zK + zK*(1/2*deltaZ_Phi + 2/2*deltaZ_phi + 1/2*deltaZ_S)"
+      },
+      {
+        "coefficient": "zEta",
+        "coefficient_reality": "complex_plus_Hermitian_conjugate",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 3,
+          "phi": 1
+        },
+        "bare_definition": "zEta_0=mu^(2*epsilon)*(zEta+delta_zEta)",
+        "expanded_operator_coefficient": "delta_zEta + zEta*(3/2*deltaZ_Sigma + 1/2*deltaZ_phi)"
+      },
+      {
+        "coefficient": "zD",
+        "coefficient_reality": "complex_plus_Hermitian_conjugate",
+        "field_degree": 4,
+        "field_multiplicities": {
+          "Sigma": 2,
+          "phi": 2
+        },
+        "bare_definition": "zD_0=mu^(2*epsilon)*(zD+delta_zD)",
+        "expanded_operator_coefficient": "delta_zD + zD*(2/2*deltaZ_Sigma + 2/2*deltaZ_phi)"
+      }
+    ],
+    "bare_expansion_closure": "PASS_SAME_29_MONOMIAL_FAMILIES",
+    "radiative_pole_closure": "NOT_YET_TESTED_MISSING_ONE_LOOP_POLE_EVALUATOR"
+  },
+  "known_gauge_counterterm": {
+    "pole_unit": "P10=g10^2/(16*pi^2*epsilon_bar)",
+    "b10": "-34/3",
+    "deltaZ_g10": "(-17/3)*P10",
+    "deltaZ_background_Spin10": "(34/3)*P10",
+    "background_Ward_identity": "deltaZ_g10+1/2*deltaZ_background_Spin10=0",
+    "ward_identity_residual": "0",
+    "authority": "earned_parent_one_loop_beta_replay"
+  },
+  "goldstone_mass_counterterm_identity": "delta(xi*M_V^2)=M_V^2*delta_xi+xi*deltaM_V^2; deltaM_V^2 is derived from delta_g, background-field/VEV shifts, and the same parent kinetic action",
+  "counterterm_slots": [
+    {
+      "slot_id": "L1_777fae2dfc26:edge0:field",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "field",
+      "coefficient": "CT_FIELD(line)=deltaZ_line*D_inverse_kinetic(line)",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "bare_field_expansion",
+      "residue_dependency": "field_two_point_UV_pole"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge0:mass",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "mass",
+      "coefficient": "CT_MASS(line)=deltaM2_line",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "parent_mass_and_shifted_potential_counterterm",
+      "residue_dependency": "parent_scalar_and_vector_mass_UV_poles"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge0:gauge_parameter",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "gauge_parameter",
+      "coefficient": "CT_GAUGE_PARAMETER(line)=delta_xi*d(D_inverse_line)/d_xi",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "single_frozen_partial_BFM_BRST_action",
+      "residue_dependency": "quantum_vector_gauge_parameter_UV_pole"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge1:field",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 1
+      },
+      "counterterm_kind": "field",
+      "coefficient": "CT_FIELD(line)=deltaZ_line*D_inverse_kinetic(line)",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "bare_field_expansion",
+      "residue_dependency": "field_two_point_UV_pole"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge1:mass",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 1
+      },
+      "counterterm_kind": "mass",
+      "coefficient": "CT_MASS(line)=deltaM2_line",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "parent_mass_and_shifted_potential_counterterm",
+      "residue_dependency": "parent_scalar_and_vector_mass_UV_poles"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge1:gauge_parameter",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 1
+      },
+      "counterterm_kind": "gauge_parameter",
+      "coefficient": "CT_GAUGE_PARAMETER(line)=delta_xi*d(D_inverse_line)/d_xi",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "single_frozen_partial_BFM_BRST_action",
+      "residue_dependency": "quantum_vector_gauge_parameter_UV_pole"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex0:gauge_coupling",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "gauge_coupling",
+      "coefficient": "CT_G_VERTEX=(delta_g*d/dg+1/2*sum_external_deltaZ)*V_tree",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "bare_gauge_and_field_expansion",
+      "residue_dependency": "delta_g_known_other_field_residues_required"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex0:VEV",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "VEV",
+      "coefficient": "CT_VEV=sum_r(delta_v_r*d(V_tree)/d(v_r))",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "frozen_FJ_like_explicit_tadpole_shift",
+      "residue_dependency": "one_point_UV_poles_and_background_scalar_Z"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex0:tadpole",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "tadpole",
+      "coefficient": "CT_TADPOLE=sum_r(delta_t_r*d(V_tree)/d(t_r))",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "frozen_FJ_like_explicit_tadpole_shift",
+      "residue_dependency": "one_point_UV_poles"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex0:vertex",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "vertex",
+      "coefficient": "CT_VERTEX=[sum_a(delta_c_a*d/dc_a)+1/2*sum_fields(deltaZ_field*q_field*d/dq_field)]*V_tree",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "parent_Spin10_invariant_counterterm_action",
+      "residue_dependency": "parent_2_3_4_point_UV_poles"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex1:gauge_coupling",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 1
+      },
+      "counterterm_kind": "gauge_coupling",
+      "coefficient": "CT_G_VERTEX=(delta_g*d/dg+1/2*sum_external_deltaZ)*V_tree",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "bare_gauge_and_field_expansion",
+      "residue_dependency": "delta_g_known_other_field_residues_required"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex1:VEV",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 1
+      },
+      "counterterm_kind": "VEV",
+      "coefficient": "CT_VEV=sum_r(delta_v_r*d(V_tree)/d(v_r))",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "frozen_FJ_like_explicit_tadpole_shift",
+      "residue_dependency": "one_point_UV_poles_and_background_scalar_Z"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex1:tadpole",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 1
+      },
+      "counterterm_kind": "tadpole",
+      "coefficient": "CT_TADPOLE=sum_r(delta_t_r*d(V_tree)/d(t_r))",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "frozen_FJ_like_explicit_tadpole_shift",
+      "residue_dependency": "one_point_UV_poles"
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex1:vertex",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 1
+      },
+      "counterterm_kind": "vertex",
+      "coefficient": "CT_VERTEX=[sum_a(delta_c_a*d/dc_a)+1/2*sum_fields(deltaZ_field*q_field*d/dq_field)]*V_tree",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "parent_Spin10_invariant_counterterm_action",
+      "residue_dependency": "parent_2_3_4_point_UV_poles"
+    },
+    {
+      "slot_id": "L1_c486e7b87607:edge0:field",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "field",
+      "coefficient": "CT_FIELD(line)=deltaZ_line*D_inverse_kinetic(line)",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "bare_field_expansion",
+      "residue_dependency": "field_two_point_UV_pole"
+    },
+    {
+      "slot_id": "L1_c486e7b87607:edge0:mass",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "mass",
+      "coefficient": "CT_MASS(line)=deltaM2_line",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "parent_mass_and_shifted_potential_counterterm",
+      "residue_dependency": "parent_scalar_and_vector_mass_UV_poles"
+    },
+    {
+      "slot_id": "L1_c486e7b87607:edge0:gauge_parameter",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "gauge_parameter",
+      "coefficient": "CT_GAUGE_PARAMETER(line)=delta_xi*d(D_inverse_line)/d_xi",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "single_frozen_partial_BFM_BRST_action",
+      "residue_dependency": "quantum_vector_gauge_parameter_UV_pole"
+    },
+    {
+      "slot_id": "L1_c486e7b87607:vertex0:gauge_coupling",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "gauge_coupling",
+      "coefficient": "CT_G_VERTEX=(delta_g*d/dg+1/2*sum_external_deltaZ)*V_tree",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "bare_gauge_and_field_expansion",
+      "residue_dependency": "delta_g_known_other_field_residues_required"
+    },
+    {
+      "slot_id": "L1_c486e7b87607:vertex0:VEV",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "VEV",
+      "coefficient": "CT_VEV=sum_r(delta_v_r*d(V_tree)/d(v_r))",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "frozen_FJ_like_explicit_tadpole_shift",
+      "residue_dependency": "one_point_UV_poles_and_background_scalar_Z"
+    },
+    {
+      "slot_id": "L1_c486e7b87607:vertex0:tadpole",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "tadpole",
+      "coefficient": "CT_TADPOLE=sum_r(delta_t_r*d(V_tree)/d(t_r))",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "frozen_FJ_like_explicit_tadpole_shift",
+      "residue_dependency": "one_point_UV_poles"
+    },
+    {
+      "slot_id": "L1_c486e7b87607:vertex0:vertex",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "vertex",
+      "coefficient": "CT_VERTEX=[sum_a(delta_c_a*d/dc_a)+1/2*sum_fields(deltaZ_field*q_field*d/dq_field)]*V_tree",
+      "coefficient_status": "STRUCTURAL_EXPRESSION_POPULATED_RESIDUE_PENDING",
+      "provenance": "parent_Spin10_invariant_counterterm_action",
+      "residue_dependency": "parent_2_3_4_point_UV_poles"
+    }
+  ],
+  "slot_count": 21,
+  "all_slot_structures_populated": true,
+  "all_slot_pole_residues_derived": false,
+  "missing_required_one_loop_residues": [
+    "deltaZ_quantum_Spin10_in_partial_BFM_Rxi",
+    "deltaZ_Phi",
+    "deltaZ_Sigma",
+    "deltaZ_phi",
+    "deltaZ_S",
+    "deltaZ_heavy_ghost",
+    "deltaZ_light_ghost",
+    "delta_xi",
+    "delta_parent_quadratic_4",
+    "delta_parent_cubic_4_real_directions",
+    "delta_parent_quartic_26_real_directions",
+    "delta_v_Phi",
+    "delta_v_Sigma",
+    "delta_v_S",
+    "delta_t_Phi",
+    "delta_t_Sigma",
+    "delta_t_S",
+    "selected_scalar_2_and_3_point_UV_pole_controls"
+  ],
+  "blocking_layer": "one_loop_1PI_UV_pole_evaluator_for_parent_scalar_1_2_3_4_point_and_partial_BFM_quantum_vector_ghost_amplitudes",
+  "not_started": [
+    "tensor_IBP_reduction",
+    "master_integral_evaluation",
+    "two_loop_amplitude_assembly",
+    "finite_C1_GS"
+  ],
+  "counterterm_contract_sha256": "87cf0b4966451c62168552284cb1c709c5e3247d8e1b8241e34d4b78116c48f1"
+}
