@@ -1,6 +1,6 @@
 {
-  "state_version": 40,
-  "updated_utc": "2026-09-20T19:25:38Z",
+  "state_version": 41,
+  "updated_utc": "2026-09-20T19:55:46Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_SO10_PS_INTERVAL_EFT_V1",
-      "completed_utc": "2026-09-20T19:25:38Z",
-      "outcome": "PS_INTERVAL_EFT_BLOCKED",
-      "authority": "SAME_COEFFICIENT_STATIONARY_PS_BACKGROUND_AND_PROVISIONAL_328_REAL_QUADRATIC_CENSUS_ONLY_NO_COVARIANT_INTERVAL_EFT",
-      "result": "calculations/canonical_so10_ps_interval_eft/RESULT.md",
-      "qualified_stop": "MULTI_SPURION_HEAVY_LIGHT_SPLIT_UNFROZEN_NO_UNIFORM_SCHUR_BOUND_OR_INDUCED_OPERATOR_LEDGER",
+      "calculation": "CANONICAL_PS_MULTISPURION_POWER_COUNTING_V1",
+      "completed_utc": "2026-09-20T19:55:46Z",
+      "outcome": "PS_MULTISPURION_COUNTING_UNRESOLVED",
+      "authority": "EXACT_PS_INTERCEPTS_AND_NUMERICAL_CANDIDATE_SCALAR_SPLIT_BOUNDS_NO_COVARIANT_INTERVAL_EFT",
+      "result": "calculations/canonical_so10_ps_multispurion/RESULT.md",
+      "qualified_stop": "WHOLE_RETAINED_SECTOR_NOT_CLEANLY_SEPARATED_COVARIANT_OPERATOR_LEDGER_AND_CERTIFIED_TRUNCATION_ERROR_OUTSTANDING",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -300,7 +300,22 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_ps_interval_eft/RESULT.md"
     },
-    "active_focus": "CANONICAL_SO10_PS_INTERVAL_EFT_BLOCKED_AT_MULTI_SPURION_FIELD_SPLIT_LOWER_VECTOR_F2_RETAINED_NO_FULL_BOUNDARY_OR_SCALE_SOLVE"
+    "canonical_so10_ps_multispurion": {
+      "outcome": "PS_MULTISPURION_COUNTING_UNRESOLVED",
+      "power_counting": "UNRESOLVED",
+      "smallness_origin": "MIXED",
+      "exact_same_coefficient_intercepts": "PASS_FOR_SUSPECT_SECTORS",
+      "ps_origin_scalar_real_dimensions": 328,
+      "candidate_upper_heavy_scalar_real_dimensions": 132,
+      "declared_joint_family_passes_through_physical_point": true,
+      "candidate_scalar_uniform_bound": "NUMERICAL_NOT_CERTIFIED",
+      "complete_ps_covariant_interval_eft": false,
+      "lower_one_loop_matching_resumed": false,
+      "direct_broken_phase_fallback_admitted": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_ps_multispurion/RESULT.md"
+    },
+    "active_focus": "CANONICAL_PS_MULTISPURION_EXACT_INTERCEPTS_PARTIAL_SCALAR_SPLIT_PS_INTERVAL_AND_DIRECT_FALLBACK_UNADMITTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
