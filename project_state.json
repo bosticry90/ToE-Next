@@ -1,6 +1,6 @@
 {
-  "state_version": 42,
-  "updated_utc": "2026-09-21T04:33:49Z",
+  "state_version": 43,
+  "updated_utc": "2026-09-21T04:51:13Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "PS_INTERVAL_EFT_ERROR_BUDGET_V1",
-      "completed_utc": "2026-09-21T04:33:49Z",
+      "calculation": "CANONICAL_PS_TREE_OPERATOR_ERROR_GATE_V1",
+      "completed_utc": "2026-09-21T04:51:13Z",
       "outcome": "PS_EFT_ERROR_UNRESOLVED",
-      "authority": "OBSERVABLE_SPECIFIC_ONE_LOOP_GAUGE_ERROR_DIAGNOSTICS_NO_COMPLETE_PS_OPERATOR_ERROR_BOUND",
-      "result": "calculations/canonical_so10_ps_eft_error_budget/RESULT.md",
-      "qualified_stop": "INDUCED_OPERATOR_COEFFICIENTS_AND_COVARIANT_GOLDSTONE_VECTOR_SUBTRACTION_UNMATCHED",
+      "authority": "EXACT_UPPER_VECTOR_TREE_OPERATOR_AND_GOLDSTONE_OVERLAP_NO_COMPLETE_LOCAL_SCALAR_OR_F2_INSERTION",
+      "result": "calculations/canonical_so10_ps_operator_match/RESULT.md",
+      "qualified_stop": "FINITE_LOCAL_EXPANSION_NOT_CONTROLLED_AND_REQUIRED_ONE_LOOP_OPERATOR_INSERTIONS_UNCOMPUTED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -335,7 +335,27 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_ps_eft_error_budget/RESULT.md"
     },
-    "active_focus": "PS_EFT_GAUGE_ERROR_UNRESOLVED_COVARIANT_OPERATOR_MATCH_AND_DIRECT_FALLBACK_BOTH_UNADMITTED"
+    "canonical_so10_ps_operator_match": {
+      "outcome": "PS_EFT_ERROR_UNRESOLVED",
+      "accuracy_target_inverse_coupling": 0.20270050124930578,
+      "candidate_upper_scalar_real_directions": 132,
+      "upper_vector_current_operator": "EXACT_12_AT_MINUS_6_OVER_5_AND_12_AT_MINUS_300_OVER_253_IN_INVERSE_OMEGA2",
+      "upper_goldstone_orbit_ranks": {
+        "phi": 24,
+        "sigma": 12,
+        "combined": 24
+      },
+      "upper_generators_with_nonzero_sigma_projection": 24,
+      "candidate_scalar_cubic_source_basis_complete": false,
+      "finite_local_scalar_expansion_controlled": false,
+      "one_loop_f2_operator_insertions_complete": false,
+      "error_gate_closed": false,
+      "lower_one_loop_matching_resumed": false,
+      "direct_broken_phase_fallback_admitted": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_ps_operator_match/RESULT.md"
+    },
+    "active_focus": "PS_EFT_ERROR_REMAINS_UNRESOLVED_AFTER_EXACT_VECTOR_OPERATOR_AND_GOLDSTONE_DISPOSITION_NO_DOWNSTREAM_ROUTE_ADMITTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

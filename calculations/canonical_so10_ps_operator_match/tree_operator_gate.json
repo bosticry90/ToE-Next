@@ -1,0 +1,49 @@
+{
+  "disposition": "PS_EFT_ERROR_UNRESOLVED",
+  "accuracy_target_inverse_coupling": 0.20270050124930578,
+  "goldstone_disposition": {
+    "upper_vectors": 24,
+    "phi_orbit_rank": 24,
+    "sigma_projection_rank": 12,
+    "combined_orbit_rank": 24,
+    "upper_generators_with_nonzero_sigma_projection": 24,
+    "sigma_projection_ps_origin": "126_k2_(15,2,2)",
+    "valid_local_gauge_slice": "set_54_(6,2,2)_orbit_coordinates_to_zero",
+    "ghosts": "24_complex_only_in_loop_gauge_fixing_not_tree_spectrum"
+  },
+  "upper_vector_tree_operator": {
+    "form": "-1/2 J_A (K_V^-1)_AB J_B",
+    "mass_form": "M_V^2=g10^2 K_V",
+    "coefficients_over_inverse_omega2": [
+      {
+        "multiplicity": 12,
+        "raw_gram": 50,
+        "coefficient": "-6/5",
+        "decimal": -1.2
+      },
+      {
+        "multiplicity": 12,
+        "raw_gram": "253/5",
+        "coefficient": "-300/253",
+        "decimal": -1.1857707509881423
+      }
+    ],
+    "ps_limit_coefficient": "-6/5"
+  },
+  "candidate_heavy_scalar_tree_operator": {
+    "real_directions": 132,
+    "exact_form": "-1/2 J_H^T (M_HH^2-D^2)^-1 J_H",
+    "local_leading_form": "-1/2 J_H^T (M_HH^2)^-1 J_H",
+    "retained_to_heavy_m2_ratio": 0.7039927682804705,
+    "dimension6_inverse_tail_diagnostic": 2.3782958415945474,
+    "dimension8_inverse_tail_diagnostic": 1.674303073314077,
+    "complete_cubic_source_tensor_compiled": false
+  },
+  "one_loop_F2_insertion": {
+    "retained_to_coarse_upper_vector_m2_ratio": 1.4557197707103788,
+    "finite_local_vector_series_convergent_on_all_retained_modes": false,
+    "scalar_matrix_log_bound_closed": false,
+    "background_field_operator_insertion_computed": false
+  },
+  "rerun_error_gate": "NOT_ADMISSIBLE_MISSING_INSERTION_COEFFICIENTS"
+}
