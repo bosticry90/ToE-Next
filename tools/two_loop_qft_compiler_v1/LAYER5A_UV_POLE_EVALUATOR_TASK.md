@@ -1,4 +1,4 @@
-# TWO_LOOP_QFT_COMPILER_V1 layer 5A: one-loop UV-pole evaluator
+# TWO_LOOP_QFT_COMPILER_V1 layer 5A: one-loop UV-pole evaluator (contract v2)
 
 This document freezes the next compiler task and its minimum control suite.
 It is a specification, not an evaluator result.  The machine-readable
@@ -7,8 +7,16 @@ authority is
 whose canonical SHA-256 is
 
 ```text
-f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588
+6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92
 ```
+
+Contract v2 transparently supersedes v1 hash
+`f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588`.
+It changes no earned result.  It adds one explicit rank-eight tensor primitive,
+requires replay-level diagram completeness rather than only independent
+algebra, and freezes a 27-test evaluator gate followed by a 12-test canonical
+counterterm gate.  The exact delta is recorded in
+[`LAYER5A_CONTRACT_V2_AMENDMENT.md`](LAYER5A_CONTRACT_V2_AMENDMENT.md).
 
 No test in the contract has been executed.  The compiler remains
 `ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED`; layer 6 remains unauthorized.
@@ -40,7 +48,7 @@ No test in the contract has been executed.  The compiler remains
 > subtraction whenever the rearrangement creates spurious IR
 > subdivergences.**
 >
-> **Execute all 12 primitive algebra tests and all 13 control-theory tests in
+> **Execute all 13 primitive algebra tests and all 13 control-theory tests in
 > the frozen contract before applying the evaluator to the canonical model.
 > Controls include real `phi4`, superrenormalizable real `phi3`, scalar QED,
 > pure Yang--Mills/ghosts, Abelian Higgs, and a non-Abelian
@@ -58,10 +66,16 @@ No test in the contract has been executed.  The compiler remains
 > permission to extend `PARENT_ACTION_V1` silently.  Derive `b10=-34/3`
 > independently and check it only after evaluation.**
 >
-> **Perform an independent replay that does not import the primary UV
-> expansion or tensor reducer.  It must cover all primitive residues, every
-> promoted control-theory residue, and every canonical residue group.  Reuse
-> of expected beta functions is not an independent replay.**
+> **Perform an independent replay that imports neither the primary UV
+> expansion/tensor reducer nor the primary one-loop diagram inventory.  It
+> must either independently generate and canonicalize every relevant
+> one-loop 1PI diagram, including field assignments, statistics signs and
+> symmetry factors, or use a functional/effective-action method whose
+> completeness is independent of the primary graph list.  It must cover all
+> primitive residues, every promoted control-theory residue, and every
+> canonical residue group.  Reuse of expected beta functions, or evaluating
+> the same potentially incomplete graph list twice, is not an independent
+> replay.**
 >
 > **Return `ONE_LOOP_UV_POLE_EVALUATOR_PASS` only when all primitive and
 > control-theory tests pass and the evaluator independently reproduces the
@@ -98,9 +112,22 @@ which [Chetyrkin et al., *The method of global R* and its applications*](https:/
 is a comparator.  These sources define methodology; they do not provide the
 canonical model's residues.
 
+## Fail-fast partition
+
+The 39 frozen tests are split into two promotion decisions:
+
+- **Layer 5A engine gate (27 tests):** `P01--P13`, `C01--C13`, and `M01`.
+  A complete pass earns `ONE_LOOP_UV_POLE_EVALUATOR_PASS` while preserving
+  `ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED`.
+- **Layer 5B canonical counterterm gate (12 tests):** `M02--M13`.  A complete
+  pass may earn `ONE_LOOP_COUNTERTERM_COMPILER_PASS`; layer 6 remains subject
+  to its separate audit.
+
+The second gate may not compensate for a failure in the first.
+
 ## Minimum primitive suite
 
-The 12 primitive tests cover:
+The 13 primitive tests cover:
 
 1. massive rank-zero tadpoles;
 2. logarithmic bubbles;
@@ -114,6 +141,9 @@ The 12 primitive tests cover:
 10. auxiliary-mass cancellation;
 11. separately labelled UV and IR poles of a scaleless integral;
 12. agreement of massless off-shell and auxiliary-mass UV residues.
+13. an explicit rank-eight tensor vacuum integral, with all 105 metric
+    pairings and denominator `d(d+2)(d+4)(d+6)` retained before the epsilon
+    expansion.
 
 The evaluator must preserve `d` until pole-times-epsilon contributions are
 resolved.  A four-dimensional tensor average used before that point is a
@@ -163,6 +193,26 @@ The projection must distinguish the 29 monomial families from their 34 real
 Hermitian coefficient directions.  Numerical least squares without an exact
 or interval-certified rank and residual is not sufficient.
 
+## Independent replay design
+
+The replay must satisfy one of the two complete designs frozen in
+[`INDEPENDENT_UV_REPLAY_DESIGN.md`](INDEPENDENT_UV_REPLAY_DESIGN.md):
+
+- **Design A (diagrammatic):** reconstruct vertices from the frozen action,
+  independently enumerate/canonicalize the one-loop 1PI graph sets per
+  external process, and independently compute symmetry factors, Grassmann
+  signs, and UV residues;
+- **Design B (functional):** derive the pole action from a background-field
+  effective-action or heat-kernel construction with an explicit completeness
+  certificate mapping its operator traces to every required local operator.
+
+A diagrammatic replay must publish per-process set hashes, both directed set
+differences, symmetry/sign residuals, and an independent residue table.  A
+functional replay must publish its completeness certificate, full operator
+map, residue table, and comparison with the primary diagrammatic result.
+Either design must cover all control and canonical scalar one- through
+four-point, quantum-vector, ghost, and BRST-vertex processes.
+
 ## UV/IR fail-closed rules
 
 - A scaleless integral is `UV+IR=0`, not `UV=0`.
@@ -177,8 +227,9 @@ or interval-certified rank and residual is not sufficient.
 
 ## Outcomes
 
-`ONE_LOOP_UV_POLE_EVALUATOR_PASS` requires every primitive and control-theory
-test plus independent derivation of the parent gauge pole.
+`ONE_LOOP_UV_POLE_EVALUATOR_PASS` requires the 27-test engine gate: every
+primitive and control-theory test plus independent derivation of the parent
+gauge pole.
 
 `ONE_LOOP_COUNTERTERM_COMPILER_PASS` additionally requires every canonical
 test and complete population of the existing layer-5 contract.

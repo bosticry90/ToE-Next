@@ -1,7 +1,17 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "outcome": "ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT_PREREGISTERED",
   "authority": "TEST_SPECIFICATION_ONLY_NO_UV_POLE_RESULT",
+  "revision": {
+    "supersedes_schema_version": 1,
+    "supersedes_contract_sha256": "f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588",
+    "changes": [
+      "add_explicit_UVP_P13_rank8_tensor_primitive",
+      "require_independent_diagram_inventory_or_functional_completeness_replay",
+      "split_fail_fast_gate_into_27_test_evaluator_and_12_test_canonical_counterterm_phases"
+    ],
+    "scientific_results_changed": false
+  },
   "immutable_inputs": {
     "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
     "partial_bfm_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
@@ -116,6 +126,12 @@
       "target": "massless_offshell_bubble",
       "requirement": "nonexceptional_offshell_replay_agrees_with_auxiliary_mass_UV_residue_and_has_explicit_IR_status",
       "adversarial_failure": "spurious_IR_pole_classified_as_UV"
+    },
+    {
+      "test_id": "UVP_P13",
+      "target": "rank8_tensor_vacuum_integral",
+      "requirement": "exact_105_pairing_metric_symmetrization_and_d_times_d_plus_2_times_d_plus_4_times_d_plus_6_denominator",
+      "adversarial_failure": "declared_rank8_capability_without_direct_primitive_validation"
     }
   ],
   "minimum_control_theories": [
@@ -275,21 +291,51 @@
     {
       "test_id": "UVP_M13",
       "target": "independent_canonical_replay",
-      "requirement": "different_UV_extraction_or_tensor_reduction_implementation_reproduces_every_promoted_residue"
+      "requirement": "independent_diagram_inventory_and_canonicalization_or_inventory_independent_functional_completeness_plus_different_UV_reduction_reproduces_every_promoted_residue"
     }
   ],
   "counts": {
-    "primitive_tests": 12,
+    "primitive_tests": 13,
     "control_theory_tests": 13,
     "canonical_model_tests": 13,
-    "total_required_tests": 38
+    "total_required_tests": 39
   },
   "independent_replay": {
     "required": true,
     "primary_method_may_not_be_imported": true,
+    "primary_diagram_inventory_may_not_be_imported": true,
     "minimum": "all_primitive_poles_all_control_theory_promoted_residues_and_every_canonical_residue_group",
-    "allowed_comparator": "direct_Feynman_parameter_Gamma_function_poles_or_separately_implemented_diagrammatic_reduction",
-    "mere_reuse_of_expected_beta_coefficients": "NOT_AN_INDEPENDENT_REPLAY"
+    "allowed_design_A": "independent_half_edge_or_functional_derivative_generation_with_independent_canonicalization_field_assignment_statistics_signs_and_symmetry_factors_then_independent_UV_reduction",
+    "allowed_design_B": "background_field_effective_action_or_heat_kernel_derivation_whose_completeness_does_not_depend_on_the_primary_graph_list",
+    "diagrammatic_replay_artifacts": [
+      "independent_diagram_set_hash_per_external_process",
+      "primary_minus_replay_and_replay_minus_primary_set_differences",
+      "symmetry_factor_and_Grassmann_sign_residuals",
+      "independent_UV_residue_table"
+    ],
+    "functional_replay_artifacts": [
+      "operator_trace_or_functional_derivative_completeness_certificate",
+      "mapping_to_every_required_local_operator",
+      "independent_UV_residue_table",
+      "comparison_to_primary_diagrammatic_residues"
+    ],
+    "external_process_coverage": "all_control_and_canonical_scalar_1_2_3_4_point_quantum_vector_ghost_and_BRST_vertex_processes",
+    "mere_reuse_of_expected_beta_coefficients": "NOT_AN_INDEPENDENT_REPLAY",
+    "same_incomplete_graph_list_evaluated_twice": "NOT_AN_INDEPENDENT_REPLAY"
+  },
+  "fail_fast_partition": {
+    "phase_5A_engine": {
+      "tests": "UVP_P01_through_UVP_P13_plus_UVP_C01_through_UVP_C13_plus_UVP_M01",
+      "count": 27,
+      "pass_outcome": "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
+      "counterterm_compiler_after_pass": "REMAINS_BLOCKED"
+    },
+    "phase_5B_canonical_counterterms": {
+      "tests": "UVP_M02_through_UVP_M13",
+      "count": 12,
+      "pass_outcome": "ONE_LOOP_COUNTERTERM_COMPILER_PASS",
+      "layer6_after_pass": "AUTHORIZED_BY_SEPARATE_AUDIT_ONLY"
+    }
   },
   "promotion_policy": {
     "uv_evaluator_pass": "all_primitive_and_control_theory_tests_pass_and_evaluator_independently_derives_b10",
@@ -305,5 +351,5 @@
     "bfb": "BFB_UNRESOLVED",
     "finite_C1_GS": null
   },
-  "uv_pole_evaluator_contract_sha256": "f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588"
+  "uv_pole_evaluator_contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92"
 }

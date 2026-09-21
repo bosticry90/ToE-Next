@@ -69,12 +69,18 @@ locked. See [`LAYER5_RESULT.md`](LAYER5_RESULT.md). No amplitude, finite
 The missing layer-5A kernel is now preregistered in
 [`LAYER5A_UV_POLE_EVALUATOR_TASK.md`](LAYER5A_UV_POLE_EVALUATOR_TASK.md) and
 [`one_loop_uv_pole_evaluator_contract.json`](one_loop_uv_pole_evaluator_contract.json).
-The contract freezes 12 primitive UV-algebra tests, 13 control-theory tests,
+Contract v2 freezes 13 primitive UV-algebra tests, 13 control-theory tests,
 and 13 canonical-model tests, together with explicit UV/IR-separation,
-independent-replay, operator-projection, and fail-closed rules. Its SHA-256 is
+independent-replay, operator-projection, and fail-closed rules. It adds a
+direct rank-eight primitive and requires the replay to reconstruct the
+one-loop diagram inventory independently or supply an inventory-independent
+functional completeness proof. Its SHA-256 is
+`6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92`,
+superseding v1 hash
 `f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588`.
-This is specification authority only: zero of the 38 tests has run and the
-counterterm/compiler outcome remains blocked.
+This is specification authority only: zero of the 39 tests has run and the
+counterterm/compiler outcome remains blocked. The fail-fast partition is 27
+tests for the evaluator engine and 12 for canonical counterterm completion.
 
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and

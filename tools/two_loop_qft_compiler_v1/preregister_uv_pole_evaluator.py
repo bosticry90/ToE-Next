@@ -21,6 +21,10 @@ HASHES = {
     "layer5_counterterm_contract_sha256": "87cf0b4966451c62168552284cb1c709c5e3247d8e1b8241e34d4b78116c48f1",
 }
 
+V1_CONTRACT_SHA256 = (
+    "f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588"
+)
+
 
 def primitive(test_id, target, requirement, adversary):
     return {
@@ -88,6 +92,9 @@ def build():
         primitive("UVP_P12", "massless_offshell_bubble",
                   "nonexceptional_offshell_replay_agrees_with_auxiliary_mass_UV_residue_and_has_explicit_IR_status",
                   "spurious_IR_pole_classified_as_UV"),
+        primitive("UVP_P13", "rank8_tensor_vacuum_integral",
+                  "exact_105_pairing_metric_symmetrization_and_d_times_d_plus_2_times_d_plus_4_times_d_plus_6_denominator",
+                  "declared_rank8_capability_without_direct_primitive_validation"),
     ]
 
     phi4 = "L=1/2*(dphi)^2-1/2*m2*phi^2-lambda*phi^4/4!, d=4-2epsilon"
@@ -160,13 +167,23 @@ def build():
         model("UVP_M12", "layer5_counterterm_contract_consumption",
               "all_18_missing_residue_groups_derived_and_all_21_slots_receive_complete_coefficients"),
         model("UVP_M13", "independent_canonical_replay",
-              "different_UV_extraction_or_tensor_reduction_implementation_reproduces_every_promoted_residue"),
+              "independent_diagram_inventory_and_canonicalization_or_inventory_independent_functional_completeness_plus_different_UV_reduction_reproduces_every_promoted_residue"),
     ]
 
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "outcome": "ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT_PREREGISTERED",
         "authority": "TEST_SPECIFICATION_ONLY_NO_UV_POLE_RESULT",
+        "revision": {
+            "supersedes_schema_version": 1,
+            "supersedes_contract_sha256": V1_CONTRACT_SHA256,
+            "changes": [
+                "add_explicit_UVP_P13_rank8_tensor_primitive",
+                "require_independent_diagram_inventory_or_functional_completeness_replay",
+                "split_fail_fast_gate_into_27_test_evaluator_and_12_test_canonical_counterterm_phases",
+            ],
+            "scientific_results_changed": False,
+        },
         "immutable_inputs": HASHES,
         "scope": {
             "loop_order": 1,
@@ -211,9 +228,49 @@ def build():
         "independent_replay": {
             "required": True,
             "primary_method_may_not_be_imported": True,
+            "primary_diagram_inventory_may_not_be_imported": True,
             "minimum": "all_primitive_poles_all_control_theory_promoted_residues_and_every_canonical_residue_group",
-            "allowed_comparator": "direct_Feynman_parameter_Gamma_function_poles_or_separately_implemented_diagrammatic_reduction",
+            "allowed_design_A": (
+                "independent_half_edge_or_functional_derivative_generation_"
+                "with_independent_canonicalization_field_assignment_statistics_"
+                "signs_and_symmetry_factors_then_independent_UV_reduction"
+            ),
+            "allowed_design_B": (
+                "background_field_effective_action_or_heat_kernel_derivation_"
+                "whose_completeness_does_not_depend_on_the_primary_graph_list"
+            ),
+            "diagrammatic_replay_artifacts": [
+                "independent_diagram_set_hash_per_external_process",
+                "primary_minus_replay_and_replay_minus_primary_set_differences",
+                "symmetry_factor_and_Grassmann_sign_residuals",
+                "independent_UV_residue_table",
+            ],
+            "functional_replay_artifacts": [
+                "operator_trace_or_functional_derivative_completeness_certificate",
+                "mapping_to_every_required_local_operator",
+                "independent_UV_residue_table",
+                "comparison_to_primary_diagrammatic_residues",
+            ],
+            "external_process_coverage": (
+                "all_control_and_canonical_scalar_1_2_3_4_point_quantum_"
+                "vector_ghost_and_BRST_vertex_processes"
+            ),
             "mere_reuse_of_expected_beta_coefficients": "NOT_AN_INDEPENDENT_REPLAY",
+            "same_incomplete_graph_list_evaluated_twice": "NOT_AN_INDEPENDENT_REPLAY",
+        },
+        "fail_fast_partition": {
+            "phase_5A_engine": {
+                "tests": "UVP_P01_through_UVP_P13_plus_UVP_C01_through_UVP_C13_plus_UVP_M01",
+                "count": 27,
+                "pass_outcome": "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
+                "counterterm_compiler_after_pass": "REMAINS_BLOCKED",
+            },
+            "phase_5B_canonical_counterterms": {
+                "tests": "UVP_M02_through_UVP_M13",
+                "count": 12,
+                "pass_outcome": "ONE_LOOP_COUNTERTERM_COMPILER_PASS",
+                "layer6_after_pass": "AUTHORIZED_BY_SEPARATE_AUDIT_ONLY",
+            },
         },
         "promotion_policy": {
             "uv_evaluator_pass": "all_primitive_and_control_theory_tests_pass_and_evaluator_independently_derives_b10",
