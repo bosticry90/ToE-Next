@@ -1,0 +1,138 @@
+{
+  "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+  "kernel": {
+    "outcome": "DIRECT_ONE_LOOP_KERNEL_PASS",
+    "scheme": "MSbar_background_field_Feynman_gauge",
+    "scalar_positive_real_directions": 290,
+    "scalar_symmetry_and_higgs_zeros_excluded": 38,
+    "massive_vectors": 33,
+    "unbroken_SM_vectors": 12,
+    "vector_goldstone_ghost_sets": 33,
+    "vector_heat_kernel": {
+      "a2": "-eps/12 - 7/8",
+      "vector_to_real_scalar_log": -21,
+      "finite_over_log_m2": "-2/21",
+      "lambda_form": "T*(1-21*log(M/mu))"
+    },
+    "direct_beta_parent": "-34/3",
+    "direct_beta_projected_channels": [
+      "-34/3",
+      "-34/3",
+      "-34/3"
+    ],
+    "matching_scale_derivative_check": "PASS",
+    "basis_invariance_replay": "PASS_BY_PHYSICAL_MATRIX_LOG_CONTROLS",
+    "degenerate_mass_limit": "PASS_LOGS_VANISH_VECTOR_FINITE_T_REMAINS",
+    "fermion_threshold": "ZERO_FOR_SM_GAUGE_CHANNELS_COMPLETE_16F_ONLY_NUR_HEAVY_AND_SM_SINGLET"
+  },
+  "frozen_inputs_MZ": {
+    "alpha_inverse_GUT_order_1_2_3": [
+      59.01001524,
+      29.579974600000003,
+      8.474576271186441
+    ],
+    "MZ_GeV": 91.1876,
+    "alpha_em_MSbar_inverse_MZ": 127.93,
+    "sin2theta_MSbar_MZ": 0.23122,
+    "alpha_s_MSbar_MZ": 0.118
+  },
+  "one_loop_solve": {
+    "common_exact_solution": false,
+    "unique_relative_coupling_solution": {
+      "g10": 1.6806927938311675e-36,
+      "log_omega_over_MZ": 108.3158725128569,
+      "omega_GeV": 1.0021241318510909e+49,
+      "common_absolute_residual": 4.448700698087081e+72,
+      "interpretation": "relative couplings meet only at an absurd nonphysical point and the common normalization fails"
+    },
+    "least_squares_g10": 0.5224982274377835,
+    "least_squares_alpha_U_inverse": 46.02992010879654,
+    "least_squares_log_omega_over_MZ": 30.82318156036169,
+    "least_squares_omega_GeV": 2219593538543683.0,
+    "residual_inverse_couplings_order_1_2_3": [
+      0.36614945500461715,
+      -1.0598009711805538,
+      0.6938927794433187
+    ],
+    "max_absolute_residual": 1.0598009711805538,
+    "euclidean_residual": 1.3186093854053207,
+    "pair_solutions": [
+      {
+        "matched_channels": [
+          0,
+          1
+        ],
+        "g10": 0.5199218179935757,
+        "log_omega_over_MZ": 29.5949831045633,
+        "omega_GeV": 649940559352860.1,
+        "all_channel_residual": [
+          -1.4210854715202004e-14,
+          -2.4868995751603507e-14,
+          2.50576373478407
+        ]
+      },
+      {
+        "matched_channels": [
+          0,
+          2
+        ],
+        "g10": 0.5254086114306249,
+        "log_omega_over_MZ": 31.003447140794144,
+        "omega_GeV": 2658041753564383.0,
+        "all_channel_residual": [
+          1.4210854715202004e-14,
+          -1.6406206213849366,
+          1.5987211554602254e-14
+        ]
+      },
+      {
+        "matched_channels": [
+          1,
+          2
+        ],
+        "g10": 0.5082681393901539,
+        "log_omega_over_MZ": 33.722858007531144,
+        "omega_GeV": 4.032616587442678e+16,
+        "all_channel_residual": [
+          4.748738791459239,
+          -1.7763568394002505e-14,
+          -1.9539925233402755e-14
+        ]
+      }
+    ]
+  },
+  "uncertainty": {
+    "known_SM_gauge_only_two_loop_shift_at_one_loop_scale": [
+      -0.2215981658989108,
+      -0.2883630029853137,
+      0.41745580322377407
+    ],
+    "known_SM_gauge_only_two_loop_nonuniversal_spread": 0.7058188062090878,
+    "raw_loop_log_squared": 5.122734035916646e-05,
+    "max_index_weighted_loop_log_squared": 0.008880828643932163,
+    "threshold_next_order_diagnostic": 0.2447549403066833,
+    "conservative_linear_diagnostic": 0.9505737465157711,
+    "gauge_only_two_loop_refit_g10": 0.5232551015095015,
+    "gauge_only_two_loop_refit_omega_GeV": 1639302344484180.0,
+    "gauge_only_two_loop_refit_residual": [
+      0.2619696395771598,
+      -0.7485886559145953,
+      0.48685257663176884
+    ],
+    "gauge_only_two_loop_refit_max_absolute_residual": 0.7485886559145953,
+    "missing": [
+      "two-loop Yukawa contribution with a frozen fermion fit",
+      "two-loop heavy-threshold matching",
+      "scheme-consistent higher-order scalar/vector finite terms"
+    ],
+    "interpretation": "residual and admitted-order uncertainty are comparable"
+  },
+  "bfb_status": "BFB_UNRESOLVED",
+  "downstream": {
+    "gauge_unification_passed": false,
+    "gauge_unification_failed": false,
+    "flavor_started": false,
+    "proton_decay_started": false,
+    "benchmark_replacement_started": false
+  }
+}

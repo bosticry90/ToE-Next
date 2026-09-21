@@ -1,6 +1,6 @@
 {
-  "state_version": 44,
-  "updated_utc": "2026-09-21T05:04:45Z",
+  "state_version": 45,
+  "updated_utc": "2026-09-21T05:17:01Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_GAUGE_ROUTE_SELECTION_V1",
-      "completed_utc": "2026-09-21T05:04:45Z",
-      "outcome": "ADMIT_DIRECT_MATCHING_FEASIBILITY",
-      "authority": "ROUTE_SELECTION_AND_DIRECT_FIXED_ORDER_FEASIBILITY_ONLY_NO_GAUGE_MATCH",
-      "result": "calculations/canonical_so10_gauge_route_selection/RESULT.md",
-      "qualified_stop": "DIRECT_BACKGROUND_FIELD_KERNEL_ADMITTED_BUT_NOT_STARTED_EXACT_PS_ROUTE_DEFERRED_NOT_REJECTED",
+      "calculation": "CANONICAL_DIRECT_PHYSICAL_VACUUM_GAUGE_MATCHING_V1",
+      "completed_utc": "2026-09-21T05:17:01Z",
+      "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+      "authority": "DIRECT_ONE_LOOP_KERNEL_PASS_NO_COMMON_ONE_LOOP_SOLUTION_HIGHER_ORDER_UNCERTAINTY_COMPARABLE_TO_RESIDUAL",
+      "result": "calculations/canonical_so10_direct_gauge_matching/RESULT.md",
+      "qualified_stop": "COMPLETE_TWO_LOOP_YUKAWA_AND_HEAVY_THRESHOLD_UNCERTAINTY_NOT_FROZEN",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -372,7 +372,35 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_gauge_route_selection/RESULT.md"
     },
-    "active_focus": "DIRECT_PHYSICAL_VACUUM_GAUGE_MATCHING_FEASIBILITY_ADMITTED_FULL_MATCH_NOT_STARTED_EXACT_PS_ROUTE_DEFERRED"
+    "canonical_so10_direct_gauge_matching": {
+      "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+      "kernel_outcome": "DIRECT_ONE_LOOP_KERNEL_PASS",
+      "scheme": "MSBAR_BACKGROUND_FIELD_FEYNMAN_GAUGE",
+      "heavy_scalar_real_directions": 290,
+      "massive_vector_goldstone_ghost_sets": 33,
+      "direct_parent_beta": "-34/3",
+      "direct_beta_jump_and_scale_cancellation": "PASS",
+      "common_exact_one_loop_solution": false,
+      "diagnostic_best_fit_g10": 0.5224982274377835,
+      "diagnostic_best_fit_omega_GeV": 2219593538543683.0,
+      "one_loop_residual_inverse_couplings": [
+        0.36614945500461715,
+        -1.0598009711805538,
+        0.6938927794433187
+      ],
+      "one_loop_max_absolute_residual": 1.0598009711805538,
+      "known_gauge_only_two_loop_nonuniversal_spread": 0.7058188062090878,
+      "threshold_next_order_diagnostic": 0.2447549403066833,
+      "gauge_unification_passed": false,
+      "gauge_unification_failed": false,
+      "physical_scale_promoted": false,
+      "exact_ps_route_status": "DEFERRED_NOT_REJECTED",
+      "benchmark_replacement_started": false,
+      "flavor_or_proton_decay_started": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_direct_gauge_matching/RESULT.md"
+    },
+    "active_focus": "DIRECT_GAUGE_MATCHING_UNRESOLVED_ONE_LOOP_KERNEL_PASSED_COMPLETE_HIGHER_ORDER_UNCERTAINTY_MISSING"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
