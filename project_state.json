@@ -1,6 +1,6 @@
 {
-  "state_version": 43,
-  "updated_utc": "2026-09-21T04:51:13Z",
+  "state_version": 44,
+  "updated_utc": "2026-09-21T05:04:45Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_PS_TREE_OPERATOR_ERROR_GATE_V1",
-      "completed_utc": "2026-09-21T04:51:13Z",
-      "outcome": "PS_EFT_ERROR_UNRESOLVED",
-      "authority": "EXACT_UPPER_VECTOR_TREE_OPERATOR_AND_GOLDSTONE_OVERLAP_NO_COMPLETE_LOCAL_SCALAR_OR_F2_INSERTION",
-      "result": "calculations/canonical_so10_ps_operator_match/RESULT.md",
-      "qualified_stop": "FINITE_LOCAL_EXPANSION_NOT_CONTROLLED_AND_REQUIRED_ONE_LOOP_OPERATOR_INSERTIONS_UNCOMPUTED",
+      "calculation": "CANONICAL_GAUGE_ROUTE_SELECTION_V1",
+      "completed_utc": "2026-09-21T05:04:45Z",
+      "outcome": "ADMIT_DIRECT_MATCHING_FEASIBILITY",
+      "authority": "ROUTE_SELECTION_AND_DIRECT_FIXED_ORDER_FEASIBILITY_ONLY_NO_GAUGE_MATCH",
+      "result": "calculations/canonical_so10_gauge_route_selection/RESULT.md",
+      "qualified_stop": "DIRECT_BACKGROUND_FIELD_KERNEL_ADMITTED_BUT_NOT_STARTED_EXACT_PS_ROUTE_DEFERRED_NOT_REJECTED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -355,7 +355,24 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_ps_operator_match/RESULT.md"
     },
-    "active_focus": "PS_EFT_ERROR_REMAINS_UNRESOLVED_AFTER_EXACT_VECTOR_OPERATOR_AND_GOLDSTONE_DISPOSITION_NO_DOWNSTREAM_ROUTE_ADMITTED"
+    "canonical_so10_gauge_route_selection": {
+      "outcome": "ADMIT_DIRECT_MATCHING_FEASIBILITY",
+      "authority": "ROUTE_SELECTION_AND_DIRECT_FIXED_ORDER_FEASIBILITY_ONLY",
+      "largest_physical_mass_log": 3.3964087464336936,
+      "max_to_min_heavy_mass_ratio": 29.85668436017145,
+      "raw_alpha_log_over_4pi": 0.00715732773870014,
+      "max_scalar_index_weighted_loop_log": 0.09423814855955184,
+      "direct_scalar_comparator_spread": 0.18636665686227527,
+      "direct_vector_comparator_spread": 2.4802379968435195,
+      "direct_combined_comparator_spread": 2.597195976871463,
+      "exact_ps_route_status": "DEFERRED_NOT_REJECTED",
+      "direct_matching_feasibility_admitted": true,
+      "full_direct_matching_started": false,
+      "replacement_benchmark_search_admitted": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_gauge_route_selection/RESULT.md"
+    },
+    "active_focus": "DIRECT_PHYSICAL_VACUUM_GAUGE_MATCHING_FEASIBILITY_ADMITTED_FULL_MATCH_NOT_STARTED_EXACT_PS_ROUTE_DEFERRED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

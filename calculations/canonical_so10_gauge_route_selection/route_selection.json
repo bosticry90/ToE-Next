@@ -1,0 +1,293 @@
+{
+  "outcome": "ADMIT_DIRECT_MATCHING_FEASIBILITY",
+  "authority": "ROUTE_SELECTION_AND_DIRECT_FIXED_ORDER_FEASIBILITY_ONLY",
+  "bfb_status": "BFB_UNRESOLVED",
+  "physical_spectrum": {
+    "positive_scalar_real_directions": 290,
+    "scalar_mass_eigenvalues": 53,
+    "massive_vectors": 33,
+    "reference_mu_over_omega": 0.03798279386761314,
+    "min_heavy_mass_over_omega": 0.03798279386761314,
+    "max_heavy_mass_over_omega": 1.1340402876227813,
+    "max_to_min_mass_ratio": 29.85668436017145,
+    "largest_log_mass_ratio": 3.3964087464336936,
+    "largest_log_mass_squared_ratio": 6.792817492867387
+  },
+  "direct_one_loop_comparator": {
+    "coarse_g_used_only_for_vector_mass_diagnostic": 0.5768665288016357,
+    "scalar_delta_alpha_inverse": [
+      -4.80417328012029,
+      -4.873581956954622,
+      -4.990539936982565
+    ],
+    "scalar_nonuniversal_spread": 0.18636665686227527,
+    "vector_delta_alpha_inverse": [
+      6.511935178765556,
+      7.480319573444321,
+      5.0000815766008015
+    ],
+    "vector_nonuniversal_spread": 2.4802379968435195,
+    "combined_delta_alpha_inverse": [
+      1.7077618986452663,
+      2.606737616489699,
+      0.009541639618236175
+    ],
+    "combined_nonuniversal_spread": 2.597195976871463,
+    "required_coarse_shift_range": [
+      2.0270050124930576,
+      2.966221676825481
+    ],
+    "largest_scalar_state_nonuniversal_terms": [
+      {
+        "mass_over_omega": 0.3370757742704155,
+        "sm_irrep": {
+          "su3_dynkin": [
+            0,
+            2
+          ],
+          "su2_dim": 3,
+          "hypercharge": "2/6"
+        },
+        "delta_alpha_inverse": [
+          -0.06949260235323078,
+          -0.6949260235323079,
+          -0.43432876470769244
+        ],
+        "nonuniversal_spread": 0.6254334211790772
+      },
+      {
+        "mass_over_omega": 0.3370757742704155,
+        "sm_irrep": {
+          "su3_dynkin": [
+            2,
+            0
+          ],
+          "su2_dim": 3,
+          "hypercharge": "-2/6"
+        },
+        "delta_alpha_inverse": [
+          -0.06949260235323078,
+          -0.6949260235323079,
+          -0.43432876470769244
+        ],
+        "nonuniversal_spread": 0.6254334211790772
+      },
+      {
+        "mass_over_omega": 0.3370757742704155,
+        "sm_irrep": {
+          "su3_dynkin": [
+            0,
+            2
+          ],
+          "su2_dim": 1,
+          "hypercharge": "8/6"
+        },
+        "delta_alpha_inverse": [
+          -0.3706272125505642,
+          -0.0,
+          -0.14477625490256416
+        ],
+        "nonuniversal_spread": 0.3706272125505642
+      },
+      {
+        "mass_over_omega": 0.3370757742704155,
+        "sm_irrep": {
+          "su3_dynkin": [
+            2,
+            0
+          ],
+          "su2_dim": 1,
+          "hypercharge": "-8/6"
+        },
+        "delta_alpha_inverse": [
+          -0.3706272125505642,
+          -0.0,
+          -0.14477625490256416
+        ],
+        "nonuniversal_spread": 0.3706272125505642
+      },
+      {
+        "mass_over_omega": 0.3642178792975437,
+        "sm_irrep": {
+          "su3_dynkin": [
+            0,
+            1
+          ],
+          "su2_dim": 3,
+          "hypercharge": "-2/6"
+        },
+        "delta_alpha_inverse": [
+          -0.03597886873165961,
+          -0.35978868731659625,
+          -0.08994717182914906
+        ],
+        "nonuniversal_spread": 0.3238098185849366
+      },
+      {
+        "mass_over_omega": 0.3642178792975437,
+        "sm_irrep": {
+          "su3_dynkin": [
+            1,
+            0
+          ],
+          "su2_dim": 3,
+          "hypercharge": "2/6"
+        },
+        "delta_alpha_inverse": [
+          -0.03597886873165961,
+          -0.35978868731659625,
+          -0.08994717182914906
+        ],
+        "nonuniversal_spread": 0.3238098185849366
+      },
+      {
+        "mass_over_omega": 0.6498505544893195,
+        "sm_irrep": {
+          "su3_dynkin": [
+            0,
+            1
+          ],
+          "su2_dim": 2,
+          "hypercharge": "7/6"
+        },
+        "delta_alpha_inverse": [
+          -0.36908256413570173,
+          -0.11298445840888827,
+          -0.07532297227259217
+        ],
+        "nonuniversal_spread": 0.29375959186310957
+      },
+      {
+        "mass_over_omega": 0.6498505544893194,
+        "sm_irrep": {
+          "su3_dynkin": [
+            1,
+            0
+          ],
+          "su2_dim": 2,
+          "hypercharge": "-7/6"
+        },
+        "delta_alpha_inverse": [
+          -0.36908256413570173,
+          -0.11298445840888827,
+          -0.07532297227259217
+        ],
+        "nonuniversal_spread": 0.29375959186310957
+      }
+    ],
+    "vector_sets": [
+      {
+        "raw_gram": 0.6,
+        "real_vectors": 8,
+        "mass_over_omega_using_coarse_g": 0.04079062343551814,
+        "log_m_over_mu": 0.0713189730139093,
+        "sm_index": [
+          2.8,
+          0.0,
+          1.0
+        ],
+        "delta_alpha_inverse_comparator": [
+          0.03696521071951348,
+          0.0,
+          0.013201860971254815
+        ]
+      },
+      {
+        "raw_gram": 3.0,
+        "real_vectors": 1,
+        "mass_over_omega_using_coarse_g": 0.09121060684641458,
+        "log_m_over_mu": 0.8760379292309594,
+        "sm_index": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_alpha_inverse_comparator": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "raw_gram": 50.0,
+        "real_vectors": 12,
+        "mass_over_omega_using_coarse_g": 0.3723657431722027,
+        "log_m_over_mu": 2.2827432876109777,
+        "sm_index": [
+          5.0,
+          3.0,
+          2.0
+        ],
+        "delta_alpha_inverse_comparator": [
+          6.2252937463365505,
+          3.7351762478019306,
+          2.4901174985346204
+        ]
+      },
+      {
+        "raw_gram": 50.6,
+        "real_vectors": 12,
+        "mass_over_omega_using_coarse_g": 0.3745932749642539,
+        "log_m_over_mu": 2.288707573043615,
+        "sm_index": [
+          0.2,
+          3.0,
+          2.0
+        ],
+        "delta_alpha_inverse_comparator": [
+          0.24967622170949266,
+          3.74514332564239,
+          2.4967622170949264
+        ]
+      }
+    ],
+    "not_a_matching_result": true
+  },
+  "fixed_order_diagnostics": {
+    "alpha_u_coarse": 0.026481392461193014,
+    "raw_alpha_log_over_4pi": 0.00715732773870014,
+    "max_scalar_total_index_times_loop_log": 0.09423814855955184,
+    "max_vector_total_index_times_loop_log": 0.05725862190960112,
+    "interpretation": "logs are material but not parametrically fatal; a complete one-loop direct match and explicit two-loop uncertainty are required"
+  },
+  "route_A_exact_PS": {
+    "finite_local_expansion_available": false,
+    "remaining": [
+      "complete 132-real heavy-scalar source functional",
+      "nonlocal scalar determinant with mixed mass operators",
+      "nondegenerate vector-Goldstone-ghost functional determinant",
+      "PS interval UV/EFT hard-region subtraction",
+      "two-boundary matching-scale cancellation"
+    ],
+    "authority_if_completed": "RESUMMED_TWO_BOUNDARY_MATCHING",
+    "relative_implementation_cost": "HIGH"
+  },
+  "route_B_direct": {
+    "mass_operators_commute_with_unbroken_SM": true,
+    "already_earned": [
+      "complete physical scalar matrix log",
+      "complete scalar and vector mass/index ledgers",
+      "basis-invariant SM projector machinery",
+      "massive-vector finite/log coefficient in the lower comparator"
+    ],
+    "minimal_remaining": [
+      "single-scheme BFM UV/EFT fluctuation subtraction",
+      "all-33 vector Goldstone ghost finite/log replay",
+      "direct beta-jump and matching-scale cancellation",
+      "coupled omega g10 and measured-coupling solve",
+      "explicit two-loop/log truncation uncertainty"
+    ],
+    "authority_if_completed": "ONE_STEP_FIXED_ORDER_PHYSICAL_VACUUM_MATCH",
+    "relative_implementation_cost": "MEDIUM"
+  },
+  "route_C_benchmark_replacement": {
+    "admitted": false,
+    "reason": "both matching languages have not yet failed for this benchmark"
+  },
+  "downstream": {
+    "full_direct_match_started": false,
+    "exact_PS_match_resumed": false,
+    "benchmark_search_started": false,
+    "flavor_or_proton_decay_started": false
+  }
+}
