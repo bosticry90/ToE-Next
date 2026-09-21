@@ -1,6 +1,6 @@
 {
-  "state_version": 46,
-  "updated_utc": "2026-09-21T05:36:33Z",
+  "state_version": 47,
+  "updated_utc": "2026-09-21T05:51:37Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_DIRECT_GAUGE_NEXT_ORDER_V1",
-      "completed_utc": "2026-09-21T05:36:33Z",
+      "calculation": "CANONICAL_DIRECT_TWO_LOOP_HEAVY_THRESHOLD_V1",
+      "completed_utc": "2026-09-21T05:51:37Z",
       "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
-      "authority": "DIRECT_SM_TWO_LOOP_RUNNING_PASS_ONE_LOOP_HEAVY_KERNEL_PRESERVED_NO_COMMON_KNOWN_NEXT_ORDER_SOLUTION",
-      "result": "calculations/canonical_so10_direct_gauge_next_order/RESULT.md",
-      "qualified_stop": "MODEL_DEPENDENT_TWO_LOOP_HEAVY_DECOUPLING_NOT_DERIVED_OR_RIGOROUSLY_BOUNDED",
+      "authority": "TWO_LOOP_HEAVY_RG_LOG_KERNEL_AND_SYMBOLIC_YUKAWA_DEPENDENCY_ONLY_LOWER_ORDER_PASSES_PRESERVED",
+      "result": "calculations/canonical_so10_direct_two_loop_heavy_threshold/RESULT.md",
+      "qualified_stop": "FINITE_MODEL_SPECIFIC_TWO_LOOP_HEAVY_CONSTANTS_REQUIRE_BESPOKE_DIAGRAM_COUNTERTERM_COMPILER_AND_NUMERICAL_YUKAWA_DATA",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -427,7 +427,27 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_direct_gauge_next_order/RESULT.md"
     },
-    "active_focus": "DIRECT_GAUGE_MATCHING_UNRESOLVED_TWO_LOOP_SM_RUNNING_PASSED_TWO_LOOP_HEAVY_BOUNDARY_MISSING"
+    "canonical_so10_direct_two_loop_heavy_threshold": {
+      "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+      "heavy_threshold_gate": "DIRECT_TWO_LOOP_HEAVY_THRESHOLD_BLOCKED",
+      "preserved_kernel_outcome": "DIRECT_ONE_LOOP_KERNEL_PASS",
+      "preserved_running_outcome": "DIRECT_SM_TWO_LOOP_RUNNING_PASS",
+      "scheme": "MSBAR_BACKGROUND_FIELD_FEYNMAN_GAUGE",
+      "parent_one_loop_beta": "-34/3",
+      "parent_two_loop_yukawa_independent_beta": "10405/6",
+      "two_loop_log_kernel": "DERIVED_EXACTLY",
+      "finite_two_loop_heavy_constants": "NOT_CALCULATED",
+      "canonical_yukawa_operator_normalization": "FROZEN_SYMBOLIC_ISOMETRIC_INTERTWINERS",
+      "quadratic_yukawa_family_invariants": 4,
+      "physical_yukawa_threshold": "UNDEFINED_WITHOUT_RIGHT_HANDED_NEUTRINO_SPECTRUM_AND_FLAVOR_POINT",
+      "refit_with_two_loop_heavy_threshold": false,
+      "gauge_unification_passed": false,
+      "gauge_unification_failed": false,
+      "physical_scale_promoted": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_direct_two_loop_heavy_threshold/RESULT.md"
+    },
+    "active_focus": "DIRECT_GAUGE_MATCHING_UNRESOLVED_TWO_LOOP_LOG_KERNEL_EARNED_FINITE_TWO_LOOP_HEAVY_CONSTANTS_BLOCKED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

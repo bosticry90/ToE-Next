@@ -1,0 +1,129 @@
+{
+  "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+  "heavy_threshold_gate": "DIRECT_TWO_LOOP_HEAVY_THRESHOLD_BLOCKED",
+  "preserved_results": [
+    "DIRECT_ONE_LOOP_KERNEL_PASS",
+    "DIRECT_SM_TWO_LOOP_RUNNING_PASS"
+  ],
+  "scheme": "MSbar_background_field_Feynman_gauge",
+  "frozen_hashes": {
+    "parent_action": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
+    "positive_higgs_point": "476645438ea8a7ada42fea90e80174b772d45ce3e729d013d134e9848950c816",
+    "next_order_json": "62a8c3150e26c957641883ba3ac6fc6d977890c8543e859a4af22cbf7bbfb54a"
+  },
+  "part_A_gauge_scalar": {
+    "parent_group_data": {
+      "C2_G": "8",
+      "S2_Weyl_F": "6",
+      "sum_C2T_Weyl_F": "135/4",
+      "S2_real_scalars": "84",
+      "sum_C2T_real_scalars": "1004"
+    },
+    "parent_b_one_loop": "-34/3",
+    "parent_B_two_loop_yukawa_independent": "10405/6",
+    "SM_B_row_sums_at_unified_coupling": [
+      "387/25",
+      "281/15",
+      "-102/5"
+    ],
+    "rg_log_kernel": [
+      {
+        "delta_b": "463/30",
+        "delta_B_yukawa_independent": "-257803/150",
+        "L2_coefficient": "214369/3600",
+        "L_coefficient_without_C0_term": "-257803/1200",
+        "complete_L_coefficient": "-257803/1200 - (463/30)*C0_i",
+        "finite_constant": "C1_i_UNCALCULATED"
+      },
+      {
+        "delta_b": "49/6",
+        "delta_B_yukawa_independent": "-51463/30",
+        "L2_coefficient": "2401/144",
+        "L_coefficient_without_C0_term": "-51463/240",
+        "complete_L_coefficient": "-51463/240 - (49/6)*C0_i",
+        "finite_constant": "C1_i_UNCALCULATED"
+      },
+      {
+        "delta_b": "13/3",
+        "delta_B_yukawa_independent": "-52637/30",
+        "L2_coefficient": "169/36",
+        "L_coefficient_without_C0_term": "-52637/240",
+        "complete_L_coefficient": "-52637/240 - (13/3)*C0_i",
+        "finite_constant": "C1_i_UNCALCULATED"
+      }
+    ],
+    "parent_two_loop_over_one_loop_at_diagnostic_g10": 0.26517065057894845,
+    "one_loop_C0_at_mu_eq_omega": [
+      -21.24225727573626,
+      -6.192519370338765,
+      -7.912027772504708
+    ],
+    "finite_C1": "NOT_CALCULATED",
+    "finite_C1_reason": "requires benchmark-specific two-loop massive hard-region diagrams and one-loop counterterms",
+    "published_formula_applicability": {
+      "one_GUT_scale_vev": false,
+      "no_scalar_trilinears": false,
+      "no_heavy_fermions": false,
+      "common_mass_heavy_vectors": false,
+      "gut_breaking_higgs_at_most_three_SM_irreps": false,
+      "other_heavy_scalars_common_mass": false,
+      "consequence": "published_finite_C1_formula_not_applicable"
+    }
+  },
+  "finite_threshold_demand": {
+    "existing_residual_inverse_couplings": [
+      0.26091471828390667,
+      -0.7454764131332539,
+      0.4847948100457913
+    ],
+    "minimum_canceling_inverse_coupling_shift": [
+      -0.26091471828390667,
+      0.7454764131332539,
+      -0.4847948100457913
+    ],
+    "alpha_U_diagnostic": 0.021777205347751516,
+    "C1_equivalent_centered_required": [
+      118.21342970866435,
+      -337.891115444906,
+      219.67768573624167
+    ],
+    "max_abs_C1_equivalent": 337.891115444906,
+    "interpretation": "normalization diagnostic only; no plausibility bound or threshold result"
+  },
+  "part_B_yukawa": {
+    "matrices": [
+      "Y10=Y10^T",
+      "Y126=Y126^T"
+    ],
+    "quadratic_family_kernel": "K_rs=Tr(Y_r^dagger Y_s), r,s in {10,126}",
+    "real_coordinates": [
+      "Tr(Y10^dagger Y10)",
+      "Tr(Y126^dagger Y126)",
+      "Re Tr(Y10^dagger Y126)",
+      "Im Tr(Y10^dagger Y126)"
+    ],
+    "positivity": "K is Hermitian PSD; |K_10,126|^2 <= K_10,10*K_126,126",
+    "cross_term_condition": "off-diagonal K contributes only with a 10/bar126 scalar mixing kernel",
+    "physical_mass_dependency": "M_N=c_N*sigma*Y126; exact massive threshold needs its singular values and mixing projectors",
+    "numerical_status": "UNDEFINED_NO_CANONICAL_FLAVOR_POINT"
+  },
+  "checks": {
+    "parent_one_loop_beta_replay": "PASS",
+    "parent_two_loop_yukawa_independent_beta": "DERIVED_EXACTLY",
+    "two_loop_log_structure": "PASS_RG_CONSISTENCY_TEMPLATE",
+    "basis_invariance": "PASS_FOR_K_RS_SYMBOLIC_FORM",
+    "gauge_parameter_cancellation": "NOT_TESTED_FINITE_TWO_LOOP_DIAGRAMS_ABSENT",
+    "degenerate_mass_limit": "NOT_TESTED_FINITE_TWO_LOOP_DIAGRAMS_ABSENT",
+    "combined_order_matching_scale_cancellation": "LOG_STRUCTURE_FIXED_FULL_NUMERICAL_CHECK_BLOCKED_BY_C1_AND_YUKAWA",
+    "refit_with_two_loop_heavy_threshold": "NOT_AUTHORIZED_NO_FINITE_THRESHOLD"
+  },
+  "bfb_status": "BFB_UNRESOLVED",
+  "downstream": {
+    "gauge_unification_passed": false,
+    "gauge_unification_failed": false,
+    "physical_g10_or_omega_promoted": false,
+    "flavor_fit_started": false,
+    "proton_decay_started": false,
+    "benchmark_replacement_started": false
+  }
+}
