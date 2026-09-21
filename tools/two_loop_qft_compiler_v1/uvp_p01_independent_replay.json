@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P01",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_Wick_rotation_and_Gamma_function_residue",
+  "minkowski_integral": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d*i/(k^2-m2+i0)]",
+  "wick_rotated_integral": "mu^(2*epsilon)*Integral_E[d^d k_E/(2*pi)^d/(k_E^2+m2)]",
+  "closed_form": "mu2^epsilon*(m2)^(d/2-1)*Gamma(1-d/2)/(4*pi)^(d/2)",
+  "dimension": "d=4-2*epsilon",
+  "normalized_residue_extraction": "limit(epsilon*16*pi^2*closed_form,epsilon->0)",
+  "normalized_residue": "-m2",
+  "pole_unit": "1/(16*pi^2*epsilon_bar)",
+  "pole_expression": "-m2/(16*pi^2*epsilon_bar)",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "3405590993437058d2c377b505babb99ea303ce3069c5e8ce0de326dfacae237"
+}

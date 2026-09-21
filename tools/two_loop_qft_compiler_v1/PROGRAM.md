@@ -88,10 +88,18 @@ with advancement only on `PASS`. The execution-plan SHA-256 is
 `54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101` and
 the result-schema SHA-256 is
 `5999c0a7ff7d2458b0c204a7f8313c0d39a6473aaeff7282ac1f1f1034f699b8`.
-The initial ledger remains `0/39` (`0/27` in the engine gate), while a
+The ledger was initialized at `0/39` (`0/27` in the engine gate), while a
 synthetic schema-only replay proves that the format can represent the exact
 `27/27` checkpoint without promoting the counterterm compiler or Layer 6.
 See [`LAYER5A_EXECUTION_ORDER.md`](LAYER5A_EXECUTION_ORDER.md).
+
+The first authorized test has now executed. `UVP_P01` passes with the exact
+massive tadpole residue `-m2` in units of
+`1/(16*pi^2*epsilon_bar)`. The primary auxiliary-mass UV projection and the
+independent Wick-rotated Gamma-function replay agree with zero symbolic
+residual, and the positive-mass primitive has no IR pole. Progress is `1/39`
+(`1/27` in the engine gate); `UVP_P02` is next. The counterterm compiler and
+Layer 6 remain blocked. See [`UVP_P01_RESULT.md`](UVP_P01_RESULT.md).
 
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and

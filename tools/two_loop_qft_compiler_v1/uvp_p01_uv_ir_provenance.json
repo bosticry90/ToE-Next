@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P01",
+  "mass_domain": "m2>0",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "auxiliary_mass_cancelled": true,
+    "rstar_required": false
+  },
+  "reason": "positive_mass_removes_IR_singularity; superficial_quadratic_divergence_contains_local_m2_log_pole_under_dimensional_analytic_continuation",
+  "artifact_sha256": "ad6646b107c543a2439d73be2522a0db6ab38a2774ca3c43213a44c639a749fa"
+}

@@ -3,18 +3,18 @@
   "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
   "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
   "execution_id": "layer5a-v2-first-execution",
-  "overall_status": "NOT_STARTED",
-  "authority": "EXECUTION_LEDGER_NO_TEST_AUTHORITY",
+  "overall_status": "ENGINE_RUNNING",
+  "authority": "PARTIAL_TEST_AUTHORITY",
   "counters": {
     "total_required": 39,
-    "executed": 0,
-    "passed": 0,
+    "executed": 1,
+    "passed": 1,
     "blocked": 0,
     "failed": 0,
-    "not_run_or_locked": 39,
+    "not_run_or_locked": 38,
     "engine_required": 27,
-    "engine_executed": 0,
-    "engine_passed": 0,
+    "engine_executed": 1,
+    "engine_passed": 1,
     "canonical_required": 12,
     "canonical_executed": 0,
     "canonical_passed": 0
@@ -35,26 +35,37 @@
       "global_ordinal": 1,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "READY",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "large_loop_momentum_radial_UV_projection_with_auxiliary_mass",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "3a7ca69ddc77b722f2bf4f38d71ffde20498061a8c4b181b4e88a269d19c33f8",
+        "uv_ir_provenance_sha256": "ad6646b107c543a2439d73be2522a0db6ab38a2774ca3c43213a44c639a749fa"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_Wick_rotation_and_Gamma_function_residue",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "3405590993437058d2c377b505babb99ea303ce3069c5e8ce0de326dfacae237",
+        "uv_ir_provenance_sha256": "ad6646b107c543a2439d73be2522a0db6ab38a2774ca3c43213a44c639a749fa"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "normalized_residue": "-m2",
+        "pole_unit": "1/(16*pi^2*epsilon_bar)",
+        "pole_expression": "-m2/(16*pi^2*epsilon_bar)",
+        "primary_minus_replay": "0",
+        "evidence_sha256": "7d9a646003c1a46a1bc693289c91ea1d7bea844f05dabe3e8a5b06d2bce1f071"
+      },
+      "verdict_reason": "primary_auxiliary_mass_UV_projection_equals_independent_Gamma_function_replay_exactly_in_frozen_convention",
+      "evidence_files": [
+        "uvp_p01_primary.json",
+        "uvp_p01_independent_replay.json",
+        "uvp_p01_uv_ir_provenance.json",
+        "uvp_p01_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P02",
@@ -62,7 +73,7 @@
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
       "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
+      "authorization": "READY",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1045,5 +1056,5 @@
       "evidence_files": []
     }
   ],
-  "result_sha256": "9f3eafee06f036580c726761dbc47442ec83f95bf12de78a09eea2e30e24e974"
+  "result_sha256": "13a0bc6f202eaa5de3b71c74aab1acbbfe697ef597d66b1901bcfd1b2ca58f12"
 }

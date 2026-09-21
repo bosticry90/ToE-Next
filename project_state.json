@@ -1,6 +1,6 @@
 {
-  "state_version": 58,
-  "updated_utc": "2026-09-21T21:54:22Z",
+  "state_version": 59,
+  "updated_utc": "2026-09-21T22:14:56Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -565,18 +565,25 @@
       "layer5a_initial_result_sha256": "9f3eafee06f036580c726761dbc47442ec83f95bf12de78a09eea2e30e24e974",
       "layer5a_synthetic_27_of_27_schema_transition": "PASS",
       "layer5a_evaluator_implemented": false,
+      "layer5a_evaluator_implementation": "P01_PRIMITIVE_PRIMARY_AND_INDEPENDENT_REPLAY_ONLY",
       "layer5a_tests_required": 39,
-      "layer5a_tests_executed": 0,
+      "layer5a_tests_executed": 1,
       "layer5a_engine_tests_required": 27,
-      "layer5a_engine_tests_executed": 0,
-      "layer5a_next_test": "UVP_P01",
+      "layer5a_engine_tests_executed": 1,
+      "layer5a_next_test": "UVP_P02",
+      "UVP_P01": "PASS",
+      "UVP_P01_evidence_schema_sha256": "8240e1b8594c21a952cfd22c599ea0116d7e664f7782227a7487337cf4d93f7b",
+      "UVP_P01_normalized_residue": "-m2",
+      "UVP_P01_pole_expression": "-m2/(16*pi^2*epsilon_bar)",
+      "UVP_P01_evidence_sha256": "7d9a646003c1a46a1bc693289c91ea1d7bea844f05dabe3e8a5b06d2bce1f071",
+      "layer5a_current_result_sha256": "13a0bc6f202eaa5de3b71c74aab1acbbfe697ef597d66b1901bcfd1b2ca58f12",
       "layer6_tensor_IBP_reduction_authorized": false,
       "counterterm_reduction_master_layers_started": false,
       "finite_C1_GS": null,
       "bfb_status": "BFB_UNRESOLVED",
       "result": "tools/two_loop_qft_compiler_v1/LAYER5_RESULT.md"
     },
-    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5A_FIRST_EXECUTION_READY_UVP_P01_NEXT_0_OF_39_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
+    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5A_UVP_P01_PASS_UVP_P02_NEXT_1_OF_39_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

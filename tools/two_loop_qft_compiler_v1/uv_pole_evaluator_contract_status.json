@@ -2,8 +2,8 @@
   "outcome": "ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT_PREREGISTERED",
   "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
   "required_tests": 39,
-  "tests_executed": 0,
+  "tests_executed": 1,
   "compiler_outcome_preserved": "ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED",
   "layer6_authorized": false,
-  "authority": "SPECIFICATION_ONLY"
+  "authority": "SPECIFICATION_AUDIT_WITH_EXECUTION_PROGRESS_REFERENCE"
 }

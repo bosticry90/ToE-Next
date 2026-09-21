@@ -13,6 +13,11 @@ def main():
         encoding="utf-8"))
     status = json.loads((HERE / "compiler_status.json").read_text(
         encoding="utf-8"))
+    execution_path = HERE / "uv_pole_evaluator_results.json"
+    execution = (json.loads(execution_path.read_text(encoding="utf-8"))
+                 if execution_path.exists() else None)
+    tests_executed = (execution["counters"]["executed"]
+                      if execution is not None else 0)
     assert spec["outcome"] == "ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT_PREREGISTERED"
     assert spec["authority"] == "TEST_SPECIFICATION_ONLY_NO_UV_POLE_RESULT"
     embedded_hash = spec.pop("uv_pole_evaluator_contract_sha256")
@@ -71,10 +76,10 @@ def main():
             "27_EVALUATOR_ENGINE_PLUS_12_CANONICAL_COUNTERTERM_TESTS"),
         "layer5a_uv_pole_evaluator_contract_supersedes_sha256": spec[
             "revision"]["supersedes_contract_sha256"],
-        "layer5a_evaluator_implemented": False,
         "layer5a_tests_required": 39,
-        "layer5a_tests_executed": 0,
     })
+    status.setdefault("layer5a_evaluator_implemented", False)
+    status.setdefault("layer5a_tests_executed", 0)
     status.setdefault("next_gate", "EXECUTE_ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT")
     (HERE / "compiler_status.json").write_text(
         json.dumps(status, indent=2) + "\n", encoding="utf-8")
@@ -82,16 +87,17 @@ def main():
         "outcome": "ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT_PREREGISTERED",
         "contract_sha256": spec["uv_pole_evaluator_contract_sha256"],
         "required_tests": 39,
-        "tests_executed": 0,
+        "tests_executed": tests_executed,
         "compiler_outcome_preserved": "ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED",
         "layer6_authorized": False,
-        "authority": "SPECIFICATION_ONLY",
+        "authority": ("SPECIFICATION_AUDIT_WITH_EXECUTION_PROGRESS_REFERENCE"
+                      if tests_executed else "SPECIFICATION_ONLY"),
     }
     (HERE / "uv_pole_evaluator_contract_status.json").write_text(
         json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(result["outcome"])
     print("REQUIRED_TESTS", 39)
-    print("TESTS_EXECUTED", 0)
+    print("TESTS_EXECUTED", tests_executed)
     print("LAYER6_AUTHORIZED=false")
 
 

@@ -196,6 +196,8 @@ def main():
         "layer5a_execution_progress": (
             f"{executed}_OF_39_ENGINE_{result['counters']['engine_executed']}_OF_27"),
         "layer5a_synthetic_27_of_27_schema_transition": "PASS",
+        "layer5a_tests_executed": executed,
+        "layer5a_engine_tests_executed": result["counters"]["engine_executed"],
     })
     if blocked or failed:
         next_test = None
@@ -206,6 +208,22 @@ def main():
                           if row["status"] in {"NOT_RUN", "LOCKED"}), None)
     compiler_status["next_gate"] = (
         f"EXECUTE_{next_test}" if next_test else result["overall_status"])
+    compiler_status["layer5a_next_test"] = next_test
+    if result["tests"][0]["status"] == "PASS":
+        p01_schema = json.loads((HERE / "uvp_p01_evidence_schema.json").read_text(
+            encoding="utf-8"))
+        p01_schema_hash = sha256(json.dumps(
+            p01_schema, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        compiler_status.update({
+            "UVP_P01": "PASS",
+            "UVP_P01_evidence_schema_sha256": p01_schema_hash,
+            "UVP_P01_normalized_residue": result["tests"][0][
+                "derived_result"]["normalized_residue"],
+            "UVP_P01_pole_expression": result["tests"][0][
+                "derived_result"]["pole_expression"],
+            "UVP_P01_evidence_sha256": result["tests"][0][
+                "derived_result"]["evidence_sha256"],
+        })
     (HERE / "compiler_status.json").write_text(
         json.dumps(compiler_status, indent=2) + "\n", encoding="utf-8")
     execution_status = {

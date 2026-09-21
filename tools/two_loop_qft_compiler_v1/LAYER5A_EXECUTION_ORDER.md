@@ -1,5 +1,9 @@
 # Layer-5A first-execution order
 
+> **Post-P01 record (2026-09-21):** `UVP_P01=PASS`; progress is `1/39`
+> (`1/27` in the engine gate), and `UVP_P02` is next.  The order and plan hash
+> below are unchanged.  See [`UVP_P01_RESULT.md`](UVP_P01_RESULT.md).
+
 This file binds the frozen contract v2 hash
 `6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92`
 to its first fail-fast execution.  It does not amend the contract and records
@@ -68,6 +72,7 @@ and the initial ledger is
 
 ## Authority ceiling
 
-Until actual test records replace the initial ledger, progress remains
-`0/39`, the counterterm compiler remains blocked, and Layer 6 remains locked.
-No finite `C1_GS`, gauge, BFB, flavor, or proton-decay disposition changes.
+The initial ledger began at `0/39`.  Actual progress is recorded only in
+`uv_pole_evaluator_results.json`; the counterterm compiler and Layer 6 remain
+locked until their stated gates pass.  No finite `C1_GS`, gauge, BFB, flavor,
+or proton-decay disposition changes merely from primitive progress.

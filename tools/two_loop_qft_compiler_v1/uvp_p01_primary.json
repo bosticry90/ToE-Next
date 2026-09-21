@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P01",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "large_loop_momentum_radial_UV_projection_with_auxiliary_mass",
+  "integral": "mu^(2*epsilon)*Integral_E[d^d k_E/(2*pi)^d/(k_E^2+m2)]",
+  "dimension": "d=4-2*epsilon",
+  "radial_prefactor_at_d4": "1/(16*pi^2)",
+  "auxiliary_mass_symbol": "aux2",
+  "exact_rearrangement": "1/(t+m2)=1/(t+aux2)+(aux2-m2)/(t+aux2)^2+(aux2-m2)^2/((t+m2)*(t+aux2)^2)",
+  "master_log_coefficients": {
+    "J1_aux2": "-aux2",
+    "J2_aux2": "1"
+  },
+  "remainder_UV_behavior": "radial_integrand_O(t^-2-epsilon)_UV_finite",
+  "auxiliary_mass_cancelled": true,
+  "normalized_residue": "-m2",
+  "pole_unit": "1/(16*pi^2*epsilon_bar)",
+  "pole_expression": "-m2/(16*pi^2*epsilon_bar)",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "3a7ca69ddc77b722f2bf4f38d71ffde20498061a8c4b181b4e88a269d19c33f8"
+}
