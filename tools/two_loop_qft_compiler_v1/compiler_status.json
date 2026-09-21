@@ -1,18 +1,26 @@
 {
-  "outcome": "PHYSICAL_VERTEX_MATERIALIZATION_BLOCKED",
+  "outcome": "CANONICAL_328_PHYSICAL_BASIS_PASS",
   "component_basis": "PASS_328_REAL",
+  "full_sm_weight_basis": "PASS_328_REAL_EXACT_ORTHONORMAL",
+  "physical_basis": "PASS_290_PLUS_33_PLUS_1_PLUS_4",
+  "weight_map_sha256": "5c37fb29bcbc9418b44c2d87e42416c58a6612b08b039bd52aa1a3407c0d00e1",
+  "factorized_physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
   "sm_irrep_classes": 35,
   "highest_weight_multiplicity_representatives": 65,
   "dimension_reconstructed_from_irreps": 328,
-  "existing_authority": "highest_weight copies and multiplicity Hessian blocks; sufficient for spectrum/rank, not complete interaction vertices",
-  "missing_first_object": "complete all-weight parent-to-irrep map and 328-component parent-to-physical mass transformation",
-  "acceptance_tests": [
-    "exact kinetic unitarity",
-    "full Hessian reconstruction from multiplicity blocks",
-    "290 heavy plus 38 zero/light disposition",
-    "conjugate-irrep consistency",
-    "recovery of all passed block eigenvalues"
-  ],
-  "background_field_gauge_authorized": false,
+  "earned_authority": "complete factorized parent-to-physical scalar transformation, explicit symmetry/light zero disposition, and transformed unbroken-generator index replay",
+  "numerical_certificates": {
+    "max_kinetic_orthogonality_residual": 1.1102230246251565e-15,
+    "rank_tolerance_1e_9": 328,
+    "max_block_eigen_residual": 3.0145775206728485e-14,
+    "max_hessian_roundtrip_residual": 5.329070518200751e-15,
+    "max_certified_inverse_residual": 1.1102230246251565e-15,
+    "max_symmetry_vector_outside_preliminary_nullspace": 3.3306690738754696e-16,
+    "minimum_heavy_mass_squared": 0.08656155779937588,
+    "maximum_absolute_zero_mass_squared_before_replacement": 8.370970734949377e-16
+  },
+  "next_gate": "BACKGROUND_FIELD_GAUGE_GHOST_AND_VERTEX_LAYER",
+  "background_field_gauge_started": false,
+  "bulk_physical_vertex_generation_started": false,
   "finite_C1_GS": null
 }

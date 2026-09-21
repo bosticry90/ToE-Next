@@ -1,108 +1,116 @@
-# TWO_LOOP_QFT_COMPILER_V1: first execution checkpoint
+# TWO_LOOP_QFT_COMPILER_V1: promotion layer 2
 
 ## Disposition
 
-The infrastructure program is admitted with the already frozen scientific
-target `C1_GS`.  Its first component-basis layer passes:
+The complete parent-to-physical scalar basis now passes:
 
 \[
-\boxed{\texttt{CANONICAL\_328\_REAL\_COMPONENT\_BASIS\_PASS}}.
+\boxed{\texttt{CANONICAL\_328\_PHYSICAL\_BASIS\_PASS}}.
 \]
 
-The complete physical vertex layer does not yet pass:
+This is an infrastructure result, not a finite two-loop threshold. The physics
+status remains `DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED`,
+`DIRECT_GAUGE_MATCHING_UNRESOLVED`, and `BFB_UNRESOLVED`. Background-field
+gauge fixing, bulk vertex generation, diagrams, counterterms, reduction, and
+master-integral evaluation were not started.
 
-\[
-\boxed{\texttt{PHYSICAL\_VERTEX\_MATERIALIZATION\_BLOCKED}}.
-\]
+## Exact all-weight layer
 
-Accordingly the physics status remains
-`DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED` and
-`DIRECT_GAUGE_MATCHING_UNRESOLVED`.  The passed scalar vertex oracle and all
-lower-order gauge results are preserved; `BFB_UNRESOLVED` is unchanged.
+[`compile_all_weight_basis.py`](compile_all_weight_basis.py) expands the 65
+certified highest-weight copies in 35 SM-irrep classes into every weight state.
+The lowering order and phase convention are deterministic. Equivalent copies
+of each irrep have exactly identical raising/lowering representation matrices,
+so one small multiplicity rotation can be replicated across the whole irrep.
 
-## Exact field-space layer now earned
-
-[`compile_real_field_basis.py`](compile_real_field_basis.py) constructs the
-parent scalar tangent space directly from the frozen kinetic convention:
-
-| Parent sector | Real directions |
-|---|---:|
-| real traceless symmetric `54_H` | 54 |
-| complex self-dual `126_H` | 252 |
-| complex vector `10_H` | 20 |
-| complex singlet | 2 |
-| **Total** | **328** |
-
-The basis is canonical for
-
-\[
-\mathcal L_{\rm kin}=\frac12G_{AB}\,\partial q_A\partial q_B.
-\]
-
-All `66,824` within-parent-sector Gram entries were checked exactly; all
-cross-sector entries vanish structurally.  The complete 328-vector sparse
-serialization has SHA-256
+The resulting real map has 328 exactly orthonormal columns and full exact rank.
+Its sparse serialization has SHA-256
 
 ```text
-c66398b6321988b643af5c12fdbea86c3a2589b7b139450770c6ef72c31a3b5e
+5c37fb29bcbc9418b44c2d87e42416c58a6612b08b039bd52aa1a3407c0d00e1
 ```
 
-The same layer constructs all 45 plane-rotation generators in the previously
-used normalization
+## Physical mass and special-zero layer
+
+[`materialize_physical_basis.py`](materialize_physical_basis.py) applies only
+the already-certified small multiplicity Hessian blocks. It explicitly bridges
+the phase convention of the rational block representatives to the all-weight
+convention; the first attempted replay exposed this required bridge by failing
+the Goldstone-nullspace test, and no result was promoted until it was inserted.
+
+The special directions are not assigned by a generic eigensolver:
+
+- 33 gauge Goldstones are constructed from the broken-generator vacuum orbit;
+- the PQ mode is constructed from the PQ charge orbit;
+- the remaining four null directions, after projection away from those 34
+  symmetry directions, form the tuned complex Higgs doublet.
+
+The final disposition is exactly
+
+| Direction class | Real dimension |
+|---|---:|
+| positive heavy physical scalars | 290 |
+| gauge Goldstones | 33 |
+| PQ mode | 1 |
+| light Higgs | 4 |
+| **total** | **328** |
+
+The principal residual certificates are
+
+```text
+max kinetic orthogonality residual   1.1102230246251565e-15
+max Hessian round-trip residual      5.329070518200751e-15
+max independent zero-subspace error  8.881784197001252e-16
+```
+
+The reproducible factorized physical-basis authority hash is
+
+```text
+af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e
+```
+
+It covers the exact all-weight hash, the small multiplicity rotations, the
+explicit special-zero columns, and the heavy spectrum. A dense float17 hash is
+retained only as a same-run diagnostic because reapplying serialized rotations
+can change last-bit rounding without changing the certified basis.
+
+## Gauge-generator regression
+
+The unbroken color, weak, and hypercharge Cartan generators were transformed
+through the physical map. Restricting them to the 290 heavy directions
+reproduces the previously independent scalar one-loop beta-index ledger:
 
 \[
-\operatorname{Tr}_{10}(T_a^T T_b)=\delta_{ab}.
+(T_1,T_2,T_3)=\left(\frac{377}{30},\frac{77}{6},\frac{79}{6}\right).
 \]
 
-An independently written sparse-coordinate replay checks the full
-`328 x 328` real Gram matrix (`107,584` entries) and the 45-generator
-normalization without importing the parent kinetic-inner implementation.  A
-separate gate audit confirms that the existing 65 highest-weight
-multiplicity representatives in 35 SM-irrep classes reconstruct dimension
-328, while also demonstrating why those representatives are not yet a full
-interaction basis.
+This tests the physical basis as a gauge-interaction basis, rather than only a
+mass diagonalization.
 
-## First unearned object
+## Independent replay
 
-This component basis is not yet the requested **physical** basis.  The current
-Hessian infrastructure contains 65 normalized highest-weight representatives
-and complete small multiplicity blocks, which is sufficient for spectra and
-rank.  It does not yet provide one complete 328-component transformation that
-simultaneously:
+[`independent_physical_basis_replay.py`](independent_physical_basis_replay.py)
+does not import the materializer. It reconstructs the 328 columns from the
+saved factorization, checks the authority hash, full rank, orthogonality,
+special-zero subspace, Hessian round trip, disposition, and heavy-scalar index
+target. [`audit_physical_basis_gate.py`](audit_physical_basis_gate.py) then
+freezes the promotion status in [`compiler_status.json`](compiler_status.json).
 
-1. expands every state of every SM multiplet, not only one highest weight;
-2. rotates every multiplicity space into the physical mass basis;
-3. isolates the 33 gauge Goldstones, one PQ mode and four light-Higgs real
-   directions exactly once;
-4. returns the 290 positive heavy scalar columns with a certified inverse;
-5. exposes gauge-generator matrices and parent vertices in that basis.
+## Authority boundary
 
-Without that transformation, generating a subset of mass-basis cubic or
-quartic rules would be incomplete and could not support diagram enumeration.
-The program therefore stops at this fail-fast boundary rather than advancing
-to background-field gauge fixing prematurely.
-
-## Next compiler-only target
-
-The next layer is a complete SM-irrep state compiler: generate all weights from
-each certified highest-weight copy, assemble the exact parent-to-irrep map,
-diagonalize only the small multiplicity matrices at the frozen point, and
-materialize the resulting real 328-component parent-to-physical matrix.  Its
-acceptance tests are exact kinetic unitarity, Hessian reconstruction, the
-`290+38` disposition, conjugate-irrep consistency, and recovery of every
-passed block eigenvalue.
-
-No background-field vertices, diagrams, counterterms, master integrals, or
-finite `C1_GS` are promoted before this layer passes.
+The compiler now knows which physical scalar, Goldstone, PQ, or light-Higgs
+direction every future scalar line denotes. It does **not** yet possess the
+background-field gauge/ghost action or a promoted physical vertex database.
+Those belong to promotion layer 3 and require a separate gate. No finite
+`C1_GS` or gauge refit is inferred here.
 
 ## Reproduction
 
 ```powershell
-python tools/two_loop_qft_compiler_v1/compile_real_field_basis.py
-python tools/two_loop_qft_compiler_v1/independent_basis_replay.py
+python tools/two_loop_qft_compiler_v1/compile_all_weight_basis.py
+python tools/two_loop_qft_compiler_v1/materialize_physical_basis.py
+python tools/two_loop_qft_compiler_v1/independent_physical_basis_replay.py
 python tools/two_loop_qft_compiler_v1/audit_physical_basis_gate.py
 ```
 
-The complete basis is stored in
-[`real_field_basis.json`](real_field_basis.json); the current promotion status
-is in [`compiler_status.json`](compiler_status.json).
+The stored maps are [`sm_weight_basis.json`](sm_weight_basis.json) and
+[`physical_basis.json`](physical_basis.json).

@@ -29,7 +29,8 @@ counts, or incomplete topology subsets.
 
 ## Current phase
 
-Phase 1 begins with `compile_real_field_basis.py`.  Its output is a complete
-sparse component basis in the frozen tensor convention and an exact kinetic
-Gram certificate.  Physical mass eigenvectors and interaction vertices are a
-separate, subsequent authority gate.
+Promotion layers 1 and 2 pass. The canonical parent basis, complete exact
+SM-weight map, factorized physical mass transformation, and explicit
+`290+33+1+4` disposition are frozen and independently replayed. Layer 3—the
+background-field gauge/Goldstone/ghost action and promoted physical vertices—
+has not started. It remains a separate authority gate.

@@ -1,6 +1,6 @@
 {
-  "state_version": 49,
-  "updated_utc": "2026-09-21T16:06:34Z",
+  "state_version": 50,
+  "updated_utc": "2026-09-21T17:21:48Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "TWO_LOOP_QFT_COMPILER_V1_PHASE1A",
-      "completed_utc": "2026-09-21T16:06:34Z",
+      "calculation": "TWO_LOOP_QFT_COMPILER_V1_PHASE2",
+      "completed_utc": "2026-09-21T17:21:48Z",
       "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
-      "authority": "EXACT_CANONICAL_328_REAL_COMPONENT_AND_45_GENERATOR_BASES_ONLY_LOWER_ORDER_PASSES_PRESERVED",
+      "authority": "CANONICAL_328_PHYSICAL_BASIS_PASS_COMPLETE_FACTORIZED_PARENT_TO_PHYSICAL_SCALAR_TRANSFORMATION_ONLY_LOWER_ORDER_PASSES_PRESERVED",
       "result": "tools/two_loop_qft_compiler_v1/RESULT.md",
-      "qualified_stop": "COMPLETE_PARENT_TO_PHYSICAL_MASS_BASIS_AND_290_PLUS_38_DISPOSITION_NOT_YET_MATERIALIZED",
+      "qualified_stop": "BACKGROUND_FIELD_GAUGE_GHOST_AND_BULK_PHYSICAL_VERTEX_LAYER_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -470,7 +470,7 @@
       "result": "calculations/canonical_so10_direct_two_loop_gauge_scalar_threshold/RESULT.md"
     },
     "two_loop_qft_compiler_v1": {
-      "outcome": "PHYSICAL_VERTEX_MATERIALIZATION_BLOCKED",
+      "outcome": "CANONICAL_328_PHYSICAL_BASIS_PASS",
       "scientific_target": "FINITE_CENTERED_C1_GS_FOR_FROZEN_CANONICAL_BENCHMARK",
       "program_admitted": true,
       "component_basis_gate": "CANONICAL_328_REAL_COMPONENT_BASIS_PASS",
@@ -484,15 +484,27 @@
       },
       "full_real_gram_replay": "PASS_107584_ENTRIES",
       "normalized_gauge_generator_basis": "PASS_45",
-      "physical_parent_to_mass_rotation": "NOT_MATERIALIZED",
-      "physical_scalar_disposition_290_plus_38": "NOT_MATERIALIZED_IN_FULL_COMPONENT_COORDINATES",
+      "full_sm_weight_basis_gate": "CANONICAL_FULL_SM_WEIGHT_BASIS_PASS",
+      "full_sm_weight_map_sha256": "5c37fb29bcbc9418b44c2d87e42416c58a6612b08b039bd52aa1a3407c0d00e1",
+      "physical_parent_to_mass_rotation": "FACTORIZED_MATERIALIZED_AND_INDEPENDENTLY_REPLAYED",
+      "factorized_physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
+      "physical_scalar_disposition_290_plus_38": {
+        "positive_heavy_real": 290,
+        "gauge_goldstone_real": 33,
+        "pq_real": 1,
+        "light_higgs_real": 4
+      },
+      "max_kinetic_orthogonality_residual": 1.1102230246251565e-15,
+      "max_hessian_roundtrip_residual": 5.329070518200751e-15,
+      "transformed_generator_heavy_scalar_index_replay": "PASS_377_OVER_30_77_OVER_6_79_OVER_6",
       "background_field_gauge_layer_started": false,
+      "bulk_physical_vertex_generation_started": false,
       "diagram_counterterm_reduction_master_layers_started": false,
       "finite_C1_GS": null,
       "bfb_status": "BFB_UNRESOLVED",
       "result": "tools/two_loop_qft_compiler_v1/RESULT.md"
     },
-    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_PHASE1_COMPONENT_BASIS_PASSED_PHYSICAL_MASS_BASIS_NEXT_FINITE_C1_GS_UNCOMPUTED"
+    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_PHASE2_PHYSICAL_BASIS_PASSED_LAYER3_BACKGROUND_FIELD_GAUGE_GHOST_VERTEX_GATE_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
