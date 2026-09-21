@@ -1,0 +1,49 @@
+{
+  "outcome": "PHYSICAL_VERTEX_API_CORE_PASS",
+  "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
+  "background_field_quadratic_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692",
+  "field_ids": {
+    "heavy_scalars": {
+      "pattern": "H000..H289",
+      "count": 290
+    },
+    "gauge_goldstones": {
+      "pattern": "G000..G032",
+      "count": 33
+    },
+    "pq": {
+      "pattern": "PQ000",
+      "count": 1
+    },
+    "light_higgs": {
+      "pattern": "h000..h003",
+      "count": 4
+    },
+    "unbroken_background_vectors": {
+      "pattern": "B000..B011",
+      "count": 12
+    },
+    "massive_vectors_and_heavy_ghosts": {
+      "pattern": "X000..X032",
+      "count": 33
+    }
+  },
+  "on_demand_kernels": [
+    "SSS",
+    "SSSS",
+    "VSS",
+    "VVS",
+    "VVSS",
+    "VVV_structure",
+    "VVVV_color_channels",
+    "ghost_mass",
+    "ghost_ghost_scalar"
+  ],
+  "normalization": "reported gauge-kinetic kernels omit explicit g10 powers and standard momentum/Lorentz/i factors",
+  "execution_contract": "calculation-local serial use; the residual-certified floating physical columns require a temporary numeric-tolerance wrapper around exact parent invariant guards",
+  "not_claimed": [
+    "complete_background_quantum_field_vertex_action",
+    "general_xi_one_loop_F2_cancellation",
+    "two_loop_diagram_generation"
+  ]
+}

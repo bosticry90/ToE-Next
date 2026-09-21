@@ -1,6 +1,6 @@
 {
-  "state_version": 50,
-  "updated_utc": "2026-09-21T17:21:48Z",
+  "state_version": 51,
+  "updated_utc": "2026-09-21T18:04:45Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "TWO_LOOP_QFT_COMPILER_V1_PHASE2",
-      "completed_utc": "2026-09-21T17:21:48Z",
+      "calculation": "TWO_LOOP_QFT_COMPILER_V1_PHASE3_ATTEMPT",
+      "completed_utc": "2026-09-21T18:04:45Z",
       "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
-      "authority": "CANONICAL_328_PHYSICAL_BASIS_PASS_COMPLETE_FACTORIZED_PARENT_TO_PHYSICAL_SCALAR_TRANSFORMATION_ONLY_LOWER_ORDER_PASSES_PRESERVED",
+      "authority": "BACKGROUND_FIELD_QUADRATIC_LAYER_PASS_AND_PHYSICAL_VERTEX_API_CORE_PASS_GENERAL_XI_ONE_LOOP_F2_CANCELLATION_NOT_DERIVED",
       "result": "tools/two_loop_qft_compiler_v1/RESULT.md",
-      "qualified_stop": "BACKGROUND_FIELD_GAUGE_GHOST_AND_BULK_PHYSICAL_VERTEX_LAYER_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED",
+      "qualified_stop": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_BLOCKED_COMPLETE_PARTIAL_BFM_BACKGROUND_QUANTUM_ACTION_AND_GENERAL_XI_UV_MINUS_EFT_ONE_LOOP_F2_CANCELLATION_MISSING_FINITE_C1_GS_UNCOMPUTED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -470,7 +470,7 @@
       "result": "calculations/canonical_so10_direct_two_loop_gauge_scalar_threshold/RESULT.md"
     },
     "two_loop_qft_compiler_v1": {
-      "outcome": "CANONICAL_328_PHYSICAL_BASIS_PASS",
+      "outcome": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_BLOCKED",
       "scientific_target": "FINITE_CENTERED_C1_GS_FOR_FROZEN_CANONICAL_BENCHMARK",
       "program_admitted": true,
       "component_basis_gate": "CANONICAL_328_REAL_COMPONENT_BASIS_PASS",
@@ -497,14 +497,24 @@
       "max_kinetic_orthogonality_residual": 1.1102230246251565e-15,
       "max_hessian_roundtrip_residual": 5.329070518200751e-15,
       "transformed_generator_heavy_scalar_index_replay": "PASS_377_OVER_30_77_OVER_6_79_OVER_6",
-      "background_field_gauge_layer_started": false,
-      "bulk_physical_vertex_generation_started": false,
+      "background_field_gauge_layer_started": true,
+      "background_field_quadratic_layer": "PASS_12_UNBROKEN_33_MASSIVE_33_GOLDSTONE_33_COMPLEX_HEAVY_GHOSTS",
+      "background_field_quadratic_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692",
+      "general_xi_quadratic_mass_pairing": "PASS_AT_XI_0P5_1_2",
+      "goldstone_orbit_projector_replay": "PASS_MAX_RESIDUAL_1P45E_15",
+      "massive_vector_index_replay": "PASS_TOTAL_8_6_5_AND_LOWER_14_OVER_5_0_1",
+      "bulk_physical_vertex_generation_started": true,
+      "physical_vertex_api_core": "PASS_CALCULATION_LOCAL_SPARSE_ON_DEMAND",
+      "physical_vertex_core_regressions": "PASS_TREE_WARD_JACOBI_PERMUTATION_AND_SCALAR_CONTROLS",
+      "complete_partial_bfm_background_quantum_vertex_action": "NOT_DERIVED",
+      "general_xi_one_loop_F2_cancellation": "NOT_DERIVED",
       "diagram_counterterm_reduction_master_layers_started": false,
+      "two_loop_diagram_enumeration_authorized": false,
       "finite_C1_GS": null,
       "bfb_status": "BFB_UNRESOLVED",
       "result": "tools/two_loop_qft_compiler_v1/RESULT.md"
     },
-    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_PHASE2_PHYSICAL_BASIS_PASSED_LAYER3_BACKGROUND_FIELD_GAUGE_GHOST_VERTEX_GATE_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED"
+    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER3_BLOCKED_AFTER_QUADRATIC_AND_VERTEX_CORE_SUBPASSES_COMPLETE_PARTIAL_BFM_GENERAL_XI_ONE_LOOP_F2_CANCELLATION_REQUIRED_FINITE_C1_GS_UNCOMPUTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

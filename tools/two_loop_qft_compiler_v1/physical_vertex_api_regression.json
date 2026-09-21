@@ -1,0 +1,19 @@
+{
+  "outcome": "PHYSICAL_VERTEX_API_CORE_REGRESSION_PASS",
+  "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
+  "background_field_quadratic_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692",
+  "max_vss_antisymmetry_residual": 0.0,
+  "max_vvss_exchange_residual": 0.0,
+  "jacobi_residual": 2.342608028397798e-31,
+  "max_vector_ghost_mass_pairing_residual": 4.440892098500626e-16,
+  "max_tree_fp_vvs_ward_residual": 0.0,
+  "physical_scalar_cubic_permutation_residual": 0.0,
+  "physical_scalar_quartic_permutation_residual": 0.0,
+  "gauge_quartic_pair_residual": 0.0,
+  "inherited_exact_scalar_controls": {
+    "zEta_quartic": "384",
+    "z6_cubic": "2",
+    "zK_vev_induced_cubic": "6",
+    "lambdaS_fourth_derivative": "24"
+  }
+}

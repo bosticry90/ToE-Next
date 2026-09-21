@@ -29,8 +29,11 @@ counts, or incomplete topology subsets.
 
 ## Current phase
 
-Promotion layers 1 and 2 pass. The canonical parent basis, complete exact
-SM-weight map, factorized physical mass transformation, and explicit
-`290+33+1+4` disposition are frozen and independently replayed. Layer 3—the
-background-field gauge/Goldstone/ghost action and promoted physical vertices—
-has not started. It remains a separate authority gate.
+Promotion layers 1 and 2 pass. Layer 3 has started and has two bounded
+subpasses: the full 33-vector/Goldstone/ghost quadratic `R_xi` system and a
+calculation-local sparse physical-vertex core. The full layer remains blocked.
+The precise missing authority is the complete partial-background-field
+background/quantum gauge-fixed vertex action and its UV-minus-EFT one-loop
+`F^2` assembly demonstrating gauge-parameter cancellation. Tree-level mass
+pairing and Ward checks do not substitute for that loop calculation. Two-loop
+diagram enumeration is therefore not authorized.

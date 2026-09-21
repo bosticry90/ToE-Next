@@ -1,116 +1,155 @@
-# TWO_LOOP_QFT_COMPILER_V1: promotion layer 2
+# TWO_LOOP_QFT_COMPILER_V1: promotion layer 3 attempt
 
 ## Disposition
 
-The complete parent-to-physical scalar basis now passes:
+The requested background-field/physical-vertex gate is not yet complete:
 
 \[
-\boxed{\texttt{CANONICAL\_328\_PHYSICAL\_BASIS\_PASS}}.
+\boxed{\texttt{BACKGROUND\_FIELD\_PHYSICAL\_VERTEX\_LAYER\_BLOCKED}}.
 \]
 
-This is an infrastructure result, not a finite two-loop threshold. The physics
-status remains `DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED`,
-`DIRECT_GAUGE_MATCHING_UNRESOLVED`, and `BFB_UNRESOLVED`. Background-field
-gauge fixing, bulk vertex generation, diagrams, counterterms, reduction, and
-master-integral evaluation were not started.
+Two bounded prerequisites pass:
 
-## Exact all-weight layer
+\[
+\boxed{\texttt{BACKGROUND\_FIELD\_QUADRATIC\_LAYER\_PASS}},\qquad
+\boxed{\texttt{PHYSICAL\_VERTEX\_API\_CORE\_PASS}}.
+\]
 
-[`compile_all_weight_basis.py`](compile_all_weight_basis.py) expands the 65
-certified highest-weight copies in 35 SM-irrep classes into every weight state.
-The lowering order and phase convention are deterministic. Equivalent copies
-of each irrep have exactly identical raising/lowering representation matrices,
-so one small multiplicity rotation can be replicated across the whole irrep.
+The blocker is no longer field identity, vector masses, Goldstone selection, or
+tree-level interaction generation. It is the missing complete
+background/quantum partially fixed background-field action and its explicit
+general-`xi` one-loop UV-minus-EFT `F^2` cancellation. Two-loop diagram
+enumeration remains unauthorized.
 
-The resulting real map has 328 exactly orthonormal columns and full exact rank.
-Its sparse serialization has SHA-256
+The physics status is unchanged:
+`DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED`,
+`DIRECT_GAUGE_MATCHING_UNRESOLVED`, and `BFB_UNRESOLVED`.
 
-```text
-5c37fb29bcbc9418b44c2d87e42416c58a6612b08b039bd52aa1a3407c0d00e1
-```
+## Immutable inputs
 
-## Physical mass and special-zero layer
-
-[`materialize_physical_basis.py`](materialize_physical_basis.py) applies only
-the already-certified small multiplicity Hessian blocks. It explicitly bridges
-the phase convention of the rational block representatives to the all-weight
-convention; the first attempted replay exposed this required bridge by failing
-the Goldstone-nullspace test, and no result was promoted until it was inserted.
-
-The special directions are not assigned by a generic eigensolver:
-
-- 33 gauge Goldstones are constructed from the broken-generator vacuum orbit;
-- the PQ mode is constructed from the PQ charge orbit;
-- the remaining four null directions, after projection away from those 34
-  symmetry directions, form the tuned complex Higgs doublet.
-
-The final disposition is exactly
-
-| Direction class | Real dimension |
-|---|---:|
-| positive heavy physical scalars | 290 |
-| gauge Goldstones | 33 |
-| PQ mode | 1 |
-| light Higgs | 4 |
-| **total** | **328** |
-
-The principal residual certificates are
-
-```text
-max kinetic orthogonality residual   1.1102230246251565e-15
-max Hessian round-trip residual      5.329070518200751e-15
-max independent zero-subspace error  8.881784197001252e-16
-```
-
-The reproducible factorized physical-basis authority hash is
+The implementation rejects a mismatched physical basis. Its immutable scalar
+basis hash is
 
 ```text
 af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e
 ```
 
-It covers the exact all-weight hash, the small multiplicity rotations, the
-explicit special-zero columns, and the heavy spectrum. A dense float17 hash is
-retained only as a same-run diagnostic because reapplying serialized rotations
-can change last-bit rounding without changing the certified basis.
+Every new artifact records that hash. The quadratic sublayer has hash
 
-## Gauge-generator regression
+```text
+b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692
+```
 
-The unbroken color, weak, and hypercharge Cartan generators were transformed
-through the physical map. Restricting them to the 290 heavy directions
-reproduces the previously independent scalar one-loop beta-index ledger:
+## Background-field quadratic subpass
+
+[`compile_background_field_quadratic.py`](compile_background_field_quadratic.py)
+constructs the complete vacuum-orbit map `Q` in the canonical 328-real basis.
+In dimensionless units,
+
+```text
+M_V^2/(g10^2 omega^2) = Q^T Q,
+M_G^2/(g10^2 omega^2) = xi Q Q^T on image(Q),
+M_ghost^2/(g10^2 omega^2) = xi Q^T Q.
+```
+
+It finds 12 unbroken SM vectors and 33 massive vectors with nonzero mass
+clusters
+
+| `M_V^2/(g10^2 omega^2)` | multiplicity |
+|---:|---:|
+| `0.005` | 8 |
+| `0.025` | 1 |
+| `50/120` | 12 |
+| `50.6/120` | 12 |
+
+The orbit Goldstone projector agrees with the independently frozen physical
+basis to `1.45e-15`. For `xi=1/2,1,2`, all 33 nonzero Goldstone and complex
+ghost masses equal `xi M_V^2`; the largest residual is `7.78e-16`.
+
+The independently known vector-index ledgers are recovered:
 
 \[
-(T_1,T_2,T_3)=\left(\frac{377}{30},\frac{77}{6},\frac{79}{6}\right).
+(T_1,T_2,T_3)_\text{all massive}=(8,6,5),
 \]
 
-This tests the physical basis as a gauge-interaction basis, rather than only a
-mass diagonalization.
+\[
+(T_1,T_2,T_3)_{PS/SM}=(14/5,0,1).
+\]
 
-## Independent replay
+This is a quadratic/operator pass. It is not a loop-level gauge-parameter
+cancellation proof.
 
-[`independent_physical_basis_replay.py`](independent_physical_basis_replay.py)
-does not import the materializer. It reconstructs the 328 columns from the
-saved factorization, checks the authority hash, full rank, orthogonality,
-special-zero subspace, Hessian round trip, disposition, and heavy-scalar index
-target. [`audit_physical_basis_gate.py`](audit_physical_basis_gate.py) then
-freezes the promotion status in [`compiler_status.json`](compiler_status.json).
+## Sparse physical-vertex core
 
-## Authority boundary
+[`physical_vertex_api.py`](physical_vertex_api.py) supplies deterministic field
+IDs and on-demand kernels for `SSS`, `SSSS`, `VSS`, `VVS`, `VVSS`, pure-gauge
+`VVV` structure constants and `VVVV` color channels, plus ghost masses and the
+tree FP ghost--ghost--scalar kernel. It uses the factorized physical basis and
+never materializes dense `328^3` or `328^4` tensors.
 
-The compiler now knows which physical scalar, Goldstone, PQ, or light-Higgs
-direction every future scalar line denotes. It does **not** yet possess the
-background-field gauge/ghost action or a promoted physical vertex database.
-Those belong to promotion layer 3 and require a separate gate. No finite
-`C1_GS` or gauge refit is inferred here.
+The scalar API evaluates the same parent invariant contractions as the exact
+oracle. Because the physical mixing columns are residual-certified floating
+algebraic numbers, a narrow serial numeric wrapper relaxes only the oracle's
+exact-equality guards. This API is calculation-local and is not advertised as
+a thread-safe symbolic database.
+
+[`check_physical_vertex_api.py`](check_physical_vertex_api.py) passes:
+
+- `VSS` antisymmetry and `VVSS` exchange symmetry;
+- pure-gauge antisymmetry, Jacobi, and four-vector color-pair symmetry;
+- all 33 ghost/vector mass pairings for `xi=1/2,1,2`;
+- the tree FP/VVS relation in the frozen normalization;
+- physical scalar cubic and quartic permutation symmetry;
+- inherited exact scalar controls `zEta=384`, `z6=2`, VEV-induced `zK=6`,
+  and `lambdaS^(4)=24`.
+
+All reported core residuals are zero except the numerical Jacobi replay,
+`2.35e-31`, and the mass-pairing replay, `4.45e-16`.
+
+## Why the full layer does not pass
+
+The existing one-loop vector authority is the Feynman-gauge result
+
+\[
+\lambda_i^V=T_i\left[1-21\log(M_V/\mu)\right].
+\]
+
+It is a valid regression in its frozen slice, but it does not show that the
+complete matched coefficient is unchanged for `xi=1/2,1,2`. That stronger
+claim requires all background/quantum gauge-fixing and ghost vertices and an
+explicit UV-minus-EFT hard-region calculation. Equal vector, Goldstone, and
+ghost masses and a tree Ward identity are necessary checks, not substitutes.
+
+This caution is structural: the partially fixed background-field construction
+was introduced precisely to make loop matching with heavy vectors well-defined
+when the ordinary broken-theory BFM does not transparently provide the needed
+UV/EFT cancellation; see [Thomsen, *A Partially Fixed Background Field
+Gauge*](https://arxiv.org/abs/2404.11640).
+
+The remaining layer-3 requirements are therefore:
+
+1. complete partial-BFM background/quantum gauge-fixed vertices;
+2. general-`xi` one-loop UV-minus-EFT `F^2` assembly;
+3. explicit vector/Goldstone/ghost cancellation at `xi=1/2,1,2`;
+4. selected loop-level Slavnov--Taylor replays in the same prescription.
+
+No diagram count, counterterm layer, master reduction, finite `C1_GS`, or gauge
+refit is inferred.
 
 ## Reproduction
 
+From the repository root:
+
 ```powershell
-python tools/two_loop_qft_compiler_v1/compile_all_weight_basis.py
-python tools/two_loop_qft_compiler_v1/materialize_physical_basis.py
-python tools/two_loop_qft_compiler_v1/independent_physical_basis_replay.py
-python tools/two_loop_qft_compiler_v1/audit_physical_basis_gate.py
+python tools/two_loop_qft_compiler_v1/compile_background_field_quadratic.py
+python tools/two_loop_qft_compiler_v1/physical_vertex_api.py
+python tools/two_loop_qft_compiler_v1/check_physical_vertex_api.py
+python calculations/canonical_so10_lower_f2/check_vector_f2.py
+python tools/two_loop_qft_compiler_v1/audit_layer3_gate.py
 ```
 
-The stored maps are [`sm_weight_basis.json`](sm_weight_basis.json) and
-[`physical_basis.json`](physical_basis.json).
+The machine-readable outputs are
+[`background_field_quadratic.json`](background_field_quadratic.json),
+[`physical_vertex_api.json`](physical_vertex_api.json),
+[`physical_vertex_api_regression.json`](physical_vertex_api_regression.json),
+and [`compiler_status.json`](compiler_status.json).

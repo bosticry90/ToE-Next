@@ -1,26 +1,30 @@
 {
-  "outcome": "CANONICAL_328_PHYSICAL_BASIS_PASS",
-  "component_basis": "PASS_328_REAL",
-  "full_sm_weight_basis": "PASS_328_REAL_EXACT_ORTHONORMAL",
-  "physical_basis": "PASS_290_PLUS_33_PLUS_1_PLUS_4",
-  "weight_map_sha256": "5c37fb29bcbc9418b44c2d87e42416c58a6612b08b039bd52aa1a3407c0d00e1",
-  "factorized_physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
-  "sm_irrep_classes": 35,
-  "highest_weight_multiplicity_representatives": 65,
-  "dimension_reconstructed_from_irreps": 328,
-  "earned_authority": "complete factorized parent-to-physical scalar transformation, explicit symmetry/light zero disposition, and transformed unbroken-generator index replay",
-  "numerical_certificates": {
-    "max_kinetic_orthogonality_residual": 1.1102230246251565e-15,
-    "rank_tolerance_1e_9": 328,
-    "max_block_eigen_residual": 3.0145775206728485e-14,
-    "max_hessian_roundtrip_residual": 5.329070518200751e-15,
-    "max_certified_inverse_residual": 1.1102230246251565e-15,
-    "max_symmetry_vector_outside_preliminary_nullspace": 3.3306690738754696e-16,
-    "minimum_heavy_mass_squared": 0.08656155779937588,
-    "maximum_absolute_zero_mass_squared_before_replacement": 8.370970734949377e-16
+  "outcome": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_BLOCKED",
+  "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
+  "background_field_quadratic": "PASS",
+  "background_field_quadratic_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692",
+  "physical_vertex_api_core": "PASS_CALCULATION_LOCAL_ON_DEMAND",
+  "physical_vertex_api_core_regressions": "PASS",
+  "general_xi_values_checked_at_quadratic_and_tree_ward_level": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "one_loop_vector_F2": {
+    "feynman_gauge": "PASS_INHERITED_T_TIMES_1_MINUS_21_LOG_M_OVER_MU",
+    "general_xi_cancellation": "NOT_DERIVED"
   },
-  "next_gate": "BACKGROUND_FIELD_GAUGE_GHOST_AND_VERTEX_LAYER",
-  "background_field_gauge_started": false,
-  "bulk_physical_vertex_generation_started": false,
-  "finite_C1_GS": null
+  "blocking_requirements": [
+    "complete_partial_BFM_background_quantum_gauge_fixed_vertex_action",
+    "general_xi_UV_minus_EFT_one_loop_F2_assembly",
+    "explicit_vector_goldstone_ghost_xi_cancellation_at_0.5_1_2",
+    "selected_loop_level_Slavnov_Taylor_replay_in_the_same_prescription"
+  ],
+  "two_loop_diagram_enumeration_authorized": false,
+  "finite_C1_GS": null,
+  "preserved_physics_status": {
+    "heavy_threshold": "DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED",
+    "gauge_matching": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+    "bfb": "BFB_UNRESOLVED"
+  }
 }

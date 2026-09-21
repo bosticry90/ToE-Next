@@ -1,0 +1,77 @@
+{
+  "outcome": "BACKGROUND_FIELD_QUADRATIC_LAYER_PASS",
+  "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
+  "gauge_convention": "partial background-field R_xi: F_A=Dbar.A_A-xi*g10*omega*(Q^T eta)_A",
+  "vector_mass_operator": "g10^2*omega^2*Q^T*Q",
+  "goldstone_gauge_fixing_mass_operator": "xi*g10^2*omega^2*Q*Q^T on image(Q)",
+  "complex_ghost_mass_operator": "xi*g10^2*omega^2*Q^T*Q",
+  "counts": {
+    "unbroken_sm_vectors": 12,
+    "massive_vectors": 33,
+    "real_gauge_goldstones": 33,
+    "complex_heavy_ghosts": 33
+  },
+  "mass_squared_over_g10_squared_omega_squared": [
+    {
+      "value": 0.005,
+      "multiplicity": 8
+    },
+    {
+      "value": 0.025,
+      "multiplicity": 1
+    },
+    {
+      "value": 0.4166666666666667,
+      "multiplicity": 12
+    },
+    {
+      "value": 0.4216666666666667,
+      "multiplicity": 12
+    }
+  ],
+  "max_goldstone_orbit_projector_residual": 1.4432899320127035e-15,
+  "xi_mass_pairing_residuals": {
+    "0.5": 1.942890293094024e-16,
+    "1.0": 3.885780586188048e-16,
+    "2.0": 7.771561172376096e-16
+  },
+  "vector_sm_indices_by_mass_group_order_1_2_3": [
+    [
+      2.8,
+      1.8424427919854853e-31,
+      1.0000000000000002
+    ],
+    [
+      1.4678123363650918e-35,
+      1.5487064631455126e-41,
+      5.504367160599452e-35
+    ],
+    [
+      5.000000000000001,
+      3.0,
+      2.0000000000000004
+    ],
+    [
+      0.20000000000000026,
+      3.0,
+      1.9999999999999996
+    ]
+  ],
+  "total_massive_vector_sm_index": [
+    8.000000000000002,
+    6.0,
+    5.0
+  ],
+  "lower_ps_sm_broken_vector_index": [
+    2.8,
+    1.8424427919854853e-31,
+    1.0000000000000002
+  ],
+  "outside_quadratic_sublayer_authority": [
+    "general_xi_one_loop_F2_cancellation",
+    "complete_background_quantum_vector_goldstone_ghost_vertices",
+    "sparse_physical_vertex_api_core",
+    "two_loop_diagram_generation"
+  ],
+  "quadratic_layer_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692"
+}
