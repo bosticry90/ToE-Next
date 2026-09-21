@@ -1,0 +1,28 @@
+{
+  "status": "PREREGISTERED_BEFORE_C1_GS",
+  "target_centered_C1": [
+    118.21342970866435,
+    -337.891115444906,
+    219.67768573624167
+  ],
+  "target_norm": 420.00369816290794,
+  "target_unit_vector": [
+    0.2814580686449399,
+    -0.8044955721171942,
+    0.5230375034722544
+  ],
+  "actual_centered_C1_GS": null,
+  "comparison_when_available": {
+    "center": "c=C1_GS-mean(C1_GS)",
+    "magnitude_ratio": "rho=norm(c)/norm(target)",
+    "alignment": "cos_theta=dot(c,target)/(norm(c)*norm(target))",
+    "beneficial_projection": "dot(c,target)/dot(target,target)",
+    "mandatory_physical_test": "insert full convention-consistent GS threshold and refit all three channels"
+  },
+  "interpretation": {
+    "positive_alignment": "moves in the required C1-equivalent direction",
+    "negative_alignment": "moves against the required direction",
+    "zero_norm": "no nonuniversal GS finite threshold",
+    "no_pass_fail": "Yukawa-dependent threshold remains undefined"
+  }
+}

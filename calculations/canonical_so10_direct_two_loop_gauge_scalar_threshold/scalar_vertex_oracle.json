@@ -1,0 +1,24 @@
+{
+  "outcome": "SCALAR_VERTEX_ORACLE_PASS",
+  "authority": "ON_DEMAND_EXACT_SCALAR_POTENTIAL_DERIVATIVES_ONLY",
+  "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
+  "benchmark_point_sha256": "476645438ea8a7ada42fea90e80174b772d45ce3e729d013d134e9848950c816",
+  "second_derivative_regression_pairs": 4,
+  "cubic_permutation": "PASS",
+  "quartic_permutation": "PASS",
+  "selected_exact_controls": {
+    "zEta_quartic": "384",
+    "z6_cubic": "2",
+    "zK_vev_induced_cubic": "6",
+    "lambdaS_fourth_derivative": "24"
+  },
+  "degree_above_four": "ZERO",
+  "not_supplied": [
+    "gauge_goldstone_ghost_feynman_rules",
+    "diagram_generation",
+    "one_loop_counterterms",
+    "two_loop_tensor_reduction",
+    "massive_vacuum_master_evaluation",
+    "finite_C1_GS"
+  ]
+}

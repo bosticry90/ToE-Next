@@ -1,0 +1,64 @@
+{
+  "outcome": "DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED",
+  "overall_gauge_disposition": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+  "preserved": [
+    "DIRECT_ONE_LOOP_KERNEL_PASS",
+    "DIRECT_SM_TWO_LOOP_RUNNING_PASS",
+    "EXACT_TWO_LOOP_RG_LOG_KERNEL",
+    "YUKAWA_CONVENTION_V1",
+    "BFB_UNRESOLVED"
+  ],
+  "newly_earned": [
+    "SCALAR_VERTEX_ORACLE_PASS",
+    "C1_GS_COMPARISON_PREREGISTERED",
+    "TWO_LOOP_COMPILER_LAYER_AUDIT_COMPLETE"
+  ],
+  "layers": {
+    "frozen_parent_action_and_point": "PASS",
+    "physical_heavy_state_ledger": "PASS_290_SCALARS_33_VECTORS",
+    "rg_logarithmic_two_loop_kernel": "PASS",
+    "scalar_potential_directional_vertex_oracle": "PASS",
+    "full_328_real_component_vertex_basis": "NOT_MATERIALIZED",
+    "background_quantum_gauge_fixing_rules": "NOT_COMPILED",
+    "vector_goldstone_ghost_interaction_vertices": "NOT_COMPILED",
+    "two_loop_diagram_generation_and_symmetry_factors": "NOT_IMPLEMENTED",
+    "one_loop_field_mass_gauge_vev_tadpole_counterterms": "NOT_IMPLEMENTED",
+    "two_loop_tensor_IBP_reduction": "NOT_IMPLEMENTED",
+    "validated_massive_vacuum_master_evaluator": "NOT_AVAILABLE",
+    "gauge_parameter_cancellation": "NOT_TESTABLE",
+    "finite_degenerate_mass_limits": "NOT_TESTABLE",
+    "finite_C1_GS": "NOT_CALCULATED",
+    "gauge_refit_with_C1_GS": "NOT_AUTHORIZED"
+  },
+  "missing_required_layers": [
+    "full_328_real_component_vertex_basis",
+    "background_quantum_gauge_fixing_rules",
+    "vector_goldstone_ghost_interaction_vertices",
+    "two_loop_diagram_generation_and_symmetry_factors",
+    "one_loop_field_mass_gauge_vev_tadpole_counterterms",
+    "two_loop_tensor_IBP_reduction",
+    "validated_massive_vacuum_master_evaluator",
+    "gauge_parameter_cancellation",
+    "finite_degenerate_mass_limits",
+    "finite_C1_GS",
+    "gauge_refit_with_C1_GS"
+  ],
+  "executable_probe": {
+    "qgraf": null,
+    "form": null,
+    "tform": null,
+    "tsil": null,
+    "gcc": null,
+    "clang": null,
+    "cl": null
+  },
+  "finite_C1_GS": null,
+  "centered_target_C1": [
+    118.21342970866435,
+    -337.891115444906,
+    219.67768573624167
+  ],
+  "comparison_performed": false,
+  "gauge_refit_performed": false,
+  "interpretation": "The canonical scalar-potential vertices are now available exactly on demand, but no renormalized two-loop background-field amplitude exists. RG logarithms do not determine its finite constant."
+}

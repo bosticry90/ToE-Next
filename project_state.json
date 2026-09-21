@@ -1,6 +1,6 @@
 {
-  "state_version": 47,
-  "updated_utc": "2026-09-21T05:51:37Z",
+  "state_version": 48,
+  "updated_utc": "2026-09-21T15:51:00Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_DIRECT_TWO_LOOP_HEAVY_THRESHOLD_V1",
-      "completed_utc": "2026-09-21T05:51:37Z",
+      "calculation": "CANONICAL_DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_V1",
+      "completed_utc": "2026-09-21T15:51:00Z",
       "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
-      "authority": "TWO_LOOP_HEAVY_RG_LOG_KERNEL_AND_SYMBOLIC_YUKAWA_DEPENDENCY_ONLY_LOWER_ORDER_PASSES_PRESERVED",
-      "result": "calculations/canonical_so10_direct_two_loop_heavy_threshold/RESULT.md",
-      "qualified_stop": "FINITE_MODEL_SPECIFIC_TWO_LOOP_HEAVY_CONSTANTS_REQUIRE_BESPOKE_DIAGRAM_COUNTERTERM_COMPILER_AND_NUMERICAL_YUKAWA_DATA",
+      "authority": "EXACT_SCALAR_VERTEX_ORACLE_AND_PREREGISTERED_FINITE_THRESHOLD_COMPARISON_LOWER_ORDER_PASSES_PRESERVED",
+      "result": "calculations/canonical_so10_direct_two_loop_gauge_scalar_threshold/RESULT.md",
+      "qualified_stop": "FINITE_GAUGE_SCALAR_TWO_LOOP_CONSTANT_REQUIRES_UNIMPLEMENTED_GAUGE_GHOST_DIAGRAM_COUNTERTERM_REDUCTION_AND_MASTER_INTEGRAL_LAYERS",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -447,7 +447,29 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_direct_two_loop_heavy_threshold/RESULT.md"
     },
-    "active_focus": "DIRECT_GAUGE_MATCHING_UNRESOLVED_TWO_LOOP_LOG_KERNEL_EARNED_FINITE_TWO_LOOP_HEAVY_CONSTANTS_BLOCKED"
+    "canonical_so10_direct_two_loop_gauge_scalar_threshold": {
+      "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+      "heavy_threshold_gate": "DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED",
+      "preserved_kernel_outcome": "DIRECT_ONE_LOOP_KERNEL_PASS",
+      "preserved_running_outcome": "DIRECT_SM_TWO_LOOP_RUNNING_PASS",
+      "preserved_two_loop_log_kernel": "PASS",
+      "preserved_yukawa_convention": "YUKAWA_CONVENTION_V1",
+      "scalar_vertex_oracle": "PASS",
+      "scalar_vertex_orders": [2, 3, 4],
+      "finite_C1_GS_comparison": "PREREGISTERED_BEFORE_RESULT",
+      "finite_C1_GS": null,
+      "diagram_generator": "NOT_IMPLEMENTED",
+      "one_loop_counterterm_layer": "NOT_IMPLEMENTED",
+      "two_loop_reduction_and_master_layer": "NOT_IMPLEMENTED",
+      "gauge_parameter_cancellation": "NOT_TESTABLE",
+      "gauge_refit_performed": false,
+      "gauge_unification_passed": false,
+      "gauge_unification_failed": false,
+      "physical_scale_promoted": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_direct_two_loop_gauge_scalar_threshold/RESULT.md"
+    },
+    "active_focus": "DIRECT_GAUGE_MATCHING_UNRESOLVED_SCALAR_VERTEX_INPUT_EARNED_FINITE_TWO_LOOP_GAUGE_SCALAR_CONSTANT_BLOCKED_AT_QFT_COMPILER_LAYERS"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
