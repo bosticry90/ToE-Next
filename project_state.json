@@ -1,6 +1,6 @@
 {
-  "state_version": 41,
-  "updated_utc": "2026-09-20T19:55:46Z",
+  "state_version": 42,
+  "updated_utc": "2026-09-21T04:33:49Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_PS_MULTISPURION_POWER_COUNTING_V1",
-      "completed_utc": "2026-09-20T19:55:46Z",
-      "outcome": "PS_MULTISPURION_COUNTING_UNRESOLVED",
-      "authority": "EXACT_PS_INTERCEPTS_AND_NUMERICAL_CANDIDATE_SCALAR_SPLIT_BOUNDS_NO_COVARIANT_INTERVAL_EFT",
-      "result": "calculations/canonical_so10_ps_multispurion/RESULT.md",
-      "qualified_stop": "WHOLE_RETAINED_SECTOR_NOT_CLEANLY_SEPARATED_COVARIANT_OPERATOR_LEDGER_AND_CERTIFIED_TRUNCATION_ERROR_OUTSTANDING",
+      "calculation": "PS_INTERVAL_EFT_ERROR_BUDGET_V1",
+      "completed_utc": "2026-09-21T04:33:49Z",
+      "outcome": "PS_EFT_ERROR_UNRESOLVED",
+      "authority": "OBSERVABLE_SPECIFIC_ONE_LOOP_GAUGE_ERROR_DIAGNOSTICS_NO_COMPLETE_PS_OPERATOR_ERROR_BOUND",
+      "result": "calculations/canonical_so10_ps_eft_error_budget/RESULT.md",
+      "qualified_stop": "INDUCED_OPERATOR_COEFFICIENTS_AND_COVARIANT_GOLDSTONE_VECTOR_SUBTRACTION_UNMATCHED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -315,7 +315,27 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_ps_multispurion/RESULT.md"
     },
-    "active_focus": "CANONICAL_PS_MULTISPURION_EXACT_INTERCEPTS_PARTIAL_SCALAR_SPLIT_PS_INTERVAL_AND_DIRECT_FALLBACK_UNADMITTED"
+    "canonical_so10_ps_eft_error_budget": {
+      "outcome": "PS_EFT_ERROR_UNRESOLVED",
+      "accuracy_target_inverse_coupling": 0.20270050124930578,
+      "required_coarse_shift_range": [
+        2.0270050124930576,
+        2.966221676825481
+      ],
+      "candidate_upper_scalar_real_directions": 132,
+      "whole_scalar_direct_nonuniversal_spread": 0.12595473951778247,
+      "candidate_upper_placement_sensitivity_range": [
+        0.14925607417335707,
+        0.2346394072944864
+      ],
+      "matrix_log_norm_bound_closed": false,
+      "induced_operator_error_bound_closed": false,
+      "lower_one_loop_matching_resumed": false,
+      "direct_broken_phase_fallback_admitted": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_ps_eft_error_budget/RESULT.md"
+    },
+    "active_focus": "PS_EFT_GAUGE_ERROR_UNRESOLVED_COVARIANT_OPERATOR_MATCH_AND_DIRECT_FALLBACK_BOTH_UNADMITTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

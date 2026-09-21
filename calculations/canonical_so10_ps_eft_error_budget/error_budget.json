@@ -1,0 +1,88 @@
+{
+  "disposition": "PS_EFT_ERROR_UNRESOLVED",
+  "accuracy_target_inverse_coupling": 0.20270050124930578,
+  "required_coarse_shift_range": [
+    2.0270050124930576,
+    2.966221676825481
+  ],
+  "candidate_upper_scalar": {
+    "real_directions": 132,
+    "beta_SM_order_1_2_3": [
+      5.266666666666667,
+      5.0,
+      5.666666666666666
+    ],
+    "placement_sensitivity": [
+      {
+        "ratio": 4.08248290463863,
+        "delta_alpha_inverse": [
+          1.1791229859695231,
+          1.1194205563001802,
+          1.2686766304735373
+        ],
+        "max_pairwise": 0.14925607417335707,
+        "L_minus_4": 0.14925607417335707
+      },
+      {
+        "ratio": 9.128709291752768,
+        "delta_alpha_inverse": [
+          1.853651317626445,
+          1.7597955547086503,
+          1.9944349620031367
+        ],
+        "max_pairwise": 0.2346394072944864,
+        "L_minus_4": 0.2346394072944864
+      }
+    ]
+  },
+  "whole_physical_scalar_log_at_mu_omega": {
+    "delta_alpha_inverse_SM_order_1_2_3": [
+      1.737224855173146,
+      1.8066256878410614,
+      1.8631795946909284
+    ],
+    "max_nonuniversal_spread": 0.12595473951778247,
+    "L_minus_C": 0.05655390684986705,
+    "matching_scale_window_drift": [
+      {
+        "ratio": 4.08248290463863,
+        "delta_alpha_inverse": [
+          2.813476998167786,
+          2.873179427837129,
+          2.947807464923808
+        ],
+        "max_pairwise": 0.13433046675602212,
+        "L_minus_C": 0.07462803708667876
+      },
+      {
+        "ratio": 9.128709291752768,
+        "delta_alpha_inverse": [
+          4.422952827501074,
+          4.5168085904188695,
+          4.634128294066113
+        ],
+        "max_pairwise": 0.21117546656503894,
+        "L_minus_C": 0.11731970364724376
+      }
+    ],
+    "is_direct_broken_phase_contribution_not_PS_error_bound": true
+  },
+  "quadratic_and_derivative_diagnostics": {
+    "physical_candidate_heavy_min_m2_over_omega2": 0.28671408106862006,
+    "retained_block_norm_m2_over_omega2": 0.20184463963648908,
+    "retained_to_heavy_ratio": 0.7039927682804705,
+    "mixing_to_heavy_ratio": 0.10969152647626476,
+    "direct_schur_to_smallest_positive_scalar_gap": 2.3871918234065213,
+    "conservative_schur_to_smallest_positive_scalar_gap": 9.304836386490463,
+    "log_lipschitz_bound_closes": false,
+    "first_omitted_geometric_tail_diagnostic": 1.674303073314077,
+    "coarse_upper_vector_m2_over_omega2": 0.13865624668818685,
+    "retained_to_upper_vector_m2_ratio": 1.4557197707103788
+  },
+  "unbounded_terms": [
+    "upper-vector current-current insertion into retained-field loops",
+    "upper-heavy scalar exchange operators in lower F2 matching",
+    "covariant removal of 24 upper Goldstone directions",
+    "finite hard-region subtraction for borderline retained multiplets"
+  ]
+}
