@@ -1,0 +1,288 @@
+{
+  "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+  "preserved_kernel": "DIRECT_ONE_LOOP_KERNEL_PASS",
+  "authority": "TWO_LOOP_SM_RUNNING_PLUS_ONE_LOOP_PHYSICAL_HEAVY_MATCH_AND_UNCERTAINTY_AUDIT",
+  "scheme": "MSbar_GUT_NORMALIZED_G1",
+  "sources": {
+    "two_loop_SM_RGE": "https://arxiv.org/abs/hep-ph/0207271",
+    "weak_scale_MSbar_boundary": "https://arxiv.org/abs/1307.3536"
+  },
+  "rge": {
+    "gauge_order": "TWO_LOOP",
+    "yukawa_order": "ONE_LOOP_CONSISTENT_FOR_TWO_LOOP_GAUGE",
+    "higgs_quartic_order": "ONE_LOOP_MONITOR",
+    "included_yukawas": [
+      "top",
+      "bottom",
+      "tau"
+    ],
+    "lighter_yukawas": "NEGLECTED_WITH_TRACE_SUPPRESSION",
+    "weak_scale_boundary_mu_GeV": 173.34,
+    "weak_scale_boundary_yt_yb_ytau_lambda": [
+      0.93714,
+      0.0164,
+      0.0102,
+      0.12604
+    ],
+    "solved_MZ_boundary_yt_yb_ytau_lambda": [
+      0.9697792909984915,
+      0.01715139323685382,
+      0.010146408231415176,
+      0.13983172022178206
+    ],
+    "replayed_mt_state_g1_g2_g3_yt_yb_ytau_lambda": [
+      0.46314934676807173,
+      0.6483786785431017,
+      1.167838571406805,
+      0.9371400000118484,
+      0.01640000000029516,
+      0.010199999999992385,
+      0.12604000000524576
+    ],
+    "central_scale_state_g1_g2_g3_yt_yb_ytau_lambda": [
+      0.5683903030752041,
+      0.5302500936921192,
+      0.541120243330747,
+      0.4619039226329175,
+      0.006613031812082556,
+      0.009936429391805897,
+      -0.03459421281379234
+    ],
+    "yukawa_term_shift_in_alpha_inverse_at_central_scale": [
+      0.02189828602741528,
+      0.019367662395779917,
+      0.025407492992883363
+    ]
+  },
+  "central_refit": {
+    "kappa_mu_over_omega": 1.0,
+    "g10": 0.5231256382025737,
+    "omega_GeV": 1637373161896905.0,
+    "matching_scale_GeV": 1637373161896905.0,
+    "residual_inverse_couplings": [
+      0.26091471828390667,
+      -0.7454764131332539,
+      0.4847948100457913
+    ],
+    "max_absolute_residual": 0.7454764131332539,
+    "euclidean_residual": 0.9267349030885407
+  },
+  "known_next_order_common_exact_solution": false,
+  "known_next_order_pair_solutions": [
+    {
+      "matched_channels": [
+        0,
+        1
+      ],
+      "g10": 0.5212865947279968,
+      "omega_GeV": 687721956978542.9,
+      "all_channel_residual": [
+        -2.1316282072803006e-14,
+        -7.105427357601002e-15,
+        1.7716749728394987
+      ],
+      "unmatched_channel_residual": 1.7716749728394987
+    },
+    {
+      "matched_channels": [
+        0,
+        2
+      ],
+      "g10": 0.5251808902873536,
+      "omega_GeV": 1850337742014373.8,
+      "all_channel_residual": [
+        0.0,
+        -1.1520674356228398,
+        1.4210854715202004e-14
+      ],
+      "unmatched_channel_residual": -1.1520674356228398
+    },
+    {
+      "matched_channels": [
+        1,
+        2
+      ],
+      "g10": 0.5131306907414567,
+      "omega_GeV": 1.2062523448801992e+16,
+      "all_channel_residual": [
+        3.2928548989142215,
+        -8.526512829121202e-14,
+        -7.105427357601002e-14
+      ],
+      "unmatched_channel_residual": 3.2928548989142215
+    }
+  ],
+  "matching_scale_scan": [
+    {
+      "kappa_mu_over_omega": 0.5,
+      "g10": 0.5307127190347716,
+      "omega_GeV": 1621275953950325.8,
+      "matching_scale_GeV": 810637976975162.9,
+      "residual_inverse_couplings": [
+        0.26232559705514547,
+        -0.7493077138101185,
+        0.4872248443214957
+      ],
+      "max_absolute_residual": 0.7493077138101185,
+      "euclidean_residual": 0.9314852751223665
+    },
+    {
+      "kappa_mu_over_omega": 0.75,
+      "g10": 0.5262337006470864,
+      "omega_GeV": 1630741335757507.8,
+      "matching_scale_GeV": 1223056001818130.8,
+      "residual_inverse_couplings": [
+        0.2614965914137741,
+        -0.7470571106199344,
+        0.4857975408661446
+      ],
+      "max_absolute_residual": 0.7470571106199344,
+      "euclidean_residual": 0.928694807006274
+    },
+    {
+      "kappa_mu_over_omega": 1.0,
+      "g10": 0.5231256382025737,
+      "omega_GeV": 1637373161896905.0,
+      "matching_scale_GeV": 1637373161896905.0,
+      "residual_inverse_couplings": [
+        0.26091471828390667,
+        -0.7454764131332539,
+        0.4847948100457913
+      ],
+      "max_absolute_residual": 0.7454764131332539,
+      "euclidean_residual": 0.9267349030885407
+    },
+    {
+      "kappa_mu_over_omega": 1.5,
+      "g10": 0.5188397109195932,
+      "omega_GeV": 1646605075755054.2,
+      "matching_scale_GeV": 2469907613632581.5,
+      "residual_inverse_couplings": [
+        0.260103345459747,
+        -0.7432708336170322,
+        0.48339527672258953
+      ],
+      "max_absolute_residual": 0.7432708336170322,
+      "euclidean_residual": 0.9240001493413404
+    },
+    {
+      "kappa_mu_over_omega": 2.0,
+      "g10": 0.5158636560372254,
+      "omega_GeV": 1653075540169282.0,
+      "matching_scale_GeV": 3306151080338564.0,
+      "residual_inverse_couplings": [
+        0.2595337854939217,
+        -0.741721488673015,
+        0.4824118398976225
+      ],
+      "max_absolute_residual": 0.741721488673015,
+      "euclidean_residual": 0.9220790290672095
+    }
+  ],
+  "matching_scale_max_residual_range": [
+    0.741721488673015,
+    0.7493077138101185
+  ],
+  "matching_scale_max_residual_envelope": 0.007586225137103497,
+  "weak_boundary_sensitivity": {
+    "yt_plus_0p006": {
+      "max_absolute_residual": 0.7454188308508662,
+      "change_from_central": -5.758228238761376e-05,
+      "residual_inverse_couplings": [
+        0.26089547363311993,
+        -0.7454188308508662,
+        0.48475646928099536
+      ]
+    },
+    "yt_minus_0p006": {
+      "max_absolute_residual": 0.7455329149699779,
+      "change_from_central": 5.650183672400999e-05,
+      "residual_inverse_couplings": [
+        0.26093363175911577,
+        -0.7455329149699779,
+        0.4848324020430539
+      ]
+    },
+    "yb_plus_20pct": {
+      "max_absolute_residual": 0.7454764013739421,
+      "change_from_central": -1.1759311746573076e-08,
+      "residual_inverse_couplings": [
+        0.2609147098442932,
+        -0.7454764013739421,
+        0.4847948066412755
+      ]
+    },
+    "yb_minus_20pct": {
+      "max_absolute_residual": 0.7454764228193724,
+      "change_from_central": 9.686118573881686e-09,
+      "residual_inverse_couplings": [
+        0.26091472552029416,
+        -0.7454764228193724,
+        0.484794812579338
+      ]
+    },
+    "ytau_plus_20pct": {
+      "max_absolute_residual": 0.7454763637908499,
+      "change_from_central": -4.9342403940499935e-08,
+      "residual_inverse_couplings": [
+        0.2609146973368581,
+        -0.7454763637908499,
+        0.4847947789601932
+      ]
+    },
+    "ytau_minus_20pct": {
+      "max_absolute_residual": 0.745476456066676,
+      "change_from_central": 4.293342215078155e-08,
+      "residual_inverse_couplings": [
+        0.260914736252154,
+        -0.745476456066676,
+        0.4847948310904897
+      ]
+    },
+    "lambda_plus_0p002": {
+      "max_absolute_residual": 0.7454764131262337,
+      "change_from_central": -7.02016222930979e-12,
+      "residual_inverse_couplings": [
+        0.2609147182186291,
+        -0.7454764131262337,
+        0.48479481069260544
+      ]
+    },
+    "lambda_minus_0p002": {
+      "max_absolute_residual": 0.7454764130363358,
+      "change_from_central": -9.691802915767767e-11,
+      "residual_inverse_couplings": [
+        0.2609147183911844,
+        -0.7454764130363358,
+        0.48479480983940704
+      ]
+    }
+  },
+  "max_weak_boundary_effect_on_max_residual": 5.758228238761376e-05,
+  "matching_order_audit": {
+    "one_loop_heavy_kernel": "PASS_PRESERVED",
+    "two_loop_SM_gauge_running": "PASS",
+    "one_loop_yukawa_higgs_coupled_running": "PASS_REQUIRED_ACCURACY",
+    "higgs_quartic_enters_two_loop_gauge_beta": false,
+    "two_loop_heavy_gauge_scalar_decoupling": "NOT_DERIVED",
+    "two_loop_heavy_yukawa_decoupling": "UNDERDEFINED_CANONICAL_YUKAWA_MATRICES_NOT_FROZEN",
+    "rigorous_next_heavy_threshold_bound": null,
+    "matching_scale_variation_role": "DIAGNOSTIC_NOT_A_RIGOROUS_BOUND"
+  },
+  "verdict_logic": {
+    "pass_requires_common_solution_with_residual_below_controlled_uncertainty": true,
+    "fail_requires_minimum_residual_decisively_above_complete_uncertainty": true,
+    "complete_higher_order_uncertainty_available": false,
+    "reason": "model-dependent two-loop heavy decoupling is neither computed nor rigorously bounded; canonical Yukawa data needed by part of it are unfrozen"
+  },
+  "bfb_status": "BFB_UNRESOLVED",
+  "downstream": {
+    "gauge_unification_passed": false,
+    "gauge_unification_failed": false,
+    "physical_g10_or_omega_promoted": false,
+    "flavor_started": false,
+    "proton_decay_started": false,
+    "PS_resummation_started": false,
+    "replacement_benchmark_search_started": false
+  }
+}

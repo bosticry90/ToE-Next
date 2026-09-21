@@ -1,6 +1,6 @@
 {
-  "state_version": 45,
-  "updated_utc": "2026-09-21T05:17:01Z",
+  "state_version": 46,
+  "updated_utc": "2026-09-21T05:36:33Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "CANONICAL_DIRECT_PHYSICAL_VACUUM_GAUGE_MATCHING_V1",
-      "completed_utc": "2026-09-21T05:17:01Z",
+      "calculation": "CANONICAL_DIRECT_GAUGE_NEXT_ORDER_V1",
+      "completed_utc": "2026-09-21T05:36:33Z",
       "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
-      "authority": "DIRECT_ONE_LOOP_KERNEL_PASS_NO_COMMON_ONE_LOOP_SOLUTION_HIGHER_ORDER_UNCERTAINTY_COMPARABLE_TO_RESIDUAL",
-      "result": "calculations/canonical_so10_direct_gauge_matching/RESULT.md",
-      "qualified_stop": "COMPLETE_TWO_LOOP_YUKAWA_AND_HEAVY_THRESHOLD_UNCERTAINTY_NOT_FROZEN",
+      "authority": "DIRECT_SM_TWO_LOOP_RUNNING_PASS_ONE_LOOP_HEAVY_KERNEL_PRESERVED_NO_COMMON_KNOWN_NEXT_ORDER_SOLUTION",
+      "result": "calculations/canonical_so10_direct_gauge_next_order/RESULT.md",
+      "qualified_stop": "MODEL_DEPENDENT_TWO_LOOP_HEAVY_DECOUPLING_NOT_DERIVED_OR_RIGOROUSLY_BOUNDED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -400,7 +400,34 @@
       "bfb_status": "BFB_UNRESOLVED",
       "result": "calculations/canonical_so10_direct_gauge_matching/RESULT.md"
     },
-    "active_focus": "DIRECT_GAUGE_MATCHING_UNRESOLVED_ONE_LOOP_KERNEL_PASSED_COMPLETE_HIGHER_ORDER_UNCERTAINTY_MISSING"
+    "canonical_so10_direct_gauge_next_order": {
+      "outcome": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+      "running_outcome": "DIRECT_SM_TWO_LOOP_RUNNING_PASS",
+      "preserved_kernel_outcome": "DIRECT_ONE_LOOP_KERNEL_PASS",
+      "scheme": "MSBAR_GUT_NORMALIZED_G1",
+      "central_diagnostic_g10": 0.5231256382025737,
+      "central_diagnostic_omega_GeV": 1637373161896905.0,
+      "central_residual_inverse_couplings": [
+        0.26091471828390667,
+        -0.7454764131332539,
+        0.4847948100457913
+      ],
+      "central_max_absolute_residual": 0.7454764131332539,
+      "known_next_order_common_exact_solution": false,
+      "matching_scale_max_residual_range": [
+        0.741721488673015,
+        0.7493077138101185
+      ],
+      "max_weak_boundary_effect": 5.758228238761376e-05,
+      "two_loop_heavy_decoupling": "NOT_DERIVED_OR_RIGOROUSLY_BOUNDED",
+      "canonical_yukawa_matrices_frozen": false,
+      "gauge_unification_passed": false,
+      "gauge_unification_failed": false,
+      "physical_scale_promoted": false,
+      "bfb_status": "BFB_UNRESOLVED",
+      "result": "calculations/canonical_so10_direct_gauge_next_order/RESULT.md"
+    },
+    "active_focus": "DIRECT_GAUGE_MATCHING_UNRESOLVED_TWO_LOOP_SM_RUNNING_PASSED_TWO_LOOP_HEAVY_BOUNDARY_MISSING"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
