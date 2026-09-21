@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P03",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "convention": {
+    "dimension": "d=4-2*epsilon",
+    "p01_integral": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d*(+i)/(k^2-m2+i0)]",
+    "p03_integral": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d*(-i)/(k^2-m2+i0)^2]",
+    "integrand_identity": "P03_integrand=-d(P01_integrand)/d(m2)",
+    "pole_identity": "P03_pole=-d(P01_pole)/d(m2)",
+    "pole_unit": "1/(16*pi^2*epsilon_bar)",
+    "mass_domain": "m2>0"
+  },
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_P03",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "direct_auxiliary_mass_doubled_line_UV_projection",
+    "minkowski_integral": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d*(-i)/(k^2-m2+i0)^2]",
+    "wick_rotated_integral": "mu^(2*epsilon)*Integral_E[d^d k_E/(2*pi)^d/(k_E^2+m2)^2]",
+    "dimension": "d=4-2*epsilon",
+    "exact_auxiliary_rearrangement": "1/(t+m2)^2=1/(t+aux2)^2+(aux2-m2)*(2*t+aux2+m2)/((t+m2)^2*(t+aux2)^2)",
+    "auxiliary_master_large_t_factor": "-4*aux2**3*u**3 + 3*aux2**2*u**2 - 2*aux2*u + 1",
+    "remainder_large_t_series": "u**3*(2*aux2 - 2*m2)",
+    "remainder_leading_inverse_t_power": 3,
+    "remainder_after_radialization": "O(t^-2-epsilon)_UV_finite",
+    "normalized_residue": "1",
+    "physical_mass_derivative_of_residue": "0",
+    "auxiliary_mass_derivative_of_residue": "0",
+    "pole_unit": "1/(16*pi^2*epsilon_bar)",
+    "pole_expression": "1/(16*pi^2*epsilon_bar)",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "f01b82a7925f20aa7854b40412af3c3a84140e8a2d5835d9a2e13194205ae132"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_P03",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_general_alpha_Gamma_function_replay",
+    "general_formula": "mu2^epsilon*(m2)^(d/2-alpha)*Gamma(alpha-d/2)/((4*pi)^(d/2)*Gamma(alpha))",
+    "specialized_propagator_power": 2,
+    "dimension": "d=4-2*epsilon",
+    "normalized_residue_extraction": "limit(epsilon*16*pi^2*closed_form,epsilon->0)",
+    "normalized_residue": "1",
+    "physical_mass_derivative_of_residue": "0",
+    "pole_unit": "1/(16*pi^2*epsilon_bar)",
+    "pole_expression": "1/(16*pi^2*epsilon_bar)",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "e93f071293a2047d950edb98c5a17f733795bb0d624439458384e93aad05190a"
+  },
+  "p01_derivative_relation": {
+    "schema_version": 1,
+    "test_id": "UVP_P03",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "mass_derivative_of_verified_frozen_P01_pole",
+    "frozen_p01_evidence_sha256": "7d9a646003c1a46a1bc693289c91ea1d7bea844f05dabe3e8a5b06d2bce1f071",
+    "frozen_p01_normalized_residue": "-m2",
+    "p01_integrand": "+i/(k2-m2+i0)",
+    "p01_mass_derivative_integrand": "+i/(k2-m2+i0)^2",
+    "p03_integrand": "-i/(k2-m2+i0)^2",
+    "integrand_identity": "P03_integrand=-d(P01_integrand)/d(m2)",
+    "integrand_relation_residual": "0",
+    "pole_identity": "P03_pole=-d(P01_pole)/d(m2)",
+    "normalized_derivative_prediction": "1",
+    "pole_expression": "1/(16*pi^2*epsilon_bar)",
+    "artifact_sha256": "834d23375b7a6126dab4141c8f1bb9d331a22b14b1115de04278a3da102ddf9c"
+  },
+  "three_way_comparison": {
+    "primary_minus_replay": "0",
+    "primary_minus_p01_derivative": "0",
+    "replay_minus_p01_derivative": "0",
+    "pole_expressions_equal": true
+  },
+  "uv_ir_classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "be4585b1188f61116490d810c9d66ad2f391963d05a01d69ca7233ccd849b4d2"
+}

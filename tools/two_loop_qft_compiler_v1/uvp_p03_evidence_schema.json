@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:toe-next:two-loop-qft-compiler-v1:uvp-p03-evidence-v1",
+  "title": "UVP_P03 doubled-propagator mass-derivative evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "test_id", "attempt", "contract_sha256",
+    "execution_plan_sha256", "convention", "primary",
+    "independent_replay", "p01_derivative_relation", "three_way_comparison",
+    "uv_ir_classification", "verdict", "artifact_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "test_id": {"const": "UVP_P03"},
+    "attempt": {"const": 1},
+    "contract_sha256": {
+      "const": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92"
+    },
+    "execution_plan_sha256": {
+      "const": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101"
+    },
+    "convention": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "dimension", "p01_integral", "p03_integral", "integrand_identity",
+        "pole_identity", "pole_unit", "mass_domain"
+      ],
+      "properties": {
+        "dimension": {"const": "d=4-2*epsilon"},
+        "p01_integral": {
+          "const": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d*(+i)/(k^2-m2+i0)]"
+        },
+        "p03_integral": {
+          "const": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d*(-i)/(k^2-m2+i0)^2]"
+        },
+        "integrand_identity": {"const": "P03_integrand=-d(P01_integrand)/d(m2)"},
+        "pole_identity": {"const": "P03_pole=-d(P01_pole)/d(m2)"},
+        "pole_unit": {"const": "1/(16*pi^2*epsilon_bar)"},
+        "mass_domain": {"const": "m2>0"}
+      }
+    },
+    "primary": {"$ref": "#/$defs/calculation"},
+    "independent_replay": {"$ref": "#/$defs/calculation"},
+    "p01_derivative_relation": {
+      "type": "object", "additionalProperties": true,
+      "required": [
+        "method", "frozen_p01_evidence_sha256",
+        "frozen_p01_normalized_residue", "integrand_relation_residual",
+        "normalized_derivative_prediction", "artifact_sha256"
+      ],
+      "properties": {
+        "method": {"const": "mass_derivative_of_verified_frozen_P01_pole"},
+        "frozen_p01_evidence_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "frozen_p01_normalized_residue": {"const": "-m2"},
+        "integrand_relation_residual": {"const": "0"},
+        "normalized_derivative_prediction": {"const": "1"},
+        "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "three_way_comparison": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "primary_minus_replay", "primary_minus_p01_derivative",
+        "replay_minus_p01_derivative", "pole_expressions_equal"
+      ],
+      "properties": {
+        "primary_minus_replay": {"const": "0"},
+        "primary_minus_p01_derivative": {"const": "0"},
+        "replay_minus_p01_derivative": {"const": "0"},
+        "pole_expressions_equal": {"const": true}
+      }
+    },
+    "uv_ir_classification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["uv_pole", "ir_pole", "scaleless", "rstar_required"],
+      "properties": {
+        "uv_pole": {"const": true},
+        "ir_pole": {"const": false},
+        "scaleless": {"const": false},
+        "rstar_required": {"const": false}
+      }
+    },
+    "verdict": {"const": "PASS"},
+    "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "calculation": {
+      "type": "object", "additionalProperties": true,
+      "required": ["method", "normalized_residue", "pole_expression", "artifact_sha256"],
+      "properties": {
+        "method": {"type": "string", "minLength": 1},
+        "normalized_residue": {"const": "1"},
+        "pole_expression": {"const": "1/(16*pi^2*epsilon_bar)"},
+        "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

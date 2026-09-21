@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P03",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "mass_derivative_of_verified_frozen_P01_pole",
+  "frozen_p01_evidence_sha256": "7d9a646003c1a46a1bc693289c91ea1d7bea844f05dabe3e8a5b06d2bce1f071",
+  "frozen_p01_normalized_residue": "-m2",
+  "p01_integrand": "+i/(k2-m2+i0)",
+  "p01_mass_derivative_integrand": "+i/(k2-m2+i0)^2",
+  "p03_integrand": "-i/(k2-m2+i0)^2",
+  "integrand_identity": "P03_integrand=-d(P01_integrand)/d(m2)",
+  "integrand_relation_residual": "0",
+  "pole_identity": "P03_pole=-d(P01_pole)/d(m2)",
+  "normalized_derivative_prediction": "1",
+  "pole_expression": "1/(16*pi^2*epsilon_bar)",
+  "artifact_sha256": "834d23375b7a6126dab4141c8f1bb9d331a22b14b1115de04278a3da102ddf9c"
+}

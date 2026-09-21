@@ -7,14 +7,14 @@
   "authority": "PARTIAL_TEST_AUTHORITY",
   "counters": {
     "total_required": 39,
-    "executed": 2,
-    "passed": 2,
+    "executed": 3,
+    "passed": 3,
     "blocked": 0,
     "failed": 0,
-    "not_run_or_locked": 37,
+    "not_run_or_locked": 36,
     "engine_required": 27,
-    "engine_executed": 2,
-    "engine_passed": 2,
+    "engine_executed": 3,
+    "engine_passed": 3,
     "canonical_required": 12,
     "canonical_executed": 0,
     "canonical_passed": 0
@@ -110,26 +110,42 @@
       "global_ordinal": 3,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "READY",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "direct_auxiliary_mass_doubled_line_UV_projection",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "f01b82a7925f20aa7854b40412af3c3a84140e8a2d5835d9a2e13194205ae132",
+        "uv_ir_provenance_sha256": "e7650fcdb9ff758bcd1ffd852697ef45b364ddc6fa3a127c0022b5895f3d21da"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_general_alpha_Gamma_function_replay",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "e93f071293a2047d950edb98c5a17f733795bb0d624439458384e93aad05190a",
+        "uv_ir_provenance_sha256": "e7650fcdb9ff758bcd1ffd852697ef45b364ddc6fa3a127c0022b5895f3d21da"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "normalized_residue": "1",
+        "pole_unit": "1/(16*pi^2*epsilon_bar)",
+        "pole_expression": "1/(16*pi^2*epsilon_bar)",
+        "primary_minus_replay": "0",
+        "primary_minus_p01_derivative": "0",
+        "replay_minus_p01_derivative": "0",
+        "p01_evidence_sha256": "7d9a646003c1a46a1bc693289c91ea1d7bea844f05dabe3e8a5b06d2bce1f071",
+        "derivative_relation_sha256": "834d23375b7a6126dab4141c8f1bb9d331a22b14b1115de04278a3da102ddf9c",
+        "evidence_sha256": "be4585b1188f61116490d810c9d66ad2f391963d05a01d69ca7233ccd849b4d2"
+      },
+      "verdict_reason": "direct_doubled_line_projection_equals_independent_Gamma_replay_and_minus_mass_derivative_of_frozen_P01_pole_exactly",
+      "evidence_files": [
+        "uvp_p03_primary.json",
+        "uvp_p03_independent_replay.json",
+        "uvp_p03_p01_derivative_relation.json",
+        "uvp_p03_uv_ir_provenance.json",
+        "uvp_p03_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P04",
@@ -137,7 +153,7 @@
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
       "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
+      "authorization": "READY",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1068,5 +1084,5 @@
       "evidence_files": []
     }
   ],
-  "result_sha256": "4d06a98051813afba0a9d5b6e2affb3201598931372fed4595ee706a9c2572bf"
+  "result_sha256": "7f89b29775731b8d24eed996a2f2fdd1dba2a000169d232cfd013ec33ae903ab"
 }

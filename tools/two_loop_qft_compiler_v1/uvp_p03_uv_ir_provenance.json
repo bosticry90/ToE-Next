@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P03",
+  "mass_domain": "m2>0",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "reason": "positive_mass_removes_IR_singularity; direct_auxiliary_master_contains_the_log_UV_pole_and_the_exact_remainder_is_UV_finite",
+  "artifact_sha256": "e7650fcdb9ff758bcd1ffd852697ef45b364ddc6fa3a127c0022b5895f3d21da"
+}

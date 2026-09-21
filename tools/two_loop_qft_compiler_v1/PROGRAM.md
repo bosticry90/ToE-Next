@@ -109,6 +109,14 @@ give a zero derivative with respect to `m2`; no finite mass dependence enters
 the UV pole. Progress is `2/39` (`2/27` in the engine gate), and `UVP_P03` is
 the sole next authorized test. See [`UVP_P02_RESULT.md`](UVP_P02_RESULT.md).
 
+The third primitive closes the first internal consistency triangle. `UVP_P03`
+passes: a direct doubled-line auxiliary-mass projection, an independent
+general-`alpha` Gamma-function replay, and minus the mass derivative of the
+verified frozen P01 pole all give normalized residue `+1`. The three pairwise
+residuals and the integrand sign-identity residual are exactly zero. Progress
+is `3/39` (`3/27` in the engine gate); `UVP_P04` alone is next. See
+[`UVP_P03_RESULT.md`](UVP_P03_RESULT.md).
+
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and
 [`one_loop_xi_cancellation_matrix.json`](one_loop_xi_cancellation_matrix.json).
