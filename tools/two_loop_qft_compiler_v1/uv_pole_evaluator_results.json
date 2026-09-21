@@ -1,0 +1,1049 @@
+{
+  "schema_version": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "execution_id": "layer5a-v2-first-execution",
+  "overall_status": "NOT_STARTED",
+  "authority": "EXECUTION_LEDGER_NO_TEST_AUTHORITY",
+  "counters": {
+    "total_required": 39,
+    "executed": 0,
+    "passed": 0,
+    "blocked": 0,
+    "failed": 0,
+    "not_run_or_locked": 39,
+    "engine_required": 27,
+    "engine_executed": 0,
+    "engine_passed": 0,
+    "canonical_required": 12,
+    "canonical_executed": 0,
+    "canonical_passed": 0
+  },
+  "promotion": {
+    "engine_gate": "NOT_EARNED",
+    "counterterm_compiler": "BLOCKED",
+    "layer6_authorized": false
+  },
+  "preserved_dispositions": {
+    "gauge_matching": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+    "bfb": "BFB_UNRESOLVED",
+    "finite_C1_GS": null
+  },
+  "tests": [
+    {
+      "test_id": "UVP_P01",
+      "global_ordinal": 1,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "READY",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P02",
+      "global_ordinal": 2,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P03",
+      "global_ordinal": 3,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P04",
+      "global_ordinal": 4,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P05",
+      "global_ordinal": 5,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P06",
+      "global_ordinal": 6,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P07",
+      "global_ordinal": 7,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P08",
+      "global_ordinal": 8,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P09",
+      "global_ordinal": 9,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P10",
+      "global_ordinal": 10,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P11",
+      "global_ordinal": 11,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P12",
+      "global_ordinal": 12,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_P13",
+      "global_ordinal": 13,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C01",
+      "global_ordinal": 14,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C02",
+      "global_ordinal": 15,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C03",
+      "global_ordinal": 16,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C04",
+      "global_ordinal": 17,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C05",
+      "global_ordinal": 18,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C06",
+      "global_ordinal": 19,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C07",
+      "global_ordinal": 20,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C08",
+      "global_ordinal": 21,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C09",
+      "global_ordinal": 22,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C10",
+      "global_ordinal": 23,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C11",
+      "global_ordinal": 24,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C12",
+      "global_ordinal": 25,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_C13",
+      "global_ordinal": 26,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M01",
+      "global_ordinal": 27,
+      "phase": "ENGINE_5A",
+      "family": "CANONICAL",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M02",
+      "global_ordinal": 28,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M03",
+      "global_ordinal": 29,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M04",
+      "global_ordinal": 30,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M05",
+      "global_ordinal": 31,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M06",
+      "global_ordinal": 32,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M07",
+      "global_ordinal": 33,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M08",
+      "global_ordinal": 34,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M09",
+      "global_ordinal": 35,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M10",
+      "global_ordinal": 36,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M11",
+      "global_ordinal": 37,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M12",
+      "global_ordinal": 38,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    },
+    {
+      "test_id": "UVP_M13",
+      "global_ordinal": 39,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "status": "LOCKED",
+      "authorization": "ENGINE_GATE_REQUIRED",
+      "attempt": 0,
+      "primary": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "replay": {
+        "state": "NOT_RUN",
+        "method": null,
+        "inventory_sha256": null,
+        "residue_sha256": null,
+        "uv_ir_provenance_sha256": null
+      },
+      "derived_result": null,
+      "verdict_reason": null,
+      "evidence_files": []
+    }
+  ],
+  "result_sha256": "9f3eafee06f036580c726761dbc47442ec83f95bf12de78a09eea2e30e24e974"
+}

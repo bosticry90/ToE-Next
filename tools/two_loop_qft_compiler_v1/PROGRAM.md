@@ -82,6 +82,17 @@ This is specification authority only: zero of the 39 tests has run and the
 counterterm/compiler outcome remains blocked. The fail-fast partition is 27
 tests for the evaluator engine and 12 for canonical counterterm completion.
 
+The first execution order and result ledger are now frozen without amending
+contract v2. The exact engine order is `P01--P13`, `C01--C13`, then `M01`,
+with advancement only on `PASS`. The execution-plan SHA-256 is
+`54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101` and
+the result-schema SHA-256 is
+`5999c0a7ff7d2458b0c204a7f8313c0d39a6473aaeff7282ac1f1f1034f699b8`.
+The initial ledger remains `0/39` (`0/27` in the engine gate), while a
+synthetic schema-only replay proves that the format can represent the exact
+`27/27` checkpoint without promoting the counterterm compiler or Layer 6.
+See [`LAYER5A_EXECUTION_ORDER.md`](LAYER5A_EXECUTION_ORDER.md).
+
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and
 [`one_loop_xi_cancellation_matrix.json`](one_loop_xi_cancellation_matrix.json).

@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "outcome": "LAYER5A_EXECUTION_PLAN_FROZEN",
+  "authority": "EXECUTION_ORDER_AND_RESULT_SCHEMA_ONLY_NO_TEST_EXECUTED",
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "result_schema_sha256": "5999c0a7ff7d2458b0c204a7f8313c0d39a6473aaeff7282ac1f1f1034f699b8",
+  "execution_id": "layer5a-v2-first-execution",
+  "fail_fast": true,
+  "engine_gate": {
+    "ordinals": [
+      1,
+      27
+    ],
+    "required": 27,
+    "pass_outcome": "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
+    "counterterm_compiler_after_pass": "BLOCKED",
+    "layer6_after_pass": "LOCKED"
+  },
+  "canonical_gate": {
+    "ordinals": [
+      28,
+      39
+    ],
+    "required": 12,
+    "unlock_condition": "ENGINE_GATE_27_OF_27_PASS",
+    "pass_outcome": "ONE_LOOP_COUNTERTERM_COMPILER_PASS",
+    "layer6_after_pass": "SEPARATE_AUDIT_REQUIRED"
+  },
+  "execution_order": [
+    {
+      "test_id": "UVP_P01",
+      "global_ordinal": 1,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": null,
+      "contract_target": "massive_rank0_tadpole",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P02",
+      "global_ordinal": 2,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P01",
+      "contract_target": "massive_rank0_log_bubble",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P03",
+      "global_ordinal": 3,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P02",
+      "contract_target": "doubled_propagator_mass_derivative",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P04",
+      "global_ordinal": 4,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P03",
+      "contract_target": "rank2_tensor_vacuum_integral",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P05",
+      "global_ordinal": 5,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P04",
+      "contract_target": "rank4_and_rank6_tensor_vacuum_integrals",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P06",
+      "global_ordinal": 6,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P05",
+      "contract_target": "external_momentum_Taylor_expansion",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P07",
+      "global_ordinal": 7,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P06",
+      "contract_target": "unequal_mass_bubble",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P08",
+      "global_ordinal": 8,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P07",
+      "contract_target": "loop_momentum_routing_shift",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P09",
+      "global_ordinal": 9,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P08",
+      "contract_target": "one_loop_total_derivative_IBP_identity",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P10",
+      "global_ordinal": 10,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P09",
+      "contract_target": "auxiliary_mass_independence",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P11",
+      "global_ordinal": 11,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P10",
+      "contract_target": "scaleless_integral_UV_IR_split",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P12",
+      "global_ordinal": 12,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P11",
+      "contract_target": "massless_offshell_bubble",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_P13",
+      "global_ordinal": 13,
+      "phase": "ENGINE_5A",
+      "family": "PRIMITIVE",
+      "predecessor": "UVP_P12",
+      "contract_target": "rank8_tensor_vacuum_integral",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C01",
+      "global_ordinal": 14,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_P13",
+      "contract_target": "one_loop_two_point",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C02",
+      "global_ordinal": 15,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C01",
+      "contract_target": "one_loop_four_point_all_channels",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C03",
+      "global_ordinal": 16,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C02",
+      "contract_target": "one_loop_renormalized_two_and_four_point",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C04",
+      "global_ordinal": 17,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C03",
+      "contract_target": "one_loop_one_point",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C05",
+      "global_ordinal": 18,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C04",
+      "contract_target": "one_loop_two_point_bubble",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C06",
+      "global_ordinal": 19,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C05",
+      "contract_target": "one_loop_triangle",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C07",
+      "global_ordinal": 20,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C06",
+      "contract_target": "background_photon_two_point",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C08",
+      "global_ordinal": 21,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C07",
+      "contract_target": "scalar_two_point_and_scalar_photon_vertex",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C09",
+      "global_ordinal": 22,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C08",
+      "contract_target": "background_gauge_two_point",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C10",
+      "global_ordinal": 23,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C09",
+      "contract_target": "quantum_vector_ghost_and_gauge_parameter_two_point_set",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C11",
+      "global_ordinal": 24,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C10",
+      "contract_target": "broken_phase_two_and_one_point_set",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C12",
+      "global_ordinal": 25,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C11",
+      "contract_target": "partial_BFM_broken_sector_set",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_C13",
+      "global_ordinal": 26,
+      "phase": "ENGINE_5A",
+      "family": "CONTROL",
+      "predecessor": "UVP_C12",
+      "contract_target": "UV_IR_rearranged_broken_two_point_set",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M01",
+      "global_ordinal": 27,
+      "phase": "ENGINE_5A",
+      "family": "CANONICAL",
+      "predecessor": "UVP_C13",
+      "contract_target": "parent_background_gauge_two_point",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M02",
+      "global_ordinal": 28,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M01",
+      "contract_target": "four_parent_scalar_kinetic_two_point_functions",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M03",
+      "global_ordinal": 29,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M02",
+      "contract_target": "parent_scalar_quadratic_poles",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M04",
+      "global_ordinal": 30,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M03",
+      "contract_target": "parent_scalar_cubic_poles",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M05",
+      "global_ordinal": 31,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M04",
+      "contract_target": "parent_scalar_quartic_poles",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M06",
+      "global_ordinal": 32,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M05",
+      "contract_target": "radiative_operator_projection",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M07",
+      "global_ordinal": 33,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M06",
+      "contract_target": "Hermitian_and_PQ_consistency",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M08",
+      "global_ordinal": 34,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M07",
+      "contract_target": "partial_BFM_quantum_vector_heavy_light_ghost_and_xi_poles",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M09",
+      "global_ordinal": 35,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M08",
+      "contract_target": "FJ_like_one_point_and_VEV_system",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M10",
+      "global_ordinal": 36,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M09",
+      "contract_target": "all_33_Goldstone_mass_relations",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M11",
+      "global_ordinal": 37,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M10",
+      "contract_target": "selected_renormalized_scalar_gauge_and_ghost_control_amplitudes",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M12",
+      "global_ordinal": 38,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M11",
+      "contract_target": "layer5_counterterm_contract_consumption",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    },
+    {
+      "test_id": "UVP_M13",
+      "global_ordinal": 39,
+      "phase": "CANONICAL_5B",
+      "family": "CANONICAL",
+      "predecessor": "UVP_M12",
+      "contract_target": "independent_canonical_replay",
+      "advance_only_on": "PASS",
+      "on_blocked": "STOP_CURRENT_PHASE_AS_BLOCKED",
+      "on_fail": "STOP_CURRENT_PHASE_AS_FAIL"
+    }
+  ],
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101"
+}

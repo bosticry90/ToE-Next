@@ -1,0 +1,333 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:toe-next:two-loop-qft-compiler-v1:layer5a-result-v1",
+  "title": "Layer-5A UV-pole evaluator execution result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_sha256",
+    "execution_plan_sha256",
+    "execution_id",
+    "overall_status",
+    "authority",
+    "counters",
+    "promotion",
+    "preserved_dispositions",
+    "tests",
+    "result_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "contract_sha256": {
+      "const": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92"
+    },
+    "execution_plan_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "execution_id": {
+      "const": "layer5a-v2-first-execution"
+    },
+    "overall_status": {
+      "enum": [
+        "NOT_STARTED",
+        "ENGINE_RUNNING",
+        "ENGINE_BLOCKED",
+        "ENGINE_FAIL",
+        "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
+        "CANONICAL_RUNNING",
+        "CANONICAL_BLOCKED",
+        "CANONICAL_FAIL",
+        "ONE_LOOP_COUNTERTERM_COMPILER_PASS"
+      ]
+    },
+    "authority": {
+      "enum": [
+        "EXECUTION_LEDGER_NO_TEST_AUTHORITY",
+        "PARTIAL_TEST_AUTHORITY",
+        "ENGINE_GATE_AUTHORITY",
+        "FULL_LAYER5_AUTHORITY"
+      ]
+    },
+    "counters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total_required",
+        "executed",
+        "passed",
+        "blocked",
+        "failed",
+        "not_run_or_locked",
+        "engine_required",
+        "engine_executed",
+        "engine_passed",
+        "canonical_required",
+        "canonical_executed",
+        "canonical_passed"
+      ],
+      "properties": {
+        "total_required": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "executed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "passed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "blocked": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "failed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "not_run_or_locked": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "engine_required": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "engine_executed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "engine_passed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "canonical_required": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "canonical_executed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "canonical_passed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        }
+      }
+    },
+    "promotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "engine_gate",
+        "counterterm_compiler",
+        "layer6_authorized"
+      ],
+      "properties": {
+        "engine_gate": {
+          "enum": [
+            "NOT_EARNED",
+            "PASS",
+            "BLOCKED",
+            "FAIL"
+          ]
+        },
+        "counterterm_compiler": {
+          "enum": [
+            "BLOCKED",
+            "PASS",
+            "FAIL"
+          ]
+        },
+        "layer6_authorized": {
+          "const": false
+        }
+      }
+    },
+    "preserved_dispositions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gauge_matching",
+        "bfb",
+        "finite_C1_GS"
+      ],
+      "properties": {
+        "gauge_matching": {
+          "const": "DIRECT_GAUGE_MATCHING_UNRESOLVED"
+        },
+        "bfb": {
+          "const": "BFB_UNRESOLVED"
+        },
+        "finite_C1_GS": {
+          "type": "null"
+        }
+      }
+    },
+    "tests": {
+      "type": "array",
+      "minItems": 39,
+      "maxItems": 39,
+      "items": {
+        "$ref": "#/$defs/testRecord"
+      }
+    },
+    "result_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "$defs": {
+    "testRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "test_id",
+        "global_ordinal",
+        "phase",
+        "family",
+        "status",
+        "authorization",
+        "attempt",
+        "primary",
+        "replay",
+        "derived_result",
+        "verdict_reason",
+        "evidence_files"
+      ],
+      "properties": {
+        "test_id": {
+          "type": "string",
+          "pattern": "^UVP_[PCM][0-9]{2}$"
+        },
+        "global_ordinal": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 39
+        },
+        "phase": {
+          "enum": [
+            "ENGINE_5A",
+            "CANONICAL_5B"
+          ]
+        },
+        "family": {
+          "enum": [
+            "PRIMITIVE",
+            "CONTROL",
+            "CANONICAL"
+          ]
+        },
+        "status": {
+          "enum": [
+            "NOT_RUN",
+            "RUNNING",
+            "PASS",
+            "BLOCKED",
+            "FAIL",
+            "LOCKED"
+          ]
+        },
+        "authorization": {
+          "enum": [
+            "READY",
+            "WAITING_PREDECESSOR",
+            "ENGINE_GATE_REQUIRED",
+            "TERMINAL"
+          ]
+        },
+        "attempt": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "primary": {
+          "$ref": "#/$defs/evidenceRecord"
+        },
+        "replay": {
+          "$ref": "#/$defs/evidenceRecord"
+        },
+        "derived_result": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "verdict_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidenceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "method",
+        "inventory_sha256",
+        "residue_sha256",
+        "uv_ir_provenance_sha256"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "NOT_RUN",
+            "RUNNING",
+            "COMPLETE",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "inventory_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "residue_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uv_ir_provenance_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "x_canonical_sha256": "5999c0a7ff7d2458b0c204a7f8313c0d39a6473aaeff7282ac1f1f1034f699b8"
+}

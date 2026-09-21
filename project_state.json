@@ -1,6 +1,6 @@
 {
-  "state_version": 57,
-  "updated_utc": "2026-09-21T21:20:30Z",
+  "state_version": 58,
+  "updated_utc": "2026-09-21T21:54:22Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -559,16 +559,24 @@
       "layer5a_independent_diagram_completeness_required": true,
       "layer5a_rank8_primitive_required": true,
       "layer5a_fail_fast_partition": "27_EVALUATOR_ENGINE_PLUS_12_CANONICAL_COUNTERTERM_TESTS",
+      "layer5a_execution_plan": "FROZEN_P01_P13_C01_C13_M01_FAIL_FAST",
+      "layer5a_execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+      "layer5a_result_schema_sha256": "5999c0a7ff7d2458b0c204a7f8313c0d39a6473aaeff7282ac1f1f1034f699b8",
+      "layer5a_initial_result_sha256": "9f3eafee06f036580c726761dbc47442ec83f95bf12de78a09eea2e30e24e974",
+      "layer5a_synthetic_27_of_27_schema_transition": "PASS",
       "layer5a_evaluator_implemented": false,
       "layer5a_tests_required": 39,
       "layer5a_tests_executed": 0,
+      "layer5a_engine_tests_required": 27,
+      "layer5a_engine_tests_executed": 0,
+      "layer5a_next_test": "UVP_P01",
       "layer6_tensor_IBP_reduction_authorized": false,
       "counterterm_reduction_master_layers_started": false,
       "finite_C1_GS": null,
       "bfb_status": "BFB_UNRESOLVED",
       "result": "tools/two_loop_qft_compiler_v1/LAYER5_RESULT.md"
     },
-    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5A_UV_POLE_EVALUATOR_CONTRACT_V2_PREREGISTERED_EXECUTION_NEXT_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
+    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5A_FIRST_EXECUTION_READY_UVP_P01_NEXT_0_OF_39_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

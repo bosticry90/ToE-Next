@@ -74,8 +74,8 @@ def main():
         "layer5a_evaluator_implemented": False,
         "layer5a_tests_required": 39,
         "layer5a_tests_executed": 0,
-        "next_gate": "EXECUTE_ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT",
     })
+    status.setdefault("next_gate", "EXECUTE_ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT")
     (HERE / "compiler_status.json").write_text(
         json.dumps(status, indent=2) + "\n", encoding="utf-8")
     result = {
