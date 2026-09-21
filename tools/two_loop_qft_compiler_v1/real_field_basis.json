@@ -1,0 +1,9973 @@
+{
+  "outcome": "CANONICAL_328_REAL_COMPONENT_BASIS_PASS",
+  "kinetic_convention": "L_kin=(1/2) G_AB dq_A dq_B",
+  "dimensions": {
+    "Phi": 54,
+    "Sigma": 252,
+    "phi": 20,
+    "S": 2,
+    "total": 328
+  },
+  "full_basis_sha256": "c66398b6321988b643af5c12fdbea86c3a2589b7b139450770c6ef72c31a3b5e",
+  "within_sector_gram_entries_tested": 66824,
+  "cross_sector_gram_entries": "STRUCTURAL_ZERO",
+  "gauge_generators": 45,
+  "gauge_normalization": "Tr_10(T_a^T T_b)=delta_ab",
+  "basis": [
+    {
+      "name": "Phi.offdiag.0.1",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            1,
+            "sqrt(2)/2"
+          ],
+          [
+            1,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.0.2",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            2,
+            "sqrt(2)/2"
+          ],
+          [
+            2,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.0.3",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            3,
+            "sqrt(2)/2"
+          ],
+          [
+            3,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.0.4",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            4,
+            "sqrt(2)/2"
+          ],
+          [
+            4,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.0.5",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            5,
+            "sqrt(2)/2"
+          ],
+          [
+            5,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.0.6",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            6,
+            "sqrt(2)/2"
+          ],
+          [
+            6,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.0.7",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            7,
+            "sqrt(2)/2"
+          ],
+          [
+            7,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.0.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            8,
+            "sqrt(2)/2"
+          ],
+          [
+            8,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.0.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.1.2",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            1,
+            2,
+            "sqrt(2)/2"
+          ],
+          [
+            2,
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.1.3",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            1,
+            3,
+            "sqrt(2)/2"
+          ],
+          [
+            3,
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.1.4",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            1,
+            4,
+            "sqrt(2)/2"
+          ],
+          [
+            4,
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.1.5",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            1,
+            5,
+            "sqrt(2)/2"
+          ],
+          [
+            5,
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.1.6",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            1,
+            6,
+            "sqrt(2)/2"
+          ],
+          [
+            6,
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.1.7",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            1,
+            7,
+            "sqrt(2)/2"
+          ],
+          [
+            7,
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.1.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            1,
+            8,
+            "sqrt(2)/2"
+          ],
+          [
+            8,
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.1.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            1,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.2.3",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            2,
+            3,
+            "sqrt(2)/2"
+          ],
+          [
+            3,
+            2,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.2.4",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            2,
+            4,
+            "sqrt(2)/2"
+          ],
+          [
+            4,
+            2,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.2.5",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            2,
+            5,
+            "sqrt(2)/2"
+          ],
+          [
+            5,
+            2,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.2.6",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            2,
+            6,
+            "sqrt(2)/2"
+          ],
+          [
+            6,
+            2,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.2.7",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            2,
+            7,
+            "sqrt(2)/2"
+          ],
+          [
+            7,
+            2,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.2.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            2,
+            8,
+            "sqrt(2)/2"
+          ],
+          [
+            8,
+            2,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.2.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            2,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            2,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.3.4",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            3,
+            4,
+            "sqrt(2)/2"
+          ],
+          [
+            4,
+            3,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.3.5",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            3,
+            5,
+            "sqrt(2)/2"
+          ],
+          [
+            5,
+            3,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.3.6",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            3,
+            6,
+            "sqrt(2)/2"
+          ],
+          [
+            6,
+            3,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.3.7",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            3,
+            7,
+            "sqrt(2)/2"
+          ],
+          [
+            7,
+            3,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.3.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            3,
+            8,
+            "sqrt(2)/2"
+          ],
+          [
+            8,
+            3,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.3.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            3,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            3,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.4.5",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            4,
+            5,
+            "sqrt(2)/2"
+          ],
+          [
+            5,
+            4,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.4.6",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            4,
+            6,
+            "sqrt(2)/2"
+          ],
+          [
+            6,
+            4,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.4.7",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            4,
+            7,
+            "sqrt(2)/2"
+          ],
+          [
+            7,
+            4,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.4.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            4,
+            8,
+            "sqrt(2)/2"
+          ],
+          [
+            8,
+            4,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.4.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            4,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            4,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.5.6",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            5,
+            6,
+            "sqrt(2)/2"
+          ],
+          [
+            6,
+            5,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.5.7",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            5,
+            7,
+            "sqrt(2)/2"
+          ],
+          [
+            7,
+            5,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.5.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            5,
+            8,
+            "sqrt(2)/2"
+          ],
+          [
+            8,
+            5,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.5.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            5,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            5,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.6.7",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            6,
+            7,
+            "sqrt(2)/2"
+          ],
+          [
+            7,
+            6,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.6.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            6,
+            8,
+            "sqrt(2)/2"
+          ],
+          [
+            8,
+            6,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.6.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            6,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            6,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.7.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            7,
+            8,
+            "sqrt(2)/2"
+          ],
+          [
+            8,
+            7,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.7.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            7,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            7,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.offdiag.8.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            8,
+            9,
+            "sqrt(2)/2"
+          ],
+          [
+            9,
+            8,
+            "sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.1",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(2)/2"
+          ],
+          [
+            1,
+            1,
+            "-sqrt(2)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.2",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(6)/6"
+          ],
+          [
+            1,
+            1,
+            "sqrt(6)/6"
+          ],
+          [
+            2,
+            2,
+            "-sqrt(6)/3"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.3",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(3)/6"
+          ],
+          [
+            1,
+            1,
+            "sqrt(3)/6"
+          ],
+          [
+            2,
+            2,
+            "sqrt(3)/6"
+          ],
+          [
+            3,
+            3,
+            "-sqrt(3)/2"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.4",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(5)/10"
+          ],
+          [
+            1,
+            1,
+            "sqrt(5)/10"
+          ],
+          [
+            2,
+            2,
+            "sqrt(5)/10"
+          ],
+          [
+            3,
+            3,
+            "sqrt(5)/10"
+          ],
+          [
+            4,
+            4,
+            "-2*sqrt(5)/5"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.5",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(30)/30"
+          ],
+          [
+            1,
+            1,
+            "sqrt(30)/30"
+          ],
+          [
+            2,
+            2,
+            "sqrt(30)/30"
+          ],
+          [
+            3,
+            3,
+            "sqrt(30)/30"
+          ],
+          [
+            4,
+            4,
+            "sqrt(30)/30"
+          ],
+          [
+            5,
+            5,
+            "-sqrt(30)/6"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.6",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(42)/42"
+          ],
+          [
+            1,
+            1,
+            "sqrt(42)/42"
+          ],
+          [
+            2,
+            2,
+            "sqrt(42)/42"
+          ],
+          [
+            3,
+            3,
+            "sqrt(42)/42"
+          ],
+          [
+            4,
+            4,
+            "sqrt(42)/42"
+          ],
+          [
+            5,
+            5,
+            "sqrt(42)/42"
+          ],
+          [
+            6,
+            6,
+            "-sqrt(42)/7"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.7",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(14)/28"
+          ],
+          [
+            1,
+            1,
+            "sqrt(14)/28"
+          ],
+          [
+            2,
+            2,
+            "sqrt(14)/28"
+          ],
+          [
+            3,
+            3,
+            "sqrt(14)/28"
+          ],
+          [
+            4,
+            4,
+            "sqrt(14)/28"
+          ],
+          [
+            5,
+            5,
+            "sqrt(14)/28"
+          ],
+          [
+            6,
+            6,
+            "sqrt(14)/28"
+          ],
+          [
+            7,
+            7,
+            "-sqrt(14)/4"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.8",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(2)/12"
+          ],
+          [
+            1,
+            1,
+            "sqrt(2)/12"
+          ],
+          [
+            2,
+            2,
+            "sqrt(2)/12"
+          ],
+          [
+            3,
+            3,
+            "sqrt(2)/12"
+          ],
+          [
+            4,
+            4,
+            "sqrt(2)/12"
+          ],
+          [
+            5,
+            5,
+            "sqrt(2)/12"
+          ],
+          [
+            6,
+            6,
+            "sqrt(2)/12"
+          ],
+          [
+            7,
+            7,
+            "sqrt(2)/12"
+          ],
+          [
+            8,
+            8,
+            "-2*sqrt(2)/3"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Phi.diag.9",
+      "sector": "Phi",
+      "components": {
+        "Phi": [
+          [
+            0,
+            0,
+            "sqrt(10)/30"
+          ],
+          [
+            1,
+            1,
+            "sqrt(10)/30"
+          ],
+          [
+            2,
+            2,
+            "sqrt(10)/30"
+          ],
+          [
+            3,
+            3,
+            "sqrt(10)/30"
+          ],
+          [
+            4,
+            4,
+            "sqrt(10)/30"
+          ],
+          [
+            5,
+            5,
+            "sqrt(10)/30"
+          ],
+          [
+            6,
+            6,
+            "sqrt(10)/30"
+          ],
+          [
+            7,
+            7,
+            "sqrt(10)/30"
+          ],
+          [
+            8,
+            8,
+            "sqrt(10)/30"
+          ],
+          [
+            9,
+            9,
+            "-3*sqrt(10)/10"
+          ]
+        ],
+        "Sigma": [],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.3.4",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.3.4",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.3.5",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              5
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              4,
+              6,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.3.5",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              5
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              4,
+              6,
+              7,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.3.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              4,
+              5,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.3.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              4,
+              5,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.3.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              4,
+              5,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.3.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              4,
+              5,
+              6,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.3.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              4,
+              5,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.3.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              4,
+              5,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.3.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.3.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.4.5",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              5
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.4.5",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              5
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.4.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              5,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.4.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              5,
+              7,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.4.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              5,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.4.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              5,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.4.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              5,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.4.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              5,
+              6,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.4.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              5,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.4.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              5,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              5,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              5,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              5,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              5,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              6,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              5,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              5,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              5,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              5,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              6,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.2.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.2.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              2,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.4.5",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              5
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              6,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.4.5",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              5
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              6,
+              7,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.4.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              5,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.4.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              5,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.4.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              5,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.4.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              5,
+              6,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.4.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              5,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.4.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              5,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.4.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              5,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.4.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              5,
+              6,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              5,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              5,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              7,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              5,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              5,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              5,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              5,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              6,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              5,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              5,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              6,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.3.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.3.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              3,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              4,
+              5,
+              6,
+              7
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              5,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              5,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              5,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              5,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              6,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              5,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              5,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              5,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              5,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              6,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              6,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.4.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.4.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              4,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.5.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.5.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.5.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.5.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.5.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.5.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.5.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.5.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              6,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.5.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              6,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.5.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.5.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.5.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              5,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              5,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              5,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              5,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.1.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.1.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              1,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.4.5",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              5
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              6,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.4.5",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              5
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              6,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.4.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              5,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.4.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              5,
+              7,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.4.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              5,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.4.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              5,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.4.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              5,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.4.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              5,
+              6,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.4.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              5,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.4.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              5,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              5,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              5,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              5,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              5,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              6,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              5,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              5,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              5,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              5,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              6,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              6,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.3.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.3.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              3,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              4,
+              5,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              5,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              5,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              7,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              5,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              5,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              5,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              5,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              6,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              5,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              5,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              6,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.4.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.4.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              4,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              6,
+              7
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.5.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.5.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.5.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.5.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.5.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.5.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.5.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              6,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.5.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.5.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.5.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              6,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.5.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.5.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              5,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              5,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              5,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              5,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              5,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              5,
+              7
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.2.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              5,
+              6
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.2.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              2,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              3,
+              4,
+              5,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              5,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.5.6",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              5,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              5,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.5.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              5,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              6,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              5,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.5.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              5,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              5,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.5.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              5,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              6,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              6,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.4.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.4.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              4,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              5,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.5.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.5.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              8,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.5.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              7,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.5.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.5.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.5.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              7,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.5.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.5.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              6,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.5.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              6,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.5.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.5.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.5.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              6,
+              7
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              5,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              5,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              5,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              5,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              5,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              5,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.3.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.3.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              3,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.5.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              8,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.5.6.7",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              6,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.5.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              6,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.5.6.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              7,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.5.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              7,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.5.6.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              6,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.5.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              6,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.5.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              6,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.5.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              6,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.5.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              6,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.5.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              6,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.5.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              5,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              6,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              5,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              5,
+              9
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              5,
+              8
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              5,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              5,
+              7
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              5,
+              7
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.4.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.4.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              4,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.5.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              5,
+              6,
+              7,
+              8
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              9
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.5.6.7.8",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              5,
+              6,
+              7,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.5.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              5,
+              6,
+              7,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              8
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.5.6.7.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              5,
+              6,
+              7,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              8
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.5.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              5,
+              6,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              7
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.5.6.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              5,
+              6,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              7
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.5.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              5,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "0",
+            "sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.5.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              5,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "-sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.re.0.6.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              6,
+              7,
+              8,
+              9
+            ],
+            "sqrt(2)/2",
+            "0"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "0",
+            "-sqrt(2)/2"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "Sigma.im.0.6.7.8.9",
+      "sector": "Sigma",
+      "components": {
+        "Phi": [],
+        "Sigma": [
+          [
+            [
+              0,
+              6,
+              7,
+              8,
+              9
+            ],
+            "0",
+            "sqrt(2)/2"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "sqrt(2)/2",
+            "0"
+          ]
+        ],
+        "phi": [],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.0",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            0,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.0",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            0,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.1",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            1,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.1",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            1,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.2",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            2,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.2",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            2,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.3",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            3,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.3",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            3,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.4",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            4,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.4",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            4,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.5",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            5,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.5",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            5,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.6",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            6,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.6",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            6,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.7",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            7,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.7",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            7,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.8",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            8,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.8",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            8,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.re.9",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            9,
+            "sqrt(2)/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "phi.im.9",
+      "sector": "phi",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [
+          [
+            9,
+            "sqrt(2)*I/2"
+          ]
+        ],
+        "S": "0"
+      }
+    },
+    {
+      "name": "S.re",
+      "sector": "S",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [],
+        "S": "sqrt(2)/2"
+      }
+    },
+    {
+      "name": "S.im",
+      "sector": "S",
+      "components": {
+        "Phi": [],
+        "Sigma": [],
+        "phi": [],
+        "S": "sqrt(2)*I/2"
+      }
+    }
+  ],
+  "not_yet_materialized": [
+    "physical_290_heavy_scalar_mass_eigenvectors",
+    "38_zero_mode_disposition_in_full_component_coordinates",
+    "physical_scalar_gauge_goldstone_ghost_vertices"
+  ]
+}

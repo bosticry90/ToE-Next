@@ -1,0 +1,18 @@
+{
+  "outcome": "PHYSICAL_VERTEX_MATERIALIZATION_BLOCKED",
+  "component_basis": "PASS_328_REAL",
+  "sm_irrep_classes": 35,
+  "highest_weight_multiplicity_representatives": 65,
+  "dimension_reconstructed_from_irreps": 328,
+  "existing_authority": "highest_weight copies and multiplicity Hessian blocks; sufficient for spectrum/rank, not complete interaction vertices",
+  "missing_first_object": "complete all-weight parent-to-irrep map and 328-component parent-to-physical mass transformation",
+  "acceptance_tests": [
+    "exact kinetic unitarity",
+    "full Hessian reconstruction from multiplicity blocks",
+    "290 heavy plus 38 zero/light disposition",
+    "conjugate-irrep consistency",
+    "recovery of all passed block eigenvalues"
+  ],
+  "background_field_gauge_authorized": false,
+  "finite_C1_GS": null
+}
