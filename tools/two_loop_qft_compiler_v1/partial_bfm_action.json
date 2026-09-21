@@ -1,0 +1,77 @@
+{
+  "outcome": "PARTIAL_BFM_ACTION_PASS",
+  "authority": "complete_index_form_action_and_sparse_derived_vertex_facade",
+  "immutable_inputs": {
+    "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
+    "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
+    "background_field_quadratic_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692"
+  },
+  "scheme": {
+    "regularization": "dimensional_regularization_d_4_minus_2epsilon",
+    "subtraction": "MSbar",
+    "background_group": "SM_U1Y_GUT_NORMALIZED_x_SU2L_x_SU3C",
+    "heavy_gauge": "equivariant_partial_R_xi_for_Spin10_over_SM",
+    "light_gauge": "ordinary_background_field_R_eta_for_SM",
+    "operator_normalization": "minus_one_quarter_F_i_squared"
+  },
+  "field_ledger": {
+    "background_sm_vectors": 12,
+    "quantum_sm_vectors": 12,
+    "heavy_vectors": 33,
+    "orbit_aligned_goldstones": 33,
+    "heavy_ghosts_complex": 33,
+    "light_ghosts_complex": 12,
+    "heavy_physical_scalars_real": 290,
+    "pq_real": 1,
+    "light_higgs_real": 4
+  },
+  "single_action": {
+    "UV": "S_parent[Abar+a,qbar+eta]+S_fix_H+S_fix_G_over_H",
+    "EFT": "S_SM_EFT[light_background+light_quantum]+S_fix_H_same_convention",
+    "combined_gauge_fixing_source": "ordinary_H_BRST_fermion_plus_equivariant_G_over_H_fermion",
+    "equivariant_rule": "delta_G_over_H_squared_is_an_H_gauge_transformation",
+    "G_H_alpha": "Dbar_mu b_alpha_mu",
+    "G_heavy_i": "d_mu V_i_mu-xi*M_i*chi_i",
+    "L_fix_H": "-G_H_alpha*G_H_alpha/(2*eta_H)",
+    "L_fix_heavy": "-G_heavy_i*G_heavy_i/(2*xi)",
+    "L_light_ghost": "-bar_c_alpha*Dbar_mu*(Dbar_mu*c_alpha+f_alpha_beta_gamma*b_beta_mu*c_gamma)",
+    "L_heavy_ghost": "-bar_u_i*(d_squared+xi*M_i_squared)*u_i+bar_u_i*(f_i_j_k*V_k_mu*d_mu+f_i_k_alpha*f_alpha_l_j*V_k_mu*V_l_mu)*u_j+xi*bar_u_i*(f_i_a*x_a_j_b*varphi_b+f_i_j_k*M_k*chi_k)*u_j+xi/2*f_i_j_alpha*f_k_l_alpha*bar_u_i*u_j*bar_u_k*u_l",
+    "partial_gauge_fixing_fermion": "psi_G_over_H=bar_u_i*(G_i-xi*b_i/2), acted_on_by_equivariant_BRST_with_trivial_pair; quartic_ghost_required",
+    "light_gauge_fixing_fermion": "Psi_H=bar_c_alpha*(G_H_alpha-eta_H*b_alpha/2)"
+  },
+  "derived_vertex_families": [
+    "SSS",
+    "SSSS",
+    "VSS",
+    "VVS",
+    "VVSS",
+    "VVV",
+    "VVVV",
+    "heavy_ghost_mass",
+    "heavy_ghost_background_vector",
+    "heavy_ghost_heavy_vector_derivative",
+    "heavy_ghost_two_vector",
+    "heavy_ghost_scalar",
+    "heavy_ghost_goldstone",
+    "heavy_ghost_quartic",
+    "light_ghost_background_vector",
+    "light_ghost_quantum_vector"
+  ],
+  "goldstone_pairing": {
+    "description": "stored_G_basis_transpose_times_orbit_aligned_basis",
+    "sha256": "b125716dd7beacd9f384a2dd64dd65336de18919f583990a4c807317f20ede8c",
+    "max_orthogonality_residual": 2.7951190129575513e-15,
+    "max_reconstruction_residual": 4.440892098500626e-16
+  },
+  "background_H_covariance": {
+    "max_heavy_mass_generator_commutator": 2.1246893133763858e-16,
+    "background_two_point_operator": "manifestly_H_covariant"
+  },
+  "one_loop_relevance": {
+    "heavy_ghost_quartic": "first_contributes_at_two_loops_without_external_ghosts",
+    "light_UV_EFT_loops": "same_H_BFM_action_and_cancel_in_soft_region",
+    "hard_heavy_system": "vector_plus_goldstone_plus_heavy_ghost"
+  },
+  "backend_policy": "PartialBFMAction_is_the_gauge_fixed_authority_facade; PhysicalVertexAPI_is_only_the_invariant_parent_backend",
+  "partial_bfm_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491"
+}

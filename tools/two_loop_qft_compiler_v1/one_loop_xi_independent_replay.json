@@ -1,0 +1,10 @@
+{
+  "outcome": "ONE_LOOP_XI_CANCELLATION_INDEPENDENT_REPLAY_PASS",
+  "partial_bfm_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "primary_result_sha256": "98d1179a02e7dc954aee49467a43e0aa6e8457b6165f04476df6a2629d3405e4",
+  "cells_replayed": 12,
+  "aggregate_tests_replayed": 5,
+  "maximum_symbolic_residual": "0",
+  "imports_primary_assembler": false,
+  "imports_action_compiler": false
+}

@@ -1,0 +1,1359 @@
+{
+  "outcome": "ONE_LOOP_XI_CANCELLATION_MATRIX_PASS",
+  "test_matrix_sha256": "46b3bc390967eb256a83f4bb5b20bc46cd7f11f788f59a0ce047e48669294d96",
+  "partial_bfm_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "method": "exact_nonminimal_vector_determinant_factorization",
+  "normalization": "lambda_i_in_alpha_low_inverse_equals_alpha_parent_inverse_minus_lambda_i_over_12pi",
+  "cells": [
+    {
+      "test_id": "XI_C01",
+      "cluster": "LOWER_CHARGED_8",
+      "xi": "1/2",
+      "mass_squared_over_g10_squared_omega_squared": "1/200",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-7/3",
+            "0",
+            "-5/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-28",
+            "0",
+            "-10"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "14/5 - 7*log(2)/5",
+            "0",
+            "1 - log(2)/2"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "7/60",
+            "0",
+            "1/24"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "7/5",
+            "0",
+            "1/2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "-7*log(2)/5",
+            "0",
+            "-log(2)/2"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-7/30",
+            "0",
+            "-1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-14/5",
+            "0",
+            "-1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "14*log(2)/5",
+            "0",
+            "log(2)"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-49/20",
+          "0",
+          "-7/8"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-147/5",
+          "0",
+          "-21/2"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "14/5",
+          "0",
+          "1"
+        ],
+        "vector_beta_jump": [
+          "-49/5",
+          "0",
+          "-7/2"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C02",
+      "cluster": "LOWER_CHARGED_8",
+      "xi": "1",
+      "mass_squared_over_g10_squared_omega_squared": "1/200",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-7/3",
+            "0",
+            "-5/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-28",
+            "0",
+            "-10"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "14/5",
+            "0",
+            "1"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "7/60",
+            "0",
+            "1/24"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "7/5",
+            "0",
+            "1/2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-7/30",
+            "0",
+            "-1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-14/5",
+            "0",
+            "-1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-49/20",
+          "0",
+          "-7/8"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-147/5",
+          "0",
+          "-21/2"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "14/5",
+          "0",
+          "1"
+        ],
+        "vector_beta_jump": [
+          "-49/5",
+          "0",
+          "-7/2"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C03",
+      "cluster": "LOWER_CHARGED_8",
+      "xi": "2",
+      "mass_squared_over_g10_squared_omega_squared": "1/200",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-7/3",
+            "0",
+            "-5/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-28",
+            "0",
+            "-10"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "7*log(2)/5 + 14/5",
+            "0",
+            "log(2)/2 + 1"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "7/60",
+            "0",
+            "1/24"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "7/5",
+            "0",
+            "1/2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "7*log(2)/5",
+            "0",
+            "log(2)/2"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-7/30",
+            "0",
+            "-1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-14/5",
+            "0",
+            "-1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "-14*log(2)/5",
+            "0",
+            "-log(2)"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-49/20",
+          "0",
+          "-7/8"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-147/5",
+          "0",
+          "-21/2"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "14/5",
+          "0",
+          "1"
+        ],
+        "vector_beta_jump": [
+          "-49/5",
+          "0",
+          "-7/2"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C04",
+      "cluster": "LOWER_NEUTRAL_1",
+      "xi": "1/2",
+      "mass_squared_over_g10_squared_omega_squared": "1/40",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "0",
+          "0",
+          "0"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "0",
+          "0",
+          "0"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "0",
+          "0",
+          "0"
+        ],
+        "vector_beta_jump": [
+          "0",
+          "0",
+          "0"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C05",
+      "cluster": "LOWER_NEUTRAL_1",
+      "xi": "1",
+      "mass_squared_over_g10_squared_omega_squared": "1/40",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "0",
+          "0",
+          "0"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "0",
+          "0",
+          "0"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "0",
+          "0",
+          "0"
+        ],
+        "vector_beta_jump": [
+          "0",
+          "0",
+          "0"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C06",
+      "cluster": "LOWER_NEUTRAL_1",
+      "xi": "2",
+      "mass_squared_over_g10_squared_omega_squared": "1/40",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "0",
+          "0",
+          "0"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "0",
+          "0",
+          "0"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "0",
+          "0",
+          "0"
+        ],
+        "vector_beta_jump": [
+          "0",
+          "0",
+          "0"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C07",
+      "cluster": "UPPER_12_A",
+      "xi": "1/2",
+      "mass_squared_over_g10_squared_omega_squared": "5/12",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-25/6",
+            "-5/2",
+            "-5/3"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-50",
+            "-30",
+            "-20"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "5 - 5*log(2)/2",
+            "3 - 3*log(2)/2",
+            "2 - log(2)"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "5/24",
+            "1/8",
+            "1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "5/2",
+            "3/2",
+            "1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "-5*log(2)/2",
+            "-3*log(2)/2",
+            "-log(2)"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-5/12",
+            "-1/4",
+            "-1/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-5",
+            "-3",
+            "-2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "log(32)",
+            "log(8)",
+            "log(4)"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-35/8",
+          "-21/8",
+          "-7/4"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-105/2",
+          "-63/2",
+          "-21"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "5",
+          "3",
+          "2"
+        ],
+        "vector_beta_jump": [
+          "-35/2",
+          "-21/2",
+          "-7"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C08",
+      "cluster": "UPPER_12_A",
+      "xi": "1",
+      "mass_squared_over_g10_squared_omega_squared": "5/12",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-25/6",
+            "-5/2",
+            "-5/3"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-50",
+            "-30",
+            "-20"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "5",
+            "3",
+            "2"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "5/24",
+            "1/8",
+            "1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "5/2",
+            "3/2",
+            "1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-5/12",
+            "-1/4",
+            "-1/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-5",
+            "-3",
+            "-2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-35/8",
+          "-21/8",
+          "-7/4"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-105/2",
+          "-63/2",
+          "-21"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "5",
+          "3",
+          "2"
+        ],
+        "vector_beta_jump": [
+          "-35/2",
+          "-21/2",
+          "-7"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C09",
+      "cluster": "UPPER_12_A",
+      "xi": "2",
+      "mass_squared_over_g10_squared_omega_squared": "5/12",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-25/6",
+            "-5/2",
+            "-5/3"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-50",
+            "-30",
+            "-20"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "5*log(2)/2 + 5",
+            "3*log(2)/2 + 3",
+            "log(2) + 2"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "5/24",
+            "1/8",
+            "1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "5/2",
+            "3/2",
+            "1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "5*log(2)/2",
+            "3*log(2)/2",
+            "log(2)"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-5/12",
+            "-1/4",
+            "-1/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-5",
+            "-3",
+            "-2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "-log(32)",
+            "-log(8)",
+            "-log(4)"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-35/8",
+          "-21/8",
+          "-7/4"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-105/2",
+          "-63/2",
+          "-21"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "5",
+          "3",
+          "2"
+        ],
+        "vector_beta_jump": [
+          "-35/2",
+          "-21/2",
+          "-7"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C10",
+      "cluster": "UPPER_12_B",
+      "xi": "1/2",
+      "mass_squared_over_g10_squared_omega_squared": "253/600",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-1/6",
+            "-5/2",
+            "-5/3"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-2",
+            "-30",
+            "-20"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "1/5 - log(2)/10",
+            "3 - 3*log(2)/2",
+            "2 - log(2)"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "1/120",
+            "1/8",
+            "1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "1/10",
+            "3/2",
+            "1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "-log(2)/10",
+            "-3*log(2)/2",
+            "-log(2)"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-1/60",
+            "-1/4",
+            "-1/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-1/5",
+            "-3",
+            "-2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "log(2)/5",
+            "log(8)",
+            "log(4)"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-7/40",
+          "-21/8",
+          "-7/4"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-21/10",
+          "-63/2",
+          "-21"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "1/5",
+          "3",
+          "2"
+        ],
+        "vector_beta_jump": [
+          "-7/10",
+          "-21/2",
+          "-7"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C11",
+      "cluster": "UPPER_12_B",
+      "xi": "1",
+      "mass_squared_over_g10_squared_omega_squared": "253/600",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-1/6",
+            "-5/2",
+            "-5/3"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-2",
+            "-30",
+            "-20"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "1/5",
+            "3",
+            "2"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "1/120",
+            "1/8",
+            "1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "1/10",
+            "3/2",
+            "1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-1/60",
+            "-1/4",
+            "-1/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-1/5",
+            "-3",
+            "-2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-7/40",
+          "-21/8",
+          "-7/4"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-21/10",
+          "-63/2",
+          "-21"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "1/5",
+          "3",
+          "2"
+        ],
+        "vector_beta_jump": [
+          "-7/10",
+          "-21/2",
+          "-7"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    },
+    {
+      "test_id": "XI_C12",
+      "cluster": "UPPER_12_B",
+      "xi": "2",
+      "mass_squared_over_g10_squared_omega_squared": "253/600",
+      "components": {
+        "massive_vector": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-1/6",
+            "-5/2",
+            "-5/3"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-2",
+            "-30",
+            "-20"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "log(2)/10 + 1/5",
+            "3*log(2)/2 + 3",
+            "log(2) + 2"
+          ]
+        },
+        "goldstone": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "1/120",
+            "1/8",
+            "1/12"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "1/10",
+            "3/2",
+            "1"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "log(2)/10",
+            "3*log(2)/2",
+            "log(2)"
+          ]
+        },
+        "ghost": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "-1/60",
+            "-1/4",
+            "-1/6"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "-1/5",
+            "-3",
+            "-2"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "-log(2)/5",
+            "-log(8)",
+            "-log(4)"
+          ]
+        },
+        "eft_subtraction": {
+          "heat_kernel_a2_pole_per_cluster": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_log_M2_over_mu2": [
+            "0",
+            "0",
+            "0"
+          ],
+          "lambda_finite_at_log_M2_over_mu2_zero": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "matched": {
+        "heat_kernel_a2_pole": [
+          "-7/40",
+          "-21/8",
+          "-7/4"
+        ],
+        "lambda_log_M2_over_mu2": [
+          "-21/10",
+          "-63/2",
+          "-21"
+        ],
+        "lambda_finite_at_mu_equals_M": [
+          "1/5",
+          "3",
+          "2"
+        ],
+        "vector_beta_jump": [
+          "-7/10",
+          "-21/2",
+          "-7"
+        ],
+        "matching_scale_derivative_residual": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "checks": {
+        "xi_cancelled_in_matched_sum": true,
+        "expected_lambda_recovered": true,
+        "expected_beta_jump_recovered": true,
+        "neutral_cluster_zero": true
+      }
+    }
+  ],
+  "aggregate_tests": {
+    "XI_A01_cluster_sum": {
+      "lambda_log_M2_terms": "sum_c T_i_c*[1-21*log(M_c/mu)]",
+      "passed": true
+    },
+    "XI_A02_degenerate_mass": {
+      "total_index_T1_T2_T3": [
+        "8",
+        "6",
+        "5"
+      ],
+      "matched_lambda": "(8,6,5)*[1-21*log(M/mu)]",
+      "passed": true
+    },
+    "XI_A03_hard_subtraction": {
+      "unmatched_IR_pole": "0",
+      "background_transverse": true,
+      "reason": "light H-background action is identical in UV and EFT; its soft loops cancel and its hard loops are scaleless",
+      "passed": true
+    },
+    "XI_A04_loop_ST": {
+      "operator_identity": "Delta_xi^{mu nu}D_nu=xi^{-1}D^mu*Delta_0(xi*M^2)",
+      "determinant_identity": "det(Delta_xi)=det(Delta_1)*det(Delta_0(xi*M^2))/det(Delta_0(M^2))",
+      "scope": "background_transverse_F2_projection",
+      "passed": true
+    },
+    "XI_A05_feynman_heat_kernel": {
+      "xi": "1",
+      "a2_total_per_T": "-7/8-epsilon/12",
+      "lambda": "T_i*[1-21*log(M/mu)]",
+      "passed": true
+    }
+  },
+  "global_checks": {
+    "primary_cells_passed": 12,
+    "aggregate_tests_passed": 5,
+    "clusterwise_xi_cancellation": true,
+    "all_nonzero_SM_channels_checked": true,
+    "neutral_cluster_zero": true,
+    "two_loop_diagrams_generated": false
+  },
+  "result_sha256": "98d1179a02e7dc954aee49467a43e0aa6e8457b6165f04476df6a2629d3405e4"
+}

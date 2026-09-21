@@ -1,10 +1,19 @@
 # TWO_LOOP_QFT_COMPILER_V1 layer-3 closure task
 
+> **Post-execution record (2026-09-21):** This frozen task was executed without
+> changing its 12-cell matrix, five aggregate tests, gauge choices, cluster
+> definitions, or pass criteria. All cells and aggregate tests passed, and an
+> independent replay returned zero symbolic residual. The promoted outcome is
+> `BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS`. The frozen matrix SHA-256
+> remains `46b3bc390967eb256a83f4bb5b20bc46cd7f11f788f59a0ce047e48669294d96`.
+> See [`RESULT.md`](RESULT.md),
+> [`one_loop_xi_cancellation_results.json`](one_loop_xi_cancellation_results.json),
+> and [`one_loop_xi_independent_replay.json`](one_loop_xi_independent_replay.json).
+
 This document freezes the next Codex task and the one-loop gauge-parameter
 cancellation test matrix. It is a specification, not a completed background-
-field action or loop calculation. The current outcome remains
-`BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_BLOCKED`; two-loop diagram enumeration
-is not authorized.
+field action or loop calculation. The text below is retained unchanged as the
+pre-execution specification; the post-execution record above is the disposition.
 
 ## Exact Codex task
 

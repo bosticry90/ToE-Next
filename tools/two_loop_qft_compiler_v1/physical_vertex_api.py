@@ -347,6 +347,10 @@ def manifest():
             "physical columns require a temporary numeric-tolerance wrapper "
             "around exact parent invariant guards"
         ),
+        "authority_role": (
+            "invariant-parent backend; the complete gauge-fixed authority "
+            "facade is PartialBFMAction in partial_bfm_action.py"
+        ),
         "not_claimed": [
             "complete_background_quantum_field_vertex_action",
             "general_xi_one_loop_F2_cancellation",

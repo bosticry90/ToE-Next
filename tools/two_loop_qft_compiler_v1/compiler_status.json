@@ -1,5 +1,5 @@
 {
-  "outcome": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_BLOCKED",
+  "outcome": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS",
   "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
   "background_field_quadratic": "PASS",
   "background_field_quadratic_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692",
@@ -12,17 +12,12 @@
   ],
   "one_loop_vector_F2": {
     "feynman_gauge": "PASS_INHERITED_T_TIMES_1_MINUS_21_LOG_M_OVER_MU",
-    "general_xi_cancellation": "NOT_DERIVED"
+    "general_xi_cancellation": "PASS_EXACT_CLUSTERWISE_AT_0P5_1_2"
   },
-  "blocking_requirements": [
-    "complete_partial_BFM_background_quantum_gauge_fixed_vertex_action",
-    "general_xi_UV_minus_EFT_one_loop_F2_assembly",
-    "explicit_vector_goldstone_ghost_xi_cancellation_at_0.5_1_2",
-    "selected_loop_level_Slavnov_Taylor_replay_in_the_same_prescription"
-  ],
-  "two_loop_diagram_enumeration_authorized": false,
+  "blocking_requirements": [],
+  "two_loop_diagram_enumeration_authorized": true,
   "layer3_closure_spec": {
-    "outcome": "PREREGISTERED_NO_LOOP_RESULT",
+    "outcome": "EXECUTED_UNCHANGED_PASS",
     "one_loop_xi_test_matrix_sha256": "46b3bc390967eb256a83f4bb5b20bc46cd7f11f788f59a0ce047e48669294d96",
     "primary_cells": 12,
     "aggregate_tests": 5,
@@ -38,5 +33,22 @@
     "heavy_threshold": "DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED",
     "gauge_matching": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
     "bfb": "BFB_UNRESOLVED"
-  }
+  },
+  "complete_partial_bfm_action": {
+    "outcome": "PARTIAL_BFM_ACTION_PASS",
+    "sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+    "quartic_heavy_ghost_included": true,
+    "goldstone_pairing_residual": 2.7951190129575513e-15,
+    "heavy_mass_H_covariance_residual": 2.1246893133763858e-16,
+    "action_regression": "PARTIAL_BFM_ACTION_REGRESSION_PASS"
+  },
+  "one_loop_xi_cancellation_result": {
+    "outcome": "ONE_LOOP_XI_CANCELLATION_MATRIX_PASS",
+    "sha256": "98d1179a02e7dc954aee49467a43e0aa6e8457b6165f04476df6a2629d3405e4",
+    "primary_cells": 12,
+    "aggregate_tests": 5,
+    "independent_replay": "ONE_LOOP_XI_CANCELLATION_INDEPENDENT_REPLAY_PASS",
+    "maximum_symbolic_residual": "0"
+  },
+  "next_gate": "TWO_LOOP_DIAGRAM_ENUMERATION_LAYER_4"
 }

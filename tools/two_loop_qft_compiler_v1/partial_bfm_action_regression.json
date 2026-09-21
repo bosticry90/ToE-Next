@@ -1,0 +1,26 @@
+{
+  "outcome": "PARTIAL_BFM_ACTION_REGRESSION_PASS",
+  "partial_bfm_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "max_heavy_ghost_mass_pairing_residual": 4.440892098500626e-16,
+  "max_goldstone_pairing_orthogonality_residual": 2.7951190129575513e-15,
+  "max_goldstone_pairing_reconstruction_residual": 4.440892098500626e-16,
+  "max_heavy_mass_H_covariance_residual": 2.1246893133763858e-16,
+  "quartic_heavy_ghost_control": {
+    "heavy_i": "X000",
+    "heavy_j": "X001",
+    "light_alpha": "B000",
+    "structure_constant": -0.4743416490252568,
+    "kernel_at_xi_1": 0.2999999999999998,
+    "xi_scaling_pass": true,
+    "grassmann_pair_antisymmetry_pass": true
+  },
+  "invariant_backend_delegation_pass": true,
+  "heavy_ghost_background_vertex_pass": true,
+  "heavy_ghost_goldstone_vertex_finite": 6.133173666733529e-18,
+  "light_ghost_vertex_control": {
+    "antighost": "B000",
+    "ghost": "B001",
+    "vector": "B002",
+    "coefficient": -0.7905694150420948
+  }
+}

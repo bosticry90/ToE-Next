@@ -29,18 +29,25 @@ counts, or incomplete topology subsets.
 
 ## Current phase
 
-Promotion layers 1 and 2 pass. Layer 3 has started and has two bounded
-subpasses: the full 33-vector/Goldstone/ghost quadratic `R_xi` system and a
-calculation-local sparse physical-vertex core. The full layer remains blocked.
-The precise missing authority is the complete partial-background-field
-background/quantum gauge-fixed vertex action and its UV-minus-EFT one-loop
-`F^2` assembly demonstrating gauge-parameter cancellation. Tree-level mass
-pairing and Ward checks do not substitute for that loop calculation. Two-loop
-diagram enumeration is therefore not authorized.
+Promotion layers 1, 2 and 3 pass. Layer 3 now supplies one authoritative
+partially fixed background-field action, including the equivariant heavy-ghost
+sector, and a sparse physical-vertex facade derived from it. Its exact
+UV-minus-SM-EFT one-loop `F^2` assembly passes all 12 preregistered
+cluster/`xi` cells and all five aggregate checks. An implementation-independent
+replay has zero symbolic residual.
+
+The partial-BFM action SHA-256 is
+`2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491` and
+the one-loop result SHA-256 is
+`98d1179a02e7dc954aee49467a43e0aa6e8457b6165f04476df6a2629d3405e4`.
+Promotion layer 4 is therefore authorized but has not started. No two-loop
+diagram, finite `C1_GS`, gauge refit, or new physics verdict is inferred from
+the layer-3 pass.
 
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and
 [`one_loop_xi_cancellation_matrix.json`](one_loop_xi_cancellation_matrix.json).
 The matrix canonical SHA-256 is
 `46b3bc390967eb256a83f4bb5b20bc46cd7f11f788f59a0ce047e48669294d96`.
-This freezes acceptance criteria only; it does not supply a loop result.
+The criteria were executed without alteration. The authoritative outcome and
+reproduction commands are recorded in [`RESULT.md`](RESULT.md).

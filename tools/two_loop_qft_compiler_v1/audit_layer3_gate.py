@@ -1,10 +1,8 @@
-"""Freeze the promotion-layer-3 authority boundary.
+"""Audit the frozen promotion-layer-3 authority boundary and result.
 
-The quadratic background-field and calculation-local physical-vertex cores
-are useful subpasses.  They do not constitute the full layer-3 pass because
-the frozen partial-background-field prescription has not yet supplied a
-complete background/quantum vertex action or a general-xi one-loop F^2
-cancellation calculation.
+The preregistered matrix remains immutable.  Promotion requires the complete
+partial-BFM action artifact, all twelve general-xi cells, all five aggregate
+tests, and an implementation-independent symbolic replay.
 """
 
 from fractions import Fraction
@@ -68,6 +66,42 @@ def validate_closure_spec():
     return sha256(packed.encode()).hexdigest()
 
 
+def validate_closure_result(closure_hash):
+    required = (
+        "partial_bfm_action.json",
+        "partial_bfm_action_regression.json",
+        "one_loop_xi_cancellation_results.json",
+        "one_loop_xi_independent_replay.json",
+    )
+    if not all((HERE / name).exists() for name in required):
+        return None
+    action, action_regression, result, replay = (load(name) for name in required)
+    assert action["outcome"] == "PARTIAL_BFM_ACTION_PASS"
+    assert action_regression["outcome"] == "PARTIAL_BFM_ACTION_REGRESSION_PASS"
+    assert action_regression["partial_bfm_action_sha256"] == (
+        action["partial_bfm_action_sha256"])
+    assert action_regression["quartic_heavy_ghost_control"][
+        "xi_scaling_pass"] is True
+    assert action_regression["quartic_heavy_ghost_control"][
+        "grassmann_pair_antisymmetry_pass"] is True
+    assert result["outcome"] == "ONE_LOOP_XI_CANCELLATION_MATRIX_PASS"
+    assert replay["outcome"] == (
+        "ONE_LOOP_XI_CANCELLATION_INDEPENDENT_REPLAY_PASS")
+    assert result["test_matrix_sha256"] == closure_hash
+    assert result["partial_bfm_action_sha256"] == (
+        action["partial_bfm_action_sha256"])
+    assert replay["partial_bfm_action_sha256"] == (
+        action["partial_bfm_action_sha256"])
+    assert result["global_checks"]["primary_cells_passed"] == 12
+    assert result["global_checks"]["aggregate_tests_passed"] == 5
+    assert result["global_checks"]["clusterwise_xi_cancellation"] is True
+    assert result["global_checks"]["two_loop_diagrams_generated"] is False
+    assert replay["cells_replayed"] == 12
+    assert replay["aggregate_tests_replayed"] == 5
+    assert replay["maximum_symbolic_residual"] == "0"
+    return action, action_regression, result, replay
+
+
 def main():
     quadratic = load("background_field_quadratic.json")
     manifest = load("physical_vertex_api.json")
@@ -104,9 +138,12 @@ def main():
         "lambdaS_fourth_derivative": "24",
     }
     closure_hash = validate_closure_spec()
+    closure = validate_closure_result(closure_hash)
+    promoted = closure is not None
 
     payload = {
-        "outcome": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_BLOCKED",
+        "outcome": ("BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS" if promoted
+                    else "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_BLOCKED"),
         "physical_basis_sha256": PHYSICAL_HASH,
         "background_field_quadratic": "PASS",
         "background_field_quadratic_sha256": QUADRATIC_HASH,
@@ -115,17 +152,20 @@ def main():
         "general_xi_values_checked_at_quadratic_and_tree_ward_level": [0.5, 1.0, 2.0],
         "one_loop_vector_F2": {
             "feynman_gauge": "PASS_INHERITED_T_TIMES_1_MINUS_21_LOG_M_OVER_MU",
-            "general_xi_cancellation": "NOT_DERIVED",
+            "general_xi_cancellation": (
+                "PASS_EXACT_CLUSTERWISE_AT_0P5_1_2" if promoted
+                else "NOT_DERIVED"),
         },
-        "blocking_requirements": [
+        "blocking_requirements": ([] if promoted else [
             "complete_partial_BFM_background_quantum_gauge_fixed_vertex_action",
             "general_xi_UV_minus_EFT_one_loop_F2_assembly",
             "explicit_vector_goldstone_ghost_xi_cancellation_at_0.5_1_2",
             "selected_loop_level_Slavnov_Taylor_replay_in_the_same_prescription",
-        ],
-        "two_loop_diagram_enumeration_authorized": False,
+        ]),
+        "two_loop_diagram_enumeration_authorized": promoted,
         "layer3_closure_spec": {
-            "outcome": "PREREGISTERED_NO_LOOP_RESULT",
+            "outcome": ("EXECUTED_UNCHANGED_PASS" if promoted
+                        else "PREREGISTERED_NO_LOOP_RESULT"),
             "one_loop_xi_test_matrix_sha256": closure_hash,
             "primary_cells": 12,
             "aggregate_tests": 5,
@@ -139,14 +179,38 @@ def main():
             "bfb": "BFB_UNRESOLVED",
         },
     }
+    if promoted:
+        action, action_regression, result, replay = closure
+        payload["complete_partial_bfm_action"] = {
+            "outcome": action["outcome"],
+            "sha256": action["partial_bfm_action_sha256"],
+            "quartic_heavy_ghost_included": True,
+            "goldstone_pairing_residual": action["goldstone_pairing"][
+                "max_orthogonality_residual"],
+            "heavy_mass_H_covariance_residual": action[
+                "background_H_covariance"][
+                    "max_heavy_mass_generator_commutator"],
+            "action_regression": action_regression["outcome"],
+        }
+        payload["one_loop_xi_cancellation_result"] = {
+            "outcome": result["outcome"],
+            "sha256": result["result_sha256"],
+            "primary_cells": 12,
+            "aggregate_tests": 5,
+            "independent_replay": replay["outcome"],
+            "maximum_symbolic_residual": "0",
+        }
+        payload["next_gate"] = "TWO_LOOP_DIAGRAM_ENUMERATION_LAYER_4"
     (HERE / "compiler_status.json").write_text(
         json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     print(payload["outcome"])
     print("BACKGROUND_FIELD_QUADRATIC PASS")
     print("PHYSICAL_VERTEX_API_CORE PASS")
-    print("GENERAL_XI_ONE_LOOP_F2_CANCELLATION NOT_DERIVED")
+    print("GENERAL_XI_ONE_LOOP_F2_CANCELLATION",
+          "PASS" if promoted else "NOT_DERIVED")
     print("LAYER3_CLOSURE_TEST_MATRIX_SHA256", closure_hash)
-    print("TWO_LOOP_DIAGRAM_ENUMERATION AUTHORIZED=false")
+    print("TWO_LOOP_DIAGRAM_ENUMERATION AUTHORIZED=" +
+          ("true" if promoted else "false"))
 
 
 if __name__ == "__main__":

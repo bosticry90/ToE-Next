@@ -1,0 +1,235 @@
+"""Authoritative partially fixed background-field action façade.
+
+The invariant interactions come from ``PhysicalVertexAPI`` (and therefore the
+canonical parent action).  This layer adds the complete index-form H-background
+gauge fixing and equivariant G/H gauge fixing, including the quartic heavy-
+ghost term.  Future diagram code must consume this façade, not append gauge-
+fixing vertices independently.
+"""
+
+from hashlib import sha256
+import json
+from pathlib import Path
+
+import numpy as np
+
+from physical_vertex_api import PhysicalVertexAPI, QUADRATIC_HASH
+from physical_basis_runtime import PHYSICAL_BASIS_HASH
+
+
+HERE = Path(__file__).resolve().parent
+PARENT_ACTION_HASH = (
+    "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed"
+)
+
+
+def canonical_hash(payload):
+    packed = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+    return sha256(packed.encode()).hexdigest()
+
+
+class PartialBFMAction:
+    """Sparse physical façade over one frozen gauge-fixed action."""
+
+    def __init__(self):
+        self.invariant = PhysicalVertexAPI()
+        self.heavy_vector_ids = [self.invariant.vector_id(i)
+                                 for i in range(12, 45)]
+        self.light_vector_ids = [self.invariant.vector_id(i)
+                                 for i in range(12)]
+
+        # Pair every mass-eigenstate heavy vector with its orbit-normalized
+        # Goldstone.  The passed physical basis stores another orthonormal
+        # basis of the same 33-space, so this bridge is generally not diagonal.
+        stored = self.invariant.U[:, 290:323]
+        orbit = (self.invariant.Q
+                 @ self.invariant.vector_rotation[:, 12:45])
+        masses = self.invariant.vector_masses[12:45]
+        aligned = orbit / np.sqrt(masses)[None, :]
+        self.goldstone_pairing = stored.T @ aligned
+        self.goldstone_pairing_residual = float(np.max(abs(
+            self.goldstone_pairing.T @ self.goldstone_pairing - np.eye(33))))
+        self.goldstone_reconstruction_residual = float(np.max(abs(
+            stored @ self.goldstone_pairing - aligned)))
+        assert self.goldstone_pairing_residual < 4e-12
+        assert self.goldstone_reconstruction_residual < 4e-12
+
+        heavy_mass = np.diag(masses)
+        commutators = []
+        for alpha in self.light_vector_ids:
+            adjoint = np.asarray([
+                [self.structure(alpha, left, right)
+                 for right in self.heavy_vector_ids]
+                for left in self.heavy_vector_ids
+            ])
+            commutators.append(heavy_mass @ adjoint - adjoint @ heavy_mass)
+        self.max_h_covariance_mass_commutator = float(max(
+            np.max(abs(value)) for value in commutators))
+        assert self.max_h_covariance_mass_commutator < 4e-12
+
+    def structure(self, a, b, c):
+        return self.invariant.structure_constant(a, b, c)
+
+    def heavy_ghost_mass(self, a, b, xi):
+        return self.invariant.ghost_mass(a, b, xi)
+
+    def heavy_ghost_scalar(self, a, b, scalar, xi):
+        return self.invariant.ghost_scalar(a, b, scalar, xi)
+
+    def heavy_ghost_vector_derivative(self, ghost_out, ghost_in, vector):
+        return self.structure(ghost_out, ghost_in, vector)
+
+    def heavy_ghost_background_vector(self, ghost_out, ghost_in, background):
+        assert background in self.light_vector_ids
+        return self.structure(ghost_out, ghost_in, background)
+
+    def heavy_ghost_two_vector(self, ghost_out, ghost_in, va, vb):
+        """Color kernel f(i,k,alpha) f(alpha,l,j), summed over H."""
+        return sum(self.structure(ghost_out, va, alpha)
+                   * self.structure(alpha, vb, ghost_in)
+                   for alpha in self.light_vector_ids)
+
+    def heavy_ghost_quartic(self, i, j, k, ell, xi):
+        """Equivariant quartic-ghost color kernel, including xi/2."""
+        return (xi / 2) * sum(self.structure(i, j, alpha)
+                              * self.structure(k, ell, alpha)
+                              for alpha in self.light_vector_ids)
+
+    def heavy_ghost_goldstone(self, ghost_out, ghost_in,
+                              heavy_vector, xi):
+        """Ghost coupling to the orbit-aligned Goldstone paired with X_i."""
+        column = self.heavy_vector_ids.index(heavy_vector)
+        return sum(self.goldstone_pairing[row, column]
+                   * self.heavy_ghost_scalar(
+                       ghost_out, ghost_in, f"G{row:03d}", xi)
+                   for row in range(33))
+
+    def light_ghost_vector(self, antighost, ghost, vector):
+        assert antighost in self.light_vector_ids
+        assert ghost in self.light_vector_ids
+        return self.structure(antighost, vector, ghost)
+
+    # Gauge-invariant interactions remain derived from the parent action.
+    def potential_vertex(self, *fields):
+        return self.invariant.potential_vertex(*fields)
+
+    def vss(self, *fields):
+        return self.invariant.vss(*fields)
+
+    def vvs(self, *fields):
+        return self.invariant.vvs(*fields)
+
+    def vvss(self, *fields):
+        return self.invariant.vvss(*fields)
+
+    def manifest(self):
+        pairing_serial = [[format(x, ".17g") for x in row]
+                          for row in self.goldstone_pairing]
+        pairing_hash = canonical_hash(pairing_serial)
+        payload = {
+            "outcome": "PARTIAL_BFM_ACTION_PASS",
+            "authority": (
+                "complete_index_form_action_and_sparse_derived_vertex_facade"
+            ),
+            "immutable_inputs": {
+                "parent_action_sha256": PARENT_ACTION_HASH,
+                "physical_basis_sha256": PHYSICAL_BASIS_HASH,
+                "background_field_quadratic_sha256": QUADRATIC_HASH,
+            },
+            "scheme": {
+                "regularization": "dimensional_regularization_d_4_minus_2epsilon",
+                "subtraction": "MSbar",
+                "background_group": "SM_U1Y_GUT_NORMALIZED_x_SU2L_x_SU3C",
+                "heavy_gauge": "equivariant_partial_R_xi_for_Spin10_over_SM",
+                "light_gauge": "ordinary_background_field_R_eta_for_SM",
+                "operator_normalization": "minus_one_quarter_F_i_squared",
+            },
+            "field_ledger": {
+                "background_sm_vectors": 12,
+                "quantum_sm_vectors": 12,
+                "heavy_vectors": 33,
+                "orbit_aligned_goldstones": 33,
+                "heavy_ghosts_complex": 33,
+                "light_ghosts_complex": 12,
+                "heavy_physical_scalars_real": 290,
+                "pq_real": 1,
+                "light_higgs_real": 4,
+            },
+            "single_action": {
+                "UV": "S_parent[Abar+a,qbar+eta]+S_fix_H+S_fix_G_over_H",
+                "EFT": "S_SM_EFT[light_background+light_quantum]+S_fix_H_same_convention",
+                "combined_gauge_fixing_source": (
+                    "ordinary_H_BRST_fermion_plus_equivariant_G_over_H_fermion"
+                ),
+                "equivariant_rule": "delta_G_over_H_squared_is_an_H_gauge_transformation",
+                "G_H_alpha": "Dbar_mu b_alpha_mu",
+                "G_heavy_i": "d_mu V_i_mu-xi*M_i*chi_i",
+                "L_fix_H": "-G_H_alpha*G_H_alpha/(2*eta_H)",
+                "L_fix_heavy": "-G_heavy_i*G_heavy_i/(2*xi)",
+                "L_light_ghost": (
+                    "-bar_c_alpha*Dbar_mu*(Dbar_mu*c_alpha+"
+                    "f_alpha_beta_gamma*b_beta_mu*c_gamma)"
+                ),
+                "L_heavy_ghost": (
+                    "-bar_u_i*(d_squared+xi*M_i_squared)*u_i+"
+                    "bar_u_i*(f_i_j_k*V_k_mu*d_mu+"
+                    "f_i_k_alpha*f_alpha_l_j*V_k_mu*V_l_mu)*u_j+"
+                    "xi*bar_u_i*(f_i_a*x_a_j_b*varphi_b+"
+                    "f_i_j_k*M_k*chi_k)*u_j+"
+                    "xi/2*f_i_j_alpha*f_k_l_alpha*bar_u_i*u_j*bar_u_k*u_l"
+                ),
+                "partial_gauge_fixing_fermion": (
+                    "psi_G_over_H=bar_u_i*(G_i-xi*b_i/2), acted_on_by_"
+                    "equivariant_BRST_with_trivial_pair; quartic_ghost_required"
+                ),
+                "light_gauge_fixing_fermion": (
+                    "Psi_H=bar_c_alpha*(G_H_alpha-eta_H*b_alpha/2)"
+                ),
+            },
+            "derived_vertex_families": [
+                "SSS", "SSSS", "VSS", "VVS", "VVSS", "VVV", "VVVV",
+                "heavy_ghost_mass", "heavy_ghost_background_vector",
+                "heavy_ghost_heavy_vector_derivative",
+                "heavy_ghost_two_vector", "heavy_ghost_scalar",
+                "heavy_ghost_goldstone", "heavy_ghost_quartic",
+                "light_ghost_background_vector", "light_ghost_quantum_vector",
+            ],
+            "goldstone_pairing": {
+                "description": "stored_G_basis_transpose_times_orbit_aligned_basis",
+                "sha256": pairing_hash,
+                "max_orthogonality_residual": self.goldstone_pairing_residual,
+                "max_reconstruction_residual": self.goldstone_reconstruction_residual,
+            },
+            "background_H_covariance": {
+                "max_heavy_mass_generator_commutator":
+                    self.max_h_covariance_mass_commutator,
+                "background_two_point_operator": "manifestly_H_covariant",
+            },
+            "one_loop_relevance": {
+                "heavy_ghost_quartic": "first_contributes_at_two_loops_without_external_ghosts",
+                "light_UV_EFT_loops": "same_H_BFM_action_and_cancel_in_soft_region",
+                "hard_heavy_system": "vector_plus_goldstone_plus_heavy_ghost",
+            },
+            "backend_policy": (
+                "PartialBFMAction_is_the_gauge_fixed_authority_facade; "
+                "PhysicalVertexAPI_is_only_the_invariant_parent_backend"
+            ),
+        }
+        payload["partial_bfm_action_sha256"] = canonical_hash(payload)
+        return payload
+
+
+def main():
+    action = PartialBFMAction()
+    payload = action.manifest()
+    (HERE / "partial_bfm_action.json").write_text(
+        json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    print(payload["outcome"])
+    print("PARTIAL_BFM_ACTION_SHA256", payload["partial_bfm_action_sha256"])
+    print("GOLDSTONE_PAIRING_SHA256", payload["goldstone_pairing"]["sha256"])
+    print("MAX_GOLDSTONE_PAIRING_RESIDUAL",
+          payload["goldstone_pairing"]["max_orthogonality_residual"])
+
+
+if __name__ == "__main__":
+    main()
