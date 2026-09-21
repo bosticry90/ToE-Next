@@ -1,4 +1,4 @@
-"""Post-execution integrity audit for the passed UVP_P01 evidence."""
+"""Post-execution integrity audit for UVP_P02."""
 
 from hashlib import sha256
 import json
@@ -21,15 +21,15 @@ def canonical_hash(payload, field="artifact_sha256"):
 
 
 def main():
-    schema = json.loads((HERE / "uvp_p01_evidence_schema.json").read_text(
+    schema = json.loads((HERE / "uvp_p02_evidence_schema.json").read_text(
         encoding="utf-8"))
-    evidence = json.loads((HERE / "uvp_p01_evidence.json").read_text(
+    evidence = json.loads((HERE / "uvp_p02_evidence.json").read_text(
         encoding="utf-8"))
-    primary = json.loads((HERE / "uvp_p01_primary.json").read_text(
+    primary = json.loads((HERE / "uvp_p02_primary.json").read_text(
         encoding="utf-8"))
-    replay = json.loads((HERE / "uvp_p01_independent_replay.json").read_text(
+    replay = json.loads((HERE / "uvp_p02_independent_replay.json").read_text(
         encoding="utf-8"))
-    uv_ir = json.loads((HERE / "uvp_p01_uv_ir_provenance.json").read_text(
+    uv_ir = json.loads((HERE / "uvp_p02_uv_ir_provenance.json").read_text(
         encoding="utf-8"))
     ledger = json.loads((HERE / "uv_pole_evaluator_results.json").read_text(
         encoding="utf-8"))
@@ -45,27 +45,25 @@ def main():
     assert evidence["independent_replay"] == replay
     assert sp.simplify(sp.sympify(primary["normalized_residue"])
                        - sp.sympify(replay["normalized_residue"])) == 0
+    assert sp.diff(sp.sympify(primary["normalized_residue"]),
+                   sp.Symbol("m2")) == 0
     assert primary["pole_expression"] == replay["pole_expression"]
     assert primary["uv_ir"] == replay["uv_ir"]
 
-    row = ledger["tests"][0]
-    assert row["test_id"] == "UVP_P01" and row["status"] == "PASS"
+    row = ledger["tests"][1]
+    assert row["test_id"] == "UVP_P02" and row["status"] == "PASS"
     assert row["derived_result"]["evidence_sha256"] == evidence_hash
     assert row["primary"]["residue_sha256"] == primary["artifact_sha256"]
     assert row["replay"]["residue_sha256"] == replay["artifact_sha256"]
     assert row["primary"]["uv_ir_provenance_sha256"] == uv_ir_hash
     assert row["replay"]["uv_ir_provenance_sha256"] == uv_ir_hash
-    # P01 evidence is immutable, but this audit must remain valid after lawful
-    # downstream advancement.  The execution-plan audit owns cursor validity.
-    ready = [candidate["test_id"] for candidate in ledger["tests"]
-             if candidate["status"] == "NOT_RUN"
-             and candidate["authorization"] == "READY"]
-    assert len(ready) <= 1
+    assert ledger["tests"][2]["authorization"] == "READY"
 
-    print("UVP_P01_EVIDENCE_AUDIT_PASS")
+    print("UVP_P02_EVIDENCE_AUDIT_PASS")
     print("NORMALIZED_RESIDUE", primary["normalized_residue"])
+    print("MASS_DERIVATIVE 0")
     print("PRIMARY_MINUS_REPLAY 0")
-    print("NEXT_AUTHORIZED_TEST", ready[0] if ready else "NONE")
+    print("NEXT_TEST UVP_P03")
 
 
 if __name__ == "__main__":

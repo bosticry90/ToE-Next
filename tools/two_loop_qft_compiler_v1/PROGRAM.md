@@ -101,6 +101,14 @@ residual, and the positive-mass primitive has no IR pole. Progress is `1/39`
 (`1/27` in the engine gate); `UVP_P02` is next. The counterterm compiler and
 Layer 6 remain blocked. See [`UVP_P01_RESULT.md`](UVP_P01_RESULT.md).
 
+The second primitive has also executed. `UVP_P02` passes with the exact
+mass-independent logarithmic-bubble residue `+1` in units of
+`1/(16*pi^2*epsilon_bar)`. The primary radial large-loop-momentum projector
+and an independent Wick-rotated Gamma-function replay agree exactly, and both
+give a zero derivative with respect to `m2`; no finite mass dependence enters
+the UV pole. Progress is `2/39` (`2/27` in the engine gate), and `UVP_P03` is
+the sole next authorized test. See [`UVP_P02_RESULT.md`](UVP_P02_RESULT.md).
+
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and
 [`one_loop_xi_cancellation_matrix.json`](one_loop_xi_cancellation_matrix.json).

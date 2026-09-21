@@ -224,6 +224,25 @@ def main():
             "UVP_P01_evidence_sha256": result["tests"][0][
                 "derived_result"]["evidence_sha256"],
         })
+    if result["tests"][1]["status"] == "PASS":
+        p02_schema = json.loads((HERE / "uvp_p02_evidence_schema.json").read_text(
+            encoding="utf-8"))
+        p02_schema_hash = sha256(json.dumps(
+            p02_schema, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        compiler_status.update({
+            "layer5a_evaluator_implementation": (
+                "P01_P02_PRIMITIVES_PRIMARY_AND_INDEPENDENT_REPLAY"),
+            "UVP_P02": "PASS",
+            "UVP_P02_evidence_schema_sha256": p02_schema_hash,
+            "UVP_P02_normalized_residue": result["tests"][1][
+                "derived_result"]["normalized_residue"],
+            "UVP_P02_mass_derivative_of_residue": result["tests"][1][
+                "derived_result"]["mass_derivative_of_residue"],
+            "UVP_P02_pole_expression": result["tests"][1][
+                "derived_result"]["pole_expression"],
+            "UVP_P02_evidence_sha256": result["tests"][1][
+                "derived_result"]["evidence_sha256"],
+        })
     (HERE / "compiler_status.json").write_text(
         json.dumps(compiler_status, indent=2) + "\n", encoding="utf-8")
     execution_status = {

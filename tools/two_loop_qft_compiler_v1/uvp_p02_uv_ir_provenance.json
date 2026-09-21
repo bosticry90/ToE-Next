@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P02",
+  "mass_domain": "m2>0",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "reason": "positive_mass_removes_IR_singularity; only_the_mass_independent_t^(-1-epsilon)_coefficient_is_logarithmically_UV_divergent",
+  "artifact_sha256": "79c637dbbdd2e5f4174c806e0a7ad189eb762ba5cbf8c6f97677addc3ecbd75f"
+}

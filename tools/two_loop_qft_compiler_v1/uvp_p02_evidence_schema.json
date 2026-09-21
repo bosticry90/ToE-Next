@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:toe-next:two-loop-qft-compiler-v1:uvp-p02-evidence-v1",
+  "title": "UVP_P02 massive rank-zero logarithmic bubble evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "test_id", "attempt", "contract_sha256",
+    "execution_plan_sha256", "convention", "primary",
+    "independent_replay", "mass_independence", "uv_ir_classification",
+    "comparison", "verdict", "artifact_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "test_id": {"const": "UVP_P02"},
+    "attempt": {"const": 1},
+    "contract_sha256": {
+      "const": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92"
+    },
+    "execution_plan_sha256": {
+      "const": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101"
+    },
+    "convention": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "dimension", "minkowski_integral", "wick_rotated_integral",
+        "measure", "epsilon_bar", "pole_unit", "mass_domain"
+      ],
+      "properties": {
+        "dimension": {"const": "d=4-2*epsilon"},
+        "minkowski_integral": {
+          "const": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d * (-i)/(k^2-m2+i0)^2]"
+        },
+        "wick_rotated_integral": {
+          "const": "mu^(2*epsilon)*Integral_E[d^d k_E/(2*pi)^d * 1/(k_E^2+m2)^2]"
+        },
+        "measure": {"const": "d^d k/(2*pi)^d"},
+        "epsilon_bar": {"const": "1/epsilon_bar=1/epsilon-gamma_E+log(4*pi)"},
+        "pole_unit": {"const": "1/(16*pi^2*epsilon_bar)"},
+        "mass_domain": {"const": "m2>0"}
+      }
+    },
+    "primary": {"$ref": "#/$defs/calculation"},
+    "independent_replay": {"$ref": "#/$defs/calculation"},
+    "mass_independence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["primary_derivative", "replay_derivative", "finite_mass_terms_excluded"],
+      "properties": {
+        "primary_derivative": {"const": "0"},
+        "replay_derivative": {"const": "0"},
+        "finite_mass_terms_excluded": {"const": true}
+      }
+    },
+    "uv_ir_classification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["uv_pole", "ir_pole", "scaleless", "rstar_required"],
+      "properties": {
+        "uv_pole": {"const": true},
+        "ir_pole": {"const": false},
+        "scaleless": {"const": false},
+        "rstar_required": {"const": false}
+      }
+    },
+    "comparison": {
+      "type": "object", "additionalProperties": false,
+      "required": ["normalized_residue_difference", "pole_expression_equal", "convention_equal"],
+      "properties": {
+        "normalized_residue_difference": {"const": "0"},
+        "pole_expression_equal": {"const": true},
+        "convention_equal": {"const": true}
+      }
+    },
+    "verdict": {"const": "PASS"},
+    "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "calculation": {
+      "type": "object", "additionalProperties": true,
+      "required": [
+        "method", "normalized_residue", "mass_derivative_of_residue",
+        "pole_expression", "artifact_sha256"
+      ],
+      "properties": {
+        "method": {"type": "string", "minLength": 1},
+        "normalized_residue": {"type": "string", "minLength": 1},
+        "mass_derivative_of_residue": {"const": "0"},
+        "pole_expression": {"type": "string", "minLength": 1},
+        "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

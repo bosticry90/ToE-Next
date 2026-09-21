@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P02",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "convention": {
+    "dimension": "d=4-2*epsilon",
+    "minkowski_integral": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d * (-i)/(k^2-m2+i0)^2]",
+    "wick_rotated_integral": "mu^(2*epsilon)*Integral_E[d^d k_E/(2*pi)^d * 1/(k_E^2+m2)^2]",
+    "measure": "d^d k/(2*pi)^d",
+    "epsilon_bar": "1/epsilon_bar=1/epsilon-gamma_E+log(4*pi)",
+    "pole_unit": "1/(16*pi^2*epsilon_bar)",
+    "mass_domain": "m2>0"
+  },
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_P02",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "radial_large_loop_momentum_logarithmic_UV_projector",
+    "integral": "mu^(2*epsilon)*Integral_E[d^d k_E/(2*pi)^d/(k_E^2+m2)^2]",
+    "dimension": "d=4-2*epsilon",
+    "large_t_factor": "-4*m2**3*u**3 + 3*m2**2*u**2 - 2*m2*u + 1",
+    "logarithmic_term": "t^(-1-epsilon)*u^0_coefficient",
+    "mass_dependent_tail": "-4*m2**3*u**3 + 3*m2**2*u**2 - 2*m2*u",
+    "mass_dependent_tail_classification": "UV_finite",
+    "radial_prefactor_at_d4": "1/(16*pi^2)",
+    "normalized_residue": "1",
+    "mass_derivative_of_residue": "0",
+    "pole_unit": "1/(16*pi^2*epsilon_bar)",
+    "pole_expression": "1/(16*pi^2*epsilon_bar)",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "66d293fd5bd34a6c405fc3db797354b8f793bcc0e126f05920cfc520ad5ecc79"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_P02",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_Wick_rotation_and_two_propagator_Gamma_function_residue",
+    "minkowski_integral": "mu^(2*epsilon)*Integral[d^d k/(2*pi)^d*(-i)/(k^2-m2+i0)^2]",
+    "wick_rotated_integral": "mu^(2*epsilon)*Integral_E[d^d k_E/(2*pi)^d/(k_E^2+m2)^2]",
+    "closed_form": "mu2^epsilon*(m2)^(d/2-2)*Gamma(2-d/2)/(4*pi)^(d/2)",
+    "dimension": "d=4-2*epsilon",
+    "normalized_residue_extraction": "limit(epsilon*16*pi^2*closed_form,epsilon->0)",
+    "normalized_residue": "1",
+    "mass_derivative_of_residue": "0",
+    "pole_unit": "1/(16*pi^2*epsilon_bar)",
+    "pole_expression": "1/(16*pi^2*epsilon_bar)",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "42a39389d4c2ae6b7b5cc133b961d5e33771dd1c981e106640f35fab8f25f6ec"
+  },
+  "mass_independence": {
+    "primary_derivative": "0",
+    "replay_derivative": "0",
+    "finite_mass_terms_excluded": true
+  },
+  "uv_ir_classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "comparison": {
+    "normalized_residue_difference": "0",
+    "pole_expression_equal": true,
+    "convention_equal": true
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "549ce62f87a6c73bd0fbc60871a50de4d6ec8952fb92ca58adb2f5f45fee1013"
+}

@@ -1,13 +1,15 @@
 # Layer-5A first-execution order
 
-> **Post-P01 record (2026-09-21):** `UVP_P01=PASS`; progress is `1/39`
-> (`1/27` in the engine gate), and `UVP_P02` is next.  The order and plan hash
-> below are unchanged.  See [`UVP_P01_RESULT.md`](UVP_P01_RESULT.md).
+> **Post-P02 record (2026-09-21):** `UVP_P01=PASS` and `UVP_P02=PASS`;
+> progress is `2/39` (`2/27` in the engine gate), and `UVP_P03` is next. The
+> order and plan hash below are unchanged. See
+> [`UVP_P01_RESULT.md`](UVP_P01_RESULT.md) and
+> [`UVP_P02_RESULT.md`](UVP_P02_RESULT.md).
 
 This file binds the frozen contract v2 hash
 `6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92`
-to its first fail-fast execution.  It does not amend the contract and records
-no executed test.
+to its first fail-fast execution. It does not amend the contract. This file
+records the current cursor while the machine ledger remains authoritative.
 
 ## Engine gate: exact order
 
