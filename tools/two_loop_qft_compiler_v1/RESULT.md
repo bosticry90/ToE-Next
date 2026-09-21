@@ -136,6 +136,24 @@ The remaining layer-3 requirements are therefore:
 No diagram count, counterterm layer, master reduction, finite `C1_GS`, or gauge
 refit is inferred.
 
+## Frozen closure task
+
+The next calculation is now preregistered in
+[`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md). Its machine-readable
+[`one_loop_xi_cancellation_matrix.json`](one_loop_xi_cancellation_matrix.json)
+contains 12 primary cells: four independently tested vector mass clusters at
+`xi=1/2,1,2`. Five aggregate tests cover the degenerate limit, full hard
+subtraction and transversality, loop-level ST replay, and the independent
+Feynman-gauge comparator. The canonical matrix hash is
+
+```text
+46b3bc390967eb256a83f4bb5b20bc46cd7f11f788f59a0ce047e48669294d96
+```
+
+The matrix requires clusterwise cancellation; agreement only after summing
+different masses cannot pass. This preregistration changes no compiler or
+physics disposition.
+
 ## Reproduction
 
 From the repository root:

@@ -37,3 +37,10 @@ background/quantum gauge-fixed vertex action and its UV-minus-EFT one-loop
 `F^2` assembly demonstrating gauge-parameter cancellation. Tree-level mass
 pairing and Ward checks do not substitute for that loop calculation. Two-loop
 diagram enumeration is therefore not authorized.
+
+The exact closure task and its 12-cell/5-aggregate-test preregistration are
+frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and
+[`one_loop_xi_cancellation_matrix.json`](one_loop_xi_cancellation_matrix.json).
+The matrix canonical SHA-256 is
+`46b3bc390967eb256a83f4bb5b20bc46cd7f11f788f59a0ce047e48669294d96`.
+This freezes acceptance criteria only; it does not supply a loop result.

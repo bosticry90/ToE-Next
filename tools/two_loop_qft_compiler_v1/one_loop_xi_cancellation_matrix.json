@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "outcome": "LAYER3_CLOSURE_TEST_MATRIX_PREREGISTERED",
+  "authority": "TEST_SPECIFICATION_ONLY_NO_LOOP_RESULT",
+  "immutable_inputs": {
+    "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
+    "background_field_quadratic_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692",
+    "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed"
+  },
+  "convention": {
+    "regularization": "dimensional_regularization_d_equals_4_minus_2_epsilon",
+    "subtraction": "MSbar",
+    "gauge": "partially_fixed_background_field_R_xi",
+    "background_operator": "minus_one_quarter_F_i_munu_F_i_munu",
+    "sm_channels": [
+      "U1Y_GUT_NORMALIZED",
+      "SU2L",
+      "SU3C"
+    ],
+    "matching_quantity": "lambda_i_in_alpha_low_inverse_equals_alpha_parent_inverse_minus_lambda_i_over_12pi",
+    "loop_components_retained_separately": [
+      "massive_vector",
+      "goldstone",
+      "ghost",
+      "eft_subtraction"
+    ],
+    "coefficient_components_retained_separately": [
+      "uv_pole",
+      "logarithmic",
+      "finite"
+    ]
+  },
+  "xi_values": [
+    "1/2",
+    "1",
+    "2"
+  ],
+  "mass_clusters": [
+    {
+      "id": "LOWER_CHARGED_8",
+      "mass_squared_over_g10_squared_omega_squared": "1/200",
+      "multiplicity_real_vectors": 8,
+      "sm_dynkin_index_T1_T2_T3": ["14/5", "0", "1"]
+    },
+    {
+      "id": "LOWER_NEUTRAL_1",
+      "mass_squared_over_g10_squared_omega_squared": "1/40",
+      "multiplicity_real_vectors": 1,
+      "sm_dynkin_index_T1_T2_T3": ["0", "0", "0"]
+    },
+    {
+      "id": "UPPER_12_A",
+      "mass_squared_over_g10_squared_omega_squared": "5/12",
+      "multiplicity_real_vectors": 12,
+      "sm_dynkin_index_T1_T2_T3": ["5", "3", "2"]
+    },
+    {
+      "id": "UPPER_12_B",
+      "mass_squared_over_g10_squared_omega_squared": "253/600",
+      "multiplicity_real_vectors": 12,
+      "sm_dynkin_index_T1_T2_T3": ["1/5", "3", "2"]
+    }
+  ],
+  "cell_matrix": [
+    {"cluster": "LOWER_CHARGED_8", "xi": "1/2", "test_id": "XI_C01"},
+    {"cluster": "LOWER_CHARGED_8", "xi": "1", "test_id": "XI_C02"},
+    {"cluster": "LOWER_CHARGED_8", "xi": "2", "test_id": "XI_C03"},
+    {"cluster": "LOWER_NEUTRAL_1", "xi": "1/2", "test_id": "XI_C04"},
+    {"cluster": "LOWER_NEUTRAL_1", "xi": "1", "test_id": "XI_C05"},
+    {"cluster": "LOWER_NEUTRAL_1", "xi": "2", "test_id": "XI_C06"},
+    {"cluster": "UPPER_12_A", "xi": "1/2", "test_id": "XI_C07"},
+    {"cluster": "UPPER_12_A", "xi": "1", "test_id": "XI_C08"},
+    {"cluster": "UPPER_12_A", "xi": "2", "test_id": "XI_C09"},
+    {"cluster": "UPPER_12_B", "xi": "1/2", "test_id": "XI_C10"},
+    {"cluster": "UPPER_12_B", "xi": "1", "test_id": "XI_C11"},
+    {"cluster": "UPPER_12_B", "xi": "2", "test_id": "XI_C12"}
+  ],
+  "expected_cluster_result": {
+    "matched_lambda_i": "T_i_times_open_1_minus_21_log_M_cluster_over_mu_close",
+    "vector_beta_jump": "minus_7_over_2_times_T_i",
+    "matching_scale_identity": "d_lambda_i_d_log_mu_plus_6_times_delta_b_i_equals_0",
+    "finite_at_mu_equals_M_cluster": "T_i",
+    "neutral_cluster_result": "zero_in_all_three_SM_channels"
+  },
+  "aggregate_tests": [
+    {
+      "id": "XI_A01",
+      "requirement": "sum_of_four_cluster_results_equals_sum_over_clusters_of_T_i_times_1_minus_21_log_M_cluster_over_mu"
+    },
+    {
+      "id": "XI_A02",
+      "requirement": "degenerate_mass_limit_equals_total_T_1_T_2_T_3_8_6_5_times_1_minus_21_log_M_over_mu"
+    },
+    {
+      "id": "XI_A03",
+      "requirement": "full_UV_minus_EFT_result_has_no_uncancelled_IR_pole_and_is_background_transverse"
+    },
+    {
+      "id": "XI_A04",
+      "requirement": "selected_one_loop_Slavnov_Taylor_identities_generated_from_the_same_BRST_action_pass_clusterwise"
+    },
+    {
+      "id": "XI_A05",
+      "requirement": "xi_equals_1_result_reproduces_the_independent_heat_kernel_vector_coefficient"
+    }
+  ],
+  "acceptance": {
+    "primary": "exact_symbolic_cancellation_of_xi_in_pole_log_and_finite_matched_sum",
+    "secondary_numeric_relative_tolerance": "1e-10",
+    "numeric_precision_minimum_decimal_digits": 50,
+    "clusterwise_pass_required": true,
+    "all_nonzero_SM_channels_required": true,
+    "component_outputs_may_depend_on_xi": true,
+    "aggregate_only_cancellation_is_insufficient": true,
+    "independent_replay_required": true
+  },
+  "promotion_policy": {
+    "pass": "all_12_cells_and_all_5_aggregate_tests_pass_with_complete_action_and_independent_replay",
+    "fail": "complete_replayed_action_gives_persistent_wrong_beta_jump_wrong_finite_coefficient_or_xi_dependence",
+    "blocked": "any_required_action_vertex_subtraction_IR_separation_or_loop_identity_is_unimplemented_or_ambiguous",
+    "two_loop_diagram_enumeration_before_pass": false
+  }
+}

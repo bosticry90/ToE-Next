@@ -21,6 +21,18 @@
     "selected_loop_level_Slavnov_Taylor_replay_in_the_same_prescription"
   ],
   "two_loop_diagram_enumeration_authorized": false,
+  "layer3_closure_spec": {
+    "outcome": "PREREGISTERED_NO_LOOP_RESULT",
+    "one_loop_xi_test_matrix_sha256": "46b3bc390967eb256a83f4bb5b20bc46cd7f11f788f59a0ce047e48669294d96",
+    "primary_cells": 12,
+    "aggregate_tests": 5,
+    "xi_values": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "mass_clusters": 4
+  },
   "finite_C1_GS": null,
   "preserved_physics_status": {
     "heavy_threshold": "DIRECT_TWO_LOOP_GAUGE_SCALAR_THRESHOLD_BLOCKED",
