@@ -1,6 +1,6 @@
 {
-  "state_version": 55,
-  "updated_utc": "2026-09-21T20:45:50Z",
+  "state_version": 56,
+  "updated_utc": "2026-09-21T21:04:42Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -551,13 +551,20 @@
       "layer5_slot_structures_populated": 21,
       "layer5_slot_complete_pole_residues_derived": 0,
       "layer5_blocker": "ONE_LOOP_1PI_UV_POLE_EVALUATOR_FOR_PARENT_SCALAR_1_2_3_4_POINT_AND_PARTIAL_BFM_QUANTUM_VECTOR_GHOST_AMPLITUDES",
+      "layer5a_uv_pole_evaluator_contract": "PREREGISTERED_12_PRIMITIVE_13_CONTROL_13_CANONICAL_TESTS",
+      "layer5a_uv_pole_evaluator_contract_sha256": "f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588",
+      "layer5a_uv_ir_separation": "AUXILIARY_MASS_PLUS_LOCAL_IR_COUNTERTERMS_WITH_OFFSHELL_REPLAY",
+      "layer5a_independent_replay_required": true,
+      "layer5a_evaluator_implemented": false,
+      "layer5a_tests_required": 38,
+      "layer5a_tests_executed": 0,
       "layer6_tensor_IBP_reduction_authorized": false,
       "counterterm_reduction_master_layers_started": false,
       "finite_C1_GS": null,
       "bfb_status": "BFB_UNRESOLVED",
       "result": "tools/two_loop_qft_compiler_v1/LAYER5_RESULT.md"
     },
-    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5_BLOCKED_BUILD_ONE_LOOP_UV_POLE_EVALUATOR_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
+    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5A_UV_POLE_EVALUATOR_CONTRACT_PREREGISTERED_EXECUTION_NEXT_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

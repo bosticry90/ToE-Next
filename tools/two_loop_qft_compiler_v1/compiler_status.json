@@ -50,7 +50,7 @@
     "independent_replay": "ONE_LOOP_XI_CANCELLATION_INDEPENDENT_REPLAY_PASS",
     "maximum_symbolic_residual": "0"
   },
-  "next_gate": "ONE_LOOP_UV_POLE_EVALUATOR_FOR_LAYER5",
+  "next_gate": "EXECUTE_ONE_LOOP_UV_POLE_EVALUATOR_CONTRACT",
   "layer3_outcome_preserved": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS",
   "layer4_topology_engine": "PASS_2_ONE_LOOP_9_TWO_LOOP_1PI",
   "layer4_topology_inventory_sha256": "778fe1a80234f7f5fc3c9cbdd02d465bf351f2958d509ef16fc9d2a6c0806021",
@@ -101,5 +101,12 @@
     "selected_scalar_2_and_3_point_UV_pole_controls"
   ],
   "layer5_blocker": "one_loop_1PI_UV_pole_evaluator_for_parent_scalar_1_2_3_4_point_and_partial_BFM_quantum_vector_ghost_amplitudes",
-  "layer6_tensor_IBP_reduction_authorized": false
+  "layer6_tensor_IBP_reduction_authorized": false,
+  "layer5a_uv_pole_evaluator_contract": "PREREGISTERED_12_PRIMITIVE_13_CONTROL_13_CANONICAL_TESTS",
+  "layer5a_uv_pole_evaluator_contract_sha256": "f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588",
+  "layer5a_uv_ir_separation": "AUXILIARY_MASS_PLUS_LOCAL_IR_COUNTERTERMS_WITH_OFFSHELL_REPLAY",
+  "layer5a_independent_replay_required": true,
+  "layer5a_evaluator_implemented": false,
+  "layer5a_tests_executed": 0,
+  "layer5a_tests_required": 38
 }
