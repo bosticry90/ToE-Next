@@ -40,9 +40,20 @@ The partial-BFM action SHA-256 is
 `2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491` and
 the one-loop result SHA-256 is
 `98d1179a02e7dc954aee49467a43e0aa6e8457b6165f04476df6a2629d3405e4`.
-Promotion layer 4 is therefore authorized but has not started. No two-loop
-diagram, finite `C1_GS`, gauge refit, or new physics verdict is inferred from
-the layer-3 pass.
+Promotion layer 4 was authorized and has now completed. Its model-independent
+topology subgate passes: two one-loop and nine two-loop 1PI background
+two-point topologies are independently reproduced, with 21 future counterterm
+slots. A 168-signature index-summed vertex catalog generates 1,896 canonical
+gauge/scalar species records and reproduces the complete layer-3 one-loop
+inventory.
+
+The full layer now passes as `TWO_LOOP_DIAGRAM_GENERATOR_PASS`. The four base
+graphs containing the equivariant quartic heavy-ghost vertex are differentiated
+into direct/exchange ordered Grassmann channels, giving 1,900 final records.
+An independent recursive enumerator reproduces the complete set and every
+symmetry denominator, while five field-colored control theories pass. Layer 5
+is authorized but has not started. See [`LAYER4_RESULT.md`](LAYER4_RESULT.md).
+No amplitude, finite `C1_GS`, gauge refit, or new physics verdict is inferred.
 
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and

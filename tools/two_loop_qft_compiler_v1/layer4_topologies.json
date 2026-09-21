@@ -1,0 +1,981 @@
+{
+  "outcome": "MODEL_INDEPENDENT_TWO_POINT_TOPOLOGY_ENGINE_PASS",
+  "immutable_partial_bfm_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "external_background_legs": "two_labelled_amputated_legs",
+  "one_loop_topologies": [
+    {
+      "topology_id": "L1_777fae2dfc26",
+      "loop_order": 1,
+      "vertex_valences": [
+        3,
+        3
+      ],
+      "external_vertices_labelled": [
+        0,
+        1
+      ],
+      "internal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "internal_propagators": 2,
+      "vertex_count": 2,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 2,
+      "uncolored_symmetry_factor": "1/2",
+      "momentum_routing": {
+        "loop_basis": [
+          "k"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0
+        ],
+        "chord_edge_ordinals": [
+          1
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L1_c486e7b87607",
+      "loop_order": 1,
+      "vertex_valences": [
+        4
+      ],
+      "external_vertices_labelled": [
+        0,
+        0
+      ],
+      "internal_edges": [
+        [
+          0,
+          0
+        ]
+      ],
+      "internal_propagators": 1,
+      "vertex_count": 1,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 2,
+      "uncolored_symmetry_factor": "1/2",
+      "momentum_routing": {
+        "loop_basis": [
+          "k"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [],
+        "chord_edge_ordinals": [
+          0
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "two_loop_topologies": [
+    {
+      "topology_id": "L2_13c9cc4e953e",
+      "loop_order": 2,
+      "vertex_valences": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "external_vertices_labelled": [
+        0,
+        1
+      ],
+      "internal_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "internal_propagators": 5,
+      "vertex_count": 4,
+      "vertex_automorphism_count": 2,
+      "uncolored_symmetry_denominator": 2,
+      "uncolored_symmetry_factor": "1/2",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0,
+          1,
+          2
+        ],
+        "chord_edge_ordinals": [
+          3,
+          4
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L2_2065c7705bfc",
+      "loop_order": 2,
+      "vertex_valences": [
+        3,
+        3,
+        4
+      ],
+      "external_vertices_labelled": [
+        2,
+        2
+      ],
+      "internal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "internal_propagators": 4,
+      "vertex_count": 3,
+      "vertex_automorphism_count": 2,
+      "uncolored_symmetry_denominator": 4,
+      "uncolored_symmetry_factor": "1/4",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0,
+          2
+        ],
+        "chord_edge_ordinals": [
+          1,
+          3
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L2_51cedfadc253",
+      "loop_order": 2,
+      "vertex_valences": [
+        3,
+        3,
+        4
+      ],
+      "external_vertices_labelled": [
+        0,
+        2
+      ],
+      "internal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "internal_propagators": 4,
+      "vertex_count": 3,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 2,
+      "uncolored_symmetry_factor": "1/2",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0,
+          1
+        ],
+        "chord_edge_ordinals": [
+          2,
+          3
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L2_54b2e142d421",
+      "loop_order": 2,
+      "vertex_valences": [
+        3,
+        3,
+        4
+      ],
+      "external_vertices_labelled": [
+        0,
+        1
+      ],
+      "internal_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "internal_propagators": 4,
+      "vertex_count": 3,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 4,
+      "uncolored_symmetry_factor": "1/4",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0,
+          2
+        ],
+        "chord_edge_ordinals": [
+          1,
+          3
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L2_7f00e0451ea0",
+      "loop_order": 2,
+      "vertex_valences": [
+        4,
+        4
+      ],
+      "external_vertices_labelled": [
+        0,
+        1
+      ],
+      "internal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "internal_propagators": 3,
+      "vertex_count": 2,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 6,
+      "uncolored_symmetry_factor": "1/6",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0
+        ],
+        "chord_edge_ordinals": [
+          1,
+          2
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L2_8ed7df507bf8",
+      "loop_order": 2,
+      "vertex_valences": [
+        4,
+        4
+      ],
+      "external_vertices_labelled": [
+        0,
+        0
+      ],
+      "internal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "internal_propagators": 3,
+      "vertex_count": 2,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 4,
+      "uncolored_symmetry_factor": "1/4",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0
+        ],
+        "chord_edge_ordinals": [
+          1,
+          2
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L2_97449cec5eee",
+      "loop_order": 2,
+      "vertex_valences": [
+        3,
+        3,
+        4
+      ],
+      "external_vertices_labelled": [
+        0,
+        1
+      ],
+      "internal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "internal_propagators": 4,
+      "vertex_count": 3,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 2,
+      "uncolored_symmetry_factor": "1/2",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0,
+          1
+        ],
+        "chord_edge_ordinals": [
+          2,
+          3
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L2_d7de182abefb",
+      "loop_order": 2,
+      "vertex_valences": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "external_vertices_labelled": [
+        0,
+        1
+      ],
+      "internal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "internal_propagators": 5,
+      "vertex_count": 4,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 2,
+      "uncolored_symmetry_factor": "1/2",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0,
+          1,
+          2
+        ],
+        "chord_edge_ordinals": [
+          3,
+          4
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "topology_id": "L2_dea90ca4b37f",
+      "loop_order": 2,
+      "vertex_valences": [
+        3,
+        3,
+        4
+      ],
+      "external_vertices_labelled": [
+        2,
+        0
+      ],
+      "internal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "internal_propagators": 4,
+      "vertex_count": 3,
+      "vertex_automorphism_count": 1,
+      "uncolored_symmetry_denominator": 2,
+      "uncolored_symmetry_factor": "1/2",
+      "momentum_routing": {
+        "loop_basis": [
+          "k",
+          "q"
+        ],
+        "external_momentum": "p_in_at_leg0_minus_p_at_leg1",
+        "tree_edge_ordinals": [
+          0,
+          1
+        ],
+        "chord_edge_ordinals": [
+          2,
+          3
+        ],
+        "edge_momentum_coefficients_k_q_p": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "one_loop_with_counterterm_slots": [
+    {
+      "slot_id": "L1_777fae2dfc26:edge0:field",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "field",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge0:mass",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "mass",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge0:gauge_parameter",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "gauge_parameter",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge1:field",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 1
+      },
+      "counterterm_kind": "field",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge1:mass",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 1
+      },
+      "counterterm_kind": "mass",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:edge1:gauge_parameter",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 1
+      },
+      "counterterm_kind": "gauge_parameter",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex0:gauge_coupling",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "gauge_coupling",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex0:VEV",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "VEV",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex0:tadpole",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "tadpole",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex0:vertex",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "vertex",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex1:gauge_coupling",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 1
+      },
+      "counterterm_kind": "gauge_coupling",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex1:VEV",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 1
+      },
+      "counterterm_kind": "VEV",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex1:tadpole",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 1
+      },
+      "counterterm_kind": "tadpole",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_777fae2dfc26:vertex1:vertex",
+      "parent_topology_id": "L1_777fae2dfc26",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 1
+      },
+      "counterterm_kind": "vertex",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_c486e7b87607:edge0:field",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "field",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_c486e7b87607:edge0:mass",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "mass",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_c486e7b87607:edge0:gauge_parameter",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "internal_edge",
+        "ordinal": 0
+      },
+      "counterterm_kind": "gauge_parameter",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_c486e7b87607:vertex0:gauge_coupling",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "gauge_coupling",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_c486e7b87607:vertex0:VEV",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "VEV",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_c486e7b87607:vertex0:tadpole",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "tadpole",
+      "coefficient": null
+    },
+    {
+      "slot_id": "L1_c486e7b87607:vertex0:vertex",
+      "parent_topology_id": "L1_c486e7b87607",
+      "location": {
+        "kind": "vertex",
+        "ordinal": 0
+      },
+      "counterterm_kind": "vertex",
+      "coefficient": null
+    }
+  ],
+  "counts": {
+    "one_loop_1PI_topologies": 2,
+    "two_loop_1PI_topologies": 9,
+    "future_counterterm_slots": 21
+  },
+  "scope_boundary": {
+    "physical_field_assignment": false,
+    "counterterm_coefficients": false,
+    "numerator_construction": false,
+    "tensor_reduction": false,
+    "integral_evaluation": false
+  },
+  "topology_inventory_sha256": "778fe1a80234f7f5fc3c9cbdd02d465bf351f2958d509ef16fc9d2a6c0806021"
+}

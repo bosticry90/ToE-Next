@@ -1,0 +1,3041 @@
+{
+  "outcome": "LAYER4_INDEX_SUMMED_VERTEX_CATALOG_PASS",
+  "immutable_partial_bfm_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "field_domains": {
+    "q": {
+      "role": "unbroken_SM_quantum_vector",
+      "range": 12,
+      "statistics": "boson",
+      "propagator": "q",
+      "mass": "0"
+    },
+    "V": {
+      "role": "heavy_quantum_vector",
+      "range": 33,
+      "statistics": "boson",
+      "propagator": "V",
+      "mass": "M_V[i]^2"
+    },
+    "G": {
+      "role": "orbit_Goldstone",
+      "range": 33,
+      "statistics": "boson",
+      "propagator": "G",
+      "mass": "xi*M_V[i]^2"
+    },
+    "H": {
+      "role": "heavy_physical_scalar",
+      "range": 290,
+      "statistics": "boson",
+      "propagator": "H",
+      "mass": "m_H[a]^2"
+    },
+    "h": {
+      "role": "retained_light_Higgs_real",
+      "range": 4,
+      "statistics": "boson",
+      "propagator": "h",
+      "mass": "0"
+    },
+    "p": {
+      "role": "PQ_Goldstone_real",
+      "range": 1,
+      "statistics": "boson",
+      "propagator": "p",
+      "mass": "0"
+    },
+    "u": {
+      "role": "heavy_ghost",
+      "range": 33,
+      "statistics": "fermionic_ghost",
+      "propagator": "U",
+      "mass": "xi*M_V[i]^2"
+    },
+    "ubar": {
+      "role": "heavy_antighost",
+      "range": 33,
+      "statistics": "fermionic_ghost",
+      "propagator": "U",
+      "mass": "xi*M_V[i]^2"
+    },
+    "c": {
+      "role": "light_SM_ghost",
+      "range": 12,
+      "statistics": "fermionic_ghost",
+      "propagator": "C",
+      "mass": "0"
+    },
+    "cbar": {
+      "role": "light_SM_antighost",
+      "range": 12,
+      "statistics": "fermionic_ghost",
+      "propagator": "C",
+      "mass": "0"
+    }
+  },
+  "vertex_signatures": [
+    {
+      "vertex_id": "BFM4_A_A_G_G",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "G",
+        "G"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_G_H",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "G",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_G_h",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "G",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_H_H",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "H",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_H_h",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "H",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_V_V",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V"
+      ],
+      "source": "background_Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_cbar_c",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "c",
+        "cbar"
+      ],
+      "ordered_internal_fields": [
+        "cbar",
+        "c"
+      ],
+      "source": "ordinary_H_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_h_h",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_q_V",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V"
+      ],
+      "source": "background_Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_q_q",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q"
+      ],
+      "source": "background_Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_A_ubar_u",
+      "valence": 4,
+      "external_background_legs": 2,
+      "internal_fields": [
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_G_G",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "G",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G",
+        "G"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_G_H",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "H",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G",
+        "H"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_G_h",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "V",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_G_p",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "V",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G",
+        "p"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_H_H",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "H",
+        "H",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "H",
+        "H"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_H_h",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "H",
+        "V",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "H",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_H_p",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "H",
+        "V",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "H",
+        "p"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_V_V",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "V"
+      ],
+      "source": "background_Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_h_h",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "h",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_h_p",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "h",
+        "p"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_V_p_p",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "p",
+        "p"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_cbar_c_q",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "c",
+        "cbar",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "cbar",
+        "c",
+        "q"
+      ],
+      "source": "ordinary_H_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_G_G",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "G",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "G",
+        "G"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_G_H",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "H",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "G",
+        "H"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_G_h",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "h",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "G",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_G_p",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "G",
+        "p"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_H_H",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "H",
+        "H",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "H",
+        "H"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_H_h",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "H",
+        "h",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "H",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_H_p",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "H",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "H",
+        "p"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_V_V",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "V"
+      ],
+      "source": "background_Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_h_h",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "h",
+        "h",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "h",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_h_p",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "h",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "h",
+        "p"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_p_p",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "p",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "p",
+        "p"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_q_q_q",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "q",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "q"
+      ],
+      "source": "background_Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM4_A_ubar_u_V",
+      "valence": 4,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u",
+        "V"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_G_G",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "G"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_H_H",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "H",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_V_G",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "G",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G"
+      ],
+      "source": "background_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_V_H",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "H",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "H"
+      ],
+      "source": "background_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_V_V",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V"
+      ],
+      "source": "background_Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_V_h",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "h"
+      ],
+      "source": "background_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_V_p",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "V",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "p"
+      ],
+      "source": "background_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_cbar_c",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "c",
+        "cbar"
+      ],
+      "ordered_internal_fields": [
+        "cbar",
+        "c"
+      ],
+      "source": "ordinary_H_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_h_h",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "h"
+      ],
+      "source": "background_scalar_kinetic",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_q_q",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q"
+      ],
+      "source": "background_Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "BFM_A_ubar_u",
+      "valence": 3,
+      "external_background_legs": 1,
+      "internal_fields": [
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "HGF_cbar_c_q",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "c",
+        "cbar",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "cbar",
+        "c",
+        "q"
+      ],
+      "source": "ordinary_H_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "HGH4_ubar_u_V_V",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u",
+        "V",
+        "V"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "HGH4_ubar_u_ubar_u",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "u",
+        "u",
+        "ubar",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u",
+        "ubar",
+        "u"
+      ],
+      "source": "equivariant_quartic_heavy_ghost",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "HGH_ubar_u_G",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u",
+        "G"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "HGH_ubar_u_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u",
+        "H"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "HGH_ubar_u_V",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u",
+        "V"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "HGH_ubar_u_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u",
+        "h"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "HGH_ubar_u_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "p",
+        "u",
+        "ubar"
+      ],
+      "ordered_internal_fields": [
+        "ubar",
+        "u",
+        "p"
+      ],
+      "source": "equivariant_heavy_FP",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_G_G",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "G",
+        "G"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_G_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "G",
+        "H"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_G_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "V",
+        "V",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "G",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_G_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "V",
+        "V",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "G",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_H_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "H",
+        "H"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_H_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "V",
+        "V",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "H",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_H_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "V",
+        "V",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "H",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "h",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "h",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_V_V_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "p",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_G_G",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "G",
+        "G"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_G_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "G",
+        "H"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_G_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "V",
+        "h",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "G",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_G_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "V",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "G",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_H_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "H",
+        "H"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_H_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "V",
+        "h",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "H",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_H_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "V",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "H",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "h",
+        "h",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "h",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "h",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "h",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_V_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "p",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "p",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_G_G",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "G",
+        "G"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_G_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "G",
+        "H"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_G_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "h",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "G",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_G_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "p",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "G",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_H_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "H",
+        "H"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_H_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "h",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "H",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_H_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "p",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "H",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "h",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "h",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "p",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "h",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN4_q_q_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "p",
+        "p",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "p",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_G_G",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G",
+        "G"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_G_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G",
+        "H"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_G_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "V",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G",
+        "h"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_G_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "V",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "G",
+        "p"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_H_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "H",
+        "H"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_H_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "V",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "H",
+        "h"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_H_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "V",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "H",
+        "p"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_h_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "h",
+        "h"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_h_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "h",
+        "p"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_V_p_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "p",
+        "p"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_q_G_G",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "G",
+        "G"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_q_H_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "H",
+        "H"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "KIN_q_h_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "h",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "h",
+        "h"
+      ],
+      "source": "scalar_kinetic_VSS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_G_G",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "G"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "G"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_G_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "H"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_G_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_G_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_H_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "H"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_H_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_H_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_h_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_h_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_G_p_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_H_H_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "H"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_H_H_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_H_H_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_H_h_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_H_h_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_H_p_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_h_h_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_h_h_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_h_p_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT3_p_p_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "p",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "p",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_third_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_G_G",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_G_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "G",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "G",
+        "H"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_G_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "G",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "G",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_G_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "G",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "G",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_H_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "H",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "H",
+        "H"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_H_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "H",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "H",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_H_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "H",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "H",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_G_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "G",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "G",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_H_H_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "H",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "H",
+        "H"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_H_H_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "H",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "H",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_H_H_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "H",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "H",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_H_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_H_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_H_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "H",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "H",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_h_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "h",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "h",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_h_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "h",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "h",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_h_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "h",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "h",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_G_p_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "p",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "G",
+        "p",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_H_H_H",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_H_H_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "H",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "H",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_H_H_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "H",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "H",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_H_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_H_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_H_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "H",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "H",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_h_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "h",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "h",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_h_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "h",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "h",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_h_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "h",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "h",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_H_p_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "p",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "H",
+        "p",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_h_h_h_h",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "h",
+        "h",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "h",
+        "h",
+        "h"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_h_h_h_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "h",
+        "h",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "h",
+        "h",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_h_h_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "h",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "h",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_h_p_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "h",
+        "p",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "h",
+        "p",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "POT4_p_p_p_p",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "p",
+        "p",
+        "p",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "p",
+        "p",
+        "p",
+        "p"
+      ],
+      "source": "PARENT_ACTION_V1_fourth_derivative",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "VEV_V_V_G",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "G"
+      ],
+      "source": "scalar_kinetic_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "VEV_V_V_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "H"
+      ],
+      "source": "scalar_kinetic_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "VEV_V_V_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "h"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "VEV_V_V_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "p"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "VEV_q_V_G",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "G",
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "G"
+      ],
+      "source": "scalar_kinetic_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "VEV_q_V_H",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "H",
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "H"
+      ],
+      "source": "scalar_kinetic_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "VEV_q_V_h",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "h",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "h"
+      ],
+      "source": "scalar_kinetic_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "VEV_q_V_p",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "p",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "p"
+      ],
+      "source": "scalar_kinetic_VVS",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "YM4_V_V_V_V",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "V",
+        "V"
+      ],
+      "source": "Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "YM4_q_V_V_V",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "V",
+        "V"
+      ],
+      "source": "Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "YM4_q_q_V_V",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "V",
+        "V"
+      ],
+      "source": "Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "YM4_q_q_q_q",
+      "valence": 4,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "q",
+        "q",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "q",
+        "q"
+      ],
+      "source": "Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "YM_V_V_V",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "V"
+      ],
+      "ordered_internal_fields": [
+        "V",
+        "V",
+        "V"
+      ],
+      "source": "Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "YM_q_V_V",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "V",
+        "V",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "V",
+        "V"
+      ],
+      "source": "Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    },
+    {
+      "vertex_id": "YM_q_q_q",
+      "valence": 3,
+      "external_background_legs": 0,
+      "internal_fields": [
+        "q",
+        "q",
+        "q"
+      ],
+      "ordered_internal_fields": [
+        "q",
+        "q",
+        "q"
+      ],
+      "source": "Yang_Mills",
+      "coefficient_policy": "on_demand_tensor_from_PartialBFMAction"
+    }
+  ],
+  "scope": "gauge_scalar_C1_GS_no_Yukawa_vertices",
+  "representation": "exact_index_summed_physical_mass_basis; each propagator dummy index has an explicit finite domain and mass-table identifier",
+  "not_claimed": [
+    "complete_nonYukawa_boundary_including_fermion_gauge_loops",
+    "counterterm_coefficients",
+    "tensor_reduction",
+    "integral_values"
+  ],
+  "vertex_catalog_sha256": "1a7ddef7a9df34c8827317325ee4f34d0ac09e684c4cba99dded88da6667b567"
+}

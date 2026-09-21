@@ -1,0 +1,12 @@
+{
+  "outcome": "INDEPENDENT_CANONICAL_SPECIES_ENUMERATION_PASS",
+  "representation": "recursive_edge_assignment_with_independent_canonicalization",
+  "base_species_graphs": 1896,
+  "ordered_quartic_ghost_channel_records": 8,
+  "final_records": 1900,
+  "set_difference_primary_minus_replay": 0,
+  "set_difference_replay_minus_primary": 0,
+  "maximum_symmetry_denominator_residual": 0,
+  "statistics_sign_mismatches": 0,
+  "imports_primary_species_enumerator": false
+}

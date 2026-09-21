@@ -1,0 +1,17 @@
+{
+  "outcome": "ORDERED_QUARTIC_GHOST_VERTEX_PASS",
+  "raw_grassmann_derivative_signs": [
+    1,
+    -1,
+    -1,
+    1
+  ],
+  "antisymmetrized_vertex": "xi*(f[a,b,A]*f[c,d,A]-f[c,b,A]*f[a,d,A])",
+  "flow_channels": [
+    "direct",
+    "exchange"
+  ],
+  "base_graphs": 4,
+  "ordered_channel_records": 8,
+  "all_statistics_signs_resolved": true
+}

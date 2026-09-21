@@ -1,6 +1,6 @@
 {
-  "state_version": 53,
-  "updated_utc": "2026-09-21T19:06:17Z",
+  "state_version": 54,
+  "updated_utc": "2026-09-21T20:06:14Z",
   "research": {
     "toe_research": "ACTIVE",
     "theory_integration": "ACTIVE",
@@ -42,12 +42,12 @@
       "downstream": "AUTHORIZED_FOR_SEPARATE_ADMISSION"
     },
     "last_completed_calculation": {
-      "calculation": "TWO_LOOP_QFT_COMPILER_V1_LAYER3_CLOSURE",
-      "completed_utc": "2026-09-21T19:06:17Z",
-      "outcome": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS",
-      "authority": "COMPLETE_PARTIAL_BFM_ACTION_AND_EXACT_12_CELL_GENERAL_XI_ONE_LOOP_F2_CANCELLATION_WITH_INDEPENDENT_REPLAY",
-      "result": "tools/two_loop_qft_compiler_v1/RESULT.md",
-      "qualified_stop": "TWO_LOOP_DIAGRAM_ENUMERATION_AUTHORIZED_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED",
+      "calculation": "TWO_LOOP_QFT_COMPILER_V1_LAYER4",
+      "completed_utc": "2026-09-21T20:06:14Z",
+      "outcome": "TWO_LOOP_DIAGRAM_GENERATOR_PASS",
+      "authority": "COMPLETE_1900_RECORD_GAUGE_SCALAR_TWO_LOOP_INVENTORY_WITH_ORDERED_QUARTIC_GHOST_CHANNELS_AND_INDEPENDENT_REPLAY",
+      "result": "tools/two_loop_qft_compiler_v1/LAYER4_RESULT.md",
+      "qualified_stop": "LAYER5_COUNTERTERM_COMPILER_AUTHORIZED_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED",
       "bfb_status": "BFB_UNRESOLVED",
       "physical_scale_fixed": false,
       "fermion_fit_started": false,
@@ -458,7 +458,7 @@
       "scalar_vertex_orders": [2, 3, 4],
       "finite_C1_GS_comparison": "PREREGISTERED_BEFORE_RESULT",
       "finite_C1_GS": null,
-      "diagram_generator": "NOT_IMPLEMENTED",
+      "diagram_generator": "TWO_LOOP_DIAGRAM_GENERATOR_PASS_VIA_TWO_LOOP_QFT_COMPILER_V1",
       "one_loop_counterterm_layer": "NOT_IMPLEMENTED",
       "two_loop_reduction_and_master_layer": "NOT_IMPLEMENTED",
       "gauge_parameter_cancellation": "ONE_LOOP_LAYER3_PASS_TWO_LOOP_NOT_YET_TESTED",
@@ -470,7 +470,7 @@
       "result": "calculations/canonical_so10_direct_two_loop_gauge_scalar_threshold/RESULT.md"
     },
     "two_loop_qft_compiler_v1": {
-      "outcome": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS",
+      "outcome": "TWO_LOOP_DIAGRAM_GENERATOR_PASS",
       "scientific_target": "FINITE_CENTERED_C1_GS_FOR_FROZEN_CANONICAL_BENCHMARK",
       "program_admitted": true,
       "component_basis_gate": "CANONICAL_328_REAL_COMPONENT_BASIS_PASS",
@@ -518,13 +518,34 @@
       "layer3_closure_primary_cells": 12,
       "layer3_closure_aggregate_tests": 5,
       "layer3_closure_specification": "EXECUTED_UNCHANGED_ALL_12_PRIMARY_CELLS_AND_5_AGGREGATE_TESTS_PASS",
-      "diagram_counterterm_reduction_master_layers_started": false,
+      "layer3_outcome_preserved": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS",
       "two_loop_diagram_enumeration_authorized": true,
+      "two_loop_diagram_enumeration_started": true,
+      "layer4_topology_engine": "PASS_2_ONE_LOOP_9_TWO_LOOP_1PI",
+      "layer4_topology_inventory_sha256": "778fe1a80234f7f5fc3c9cbdd02d465bf351f2958d509ef16fc9d2a6c0806021",
+      "layer4_independent_topology_replay": "PASS_RECURSIVE_HALF_EDGE_PAIRINGS",
+      "layer4_small_theory_controls": "PASS_PHI4_TADPOLE_SUNSET_DOUBLE_SCOOP_AND_VALENCE_CLASS_COUNTS",
+      "layer4_future_counterterm_slots": 21,
+      "layer4_vertex_catalog": "PASS_168_INDEX_SUMMED_SIGNATURES",
+      "layer4_vertex_catalog_sha256": "1a7ddef7a9df34c8827317325ee4f34d0ac09e684c4cba99dded88da6667b567",
+      "layer4_species_base_graph_count": 1896,
+      "layer4_species_diagram_count": 1900,
+      "layer4_species_inventory_sha256": "46f35ed04bff58cd9afd3673da724c376209cac0cd3cd4a15ff252d6ad1ae837",
+      "layer4_quartic_ghost_base_graphs": 4,
+      "layer4_quartic_ghost_ordered_channel_records": 8,
+      "layer4_unresolved_quartic_ghost_diagrams": 0,
+      "layer4_ordered_quartic_ghost_vertex": "PASS_DIRECT_EXCHANGE_ANTISYMMETRIZATION_AND_LOOP_PARITY",
+      "layer4_independent_complete_field_assignment_replay": "PASS_ZERO_SET_DIFFERENCE_ZERO_SYMMETRY_DENOMINATOR_RESIDUAL",
+      "layer4_field_colored_controls": "PASS_PHI4_PHI3_SCALAR_QED_YANG_MILLS_GHOST_ABELIAN_HIGGS_RXI",
+      "layer4_one_loop_inventory_regression": "PASS_6_REQUIRED_HEAVY_VECTOR_GOLDSTONE_GHOST_CLASSES",
+      "layer4_blocker": null,
+      "layer5_counterterm_derivation_authorized": true,
+      "counterterm_reduction_master_layers_started": false,
       "finite_C1_GS": null,
       "bfb_status": "BFB_UNRESOLVED",
-      "result": "tools/two_loop_qft_compiler_v1/RESULT.md"
+      "result": "tools/two_loop_qft_compiler_v1/LAYER4_RESULT.md"
     },
-    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER3_PASS_LAYER4_TWO_LOOP_DIAGRAM_ENUMERATION_AUTHORIZED_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED"
+    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER4_PASS_LAYER5_COUNTERTERM_COMPILER_AUTHORIZED_NOT_STARTED_FINITE_C1_GS_UNCOMPUTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",

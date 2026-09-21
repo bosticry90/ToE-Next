@@ -1,5 +1,5 @@
 {
-  "outcome": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS",
+  "outcome": "TWO_LOOP_DIAGRAM_GENERATOR_PASS",
   "physical_basis_sha256": "af6354e26e27d47d1de9439b1336361b0a288d68f5e35a21f58ce87010c3b57e",
   "background_field_quadratic": "PASS",
   "background_field_quadratic_sha256": "b983a8d8dae078761d61c8492ddb583f984398e56483cd306e2382e68ea2e692",
@@ -50,5 +50,24 @@
     "independent_replay": "ONE_LOOP_XI_CANCELLATION_INDEPENDENT_REPLAY_PASS",
     "maximum_symbolic_residual": "0"
   },
-  "next_gate": "TWO_LOOP_DIAGRAM_ENUMERATION_LAYER_4"
+  "next_gate": "ONE_LOOP_COUNTERTERM_COMPILER_LAYER_5",
+  "layer3_outcome_preserved": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS",
+  "layer4_topology_engine": "PASS_2_ONE_LOOP_9_TWO_LOOP_1PI",
+  "layer4_topology_inventory_sha256": "778fe1a80234f7f5fc3c9cbdd02d465bf351f2958d509ef16fc9d2a6c0806021",
+  "layer4_independent_topology_replay": "INDEPENDENT_TOPOLOGY_REPLAY_PASS",
+  "layer4_small_theory_controls": "SMALL_THEORY_TOPOLOGY_CONTROLS_PASS",
+  "layer4_vertex_catalog": "PASS_168_INDEX_SUMMED_SIGNATURES",
+  "layer4_vertex_catalog_sha256": "1a7ddef7a9df34c8827317325ee4f34d0ac09e684c4cba99dded88da6667b567",
+  "layer4_species_assignment": "CANONICAL_SPECIES_DIAGRAM_ASSIGNMENT_PASS",
+  "layer4_species_diagram_count": 1900,
+  "layer4_species_inventory_sha256": "46f35ed04bff58cd9afd3673da724c376209cac0cd3cd4a15ff252d6ad1ae837",
+  "layer4_unresolved_quartic_ghost_diagrams": 0,
+  "layer4_one_loop_inventory_regression": "LAYER3_ONE_LOOP_DIAGRAM_INVENTORY_REGRESSION_PASS",
+  "layer4_blocker": null,
+  "layer4_independent_complete_field_assignment_replay": "INDEPENDENT_CANONICAL_SPECIES_ENUMERATION_PASS",
+  "layer5_counterterm_derivation_authorized": true,
+  "layer4_field_colored_controls": "FIELD_COLORED_CONTROL_THEORIES_PASS",
+  "layer4_quartic_ghost_base_graphs": 4,
+  "layer4_quartic_ghost_ordered_channel_records": 8,
+  "layer4_ordered_quartic_ghost_vertex": "ORDERED_QUARTIC_GHOST_VERTEX_PASS"
 }

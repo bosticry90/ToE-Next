@@ -1,0 +1,7 @@
+{
+  "outcome": "INDEPENDENT_TOPOLOGY_REPLAY_PASS",
+  "one_loop_topologies": 2,
+  "two_loop_topologies": 9,
+  "imports_primary_topology_generator": false,
+  "representation": "recursive_labelled_half_edge_pairings"
+}

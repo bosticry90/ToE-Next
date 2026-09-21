@@ -1,0 +1,34 @@
+{
+  "outcome": "FIELD_COLORED_CONTROL_THEORIES_PASS",
+  "controls": {
+    "real_phi4": {
+      "field_colored_two_loop_diagrams": 2,
+      "primary_minus_independent": 0,
+      "independent_minus_primary": 0
+    },
+    "cubic_scalar": {
+      "field_colored_two_loop_diagrams": 2,
+      "primary_minus_independent": 0,
+      "independent_minus_primary": 0
+    },
+    "scalar_QED": {
+      "field_colored_two_loop_diagrams": 8,
+      "primary_minus_independent": 0,
+      "independent_minus_primary": 0
+    },
+    "Yang_Mills_ghost": {
+      "field_colored_two_loop_diagrams": 24,
+      "primary_minus_independent": 0,
+      "independent_minus_primary": 0
+    },
+    "Abelian_Higgs_Rxi": {
+      "field_colored_two_loop_diagrams": 46,
+      "primary_minus_independent": 0,
+      "independent_minus_primary": 0
+    }
+  },
+  "engines": [
+    "Cartesian_edge_coloring_plus_automorphism_quotient",
+    "recursive_edge_assignment_plus_independent_canonicalization"
+  ]
+}

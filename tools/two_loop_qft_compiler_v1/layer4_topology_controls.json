@@ -1,0 +1,62 @@
+{
+  "outcome": "SMALL_THEORY_TOPOLOGY_CONTROLS_PASS",
+  "controls": {
+    "real_phi4_one_loop_tadpole": "1/2",
+    "real_phi4_two_loop_sunset": "1/6",
+    "real_phi4_two_loop_double_scoop": "1/4",
+    "cubic_scalar_two_loop_topology_count": 2,
+    "mixed_cubic_quartic_two_loop_topology_count": 5,
+    "scalar_QED_supported_valence_classes": [
+      [
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "Yang_Mills_ghost_supported_valence_classes": [
+      [
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "Abelian_Higgs_Rxi_supported_valence_classes": [
+      [
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ]
+  },
+  "qualification": "scalar_QED_Yang_Mills_ghost_and_Abelian_Higgs_field-colored inventories remain part of the physical-assignment subgate"
+}
