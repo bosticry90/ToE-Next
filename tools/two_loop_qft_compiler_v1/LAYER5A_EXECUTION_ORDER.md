@@ -1,11 +1,12 @@
 # Layer-5A first-execution order
 
-> **Post-P03 record (2026-09-21):** `UVP_P01=PASS`, `UVP_P02=PASS`, and
-> `UVP_P03=PASS`; progress is `3/39` (`3/27` in the engine gate), and
-> `UVP_P04` is next. The order and plan hash below are unchanged. See
+> **Post-P04 record (2026-09-22):** `UVP_P01--P04=PASS`; progress is `4/39`
+> (`4/27` in the engine gate), and `UVP_P05` is next. The order and plan hash
+> below are unchanged. See
 > [`UVP_P01_RESULT.md`](UVP_P01_RESULT.md) and
 > [`UVP_P02_RESULT.md`](UVP_P02_RESULT.md), and
-> [`UVP_P03_RESULT.md`](UVP_P03_RESULT.md).
+> [`UVP_P03_RESULT.md`](UVP_P03_RESULT.md), and
+> [`UVP_P04_RESULT.md`](UVP_P04_RESULT.md).
 
 This file binds the frozen contract v2 hash
 `6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92`

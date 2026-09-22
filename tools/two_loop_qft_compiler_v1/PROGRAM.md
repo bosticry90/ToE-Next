@@ -117,6 +117,16 @@ residuals and the integrand sign-identity residual are exactly zero. Progress
 is `3/39` (`3/27` in the engine gate); `UVP_P04` alone is next. See
 [`UVP_P03_RESULT.md`](UVP_P03_RESULT.md).
 
+The fourth primitive is the first tensor-algebra gate. `UVP_P04` passes for
+`Integral_E[k_mu*k_nu/(k^2+m2)^2]`: exact reduction with
+`delta_mu_nu/d`, followed by Laurent expansion, gives normalized tensor
+coefficient `-m2/2`. An independent Schwinger-parameter Gaussian-source replay
+agrees exactly and both contractions return the scalar integral with zero
+residual. A quarantined `d=4` shortcut leaves the pole unchanged but misses a
+finite `-m2/4` term in `1/(16*pi^2)` units, proving why the promoted route
+retains `d=4-2*epsilon`. Progress is `4/39` (`4/27`); `UVP_P05` alone is next.
+See [`UVP_P04_RESULT.md`](UVP_P04_RESULT.md).
+
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and
 [`one_loop_xi_cancellation_matrix.json`](one_loop_xi_cancellation_matrix.json).

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P04",
+  "mass_domain": "m2>0",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "reason": "the_original_massive_tensor_integral_has_no_IR_pole; the_local_logarithmic_UV_coefficient_is_extracted_after_exact_d_dimensional_tensor_reduction",
+  "artifact_sha256": "a0cc08644785913c282bb23120d1fabb9cb0809b3e5848f289d9da1bb5a9de9e"
+}

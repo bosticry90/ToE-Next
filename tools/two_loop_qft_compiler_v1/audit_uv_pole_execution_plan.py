@@ -263,6 +263,27 @@ def main():
             "UVP_P03_evidence_sha256": result["tests"][2][
                 "derived_result"]["evidence_sha256"],
         })
+    if result["tests"][3]["status"] == "PASS":
+        p04_schema = json.loads((HERE / "uvp_p04_evidence_schema.json").read_text(
+            encoding="utf-8"))
+        p04_schema_hash = sha256(json.dumps(
+            p04_schema, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        compiler_status.update({
+            "layer5a_evaluator_implementation": (
+                "P01_P04_PRIMITIVES_PRIMARY_AND_INDEPENDENT_REPLAY"),
+            "UVP_P04": "PASS",
+            "UVP_P04_evidence_schema_sha256": p04_schema_hash,
+            "UVP_P04_normalized_tensor_residue_coefficient": result["tests"][3][
+                "derived_result"]["normalized_tensor_residue_coefficient"],
+            "UVP_P04_tensor_structure": result["tests"][3][
+                "derived_result"]["tensor_structure"],
+            "UVP_P04_maximum_contraction_residual": result["tests"][3][
+                "derived_result"]["maximum_contraction_residual"],
+            "UVP_P04_premature_d4_missed_finite_shift": result["tests"][3][
+                "derived_result"]["premature_d4_missed_finite_shift"],
+            "UVP_P04_evidence_sha256": result["tests"][3][
+                "derived_result"]["evidence_sha256"],
+        })
     (HERE / "compiler_status.json").write_text(
         json.dumps(compiler_status, indent=2) + "\n", encoding="utf-8")
     execution_status = {

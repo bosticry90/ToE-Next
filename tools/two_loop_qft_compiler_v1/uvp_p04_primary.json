@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P04",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "d_dimensional_rotational_tensor_reducer_with_radial_UV_projector",
+  "euclidean_integral": "mu^(2*epsilon)*Integral_E[d^d k/(2*pi)^d*k_mu*k_nu/(k^2+m2)^2]",
+  "dimension": "d=4-2*epsilon",
+  "tensor_identity": "T_mu_nu=delta_mu_nu*S/d",
+  "scalar_contraction": "S=mu^(2*epsilon)*Integral_E[d^d k/(2*pi)^d*k^2/(k^2+m2)^2]",
+  "large_t_factor": "-4*m2**3*u**3 + 3*m2**2*u**2 - 2*m2*u + 1",
+  "logarithmic_u_power": 1,
+  "scalar_contraction_normalized_residue": "-2*m2",
+  "tensor_reduction_coefficient_before_laurent": "1/(4-2*epsilon)",
+  "normalized_tensor_residue_coefficient": "-m2/2",
+  "tensor_pole_expression": "delta_mu_nu*(-m2/2)/(16*pi^2*epsilon_bar)",
+  "contraction_residual": "0",
+  "operation_order": [
+    "form_scalar_contraction_in_d_dimensions",
+    "apply_exact_delta_mu_nu_over_d",
+    "retain_d_equals_4_minus_2epsilon",
+    "resolve_pole_times_epsilon_terms",
+    "extract_UV_pole"
+  ],
+  "adversarial_premature_d4": {
+    "used_by_promoted_route": false,
+    "shortcut_coefficient": "1/4",
+    "pole_residue_coefficient": "-m2/2",
+    "missed_finite_shift_exact_minus_shortcut_in_1_over_16pi2_units": "-m2/4"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "097b96f20361d393b166b7a51c96167d999d8d798dcce508f497eaadbcedf441"
+}

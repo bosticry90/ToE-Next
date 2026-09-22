@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:toe-next:two-loop-qft-compiler-v1:uvp-p04-evidence-v1",
+  "title": "UVP_P04 rank-two d-dimensional tensor-reduction evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "test_id", "attempt", "contract_sha256",
+    "execution_plan_sha256", "convention", "primary",
+    "independent_replay", "comparison", "adversarial_d4_check",
+    "uv_ir_classification", "verdict", "artifact_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "test_id": {"const": "UVP_P04"},
+    "attempt": {"const": 1},
+    "contract_sha256": {
+      "const": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92"
+    },
+    "execution_plan_sha256": {
+      "const": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101"
+    },
+    "convention": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "dimension", "euclidean_integral", "tensor_identity", "pole_unit",
+        "mass_domain"
+      ],
+      "properties": {
+        "dimension": {"const": "d=4-2*epsilon"},
+        "euclidean_integral": {
+          "const": "mu^(2*epsilon)*Integral_E[d^d k/(2*pi)^d*k_mu*k_nu/(k^2+m2)^2]"
+        },
+        "tensor_identity": {"const": "T_mu_nu=delta_mu_nu*S/d"},
+        "pole_unit": {"const": "1/(16*pi^2*epsilon_bar)"},
+        "mass_domain": {"const": "m2>0"}
+      }
+    },
+    "primary": {"$ref": "#/$defs/calculation"},
+    "independent_replay": {"$ref": "#/$defs/calculation"},
+    "comparison": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "residue_difference", "primary_contraction_residual",
+        "replay_contraction_residual", "tensor_pole_expression_equal"
+      ],
+      "properties": {
+        "residue_difference": {"const": "0"},
+        "primary_contraction_residual": {"const": "0"},
+        "replay_contraction_residual": {"const": "0"},
+        "tensor_pole_expression_equal": {"const": true}
+      }
+    },
+    "adversarial_d4_check": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "premature_d4_used_by_promoted_route", "pole_residue_unchanged",
+        "missed_finite_shift_exact_minus_shortcut_in_1_over_16pi2_units",
+        "primary_replay_shift_difference"
+      ],
+      "properties": {
+        "premature_d4_used_by_promoted_route": {"const": false},
+        "pole_residue_unchanged": {"const": true},
+        "missed_finite_shift_exact_minus_shortcut_in_1_over_16pi2_units": {
+          "const": "-m2/4"
+        },
+        "primary_replay_shift_difference": {"const": "0"}
+      }
+    },
+    "uv_ir_classification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["uv_pole", "ir_pole", "scaleless", "rstar_required"],
+      "properties": {
+        "uv_pole": {"const": true},
+        "ir_pole": {"const": false},
+        "scaleless": {"const": false},
+        "rstar_required": {"const": false}
+      }
+    },
+    "verdict": {"const": "PASS"},
+    "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "calculation": {
+      "type": "object", "additionalProperties": true,
+      "required": [
+        "method", "normalized_tensor_residue_coefficient",
+        "tensor_pole_expression", "contraction_residual", "artifact_sha256"
+      ],
+      "properties": {
+        "method": {"type": "string", "minLength": 1},
+        "normalized_tensor_residue_coefficient": {"const": "-m2/2"},
+        "tensor_pole_expression": {
+          "const": "delta_mu_nu*(-m2/2)/(16*pi^2*epsilon_bar)"
+        },
+        "contraction_residual": {"const": "0"},
+        "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

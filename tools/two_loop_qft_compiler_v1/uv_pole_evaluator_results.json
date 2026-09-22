@@ -7,14 +7,14 @@
   "authority": "PARTIAL_TEST_AUTHORITY",
   "counters": {
     "total_required": 39,
-    "executed": 3,
-    "passed": 3,
+    "executed": 4,
+    "passed": 4,
     "blocked": 0,
     "failed": 0,
-    "not_run_or_locked": 36,
+    "not_run_or_locked": 35,
     "engine_required": 27,
-    "engine_executed": 3,
-    "engine_passed": 3,
+    "engine_executed": 4,
+    "engine_passed": 4,
     "canonical_required": 12,
     "canonical_executed": 0,
     "canonical_passed": 0
@@ -152,26 +152,40 @@
       "global_ordinal": 4,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "READY",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "d_dimensional_rotational_tensor_reducer_with_radial_UV_projector",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "097b96f20361d393b166b7a51c96167d999d8d798dcce508f497eaadbcedf441",
+        "uv_ir_provenance_sha256": "a0cc08644785913c282bb23120d1fabb9cb0809b3e5848f289d9da1bb5a9de9e"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_Schwinger_parameter_Gaussian_source_replay",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "c8890ce8597309156871823239b7dc89e6366d9d8e042a4cfce7b55357d3a7a9",
+        "uv_ir_provenance_sha256": "a0cc08644785913c282bb23120d1fabb9cb0809b3e5848f289d9da1bb5a9de9e"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "normalized_tensor_residue_coefficient": "-m2/2",
+        "tensor_structure": "delta_mu_nu",
+        "pole_unit": "1/(16*pi^2*epsilon_bar)",
+        "tensor_pole_expression": "delta_mu_nu*(-m2/2)/(16*pi^2*epsilon_bar)",
+        "primary_minus_replay": "0",
+        "maximum_contraction_residual": "0",
+        "premature_d4_missed_finite_shift": "-m2/4",
+        "evidence_sha256": "8c848af052e922838a0329c717d89c24a38fc97e740b39151689e3eec8df4326"
+      },
+      "verdict_reason": "primary_d_dimensional_tensor_reduction_equals_independent_Schwinger_Gaussian_replay_with_exact_contraction_and_d4_adversarial_checks",
+      "evidence_files": [
+        "uvp_p04_primary.json",
+        "uvp_p04_independent_replay.json",
+        "uvp_p04_uv_ir_provenance.json",
+        "uvp_p04_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P05",
@@ -179,7 +193,7 @@
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
       "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
+      "authorization": "READY",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1084,5 +1098,5 @@
       "evidence_files": []
     }
   ],
-  "result_sha256": "7f89b29775731b8d24eed996a2f2fdd1dba2a000169d232cfd013ec33ae903ab"
+  "result_sha256": "d5b1e61b09431fdfb4a0429bbd4f7f0b4b4bdb6b731cd69239e665fd0359dd9f"
 }
