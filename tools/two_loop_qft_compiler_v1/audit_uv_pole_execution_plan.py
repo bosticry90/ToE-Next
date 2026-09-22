@@ -307,6 +307,20 @@ def main():
             "UVP_P05_evidence_sha256": result["tests"][4][
                 "derived_result"]["evidence_sha256"],
         })
+    # Later engine/canonical execution must not be downgraded by the primitive
+    # status refresh above. Promote the complete engine description after the
+    # exact 27/27 checkpoint and expose the first fail-fast implementation
+    # target rather than the generic overall ledger state.
+    if all(row["status"] == "PASS" for row in result["tests"][:27]):
+        compiler_status["layer5a_evaluator_implementation"] = (
+            "P01_P13_C01_C13_M01_PRIMARY_AND_INDEPENDENT_REPLAY_PASS"
+        )
+    if blocked:
+        blocked_row = next(row for row in result["tests"]
+                           if row["status"] == "BLOCKED")
+        blocker_code = blocked_row.get("derived_result", {}).get("blocker_code")
+        if blocker_code and blocker_code.endswith("_MISSING"):
+            compiler_status["next_gate"] = "IMPLEMENT_" + blocker_code[:-8]
     (HERE / "compiler_status.json").write_text(
         json.dumps(compiler_status, indent=2) + "\n", encoding="utf-8")
     execution_status = {

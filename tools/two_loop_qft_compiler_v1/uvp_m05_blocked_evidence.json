@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M05",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_M05",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "predecessor_M04_evidence_sha256": "2e199c35a4f48e210a4de42178d45b1df9d622676956f968462b9ebb12b7018c",
+    "method": "primary_capability_audit_after_M04_cubic_kernel_promotion",
+    "inventory": {
+      "targets": {
+        "real_quartics": 18,
+        "complex_quartics": 4,
+        "real_directions": 26
+      },
+      "required": [
+        "complete parent-origin one-loop scalar four-point graph inventory",
+        "complete symmetrized V4_ABEF*V4_CDEF contractions over 328 real fields",
+        "complete partial-BFM vector/Goldstone/ghost scalar four-point pole assembly",
+        "projection onto 18 real plus four complex equals 26 real quartic directions",
+        "inventory-independent fourth-derivative functional replay"
+      ],
+      "available": [
+        "M04 exhaustive sparse V3*V4 cubic contraction backend",
+        "exact parent quartic invariant evaluator and on-demand fourth derivatives",
+        "passed scalar field residues from M02",
+        "validated partial-BFM action and physical vertex API"
+      ],
+      "missing": [
+        "exhaustive symmetrized V4*V4 parent four-point contraction backend",
+        "complete gauge/Goldstone/ghost scalar four-point pole kernel including gauge-generated quartics",
+        "rank-26-real quartic invariant projector",
+        "inventory-independent full fourth-derivative replay"
+      ]
+    },
+    "inventory_sha256": "dca306cdbba6d39ea91eafce4f863361043cda238fe9ff841285241ad9512e54",
+    "all_26_real_quartic_directions_derived": false,
+    "residue_values": null,
+    "blocker_code": "M05_EXHAUSTIVE_PARENT_SCALAR_4PT_CONTRACTION_PROJECTOR_MISSING",
+    "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+    "uv_ir": {
+      "status": "NOT_EVALUATED",
+      "reason": "required complete 1PI four-point integrands not materialized"
+    },
+    "artifact_sha256": "8a8f12d48348dc6834095b5d72d641ac356a7c74359ca8338977995bf442bd7c"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_M05",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_AST_and_artifact_manifest_capability_audit",
+    "inventory": {
+      "AST_scanned_modules": [
+        "m04_parent_scalar_kernel.py",
+        "physical_vertex_api.py",
+        "scalar_vertex_oracle.py"
+      ],
+      "available_top_level_names": 20,
+      "required_entry_points": [
+        "assemble_partial_BFM_scalar_four_point_poles",
+        "contract_all_V4_V4_for_quartic_poles",
+        "enumerate_parent_scalar_one_loop_4pt",
+        "functional_fourth_derivative_pole_replay",
+        "project_26_real_quartic_poles"
+      ],
+      "absent_entry_points": [
+        "assemble_partial_BFM_scalar_four_point_poles",
+        "contract_all_V4_V4_for_quartic_poles",
+        "enumerate_parent_scalar_one_loop_4pt",
+        "functional_fourth_derivative_pole_replay",
+        "project_26_real_quartic_poles"
+      ],
+      "primary_M05_inventory_imported": false
+    },
+    "inventory_sha256": "5e8450d892c3f5194c9b05101d43026c215611c8b7916b3c298605c51e0aedba",
+    "all_26_real_quartic_directions_derived": false,
+    "residue_values": null,
+    "blocker_code": "M05_EXHAUSTIVE_PARENT_SCALAR_4PT_CONTRACTION_PROJECTOR_MISSING",
+    "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+    "uv_ir": {
+      "status": "NOT_EVALUATED",
+      "reason": "independent complete four-point inventory cannot be constructed"
+    },
+    "artifact_sha256": "3df88260a7f9eed7231f1eb47ebd937e198213e69146da4b4d71d952afbb06d2"
+  },
+  "comparison": {
+    "blocker_agreement": true,
+    "blocker_code": "M05_EXHAUSTIVE_PARENT_SCALAR_4PT_CONTRACTION_PROJECTOR_MISSING",
+    "physics_failure": false,
+    "residues_derived": false
+  },
+  "uv_ir_classification": {
+    "primary": {
+      "status": "NOT_EVALUATED",
+      "reason": "required complete 1PI four-point integrands not materialized"
+    },
+    "replay": {
+      "status": "NOT_EVALUATED",
+      "reason": "independent complete four-point inventory cannot be constructed"
+    }
+  },
+  "verdict": "BLOCKED",
+  "artifact_sha256": "29998c0e5df9562ed5fa6e5bd109a2ea03c0a0730a8490ff8691be74e1d57859"
+}

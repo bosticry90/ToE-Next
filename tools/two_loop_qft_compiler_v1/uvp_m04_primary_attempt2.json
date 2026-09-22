@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M04",
+  "attempt": 2,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "attempt1_blocked_evidence_sha256": "683ffc450210b10fd381f45b6942d00fa7ec6fee818335bf5a2aaa9de30b2898",
+  "predecessor_M03_evidence_sha256": "ddad67dc0278be554c5a4cd401d66e348ed08cfef6f0bd6a4a0df406ca0b5451",
+  "kernel_spec_sha256": "eed75bb885e5e0a9dcf723e4f6d1e2ee48612075e4c1af8cb57cc59d09a693af",
+  "method": "analytic_sparse_V3_times_compressed_V4_parent_contractions",
+  "normalization": "coefficients multiply 1/(16*pi^2*epsilon_bar)",
+  "inventory": {
+    "parent_real_directions": 328,
+    "structural_zero_Sigma_directions": 252,
+    "active_internal_real_directions": 76,
+    "ordered_internal_pairs_per_background": 5776,
+    "topology": "one_cubic_one_quartic_bubble",
+    "background_inventories": {
+      "muPhi": {
+        "ordered_nonzero_pairs": 46,
+        "sector_counts": {
+          "Phi:Phi": 40,
+          "phi:phi": 6
+        },
+        "pair_sha256": "53206fc90ae0ca06d9af9820216915937b71cba81be2d9a0243498ea5f22870c"
+      },
+      "muPhiPhi": {
+        "ordered_nonzero_pairs": 120,
+        "sector_counts": {
+          "Phi:Phi": 32,
+          "Phi:phi": 34,
+          "phi:Phi": 34,
+          "phi:phi": 4,
+          "phi:S": 8,
+          "S:phi": 8
+        },
+        "pair_sha256": "59f122e8ca86de94207bcaf4bd6a9533ab0510f9d2fcecf08f8d0c16ecfec181"
+      },
+      "z6_re": {
+        "ordered_nonzero_pairs": 58,
+        "sector_counts": {
+          "Phi:phi": 18,
+          "phi:Phi": 18,
+          "phi:phi": 20,
+          "phi:S": 1,
+          "S:phi": 1
+        },
+        "pair_sha256": "860f7cc751b6d1e1ed4dce95e5b6709073e2f2f144525bd237d28b34bceeec50"
+      },
+      "z6_im": {
+        "ordered_nonzero_pairs": 58,
+        "sector_counts": {
+          "Phi:phi": 18,
+          "phi:Phi": 18,
+          "phi:phi": 20,
+          "phi:S": 1,
+          "S:phi": 1
+        },
+        "pair_sha256": "31b4587871c1c098300856516b2080f4899e52060decfe2569a16a9c964ad153"
+      }
+    },
+    "projector_evaluation": {
+      "muPhi": {
+        "muPhi": "-sqrt(6)",
+        "muPhiPhi": "0",
+        "z6_re": "0",
+        "z6_im": "0"
+      },
+      "muPhiPhi": {
+        "muPhi": "0",
+        "muPhiPhi": "3*sqrt(2)",
+        "z6_re": "0",
+        "z6_im": "0"
+      },
+      "z6_re": {
+        "muPhi": "0",
+        "muPhiPhi": "0",
+        "z6_re": "3*sqrt(2)",
+        "z6_im": "0"
+      },
+      "z6_im": {
+        "muPhi": "0",
+        "muPhiPhi": "0",
+        "z6_re": "0",
+        "z6_im": "3*sqrt(2)"
+      }
+    }
+  },
+  "inventory_sha256": "b5a08164bbb3c6c4fe3d9d767b9f92b405342d5dad6a386bb3c4478288cdb554",
+  "scalar_coefficient_matrices": {
+    "muPhi": [
+      [
+        "24",
+        "354/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "muPhiPhi": [
+      [
+        "0",
+        "0",
+        "0",
+        "84/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "4",
+        "58/5",
+        "0",
+        "2",
+        "4",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "8",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "8"
+      ]
+    ],
+    "z6_re": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "54/5",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "2",
+        "20",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "z6_im": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "54/5"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "2",
+        "20",
+        "2",
+        "0",
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "scalar_residues": {
+    "muPhi": "24*lambdaPhi1*muPhi + 354*lambdaPhi2*muPhi/5 + lambdaPhiphi2*muPhiPhi",
+    "muPhiPhi": "2*lambdaPhiVector1*muPhiPhi + 4*lambdaPhiVector2*muPhiPhi + 4*lambdaPhiphi1*muPhiPhi + 84*lambdaPhiphi2*muPhi/5 + 58*lambdaPhiphi2*muPhiPhi/5 + 8*z6_im*zK_im + 8*z6_re*zK_re",
+    "z6_re": "2*lambdaPhiVector1*z6_re + 20*lambdaPhiVector2*z6_re + 2*lambdaVectorS*z6_re + 54*muPhiPhi*zK_re/5",
+    "z6_im": "2*lambdaPhiVector1*z6_im + 20*lambdaPhiVector2*z6_im + 2*lambdaVectorS*z6_im + 54*muPhiPhi*zK_im/5"
+  },
+  "projector_evaluation": {
+    "muPhi": {
+      "muPhi": "-sqrt(6)",
+      "muPhiPhi": "0",
+      "z6_re": "0",
+      "z6_im": "0"
+    },
+    "muPhiPhi": {
+      "muPhi": "0",
+      "muPhiPhi": "3*sqrt(2)",
+      "z6_re": "0",
+      "z6_im": "0"
+    },
+    "z6_re": {
+      "muPhi": "0",
+      "muPhiPhi": "0",
+      "z6_re": "3*sqrt(2)",
+      "z6_im": "0"
+    },
+    "z6_im": {
+      "muPhi": "0",
+      "muPhiPhi": "0",
+      "z6_re": "0",
+      "z6_im": "3*sqrt(2)"
+    }
+  },
+  "sector_ledgers": {
+    "muPhi": {
+      "external_Casimir_sum": "30",
+      "scalar": "24*lambdaPhi1*muPhi + 354*lambdaPhi2*muPhi/5 + lambdaPhiphi2*muPhiPhi",
+      "partial_BFM_quantum_vector_Goldstone_ghost_1PI": "15*g10**2*muPhi*xi",
+      "M02_field_conversion": "15*g10**2*muPhi*(3 - xi)",
+      "partial_BFM_sum": "45*g10**2*muPhi",
+      "total": "45*g10**2*muPhi + 24*lambdaPhi1*muPhi + 354*lambdaPhi2*muPhi/5 + lambdaPhiphi2*muPhiPhi"
+    },
+    "muPhiPhi": {
+      "external_Casimir_sum": "19",
+      "scalar": "2*lambdaPhiVector1*muPhiPhi + 4*lambdaPhiVector2*muPhiPhi + 4*lambdaPhiphi1*muPhiPhi + 84*lambdaPhiphi2*muPhi/5 + 58*lambdaPhiphi2*muPhiPhi/5 + 8*z6_im*zK_im + 8*z6_re*zK_re",
+      "partial_BFM_quantum_vector_Goldstone_ghost_1PI": "19*g10**2*muPhiPhi*xi/2",
+      "M02_field_conversion": "19*g10**2*muPhiPhi*(3 - xi)/2",
+      "partial_BFM_sum": "57*g10**2*muPhiPhi/2",
+      "total": "57*g10**2*muPhiPhi/2 + 2*lambdaPhiVector1*muPhiPhi + 4*lambdaPhiVector2*muPhiPhi + 4*lambdaPhiphi1*muPhiPhi + 84*lambdaPhiphi2*muPhi/5 + 58*lambdaPhiphi2*muPhiPhi/5 + 8*z6_im*zK_im + 8*z6_re*zK_re"
+    },
+    "z6_re": {
+      "external_Casimir_sum": "9",
+      "scalar": "2*lambdaPhiVector1*z6_re + 20*lambdaPhiVector2*z6_re + 2*lambdaVectorS*z6_re + 54*muPhiPhi*zK_re/5",
+      "partial_BFM_quantum_vector_Goldstone_ghost_1PI": "9*g10**2*xi*z6_re/2",
+      "M02_field_conversion": "9*g10**2*z6_re*(3 - xi)/2",
+      "partial_BFM_sum": "27*g10**2*z6_re/2",
+      "total": "27*g10**2*z6_re/2 + 2*lambdaPhiVector1*z6_re + 20*lambdaPhiVector2*z6_re + 2*lambdaVectorS*z6_re + 54*muPhiPhi*zK_re/5"
+    },
+    "z6_im": {
+      "external_Casimir_sum": "9",
+      "scalar": "2*lambdaPhiVector1*z6_im + 20*lambdaPhiVector2*z6_im + 2*lambdaVectorS*z6_im + 54*muPhiPhi*zK_im/5",
+      "partial_BFM_quantum_vector_Goldstone_ghost_1PI": "9*g10**2*xi*z6_im/2",
+      "M02_field_conversion": "9*g10**2*z6_im*(3 - xi)/2",
+      "partial_BFM_sum": "27*g10**2*z6_im/2",
+      "total": "27*g10**2*z6_im/2 + 2*lambdaPhiVector1*z6_im + 20*lambdaPhiVector2*z6_im + 2*lambdaVectorS*z6_im + 54*muPhiPhi*zK_im/5"
+    }
+  },
+  "cubic_residues": {
+    "muPhi": "45*g10**2*muPhi + 24*lambdaPhi1*muPhi + 354*lambdaPhi2*muPhi/5 + lambdaPhiphi2*muPhiPhi",
+    "muPhiPhi": "57*g10**2*muPhiPhi/2 + 2*lambdaPhiVector1*muPhiPhi + 4*lambdaPhiVector2*muPhiPhi + 4*lambdaPhiphi1*muPhiPhi + 84*lambdaPhiphi2*muPhi/5 + 58*lambdaPhiphi2*muPhiPhi/5 + 8*z6_im*zK_im + 8*z6_re*zK_re",
+    "z6_re": "27*g10**2*z6_re/2 + 2*lambdaPhiVector1*z6_re + 20*lambdaPhiVector2*z6_re + 2*lambdaVectorS*z6_re + 54*muPhiPhi*zK_re/5",
+    "z6_im": "27*g10**2*z6_im/2 + 2*lambdaPhiVector1*z6_im + 20*lambdaPhiVector2*z6_im + 2*lambdaVectorS*z6_im + 54*muPhiPhi*zK_im/5"
+  },
+  "projection": {
+    "basis": [
+      "muPhi",
+      "muPhiPhi",
+      "z6_re",
+      "z6_im"
+    ],
+    "rank": 4,
+    "residual": "0",
+    "permutation_symmetry_residual": "0",
+    "Sigma_cubic_residual": "0",
+    "PQ_forbidden_residual": "0",
+    "xi_residual": "0"
+  },
+  "sector_completeness": {
+    "scalar": "COMPLETE_328_DIRECTION_AUDIT_76_ACTIVE_252_STRUCTURAL_ZERO",
+    "quantum_vector_Goldstone_ghost": "COMPLETE_PARENT_COVARIANT_1PI_CUBIC_POLE",
+    "M02_field_counterterm": "INCLUDED_EXACTLY_ONCE"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "nonexceptional_or_auxiliary_mass_local_projection",
+    "locality": "LOCAL_CUBIC_POLYNOMIAL"
+  },
+  "artifact_sha256": "6d1c5bd2b26766b49c0055d409f25bfd9e6ba1660f2164f6cbed0919c4da4234"
+}

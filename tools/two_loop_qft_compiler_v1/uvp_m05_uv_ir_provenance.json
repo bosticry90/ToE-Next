@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M05",
+  "attempt": 1,
+  "classification": {
+    "primary": {
+      "status": "NOT_EVALUATED",
+      "reason": "required complete 1PI four-point integrands not materialized"
+    },
+    "replay": {
+      "status": "NOT_EVALUATED",
+      "reason": "independent complete four-point inventory cannot be constructed"
+    }
+  },
+  "reason": "UV_IR classification deferred because complete 1PI four-point integrands do not exist",
+  "artifact_sha256": "e04f49a963bec5e70c16376999cdc77ce6d22d20a312946c1c81514356bb2914"
+}

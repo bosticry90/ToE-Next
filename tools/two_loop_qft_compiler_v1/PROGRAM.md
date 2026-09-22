@@ -79,9 +79,9 @@ functional completeness proof. Its SHA-256 is
 superseding v1 hash
 `f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588`.
 The contract began as specification authority only. Its serial execution has
-now reached `30/39`: every one of the 27 evaluator-engine tests passes, M02
-passes, and M03 passes on attempt 2 while preserving its original blocked
-attempt. M04 is the current first non-pass. The fail-fast partition remains 27
+now reached `31/39`: every one of the 27 evaluator-engine tests passes, M02
+passes, and M03 and M04 pass on attempt 2 while preserving their original
+blocked attempts. M05 is the current first non-pass. The fail-fast partition remains 27
 tests for the evaluator engine and 12 for canonical counterterm completion.
 
 The first execution order and result ledger are now frozen without amending
@@ -142,14 +142,13 @@ Progress is `5/39` (`5/27`); `UVP_P06` alone is next. See
 The bounded continuation ran `P06-P13`, `C01-C13`, and `M01` serially with
 primary calculations and independent replays. All pass, earning
 `ONE_LOOP_UV_POLE_EVALUATOR_PASS` at the exact `27/27` checkpoint. M02 passes
-for the four parent scalar wave-function residues. A later focused M03 attempt
-implements exhaustive scalar `V3*V3` and `M2*V4` contractions, obtains all four
-quadratic residues, and passes an independent functional replay with zero
-projection residual. The gate then stops at M04 because the corresponding
-exhaustive scalar three-point/cubic-residue kernel is absent. The checkpoint
-is `30/39` with 29 passes, one block, and no failures. The counterterm compiler
-and Layer 6 remain blocked. See
-[`LAYER5B_M03_M04_RESULT.md`](LAYER5B_M03_M04_RESULT.md).
+for the four parent scalar wave-function residues. Focused M03 and M04 retries
+then implement the exhaustive quadratic and cubic parent-scalar kernels and
+pass their independent functional replays with zero projection residuals.
+The gate stops at M05 because the exhaustive scalar four-point/quartic-residue
+kernel is absent. The checkpoint is `31/39` with 30 passes, one block, and no
+failures. The counterterm compiler and Layer 6 remain blocked. See
+[`LAYER5B_M04_M05_RESULT.md`](LAYER5B_M04_M05_RESULT.md).
 
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and

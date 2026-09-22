@@ -142,14 +142,19 @@ full factorized 328-real quadratic pole operator projects onto the four frozen
 quadratic directions with rank four and exact residual zero, and an
 independent functional replay agrees.
 
-The serial run then stops correctly at M04 because the exhaustive mixed
-`V3*V4` contraction, partial-BFM scalar three-point gauge completion, and
-four-real-direction cubic projector are not implemented. The authoritative
-state is `30/39` (29 pass, one blocked, zero fail). This is an implementation
-block, not a physics failure. The counterterm compiler remains blocked, Layer
-6 remains unauthorized, and all downstream physics dispositions remain
+M04 attempt 2 now also passes. Exhaustive sparse `V3*V4` contractions, the
+partial-BFM cubic gauge completion, the M02 field conversion, and an
+inventory-independent functional replay give four exact real cubic residues,
+rank four, zero projection residual, and exact `xi` cancellation.
+
+The serial run stops correctly at M05 because the exhaustive `V4*V4`
+four-point contraction, complete partial-BFM quartic pole, rank-26 projector,
+and independent replay are not implemented. The authoritative state is
+`31/39` (30 pass, one blocked, zero fail). This is an implementation block,
+not a physics failure. The counterterm compiler remains blocked, Layer 6
+remains unauthorized, and all downstream physics dispositions remain
 unchanged. See
-[`LAYER5B_M03_M04_RESULT.md`](LAYER5B_M03_M04_RESULT.md).
+[`LAYER5B_M04_M05_RESULT.md`](LAYER5B_M04_M05_RESULT.md).
 
 ## Preserved physics boundary
 

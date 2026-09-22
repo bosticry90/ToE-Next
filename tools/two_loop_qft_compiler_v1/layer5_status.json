@@ -7,17 +7,18 @@
     "FJ_LIKE_TADPOLE_VEV_PRESCRIPTION_FROZEN",
     "ONE_LOOP_UV_POLE_EVALUATOR_PASS_27_OF_27",
     "M02_PARENT_SCALAR_WAVEFUNCTION_RESIDUES_PASS",
-    "M03_PARENT_SCALAR_QUADRATIC_RESIDUES_PASS_ATTEMPT2"
+    "M03_PARENT_SCALAR_QUADRATIC_RESIDUES_PASS_ATTEMPT2",
+    "M04_PARENT_SCALAR_CUBIC_RESIDUES_PASS_ATTEMPT2"
   ],
   "counterterm_contract_sha256": "87cf0b4966451c62168552284cb1c709c5e3247d8e1b8241e34d4b78116c48f1",
   "slot_structures_populated": 21,
   "slot_pole_residues_derived": 0,
-  "missing_required_residue_groups": 13,
-  "blocker": "M04_EXHAUSTIVE_PARENT_SCALAR_3PT_CONTRACTION_PROJECTOR_MISSING",
+  "missing_required_residue_groups": 12,
+  "blocker": "M05_EXHAUSTIVE_PARENT_SCALAR_4PT_CONTRACTION_PROJECTOR_MISSING",
   "layer6_authorized": false,
   "finite_C1_GS": null,
-  "layer5a_progress": "30/39",
+  "layer5a_progress": "31/39",
   "engine_gate": "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
-  "canonical_progress": "M02_M03_PASS_M04_BLOCKED",
-  "execution_checkpoint_sha256": "af50334b6393ecf7a7752b3f6faddbea9212c3ffd0d54748ad6c745a4d2006f4"
+  "canonical_progress": "M02_M03_M04_PASS_M05_BLOCKED",
+  "execution_checkpoint_sha256": "83c9a6340b175d15affa3baa5fec1f7cac19ec9cafba0a8b8fdae34e5d789ec4"
 }

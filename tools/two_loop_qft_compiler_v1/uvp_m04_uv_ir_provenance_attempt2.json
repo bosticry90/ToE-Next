@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M04",
+  "attempt": 2,
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "nonexceptional_or_auxiliary_mass_local_projection",
+      "locality": "LOCAL_CUBIC_POLYNOMIAL"
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "independent_local_functional_UV_projection",
+      "locality": "LOCAL_CUBIC_POLYNOMIAL"
+    }
+  },
+  "reason": "regulated local parent three-point projection has UV poles and no IR pole",
+  "artifact_sha256": "e93467af6731fadaf4ed3103353c7259aaa1727b2dfed3f4d69576c5ad71ffe0"
+}

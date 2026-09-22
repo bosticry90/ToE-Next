@@ -100,8 +100,10 @@ kernel, independently replays it, and passes with four exact quadratic
 residues and zero projection residual. The historical attempt-1 block remains
 preserved.
 
-The serial gate then advanced to M04 and stopped correctly at the next
-implementation dependency. The current authoritative state is `30/39`
-(29 pass, one block, zero fail), with M04 blocked on the exhaustive parent
-scalar three-point contraction/projector kernel. See
-[`LAYER5B_M03_M04_RESULT.md`](LAYER5B_M03_M04_RESULT.md).
+M04 was subsequently retried without changing its criteria. Attempt 2
+implements and independently replays the exhaustive sparse `V3*V4`
+three-point contraction plus partial-BFM completion and passes with four exact
+cubic residues and zero rank-4 projection residual. The serial gate then
+stops at M05 because the exhaustive quartic pole kernel is absent. The current
+authoritative state is `31/39` (30 pass, one block, zero fail). See
+[`LAYER5B_M04_M05_RESULT.md`](LAYER5B_M04_M05_RESULT.md).
