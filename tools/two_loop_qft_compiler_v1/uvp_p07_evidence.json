@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P07",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_P07",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "exact_unequal_mass_partial_fraction_UV_projection",
+    "integral": "Integral_E[1/((k2+m1sq)*(k2+m2sq))]",
+    "partial_fraction_identity": "[1/(k2+m1sq)-1/(k2+m2sq)]/(m2sq-m1sq)",
+    "normalized_log_residue": "1",
+    "mass_swap_residual": "0",
+    "k2_numerator_normalized_local_mass_residue": "-m1sq - m2sq",
+    "k2_mass_swap_residual": "0",
+    "degenerate_limit": {
+      "log_residue": "1",
+      "k2_residue": "-2*m1sq"
+    },
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m1sq>0,m2sq>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "d9aed5c74a320469e66edf42494210fb6c8a205f9c158362657ea002e84cd3e7"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_P07",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_Feynman_parameter_log_pole_and_radial_mass_series",
+    "feynman_mass": "x*m1sq+(1-x)*m2sq+x*(1-x)*p2",
+    "normalized_log_residue": "1",
+    "radial_large_t_factor": "u**2*(m1sq**2 + m1sq*m2sq + m2sq**2) + u*(-m1sq - m2sq) + 1",
+    "k2_numerator_normalized_local_mass_residue": "-m1sq - m2sq",
+    "mass_swap_residual": "0",
+    "degenerate_limit": {
+      "log_residue": "1",
+      "k2_residue": "-2*m1sq"
+    },
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m1sq>0,m2sq>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "6ef2bb57f80f2fb0104a2966666f8bb71c0aca89080d74a53b6f3d77c2428811"
+  },
+  "comparison": {
+    "log_residue_difference": "0",
+    "local_mass_residue_difference": "0",
+    "mass_swap_residual": "0",
+    "degenerate_limit_equal": true
+  },
+  "uv_ir_classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "9fd050e7aa8a8f4a37df2f76226ef6a5bfd73bff4c6216aa7821c61f7780a66b"
+}

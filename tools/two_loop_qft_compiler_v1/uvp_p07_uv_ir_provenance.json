@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P07",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "reason": "both_unequal_masses_positive",
+  "artifact_sha256": "ad477a222a5b356b231c36cdec4e6bd80b95f1f0c3817ba60119a4368641b63d"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M03",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_AST_API_surface_and_artifact_manifest_audit",
+  "inventory": {
+    "AST_scanned_modules": [
+      "physical_vertex_api.py",
+      "compile_scalar_vertices.py"
+    ],
+    "available_function_count": 28,
+    "required_entry_points": [
+      "contract_all_M2_V4",
+      "contract_all_V3_V3",
+      "enumerate_parent_scalar_one_loop_2pt",
+      "project_four_quadratic_poles"
+    ],
+    "absent_entry_points": [
+      "contract_all_M2_V4",
+      "contract_all_V3_V3",
+      "enumerate_parent_scalar_one_loop_2pt",
+      "project_four_quadratic_poles"
+    ]
+  },
+  "inventory_sha256": "c4050c68bd730a4d744a1fe9123dc69031f8ce0e314f319031f74b19556caf52",
+  "all_four_quadratic_directions_derived": false,
+  "residue_values": null,
+  "blocker_code": "M03_EXHAUSTIVE_PARENT_SCALAR_2PT_CONTRACTION_KERNEL_MISSING",
+  "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+  "uv_ir": {
+    "status": "NOT_EVALUATED",
+    "reason": "independent amplitude inventory cannot be constructed from promoted APIs"
+  },
+  "artifact_sha256": "8a18af0f7313c0c97fe896eb7010a149c566800eb6165b258aab99899fadea1b"
+}

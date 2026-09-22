@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C05",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "reason": "massive_phi3_bubble_is_IR_safe_and_p2_tail_UV_finite",
+  "artifact_sha256": "2773a53522ece4c7e1bb4837b0d413e199c163ba6c45179be0f2bfefef614ae5"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C03",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_C03",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "renormalized_1PI_graph_plus_derived_counterterm_assembly",
+    "input_evidence_hashes": {
+      "C01": "c65b93d583c8ac87afc67dcf493ab7b8f1399fe79328bd04ce589c97d333d5b7",
+      "C02": "f85f3bb53fc33183b430ac7af30d678e41c1cd4eaebb3d3dd465a72d324fd06d"
+    },
+    "inventory": [
+      "two_point_quartic_tadpole",
+      "two_point_mass_CT",
+      "four_point_s_bubble",
+      "four_point_t_bubble",
+      "four_point_u_bubble",
+      "four_point_lambda_CT"
+    ],
+    "inventory_sha256": "99983570d3d57cb9bae09f576b3bc6c6aa1947158a7e97f70e99222ea62dfab1",
+    "two_point": {
+      "loop_pole": "-lambda*m2/2",
+      "counterterm_pole": "lambda*m2/2",
+      "residual": "0"
+    },
+    "four_point": {
+      "loop_pole": "-3*lambda^2/2",
+      "counterterm_pole": "3*lambda^2/2",
+      "residual": "0"
+    },
+    "wavefunction_residual": "0",
+    "maximum_residual": "0",
+    "uv_ir": {
+      "uv_pole_before_CT": true,
+      "ir_pole": false,
+      "renormalized_UV_pole": false
+    },
+    "artifact_sha256": "0203cbc1eee5f82886d16f6c7d8563ff017561be7798f9922ddb6b6686a26986"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_C03",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_bare_action_first_order_expansion_plus_functional_pole_action",
+    "inventory": [
+      "bare_m2_expansion_phi2",
+      "bare_lambda_expansion_phi4",
+      "functional_TrLog_phi2",
+      "functional_TrLog_phi4"
+    ],
+    "inventory_sha256": "f26b4201c429a258d104fd0c400aa574647ba6607794f674659b5d7882d77a8b",
+    "derived_counterterms": {
+      "delta_Z_phi": "0",
+      "delta_m2": "lambda*m2/2",
+      "delta_lambda": "3*lambda^2/2"
+    },
+    "two_point_residual": "0",
+    "four_point_residual": "0",
+    "wavefunction_residual": "0",
+    "maximum_residual": "0",
+    "uv_ir": {
+      "uv_pole_before_CT": true,
+      "ir_pole": false,
+      "renormalized_UV_pole": false
+    },
+    "artifact_sha256": "da5a9545461d33f3fc238fb9c04ca3da360b161416bf4f4744e22b1343feb4b7"
+  },
+  "comparison": {
+    "two_point_residual": "0",
+    "four_point_residual": "0",
+    "maximum_residual": "0"
+  },
+  "uv_ir_classification": {
+    "uv_pole_before_CT": true,
+    "ir_pole": false,
+    "renormalized_UV_pole": false
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "f61a795bb85db636845ab5f53e2c5603869f80530ac36565ea2545f2335f462b"
+}

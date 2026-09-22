@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C09",
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "IR_handling": "nonexceptional_offshell_background_momentum",
+      "ir_pole": false,
+      "rstar_required": false
+    },
+    "replay": {
+      "uv_pole": true,
+      "IR_handling": "covariant_heat_kernel_local_coefficient",
+      "ir_pole": false,
+      "rstar_required": false
+    }
+  },
+  "reason": "nonexceptional diagrammatic and local heat-kernel extractions have no IR pole",
+  "artifact_sha256": "c3c39025140a5fda6ea2b9654a55f55cb2f9333742ae73874fcfa26ae603bd49"
+}

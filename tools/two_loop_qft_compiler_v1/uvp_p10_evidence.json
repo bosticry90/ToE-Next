@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P10",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_P10",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "exact_auxiliary_mass_integrand_rearrangement_with_local_subtraction_terms",
+    "tadpole_local_residues": [
+      "-M2",
+      "M2 - m2"
+    ],
+    "tadpole_UV_finite_remainder": true,
+    "tadpole_promoted_residue": "-m2",
+    "tadpole_aux_derivative": "0",
+    "log_bubble_promoted_residue": "1",
+    "log_bubble_aux_derivative": "0",
+    "two_auxiliary_mass_comparison_residual": "0",
+    "local_IR_rearrangement_counterterms_included": true,
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "physical_mass_domain": "m2>0",
+      "auxiliary_mass_domain": "M2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "fdad533c75cfb50eac701241678ab325191ef64ffd5ee9b9b13e53ecf0740a00"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_P10",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_physical_mass_Gamma_function_residues_without_auxiliary_decomposition",
+    "tadpole_promoted_residue": "-m2",
+    "tadpole_aux_derivative": "0",
+    "log_bubble_promoted_residue": "1",
+    "log_bubble_aux_derivative": "0",
+    "two_auxiliary_mass_comparison_residual": "0",
+    "local_IR_rearrangement_counterterms_included": true,
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "physical_mass_domain": "m2>0",
+      "auxiliary_mass_domain": "M2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "085b803541d777c9e0b28d2b450f6d0b4e1fe80d9fde4cf8402260552f13438c"
+  },
+  "comparison": {
+    "tadpole_residue": "-m2",
+    "bubble_residue": "1",
+    "maximum_auxiliary_mass_residual": "0"
+  },
+  "uv_ir_classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "physical_mass_domain": "m2>0",
+    "auxiliary_mass_domain": "M2>0",
+    "rstar_required": false
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "c8ff55cc3cd7bc75cf0a9924d981af5e576a5570cee08954b7ac2413605ae395"
+}

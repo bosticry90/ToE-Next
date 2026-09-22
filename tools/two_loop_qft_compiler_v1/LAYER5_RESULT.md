@@ -110,8 +110,8 @@ BACKGROUND_WARD_IDENTITY_RESIDUAL 0
 
 ## Exact blocker
 
-The frozen artifacts do not contain the one-loop 1PI UV poles needed to
-determine:
+At the original structural Layer-5 gate, the frozen artifacts did not contain
+the one-loop 1PI UV poles needed to determine:
 
 - the quantum-Spin(10), scalar, heavy/light ghost, and gauge-parameter field
   residues;
@@ -123,12 +123,30 @@ determine:
 Those quantities cannot be obtained from the two-loop graph count or fitted
 from cancellation of future subdivergences.  They require a genuine one-loop
 UV-pole evaluator for parent scalar one- through four-point functions and the
-partial-BFM quantum-vector/ghost system.  Because that evaluator is absent,
-zero of the 21 slots has a *complete* derived pole coefficient even though all
-21 structural expressions are populated.
+partial-BFM quantum-vector/ghost system. The later Layer-5A execution has now
+validated that evaluator through the 27/27 engine gate and derived the M02
+field residues, but it has not supplied the M03 quadratic residues or any
+complete slot coefficient. Thus zero of the 21 slots has a *complete* derived
+pole coefficient even though all 21 structural expressions are populated.
 
-The next admissible compiler task is therefore the missing one-loop UV-pole
-evaluator inside layer 5.  Layer 6 remains unauthorized.
+The next admissible compiler task is therefore the M03 exhaustive parent
+scalar two-point contraction/projector kernel. Layer 6 remains unauthorized.
+
+## Layer-5A execution update
+
+The frozen Layer-5A contract has now executed through the first canonical
+blocker. All 27 engine tests pass, earning
+`ONE_LOOP_UV_POLE_EVALUATOR_PASS`; `UVP_M02` also passes and derives the four
+parent scalar wave-function residues. The serial run then stops correctly at
+`UVP_M03`, because the exhaustive parent-scalar one-loop two-point inventory,
+the summed `V3*V3`/`M2*V4` contraction backend, and the completed quadratic
+pole projector are not implemented.
+
+The authoritative state is therefore `29/39` (28 pass, one blocked, zero
+fail). This is an implementation block, not a physics failure. The
+counterterm compiler remains blocked, Layer 6 remains unauthorized, and all
+downstream physics dispositions remain unchanged. See
+[`LAYER5A_EXECUTION_RESULT.md`](LAYER5A_EXECUTION_RESULT.md).
 
 ## Preserved physics boundary
 

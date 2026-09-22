@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C11",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_C11",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "broken_phase_Rxi_graph_inventory_and_local_UV_projection",
+    "action": "Abelian Higgs, phi=(v+h+iG)/sqrt(2), F=partial.A-xi*e*v*G, FJ-like explicit tadpole shift",
+    "graph_inventory": [
+      {
+        "process": "background_photon_2pt",
+        "sectors": [
+          "h/G bubble",
+          "seagull"
+        ]
+      },
+      {
+        "process": "tadpole",
+        "sectors": [
+          "h",
+          "G",
+          "vector_transverse",
+          "vector_longitudinal",
+          "ghost"
+        ]
+      },
+      {
+        "process": "Goldstone_2pt",
+        "sectors": [
+          "scalar",
+          "vector",
+          "ghost"
+        ]
+      },
+      {
+        "process": "ghost_2pt",
+        "sectors": [
+          "h",
+          "Goldstone"
+        ]
+      }
+    ],
+    "inventory_sha256": "dc9a33338a10762e3cb8a793b0ac66540fb6e5df12c7d45defb4f44db1a9d43c",
+    "background_b": "1/3",
+    "background_transversality_residual": "0",
+    "tree_mass_pairing": {
+      "M_V2": "e^2*v^2",
+      "m_G2": "xi*M_V2",
+      "m_ghost2": "xi*M_V2"
+    },
+    "one_loop_mass_pairing_identity": "delta(xi*M_V2)=M_V2*delta_xi+xi*delta_M_V2",
+    "mass_pairing_residual": "0",
+    "tadpole_pole_expression": "(1/4)*d/dv[m_h^4+m_G^4+3*M_V^4+(xi*M_V^2)^2-2*(xi*M_V^2)^2]|stationary",
+    "derived_delta_t": "-T_div",
+    "derived_delta_v": "-T_div/m_h2",
+    "FJ_stationarity_residual": "0",
+    "sample_xi_checks": {
+      "1/2": "0",
+      "1": "0",
+      "2": "0"
+    },
+    "maximum_residual": "0",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "broken masses plus nonexceptional background momentum",
+      "scaleless_parts_split": true
+    },
+    "artifact_sha256": "c8be7bbb857099e0610263796842fc1570b36458093b4ecd3563084a1722ea5e"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_C11",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_broken_phase_functional_determinant_and_BRST_projection",
+    "operator_inventory": [
+      "TrLog_h",
+      "TrLog_G",
+      "1/2TrLog_vector_Rxi",
+      "-TrLog_ghost",
+      "background_F2_projection",
+      "d/dv_pole_potential"
+    ],
+    "inventory_sha256": "3f1e247860538cd89d81cae1cfa3c3b94232a349a835ff46e31ca618c382e36b",
+    "background_b": "1/3",
+    "background_transversality_residual": "0",
+    "tree_mass_pairing": {
+      "M_V2": "e^2*v^2",
+      "m_G2": "xi*M_V2",
+      "m_ghost2": "xi*M_V2"
+    },
+    "one_loop_mass_pairing_identity": "delta(xi*M_V2)=M_V2*delta_xi+xi*delta_M_V2",
+    "mass_pairing_residual": "0",
+    "tadpole_pole_expression": "(1/4)*d/dv[m_h^4+m_G^4+3*M_V^4+(xi*M_V^2)^2-2*(xi*M_V^2)^2]|stationary",
+    "derived_delta_t": "-T_div",
+    "derived_delta_v": "-T_div/m_h2",
+    "FJ_stationarity_residual": "0",
+    "sample_xi_checks": {
+      "1/2": "0",
+      "1": "0",
+      "2": "0"
+    },
+    "maximum_residual": "0",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "massive_functional_operators",
+      "scaleless_parts_split": true
+    },
+    "artifact_sha256": "a802acd8c1ba00f7ffe20c5b2ad80217d142005e64134900f14a08fdf3702982"
+  },
+  "comparison": {
+    "background_b": "1/3",
+    "mass_pairing_residual": "0",
+    "FJ_stationarity_residual": "0",
+    "maximum_residual": "0"
+  },
+  "uv_ir_classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "broken masses plus nonexceptional background momentum",
+      "scaleless_parts_split": true
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "massive_functional_operators",
+      "scaleless_parts_split": true
+    }
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "1d8f3c3ef9a8490f3f5d23db1e1df9801dc2cd5f37de3414d8dd5d478cef8eae"
+}

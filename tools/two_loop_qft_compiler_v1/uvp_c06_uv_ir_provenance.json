@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C06",
+  "classification": {
+    "uv_pole": false,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "reason": "massive_three_propagator_triangle_is_UV_and_IR_finite",
+  "artifact_sha256": "3103ecc9f2c4aaf25c8e9e2c9fc40366d9be833c7170868e9165a50c695beda7"
+}

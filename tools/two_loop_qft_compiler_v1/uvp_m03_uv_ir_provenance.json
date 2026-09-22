@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M03",
+  "classification": {
+    "primary": {
+      "status": "NOT_EVALUATED",
+      "reason": "1PI amplitudes not materialized"
+    },
+    "replay": {
+      "status": "NOT_EVALUATED",
+      "reason": "independent amplitude inventory cannot be constructed from promoted APIs"
+    }
+  },
+  "reason": "UV_IR_classification_deferred_because_required_1PI_integrands_do_not_exist",
+  "artifact_sha256": "208be5d54edf65d37b0e82f1c13572dacb23eae49c9343c973ad0a04a9ad6374"
+}

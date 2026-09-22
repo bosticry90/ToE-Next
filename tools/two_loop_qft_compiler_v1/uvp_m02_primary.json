@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M02",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "parent_action_scalar_vector_graphs_with_general_xi_local_p2_projection",
+  "normalization": "coefficients multiply 1/(16*pi^2*epsilon_bar)",
+  "representation_data": {
+    "Phi": {
+      "irrep": "54_real",
+      "real_dimension": 54,
+      "C2": "10"
+    },
+    "Sigma": {
+      "irrep": "126_complex",
+      "real_dimension": 252,
+      "C2": "25/2"
+    },
+    "phi": {
+      "irrep": "10_complex",
+      "real_dimension": 20,
+      "C2": "9/2"
+    },
+    "S": {
+      "irrep": "1_complex",
+      "real_dimension": 2,
+      "C2": "0"
+    }
+  },
+  "graph_inventory": [
+    {
+      "field": "Phi",
+      "topology": "scalar_quantum_vector_exchange"
+    },
+    {
+      "field": "Phi",
+      "topology": "scalar_vector_seagull"
+    },
+    {
+      "field": "Phi",
+      "topology": "scalar_only_one_loop",
+      "p2_degree": "UV_finite_or_zero"
+    },
+    {
+      "field": "Sigma",
+      "topology": "scalar_quantum_vector_exchange"
+    },
+    {
+      "field": "Sigma",
+      "topology": "scalar_vector_seagull"
+    },
+    {
+      "field": "Sigma",
+      "topology": "scalar_only_one_loop",
+      "p2_degree": "UV_finite_or_zero"
+    },
+    {
+      "field": "phi",
+      "topology": "scalar_quantum_vector_exchange"
+    },
+    {
+      "field": "phi",
+      "topology": "scalar_vector_seagull"
+    },
+    {
+      "field": "phi",
+      "topology": "scalar_only_one_loop",
+      "p2_degree": "UV_finite_or_zero"
+    },
+    {
+      "field": "S",
+      "topology": "scalar_quantum_vector_exchange"
+    },
+    {
+      "field": "S",
+      "topology": "scalar_vector_seagull"
+    },
+    {
+      "field": "S",
+      "topology": "scalar_only_one_loop",
+      "p2_degree": "UV_finite_or_zero"
+    }
+  ],
+  "inventory_sha256": "1efd337d0f2326a9d37df740e0cfa2eea0ab6d9dcd94c75a80c58558ef0328a4",
+  "derived_residues": {
+    "delta_Z_Phi": "-10*g10^2*(3-xi)",
+    "delta_Z_Sigma": "-(25/2)*g10^2*(3-xi)",
+    "delta_Z_phi": "-(9/2)*g10^2*(3-xi)",
+    "delta_Z_S": "0"
+  },
+  "irrep_identity_checks": {
+    "Phi": {
+      "matrix_shape": "54x54",
+      "off_diagonal_residual": "0",
+      "diagonal_spread": "0"
+    },
+    "Sigma": {
+      "matrix_shape": "252x252",
+      "off_diagonal_residual": "0",
+      "diagonal_spread": "0"
+    },
+    "phi": {
+      "matrix_shape": "20x20",
+      "off_diagonal_residual": "0",
+      "diagonal_spread": "0"
+    },
+    "S": {
+      "matrix_shape": "2x2",
+      "off_diagonal_residual": "0",
+      "diagonal_spread": "0"
+    }
+  },
+  "scalar_cubic_quartic_p2_pole": "0",
+  "sample_xi_max_residual": {
+    "1/2": "0",
+    "1": "0",
+    "2": "0"
+  },
+  "maximum_residual": "0",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "nonexceptional_scalar_momentum plus physical/auxiliary masses",
+    "scaleless_parts_split": true
+  },
+  "artifact_sha256": "67facd1338ce535698d3137d7b02c4e55516aa5ae0009f39aba8ba7130ba5f6f"
+}

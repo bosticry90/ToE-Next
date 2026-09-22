@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C10",
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "nonexceptional_offshell",
+      "scaleless_parts_split": true
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "local_BRST_cohomology_with_offshell_projectors",
+      "scaleless_parts_split": true
+    }
+  },
+  "reason": "nonexceptional projectors separate UV from scaleless IR pieces",
+  "artifact_sha256": "e860530c32fae154ed064383901a17d13b7091ba4557895327c5bb1219aecb3c"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C10",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_algebraic_BRST_pole_action_solution",
+  "operator_inventory": [
+    "BRST_linearized_ST_operator",
+    "quantum_transverse_projector",
+    "ghost_kinetic_projector",
+    "ghost_vertex_projector",
+    "background_Ward_projector"
+  ],
+  "inventory_sha256": "5150f76cc148f8e7c940bcac754ed0c50140aecc90e2d03224ed77b05966b6e5",
+  "derived_residues": {
+    "delta_Z_Q": "C_A*(13/6-xi/2)",
+    "delta_Z_c": "C_A*(3/4-xi/4)",
+    "delta_Z_ghost_vertex": "-C_A*xi/2",
+    "delta_Z_g": "-11*C_A/6",
+    "delta_Z_xi": "C_A*(13/6-xi/2)",
+    "delta_Z_background": "11*C_A/3"
+  },
+  "ST_identity": "Z_g=Z_ghost_vertex*Z_Q^(-1/2)*Z_c^(-1)",
+  "gauge_parameter_identity": "Z_xi=Z_Q",
+  "background_Ward_identity": "Z_g*sqrt(Z_background)=1",
+  "sample_checks": {
+    "0": {
+      "ST_residual": "0",
+      "gauge_fixing_residual": "0",
+      "background_Ward_residual": "0",
+      "renormalized_UV_residual": "0"
+    },
+    "1": {
+      "ST_residual": "0",
+      "gauge_fixing_residual": "0",
+      "background_Ward_residual": "0",
+      "renormalized_UV_residual": "0"
+    },
+    "2": {
+      "ST_residual": "0",
+      "gauge_fixing_residual": "0",
+      "background_Ward_residual": "0",
+      "renormalized_UV_residual": "0"
+    }
+  },
+  "maximum_residual": "0",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "local_BRST_cohomology_with_offshell_projectors",
+    "scaleless_parts_split": true
+  },
+  "artifact_sha256": "b1531ef04eeb8a00f474a87b7b370ef0e2c7e29413baaca7051ea596d80dfc4e"
+}

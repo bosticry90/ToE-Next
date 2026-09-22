@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P09",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_schwinger_parameter_gaussian_moment_total_derivative",
+  "identity": "K=(d/4)J2 from Gaussian moment",
+  "d": "4-2*epsilon",
+  "J2_kernel": "Gamma(epsilon)",
+  "K_kernel": "-(epsilon - 2)*gamma(epsilon)/2",
+  "exact_d_residual": "0",
+  "normalized_UV_pole_residual": "0",
+  "premature_d4_exact_residual": "2*gamma(epsilon + 1)",
+  "premature_d4_missed_finite": "2",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "997033d34524955c5c195923a3ef774701256752c45995ccce92184a08ae3643"
+}

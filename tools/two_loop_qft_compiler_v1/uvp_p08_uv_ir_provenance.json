@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P08",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "reason": "massive_integral_and_translation_invariant_dimensional_measure",
+  "artifact_sha256": "cf3d9309fe4ca2bfd4c0f91e16ae6f7ff8d6a6ac2de76d4440d9815129988d16"
+}

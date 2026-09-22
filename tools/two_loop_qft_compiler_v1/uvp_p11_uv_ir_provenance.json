@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P11",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": true,
+    "scaleless": true,
+    "rstar_required_for_UV_counterterm_use": true
+  },
+  "reason": "scaleless_DR_zero_is_explicit_plus_UV_minus_IR_cancellation",
+  "artifact_sha256": "62ce55f9d00389044c504283a7bbde26eb43f38b7a3f2519c6a5f5c409f0db35"
+}

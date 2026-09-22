@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C12",
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "broken masses plus nonexceptional U1 background momentum",
+      "scaleless_parts_split": true
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "massive_root_sector_functional_operators",
+      "scaleless_parts_split": true
+    }
+  },
+  "reason": "broken roots are massive and unbroken background momentum is nonexceptional",
+  "artifact_sha256": "f7c0bfc308f82216b32c6ee8dd4148935e0f4832917d896dbf0f2777a79eecbb"
+}

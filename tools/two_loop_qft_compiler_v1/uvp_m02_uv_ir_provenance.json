@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M02",
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "nonexceptional_scalar_momentum plus physical/auxiliary masses",
+      "scaleless_parts_split": true
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "covariant nonexceptional symbol",
+      "scaleless_parts_split": true
+    }
+  },
+  "reason": "nonexceptional derivative projectors separate IR and scalar-potential loops have no p2 pole",
+  "artifact_sha256": "90cfaed27f6f861b96532dd20e727f5ad22b90e40d1421c023f05f5a55a66a66"
+}

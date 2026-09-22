@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P08",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_P08",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_local_large_k_expansion_for_two_routings",
+    "routing_A": {
+      "routing_parameter": "0",
+      "denominators": "((k+(0)p)^2+m2)*((k+(1)p)^2+m2)",
+      "constant_log_residue": "1",
+      "p_linear_residue": "0",
+      "p2_residue": "0",
+      "routing_dependent_tail": "UV_finite"
+    },
+    "routing_B": {
+      "routing_parameter": "-1/2",
+      "denominators": "((k+(-1/2)p)^2+m2)*((k+(1/2)p)^2+m2)",
+      "constant_log_residue": "1",
+      "p_linear_residue": "0",
+      "p2_residue": "0",
+      "routing_dependent_tail": "UV_finite"
+    },
+    "normalized_UV_residue_difference": "0",
+    "surface_term_residue": "0",
+    "translation_Jacobian": "1",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "983b4bf66136184f9a2275425034dab025b330c99b1ba531ee6da6fedf9518e3"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_P08",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "exact_affine_shift_plus_Feynman_parameter_replay",
+    "generic_routing": "((k+r*p)^2+m2)*((k+(r+1)*p)^2+m2)",
+    "shift": "q=k+(r+1-x)*p",
+    "translation_Jacobian": "1",
+    "combined_denominator": "m2+x*(1-x)*p2",
+    "combined_denominator_r_derivative": "0",
+    "routing_A_normalized_UV_residue": "1",
+    "routing_B_normalized_UV_residue": "1",
+    "normalized_UV_residue_difference": "0",
+    "surface_term_residue": "0",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "471253a8373910aebdb1ced36b03b4d18cc417601a56a6737ecf8e94965a4e7d"
+  },
+  "comparison": {
+    "routing_A_residue": "1",
+    "routing_B_residue": "1",
+    "residue_difference": "0",
+    "surface_term_residue": "0",
+    "Jacobian": "1"
+  },
+  "uv_ir_classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "502c0eb146e1b168b2f2651e1e80887330c3973282b2744682959647d173e53a"
+}

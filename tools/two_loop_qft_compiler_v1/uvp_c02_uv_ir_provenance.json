@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C02",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "kinematics": "massive or nonexceptional",
+    "rstar_required": false
+  },
+  "reason": "massive_or_nonexceptional_phi4_bubbles_have_no_IR_pole",
+  "artifact_sha256": "2c75a48b8bf1bd2a2ef67c35902688a54f3a011fcfd7ba93511850db122643b4"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C13",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "broken_sector_auxiliary_mass_IRR_with_explicit_local_Rstar_subtractions",
+  "graph_inventory": [
+    {
+      "sector": "heavy_vector",
+      "IRR": "common_auxiliary_mass"
+    },
+    {
+      "sector": "Goldstone",
+      "IRR": "physical_xi_MW2"
+    },
+    {
+      "sector": "heavy_ghost",
+      "IRR": "physical_xi_MW2"
+    },
+    {
+      "sector": "unbroken_vector_ghost",
+      "IRR": "auxiliary_mass_plus_local_Rstar_subtraction"
+    },
+    {
+      "sector": "real_adjoint_scalar",
+      "IRR": "physical_or_auxiliary_mass"
+    }
+  ],
+  "inventory_sha256": "5c2c92c46d4174ff80ef8940476066a4cbb7e807b98a442a6382a5682a135142",
+  "derived_UV_residues": {
+    "background_b": "-7",
+    "vector_ghost_parent": "-22/3",
+    "real_adjoint_scalar": "1/3",
+    "mass_pairing_residual": "0",
+    "BRST_residual": "0"
+  },
+  "auxiliary_mass_derivative": "0",
+  "local_IR_counterterm_sum_recorded": true,
+  "spurious_IR_pole_after_Rstar": "0",
+  "maximum_residual": "0",
+  "uv_ir": {
+    "UV_poles": "retained",
+    "physical_IR_poles": "none",
+    "manufactured_IR_poles": "subtracted_by_local_Rstar",
+    "scaleless_UV_IR_parts": "separately_labeled"
+  },
+  "artifact_sha256": "db7a0050a972cfab1758964d1a9255bd93032a49147968136e8e2f462cb42f67"
+}

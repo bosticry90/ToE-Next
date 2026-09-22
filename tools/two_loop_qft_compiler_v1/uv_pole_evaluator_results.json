@@ -3,24 +3,24 @@
   "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
   "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
   "execution_id": "layer5a-v2-first-execution",
-  "overall_status": "ENGINE_RUNNING",
-  "authority": "PARTIAL_TEST_AUTHORITY",
+  "overall_status": "CANONICAL_BLOCKED",
+  "authority": "ENGINE_GATE_AUTHORITY",
   "counters": {
     "total_required": 39,
-    "executed": 5,
-    "passed": 5,
-    "blocked": 0,
+    "executed": 29,
+    "passed": 28,
+    "blocked": 1,
     "failed": 0,
-    "not_run_or_locked": 34,
+    "not_run_or_locked": 10,
     "engine_required": 27,
-    "engine_executed": 5,
-    "engine_passed": 5,
+    "engine_executed": 27,
+    "engine_passed": 27,
     "canonical_required": 12,
-    "canonical_executed": 0,
-    "canonical_passed": 0
+    "canonical_executed": 2,
+    "canonical_passed": 1
   },
   "promotion": {
-    "engine_gate": "NOT_EARNED",
+    "engine_gate": "PASS",
     "counterterm_compiler": "BLOCKED",
     "layer6_authorized": false
   },
@@ -232,632 +232,878 @@
       "global_ordinal": 6,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "READY",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "integrand_level_local_Taylor_expansion_with_d_tensor_reduction",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "f7373d0e633dd747a4d1b283454f077484fa9456facc331f11adf398a2199fdf",
+        "uv_ir_provenance_sha256": "c93a49aa1125825d73dbf213f39a913586d5874e3c16815bc9969f72897262f8"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_nonexceptional_Feynman_parameter_pole_extraction",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "984e6d75eac97bd8e1181aa1653730188709ee6eb2a91f10ceedba52f4873d32",
+        "uv_ir_provenance_sha256": "c93a49aa1125825d73dbf213f39a913586d5874e3c16815bc9969f72897262f8"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "two_point_constant": "1",
+        "two_point_p2": "0",
+        "one_derivative_p_mu": "-1/2",
+        "maximum_local_coefficient_residual": "0",
+        "nonlocal_structures": 0,
+        "evidence_sha256": "7b9b0bedb249419e42c1a078f833a6f36ea663fc8b097e45a2338b9ffbf43d8e"
+      },
+      "verdict_reason": "local_integrand_Taylor_projector_equals_nonexceptional_Feynman_parameter_replay_through_required_orders",
+      "evidence_files": [
+        "uvp_p06_primary.json",
+        "uvp_p06_independent_replay.json",
+        "uvp_p06_uv_ir_provenance.json",
+        "uvp_p06_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P07",
       "global_ordinal": 7,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "exact_unequal_mass_partial_fraction_UV_projection",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "d9aed5c74a320469e66edf42494210fb6c8a205f9c158362657ea002e84cd3e7",
+        "uv_ir_provenance_sha256": "ad477a222a5b356b231c36cdec4e6bd80b95f1f0c3817ba60119a4368641b63d"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_Feynman_parameter_log_pole_and_radial_mass_series",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "6ef2bb57f80f2fb0104a2966666f8bb71c0aca89080d74a53b6f3d77c2428811",
+        "uv_ir_provenance_sha256": "ad477a222a5b356b231c36cdec4e6bd80b95f1f0c3817ba60119a4368641b63d"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "normalized_log_residue": "1",
+        "local_mass_residue": "-m1sq - m2sq",
+        "maximum_residual": "0",
+        "evidence_sha256": "9fd050e7aa8a8f4a37df2f76226ef6a5bfd73bff4c6216aa7821c61f7780a66b"
+      },
+      "verdict_reason": "unequal_mass_partial_fraction_and_Feynman_parameter_radial_replay_agree",
+      "evidence_files": [
+        "uvp_p07_primary.json",
+        "uvp_p07_independent_replay.json",
+        "uvp_p07_uv_ir_provenance.json",
+        "uvp_p07_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P08",
       "global_ordinal": 8,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_local_large_k_expansion_for_two_routings",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "983b4bf66136184f9a2275425034dab025b330c99b1ba531ee6da6fedf9518e3",
+        "uv_ir_provenance_sha256": "cf3d9309fe4ca2bfd4c0f91e16ae6f7ff8d6a6ac2de76d4440d9815129988d16"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "exact_affine_shift_plus_Feynman_parameter_replay",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "471253a8373910aebdb1ced36b03b4d18cc417601a56a6737ecf8e94965a4e7d",
+        "uv_ir_provenance_sha256": "cf3d9309fe4ca2bfd4c0f91e16ae6f7ff8d6a6ac2de76d4440d9815129988d16"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "routing_A_residue": "1",
+        "routing_B_residue": "1",
+        "maximum_routing_residual": "0",
+        "evidence_sha256": "502c0eb146e1b168b2f2651e1e80887330c3973282b2744682959647d173e53a"
+      },
+      "verdict_reason": "two_local_routing_expansions_equal_exact_affine_shift_replay",
+      "evidence_files": [
+        "uvp_p08_primary.json",
+        "uvp_p08_independent_replay.json",
+        "uvp_p08_uv_ir_provenance.json",
+        "uvp_p08_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P09",
       "global_ordinal": 9,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "denominator_decomposition_plus_gamma_recurrence_in_exact_d",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "5a4a8f3c140fbf326585f33f8918c1f55c505cce1b01496867308c63a378baa6",
+        "uv_ir_provenance_sha256": "1e454a9b6868acf9f3780e764692fe0fbfaf5d7413ca2957053ba561c8d43d52"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_schwinger_parameter_gaussian_moment_total_derivative",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "997033d34524955c5c195923a3ef774701256752c45995ccce92184a08ae3643",
+        "uv_ir_provenance_sha256": "1e454a9b6868acf9f3780e764692fe0fbfaf5d7413ca2957053ba561c8d43d52"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "exact_d_IBP_residual": "0",
+        "maximum_residual": "0",
+        "premature_d4_missed_finite": "2",
+        "evidence_sha256": "5a6b75098c24eb32e9bb9ae74f580a6b9324229b4604e0f8e19ea2e6409ff9de"
+      },
+      "verdict_reason": "exact_d_total_derivative_identity_and_independent_Gaussian_replay",
+      "evidence_files": [
+        "uvp_p09_primary.json",
+        "uvp_p09_independent_replay.json",
+        "uvp_p09_uv_ir_provenance.json",
+        "uvp_p09_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P10",
       "global_ordinal": 10,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "exact_auxiliary_mass_integrand_rearrangement_with_local_subtraction_terms",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "fdad533c75cfb50eac701241678ab325191ef64ffd5ee9b9b13e53ecf0740a00",
+        "uv_ir_provenance_sha256": "6eb36dd3fd2aa601ba2ba42985bcdd1307a39a582665723088bd29047a35ee73"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_physical_mass_Gamma_function_residues_without_auxiliary_decomposition",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "085b803541d777c9e0b28d2b450f6d0b4e1fe80d9fde4cf8402260552f13438c",
+        "uv_ir_provenance_sha256": "6eb36dd3fd2aa601ba2ba42985bcdd1307a39a582665723088bd29047a35ee73"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "tadpole_residue": "-m2",
+        "bubble_residue": "1",
+        "maximum_auxiliary_mass_residual": "0",
+        "evidence_sha256": "c8ff55cc3cd7bc75cf0a9924d981af5e576a5570cee08954b7ac2413605ae395"
+      },
+      "verdict_reason": "auxiliary_mass_cancels_after_all_local_IRR_terms",
+      "evidence_files": [
+        "uvp_p10_primary.json",
+        "uvp_p10_independent_replay.json",
+        "uvp_p10_uv_ir_provenance.json",
+        "uvp_p10_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P11",
       "global_ordinal": 11,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "radial_Mellin_split_at_arbitrary_positive_scale",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "04f676a5b30457fd5cc95ae836d5eac454bd61c80cfdb8c9b1e0e233a7b54e93",
+        "uv_ir_provenance_sha256": "62ce55f9d00389044c504283a7bbde26eb43f38b7a3f2519c6a5f5c409f0db35"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_two_regulator_Mellin_continuation",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "f8cabd9fab36b842e15b0bdea53215c2284e64659da99943a1a08e5c36feb956",
+        "uv_ir_provenance_sha256": "62ce55f9d00389044c504283a7bbde26eb43f38b7a3f2519c6a5f5c409f0db35"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "UV_residue": "1",
+        "IR_residue": "-1",
+        "DR_sum": "0",
+        "evidence_sha256": "9578a7f2c31ede9906cc32869766e96f2379b15c52f6685456e449f4fe1cbe65"
+      },
+      "verdict_reason": "UV_and_IR_poles_separately_recorded_before_scaleless_cancellation",
+      "evidence_files": [
+        "uvp_p11_primary.json",
+        "uvp_p11_independent_replay.json",
+        "uvp_p11_uv_ir_provenance.json",
+        "uvp_p11_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P12",
       "global_ordinal": 12,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "nonexceptional_offshell_Feynman_parameter_Gamma_projection",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "909ce60a4d58d0cfc509a18742806b253f0bf4a8d6acf5d28ed309924ee6928f",
+        "uv_ir_provenance_sha256": "4b8cd9180764a51bc5cdc8f28938f6c1de13e6897c332c70cce986097700debd"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_auxiliary_mass_IR_rearrangement_with_finite_difference",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "2cdf94b7427bdd5937531dbfe5a2f55ece4a14411ad4a681a81e4c6367328ccb",
+        "uv_ir_provenance_sha256": "4b8cd9180764a51bc5cdc8f28938f6c1de13e6897c332c70cce986097700debd"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "normalized_UV_residue": "1",
+        "primary_minus_replay": "0",
+        "IR_poles": "none",
+        "evidence_sha256": "8502fd50b8b5516c3898e422496bb643ea33ae5a9d36eb272b04552c7ea165f1"
+      },
+      "verdict_reason": "nonexceptional_offshell_and_auxiliary_mass_extractions_agree_without_IR_contamination",
+      "evidence_files": [
+        "uvp_p12_primary.json",
+        "uvp_p12_independent_replay.json",
+        "uvp_p12_uv_ir_provenance.json",
+        "uvp_p12_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P13",
       "global_ordinal": 13,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "recursive_perfect_matching_rank8_d_dimensional_tensor_reducer",
+        "inventory_sha256": "d8ada0fe051626ded8efe191a67d2dd1a53a59c30ca2a1896c63c84be0f9488b",
+        "residue_sha256": "4159870ea61430a683c30997d5fba1a7b1ed3a99c55b5529389f2661fc5a2073",
+        "uv_ir_provenance_sha256": "bc591349029302ac363760fdb34c2fe1bec29ae2291c53f7c9cb84b95c2e268b"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_Gaussian_source_derivatives_with_full_permutation_orbit_quotient",
+        "inventory_sha256": "d8ada0fe051626ded8efe191a67d2dd1a53a59c30ca2a1896c63c84be0f9488b",
+        "residue_sha256": "85088d26b4ed12b0219996320e9999d76492253b32056f835a58daf8916aded2",
+        "uv_ir_provenance_sha256": "bc591349029302ac363760fdb34c2fe1bec29ae2291c53f7c9cb84b95c2e268b"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "pairing_count": 105,
+        "per_pairing_residue": "1/1920",
+        "maximum_residual": "0",
+        "evidence_sha256": "d588362b47256fe76495535117ff274c3121b3f60d3cc0758d15bd5248c2b762"
+      },
+      "verdict_reason": "exact_105_pairing_rank8_reduction_and_independent_permutation_orbit_replay",
+      "evidence_files": [
+        "uvp_p13_primary.json",
+        "uvp_p13_independent_replay.json",
+        "uvp_p13_uv_ir_provenance.json",
+        "uvp_p13_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C01",
       "global_ordinal": 14,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "action_vertex_graph_enumeration_plus_primitive_P01_projection",
+        "inventory_sha256": "02a0a8c025f617c6172b9618585a49095a9b2054c931da86ce1c3d1130f5ba2a",
+        "residue_sha256": "d95cf2b2b2e3cc3cbea9c8d24a3a999b89c55a1e1c35eadc5215e3dc48088c18",
+        "uv_ir_provenance_sha256": "4239c14cdcd3b6247b21e7707cadb06cee60e922478608176336b9725241ae72"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_functional_determinant_expansion_of_M2(phi)=m2+lambda*phi2/2",
+        "inventory_sha256": "7fc26b2ae899f0dc3e4a6a7f8376e4d3b5f812cb05f6209ec68a002df7a1f0c3",
+        "residue_sha256": "6cb5238916cdd65db8efcf1b4f3ace52c8dba95d89d13dbc8b250b4c3f1dbaf0",
+        "uv_ir_provenance_sha256": "4239c14cdcd3b6247b21e7707cadb06cee60e922478608176336b9725241ae72"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "delta_Z_phi": "0",
+        "delta_m2": "lambda*m2/2",
+        "maximum_residual": "0",
+        "evidence_sha256": "c65b93d583c8ac87afc67dcf493ab7b8f1399fe79328bd04ce589c97d333d5b7"
+      },
+      "verdict_reason": "action_graph_and_independent_functional_determinant_phi4_two_point_agree",
+      "evidence_files": [
+        "uvp_c01_primary.json",
+        "uvp_c01_independent_replay.json",
+        "uvp_c01_uv_ir_provenance.json",
+        "uvp_c01_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C02",
       "global_ordinal": 15,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "action_derived_three_channel_graph_enumeration",
+        "inventory_sha256": "dbd665403c283d4324c45cb715e9203383ba57933fee51fef43e6aa1277126ca",
+        "residue_sha256": "7a2a99c5181dcec18156df3d460e4e6cb8a9619d9d55c3f6e069a353c103ff2a",
+        "uv_ir_provenance_sha256": "2c75a48b8bf1bd2a2ef67c35902688a54f3a011fcfd7ba93511850db122643b4"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_background_field_functional_determinant_phi4_projection",
+        "inventory_sha256": "0be6d2b9e443d19c6bd3c1ccf44cb1168618db1ea3c53347c52d9dc6141ef818",
+        "residue_sha256": "2389f4105486a43637ed7a5ad0d07aacbd93ad264f98de355a65d45af972d623",
+        "uv_ir_provenance_sha256": "2c75a48b8bf1bd2a2ef67c35902688a54f3a011fcfd7ba93511850db122643b4"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "delta_lambda": "3*lambda^2/2",
+        "crossing_residual": "0",
+        "evidence_sha256": "f85f3bb53fc33183b430ac7af30d678e41c1cd4eaebb3d3dd465a72d324fd06d"
+      },
+      "verdict_reason": "three_channel_graph_sum_matches_independent_functional_determinant",
+      "evidence_files": [
+        "uvp_c02_primary.json",
+        "uvp_c02_independent_replay.json",
+        "uvp_c02_uv_ir_provenance.json",
+        "uvp_c02_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C03",
       "global_ordinal": 16,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "renormalized_1PI_graph_plus_derived_counterterm_assembly",
+        "inventory_sha256": "99983570d3d57cb9bae09f576b3bc6c6aa1947158a7e97f70e99222ea62dfab1",
+        "residue_sha256": "0203cbc1eee5f82886d16f6c7d8563ff017561be7798f9922ddb6b6686a26986",
+        "uv_ir_provenance_sha256": "a4bfb683ae1d4381e5c133a35cfbfa2242d0ef947c228c272a2ee7d164307c6b"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_bare_action_first_order_expansion_plus_functional_pole_action",
+        "inventory_sha256": "f26b4201c429a258d104fd0c400aa574647ba6607794f674659b5d7882d77a8b",
+        "residue_sha256": "da5a9545461d33f3fc238fb9c04ca3da360b161416bf4f4744e22b1343feb4b7",
+        "uv_ir_provenance_sha256": "a4bfb683ae1d4381e5c133a35cfbfa2242d0ef947c228c272a2ee7d164307c6b"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "maximum_renormalized_UV_residual": "0",
+        "evidence_sha256": "f61a795bb85db636845ab5f53e2c5603869f80530ac36565ea2545f2335f462b"
+      },
+      "verdict_reason": "derived_phi4_counterterms_cancel_two_and_four_point_poles_in_two_methods",
+      "evidence_files": [
+        "uvp_c03_primary.json",
+        "uvp_c03_independent_replay.json",
+        "uvp_c03_uv_ir_provenance.json",
+        "uvp_c03_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C04",
       "global_ordinal": 17,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "action_derived_cubic_tadpole_graph_and_P01_projection",
+        "inventory_sha256": "c69ad9f7a83bf35945f018f0a7cbde5f1814deab1fc237d5ee324d228597434c",
+        "residue_sha256": "dd5e7fa5e81aba15e6daa6927eefc3d57d987cce4030f85fa07d7e2eb77ca3f5",
+        "uv_ir_provenance_sha256": "31243da0377e4d782be5ffebc0b2575d710f73bc4bf51d31b0d54a9189f61056"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_functional_determinant_with_M2(phi)=m2+g*phi",
+        "inventory_sha256": "79e7be9077200a3bfc089b5fc09f6416f9ad1f1378791a4eb07f7c4e2830594a",
+        "residue_sha256": "df5360c77dc556e41beda90b3664ee1e5bd8cad3c123024b40c6091b1adb2fb7",
+        "uv_ir_provenance_sha256": "31243da0377e4d782be5ffebc0b2575d710f73bc4bf51d31b0d54a9189f61056"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "loop_residue": "-g*m2/2",
+        "tadpole_counterterm": "g*m2/2",
+        "maximum_residual": "0",
+        "evidence_sha256": "1527c7ec2cfd4a09b5de74855a83c75e92c613b7133277ba146e9156f32ebc61"
+      },
+      "verdict_reason": "action_graph_sign_and_independent_Hessian_determinant_agree",
+      "evidence_files": [
+        "uvp_c04_primary.json",
+        "uvp_c04_independent_replay.json",
+        "uvp_c04_uv_ir_provenance.json",
+        "uvp_c04_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C05",
       "global_ordinal": 18,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "action_graph_plus_local_momentum_expansion",
+        "inventory_sha256": "c86f347f64ea307c9b589f0a0311a13be61b6a3f82b048078935a14336507a9b",
+        "residue_sha256": "f22cf83fd560b98f19a0e25e7db5400e8b8d477b9168a2064d3f33ec2a1d368d",
+        "uv_ir_provenance_sha256": "2773a53522ece4c7e1bb4837b0d413e199c163ba6c45179be0f2bfefef614ae5"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_nonexceptional_Feynman_parameter_bubble",
+        "inventory_sha256": "e0e00c40e9bf9f55b046e3abd1313dadbe69710956dfc4fd3eb53a541bb7da89",
+        "residue_sha256": "9ffdcfe9526fe9eeed335c937c67b5c222ac0d1c3c97e0a7413441094e3914c6",
+        "uv_ir_provenance_sha256": "2773a53522ece4c7e1bb4837b0d413e199c163ba6c45179be0f2bfefef614ae5"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "delta_m2": "g^2/2",
+        "delta_Z_phi": "0",
+        "maximum_residual": "0",
+        "evidence_sha256": "3ce537b5a0158fd4e2414f3acbd32d90b3c691e7ed103d1cfff4f07782dfd53f"
+      },
+      "verdict_reason": "local_graph_expansion_and_Feynman_parameter_replay_agree",
+      "evidence_files": [
+        "uvp_c05_primary.json",
+        "uvp_c05_independent_replay.json",
+        "uvp_c05_uv_ir_provenance.json",
+        "uvp_c05_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C06",
       "global_ordinal": 19,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "action_graph_enumeration_plus_large_loop_momentum_power_counting",
+        "inventory_sha256": "08b46a0522c1956a06bfd6f5cc32b78f7079c4250ba89daaeaed558d58e16151",
+        "residue_sha256": "f8a222def5b1cb6b96563eb1148d17660e03b6e8e4cb89163c8ea8523aaa62a7",
+        "uv_ir_provenance_sha256": "3103ecc9f2c4aaf25c8e9e2c9fc40366d9be833c7170868e9165a50c695beda7"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_Feynman_parameter_Gamma_three_propagator_integral",
+        "inventory_sha256": "79c2b11f71e3122df55e318ea0f90c3eae27ca61392b4651e8698a0cfc65803a",
+        "residue_sha256": "b19d42630dde683c2d66bd16b70a5de7b9ebce8edb44a5cd93b3b0a2bde85427",
+        "uv_ir_provenance_sha256": "3103ecc9f2c4aaf25c8e9e2c9fc40366d9be833c7170868e9165a50c695beda7"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "UV_residue": "0",
+        "delta_g": "0",
+        "evidence_sha256": "060bf0d0e66cb5abdfd014d5191390ed4584e1169efc1213d2159139a4c787f3"
+      },
+      "verdict_reason": "negative_superficial_degree_and_independent_Gamma_replay_both_UV_finite",
+      "evidence_files": [
+        "uvp_c06_primary.json",
+        "uvp_c06_independent_replay.json",
+        "uvp_c06_uv_ir_provenance.json",
+        "uvp_c06_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C07",
       "global_ordinal": 20,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "action_graph_Feynman_parameter_tensor_projection",
+        "inventory_sha256": "922f0d17bc488e254d0526afd69433130655efbc8223eac037fb5d9d5284d1e0",
+        "residue_sha256": "d2467ab41e915fdc798907454534b8e0910db24cc4c63bd102f5df5be8c910a4",
+        "uv_ir_provenance_sha256": "0cbbfc3209f45b1d9923a49c74cfda30e1a0e14bed84a03b8bb96f7efc4ff77d"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_covariant_heat_kernel_complex_scalar_a2",
+        "inventory_sha256": "1929472d2b901361c215471fef703d0fab655807900ff392c3c2c23e6f100171",
+        "residue_sha256": "cab828daabf1a5623e77b4e1fe5da505849d8729a1847a3c0f0ec255dcc4cf26",
+        "uv_ir_provenance_sha256": "0cbbfc3209f45b1d9923a49c74cfda30e1a0e14bed84a03b8bb96f7efc4ff77d"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "b": "1/3",
+        "transversality_residual": "0",
+        "maximum_residual": "0",
+        "evidence_sha256": "1f0f05ce98d45434eb5d9028d01ac256d8d0440d20f497d1bfa137c68655f4f1"
+      },
+      "verdict_reason": "bubble_plus_seagull_tensor_projection_matches_covariant_heat_kernel",
+      "evidence_files": [
+        "uvp_c07_primary.json",
+        "uvp_c07_independent_replay.json",
+        "uvp_c07_uv_ir_provenance.json",
+        "uvp_c07_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C08",
       "global_ordinal": 21,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "general_xi_action_graph_local_expansion_and_tensor_projection",
+        "inventory_sha256": "bafad5c4866336d9ab5d472712cadd51d1d530e8a99951d02dc62f5732b74693",
+        "residue_sha256": "7901a25e76945830bee274faa21ad88dc6f57b74207c4a7e192e133412ca469d",
+        "uv_ir_provenance_sha256": "6d4b6ff8b03bc093501d01f052032f3f66d5aea38574b617b611b0343df4c59b"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_background_covariant_symbol_pole_action",
+        "inventory_sha256": "29851adc21a1b418cc604656bdd7cb675fa0b0ca13933007edc85c97b2a28c2a",
+        "residue_sha256": "7e9e1411137b5b61f0d3901cdf436bf7a6164f072876e791382dffd8a1065c54",
+        "uv_ir_provenance_sha256": "6d4b6ff8b03bc093501d01f052032f3f66d5aea38574b617b611b0343df4c59b"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "Ward_residual": "0",
+        "maximum_renormalized_UV_residual": "0",
+        "evidence_sha256": "1451d7fbee5fad06f8c65a07ec64c708119efaf841769a7bb59205b0b6d49d55"
+      },
+      "verdict_reason": "general_xi_graph_calculation_matches_independent_covariant_pole_action",
+      "evidence_files": [
+        "uvp_c08_primary.json",
+        "uvp_c08_independent_replay.json",
+        "uvp_c08_uv_ir_provenance.json",
+        "uvp_c08_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C09",
       "global_ordinal": 22,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "background_Feynman_gauge_diagrammatic_tensor_projection",
+        "inventory_sha256": "446a2823d4c448f9fd0e74e3846ed57143bff907e854a9aea45ff3e4dc8fa15e",
+        "residue_sha256": "f6e91b0f22c424e7bd8c82f877cce4c595d354ee77420efb0dd6e6dfdd7054e0",
+        "uv_ir_provenance_sha256": "c3c39025140a5fda6ea2b9654a55f55cb2f9333742ae73874fcfa26ae603bd49"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_minimal_operator_heat_kernel_vector_minus_ghost",
+        "inventory_sha256": "39aeaa0dacb3a83cb22659699b6231d10f532a384edbc67da9facbef00f6f77f",
+        "residue_sha256": "d2464d12ee4c3a9efab4bcddff68228a385dd8df067e3d403d74777271784718",
+        "uv_ir_provenance_sha256": "c3c39025140a5fda6ea2b9654a55f55cb2f9333742ae73874fcfa26ae603bd49"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "b": "-11*C_A/3",
+        "vector_b": "-10*C_A/3",
+        "ghost_b": "-C_A/3",
+        "maximum_residual": "0",
+        "evidence_sha256": "dd72f1768a40b02197ff1d06d3892d0028badfa703449c6b85807bc4a2a9c5d2"
+      },
+      "verdict_reason": "diagrammatic_vector_ghost_split_matches_independent_minimal_operator_heat_kernel",
+      "evidence_files": [
+        "uvp_c09_primary.json",
+        "uvp_c09_independent_replay.json",
+        "uvp_c09_uv_ir_provenance.json",
+        "uvp_c09_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C10",
       "global_ordinal": 23,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "general_xi_diagrammatic_quantum_vector_ghost_vertex_projection",
+        "inventory_sha256": "db3feaa213a3aaab0643f2872aa642d55b9763be0eacf2ca4569cf82f97b6bc0",
+        "residue_sha256": "b20b2698cf375cae9f7fae9e5d7883ea1e04b7910bc268835833f56002930ba2",
+        "uv_ir_provenance_sha256": "e860530c32fae154ed064383901a17d13b7091ba4557895327c5bb1219aecb3c"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_algebraic_BRST_pole_action_solution",
+        "inventory_sha256": "5150f76cc148f8e7c940bcac754ed0c50140aecc90e2d03224ed77b05966b6e5",
+        "residue_sha256": "b1531ef04eeb8a00f474a87b7b370ef0e2c7e29413baaca7051ea596d80dfc4e",
+        "uv_ir_provenance_sha256": "e860530c32fae154ed064383901a17d13b7091ba4557895327c5bb1219aecb3c"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "residues": {
+          "delta_Z_Q": "C_A*(13/6-xi/2)",
+          "delta_Z_c": "C_A*(3/4-xi/4)",
+          "delta_Z_ghost_vertex": "-C_A*xi/2",
+          "delta_Z_g": "-11*C_A/6",
+          "delta_Z_xi": "C_A*(13/6-xi/2)",
+          "delta_Z_background": "11*C_A/3"
+        },
+        "maximum_residual": "0",
+        "evidence_sha256": "5c289d24e5daae5a42519bb66d384a73fa6afa9cd5abcc484bd7d77ce76bbea7"
+      },
+      "verdict_reason": "general_xi_diagrams_and_independent_BRST_pole_action_satisfy_all_ST_relations",
+      "evidence_files": [
+        "uvp_c10_primary.json",
+        "uvp_c10_independent_replay.json",
+        "uvp_c10_uv_ir_provenance.json",
+        "uvp_c10_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C11",
       "global_ordinal": 24,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "broken_phase_Rxi_graph_inventory_and_local_UV_projection",
+        "inventory_sha256": "dc9a33338a10762e3cb8a793b0ac66540fb6e5df12c7d45defb4f44db1a9d43c",
+        "residue_sha256": "c8be7bbb857099e0610263796842fc1570b36458093b4ecd3563084a1722ea5e",
+        "uv_ir_provenance_sha256": "d56c38c40d0f066f04564e740299304b094afee43aa7e38e5eea476ca4a3862b"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_broken_phase_functional_determinant_and_BRST_projection",
+        "inventory_sha256": "3f1e247860538cd89d81cae1cfa3c3b94232a349a835ff46e31ca618c382e36b",
+        "residue_sha256": "a802acd8c1ba00f7ffe20c5b2ad80217d142005e64134900f14a08fdf3702982",
+        "uv_ir_provenance_sha256": "d56c38c40d0f066f04564e740299304b094afee43aa7e38e5eea476ca4a3862b"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "background_b": "1/3",
+        "mass_pairing_residual": "0",
+        "FJ_stationarity_residual": "0",
+        "maximum_residual": "0",
+        "evidence_sha256": "1d8f3c3ef9a8490f3f5d23db1e1df9801dc2cd5f37de3414d8dd5d478cef8eae"
+      },
+      "verdict_reason": "broken_phase_graphs_match_functional_BRST_and_FJ_tadpole_projection",
+      "evidence_files": [
+        "uvp_c11_primary.json",
+        "uvp_c11_independent_replay.json",
+        "uvp_c11_uv_ir_provenance.json",
+        "uvp_c11_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C12",
       "global_ordinal": 25,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "explicit_epsilon_abc_broken_phase_partial_BFM_diagrams",
+        "inventory_sha256": "2f61b6329c2f624f7dae31decf8e3d6a656dd6261cb3d4da84956ec2ddc4121b",
+        "residue_sha256": "f0671b2636768b20d3030441adeccabfe8304dcd14981ef92dffc9c654753a7f",
+        "uv_ir_provenance_sha256": "f7c0bfc308f82216b32c6ee8dd4148935e0f4832917d896dbf0f2777a79eecbb"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_root_weight_heat_kernel_and_equivariant_BRST_cohomology",
+        "inventory_sha256": "d302a415e4891b985476107a47993f32b94148887007cc87bb165dd84b20440c",
+        "residue_sha256": "55b3ee0f7b95518760fd599fccf04a4106ddfadfe3b9cab93acd589c52d24654",
+        "uv_ir_provenance_sha256": "f7c0bfc308f82216b32c6ee8dd4148935e0f4832917d896dbf0f2777a79eecbb"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "parent_b": "-7",
+        "maximum_residual": "0",
+        "evidence_sha256": "79115f129011553eb2f8efac920620a16ced50853e5a769727c828d242ad28c8"
+      },
+      "verdict_reason": "explicit_structure_constant_diagrams_match_root_weight_functional_BRST_replay",
+      "evidence_files": [
+        "uvp_c12_primary.json",
+        "uvp_c12_independent_replay.json",
+        "uvp_c12_uv_ir_provenance.json",
+        "uvp_c12_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_C13",
       "global_ordinal": 26,
       "phase": "ENGINE_5A",
       "family": "CONTROL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "broken_sector_auxiliary_mass_IRR_with_explicit_local_Rstar_subtractions",
+        "inventory_sha256": "5c2c92c46d4174ff80ef8940476066a4cbb7e807b98a442a6382a5682a135142",
+        "residue_sha256": "db7a0050a972cfab1758964d1a9255bd93032a49147968136e8e2f462cb42f67",
+        "uv_ir_provenance_sha256": "45730614a0a596b6d602eac894ea949bb73c8151da4b6607e2debeb93d711089"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_nonexceptional_offshell_Feynman_parameter_and_BRST_projectors",
+        "inventory_sha256": "a095e3cf234d948f89cec8a0f59824353fcf0e79a43bb5db44f0cba7c5630b86",
+        "residue_sha256": "b00d0993728f7737fb6fd06a16a92434e85d076970090206004e6d7ec57a193b",
+        "uv_ir_provenance_sha256": "45730614a0a596b6d602eac894ea949bb73c8151da4b6607e2debeb93d711089"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "background_b": "-7",
+        "maximum_UV_IR_residual": "0",
+        "evidence_sha256": "67a0172d1c3bdee1b94cd19ebfba8d974f04edc7a00c14f88cd96277e16219ed"
+      },
+      "verdict_reason": "auxiliary_mass_Rstar_and_offshell_extractions_reproduce_complete_broken_control_residues",
+      "evidence_files": [
+        "uvp_c13_primary.json",
+        "uvp_c13_independent_replay.json",
+        "uvp_c13_uv_ir_provenance.json",
+        "uvp_c13_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_M01",
       "global_ordinal": 27,
       "phase": "ENGINE_5A",
       "family": "CANONICAL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "background_two_point_sector_sum_with_indices_derived_from_dimensions_and_quadratic_Casimirs",
+        "inventory_sha256": "371453acfdddf7ef3457d78ccf666642466f62035749a6ce70b3a4ac52451280",
+        "residue_sha256": "b89470b50779aa29bda06848916ea6b5ab32424aab36ed80f40548d7ac26a2fb",
+        "uv_ir_provenance_sha256": "420371004ab62d81bd8322d3a7e174a79d5db2561fa06c2cdf45076db070b400"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_weight_charge_sums_for_one_normalized_Cartan_generator",
+        "inventory_sha256": "67550769a75896f229c3560d0bbbc8ff4845d7f3f5bc6c47f754f775b554609b",
+        "residue_sha256": "eb0e3382f3292db833960535bd075203d0f4d7361f998c240e69f12e908b434f",
+        "uv_ir_provenance_sha256": "420371004ab62d81bd8322d3a7e174a79d5db2561fa06c2cdf45076db070b400"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "b10": "-34/3",
+        "maximum_residual": "0",
+        "evidence_sha256": "5fda0b8dee64df56f6b1f2fe38794158f2c98c0f9f098a6308030b51606baa87"
+      },
+      "verdict_reason": "dimension_Casimir_sector_sum_matches_independent_weight_charge_sum_before_expected_comparison",
+      "evidence_files": [
+        "uvp_m01_primary.json",
+        "uvp_m01_independent_replay.json",
+        "uvp_m01_uv_ir_provenance.json",
+        "uvp_m01_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_M02",
       "global_ordinal": 28,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "parent_action_scalar_vector_graphs_with_general_xi_local_p2_projection",
+        "inventory_sha256": "1efd337d0f2326a9d37df740e0cfa2eea0ab6d9dcd94c75a80c58558ef0328a4",
+        "residue_sha256": "67facd1338ce535698d3137d7b02c4e55516aa5ae0009f39aba8ba7130ba5f6f",
+        "uv_ir_provenance_sha256": "90cfaed27f6f861b96532dd20e727f5ad22b90e40d1421c023f05f5a55a66a66"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_covariant_symbol_mixed_Hessian_derivative_expansion",
+        "inventory_sha256": "4c7c6713b89586b27963b769b65c6de13d50fae3c7cf8effd85108c4ff644f39",
+        "residue_sha256": "a28871db0ba4a8edb18c6f8872370a5c640f665551937c2a8b6fd68ba1cedcd8",
+        "uv_ir_provenance_sha256": "90cfaed27f6f861b96532dd20e727f5ad22b90e40d1421c023f05f5a55a66a66"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "scalar_field_residues": {
+          "delta_Z_Phi": "-10*g10^2*(3-xi)",
+          "delta_Z_Sigma": "-(25/2)*g10^2*(3-xi)",
+          "delta_Z_phi": "-(9/2)*g10^2*(3-xi)",
+          "delta_Z_S": "0"
+        },
+        "maximum_residual": "0",
+        "evidence_sha256": "47fc78e76c60e6b849d81d9334a741572845044eefa094998e00d75265fc411b"
+      },
+      "verdict_reason": "parent_action_graphs_match_independent_covariant_symbol_and_all_irrep_matrices_are_identity",
+      "evidence_files": [
+        "uvp_m02_primary.json",
+        "uvp_m02_independent_replay.json",
+        "uvp_m02_uv_ir_provenance.json",
+        "uvp_m02_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_M03",
       "global_ordinal": 29,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
-      "attempt": 0,
+      "status": "BLOCKED",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "primary_capability_audit_before_residue_materialization",
+        "inventory_sha256": "ce6dfaa1ac8b4abf9ef2c613818e9eee18869f19662d97a05f5fc3102644cb4a",
+        "residue_sha256": "42951e5fcc2ffe26bee64966d4f7cc21877fb592b3d173817d0011aba53acd62",
+        "uv_ir_provenance_sha256": "208be5d54edf65d37b0e82f1c13572dacb23eae49c9343c973ad0a04a9ad6374"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_AST_API_surface_and_artifact_manifest_audit",
+        "inventory_sha256": "c4050c68bd730a4d744a1fe9123dc69031f8ce0e314f319031f74b19556caf52",
+        "residue_sha256": "8a18af0f7313c0c97fe896eb7010a149c566800eb6165b258aab99899fadea1b",
+        "uv_ir_provenance_sha256": "208be5d54edf65d37b0e82f1c13572dacb23eae49c9343c973ad0a04a9ad6374"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "residues_derived": false,
+        "blocker_code": "M03_EXHAUSTIVE_PARENT_SCALAR_2PT_CONTRACTION_KERNEL_MISSING",
+        "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+        "evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4"
+      },
+      "verdict_reason": "required_exhaustive_parent_scalar_2pt_contraction_and_projection_kernel_is_not_implemented",
+      "evidence_files": [
+        "uvp_m03_primary_blocker.json",
+        "uvp_m03_independent_blocker_replay.json",
+        "uvp_m03_uv_ir_provenance.json",
+        "uvp_m03_blocked_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_M04",
       "global_ordinal": 30,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -882,8 +1128,8 @@
       "global_ordinal": 31,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -908,8 +1154,8 @@
       "global_ordinal": 32,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -934,8 +1180,8 @@
       "global_ordinal": 33,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -960,8 +1206,8 @@
       "global_ordinal": 34,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -986,8 +1232,8 @@
       "global_ordinal": 35,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1012,8 +1258,8 @@
       "global_ordinal": 36,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1038,8 +1284,8 @@
       "global_ordinal": 37,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1064,8 +1310,8 @@
       "global_ordinal": 38,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1090,8 +1336,8 @@
       "global_ordinal": 39,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "LOCKED",
-      "authorization": "ENGINE_GATE_REQUIRED",
+      "status": "NOT_RUN",
+      "authorization": "WAITING_PREDECESSOR",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1112,5 +1358,5 @@
       "evidence_files": []
     }
   ],
-  "result_sha256": "c8da4ad5bc87cecfb2b594fe17423c2d8a8f21d7239c57b706fcef56177ff004"
+  "result_sha256": "dbcd9893bc57ad3f3d59cb50c6c79a6db99c03885226e2883dc38b7d14ce1dcd"
 }

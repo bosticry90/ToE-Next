@@ -4,13 +4,19 @@
     "LAYER5_COUNTERTERM_ACTION_STRUCTURE_PASS_RESIDUES_BLOCKED",
     "LAYER5_BARE_ACTION_ROUNDTRIP_PASS",
     "PARENT_GAUGE_COUNTERTERM_AND_BACKGROUND_WARD_IDENTITY_PASS",
-    "FJ_LIKE_TADPOLE_VEV_PRESCRIPTION_FROZEN"
+    "FJ_LIKE_TADPOLE_VEV_PRESCRIPTION_FROZEN",
+    "ONE_LOOP_UV_POLE_EVALUATOR_PASS_27_OF_27",
+    "M02_PARENT_SCALAR_WAVEFUNCTION_RESIDUES_PASS"
   ],
   "counterterm_contract_sha256": "87cf0b4966451c62168552284cb1c709c5e3247d8e1b8241e34d4b78116c48f1",
   "slot_structures_populated": 21,
   "slot_pole_residues_derived": 0,
-  "missing_required_residue_groups": 18,
-  "blocker": "one_loop_1PI_UV_pole_evaluator_for_parent_scalar_1_2_3_4_point_and_partial_BFM_quantum_vector_ghost_amplitudes",
+  "missing_required_residue_groups": 14,
+  "blocker": "M03_EXHAUSTIVE_PARENT_SCALAR_2PT_CONTRACTION_KERNEL_MISSING",
   "layer6_authorized": false,
-  "finite_C1_GS": null
+  "finite_C1_GS": null,
+  "layer5a_progress": "29/39",
+  "engine_gate": "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
+  "canonical_progress": "M02_PASS_M03_BLOCKED",
+  "execution_checkpoint_sha256": "8a31bb28df83b7417c5e98d019547ec95966fe3147330b2b05c9a58f7e4b0187"
 }

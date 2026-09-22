@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:toe-next:two-loop-qft-compiler-v1:uvp-p06-evidence-v1",
+  "title": "UVP_P06 local external-momentum Taylor evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "test_id", "attempt", "contract_sha256",
+    "execution_plan_sha256", "primary", "independent_replay",
+    "local_coefficients", "locality", "tail_power_counting",
+    "routing_diagnostic", "uv_ir_classification", "verdict",
+    "artifact_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "test_id": {"const": "UVP_P06"},
+    "attempt": {"const": 1},
+    "contract_sha256": {"const": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92"},
+    "execution_plan_sha256": {"const": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101"},
+    "primary": {"type": "object"},
+    "independent_replay": {"type": "object"},
+    "local_coefficients": {
+      "type": "object", "additionalProperties": false,
+      "required": ["constant", "p_linear", "p2", "p_mu", "maximum_residual"],
+      "properties": {
+        "constant": {"const": "1"},
+        "p_linear": {"const": "0"},
+        "p2": {"const": "0"},
+        "p_mu": {"const": "-1/2"},
+        "maximum_residual": {"const": "0"}
+      }
+    },
+    "locality": {
+      "type": "object", "additionalProperties": false,
+      "required": ["local_polynomial_only", "forbidden_structures_present"],
+      "properties": {
+        "local_polynomial_only": {"const": true},
+        "forbidden_structures_present": {"const": []}
+      }
+    },
+    "tail_power_counting": {
+      "type": "object", "additionalProperties": false,
+      "required": ["two_point_beyond_p2", "one_derivative_beyond_p_mu"],
+      "properties": {
+        "two_point_beyond_p2": {"const": "UV_finite"},
+        "one_derivative_beyond_p_mu": {"const": "UV_finite"}
+      }
+    },
+    "routing_diagnostic": {
+      "type": "object", "additionalProperties": false,
+      "required": ["scalar_residual", "vector_covariance", "authority"],
+      "properties": {
+        "scalar_residual": {"const": "0"},
+        "vector_covariance": {"const": "PASS"},
+        "authority": {"const": "SUPPORTING_ONLY_P08_REMAINS_DEDICATED_ROUTING_GATE"}
+      }
+    },
+    "uv_ir_classification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["uv_pole", "ir_pole", "scaleless", "rstar_required"],
+      "properties": {
+        "uv_pole": {"const": true},
+        "ir_pole": {"const": false},
+        "scaleless": {"const": false},
+        "rstar_required": {"const": false}
+      }
+    },
+    "verdict": {"const": "PASS"},
+    "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

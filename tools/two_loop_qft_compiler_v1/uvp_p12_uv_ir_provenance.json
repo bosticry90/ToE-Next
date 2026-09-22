@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P12",
+  "classification": {
+    "offshell": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "kinematic_domain": "Euclidean p2>0",
+      "rstar_required": false
+    },
+    "auxiliary_mass": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "kinematic_domain": "auxiliary M2>0; compared to Euclidean p2>0",
+      "rstar_required": false
+    }
+  },
+  "reason": "both nonexceptional momentum and positive auxiliary mass regulate IR independently",
+  "artifact_sha256": "4b8cd9180764a51bc5cdc8f28938f6c1de13e6897c332c70cce986097700debd"
+}

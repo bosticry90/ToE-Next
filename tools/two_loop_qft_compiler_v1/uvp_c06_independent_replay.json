@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C06",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_Feynman_parameter_Gamma_three_propagator_integral",
+  "inventory": [
+    "three_Feynman_parameters",
+    "Gamma(1+epsilon)",
+    "nonexceptional_massive_denominator"
+  ],
+  "inventory_sha256": "79c2b11f71e3122df55e318ea0f90c3eae27ca61392b4651e8698a0cfc65803a",
+  "Gamma_factor": "Gamma(1+epsilon)",
+  "normalized_UV_residue": "0",
+  "derived_delta_g": "0",
+  "locality": true,
+  "uv_ir": {
+    "uv_pole": false,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "b19d42630dde683c2d66bd16b70a5de7b9ebce8edb44a5cd93b3b0a2bde85427"
+}

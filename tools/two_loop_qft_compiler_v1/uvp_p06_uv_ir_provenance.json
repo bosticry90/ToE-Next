@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P06",
+  "mass_domain": "m2>0",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "reason": "massive_nonexceptional_primitives_have_no_IR_pole_and_no_IR_rearrangement_is_used",
+  "artifact_sha256": "c93a49aa1125825d73dbf213f39a913586d5874e3c16815bc9969f72897262f8"
+}

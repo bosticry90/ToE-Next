@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C07",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "action_graph_Feynman_parameter_tensor_projection",
+  "action": "complex charge-one scalar QED",
+  "graph_inventory": [
+    {
+      "topology": "charged_scalar_bubble",
+      "vertices": [
+        "Aphi*phi",
+        "Aphi*phi"
+      ],
+      "symmetry_factor": "1"
+    },
+    {
+      "topology": "charged_scalar_seagull",
+      "vertex": "AAphi*phi",
+      "symmetry_factor": "1"
+    }
+  ],
+  "inventory_sha256": "922f0d17bc488e254d0526afd69433130655efbc8223eac037fb5d9d5284d1e0",
+  "separate_pieces": {
+    "bubble_delta_m2": "-2*m2",
+    "seagull_delta_m2": "2*m2",
+    "bubble_p2_delta": "-p2/3",
+    "bubble_p_mu_p_nu": "p_mu*p_nu/3"
+  },
+  "mass_term_residual": "0",
+  "longitudinal_contraction_residual": "0",
+  "background_two_point_pole": "(p_mu*p_nu-p2*g_mu_nu)/3",
+  "derived_b": "1/3",
+  "background_transverse": true,
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "kinematics": "m2>0 or Euclidean p2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "d2467ab41e915fdc798907454534b8e0910db24cc4c63bd102f5df5be8c910a4"
+}

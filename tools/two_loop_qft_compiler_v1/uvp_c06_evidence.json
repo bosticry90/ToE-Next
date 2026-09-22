@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C06",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_C06",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "action_graph_enumeration_plus_large_loop_momentum_power_counting",
+    "graph_inventory": [
+      {
+        "topology": "three_cubic_vertex_triangle",
+        "vertices": 3,
+        "propagators": 3,
+        "superficial_degree": "-2",
+        "symmetry_factor": "1"
+      }
+    ],
+    "inventory_sha256": "08b46a0522c1956a06bfd6f5cc32b78f7079c4250ba89daaeaed558d58e16151",
+    "normalized_UV_residue": "0",
+    "derived_delta_g": "0",
+    "locality": true,
+    "uv_ir": {
+      "uv_pole": false,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "f8a222def5b1cb6b96563eb1148d17660e03b6e8e4cb89163c8ea8523aaa62a7"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_C06",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_Feynman_parameter_Gamma_three_propagator_integral",
+    "inventory": [
+      "three_Feynman_parameters",
+      "Gamma(1+epsilon)",
+      "nonexceptional_massive_denominator"
+    ],
+    "inventory_sha256": "79c2b11f71e3122df55e318ea0f90c3eae27ca61392b4651e8698a0cfc65803a",
+    "Gamma_factor": "Gamma(1+epsilon)",
+    "normalized_UV_residue": "0",
+    "derived_delta_g": "0",
+    "locality": true,
+    "uv_ir": {
+      "uv_pole": false,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "b19d42630dde683c2d66bd16b70a5de7b9ebce8edb44a5cd93b3b0a2bde85427"
+  },
+  "comparison": {
+    "UV_residue": "0",
+    "delta_g": "0",
+    "maximum_residual": "0"
+  },
+  "uv_ir_classification": {
+    "uv_pole": false,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "060bf0d0e66cb5abdfd014d5191390ed4584e1169efc1213d2159139a4c787f3"
+}

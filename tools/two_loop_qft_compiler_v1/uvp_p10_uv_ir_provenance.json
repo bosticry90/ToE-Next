@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P10",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "physical_mass_domain": "m2>0",
+    "auxiliary_mass_domain": "M2>0",
+    "rstar_required": false
+  },
+  "reason": "positive physical and auxiliary masses protect IR while local UV residues cancel M2",
+  "artifact_sha256": "6eb36dd3fd2aa601ba2ba42985bcdd1307a39a582665723088bd29047a35ee73"
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C01",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_C01",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "action_vertex_graph_enumeration_plus_primitive_P01_projection",
+    "action": "L=1/2(dphi)^2-1/2*m2*phi^2-lambda*phi^4/4!",
+    "graph_inventory": [
+      {
+        "graph": "quartic_tadpole",
+        "vertices": [
+          "phi4"
+        ],
+        "internal_lines": 1,
+        "automorphism_order": 2,
+        "symmetry_factor": "1/2",
+        "external_legs": 2
+      }
+    ],
+    "graph_inventory_sha256": "02a0a8c025f617c6172b9618585a49095a9b2054c931da86ce1c3d1130f5ba2a",
+    "loop_two_point_pole": "-lambda*m2/2",
+    "derived_counterterms": {
+      "delta_Z_phi": "0",
+      "delta_m2": "lambda*m2/2"
+    },
+    "p2_pole": "0",
+    "locality": true,
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "d95cf2b2b2e3cc3cbea9c8d24a3a999b89c55a1e1c35eadc5215e3dc48088c18"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_C01",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_functional_determinant_expansion_of_M2(phi)=m2+lambda*phi2/2",
+    "functional_pole_kernel": "-M2(phi)^2/4 in frozen d=4-2epsilon action convention",
+    "derived_counterterms": {
+      "delta_Z_phi": "0",
+      "delta_m2": "lambda*m2/2"
+    },
+    "p2_pole": "0",
+    "locality": true,
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "6cb5238916cdd65db8efcf1b4f3ace52c8dba95d89d13dbc8b250b4c3f1dbaf0"
+  },
+  "comparison": {
+    "delta_Z_phi": "0",
+    "delta_m2": "lambda*m2/2",
+    "maximum_residual": "0"
+  },
+  "uv_ir_classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "c65b93d583c8ac87afc67dcf493ab7b8f1399fe79328bd04ce589c97d333d5b7"
+}

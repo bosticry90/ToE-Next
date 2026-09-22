@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M01",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "background_two_point_sector_sum_with_indices_derived_from_dimensions_and_quadratic_Casimirs",
+  "group_derivation": {
+    "N": 10,
+    "dimG": 45,
+    "C_A_formula": "N-2",
+    "C_A": "8",
+    "representations": {
+      "16_Weyl": {
+        "dimension": 16,
+        "C2": "45/8",
+        "T": "2"
+      },
+      "54_real": {
+        "dimension": 54,
+        "C2": "10",
+        "T": "12"
+      },
+      "126_complex": {
+        "dimension": 126,
+        "C2": "25/2",
+        "T": "35"
+      },
+      "10_complex": {
+        "dimension": 10,
+        "C2": "9/2",
+        "T": "1"
+      },
+      "1_complex": {
+        "dimension": 1,
+        "C2": "0",
+        "T": "0"
+      }
+    }
+  },
+  "graph_sector_inventory": [
+    {
+      "sector": "gauge_vector_ghost",
+      "multiplicity": 1
+    },
+    {
+      "sector": "Weyl_16",
+      "multiplicity": 3
+    },
+    {
+      "sector": "real_54",
+      "multiplicity": 1
+    },
+    {
+      "sector": "complex_126",
+      "multiplicity": 1
+    },
+    {
+      "sector": "complex_10",
+      "multiplicity": 1
+    },
+    {
+      "sector": "complex_1",
+      "multiplicity": 1
+    }
+  ],
+  "inventory_sha256": "371453acfdddf7ef3457d78ccf666642466f62035749a6ce70b3a4ac52451280",
+  "beta_parts": {
+    "gauge_vector_ghost": "-88/3",
+    "three_Weyl_16": "4",
+    "scalar_total": "14"
+  },
+  "derived_b10": "-34/3",
+  "background_two_point_pole": "34/3",
+  "transversality_residual": "0",
+  "imported_expected_b10": false,
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "method": "nonexceptional_background_momentum",
+    "scaleless_parts_split": true
+  },
+  "artifact_sha256": "b89470b50779aa29bda06848916ea6b5ab32424aab36ed80f40548d7ac26a2fb"
+}

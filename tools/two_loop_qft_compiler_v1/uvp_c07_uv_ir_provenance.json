@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C07",
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "kinematics": "m2>0 or Euclidean p2>0",
+      "rstar_required": false
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "kinematics": "massive_covariant_operator",
+      "rstar_required": false
+    }
+  },
+  "reason": "massive_or_nonexceptional_scalar_QED_background_two_point_is_IR_safe",
+  "artifact_sha256": "0cbbfc3209f45b1d9923a49c74cfda30e1a0e14bed84a03b8bb96f7efc4ff77d"
+}

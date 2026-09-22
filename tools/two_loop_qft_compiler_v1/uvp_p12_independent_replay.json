@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P12",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_auxiliary_mass_IR_rearrangement_with_finite_difference",
+  "rearranged_integral": "integral 1/(k2+M2)^2",
+  "difference_classification": "UV_finite",
+  "normalized_UV_residue": "1",
+  "auxiliary_mass_derivative_of_UV_residue": "0",
+  "nonlocal_UV_structures": [],
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "kinematic_domain": "auxiliary M2>0; compared to Euclidean p2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "2cdf94b7427bdd5937531dbfe5a2f55ece4a14411ad4a681a81e4c6367328ccb"
+}

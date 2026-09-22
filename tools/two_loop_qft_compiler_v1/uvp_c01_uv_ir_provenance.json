@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C01",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "reason": "massive_phi4_tadpole_has_UV_but_no_IR_pole",
+  "artifact_sha256": "4239c14cdcd3b6247b21e7707cadb06cee60e922478608176336b9725241ae72"
+}

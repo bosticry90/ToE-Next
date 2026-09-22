@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "outcome": "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "tests_passed": "27/27",
+  "primitive": "13/13",
+  "controls": "13/13",
+  "canonical_parent_gauge": "1/1",
+  "derived_b10": "-34/3",
+  "ledger_sha256": "55d059c7641684467c2f2c6ae81f90e77f73521638397fc468b61d5d4d631158",
+  "M01_evidence_sha256": "5fda0b8dee64df56f6b1f2fe38794158f2c98c0f9f098a6308030b51606baa87",
+  "counterterm_compiler": "BLOCKED",
+  "layer6_authorized": false,
+  "artifact_sha256": "f40d1653eda2ef8bfc73385a475a17fb4d95a01d95ece312116c862f02f91657"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M01",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_weight_charge_sums_for_one_normalized_Cartan_generator",
+  "operator_inventory": [
+    "normalized_plane_generator_charge_sum",
+    "symmetric_square_weights",
+    "exterior_five_weights",
+    "chiral_spinor_weights",
+    "background_heat_kernel_sector_sum"
+  ],
+  "inventory_sha256": "67550769a75896f229c3560d0bbbc8ff4845d7f3f5bc6c47f754f775b554609b",
+  "weight_census": {
+    "10_vector_charges": [
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "54_symmetric_charge_multiplicity": 55,
+    "Lambda5_charge_multiplicity": 252,
+    "126_self_dual_fraction": "1/2",
+    "16_chiral_weight_count": 16
+  },
+  "derived_indices": {
+    "T10": "1",
+    "T54": "12",
+    "T126": "35",
+    "T16": "2"
+  },
+  "beta_parts": {
+    "gauge_vector_ghost": "-88/3",
+    "three_Weyl_16": "4",
+    "scalar_total": "14"
+  },
+  "derived_b10": "-34/3",
+  "background_two_point_pole": "34/3",
+  "transversality_residual": "0",
+  "imported_expected_b10": false,
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "method": "local_weight_heat_kernel",
+    "scaleless_parts_split": true
+  },
+  "artifact_sha256": "eb0e3382f3292db833960535bd075203d0f4d7361f998c240e69f12e908b434f"
+}

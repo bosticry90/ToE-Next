@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P09",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "reason": "massive_IBP_primitive_has_UV_poles_but_no_IR_singularity",
+  "artifact_sha256": "1e454a9b6868acf9f3780e764692fe0fbfaf5d7413ca2957053ba561c8d43d52"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C04",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "action_derived_cubic_tadpole_graph_and_P01_projection",
+  "action": "L=1/2(dphi)^2-1/2*m2*phi^2-g*phi^3/3!",
+  "graph_inventory": [
+    {
+      "topology": "cubic_tadpole",
+      "vertex": "-g*phi^3/3!",
+      "symmetry_factor": "1/2",
+      "primitive": "P01",
+      "primitive_residue": "-m2"
+    }
+  ],
+  "inventory_sha256": "c69ad9f7a83bf35945f018f0a7cbde5f1814deab1fc237d5ee324d228597434c",
+  "vertex_symmetry_multiplier": "g/2",
+  "one_point_loop_residue": "-g*m2/2",
+  "derived_tadpole_counterterm": "g*m2/2",
+  "sign_convention": "counterterm_is_minus_loop_pole",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "dd5e7fa5e81aba15e6daa6927eefc3d57d987cce4030f85fa07d7e2eb77ca3f5"
+}

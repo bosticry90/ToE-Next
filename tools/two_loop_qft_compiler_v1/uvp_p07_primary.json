@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P07",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "exact_unequal_mass_partial_fraction_UV_projection",
+  "integral": "Integral_E[1/((k2+m1sq)*(k2+m2sq))]",
+  "partial_fraction_identity": "[1/(k2+m1sq)-1/(k2+m2sq)]/(m2sq-m1sq)",
+  "normalized_log_residue": "1",
+  "mass_swap_residual": "0",
+  "k2_numerator_normalized_local_mass_residue": "-m1sq - m2sq",
+  "k2_mass_swap_residual": "0",
+  "degenerate_limit": {
+    "log_residue": "1",
+    "k2_residue": "-2*m1sq"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m1sq>0,m2sq>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "d9aed5c74a320469e66edf42494210fb6c8a205f9c158362657ea002e84cd3e7"
+}

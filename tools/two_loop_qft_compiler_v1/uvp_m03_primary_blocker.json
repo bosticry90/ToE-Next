@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M03",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "primary_capability_audit_before_residue_materialization",
+  "parent_action_sha256": "01323e0f6a025edd6f6669b43e7c730f5350e28d8561e72df89636862ca358ed",
+  "inventory": {
+    "targets": [
+      "mPhi2",
+      "mSigma2",
+      "mphi2",
+      "mS2"
+    ],
+    "required_contractions": [
+      "complete parent-origin V3_ACD contraction V3_BCD over 328 real fields",
+      "complete parent-origin V4_ABCD contraction with the four quadratic mass operators",
+      "gauge/Goldstone/ghost scalar two-point constant-pole assembly in the frozen partial-BFM scheme",
+      "projection onto mPhi2,mSigma2,mphi2,mS2 after M02 field residues"
+    ],
+    "available_surfaces": [
+      "on-demand selected directional scalar derivatives",
+      "physical-basis sparse vertex queries",
+      "two-loop background-F2 species inventory",
+      "M02 universal p2 residues"
+    ],
+    "missing_capabilities": [
+      "exhaustive parent scalar two-point one-loop inventory",
+      "exact summed V3/V4 contraction backend",
+      "quadratic pole projector with gauge-sector completion"
+    ]
+  },
+  "inventory_sha256": "ce6dfaa1ac8b4abf9ef2c613818e9eee18869f19662d97a05f5fc3102644cb4a",
+  "attempted_formula": "R_AB=(1/4)*d_A*d_B Tr[H_scalar(q)^2]+gauge_Goldstone_ghost_poles-field_CT_contribution",
+  "all_four_quadratic_directions_derived": false,
+  "residue_values": null,
+  "blocker_code": "M03_EXHAUSTIVE_PARENT_SCALAR_2PT_CONTRACTION_KERNEL_MISSING",
+  "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+  "uv_ir": {
+    "status": "NOT_EVALUATED",
+    "reason": "1PI amplitudes not materialized"
+  },
+  "artifact_sha256": "42951e5fcc2ffe26bee64966d4f7cc21877fb592b3d173817d0011aba53acd62"
+}

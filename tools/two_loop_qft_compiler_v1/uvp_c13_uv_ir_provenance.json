@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C13",
+  "classification": {
+    "primary": {
+      "UV_poles": "retained",
+      "physical_IR_poles": "none",
+      "manufactured_IR_poles": "subtracted_by_local_Rstar",
+      "scaleless_UV_IR_parts": "separately_labeled"
+    },
+    "replay": {
+      "UV_poles": "retained",
+      "physical_IR_poles": "none",
+      "manufactured_IR_poles": "absent_offshell",
+      "scaleless_UV_IR_parts": "separately_labeled"
+    }
+  },
+  "reason": "auxiliary_mass_plus_Rstar_and_nonexceptional_offshell_routes_agree",
+  "artifact_sha256": "45730614a0a596b6d602eac894ea949bb73c8151da4b6607e2debeb93d711089"
+}

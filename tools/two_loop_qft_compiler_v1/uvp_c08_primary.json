@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C08",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "general_xi_action_graph_local_expansion_and_tensor_projection",
+  "graph_inventory": [
+    {
+      "process": "scalar_two_point",
+      "topology": "photon_scalar_exchange"
+    },
+    {
+      "process": "scalar_two_point",
+      "topology": "photon_seagull_scaleless",
+      "UV_IR_split": "required"
+    },
+    {
+      "process": "scalar_photon_vertex",
+      "topology": "triangle"
+    },
+    {
+      "process": "scalar_photon_vertex",
+      "topology": "seagull_attachment"
+    }
+  ],
+  "inventory_sha256": "bafad5c4866336d9ab5d472712cadd51d1d530e8a99951d02dc62f5732b74693",
+  "two_point_loop_pole": {
+    "p2": "e^2*(3-xi)",
+    "mass": "-e^2*xi*m2"
+  },
+  "vertex_longitudinal_loop_pole": "e^3*(3-xi)*(2p+q)_mu",
+  "Ward_identity": "q.Gamma_loop=e*(Sigma_loop(p+q)-Sigma_loop(p))",
+  "Ward_residual": "0",
+  "derived_counterterms": {
+    "kinetic": "-e^2*(3-xi)",
+    "mass_1PI": "e^2*xi*m2",
+    "vertex_longitudinal": "-e^3*(3-xi)*(2p+q)_mu"
+  },
+  "sample_checks": {
+    "0": {
+      "Ward_residual": "0",
+      "renormalized_two_point_residual": "0",
+      "renormalized_vertex_residual": "0"
+    },
+    "1": {
+      "Ward_residual": "0",
+      "renormalized_two_point_residual": "0",
+      "renormalized_vertex_residual": "0"
+    },
+    "2": {
+      "Ward_residual": "0",
+      "renormalized_two_point_residual": "0",
+      "renormalized_vertex_residual": "0"
+    }
+  },
+  "maximum_renormalized_UV_residual": "0",
+  "uv_ir": {
+    "UV_pole": true,
+    "IR_pole_after_offshell_or_mass_regulation": false,
+    "scaleless_seagull": {
+      "UV": "retained",
+      "IR": "retained",
+      "sum": "0"
+    }
+  },
+  "artifact_sha256": "7901a25e76945830bee274faa21ad88dc6f57b74207c4a7e192e133412ca469d"
+}

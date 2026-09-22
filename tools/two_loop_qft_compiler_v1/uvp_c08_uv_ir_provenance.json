@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C08",
+  "classification": {
+    "UV_pole": true,
+    "IR_pole_after_offshell_or_mass_regulation": false,
+    "scaleless_seagull": {
+      "UV": "retained",
+      "IR": "retained",
+      "sum": "0"
+    }
+  },
+  "reason": "offshell_or_mass_regulated_amplitudes_are_IR_safe_and_scaleless_seagull_is_split",
+  "artifact_sha256": "6d4b6ff8b03bc093501d01f052032f3f66d5aea38574b617b611b0343df4c59b"
+}

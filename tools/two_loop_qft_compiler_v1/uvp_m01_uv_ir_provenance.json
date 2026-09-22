@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M01",
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "method": "nonexceptional_background_momentum",
+      "scaleless_parts_split": true
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "method": "local_weight_heat_kernel",
+      "scaleless_parts_split": true
+    }
+  },
+  "reason": "nonexceptional_background_and_local_heat_kernel_routes_are_IR_safe",
+  "artifact_sha256": "420371004ab62d81bd8322d3a7e174a79d5db2561fa06c2cdf45076db070b400"
+}

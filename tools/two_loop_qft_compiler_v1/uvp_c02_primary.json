@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C02",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "action_derived_three_channel_graph_enumeration",
+  "action": "L=1/2(dphi)^2-1/2*m2*phi^2-lambda*phi^4/4!",
+  "graph_inventory": [
+    {
+      "channel": "s",
+      "topology": "two_quartic_vertices_bubble",
+      "symmetry_factor": "1/2",
+      "UV_residue": "lambda^2/2"
+    },
+    {
+      "channel": "t",
+      "topology": "two_quartic_vertices_bubble",
+      "symmetry_factor": "1/2",
+      "UV_residue": "lambda^2/2"
+    },
+    {
+      "channel": "u",
+      "topology": "two_quartic_vertices_bubble",
+      "symmetry_factor": "1/2",
+      "UV_residue": "lambda^2/2"
+    }
+  ],
+  "graph_inventory_sha256": "dbd665403c283d4324c45cb715e9203383ba57933fee51fef43e6aa1277126ca",
+  "channel_residues": {
+    "s": "lambda^2/2",
+    "t": "lambda^2/2",
+    "u": "lambda^2/2"
+  },
+  "crossing_permutation_residual": "0",
+  "derived_delta_lambda": "3*lambda^2/2",
+  "locality": true,
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "kinematics": "massive or nonexceptional",
+    "rstar_required": false
+  },
+  "artifact_sha256": "7a2a99c5181dcec18156df3d460e4e6cb8a9619d9d55c3f6e069a353c103ff2a"
+}

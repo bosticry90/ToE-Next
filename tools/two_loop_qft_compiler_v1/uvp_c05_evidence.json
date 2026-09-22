@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C05",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_C05",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "action_graph_plus_local_momentum_expansion",
+    "graph_inventory": [
+      {
+        "topology": "two_cubic_vertex_bubble",
+        "symmetry_factor": "1/2",
+        "primitive": "P06/P02",
+        "constant_UV_residue": "1",
+        "p2_UV_residue": "0"
+      }
+    ],
+    "inventory_sha256": "c86f347f64ea307c9b589f0a0311a13be61b6a3f82b048078935a14336507a9b",
+    "loop_mass_pole": "-g^2/2",
+    "derived_delta_m2": "g^2/2",
+    "p2_wavefunction_pole": "0",
+    "derived_delta_Z_phi": "0",
+    "locality": true,
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "f22cf83fd560b98f19a0e25e7db5400e8b8d477b9168a2064d3f33ec2a1d368d"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_C05",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_nonexceptional_Feynman_parameter_bubble",
+    "inventory": [
+      "two_cubic_vertices",
+      "Feynman_x_integral",
+      "Gamma(epsilon)"
+    ],
+    "inventory_sha256": "e0e00c40e9bf9f55b046e3abd1313dadbe69710956dfc4fd3eb53a541bb7da89",
+    "parameter_kernel": "Gamma(epsilon)*integral_0^1 dx [m2+x(1-x)p2]^(-epsilon)",
+    "loop_mass_pole": "-g^2/2",
+    "derived_delta_m2": "g^2/2",
+    "p2_wavefunction_pole": "0",
+    "derived_delta_Z_phi": "0",
+    "locality": true,
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "scaleless": false,
+      "mass_domain": "m2>0",
+      "rstar_required": false
+    },
+    "artifact_sha256": "9ffdcfe9526fe9eeed335c937c67b5c222ac0d1c3c97e0a7413441094e3914c6"
+  },
+  "comparison": {
+    "delta_m2": "g^2/2",
+    "delta_Z_phi": "0",
+    "maximum_residual": "0"
+  },
+  "uv_ir_classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "3ce537b5a0158fd4e2414f3acbd32d90b3c691e7ed103d1cfff4f07782dfd53f"
+}

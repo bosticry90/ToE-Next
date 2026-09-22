@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C12",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_C12",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "explicit_epsilon_abc_broken_phase_partial_BFM_diagrams",
+    "graph_inventory": [
+      {
+        "process": "background_parent_2pt",
+        "sectors": [
+          "vector",
+          "ghost",
+          "real_adjoint_scalar"
+        ]
+      },
+      {
+        "process": "broken_vector_Goldstone_ghost",
+        "sectors": [
+          "W1/W2",
+          "G1/G2",
+          "u1/u2"
+        ]
+      },
+      {
+        "process": "equivariant_quartic_ghost",
+        "channels": [
+          "direct",
+          "exchange"
+        ],
+        "Grassmann_relative_sign": "-1"
+      }
+    ],
+    "inventory_sha256": "2f61b6329c2f624f7dae31decf8e3d6a656dd6261cb3d4da84956ec2ddc4121b",
+    "group_checks": {
+      "f_acd_f_bcd": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "C_A": "2",
+      "T_real_adjoint": "2",
+      "Jacobi_residual": "0"
+    },
+    "beta_parts": {
+      "gauge_ghost": "-22/3",
+      "real_adjoint_scalar": "1/3",
+      "parent_total": "-7"
+    },
+    "derived_parent_b": "-7",
+    "mass_pairing": {
+      "M_W2": "g^2*v^2",
+      "m_G2": "xi*M_W2",
+      "m_heavy_ghost2": "xi*M_W2"
+    },
+    "quartic_ghost_vertex": "xi*g^2/2*f^i_(j alpha)*f^k_(l alpha)*(direct-exchange)",
+    "sample_checks": {
+      "1/2": {
+        "mass_pairing": "0",
+        "BRST_residual": "0",
+        "quartic_ghost_ST_residual": "0",
+        "renormalized_UV_residual": "0"
+      },
+      "1": {
+        "mass_pairing": "0",
+        "BRST_residual": "0",
+        "quartic_ghost_ST_residual": "0",
+        "renormalized_UV_residual": "0"
+      },
+      "2": {
+        "mass_pairing": "0",
+        "BRST_residual": "0",
+        "quartic_ghost_ST_residual": "0",
+        "renormalized_UV_residual": "0"
+      }
+    },
+    "maximum_residual": "0",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "broken masses plus nonexceptional U1 background momentum",
+      "scaleless_parts_split": true
+    },
+    "artifact_sha256": "f0671b2636768b20d3030441adeccabfe8304dcd14981ef92dffc9c654753a7f"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_C12",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_root_weight_heat_kernel_and_equivariant_BRST_cohomology",
+    "operator_inventory": [
+      "parent_SU2_vector_heat_kernel",
+      "parent_real_adjoint_scalar_heat_kernel",
+      "equivariant_BRST_operator",
+      "root_charge_plus_minus_one_determinants",
+      "quartic_ghost_cohomology"
+    ],
+    "inventory_sha256": "d302a415e4891b985476107a47993f32b94148887007cc87bb165dd84b20440c",
+    "group_checks": {
+      "adjoint_weights": [
+        -1,
+        0,
+        1
+      ],
+      "C_A": "2",
+      "T_real_adjoint": "2",
+      "Jacobi_residual": "0"
+    },
+    "beta_parts": {
+      "gauge_ghost": "-22/3",
+      "real_adjoint_scalar": "1/3",
+      "parent_total": "-7"
+    },
+    "derived_parent_b": "-7",
+    "mass_pairing": {
+      "M_W2": "g^2*v^2",
+      "m_G2": "xi*M_W2",
+      "m_heavy_ghost2": "xi*M_W2"
+    },
+    "quartic_ghost_vertex": "xi*g^2/2*f^i_(j alpha)*f^k_(l alpha)*(direct-exchange)",
+    "sample_checks": {
+      "1/2": {
+        "mass_pairing": "0",
+        "BRST_residual": "0",
+        "quartic_ghost_ST_residual": "0",
+        "renormalized_UV_residual": "0"
+      },
+      "1": {
+        "mass_pairing": "0",
+        "BRST_residual": "0",
+        "quartic_ghost_ST_residual": "0",
+        "renormalized_UV_residual": "0"
+      },
+      "2": {
+        "mass_pairing": "0",
+        "BRST_residual": "0",
+        "quartic_ghost_ST_residual": "0",
+        "renormalized_UV_residual": "0"
+      }
+    },
+    "maximum_residual": "0",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "massive_root_sector_functional_operators",
+      "scaleless_parts_split": true
+    },
+    "artifact_sha256": "55b3ee0f7b95518760fd599fccf04a4106ddfadfe3b9cab93acd589c52d24654"
+  },
+  "comparison": {
+    "parent_b": "-7",
+    "mass_pairing_residual": "0",
+    "BRST_residual": "0",
+    "quartic_ghost_residual": "0",
+    "maximum_residual": "0"
+  },
+  "uv_ir_classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "broken masses plus nonexceptional U1 background momentum",
+      "scaleless_parts_split": true
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "massive_root_sector_functional_operators",
+      "scaleless_parts_split": true
+    }
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "79115f129011553eb2f8efac920620a16ced50853e5a769727c828d242ad28c8"
+}

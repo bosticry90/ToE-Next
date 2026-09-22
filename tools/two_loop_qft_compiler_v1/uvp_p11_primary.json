@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P11",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "radial_Mellin_split_at_arbitrary_positive_scale",
+  "integrand_radial": "t^(-1-epsilon)",
+  "split_scale": "Lambda2>0",
+  "UV_region": "integral_Lambda2_to_infinity",
+  "IR_region": "integral_0_to_Lambda2",
+  "normalized_UV_residue": "1",
+  "normalized_IR_residue": "-1",
+  "dimensionally_regularized_sum": "0",
+  "split_scale_derivative_of_sum": "0",
+  "scaleless_zero_interpretation": "UV_plus_IR_cancellation_not_absence_of_UV_pole",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": true,
+    "scaleless": true,
+    "rstar_required_for_UV_counterterm_use": true
+  },
+  "artifact_sha256": "04f676a5b30457fd5cc95ae836d5eac454bd61c80cfdb8c9b1e0e233a7b54e93"
+}

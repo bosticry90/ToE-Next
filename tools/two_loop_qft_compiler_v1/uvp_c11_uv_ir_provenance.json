@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C11",
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "broken masses plus nonexceptional background momentum",
+      "scaleless_parts_split": true
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "massive_functional_operators",
+      "scaleless_parts_split": true
+    }
+  },
+  "reason": "broken masses and nonexceptional/functional projectors protect IR",
+  "artifact_sha256": "d56c38c40d0f066f04564e740299304b094afee43aa7e38e5eea476ca4a3862b"
+}

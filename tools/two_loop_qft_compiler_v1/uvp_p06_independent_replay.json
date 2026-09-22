@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P06",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_nonexceptional_Feynman_parameter_pole_extraction",
+  "dimension": "d=4-2*epsilon",
+  "feynman_denominator": "Delta=m2+x*(1-x)*p2",
+  "pole_kernel": "Gamma(epsilon)*Delta^(-epsilon)",
+  "two_point_normalized_UV_coefficients": {
+    "constant": "1",
+    "p_linear": "0",
+    "p2": "0"
+  },
+  "one_derivative_shift": "k_mu=q_mu-(1-x)*p_mu",
+  "one_derivative_normalized_p_mu_UV_coefficient": "-1/2",
+  "locality": {
+    "pole_depends_on_m2": false,
+    "pole_depends_on_p2_nonpolynomially": false,
+    "forbidden_structures_present": [],
+    "local_polynomial_only": true
+  },
+  "tail_UV_classification": {
+    "two_point_beyond_p2": "UV_finite",
+    "one_derivative_beyond_p_mu": "UV_finite"
+  },
+  "routing_diagnostic": {
+    "x_to_1_minus_x_scalar_residual": "0",
+    "vector_line_exchange_covariance": "PASS",
+    "authority": "SUPPORTING_ONLY_P08_REMAINS_DEDICATED_ROUTING_GATE"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false,
+    "infrared_rearrangement_used": false
+  },
+  "artifact_sha256": "984e6d75eac97bd8e1181aa1653730188709ee6eb2a91f10ceedba52f4873d32"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P13",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "reason": "massive_rank8_logarithmic_primitive_has_no_IR_pole",
+  "artifact_sha256": "bc591349029302ac363760fdb34c2fe1bec29ae2291c53f7c9cb84b95c2e268b"
+}

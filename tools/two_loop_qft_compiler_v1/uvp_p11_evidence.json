@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P11",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary": {
+    "schema_version": 1,
+    "test_id": "UVP_P11",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "radial_Mellin_split_at_arbitrary_positive_scale",
+    "integrand_radial": "t^(-1-epsilon)",
+    "split_scale": "Lambda2>0",
+    "UV_region": "integral_Lambda2_to_infinity",
+    "IR_region": "integral_0_to_Lambda2",
+    "normalized_UV_residue": "1",
+    "normalized_IR_residue": "-1",
+    "dimensionally_regularized_sum": "0",
+    "split_scale_derivative_of_sum": "0",
+    "scaleless_zero_interpretation": "UV_plus_IR_cancellation_not_absence_of_UV_pole",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": true,
+      "scaleless": true,
+      "rstar_required_for_UV_counterterm_use": true
+    },
+    "artifact_sha256": "04f676a5b30457fd5cc95ae836d5eac454bd61c80cfdb8c9b1e0e233a7b54e93"
+  },
+  "independent_replay": {
+    "schema_version": 1,
+    "test_id": "UVP_P11",
+    "attempt": 1,
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "method": "independent_two_regulator_Mellin_continuation",
+    "regulated_identity": "0=(1/epsilon_UV)-(1/epsilon_IR) after identifying regulators",
+    "normalized_UV_residue": "1",
+    "normalized_IR_residue": "-1",
+    "dimensionally_regularized_sum": "0",
+    "split_scale_derivative_of_sum": "0",
+    "scaleless_zero_interpretation": "UV_and_IR_residues_recorded_before_cancellation",
+    "uv_ir": {
+      "uv_pole": true,
+      "ir_pole": true,
+      "scaleless": true,
+      "rstar_required_for_UV_counterterm_use": true
+    },
+    "artifact_sha256": "f8cabd9fab36b842e15b0bdea53215c2284e64659da99943a1a08e5c36feb956"
+  },
+  "comparison": {
+    "UV_residue": "1",
+    "IR_residue": "-1",
+    "DR_sum": "0",
+    "maximum_residual": "0"
+  },
+  "uv_ir_classification": {
+    "uv_pole": true,
+    "ir_pole": true,
+    "scaleless": true,
+    "rstar_required_for_UV_counterterm_use": true
+  },
+  "verdict": "PASS",
+  "artifact_sha256": "9578a7f2c31ede9906cc32869766e96f2379b15c52f6685456e449f4fe1cbe65"
+}

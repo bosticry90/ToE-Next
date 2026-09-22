@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C03",
+  "classification": {
+    "uv_pole_before_CT": true,
+    "ir_pole": false,
+    "renormalized_UV_pole": false
+  },
+  "reason": "massive_control_has_no_IR_pole_and_derived_counterterms_cancel_UV",
+  "artifact_sha256": "a4bfb683ae1d4381e5c133a35cfbfa2242d0ef947c228c272a2ee7d164307c6b"
+}

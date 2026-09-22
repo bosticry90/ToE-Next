@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P07",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_Feynman_parameter_log_pole_and_radial_mass_series",
+  "feynman_mass": "x*m1sq+(1-x)*m2sq+x*(1-x)*p2",
+  "normalized_log_residue": "1",
+  "radial_large_t_factor": "u**2*(m1sq**2 + m1sq*m2sq + m2sq**2) + u*(-m1sq - m2sq) + 1",
+  "k2_numerator_normalized_local_mass_residue": "-m1sq - m2sq",
+  "mass_swap_residual": "0",
+  "degenerate_limit": {
+    "log_residue": "1",
+    "k2_residue": "-2*m1sq"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m1sq>0,m2sq>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "6ef2bb57f80f2fb0104a2966666f8bb71c0aca89080d74a53b6f3d77c2428811"
+}

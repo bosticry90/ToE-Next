@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C01",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_functional_determinant_expansion_of_M2(phi)=m2+lambda*phi2/2",
+  "functional_pole_kernel": "-M2(phi)^2/4 in frozen d=4-2epsilon action convention",
+  "derived_counterterms": {
+    "delta_Z_phi": "0",
+    "delta_m2": "lambda*m2/2"
+  },
+  "p2_pole": "0",
+  "locality": true,
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "6cb5238916cdd65db8efcf1b4f3ace52c8dba95d89d13dbc8b250b4c3f1dbaf0"
+}

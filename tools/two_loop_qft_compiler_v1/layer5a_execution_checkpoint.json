@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "outcome": "CANONICAL_BLOCKED",
+  "first_test_executed_in_pass": "UVP_P06",
+  "last_test_reached": "UVP_M03",
+  "progress": {
+    "total": "29/39",
+    "passed": 28,
+    "blocked": 1,
+    "failed": 0,
+    "engine": "27/27",
+    "canonical": "2/12 executed; 1 PASS; 1 BLOCKED"
+  },
+  "earned": {
+    "uv_pole_evaluator": "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
+    "counterterm_compiler": "ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED",
+    "M02_parent_scalar_wavefunction_residues": "PASS"
+  },
+  "first_non_pass": {
+    "test_id": "UVP_M03",
+    "verdict": "BLOCKED",
+    "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+    "blocker_code": "M03_EXHAUSTIVE_PARENT_SCALAR_2PT_CONTRACTION_KERNEL_MISSING",
+    "missing_capabilities": [
+      "exhaustive parent scalar two-point one-loop inventory",
+      "exact summed V3/V4 contraction backend",
+      "quadratic pole projector with gauge-sector completion"
+    ],
+    "evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4"
+  },
+  "hashes": {
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "ledger_sha256": "dbcd9893bc57ad3f3d59cb50c6c79a6db99c03885226e2883dc38b7d14ce1dcd",
+    "engine_gate_artifact_sha256": "f40d1653eda2ef8bfc73385a475a17fb4d95a01d95ece312116c862f02f91657",
+    "M02_evidence_sha256": "47fc78e76c60e6b849d81d9334a741572845044eefa094998e00d75265fc411b",
+    "M03_evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4"
+  },
+  "preserved_dispositions": {
+    "gauge_matching": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+    "bfb": "BFB_UNRESOLVED",
+    "finite_C1_GS": null
+  },
+  "layer6_authorized": false,
+  "artifact_sha256": "8a31bb28df83b7417c5e98d019547ec95966fe3147330b2b05c9a58f7e4b0187"
+}

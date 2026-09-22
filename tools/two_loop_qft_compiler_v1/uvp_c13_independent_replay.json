@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C13",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_nonexceptional_offshell_Feynman_parameter_and_BRST_projectors",
+  "operator_inventory": [
+    "nonexceptional_background_2pt",
+    "nonexceptional_heavy_vector_2pt",
+    "nonexceptional_Goldstone_2pt",
+    "nonexceptional_ghost_2pt",
+    "BRST_vertex_projectors",
+    "root_weight_scalar_determinant"
+  ],
+  "inventory_sha256": "a095e3cf234d948f89cec8a0f59824353fcf0e79a43bb5db44f0cba7c5630b86",
+  "derived_UV_residues": {
+    "background_b": "-7",
+    "vector_ghost_parent": "-22/3",
+    "real_adjoint_scalar": "1/3",
+    "mass_pairing_residual": "0",
+    "BRST_residual": "0"
+  },
+  "auxiliary_mass_derivative": "0",
+  "local_IR_counterterm_sum_recorded": true,
+  "spurious_IR_pole_after_Rstar": "0",
+  "maximum_residual": "0",
+  "uv_ir": {
+    "UV_poles": "retained",
+    "physical_IR_poles": "none",
+    "manufactured_IR_poles": "absent_offshell",
+    "scaleless_UV_IR_parts": "separately_labeled"
+  },
+  "artifact_sha256": "b00d0993728f7737fb6fd06a16a92434e85d076970090206004e6d7ec57a193b"
+}

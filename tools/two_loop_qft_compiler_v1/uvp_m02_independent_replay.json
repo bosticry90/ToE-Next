@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M02",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_covariant_symbol_mixed_Hessian_derivative_expansion",
+  "operator_inventory": [
+    "mixed_scalar_quantum_vector_Hessian",
+    "covariant_symbol_order_p2",
+    "Schur_lemma_irrep_projectors",
+    "scalar_potential_Hessian_power_counting"
+  ],
+  "inventory_sha256": "4c7c6713b89586b27963b769b65c6de13d50fae3c7cf8effd85108c4ff644f39",
+  "derived_residues": {
+    "delta_Z_Phi": "-10*g10^2*(3-xi)",
+    "delta_Z_Sigma": "-(25/2)*g10^2*(3-xi)",
+    "delta_Z_phi": "-(9/2)*g10^2*(3-xi)",
+    "delta_Z_S": "0"
+  },
+  "irrep_identity_checks": {
+    "Phi": {
+      "matrix_shape": "54x54",
+      "off_diagonal_residual": "0",
+      "diagonal_spread": "0"
+    },
+    "Sigma": {
+      "matrix_shape": "252x252",
+      "off_diagonal_residual": "0",
+      "diagonal_spread": "0"
+    },
+    "phi": {
+      "matrix_shape": "20x20",
+      "off_diagonal_residual": "0",
+      "diagonal_spread": "0"
+    },
+    "S": {
+      "matrix_shape": "2x2",
+      "off_diagonal_residual": "0",
+      "diagonal_spread": "0"
+    }
+  },
+  "scalar_cubic_quartic_p2_pole": "0",
+  "sample_xi_max_residual": {
+    "1/2": "0",
+    "1": "0",
+    "2": "0"
+  },
+  "maximum_residual": "0",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "covariant nonexceptional symbol",
+    "scaleless_parts_split": true
+  },
+  "artifact_sha256": "a28871db0ba4a8edb18c6f8872370a5c640f665551937c2a8b6fd68ba1cedcd8"
+}

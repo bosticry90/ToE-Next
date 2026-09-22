@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P06",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "integrand_level_local_Taylor_expansion_with_d_tensor_reduction",
+  "dimension": "d=4-2*epsilon",
+  "two_point_primitive": {
+    "integral": "Integral_E[1/((k2+m2)*((k+p)^2+m2))]",
+    "expansion_through_p2": "A^-2-2*(k.p)*A^-3-p2*A^-3+4*(k.p)^2*A^-4",
+    "normalized_UV_coefficients": {
+      "constant": "1",
+      "p_linear": "0",
+      "p2": "0"
+    },
+    "maximum_required_order": "p2",
+    "first_omitted_order": "p3",
+    "first_omitted_superficial_degree": -3,
+    "first_omitted_terms_UV_finite": true
+  },
+  "one_derivative_primitive": {
+    "integral": "Integral_E[k_mu/((k2+m2)*((k+p)^2+m2))]",
+    "first_order_term": "-2*k_mu*(k.p)/(k2+m2)^3",
+    "d_dimensional_reduction": "(k_mu*k_nu)->delta_mu_nu*k2/d",
+    "coefficient_before_laurent": "1/(epsilon - 2)",
+    "normalized_p_mu_UV_coefficient": "-1/2",
+    "maximum_required_order": "p_mu",
+    "first_omitted_order": "p2",
+    "first_omitted_superficial_degree": -1,
+    "first_omitted_terms_UV_finite": true
+  },
+  "locality": {
+    "promoted_basis": [
+      "1",
+      "p_mu"
+    ],
+    "forbidden_nonlocal_structures": [
+      "log(p2)",
+      "1/p2",
+      "sqrt(p2)"
+    ],
+    "forbidden_structures_present": [],
+    "local_polynomial_only": true
+  },
+  "routing_diagnostic": {
+    "scalar_denominator_exchange_residual": "0",
+    "vector_covariance_under_p_reversal_and_line_exchange": "PASS",
+    "authority": "SUPPORTING_ONLY_P08_REMAINS_DEDICATED_ROUTING_GATE"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false,
+    "infrared_rearrangement_used": false
+  },
+  "artifact_sha256": "f7373d0e633dd747a4d1b283454f077484fa9456facc331f11adf398a2199fdf"
+}

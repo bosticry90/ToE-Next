@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_C03",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "renormalized_1PI_graph_plus_derived_counterterm_assembly",
+  "input_evidence_hashes": {
+    "C01": "c65b93d583c8ac87afc67dcf493ab7b8f1399fe79328bd04ce589c97d333d5b7",
+    "C02": "f85f3bb53fc33183b430ac7af30d678e41c1cd4eaebb3d3dd465a72d324fd06d"
+  },
+  "inventory": [
+    "two_point_quartic_tadpole",
+    "two_point_mass_CT",
+    "four_point_s_bubble",
+    "four_point_t_bubble",
+    "four_point_u_bubble",
+    "four_point_lambda_CT"
+  ],
+  "inventory_sha256": "99983570d3d57cb9bae09f576b3bc6c6aa1947158a7e97f70e99222ea62dfab1",
+  "two_point": {
+    "loop_pole": "-lambda*m2/2",
+    "counterterm_pole": "lambda*m2/2",
+    "residual": "0"
+  },
+  "four_point": {
+    "loop_pole": "-3*lambda^2/2",
+    "counterterm_pole": "3*lambda^2/2",
+    "residual": "0"
+  },
+  "wavefunction_residual": "0",
+  "maximum_residual": "0",
+  "uv_ir": {
+    "uv_pole_before_CT": true,
+    "ir_pole": false,
+    "renormalized_UV_pole": false
+  },
+  "artifact_sha256": "0203cbc1eee5f82886d16f6c7d8563ff017561be7798f9922ddb6b6686a26986"
+}
