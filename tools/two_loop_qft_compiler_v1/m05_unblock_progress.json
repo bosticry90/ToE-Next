@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "outcome": "M05_UNBLOCK_IMPLEMENTATION_PROGRESS",
+  "authority": "NO_NEW_TEST_AUTHORITY_M05_ATTEMPT1_REMAINS_BLOCKED",
+  "completed_components": {
+    "restricted_Phi_phi_S_scalar_V4V4": "d80e1ac459c01d0970c5c6d75cffa668eb28b6908a74ae62ad469826fad3d0bb",
+    "restricted_independent_audit": "db71f62ab327ef4deb082f2bcbcb900a3422a4933c37ddec4b45caabd0def108",
+    "full_rank26_projector": "e98b13e9da5f36d4055d5ba95534c6bf0aa14592c7e950f522fcf41a994898ea",
+    "gauge_orbit_quartic_projection": "d151fc27585f581a813e29b0c14a17611191c3021e6dcc09464b074207454bd3"
+  },
+  "completed_counts": {
+    "restricted_internal_real_directions": 76,
+    "restricted_quartic_directions": 11,
+    "full_projector_rank": 26,
+    "gauge_orbit_nonzero_invariant_directions": 13
+  },
+  "current_blocker_code": "M05_SIGMA_V4V4_AND_PARTIAL_BFM_4PT_ASSEMBLY_MISSING",
+  "missing": [
+    "252-real-direction Sigma-containing V4V4 contractions",
+    "complete partial-BFM vector/Goldstone/ghost four-point pole prefactor and xi cancellation",
+    "complete inventory-independent 26-direction residue replay"
+  ],
+  "authoritative_ledger": {
+    "progress": "31/39",
+    "UVP_M05": "BLOCKED_ATTEMPT1",
+    "counterterm_compiler": "BLOCKED",
+    "layer6_authorized": false
+  },
+  "artifact_sha256": "0842668bd935ad5b8fd40bacb53340435343d0c6fa65f9a700601b668c3f9e25"
+}

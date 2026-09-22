@@ -1,0 +1,21 @@
+{
+  "outcome": "M05_ACTIVE_SCALAR_SUBSPACE_AUDIT_PASS",
+  "authority": "IMPLEMENTATION_CHECKPOINT_ONLY_NOT_UVP_M05_PASS",
+  "primary_artifact_sha256": "d80e1ac459c01d0970c5c6d75cffa668eb28b6908a74ae62ad469826fad3d0bb",
+  "independent_projector_method": "full_parent_invariant_oracle",
+  "projector_rank": 11,
+  "projector_residual": "0",
+  "independent_ON_radial_controls": {
+    "lambdaPhi1_squared": "248",
+    "lambdaPhiVector1_squared": "28",
+    "lambdaS_squared": "10"
+  },
+  "ON_radial_control_residual": "0",
+  "full_M05_still_missing": [
+    "Sigma-containing scalar contractions",
+    "rank-26 projector",
+    "partial-BFM gauge completion",
+    "inventory-independent complete replay"
+  ],
+  "artifact_sha256": "db71f62ab327ef4deb082f2bcbcb900a3422a4933c37ddec4b45caabd0def108"
+}

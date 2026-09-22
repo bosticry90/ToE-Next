@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "outcome": "M05_GAUGE_ORBIT_QUARTIC_PROJECTION_PASS",
+  "authority": "GAUGE_INVARIANT_COMPONENT_ONLY_NOT_UVP_M05_PASS",
+  "polynomial": "Tr[K(q)^2], K_ab=<Ta q,Tb q>",
+  "inventory": {
+    "generator_count": 45,
+    "generator_normalization": "Tr10(TaT Tb)=delta_ab",
+    "kinetic_metric": "canonical_328_real",
+    "projector_backgrounds": 26,
+    "verification_backgrounds": 1,
+    "nonzero_projected_directions": 13
+  },
+  "inventory_sha256": "0f47ff6230066172d28da2ce6eaa93229387cb7cfcc275e8b90a6f77b0426a85",
+  "projected_coefficients": {
+    "lambdaPhi1": "3",
+    "lambdaPhi2": "10",
+    "lambdaPhiSigma1": "6",
+    "lambdaPhiSigma2": "4",
+    "lambdaPhiphi1": "2",
+    "lambdaPhiphi2": "20",
+    "lambdaSigma1": "45/4",
+    "lambdaSigma2": "-4",
+    "lambdaSigma3": "2",
+    "lambdaSigma4": "-1/2",
+    "lambdaSigmaphi1": "5",
+    "lambdaPhiVector1": "5",
+    "lambdaPhiVector2": "4"
+  },
+  "rank": 26,
+  "verification_residual": "0",
+  "not_assigned": [
+    "partial-BFM one-loop prefactor",
+    "vector/Goldstone/ghost sector split",
+    "xi cancellation",
+    "M02 field conversion"
+  ],
+  "artifact_sha256": "d151fc27585f581a813e29b0c14a17611191c3021e6dcc09464b074207454bd3"
+}
