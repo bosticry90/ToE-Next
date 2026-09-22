@@ -127,6 +127,16 @@ finite `-m2/4` term in `1/(16*pi^2)` units, proving why the promoted route
 retains `d=4-2*epsilon`. Progress is `4/39` (`4/27`); `UVP_P05` alone is next.
 See [`UVP_P04_RESULT.md`](UVP_P04_RESULT.md).
 
+The fifth primitive promotes the higher-rank tensor combinatorics. `UVP_P05`
+passes with exactly three rank-four and fifteen rank-six metric pairings,
+per-pairing logarithmic residues `1/24` and `1/192`, and exact denominators
+`d(d+2)` and `d(d+2)(d+4)`. A recursive perfect-matching reducer and an
+independent full-permutation-orbit Gaussian replay produce identical pairing
+sets. All 24 rank-four and 720 rank-six permutation checks pass, while the
+rank-6 to rank-4 to rank-2 to scalar contraction chain has zero residual.
+Progress is `5/39` (`5/27`); `UVP_P06` alone is next. See
+[`UVP_P05_RESULT.md`](UVP_P05_RESULT.md).
+
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and
 [`one_loop_xi_cancellation_matrix.json`](one_loop_xi_cancellation_matrix.json).

@@ -284,6 +284,29 @@ def main():
             "UVP_P04_evidence_sha256": result["tests"][3][
                 "derived_result"]["evidence_sha256"],
         })
+    if result["tests"][4]["status"] == "PASS":
+        p05_schema = json.loads((HERE / "uvp_p05_evidence_schema.json").read_text(
+            encoding="utf-8"))
+        p05_schema_hash = sha256(json.dumps(
+            p05_schema, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        compiler_status.update({
+            "layer5a_evaluator_implementation": (
+                "P01_P05_PRIMITIVES_PRIMARY_AND_INDEPENDENT_REPLAY"),
+            "UVP_P05": "PASS",
+            "UVP_P05_evidence_schema_sha256": p05_schema_hash,
+            "UVP_P05_rank4_pairing_count": result["tests"][4][
+                "derived_result"]["rank4_pairing_count"],
+            "UVP_P05_rank6_pairing_count": result["tests"][4][
+                "derived_result"]["rank6_pairing_count"],
+            "UVP_P05_rank4_normalized_residue_per_pairing": result["tests"][4][
+                "derived_result"]["rank4_normalized_residue_per_pairing"],
+            "UVP_P05_rank6_normalized_residue_per_pairing": result["tests"][4][
+                "derived_result"]["rank6_normalized_residue_per_pairing"],
+            "UVP_P05_maximum_pairing_or_contraction_residual": result["tests"][4][
+                "derived_result"]["maximum_pairing_or_contraction_residual"],
+            "UVP_P05_evidence_sha256": result["tests"][4][
+                "derived_result"]["evidence_sha256"],
+        })
     (HERE / "compiler_status.json").write_text(
         json.dumps(compiler_status, indent=2) + "\n", encoding="utf-8")
     execution_status = {

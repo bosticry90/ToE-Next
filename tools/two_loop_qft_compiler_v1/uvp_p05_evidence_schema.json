@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:toe-next:two-loop-qft-compiler-v1:uvp-p05-evidence-v1",
+  "title": "UVP_P05 rank-four/rank-six tensor evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "test_id", "attempt", "contract_sha256",
+    "execution_plan_sha256", "primary", "independent_replay",
+    "pairing_comparison", "recursive_contractions", "permutation_symmetry",
+    "adversarial_d4_check", "uv_ir_classification", "verdict",
+    "artifact_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "test_id": {"const": "UVP_P05"},
+    "attempt": {"const": 1},
+    "contract_sha256": {
+      "const": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92"
+    },
+    "execution_plan_sha256": {
+      "const": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101"
+    },
+    "primary": {"$ref": "#/$defs/calculation"},
+    "independent_replay": {"$ref": "#/$defs/calculation"},
+    "pairing_comparison": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "rank4_count", "rank6_count", "rank4_set_difference",
+        "rank6_set_difference", "rank4_residue_difference",
+        "rank6_residue_difference"
+      ],
+      "properties": {
+        "rank4_count": {"const": 3},
+        "rank6_count": {"const": 15},
+        "rank4_set_difference": {"const": []},
+        "rank6_set_difference": {"const": []},
+        "rank4_residue_difference": {"const": "0"},
+        "rank6_residue_difference": {"const": "0"}
+      }
+    },
+    "recursive_contractions": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "rank6_to_rank4_residual", "rank4_to_rank2_residual",
+        "rank2_to_scalar_residual", "rank4_to_scalar_residual",
+        "rank6_to_scalar_residual", "primary_replay_equal"
+      ],
+      "properties": {
+        "rank6_to_rank4_residual": {"const": "0"},
+        "rank4_to_rank2_residual": {"const": "0"},
+        "rank2_to_scalar_residual": {"const": "0"},
+        "rank4_to_scalar_residual": {"const": "0"},
+        "rank6_to_scalar_residual": {"const": "0"},
+        "primary_replay_equal": {"const": true}
+      }
+    },
+    "permutation_symmetry": {
+      "type": "object", "additionalProperties": false,
+      "required": ["rank4_checks", "rank6_checks", "all_pass"],
+      "properties": {
+        "rank4_checks": {"const": 24},
+        "rank6_checks": {"const": 720},
+        "all_pass": {"const": true}
+      }
+    },
+    "adversarial_d4_check": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "premature_d4_used_by_promoted_route", "rank4_missed_finite_shift",
+        "rank6_missed_finite_shift", "primary_replay_shift_residual"
+      ],
+      "properties": {
+        "premature_d4_used_by_promoted_route": {"const": false},
+        "rank4_missed_finite_shift": {"const": "5/144"},
+        "rank6_missed_finite_shift": {"const": "13/2304"},
+        "primary_replay_shift_residual": {"const": "0"}
+      }
+    },
+    "uv_ir_classification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["uv_pole", "ir_pole", "scaleless", "rstar_required"],
+      "properties": {
+        "uv_pole": {"const": true},
+        "ir_pole": {"const": false},
+        "scaleless": {"const": false},
+        "rstar_required": {"const": false}
+      }
+    },
+    "verdict": {"const": "PASS"},
+    "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "calculation": {
+      "type": "object", "additionalProperties": true,
+      "required": ["method", "rank4", "rank6", "recursive_contractions", "artifact_sha256"],
+      "properties": {
+        "method": {"type": "string", "minLength": 1},
+        "rank4": {"type": "object"},
+        "rank6": {"type": "object"},
+        "recursive_contractions": {"type": "object"},
+        "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

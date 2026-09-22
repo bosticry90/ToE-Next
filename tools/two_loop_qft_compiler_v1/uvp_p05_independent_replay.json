@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P05",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_Gaussian_moments_with_permutation_orbit_pairings",
+  "dimension": "d=4-2*epsilon",
+  "pairing_generator": "full_permutation_orbit_adjacent_pair_quotient",
+  "rank4": {
+    "rank": 4,
+    "denominator_power": 4,
+    "pairing_count": 3,
+    "expected_pairing_count": 3,
+    "pairings": [
+      "g01*g23",
+      "g02*g13",
+      "g03*g12"
+    ],
+    "equal_pairing_coefficients": true,
+    "gaussian_moment_factor": "1/(2^2*s^2)",
+    "coefficient_closed_form": "mu2^epsilon*(m2)^(d/2+2-4)*Gamma(4-2-d/2)/(2^2*(4*pi)^(d/2)*Gamma(4))",
+    "dimension_denominator_reconstructed_by_contraction": "4*(epsilon - 3)*(epsilon - 2)",
+    "normalized_residue_per_pairing": "1/24",
+    "full_contraction_residual": "0",
+    "premature_d4_used_by_promoted_route": false,
+    "premature_d4_missed_finite_shift_per_pairing": "5/144",
+    "gaussian_recursive_contraction_factor": "6 - 2*epsilon"
+  },
+  "rank6": {
+    "rank": 6,
+    "denominator_power": 5,
+    "pairing_count": 15,
+    "expected_pairing_count": 15,
+    "pairings": [
+      "g01*g23*g45",
+      "g01*g24*g35",
+      "g01*g25*g34",
+      "g02*g13*g45",
+      "g02*g14*g35",
+      "g02*g15*g34",
+      "g03*g12*g45",
+      "g03*g14*g25",
+      "g03*g15*g24",
+      "g04*g12*g35",
+      "g04*g13*g25",
+      "g04*g15*g23",
+      "g05*g12*g34",
+      "g05*g13*g24",
+      "g05*g14*g23"
+    ],
+    "equal_pairing_coefficients": true,
+    "gaussian_moment_factor": "1/(2^3*s^3)",
+    "coefficient_closed_form": "mu2^epsilon*(m2)^(d/2+3-5)*Gamma(5-3-d/2)/(2^3*(4*pi)^(d/2)*Gamma(5))",
+    "dimension_denominator_reconstructed_by_contraction": "-8*(epsilon - 4)*(epsilon - 3)*(epsilon - 2)",
+    "normalized_residue_per_pairing": "1/192",
+    "full_contraction_residual": "0",
+    "premature_d4_used_by_promoted_route": false,
+    "premature_d4_missed_finite_shift_per_pairing": "13/2304",
+    "gaussian_recursive_contraction_factor": "8 - 2*epsilon"
+  },
+  "recursive_contractions": {
+    "rank6_to_rank4_residual": "0",
+    "rank4_to_rank2_residual": "0",
+    "rank2_to_scalar_residual": "0",
+    "rank4_to_scalar_residual": "0",
+    "rank6_to_scalar_residual": "0"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "mass_domain": "m2>0",
+    "rstar_required": false
+  },
+  "artifact_sha256": "0d2b91a0a4e46f103d8595a60fd77c4b456a0bd373a92322457bf553cbb8beda"
+}

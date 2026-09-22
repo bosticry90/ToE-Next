@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_P05",
+  "mass_domain": "m2>0",
+  "classification": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "scaleless": false,
+    "rstar_required": false
+  },
+  "reason": "the_massive_rank4_and_rank6_vacuum_integrals_are_IR_finite; their_logarithmic_UV_moments_are_reduced_with_exact_d_dimensional_pairing_denominators",
+  "artifact_sha256": "6ff0aa6a02a9ed779406ffeffb1dd65cbc974b7aec7b8087e1afd342a410c627"
+}

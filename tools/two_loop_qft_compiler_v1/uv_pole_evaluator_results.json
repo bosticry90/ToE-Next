@@ -7,14 +7,14 @@
   "authority": "PARTIAL_TEST_AUTHORITY",
   "counters": {
     "total_required": 39,
-    "executed": 4,
-    "passed": 4,
+    "executed": 5,
+    "passed": 5,
     "blocked": 0,
     "failed": 0,
-    "not_run_or_locked": 35,
+    "not_run_or_locked": 34,
     "engine_required": 27,
-    "engine_executed": 4,
-    "engine_passed": 4,
+    "engine_executed": 5,
+    "engine_passed": 5,
     "canonical_required": 12,
     "canonical_executed": 0,
     "canonical_passed": 0
@@ -192,26 +192,40 @@
       "global_ordinal": 5,
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
-      "status": "NOT_RUN",
-      "authorization": "READY",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "recursive_perfect_matching_d_dimensional_tensor_reducer",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "0be759a316e1ed344775a103fcdb78033777e38ebcc1e34cc561b4e49ba9a48f",
+        "uv_ir_provenance_sha256": "6ff0aa6a02a9ed779406ffeffb1dd65cbc974b7aec7b8087e1afd342a410c627"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
+        "state": "COMPLETE",
+        "method": "independent_Gaussian_moments_with_permutation_orbit_pairings",
         "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "residue_sha256": "0d2b91a0a4e46f103d8595a60fd77c4b456a0bd373a92322457bf553cbb8beda",
+        "uv_ir_provenance_sha256": "6ff0aa6a02a9ed779406ffeffb1dd65cbc974b7aec7b8087e1afd342a410c627"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "rank4_pairing_count": 3,
+        "rank6_pairing_count": 15,
+        "rank4_normalized_residue_per_pairing": "1/24",
+        "rank6_normalized_residue_per_pairing": "1/192",
+        "maximum_pairing_or_contraction_residual": "0",
+        "rank4_premature_d4_missed_finite_shift": "5/144",
+        "rank6_premature_d4_missed_finite_shift": "13/2304",
+        "evidence_sha256": "a2c8154d9d38d8d24fcf85f25b202bc7ea3c0ca7c45f34dd591c17990cda01da"
+      },
+      "verdict_reason": "recursive_primary_and_permutation_orbit_Gaussian_replay_agree_on_all_rank4_rank6_pairings_coefficients_symmetries_and_recursive_contractions",
+      "evidence_files": [
+        "uvp_p05_primary.json",
+        "uvp_p05_independent_replay.json",
+        "uvp_p05_uv_ir_provenance.json",
+        "uvp_p05_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_P06",
@@ -219,7 +233,7 @@
       "phase": "ENGINE_5A",
       "family": "PRIMITIVE",
       "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
+      "authorization": "READY",
       "attempt": 0,
       "primary": {
         "state": "NOT_RUN",
@@ -1098,5 +1112,5 @@
       "evidence_files": []
     }
   ],
-  "result_sha256": "d5b1e61b09431fdfb4a0429bbd4f7f0b4b4bdb6b731cd69239e665fd0359dd9f"
+  "result_sha256": "c8da4ad5bc87cecfb2b594fe17423c2d8a8f21d7239c57b706fcef56177ff004"
 }
