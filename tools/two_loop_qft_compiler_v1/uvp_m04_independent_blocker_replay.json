@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M04",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "method": "independent_AST_and_artifact_manifest_capability_audit",
+  "inventory": {
+    "AST_scanned_modules": [
+      "m03_parent_scalar_kernel.py",
+      "physical_vertex_api.py"
+    ],
+    "available_top_level_names": 20,
+    "required_entry_points": [
+      "contract_all_V3_V4_for_cubic_poles",
+      "enumerate_parent_scalar_one_loop_3pt",
+      "functional_third_derivative_pole_replay",
+      "project_four_real_cubic_poles"
+    ],
+    "absent_entry_points": [
+      "contract_all_V3_V4_for_cubic_poles",
+      "enumerate_parent_scalar_one_loop_3pt",
+      "functional_third_derivative_pole_replay",
+      "project_four_real_cubic_poles"
+    ]
+  },
+  "inventory_sha256": "7b014052377f23414deb84fb96463a8683102576c85cede0206938aa17499ae2",
+  "all_four_real_cubic_directions_derived": false,
+  "residue_values": null,
+  "blocker_code": "M04_EXHAUSTIVE_PARENT_SCALAR_3PT_CONTRACTION_PROJECTOR_MISSING",
+  "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+  "uv_ir": {
+    "status": "NOT_EVALUATED",
+    "reason": "independent three-point inventory cannot be constructed"
+  },
+  "artifact_sha256": "b71072cd868066133207551b42c415f441e371b6fd3dc12b0767d230dace0ccb"
+}

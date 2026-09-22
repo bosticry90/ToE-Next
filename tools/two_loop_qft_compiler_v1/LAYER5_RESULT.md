@@ -123,30 +123,33 @@ the one-loop 1PI UV poles needed to determine:
 Those quantities cannot be obtained from the two-loop graph count or fitted
 from cancellation of future subdivergences.  They require a genuine one-loop
 UV-pole evaluator for parent scalar one- through four-point functions and the
-partial-BFM quantum-vector/ghost system. The later Layer-5A execution has now
+partial-BFM quantum-vector/ghost system. The later Layer-5A execution
 validated that evaluator through the 27/27 engine gate and derived the M02
-field residues, but it has not supplied the M03 quadratic residues or any
-complete slot coefficient. Thus zero of the 21 slots has a *complete* derived
-pole coefficient even though all 21 structural expressions are populated.
+field residues. A focused Layer-5B retry then supplied and independently
+replayed all four M03 quadratic residues. It did not yet supply the M04 cubic
+residues or any complete slot coefficient. Thus zero of the 21 slots has a
+*complete* derived pole coefficient even though all 21 structural expressions
+are populated.
 
-The next admissible compiler task is therefore the M03 exhaustive parent
-scalar two-point contraction/projector kernel. Layer 6 remains unauthorized.
+The next admissible compiler task is therefore the M04 exhaustive parent
+scalar three-point contraction/projector kernel. Layer 6 remains unauthorized.
 
 ## Layer-5A execution update
 
-The frozen Layer-5A contract has now executed through the first canonical
-blocker. All 27 engine tests pass, earning
-`ONE_LOOP_UV_POLE_EVALUATOR_PASS`; `UVP_M02` also passes and derives the four
-parent scalar wave-function residues. The serial run then stops correctly at
-`UVP_M03`, because the exhaustive parent-scalar one-loop two-point inventory,
-the summed `V3*V3`/`M2*V4` contraction backend, and the completed quadratic
-pole projector are not implemented.
+The frozen Layer-5A engine gate passes all 27 tests, and M02 passes for the
+four parent scalar wave-function residues. M03 attempt 2 now also passes: the
+full factorized 328-real quadratic pole operator projects onto the four frozen
+quadratic directions with rank four and exact residual zero, and an
+independent functional replay agrees.
 
-The authoritative state is therefore `29/39` (28 pass, one blocked, zero
-fail). This is an implementation block, not a physics failure. The
-counterterm compiler remains blocked, Layer 6 remains unauthorized, and all
-downstream physics dispositions remain unchanged. See
-[`LAYER5A_EXECUTION_RESULT.md`](LAYER5A_EXECUTION_RESULT.md).
+The serial run then stops correctly at M04 because the exhaustive mixed
+`V3*V4` contraction, partial-BFM scalar three-point gauge completion, and
+four-real-direction cubic projector are not implemented. The authoritative
+state is `30/39` (29 pass, one blocked, zero fail). This is an implementation
+block, not a physics failure. The counterterm compiler remains blocked, Layer
+6 remains unauthorized, and all downstream physics dispositions remain
+unchanged. See
+[`LAYER5B_M03_M04_RESULT.md`](LAYER5B_M03_M04_RESULT.md).
 
 ## Preserved physics boundary
 

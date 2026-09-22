@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "outcome": "CANONICAL_BLOCKED",
+  "first_test_executed_in_resume": "UVP_M03_ATTEMPT_2",
+  "last_test_reached": "UVP_M04",
+  "progress": {
+    "total": "30/39",
+    "passed": 29,
+    "blocked": 1,
+    "failed": 0,
+    "engine": "27/27",
+    "canonical": "3/12 executed; 2 PASS; 1 BLOCKED"
+  },
+  "earned": {
+    "uv_pole_evaluator": "ONE_LOOP_UV_POLE_EVALUATOR_PASS",
+    "counterterm_compiler": "ONE_LOOP_COUNTERTERM_COMPILER_BLOCKED",
+    "M02_parent_scalar_wavefunction_residues": "PASS",
+    "M03_parent_scalar_quadratic_residues": "PASS_ATTEMPT_2"
+  },
+  "M03_attempt_history": [
+    {
+      "attempt": 1,
+      "verdict": "BLOCKED",
+      "evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4"
+    },
+    {
+      "attempt": 2,
+      "verdict": "PASS",
+      "evidence_sha256": "ddad67dc0278be554c5a4cd401d66e348ed08cfef6f0bd6a4a0df406ca0b5451"
+    }
+  ],
+  "first_non_pass": {
+    "test_id": "UVP_M04",
+    "verdict": "BLOCKED",
+    "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+    "blocker_code": "M04_EXHAUSTIVE_PARENT_SCALAR_3PT_CONTRACTION_PROJECTOR_MISSING",
+    "missing_capabilities": [
+      "exhaustive mixed V3*V4 three-point contraction backend",
+      "complete gauge/Goldstone/ghost scalar three-point pole kernel",
+      "rank-four-real cubic invariant projector and independent replay"
+    ],
+    "evidence_sha256": "683ffc450210b10fd381f45b6942d00fa7ec6fee818335bf5a2aaa9de30b2898"
+  },
+  "hashes": {
+    "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+    "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+    "ledger_sha256": "a558661547eb883d8fcc7287f3a8ff87f3d0a3cd50ccec6aded08b722260b1ce",
+    "engine_gate_artifact_sha256": "f40d1653eda2ef8bfc73385a475a17fb4d95a01d95ece312116c862f02f91657",
+    "M02_evidence_sha256": "47fc78e76c60e6b849d81d9334a741572845044eefa094998e00d75265fc411b",
+    "M03_attempt1_evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4",
+    "M03_attempt2_evidence_sha256": "ddad67dc0278be554c5a4cd401d66e348ed08cfef6f0bd6a4a0df406ca0b5451",
+    "M04_evidence_sha256": "683ffc450210b10fd381f45b6942d00fa7ec6fee818335bf5a2aaa9de30b2898"
+  },
+  "preserved_dispositions": {
+    "gauge_matching": "DIRECT_GAUGE_MATCHING_UNRESOLVED",
+    "bfb": "BFB_UNRESOLVED",
+    "finite_C1_GS": null
+  },
+  "layer6_authorized": false,
+  "artifact_sha256": "af50334b6393ecf7a7752b3f6faddbea9212c3ffd0d54748ad6c745a4d2006f4"
+}

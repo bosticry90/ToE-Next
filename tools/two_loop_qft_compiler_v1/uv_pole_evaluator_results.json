@@ -7,17 +7,17 @@
   "authority": "ENGINE_GATE_AUTHORITY",
   "counters": {
     "total_required": 39,
-    "executed": 29,
-    "passed": 28,
+    "executed": 30,
+    "passed": 29,
     "blocked": 1,
     "failed": 0,
-    "not_run_or_locked": 10,
+    "not_run_or_locked": 9,
     "engine_required": 27,
     "engine_executed": 27,
     "engine_passed": 27,
     "canonical_required": 12,
-    "canonical_executed": 2,
-    "canonical_passed": 1
+    "canonical_executed": 3,
+    "canonical_passed": 2
   },
   "promotion": {
     "engine_gate": "PASS",
@@ -1066,35 +1066,45 @@
       "global_ordinal": 29,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "BLOCKED",
+      "status": "PASS",
       "authorization": "TERMINAL",
-      "attempt": 1,
+      "attempt": 2,
       "primary": {
         "state": "COMPLETE",
-        "method": "primary_capability_audit_before_residue_materialization",
-        "inventory_sha256": "ce6dfaa1ac8b4abf9ef2c613818e9eee18869f19662d97a05f5fc3102644cb4a",
-        "residue_sha256": "42951e5fcc2ffe26bee64966d4f7cc21877fb592b3d173817d0011aba53acd62",
-        "uv_ir_provenance_sha256": "208be5d54edf65d37b0e82f1c13572dacb23eae49c9343c973ad0a04a9ad6374"
+        "method": "exhaustive_sparse_parent_vertex_contractions_in_328_real_basis",
+        "inventory_sha256": "48be4cbc79c3a08dc306d3529728d478b57b87699467fe7fd617095216e91e8b",
+        "residue_sha256": "a5fcb25b6c85bce50a6a1248794e0f5de7ccba4c4bf9a98549347d27c75b7ffe",
+        "uv_ir_provenance_sha256": "48f3a3b53992e0a590a32c5d5287d1fc35068dc39c64a885615a18b2f2979f3a"
       },
       "replay": {
         "state": "COMPLETE",
-        "method": "independent_AST_API_surface_and_artifact_manifest_audit",
-        "inventory_sha256": "c4050c68bd730a4d744a1fe9123dc69031f8ce0e314f319031f74b19556caf52",
-        "residue_sha256": "8a18af0f7313c0c97fe896eb7010a149c566800eb6165b258aab99899fadea1b",
-        "uv_ir_provenance_sha256": "208be5d54edf65d37b0e82f1c13572dacb23eae49c9343c973ad0a04a9ad6374"
+        "method": "functional_Hessian_sector_Laplacian_plus_eight_corner_cubic",
+        "inventory_sha256": "c4cb975d3e17c39808338ffc7ce40ea4e1272c6444c98c27e41941480a86f628",
+        "residue_sha256": "be79f0a0832dbdca8f06338bed6c48a87e48a2098588c467c96e6998a4167e8e",
+        "uv_ir_provenance_sha256": "48f3a3b53992e0a590a32c5d5287d1fc35068dc39c64a885615a18b2f2979f3a"
       },
       "derived_result": {
-        "residues_derived": false,
-        "blocker_code": "M03_EXHAUSTIVE_PARENT_SCALAR_2PT_CONTRACTION_KERNEL_MISSING",
-        "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
-        "evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4"
+        "quadratic_residues": {
+          "mPhi2": "30*g10**2*mPhi2 + 224*lambdaPhi1*mPhi2 + 224*lambdaPhi2*mPhi2/5 + lambdaPhiS*mS2 + 504*lambdaPhiSigma1*mSigma2 - 56*lambdaPhiSigma2*mSigma2 + 10*lambdaPhiphi1*mphi2 + lambdaPhiphi2*mphi2 + 126*muPhi**2/5 + muPhiPhi**2/2",
+          "mSigma2": "75*g10**2*mSigma2/2 + 108*lambdaPhiSigma1*mPhi2 - 12*lambdaPhiSigma2*mPhi2 + 1016*lambdaSigma1*mSigma2 + 2440*lambdaSigma2*mSigma2 + 2680*lambdaSigma3*mSigma2 + 4960*lambdaSigma4*mSigma2 + lambdaSigmaS*mS2 + 10*lambdaSigmaphi1*mphi2 + 5*lambdaSigmaphi2*mphi2",
+          "mphi2": "27*g10**2*mphi2/2 + 22*lambdaPhiVector1*mphi2 + 4*lambdaPhiVector2*mphi2 + 108*lambdaPhiphi1*mPhi2 + 54*lambdaPhiphi2*mPhi2/5 + 504*lambdaSigmaphi1*mSigma2 + 252*lambdaSigmaphi2*mSigma2 + lambdaVectorS*mS2 + 27*muPhiPhi**2/5 + 4*z6_im**2 + 4*z6_re**2",
+          "mS2": "108*lambdaPhiS*mPhi2 + 4*lambdaS*mS2 + 504*lambdaSigmaS*mSigma2 + 10*lambdaVectorS*mphi2 + 20*z6_im**2 + 20*z6_re**2"
+        },
+        "projection_rank": 4,
+        "maximum_residual": "0",
+        "attempt1_blocked_evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4",
+        "evidence_sha256": "ddad67dc0278be554c5a4cd401d66e348ed08cfef6f0bd6a4a0df406ca0b5451"
       },
-      "verdict_reason": "required_exhaustive_parent_scalar_2pt_contraction_and_projection_kernel_is_not_implemented",
+      "verdict_reason": "exhaustive_parent_contractions_match_independent_functional_Hessian_replay",
       "evidence_files": [
         "uvp_m03_primary_blocker.json",
         "uvp_m03_independent_blocker_replay.json",
         "uvp_m03_uv_ir_provenance.json",
-        "uvp_m03_blocked_evidence.json"
+        "uvp_m03_blocked_evidence.json",
+        "uvp_m03_primary_attempt2.json",
+        "uvp_m03_independent_replay_attempt2.json",
+        "uvp_m03_uv_ir_provenance_attempt2.json",
+        "uvp_m03_evidence_attempt2.json"
       ]
     },
     {
@@ -1102,26 +1112,36 @@
       "global_ordinal": 30,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "BLOCKED",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "primary_capability_audit_after_M03_quadratic_kernel_promotion",
+        "inventory_sha256": "9e84724772faa70e64240c5bb894086c47561b0be9529c255e6368f36d401ca2",
+        "residue_sha256": "5fef6c8ce4b8caec16386f30c3f1774980c6856f8a841a0c06aad83144669e1f",
+        "uv_ir_provenance_sha256": "69d13235f5184e6b2e73a2b1877def44dfdacf8e46bddc2eb480b54d67a6b23b"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_AST_and_artifact_manifest_capability_audit",
+        "inventory_sha256": "7b014052377f23414deb84fb96463a8683102576c85cede0206938aa17499ae2",
+        "residue_sha256": "b71072cd868066133207551b42c415f441e371b6fd3dc12b0767d230dace0ccb",
+        "uv_ir_provenance_sha256": "69d13235f5184e6b2e73a2b1877def44dfdacf8e46bddc2eb480b54d67a6b23b"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "residues_derived": false,
+        "blocker_code": "M04_EXHAUSTIVE_PARENT_SCALAR_3PT_CONTRACTION_PROJECTOR_MISSING",
+        "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+        "evidence_sha256": "683ffc450210b10fd381f45b6942d00fa7ec6fee818335bf5a2aaa9de30b2898"
+      },
+      "verdict_reason": "required_exhaustive_parent_scalar_3pt_contraction_and_projection_kernel_is_not_implemented",
+      "evidence_files": [
+        "uvp_m04_primary_blocker.json",
+        "uvp_m04_independent_blocker_replay.json",
+        "uvp_m04_uv_ir_provenance.json",
+        "uvp_m04_blocked_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_M05",
@@ -1358,5 +1378,5 @@
       "evidence_files": []
     }
   ],
-  "result_sha256": "dbcd9893bc57ad3f3d59cb50c6c79a6db99c03885226e2883dc38b7d14ce1dcd"
+  "result_sha256": "a558661547eb883d8fcc7287f3a8ff87f3d0a3cd50ccec6aded08b722260b1ce"
 }

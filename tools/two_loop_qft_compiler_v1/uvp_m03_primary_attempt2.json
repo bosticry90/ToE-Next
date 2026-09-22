@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M03",
+  "attempt": 2,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "attempt1_blocked_evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4",
+  "kernel_spec_sha256": "eb3f8eff9a85c76773e58ac4f3606858bd72763ddad68983044cefac1a1832c8",
+  "method": "exhaustive_sparse_parent_vertex_contractions_in_328_real_basis",
+  "normalization": "coefficients multiply 1/(16*pi^2*epsilon_bar)",
+  "inventory": {
+    "basis_dimensions": {
+      "Phi": 54,
+      "Sigma": 252,
+      "phi": 20,
+      "S": 2
+    },
+    "one_loop_topologies": [
+      "two_cubic_bubble",
+      "quartic_tadpole",
+      "partial_BFM_gauge_completion"
+    ],
+    "scalar_internal_real_directions_summed": 328,
+    "cubic_ordered_internal_space": 5776,
+    "factorized_full_operator": {
+      "shape": [
+        328,
+        328
+      ],
+      "blocks": [
+        "Phi_identity_54",
+        "Sigma_identity_252",
+        "phi_identity_20",
+        "S_identity_2"
+      ],
+      "off_block_entries": "EXACT_ZERO_BY_SPIN10_X_PQ_INTERTWINER_AUDIT"
+    }
+  },
+  "inventory_sha256": "48be4cbc79c3a08dc306d3529728d478b57b87699467fe7fd617095216e91e8b",
+  "quartic_trace_table": {
+    "Phi": {
+      "Phi": {
+        "lambdaPhi1": "448",
+        "lambdaPhi2": "448/5"
+      },
+      "Sigma": {
+        "lambdaPhiSigma1": "1008",
+        "lambdaPhiSigma2": "-112"
+      },
+      "phi": {
+        "lambdaPhiphi1": "40",
+        "lambdaPhiphi2": "4"
+      },
+      "S": {
+        "lambdaPhiS": "4"
+      }
+    },
+    "Sigma": {
+      "Phi": {
+        "lambdaPhiSigma1": "216",
+        "lambdaPhiSigma2": "-24"
+      },
+      "Sigma": {
+        "lambdaSigma1": "2032",
+        "lambdaSigma2": "4880",
+        "lambdaSigma3": "5360",
+        "lambdaSigma4": "9920"
+      },
+      "phi": {
+        "lambdaSigmaphi1": "40",
+        "lambdaSigmaphi2": "20",
+        "zD": "0"
+      },
+      "S": {
+        "lambdaSigmaS": "4"
+      }
+    },
+    "phi": {
+      "Phi": {
+        "lambdaPhiphi1": "108",
+        "lambdaPhiphi2": "54/5"
+      },
+      "Sigma": {
+        "lambdaSigmaphi1": "504",
+        "lambdaSigmaphi2": "252",
+        "zD": "0"
+      },
+      "phi": {
+        "lambdaPhiVector1": "44",
+        "lambdaPhiVector2": "8"
+      },
+      "S": {
+        "lambdaVectorS": "2"
+      }
+    },
+    "S": {
+      "Phi": {
+        "lambdaPhiS": "108"
+      },
+      "Sigma": {
+        "lambdaSigmaS": "504"
+      },
+      "phi": {
+        "lambdaVectorS": "20"
+      },
+      "S": {
+        "lambdaS": "8"
+      }
+    }
+  },
+  "cubic_trace_table": {
+    "Phi": {
+      "ordered_internal_pairs_nonzero": 36,
+      "V3_ACD_V3_ACD": "504*muPhi**2/5 + 2*muPhiPhi**2"
+    },
+    "Sigma": {
+      "ordered_internal_pairs_nonzero": 0,
+      "V3_ACD_V3_ACD": "0"
+    },
+    "phi": {
+      "ordered_internal_pairs_nonzero": 44,
+      "V3_ACD_V3_ACD": "54*muPhiPhi**2/5 + 8*z6_im**2 + 8*z6_re**2"
+    },
+    "S": {
+      "ordered_internal_pairs_nonzero": 40,
+      "V3_ACD_V3_ACD": "40*z6_im**2 + 40*z6_re**2"
+    }
+  },
+  "sector_ledgers": {
+    "Phi": {
+      "mass_hessian_factor": 2,
+      "quartic_terms": [
+        {
+          "internal_sector": "Phi",
+          "coupling": "lambdaPhi1",
+          "trace": "448",
+          "deltaM2_term": "448*lambdaPhi1*mPhi2"
+        },
+        {
+          "internal_sector": "Phi",
+          "coupling": "lambdaPhi2",
+          "trace": "448/5",
+          "deltaM2_term": "448*lambdaPhi2*mPhi2/5"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaPhiSigma1",
+          "trace": "1008",
+          "deltaM2_term": "1008*lambdaPhiSigma1*mSigma2"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaPhiSigma2",
+          "trace": "-112",
+          "deltaM2_term": "-112*lambdaPhiSigma2*mSigma2"
+        },
+        {
+          "internal_sector": "phi",
+          "coupling": "lambdaPhiphi1",
+          "trace": "40",
+          "deltaM2_term": "20*lambdaPhiphi1*mphi2"
+        },
+        {
+          "internal_sector": "phi",
+          "coupling": "lambdaPhiphi2",
+          "trace": "4",
+          "deltaM2_term": "2*lambdaPhiphi2*mphi2"
+        },
+        {
+          "internal_sector": "S",
+          "coupling": "lambdaPhiS",
+          "trace": "4",
+          "deltaM2_term": "2*lambdaPhiS*mS2"
+        }
+      ],
+      "cubic_contraction": "504*muPhi**2/5 + 2*muPhiPhi**2",
+      "scalar_delta_M2": "448*lambdaPhi1*mPhi2 + 448*lambdaPhi2*mPhi2/5 + 2*lambdaPhiS*mS2 + 1008*lambdaPhiSigma1*mSigma2 - 112*lambdaPhiSigma2*mSigma2 + 20*lambdaPhiphi1*mphi2 + 2*lambdaPhiphi2*mphi2 + 252*muPhi**2/5 + muPhiPhi**2",
+      "scalar_parameter_counterterm": "224*lambdaPhi1*mPhi2 + 224*lambdaPhi2*mPhi2/5 + lambdaPhiS*mS2 + 504*lambdaPhiSigma1*mSigma2 - 56*lambdaPhiSigma2*mSigma2 + 10*lambdaPhiphi1*mphi2 + lambdaPhiphi2*mphi2 + 126*muPhi**2/5 + muPhiPhi**2/2",
+      "partial_BFM": {
+        "quantum_vector_1PI_parameter_counterterm": "10*g10**2*mPhi2*xi",
+        "vector_seagull_UV_plus_IR": "0_scaleless_split",
+        "goldstone_extra_unshifted_parent_projection": "0",
+        "ghost_extra_unshifted_parent_projection": "0",
+        "M02_field_conversion": "10*g10**2*mPhi2*(3 - xi)",
+        "sum": "30*g10**2*mPhi2"
+      },
+      "total_parameter_counterterm": "30*g10**2*mPhi2 + 224*lambdaPhi1*mPhi2 + 224*lambdaPhi2*mPhi2/5 + lambdaPhiS*mS2 + 504*lambdaPhiSigma1*mSigma2 - 56*lambdaPhiSigma2*mSigma2 + 10*lambdaPhiphi1*mphi2 + lambdaPhiphi2*mphi2 + 126*muPhi**2/5 + muPhiPhi**2/2"
+    },
+    "Sigma": {
+      "mass_hessian_factor": 2,
+      "quartic_terms": [
+        {
+          "internal_sector": "Phi",
+          "coupling": "lambdaPhiSigma1",
+          "trace": "216",
+          "deltaM2_term": "216*lambdaPhiSigma1*mPhi2"
+        },
+        {
+          "internal_sector": "Phi",
+          "coupling": "lambdaPhiSigma2",
+          "trace": "-24",
+          "deltaM2_term": "-24*lambdaPhiSigma2*mPhi2"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaSigma1",
+          "trace": "2032",
+          "deltaM2_term": "2032*lambdaSigma1*mSigma2"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaSigma2",
+          "trace": "4880",
+          "deltaM2_term": "4880*lambdaSigma2*mSigma2"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaSigma3",
+          "trace": "5360",
+          "deltaM2_term": "5360*lambdaSigma3*mSigma2"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaSigma4",
+          "trace": "9920",
+          "deltaM2_term": "9920*lambdaSigma4*mSigma2"
+        },
+        {
+          "internal_sector": "phi",
+          "coupling": "lambdaSigmaphi1",
+          "trace": "40",
+          "deltaM2_term": "20*lambdaSigmaphi1*mphi2"
+        },
+        {
+          "internal_sector": "phi",
+          "coupling": "lambdaSigmaphi2",
+          "trace": "20",
+          "deltaM2_term": "10*lambdaSigmaphi2*mphi2"
+        },
+        {
+          "internal_sector": "S",
+          "coupling": "lambdaSigmaS",
+          "trace": "4",
+          "deltaM2_term": "2*lambdaSigmaS*mS2"
+        }
+      ],
+      "cubic_contraction": "0",
+      "scalar_delta_M2": "216*lambdaPhiSigma1*mPhi2 - 24*lambdaPhiSigma2*mPhi2 + 2032*lambdaSigma1*mSigma2 + 4880*lambdaSigma2*mSigma2 + 5360*lambdaSigma3*mSigma2 + 9920*lambdaSigma4*mSigma2 + 2*lambdaSigmaS*mS2 + 20*lambdaSigmaphi1*mphi2 + 10*lambdaSigmaphi2*mphi2",
+      "scalar_parameter_counterterm": "108*lambdaPhiSigma1*mPhi2 - 12*lambdaPhiSigma2*mPhi2 + 1016*lambdaSigma1*mSigma2 + 2440*lambdaSigma2*mSigma2 + 2680*lambdaSigma3*mSigma2 + 4960*lambdaSigma4*mSigma2 + lambdaSigmaS*mS2 + 10*lambdaSigmaphi1*mphi2 + 5*lambdaSigmaphi2*mphi2",
+      "partial_BFM": {
+        "quantum_vector_1PI_parameter_counterterm": "25*g10**2*mSigma2*xi/2",
+        "vector_seagull_UV_plus_IR": "0_scaleless_split",
+        "goldstone_extra_unshifted_parent_projection": "0",
+        "ghost_extra_unshifted_parent_projection": "0",
+        "M02_field_conversion": "25*g10**2*mSigma2*(3 - xi)/2",
+        "sum": "75*g10**2*mSigma2/2"
+      },
+      "total_parameter_counterterm": "75*g10**2*mSigma2/2 + 108*lambdaPhiSigma1*mPhi2 - 12*lambdaPhiSigma2*mPhi2 + 1016*lambdaSigma1*mSigma2 + 2440*lambdaSigma2*mSigma2 + 2680*lambdaSigma3*mSigma2 + 4960*lambdaSigma4*mSigma2 + lambdaSigmaS*mS2 + 10*lambdaSigmaphi1*mphi2 + 5*lambdaSigmaphi2*mphi2"
+    },
+    "phi": {
+      "mass_hessian_factor": 1,
+      "quartic_terms": [
+        {
+          "internal_sector": "Phi",
+          "coupling": "lambdaPhiphi1",
+          "trace": "108",
+          "deltaM2_term": "108*lambdaPhiphi1*mPhi2"
+        },
+        {
+          "internal_sector": "Phi",
+          "coupling": "lambdaPhiphi2",
+          "trace": "54/5",
+          "deltaM2_term": "54*lambdaPhiphi2*mPhi2/5"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaSigmaphi1",
+          "trace": "504",
+          "deltaM2_term": "504*lambdaSigmaphi1*mSigma2"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaSigmaphi2",
+          "trace": "252",
+          "deltaM2_term": "252*lambdaSigmaphi2*mSigma2"
+        },
+        {
+          "internal_sector": "phi",
+          "coupling": "lambdaPhiVector1",
+          "trace": "44",
+          "deltaM2_term": "22*lambdaPhiVector1*mphi2"
+        },
+        {
+          "internal_sector": "phi",
+          "coupling": "lambdaPhiVector2",
+          "trace": "8",
+          "deltaM2_term": "4*lambdaPhiVector2*mphi2"
+        },
+        {
+          "internal_sector": "S",
+          "coupling": "lambdaVectorS",
+          "trace": "2",
+          "deltaM2_term": "lambdaVectorS*mS2"
+        }
+      ],
+      "cubic_contraction": "54*muPhiPhi**2/5 + 8*z6_im**2 + 8*z6_re**2",
+      "scalar_delta_M2": "22*lambdaPhiVector1*mphi2 + 4*lambdaPhiVector2*mphi2 + 108*lambdaPhiphi1*mPhi2 + 54*lambdaPhiphi2*mPhi2/5 + 504*lambdaSigmaphi1*mSigma2 + 252*lambdaSigmaphi2*mSigma2 + lambdaVectorS*mS2 + 27*muPhiPhi**2/5 + 4*z6_im**2 + 4*z6_re**2",
+      "scalar_parameter_counterterm": "22*lambdaPhiVector1*mphi2 + 4*lambdaPhiVector2*mphi2 + 108*lambdaPhiphi1*mPhi2 + 54*lambdaPhiphi2*mPhi2/5 + 504*lambdaSigmaphi1*mSigma2 + 252*lambdaSigmaphi2*mSigma2 + lambdaVectorS*mS2 + 27*muPhiPhi**2/5 + 4*z6_im**2 + 4*z6_re**2",
+      "partial_BFM": {
+        "quantum_vector_1PI_parameter_counterterm": "9*g10**2*mphi2*xi/2",
+        "vector_seagull_UV_plus_IR": "0_scaleless_split",
+        "goldstone_extra_unshifted_parent_projection": "0",
+        "ghost_extra_unshifted_parent_projection": "0",
+        "M02_field_conversion": "9*g10**2*mphi2*(3 - xi)/2",
+        "sum": "27*g10**2*mphi2/2"
+      },
+      "total_parameter_counterterm": "27*g10**2*mphi2/2 + 22*lambdaPhiVector1*mphi2 + 4*lambdaPhiVector2*mphi2 + 108*lambdaPhiphi1*mPhi2 + 54*lambdaPhiphi2*mPhi2/5 + 504*lambdaSigmaphi1*mSigma2 + 252*lambdaSigmaphi2*mSigma2 + lambdaVectorS*mS2 + 27*muPhiPhi**2/5 + 4*z6_im**2 + 4*z6_re**2"
+    },
+    "S": {
+      "mass_hessian_factor": 1,
+      "quartic_terms": [
+        {
+          "internal_sector": "Phi",
+          "coupling": "lambdaPhiS",
+          "trace": "108",
+          "deltaM2_term": "108*lambdaPhiS*mPhi2"
+        },
+        {
+          "internal_sector": "Sigma",
+          "coupling": "lambdaSigmaS",
+          "trace": "504",
+          "deltaM2_term": "504*lambdaSigmaS*mSigma2"
+        },
+        {
+          "internal_sector": "phi",
+          "coupling": "lambdaVectorS",
+          "trace": "20",
+          "deltaM2_term": "10*lambdaVectorS*mphi2"
+        },
+        {
+          "internal_sector": "S",
+          "coupling": "lambdaS",
+          "trace": "8",
+          "deltaM2_term": "4*lambdaS*mS2"
+        }
+      ],
+      "cubic_contraction": "40*z6_im**2 + 40*z6_re**2",
+      "scalar_delta_M2": "108*lambdaPhiS*mPhi2 + 4*lambdaS*mS2 + 504*lambdaSigmaS*mSigma2 + 10*lambdaVectorS*mphi2 + 20*z6_im**2 + 20*z6_re**2",
+      "scalar_parameter_counterterm": "108*lambdaPhiS*mPhi2 + 4*lambdaS*mS2 + 504*lambdaSigmaS*mSigma2 + 10*lambdaVectorS*mphi2 + 20*z6_im**2 + 20*z6_re**2",
+      "partial_BFM": {
+        "quantum_vector_1PI_parameter_counterterm": "0",
+        "vector_seagull_UV_plus_IR": "0_scaleless_split",
+        "goldstone_extra_unshifted_parent_projection": "0",
+        "ghost_extra_unshifted_parent_projection": "0",
+        "M02_field_conversion": "0",
+        "sum": "0"
+      },
+      "total_parameter_counterterm": "108*lambdaPhiS*mPhi2 + 4*lambdaS*mS2 + 504*lambdaSigmaS*mSigma2 + 10*lambdaVectorS*mphi2 + 20*z6_im**2 + 20*z6_re**2"
+    }
+  },
+  "quadratic_residues": {
+    "mPhi2": "30*g10**2*mPhi2 + 224*lambdaPhi1*mPhi2 + 224*lambdaPhi2*mPhi2/5 + lambdaPhiS*mS2 + 504*lambdaPhiSigma1*mSigma2 - 56*lambdaPhiSigma2*mSigma2 + 10*lambdaPhiphi1*mphi2 + lambdaPhiphi2*mphi2 + 126*muPhi**2/5 + muPhiPhi**2/2",
+    "mSigma2": "75*g10**2*mSigma2/2 + 108*lambdaPhiSigma1*mPhi2 - 12*lambdaPhiSigma2*mPhi2 + 1016*lambdaSigma1*mSigma2 + 2440*lambdaSigma2*mSigma2 + 2680*lambdaSigma3*mSigma2 + 4960*lambdaSigma4*mSigma2 + lambdaSigmaS*mS2 + 10*lambdaSigmaphi1*mphi2 + 5*lambdaSigmaphi2*mphi2",
+    "mphi2": "27*g10**2*mphi2/2 + 22*lambdaPhiVector1*mphi2 + 4*lambdaPhiVector2*mphi2 + 108*lambdaPhiphi1*mPhi2 + 54*lambdaPhiphi2*mPhi2/5 + 504*lambdaSigmaphi1*mSigma2 + 252*lambdaSigmaphi2*mSigma2 + lambdaVectorS*mS2 + 27*muPhiPhi**2/5 + 4*z6_im**2 + 4*z6_re**2",
+    "mS2": "108*lambdaPhiS*mPhi2 + 4*lambdaS*mS2 + 504*lambdaSigmaS*mSigma2 + 10*lambdaVectorS*mphi2 + 20*z6_im**2 + 20*z6_re**2"
+  },
+  "projection": {
+    "basis": [
+      "mPhi2",
+      "mSigma2",
+      "mphi2",
+      "mS2"
+    ],
+    "rank": 4,
+    "residual": "0",
+    "forbidden_inter_sector_residual": "0",
+    "PQ_forbidden_residual": "0",
+    "external_representative_residual": "0",
+    "operator_symmetry_residual": "0"
+  },
+  "sector_completeness": {
+    "scalar": "COMPLETE_328_INTERNAL_REAL_DIRECTIONS",
+    "quantum_vector": "COMPLETE_PARENT_COVARIANT_1PI_MASS_POLE",
+    "goldstone": "COMPLETE_UNSHIFTED_PARENT_PROJECTION",
+    "ghost": "COMPLETE_UNSHIFTED_PARENT_PROJECTION",
+    "M02_field_counterterm": "INCLUDED_EXACTLY_ONCE"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "nonexceptional_or_auxiliary_mass_local_projection",
+    "scaleless_gauge_seagull": {
+      "UV": "retained",
+      "IR": "retained",
+      "sum": "0"
+    }
+  },
+  "artifact_sha256": "a5fcb25b6c85bce50a6a1248794e0f5de7ccba4c4bf9a98549347d27c75b7ffe"
+}

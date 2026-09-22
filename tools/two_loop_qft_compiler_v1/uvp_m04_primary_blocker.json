@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M04",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "predecessor_M03_evidence_sha256": "ddad67dc0278be554c5a4cd401d66e348ed08cfef6f0bd6a4a0df406ca0b5451",
+  "method": "primary_capability_audit_after_M03_quadratic_kernel_promotion",
+  "inventory": {
+    "targets": [
+      "muPhi",
+      "muPhiPhi",
+      "Re(z6)",
+      "Im(z6)"
+    ],
+    "required": [
+      "complete parent-origin one-loop scalar three-point inventory",
+      "complete symmetrized V3_ADE*V4_BCDE contractions over 328 real fields",
+      "partial-BFM vector/Goldstone/ghost scalar three-point pole assembly",
+      "projection onto muPhi,muPhiPhi,Re(z6),Im(z6) after M02 field residues",
+      "inventory-independent functional third-derivative replay"
+    ],
+    "available": [
+      "M03 diagonal V3_ACD*V3_BCD mass contraction",
+      "M03 diagonal M2_CD*V4_ABCD mass contraction",
+      "exact on-demand parent scalar derivatives",
+      "M02 field residues"
+    ],
+    "missing": [
+      "exhaustive mixed V3*V4 three-point contraction backend",
+      "complete gauge/Goldstone/ghost scalar three-point pole kernel",
+      "rank-four-real cubic invariant projector and independent replay"
+    ]
+  },
+  "inventory_sha256": "9e84724772faa70e64240c5bb894086c47561b0be9529c255e6368f36d401ca2",
+  "all_four_real_cubic_directions_derived": false,
+  "residue_values": null,
+  "blocker_code": "M04_EXHAUSTIVE_PARENT_SCALAR_3PT_CONTRACTION_PROJECTOR_MISSING",
+  "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+  "uv_ir": {
+    "status": "NOT_EVALUATED",
+    "reason": "required 1PI three-point integrands not materialized"
+  },
+  "artifact_sha256": "5fef6c8ce4b8caec16386f30c3f1774980c6856f8a841a0c06aad83144669e1f"
+}

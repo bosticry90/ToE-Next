@@ -91,3 +91,17 @@ observed inconsistency of the canonical action.
 The next admissible implementation target is the exhaustive parent scalar
 two-point contraction/projector kernel required by M03. Tests M04-M13 remain
 unexecuted until M03 passes in a later attempt.
+
+## Subsequent Layer-5B continuation
+
+M03 was later retried without altering its acceptance criteria. Attempt 2
+implements the exhaustive parent-scalar two-point contraction/projector
+kernel, independently replays it, and passes with four exact quadratic
+residues and zero projection residual. The historical attempt-1 block remains
+preserved.
+
+The serial gate then advanced to M04 and stopped correctly at the next
+implementation dependency. The current authoritative state is `30/39`
+(29 pass, one block, zero fail), with M04 blocked on the exhaustive parent
+scalar three-point contraction/projector kernel. See
+[`LAYER5B_M03_M04_RESULT.md`](LAYER5B_M03_M04_RESULT.md).

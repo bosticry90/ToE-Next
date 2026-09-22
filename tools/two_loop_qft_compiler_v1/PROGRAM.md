@@ -78,10 +78,11 @@ functional completeness proof. Its SHA-256 is
 `6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92`,
 superseding v1 hash
 `f4cf741afed95657b8c8c80ff178147189f35c7db42a8fdcea95e8ed3ae3f588`.
-The contract began as specification authority only. Its first serial execution
-has now reached `29/39`: every one of the 27 evaluator-engine tests passes,
-`M02` passes, and `M03` is the first non-pass. The fail-fast partition remains
-27 tests for the evaluator engine and 12 for canonical counterterm completion.
+The contract began as specification authority only. Its serial execution has
+now reached `30/39`: every one of the 27 evaluator-engine tests passes, M02
+passes, and M03 passes on attempt 2 while preserving its original blocked
+attempt. M04 is the current first non-pass. The fail-fast partition remains 27
+tests for the evaluator engine and 12 for canonical counterterm completion.
 
 The first execution order and result ledger are now frozen without amending
 contract v2. The exact engine order is `P01--P13`, `C01--C13`, then `M01`,
@@ -138,15 +139,17 @@ rank-6 to rank-4 to rank-2 to scalar contraction chain has zero residual.
 Progress is `5/39` (`5/27`); `UVP_P06` alone is next. See
 [`UVP_P05_RESULT.md`](UVP_P05_RESULT.md).
 
-The bounded continuation subsequently ran `P06-P13`, `C01-C13`, and `M01`
-serially with primary calculations and independent replays. All pass, earning
-`ONE_LOOP_UV_POLE_EVALUATOR_PASS` at the exact `27/27` checkpoint. `M02` then
-passes for the four parent scalar wave-function residues. `M03` stops the run
-as `BLOCKED` because the exhaustive parent-scalar two-point inventory,
-`V3*V3`/`M2*V4` contraction backend, and quadratic pole projector are absent.
-The checkpoint is `29/39` with 28 passes, one block, and no failures. The
-counterterm compiler and Layer 6 remain blocked. See
-[`LAYER5A_EXECUTION_RESULT.md`](LAYER5A_EXECUTION_RESULT.md).
+The bounded continuation ran `P06-P13`, `C01-C13`, and `M01` serially with
+primary calculations and independent replays. All pass, earning
+`ONE_LOOP_UV_POLE_EVALUATOR_PASS` at the exact `27/27` checkpoint. M02 passes
+for the four parent scalar wave-function residues. A later focused M03 attempt
+implements exhaustive scalar `V3*V3` and `M2*V4` contractions, obtains all four
+quadratic residues, and passes an independent functional replay with zero
+projection residual. The gate then stops at M04 because the corresponding
+exhaustive scalar three-point/cubic-residue kernel is absent. The checkpoint
+is `30/39` with 29 passes, one block, and no failures. The counterterm compiler
+and Layer 6 remain blocked. See
+[`LAYER5B_M03_M04_RESULT.md`](LAYER5B_M03_M04_RESULT.md).
 
 The exact closure task and its 12-cell/5-aggregate-test preregistration are
 frozen in [`LAYER3_CLOSURE_TASK.md`](LAYER3_CLOSURE_TASK.md) and

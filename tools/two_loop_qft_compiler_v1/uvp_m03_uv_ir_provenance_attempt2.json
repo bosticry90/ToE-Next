@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M03",
+  "attempt": 2,
+  "classification": {
+    "primary": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "regulator": "nonexceptional_or_auxiliary_mass_local_projection",
+      "scaleless_gauge_seagull": {
+        "UV": "retained",
+        "IR": "retained",
+        "sum": "0"
+      }
+    },
+    "replay": {
+      "uv_pole": true,
+      "ir_pole": false,
+      "method": "functional_local_pole_action_with_regulated_replay"
+    }
+  },
+  "reason": "regulated local parent two-point projection has UV poles and no IR pole",
+  "artifact_sha256": "48f3a3b53992e0a590a32c5d5287d1fc35068dc39c64a885615a18b2f2979f3a"
+}

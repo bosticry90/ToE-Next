@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M04",
+  "attempt": 1,
+  "classification": {
+    "primary": {
+      "status": "NOT_EVALUATED",
+      "reason": "required 1PI three-point integrands not materialized"
+    },
+    "replay": {
+      "status": "NOT_EVALUATED",
+      "reason": "independent three-point inventory cannot be constructed"
+    }
+  },
+  "reason": "UV_IR classification deferred because 1PI three-point integrands do not exist",
+  "artifact_sha256": "69d13235f5184e6b2e73a2b1877def44dfdacf8e46bddc2eb480b54d67a6b23b"
+}

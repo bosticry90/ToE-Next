@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M03",
+  "attempt": 2,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "attempt1_blocked_evidence_sha256": "a429ce0df860933879bb8810c42a599d0cc0f87a694be392cb591c10f18086c4",
+  "method": "functional_Hessian_sector_Laplacian_plus_eight_corner_cubic",
+  "inventory": {
+    "method": "functional_Hessian_sector_Laplacian_plus_eight_corner_cubic",
+    "basis_dimensions": {
+      "Phi": 54,
+      "Sigma": 252,
+      "phi": 20,
+      "S": 2
+    },
+    "quartic_sector_traces": 16,
+    "cubic_internal_real_space": 76,
+    "primary_graph_inventory_imported": false,
+    "primary_contraction_table_imported": false
+  },
+  "inventory_sha256": "c4cb975d3e17c39808338ffc7ce40ea4e1272c6444c98c27e41941480a86f628",
+  "quartic_trace_table": {
+    "Phi": {
+      "Phi": {
+        "lambdaPhi1": "448",
+        "lambdaPhi2": "448/5"
+      },
+      "Sigma": {
+        "lambdaPhiSigma1": "1008",
+        "lambdaPhiSigma2": "-112"
+      },
+      "phi": {
+        "lambdaPhiphi1": "40",
+        "lambdaPhiphi2": "4"
+      },
+      "S": {
+        "lambdaPhiS": "4"
+      }
+    },
+    "Sigma": {
+      "Phi": {
+        "lambdaPhiSigma1": "216",
+        "lambdaPhiSigma2": "-24"
+      },
+      "Sigma": {
+        "lambdaSigma1": "2032",
+        "lambdaSigma2": "4880",
+        "lambdaSigma3": "5360",
+        "lambdaSigma4": "9920"
+      },
+      "phi": {
+        "lambdaSigmaphi1": "40",
+        "lambdaSigmaphi2": "20",
+        "zD": "0"
+      },
+      "S": {
+        "lambdaSigmaS": "4"
+      }
+    },
+    "phi": {
+      "Phi": {
+        "lambdaPhiphi1": "108",
+        "lambdaPhiphi2": "54/5"
+      },
+      "Sigma": {
+        "lambdaSigmaphi1": "504",
+        "lambdaSigmaphi2": "252",
+        "zD": "0"
+      },
+      "phi": {
+        "lambdaPhiVector1": "44",
+        "lambdaPhiVector2": "8"
+      },
+      "S": {
+        "lambdaVectorS": "2"
+      }
+    },
+    "S": {
+      "Phi": {
+        "lambdaPhiS": "108"
+      },
+      "Sigma": {
+        "lambdaSigmaS": "504"
+      },
+      "phi": {
+        "lambdaVectorS": "20"
+      },
+      "S": {
+        "lambdaS": "8"
+      }
+    }
+  },
+  "cubic_trace_table": {
+    "Phi": {
+      "ordered_internal_pairs_nonzero": 36,
+      "V3_ACD_V3_ACD": "504*muPhi**2/5 + 2*muPhiPhi**2",
+      "recognized_Gram": [
+        [
+          "504/5",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "recognition_max_residual": "1.4210854715202004e-14"
+    },
+    "Sigma": {
+      "ordered_internal_pairs_nonzero": 0,
+      "V3_ACD_V3_ACD": "0",
+      "recognized_Gram": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "recognition_max_residual": "0.0"
+    },
+    "phi": {
+      "ordered_internal_pairs_nonzero": 44,
+      "V3_ACD_V3_ACD": "54*muPhiPhi**2/5 + 8*z6_im**2 + 8*z6_re**2",
+      "recognized_Gram": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "54/5",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "8",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "8"
+        ]
+      ],
+      "recognition_max_residual": "3.552713678800501e-15"
+    },
+    "S": {
+      "ordered_internal_pairs_nonzero": 40,
+      "V3_ACD_V3_ACD": "40*z6_im**2 + 40*z6_re**2",
+      "recognized_Gram": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "40",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "40"
+        ]
+      ],
+      "recognition_max_residual": "1.4210854715202004e-14"
+    }
+  },
+  "quadratic_residues": {
+    "mPhi2": "30*g10**2*mPhi2 + 224*lambdaPhi1*mPhi2 + 224*lambdaPhi2*mPhi2/5 + lambdaPhiS*mS2 + 504*lambdaPhiSigma1*mSigma2 - 56*lambdaPhiSigma2*mSigma2 + 10*lambdaPhiphi1*mphi2 + lambdaPhiphi2*mphi2 + 126*muPhi**2/5 + muPhiPhi**2/2",
+    "mSigma2": "75*g10**2*mSigma2/2 + 108*lambdaPhiSigma1*mPhi2 - 12*lambdaPhiSigma2*mPhi2 + 1016*lambdaSigma1*mSigma2 + 2440*lambdaSigma2*mSigma2 + 2680*lambdaSigma3*mSigma2 + 4960*lambdaSigma4*mSigma2 + lambdaSigmaS*mS2 + 10*lambdaSigmaphi1*mphi2 + 5*lambdaSigmaphi2*mphi2",
+    "mphi2": "27*g10**2*mphi2/2 + 22*lambdaPhiVector1*mphi2 + 4*lambdaPhiVector2*mphi2 + 108*lambdaPhiphi1*mPhi2 + 54*lambdaPhiphi2*mPhi2/5 + 504*lambdaSigmaphi1*mSigma2 + 252*lambdaSigmaphi2*mSigma2 + lambdaVectorS*mS2 + 27*muPhiPhi**2/5 + 4*z6_im**2 + 4*z6_re**2",
+    "mS2": "108*lambdaPhiS*mPhi2 + 4*lambdaS*mS2 + 504*lambdaSigmaS*mSigma2 + 10*lambdaVectorS*mphi2 + 20*z6_im**2 + 20*z6_re**2"
+  },
+  "projection": {
+    "rank": 4,
+    "residual": "0",
+    "out_of_basis_residual": "0"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "method": "functional_local_pole_action_with_regulated_replay"
+  },
+  "artifact_sha256": "be79f0a0832dbdca8f06338bed6c48a87e48a2098588c467c96e6998a4167e8e"
+}
