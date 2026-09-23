@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "outcome": "M05_PURE_SIGMA_SCALAR_SUBTHEORY_PASS",
+  "authority": "IMPLEMENTATION_REGRESSION_ONLY_NOT_UVP_M05_PASS",
+  "inventory": {
+    "Sigma_internal_real_directions": 252,
+    "quartic_directions": [
+      "lambdaSigma1",
+      "lambdaSigma2",
+      "lambdaSigma3",
+      "lambdaSigma4"
+    ],
+    "projector_seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "verification_seeds": [
+      5
+    ],
+    "projector_rank": 4,
+    "paired_tensor_second_derivatives_per_k": 31878,
+    "background_inventories": [
+      {
+        "seed": 1,
+        "hessian_nonzeros": [
+          324,
+          1272,
+          1508,
+          1872
+        ]
+      },
+      {
+        "seed": 2,
+        "hessian_nonzeros": [
+          342,
+          2064,
+          2638,
+          2546
+        ]
+      },
+      {
+        "seed": 3,
+        "hessian_nonzeros": [
+          434,
+          2830,
+          3068,
+          3622
+        ]
+      },
+      {
+        "seed": 4,
+        "hessian_nonzeros": [
+          434,
+          2970,
+          3468,
+          4564
+        ]
+      },
+      {
+        "seed": 5,
+        "hessian_nonzeros": [
+          558,
+          4294,
+          4588,
+          6230
+        ]
+      }
+    ]
+  },
+  "inventory_sha256": "054accbe72870e7cc38321d2ad406b5e5e455b120c69579ee3923d35de804d2e",
+  "coefficient_tables": {
+    "lambdaSigma1": [
+      [
+        "1040",
+        "2440",
+        "2680",
+        "4960"
+      ],
+      [
+        "2440",
+        "6920",
+        "7880",
+        "12320"
+      ],
+      [
+        "2680",
+        "7880",
+        "9320",
+        "13280"
+      ],
+      [
+        "4960",
+        "12320",
+        "13280",
+        "33920"
+      ]
+    ],
+    "lambdaSigma2": [
+      [
+        "0",
+        "24",
+        "0",
+        "0"
+      ],
+      [
+        "24",
+        "-360",
+        "-584",
+        "-160"
+      ],
+      [
+        "0",
+        "-584",
+        "-1312",
+        "-800"
+      ],
+      [
+        "0",
+        "-160",
+        "-800",
+        "-5120"
+      ]
+    ],
+    "lambdaSigma3": [
+      [
+        "0",
+        "0",
+        "24",
+        "0"
+      ],
+      [
+        "0",
+        "32",
+        "112",
+        "128"
+      ],
+      [
+        "24",
+        "112",
+        "536",
+        "640"
+      ],
+      [
+        "0",
+        "128",
+        "640",
+        "2816"
+      ]
+    ],
+    "lambdaSigma4": [
+      [
+        "0",
+        "0",
+        "0",
+        "24"
+      ],
+      [
+        "0",
+        "-8",
+        "-8",
+        "-16"
+      ],
+      [
+        "0",
+        "-8",
+        "8",
+        "112"
+      ],
+      [
+        "24",
+        "-16",
+        "112",
+        "-480"
+      ]
+    ]
+  },
+  "projection_rank": 4,
+  "projection_residual": "0",
+  "independent_background_residual": "0",
+  "missing_for_M05": [
+    "zEta real/imaginary full contraction",
+    "combined 26-direction scalar assembly",
+    "partial-BFM gauge completion",
+    "complete independent replay"
+  ],
+  "artifact_sha256": "1b0f65929dbb297ad66d06e710169d4363df175c60bdf9f1b5500d6233466c48"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "outcome": "LAYER5B_M05_M13_IMPLEMENTATION_PREFLIGHT_COMPLETE",
+  "authority": "NO_NEW_TEST_AUTHORITY_SERIAL_GATE_REMAINS_AT_M05",
+  "inputs": {
+    "complete_primary_scalar": "a6d6514afa5705d6dba45f114ed3934e47afe2c53058072014b641def060e591",
+    "complete_primary_scalar_plus_gauge": "5079dee6a83782825576ba48783a72d9b1122259892ce54e301d4bf6748fc308",
+    "independent_gauge_replay": "57aaf68672dbd628903c5fc346ba47ab88d57994291b20aba5169835f570e05a"
+  },
+  "capabilities": {
+    "M05": {
+      "primary_scalar_26_direction": "COMPLETE",
+      "primary_partial_BFM_gauge": "COMPLETE",
+      "independent_gauge_replay": "COMPLETE",
+      "independent_complete_scalar_operator_replay": "MISSING",
+      "scientific_status": "BLOCKED_ATTEMPT1"
+    },
+    "M06": "LOCKED_AGGREGATE_RANK34_NOT_EXECUTED",
+    "M07": "LOCKED_AGGREGATE_HERMITICITY_PQ_NOT_EXECUTED",
+    "M08": "LOCKED_QUANTUM_VECTOR_GHOST_XI_RESIDUES_INCOMPLETE",
+    "M09": "LOCKED_VEV_TADPOLE_RESIDUES_INCOMPLETE",
+    "M10": "LOCKED_33_GOLDSTONE_IDENTITIES_NOT_EXECUTABLE",
+    "M11": "LOCKED_RENORMALIZED_AMPLITUDE_CANCELLATION_NOT_EXECUTABLE",
+    "M12": "LOCKED_21_SLOT_STRUCTURES_EXIST_COEFFICIENTS_INCOMPLETE",
+    "M13": "LOCKED_COMPLETE_INVENTORY_INDEPENDENT_REPLAY_MISSING"
+  },
+  "authoritative_ledger": {
+    "progress": "31/39",
+    "passed": 30,
+    "blocked": 1,
+    "failed": 0,
+    "UVP_M05": "BLOCKED_ATTEMPT1",
+    "counterterm_compiler": "BLOCKED",
+    "layer6_authorized": false
+  },
+  "artifact_sha256": "c7a146a69e148994ccc912ea8eb0a2754d5e8aacf8173f08046430f9a73c25cf"
+}

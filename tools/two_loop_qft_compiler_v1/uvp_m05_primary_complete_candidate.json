@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "outcome": "M05_PRIMARY_SCALAR_PLUS_PARTIAL_BFM_GAUGE_COMPLETE",
+  "authority": "PRIMARY_IMPLEMENTATION_COMPLETE_REPLAY_PENDING_NOT_UVP_M05_PASS",
+  "normalization": "coefficients multiply 1/(16*pi^2*epsilon_bar)",
+  "input_artifacts": {
+    "complete_scalar_V4V4": "a6d6514afa5705d6dba45f114ed3934e47afe2c53058072014b641def060e591",
+    "gauge_orbit_TrK2_projection": "d151fc27585f581a813e29b0c14a17611191c3021e6dcc09464b074207454bd3"
+  },
+  "inventory": {
+    "parent_quantum_vectors": 45,
+    "vacuum_split": {
+      "heavy": 33,
+      "light": 12
+    },
+    "Goldstone_parent_orbit_directions": 45,
+    "complex_parent_ghosts": 45,
+    "quartic_directions": [
+      "lambdaPhi1",
+      "lambdaPhi2",
+      "lambdaPhiSigma1",
+      "lambdaPhiSigma2",
+      "lambdaPhiphi1",
+      "lambdaPhiphi2",
+      "lambdaPhiS",
+      "lambdaSigma1",
+      "lambdaSigma2",
+      "lambdaSigma3",
+      "lambdaSigma4",
+      "lambdaSigmaphi1",
+      "lambdaSigmaphi2",
+      "lambdaPhiVector1",
+      "lambdaPhiVector2",
+      "lambdaSigmaS",
+      "lambdaVectorS",
+      "lambdaS",
+      "z4_re",
+      "z4_im",
+      "zK_re",
+      "zK_im",
+      "zEta_re",
+      "zEta_im",
+      "zD_re",
+      "zD_im"
+    ],
+    "gauge_orbit_nonzero_directions": 13,
+    "functional_determinant_weights": {
+      "quantum_vector": "(3+xi^2)/4",
+      "Goldstone": "xi^2/4",
+      "ghost": "-xi^2/2",
+      "pure_sum": "3/4"
+    },
+    "M02_field_conversion": "INCLUDED_EXACTLY_ONCE"
+  },
+  "inventory_sha256": "5bd69a6576f6c27b1212e6274c6511e5c1c986d8b6076831f8b90cd12e067683",
+  "sector_ledgers": {
+    "lambdaPhi1": {
+      "field_multiplicities": {
+        "Phi": 4
+      },
+      "external_Casimir_sum": "40",
+      "scalar_V4V4": "248*lambdaPhi1**2 + 448*lambdaPhi1*lambdaPhi2/5 + 159*lambdaPhi2**2/25 + lambdaPhiS**2/2 + 252*lambdaPhiSigma1**2 - 56*lambdaPhiSigma1*lambdaPhiSigma2 + 53*lambdaPhiSigma2**2/4 + 5*lambdaPhiphi1**2 + lambdaPhiphi1*lambdaPhiphi2",
+      "quantum_vector_pure_g4": "3*g10**4*(xi**2 + 3)/4",
+      "Goldstone_pure_g4": "3*g10**4*xi**2/4",
+      "ghost_pure_g4": "-3*g10**4*xi**2/2",
+      "Goldstone_mixed_g2_lambda": "20*g10**2*lambdaPhi1*xi",
+      "M02_field_conversion_exactly_once": "20*g10**2*lambdaPhi1*(3 - xi)",
+      "partial_BFM_gauge_sum": "g10**2*(9*g10**2/4 + 60*lambdaPhi1)",
+      "total_residue": "9*g10**4/4 + 60*g10**2*lambdaPhi1 + 248*lambdaPhi1**2 + 448*lambdaPhi1*lambdaPhi2/5 + 159*lambdaPhi2**2/25 + lambdaPhiS**2/2 + 252*lambdaPhiSigma1**2 - 56*lambdaPhiSigma1*lambdaPhiSigma2 + 53*lambdaPhiSigma2**2/4 + 5*lambdaPhiphi1**2 + lambdaPhiphi1*lambdaPhiphi2",
+      "xi_residual": "0"
+    },
+    "lambdaPhi2": {
+      "field_multiplicities": {
+        "Phi": 4
+      },
+      "external_Casimir_sum": "40",
+      "scalar_V4V4": "48*lambdaPhi1*lambdaPhi2 + 254*lambdaPhi2**2/5 - 25*lambdaPhiSigma2**2/2 + lambdaPhiphi2**2/2",
+      "quantum_vector_pure_g4": "5*g10**4*(xi**2 + 3)/2",
+      "Goldstone_pure_g4": "5*g10**4*xi**2/2",
+      "ghost_pure_g4": "-5*g10**4*xi**2",
+      "Goldstone_mixed_g2_lambda": "20*g10**2*lambdaPhi2*xi",
+      "M02_field_conversion_exactly_once": "20*g10**2*lambdaPhi2*(3 - xi)",
+      "partial_BFM_gauge_sum": "15*g10**2*(g10**2 + 8*lambdaPhi2)/2",
+      "total_residue": "15*g10**2*(g10**2 + 8*lambdaPhi2)/2 + 48*lambdaPhi1*lambdaPhi2 + 254*lambdaPhi2**2/5 - 25*lambdaPhiSigma2**2/2 + lambdaPhiphi2**2/2",
+      "xi_residual": "0"
+    },
+    "lambdaPhiSigma1": {
+      "field_multiplicities": {
+        "Phi": 2,
+        "Sigma": 2
+      },
+      "external_Casimir_sum": "45",
+      "scalar_V4V4": "224*lambdaPhi1*lambdaPhiSigma1 - 24*lambdaPhi1*lambdaPhiSigma2 + 224*lambdaPhi2*lambdaPhiSigma1/5 - 26*lambdaPhi2*lambdaPhiSigma2/5 + lambdaPhiS*lambdaSigmaS + 8*lambdaPhiSigma1**2 + 1016*lambdaPhiSigma1*lambdaSigma1 + 2440*lambdaPhiSigma1*lambdaSigma2 + 2680*lambdaPhiSigma1*lambdaSigma3 + 4960*lambdaPhiSigma1*lambdaSigma4 + 11*lambdaPhiSigma2**2 - 112*lambdaPhiSigma2*lambdaSigma1 - 272*lambdaPhiSigma2*lambdaSigma2 - 288*lambdaPhiSigma2*lambdaSigma3 - 512*lambdaPhiSigma2*lambdaSigma4 + 10*lambdaPhiphi1*lambdaSigmaphi1 + 5*lambdaPhiphi1*lambdaSigmaphi2 + lambdaPhiphi2*lambdaSigmaphi1 + lambdaPhiphi2*lambdaSigmaphi2/2 + 4*z4_im**2 + 4*z4_re**2",
+      "quantum_vector_pure_g4": "3*g10**4*(xi**2 + 3)/2",
+      "Goldstone_pure_g4": "3*g10**4*xi**2/2",
+      "ghost_pure_g4": "-3*g10**4*xi**2",
+      "Goldstone_mixed_g2_lambda": "45*g10**2*lambdaPhiSigma1*xi/2",
+      "M02_field_conversion_exactly_once": "45*g10**2*lambdaPhiSigma1*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "9*g10**2*(g10**2 + 15*lambdaPhiSigma1)/2",
+      "total_residue": "9*g10**2*(g10**2 + 15*lambdaPhiSigma1)/2 + 224*lambdaPhi1*lambdaPhiSigma1 - 24*lambdaPhi1*lambdaPhiSigma2 + 224*lambdaPhi2*lambdaPhiSigma1/5 - 26*lambdaPhi2*lambdaPhiSigma2/5 + lambdaPhiS*lambdaSigmaS + 8*lambdaPhiSigma1**2 + 1016*lambdaPhiSigma1*lambdaSigma1 + 2440*lambdaPhiSigma1*lambdaSigma2 + 2680*lambdaPhiSigma1*lambdaSigma3 + 4960*lambdaPhiSigma1*lambdaSigma4 + 11*lambdaPhiSigma2**2 - 112*lambdaPhiSigma2*lambdaSigma1 - 272*lambdaPhiSigma2*lambdaSigma2 - 288*lambdaPhiSigma2*lambdaSigma3 - 512*lambdaPhiSigma2*lambdaSigma4 + 10*lambdaPhiphi1*lambdaSigmaphi1 + 5*lambdaPhiphi1*lambdaSigmaphi2 + lambdaPhiphi2*lambdaSigmaphi1 + lambdaPhiphi2*lambdaSigmaphi2/2 + 4*z4_im**2 + 4*z4_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaPhiSigma2": {
+      "field_multiplicities": {
+        "Phi": 2,
+        "Sigma": 2
+      },
+      "external_Casimir_sum": "45",
+      "scalar_V4V4": "8*lambdaPhi1*lambdaPhiSigma2 - 2*lambdaPhi2*lambdaPhiSigma2 + 16*lambdaPhiSigma1*lambdaPhiSigma2 + 37*lambdaPhiSigma2**2 + 8*lambdaPhiSigma2*lambdaSigma1 - 8*lambdaPhiSigma2*lambdaSigma2 + 88*lambdaPhiSigma2*lambdaSigma3 + 352*lambdaPhiSigma2*lambdaSigma4 + 16*z4_im**2 + 16*z4_re**2",
+      "quantum_vector_pure_g4": "g10**4*(xi**2 + 3)",
+      "Goldstone_pure_g4": "g10**4*xi**2",
+      "ghost_pure_g4": "-2*g10**4*xi**2",
+      "Goldstone_mixed_g2_lambda": "45*g10**2*lambdaPhiSigma2*xi/2",
+      "M02_field_conversion_exactly_once": "45*g10**2*lambdaPhiSigma2*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "3*g10**2*(g10**2 + 45*lambdaPhiSigma2/2)",
+      "total_residue": "3*g10**4 + 135*g10**2*lambdaPhiSigma2/2 + 8*lambdaPhi1*lambdaPhiSigma2 - 2*lambdaPhi2*lambdaPhiSigma2 + 16*lambdaPhiSigma1*lambdaPhiSigma2 + 37*lambdaPhiSigma2**2 + 8*lambdaPhiSigma2*lambdaSigma1 - 8*lambdaPhiSigma2*lambdaSigma2 + 88*lambdaPhiSigma2*lambdaSigma3 + 352*lambdaPhiSigma2*lambdaSigma4 + 16*z4_im**2 + 16*z4_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaPhiphi1": {
+      "field_multiplicities": {
+        "Phi": 2,
+        "phi": 2
+      },
+      "external_Casimir_sum": "29",
+      "scalar_V4V4": "224*lambdaPhi1*lambdaPhiphi1 + 108*lambdaPhi1*lambdaPhiphi2/5 + 224*lambdaPhi2*lambdaPhiphi1/5 + 53*lambdaPhi2*lambdaPhiphi2/25 + lambdaPhiS*lambdaVectorS + 504*lambdaPhiSigma1*lambdaSigmaphi1 + 252*lambdaPhiSigma1*lambdaSigmaphi2 - 56*lambdaPhiSigma2*lambdaSigmaphi1 - 28*lambdaPhiSigma2*lambdaSigmaphi2 + 22*lambdaPhiVector1*lambdaPhiphi1 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi1 + 4*lambdaPhiphi1**2 + lambdaPhiphi2**2/2",
+      "quantum_vector_pure_g4": "g10**4*(xi**2 + 3)/2",
+      "Goldstone_pure_g4": "g10**4*xi**2/2",
+      "ghost_pure_g4": "-g10**4*xi**2",
+      "Goldstone_mixed_g2_lambda": "29*g10**2*lambdaPhiphi1*xi/2",
+      "M02_field_conversion_exactly_once": "29*g10**2*lambdaPhiphi1*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "3*g10**2*(g10**2 + 29*lambdaPhiphi1)/2",
+      "total_residue": "3*g10**2*(g10**2 + 29*lambdaPhiphi1)/2 + 224*lambdaPhi1*lambdaPhiphi1 + 108*lambdaPhi1*lambdaPhiphi2/5 + 224*lambdaPhi2*lambdaPhiphi1/5 + 53*lambdaPhi2*lambdaPhiphi2/25 + lambdaPhiS*lambdaVectorS + 504*lambdaPhiSigma1*lambdaSigmaphi1 + 252*lambdaPhiSigma1*lambdaSigmaphi2 - 56*lambdaPhiSigma2*lambdaSigmaphi1 - 28*lambdaPhiSigma2*lambdaSigmaphi2 + 22*lambdaPhiVector1*lambdaPhiphi1 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi1 + 4*lambdaPhiphi1**2 + lambdaPhiphi2**2/2",
+      "xi_residual": "0"
+    },
+    "lambdaPhiphi2": {
+      "field_multiplicities": {
+        "Phi": 2,
+        "phi": 2
+      },
+      "external_Casimir_sum": "29",
+      "scalar_V4V4": "8*lambdaPhi1*lambdaPhiphi2 + 118*lambdaPhi2*lambdaPhiphi2/5 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi2 + 8*lambdaPhiphi1*lambdaPhiphi2 + 33*lambdaPhiphi2**2/5 + 4*zK_im**2 + 4*zK_re**2",
+      "quantum_vector_pure_g4": "5*g10**4*(xi**2 + 3)",
+      "Goldstone_pure_g4": "5*g10**4*xi**2",
+      "ghost_pure_g4": "-10*g10**4*xi**2",
+      "Goldstone_mixed_g2_lambda": "29*g10**2*lambdaPhiphi2*xi/2",
+      "M02_field_conversion_exactly_once": "29*g10**2*lambdaPhiphi2*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "g10**2*(15*g10**2 + 87*lambdaPhiphi2/2)",
+      "total_residue": "15*g10**4 + 87*g10**2*lambdaPhiphi2/2 + 8*lambdaPhi1*lambdaPhiphi2 + 118*lambdaPhi2*lambdaPhiphi2/5 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi2 + 8*lambdaPhiphi1*lambdaPhiphi2 + 33*lambdaPhiphi2**2/5 + 4*zK_im**2 + 4*zK_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaPhiS": {
+      "field_multiplicities": {
+        "Phi": 2,
+        "S": 2
+      },
+      "external_Casimir_sum": "20",
+      "scalar_V4V4": "224*lambdaPhi1*lambdaPhiS + 224*lambdaPhi2*lambdaPhiS/5 + 4*lambdaPhiS**2 + 4*lambdaPhiS*lambdaS + 504*lambdaPhiSigma1*lambdaSigmaS - 56*lambdaPhiSigma2*lambdaSigmaS + 10*lambdaPhiphi1*lambdaVectorS + lambdaPhiphi2*lambdaVectorS + 280*z4_im**2 + 280*z4_re**2 + 2*zK_im**2 + 2*zK_re**2",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "10*g10**2*lambdaPhiS*xi",
+      "M02_field_conversion_exactly_once": "10*g10**2*lambdaPhiS*(3 - xi)",
+      "partial_BFM_gauge_sum": "30*g10**2*lambdaPhiS",
+      "total_residue": "30*g10**2*lambdaPhiS + 224*lambdaPhi1*lambdaPhiS + 224*lambdaPhi2*lambdaPhiS/5 + 4*lambdaPhiS**2 + 4*lambdaPhiS*lambdaS + 504*lambdaPhiSigma1*lambdaSigmaS - 56*lambdaPhiSigma2*lambdaSigmaS + 10*lambdaPhiphi1*lambdaVectorS + lambdaPhiphi2*lambdaVectorS + 280*z4_im**2 + 280*z4_re**2 + 2*zK_im**2 + 2*zK_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaSigma1": {
+      "field_multiplicities": {
+        "Sigma": 4
+      },
+      "external_Casimir_sum": "50",
+      "scalar_V4V4": "54*lambdaPhiSigma1**2 - 12*lambdaPhiSigma1*lambdaPhiSigma2 + 3*lambdaPhiSigma2**2/2 + 1040*lambdaSigma1**2 + 4880*lambdaSigma1*lambdaSigma2 + 5360*lambdaSigma1*lambdaSigma3 + 9920*lambdaSigma1*lambdaSigma4 + 6920*lambdaSigma2**2 + 15760*lambdaSigma2*lambdaSigma3 + 24640*lambdaSigma2*lambdaSigma4 + 9320*lambdaSigma3**2 + 26560*lambdaSigma3*lambdaSigma4 + 33920*lambdaSigma4**2 + lambdaSigmaS**2/2 + 5*lambdaSigmaphi1**2 + 5*lambdaSigmaphi1*lambdaSigmaphi2 + 5*lambdaSigmaphi2**2/2 + 240*zEta_im**2 + 240*zEta_re**2",
+      "quantum_vector_pure_g4": "45*g10**4*(xi**2 + 3)/16",
+      "Goldstone_pure_g4": "45*g10**4*xi**2/16",
+      "ghost_pure_g4": "-45*g10**4*xi**2/8",
+      "Goldstone_mixed_g2_lambda": "25*g10**2*lambdaSigma1*xi",
+      "M02_field_conversion_exactly_once": "25*g10**2*lambdaSigma1*(3 - xi)",
+      "partial_BFM_gauge_sum": "g10**2*(135*g10**2/16 + 75*lambdaSigma1)",
+      "total_residue": "135*g10**4/16 + 75*g10**2*lambdaSigma1 + 54*lambdaPhiSigma1**2 - 12*lambdaPhiSigma1*lambdaPhiSigma2 + 3*lambdaPhiSigma2**2/2 + 1040*lambdaSigma1**2 + 4880*lambdaSigma1*lambdaSigma2 + 5360*lambdaSigma1*lambdaSigma3 + 9920*lambdaSigma1*lambdaSigma4 + 6920*lambdaSigma2**2 + 15760*lambdaSigma2*lambdaSigma3 + 24640*lambdaSigma2*lambdaSigma4 + 9320*lambdaSigma3**2 + 26560*lambdaSigma3*lambdaSigma4 + 33920*lambdaSigma4**2 + lambdaSigmaS**2/2 + 5*lambdaSigmaphi1**2 + 5*lambdaSigmaphi1*lambdaSigmaphi2 + 5*lambdaSigmaphi2**2/2 + 240*zEta_im**2 + 240*zEta_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaSigma2": {
+      "field_multiplicities": {
+        "Sigma": 4
+      },
+      "external_Casimir_sum": "50",
+      "scalar_V4V4": "-lambdaPhiSigma2**2 + 48*lambdaSigma1*lambdaSigma2 - 360*lambdaSigma2**2 - 1168*lambdaSigma2*lambdaSigma3 - 320*lambdaSigma2*lambdaSigma4 - 1312*lambdaSigma3**2 - 1600*lambdaSigma3*lambdaSigma4 - 5120*lambdaSigma4**2 - lambdaSigmaphi2**2/2 - z4_im**2 - z4_re**2 - 2*zD_im**2 - 2*zD_re**2 - 88*zEta_im**2 - 88*zEta_re**2",
+      "quantum_vector_pure_g4": "g10**4*(-xi**2 - 3)",
+      "Goldstone_pure_g4": "-g10**4*xi**2",
+      "ghost_pure_g4": "2*g10**4*xi**2",
+      "Goldstone_mixed_g2_lambda": "25*g10**2*lambdaSigma2*xi",
+      "M02_field_conversion_exactly_once": "25*g10**2*lambdaSigma2*(3 - xi)",
+      "partial_BFM_gauge_sum": "3*g10**2*(-g10**2 + 25*lambdaSigma2)",
+      "total_residue": "-3*g10**4 + 75*g10**2*lambdaSigma2 - lambdaPhiSigma2**2 + 48*lambdaSigma1*lambdaSigma2 - 360*lambdaSigma2**2 - 1168*lambdaSigma2*lambdaSigma3 - 320*lambdaSigma2*lambdaSigma4 - 1312*lambdaSigma3**2 - 1600*lambdaSigma3*lambdaSigma4 - 5120*lambdaSigma4**2 - lambdaSigmaphi2**2/2 - z4_im**2 - z4_re**2 - 2*zD_im**2 - 2*zD_re**2 - 88*zEta_im**2 - 88*zEta_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaSigma3": {
+      "field_multiplicities": {
+        "Sigma": 4
+      },
+      "external_Casimir_sum": "50",
+      "scalar_V4V4": "lambdaPhiSigma2**2/2 + 48*lambdaSigma1*lambdaSigma3 + 32*lambdaSigma2**2 + 224*lambdaSigma2*lambdaSigma3 + 256*lambdaSigma2*lambdaSigma4 + 536*lambdaSigma3**2 + 1280*lambdaSigma3*lambdaSigma4 + 2816*lambdaSigma4**2 + z4_im**2 + z4_re**2 + 2*zD_im**2 + 2*zD_re**2 + 48*zEta_im**2 + 48*zEta_re**2",
+      "quantum_vector_pure_g4": "g10**4*(xi**2 + 3)/2",
+      "Goldstone_pure_g4": "g10**4*xi**2/2",
+      "ghost_pure_g4": "-g10**4*xi**2",
+      "Goldstone_mixed_g2_lambda": "25*g10**2*lambdaSigma3*xi",
+      "M02_field_conversion_exactly_once": "25*g10**2*lambdaSigma3*(3 - xi)",
+      "partial_BFM_gauge_sum": "3*g10**2*(g10**2 + 50*lambdaSigma3)/2",
+      "total_residue": "3*g10**4/2 + 75*g10**2*lambdaSigma3 + lambdaPhiSigma2**2/2 + 48*lambdaSigma1*lambdaSigma3 + 32*lambdaSigma2**2 + 224*lambdaSigma2*lambdaSigma3 + 256*lambdaSigma2*lambdaSigma4 + 536*lambdaSigma3**2 + 1280*lambdaSigma3*lambdaSigma4 + 2816*lambdaSigma4**2 + z4_im**2 + z4_re**2 + 2*zD_im**2 + 2*zD_re**2 + 48*zEta_im**2 + 48*zEta_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaSigma4": {
+      "field_multiplicities": {
+        "Sigma": 4
+      },
+      "external_Casimir_sum": "50",
+      "scalar_V4V4": "lambdaPhiSigma2**2/8 + 48*lambdaSigma1*lambdaSigma4 - 8*lambdaSigma2**2 - 16*lambdaSigma2*lambdaSigma3 - 32*lambdaSigma2*lambdaSigma4 + 8*lambdaSigma3**2 + 224*lambdaSigma3*lambdaSigma4 - 480*lambdaSigma4**2 - 26*zEta_im**2 - 26*zEta_re**2",
+      "quantum_vector_pure_g4": "g10**4*(-xi**2 - 3)/8",
+      "Goldstone_pure_g4": "-g10**4*xi**2/8",
+      "ghost_pure_g4": "g10**4*xi**2/4",
+      "Goldstone_mixed_g2_lambda": "25*g10**2*lambdaSigma4*xi",
+      "M02_field_conversion_exactly_once": "25*g10**2*lambdaSigma4*(3 - xi)",
+      "partial_BFM_gauge_sum": "3*g10**2*(-g10**2 + 200*lambdaSigma4)/8",
+      "total_residue": "-3*g10**2*(g10**2 - 200*lambdaSigma4)/8 + lambdaPhiSigma2**2/8 + 48*lambdaSigma1*lambdaSigma4 - 8*lambdaSigma2**2 - 16*lambdaSigma2*lambdaSigma3 - 32*lambdaSigma2*lambdaSigma4 + 8*lambdaSigma3**2 + 224*lambdaSigma3*lambdaSigma4 - 480*lambdaSigma4**2 - 26*zEta_im**2 - 26*zEta_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaSigmaphi1": {
+      "field_multiplicities": {
+        "Sigma": 2,
+        "phi": 2
+      },
+      "external_Casimir_sum": "34",
+      "scalar_V4V4": "108*lambdaPhiSigma1*lambdaPhiphi1 + 54*lambdaPhiSigma1*lambdaPhiphi2/5 - 12*lambdaPhiSigma2*lambdaPhiphi1 - 6*lambdaPhiSigma2*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaSigmaphi1 + 10*lambdaPhiVector1*lambdaSigmaphi2 + 4*lambdaPhiVector2*lambdaSigmaphi1 + 4*lambdaPhiVector2*lambdaSigmaphi2 + 1016*lambdaSigma1*lambdaSigmaphi1 + 504*lambdaSigma1*lambdaSigmaphi2 + 2440*lambdaSigma2*lambdaSigmaphi1 + 1384*lambdaSigma2*lambdaSigmaphi2 + 2680*lambdaSigma3*lambdaSigmaphi1 + 1576*lambdaSigma3*lambdaSigmaphi2 + 4960*lambdaSigma4*lambdaSigmaphi1 + 2464*lambdaSigma4*lambdaSigmaphi2 + lambdaSigmaS*lambdaVectorS + 4*lambdaSigmaphi1**2 + 4*lambdaSigmaphi2**2 + 96*zD_im**2 + 96*zD_re**2 + 1248*zEta_im**2 + 1248*zEta_re**2",
+      "quantum_vector_pure_g4": "5*g10**4*(xi**2 + 3)/4",
+      "Goldstone_pure_g4": "5*g10**4*xi**2/4",
+      "ghost_pure_g4": "-5*g10**4*xi**2/2",
+      "Goldstone_mixed_g2_lambda": "17*g10**2*lambdaSigmaphi1*xi",
+      "M02_field_conversion_exactly_once": "17*g10**2*lambdaSigmaphi1*(3 - xi)",
+      "partial_BFM_gauge_sum": "g10**2*(15*g10**2/4 + 51*lambdaSigmaphi1)",
+      "total_residue": "15*g10**4/4 + 51*g10**2*lambdaSigmaphi1 + 108*lambdaPhiSigma1*lambdaPhiphi1 + 54*lambdaPhiSigma1*lambdaPhiphi2/5 - 12*lambdaPhiSigma2*lambdaPhiphi1 - 6*lambdaPhiSigma2*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaSigmaphi1 + 10*lambdaPhiVector1*lambdaSigmaphi2 + 4*lambdaPhiVector2*lambdaSigmaphi1 + 4*lambdaPhiVector2*lambdaSigmaphi2 + 1016*lambdaSigma1*lambdaSigmaphi1 + 504*lambdaSigma1*lambdaSigmaphi2 + 2440*lambdaSigma2*lambdaSigmaphi1 + 1384*lambdaSigma2*lambdaSigmaphi2 + 2680*lambdaSigma3*lambdaSigmaphi1 + 1576*lambdaSigma3*lambdaSigmaphi2 + 4960*lambdaSigma4*lambdaSigmaphi1 + 2464*lambdaSigma4*lambdaSigmaphi2 + lambdaSigmaS*lambdaVectorS + 4*lambdaSigmaphi1**2 + 4*lambdaSigmaphi2**2 + 96*zD_im**2 + 96*zD_re**2 + 1248*zEta_im**2 + 1248*zEta_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaSigmaphi2": {
+      "field_multiplicities": {
+        "Sigma": 2,
+        "phi": 2
+      },
+      "external_Casimir_sum": "34",
+      "scalar_V4V4": "2*lambdaPhiVector1*lambdaSigmaphi2 - 4*lambdaPhiVector2*lambdaSigmaphi2 + 8*lambdaSigma1*lambdaSigmaphi2 - 328*lambdaSigma2*lambdaSigmaphi2 - 472*lambdaSigma3*lambdaSigmaphi2 + 32*lambdaSigma4*lambdaSigmaphi2 + 8*lambdaSigmaphi1*lambdaSigmaphi2 + 4*lambdaSigmaphi2**2 - 96*zD_im**2 - 96*zD_re**2 - 1056*zEta_im**2 - 1056*zEta_re**2",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "17*g10**2*lambdaSigmaphi2*xi",
+      "M02_field_conversion_exactly_once": "17*g10**2*lambdaSigmaphi2*(3 - xi)",
+      "partial_BFM_gauge_sum": "51*g10**2*lambdaSigmaphi2",
+      "total_residue": "51*g10**2*lambdaSigmaphi2 + 2*lambdaPhiVector1*lambdaSigmaphi2 - 4*lambdaPhiVector2*lambdaSigmaphi2 + 8*lambdaSigma1*lambdaSigmaphi2 - 328*lambdaSigma2*lambdaSigmaphi2 - 472*lambdaSigma3*lambdaSigmaphi2 + 32*lambdaSigma4*lambdaSigmaphi2 + 8*lambdaSigmaphi1*lambdaSigmaphi2 + 4*lambdaSigmaphi2**2 - 96*zD_im**2 - 96*zD_re**2 - 1056*zEta_im**2 - 1056*zEta_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaPhiVector1": {
+      "field_multiplicities": {
+        "phi": 4
+      },
+      "external_Casimir_sum": "18",
+      "scalar_V4V4": "28*lambdaPhiVector1**2 + 8*lambdaPhiVector1*lambdaPhiVector2 + 8*lambdaPhiVector2**2 + 54*lambdaPhiphi1**2 + 54*lambdaPhiphi1*lambdaPhiphi2/5 + 83*lambdaPhiphi2**2/50 + 252*lambdaSigmaphi1**2 + 252*lambdaSigmaphi1*lambdaSigmaphi2 + 98*lambdaSigmaphi2**2 + lambdaVectorS**2/2 + 280*zD_im**2 + 280*zD_re**2 + zK_im**2 + zK_re**2",
+      "quantum_vector_pure_g4": "5*g10**4*(xi**2 + 3)/4",
+      "Goldstone_pure_g4": "5*g10**4*xi**2/4",
+      "ghost_pure_g4": "-5*g10**4*xi**2/2",
+      "Goldstone_mixed_g2_lambda": "9*g10**2*lambdaPhiVector1*xi",
+      "M02_field_conversion_exactly_once": "9*g10**2*lambdaPhiVector1*(3 - xi)",
+      "partial_BFM_gauge_sum": "g10**2*(15*g10**2/4 + 27*lambdaPhiVector1)",
+      "total_residue": "15*g10**4/4 + 27*g10**2*lambdaPhiVector1 + 28*lambdaPhiVector1**2 + 8*lambdaPhiVector1*lambdaPhiVector2 + 8*lambdaPhiVector2**2 + 54*lambdaPhiphi1**2 + 54*lambdaPhiphi1*lambdaPhiphi2/5 + 83*lambdaPhiphi2**2/50 + 252*lambdaSigmaphi1**2 + 252*lambdaSigmaphi1*lambdaSigmaphi2 + 98*lambdaSigmaphi2**2 + lambdaVectorS**2/2 + 280*zD_im**2 + 280*zD_re**2 + zK_im**2 + zK_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaPhiVector2": {
+      "field_multiplicities": {
+        "phi": 4
+      },
+      "external_Casimir_sum": "18",
+      "scalar_V4V4": "12*lambdaPhiVector1*lambdaPhiVector2 + 20*lambdaPhiVector2**2 + 7*lambdaPhiphi2**2/5 - 35*lambdaSigmaphi2**2 - 28*zD_im**2 - 28*zD_re**2 - zK_im**2/10 - zK_re**2/10",
+      "quantum_vector_pure_g4": "g10**4*(xi**2 + 3)",
+      "Goldstone_pure_g4": "g10**4*xi**2",
+      "ghost_pure_g4": "-2*g10**4*xi**2",
+      "Goldstone_mixed_g2_lambda": "9*g10**2*lambdaPhiVector2*xi",
+      "M02_field_conversion_exactly_once": "9*g10**2*lambdaPhiVector2*(3 - xi)",
+      "partial_BFM_gauge_sum": "3*g10**2*(g10**2 + 9*lambdaPhiVector2)",
+      "total_residue": "3*g10**2*(g10**2 + 9*lambdaPhiVector2) + 12*lambdaPhiVector1*lambdaPhiVector2 + 20*lambdaPhiVector2**2 + 7*lambdaPhiphi2**2/5 - 35*lambdaSigmaphi2**2 - 28*zD_im**2 - 28*zD_re**2 - zK_im**2/10 - zK_re**2/10",
+      "xi_residual": "0"
+    },
+    "lambdaSigmaS": {
+      "field_multiplicities": {
+        "Sigma": 2,
+        "S": 2
+      },
+      "external_Casimir_sum": "25",
+      "scalar_V4V4": "108*lambdaPhiS*lambdaPhiSigma1 - 12*lambdaPhiS*lambdaPhiSigma2 + 4*lambdaS*lambdaSigmaS + 1016*lambdaSigma1*lambdaSigmaS + 2440*lambdaSigma2*lambdaSigmaS + 2680*lambdaSigma3*lambdaSigmaS + 4960*lambdaSigma4*lambdaSigmaS + 4*lambdaSigmaS**2 + 10*lambdaSigmaphi1*lambdaVectorS + 5*lambdaSigmaphi2*lambdaVectorS + 120*z4_im**2 + 120*z4_re**2",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "25*g10**2*lambdaSigmaS*xi/2",
+      "M02_field_conversion_exactly_once": "25*g10**2*lambdaSigmaS*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "75*g10**2*lambdaSigmaS/2",
+      "total_residue": "75*g10**2*lambdaSigmaS/2 + 108*lambdaPhiS*lambdaPhiSigma1 - 12*lambdaPhiS*lambdaPhiSigma2 + 4*lambdaS*lambdaSigmaS + 1016*lambdaSigma1*lambdaSigmaS + 2440*lambdaSigma2*lambdaSigmaS + 2680*lambdaSigma3*lambdaSigmaS + 4960*lambdaSigma4*lambdaSigmaS + 4*lambdaSigmaS**2 + 10*lambdaSigmaphi1*lambdaVectorS + 5*lambdaSigmaphi2*lambdaVectorS + 120*z4_im**2 + 120*z4_re**2",
+      "xi_residual": "0"
+    },
+    "lambdaVectorS": {
+      "field_multiplicities": {
+        "phi": 2,
+        "S": 2
+      },
+      "external_Casimir_sum": "9",
+      "scalar_V4V4": "108*lambdaPhiS*lambdaPhiphi1 + 54*lambdaPhiS*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaVectorS + 4*lambdaPhiVector2*lambdaVectorS + 4*lambdaS*lambdaVectorS + 504*lambdaSigmaS*lambdaSigmaphi1 + 252*lambdaSigmaS*lambdaSigmaphi2 + 2*lambdaVectorS**2 + 108*zK_im**2/5 + 108*zK_re**2/5",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "9*g10**2*lambdaVectorS*xi/2",
+      "M02_field_conversion_exactly_once": "9*g10**2*lambdaVectorS*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "27*g10**2*lambdaVectorS/2",
+      "total_residue": "27*g10**2*lambdaVectorS/2 + 108*lambdaPhiS*lambdaPhiphi1 + 54*lambdaPhiS*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaVectorS + 4*lambdaPhiVector2*lambdaVectorS + 4*lambdaS*lambdaVectorS + 504*lambdaSigmaS*lambdaSigmaphi1 + 252*lambdaSigmaS*lambdaSigmaphi2 + 2*lambdaVectorS**2 + 108*zK_im**2/5 + 108*zK_re**2/5",
+      "xi_residual": "0"
+    },
+    "lambdaS": {
+      "field_multiplicities": {
+        "S": 4
+      },
+      "external_Casimir_sum": "0",
+      "scalar_V4V4": "54*lambdaPhiS**2 + 10*lambdaS**2 + 252*lambdaSigmaS**2 + 5*lambdaVectorS**2",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "0",
+      "M02_field_conversion_exactly_once": "0",
+      "partial_BFM_gauge_sum": "0",
+      "total_residue": "54*lambdaPhiS**2 + 10*lambdaS**2 + 252*lambdaSigmaS**2 + 5*lambdaVectorS**2",
+      "xi_residual": "0"
+    },
+    "z4_re": {
+      "field_multiplicities": {
+        "Phi": 1,
+        "Sigma": 2,
+        "S": 1
+      },
+      "external_Casimir_sum": "35",
+      "scalar_V4V4": "2*lambdaPhiS*z4_re + 8*lambdaPhiSigma1*z4_re + 48*lambdaPhiSigma2*z4_re + 8*lambdaSigma1*z4_re + 80*lambdaSigma2*z4_re + 360*lambdaSigma3*z4_re + 320*lambdaSigma4*z4_re + 4*lambdaSigmaS*z4_re + 2*zD_im*zK_im + 2*zD_re*zK_re",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "35*g10**2*xi*z4_re/2",
+      "M02_field_conversion_exactly_once": "35*g10**2*z4_re*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "105*g10**2*z4_re/2",
+      "total_residue": "105*g10**2*z4_re/2 + 2*lambdaPhiS*z4_re + 8*lambdaPhiSigma1*z4_re + 48*lambdaPhiSigma2*z4_re + 8*lambdaSigma1*z4_re + 80*lambdaSigma2*z4_re + 360*lambdaSigma3*z4_re + 320*lambdaSigma4*z4_re + 4*lambdaSigmaS*z4_re + 2*zD_im*zK_im + 2*zD_re*zK_re",
+      "xi_residual": "0"
+    },
+    "z4_im": {
+      "field_multiplicities": {
+        "Phi": 1,
+        "Sigma": 2,
+        "S": 1
+      },
+      "external_Casimir_sum": "35",
+      "scalar_V4V4": "2*lambdaPhiS*z4_im + 8*lambdaPhiSigma1*z4_im + 48*lambdaPhiSigma2*z4_im + 8*lambdaSigma1*z4_im + 80*lambdaSigma2*z4_im + 360*lambdaSigma3*z4_im + 320*lambdaSigma4*z4_im + 4*lambdaSigmaS*z4_im + 2*zD_im*zK_re - 2*zD_re*zK_im",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "35*g10**2*xi*z4_im/2",
+      "M02_field_conversion_exactly_once": "35*g10**2*z4_im*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "105*g10**2*z4_im/2",
+      "total_residue": "105*g10**2*z4_im/2 + 2*lambdaPhiS*z4_im + 8*lambdaPhiSigma1*z4_im + 48*lambdaPhiSigma2*z4_im + 8*lambdaSigma1*z4_im + 80*lambdaSigma2*z4_im + 360*lambdaSigma3*z4_im + 320*lambdaSigma4*z4_im + 4*lambdaSigmaS*z4_im + 2*zD_im*zK_re - 2*zD_re*zK_im",
+      "xi_residual": "0"
+    },
+    "zK_re": {
+      "field_multiplicities": {
+        "Phi": 1,
+        "phi": 2,
+        "S": 1
+      },
+      "external_Casimir_sum": "19",
+      "scalar_V4V4": "2*lambdaPhiS*zK_re + 2*lambdaPhiVector1*zK_re + 4*lambdaPhiphi1*zK_re + 58*lambdaPhiphi2*zK_re/5 + 2*lambdaVectorS*zK_re + 280*z4_im*zD_im + 280*z4_re*zD_re",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "19*g10**2*xi*zK_re/2",
+      "M02_field_conversion_exactly_once": "19*g10**2*zK_re*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "57*g10**2*zK_re/2",
+      "total_residue": "57*g10**2*zK_re/2 + 2*lambdaPhiS*zK_re + 2*lambdaPhiVector1*zK_re + 4*lambdaPhiphi1*zK_re + 58*lambdaPhiphi2*zK_re/5 + 2*lambdaVectorS*zK_re + 280*z4_im*zD_im + 280*z4_re*zD_re",
+      "xi_residual": "0"
+    },
+    "zK_im": {
+      "field_multiplicities": {
+        "Phi": 1,
+        "phi": 2,
+        "S": 1
+      },
+      "external_Casimir_sum": "19",
+      "scalar_V4V4": "2*lambdaPhiS*zK_im + 2*lambdaPhiVector1*zK_im + 4*lambdaPhiphi1*zK_im + 58*lambdaPhiphi2*zK_im/5 + 2*lambdaVectorS*zK_im - 280*z4_im*zD_re + 280*z4_re*zD_im",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "19*g10**2*xi*zK_im/2",
+      "M02_field_conversion_exactly_once": "19*g10**2*zK_im*(3 - xi)/2",
+      "partial_BFM_gauge_sum": "57*g10**2*zK_im/2",
+      "total_residue": "57*g10**2*zK_im/2 + 2*lambdaPhiS*zK_im + 2*lambdaPhiVector1*zK_im + 4*lambdaPhiphi1*zK_im + 58*lambdaPhiphi2*zK_im/5 + 2*lambdaVectorS*zK_im - 280*z4_im*zD_re + 280*z4_re*zD_im",
+      "xi_residual": "0"
+    },
+    "zEta_re": {
+      "field_multiplicities": {
+        "Sigma": 3,
+        "phi": 1
+      },
+      "external_Casimir_sum": "42",
+      "scalar_V4V4": "24*lambdaSigma1*zEta_re - 16*lambdaSigma2*zEta_re + 80*lambdaSigma3*zEta_re - 1312*lambdaSigma4*zEta_re + 6*lambdaSigmaphi1*zEta_re - 8*lambdaSigmaphi2*zEta_re + 48*zD_im*zEta_im + 48*zD_re*zEta_re",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "21*g10**2*xi*zEta_re",
+      "M02_field_conversion_exactly_once": "21*g10**2*zEta_re*(3 - xi)",
+      "partial_BFM_gauge_sum": "63*g10**2*zEta_re",
+      "total_residue": "63*g10**2*zEta_re + 24*lambdaSigma1*zEta_re - 16*lambdaSigma2*zEta_re + 80*lambdaSigma3*zEta_re - 1312*lambdaSigma4*zEta_re + 6*lambdaSigmaphi1*zEta_re - 8*lambdaSigmaphi2*zEta_re + 48*zD_im*zEta_im + 48*zD_re*zEta_re",
+      "xi_residual": "0"
+    },
+    "zEta_im": {
+      "field_multiplicities": {
+        "Sigma": 3,
+        "phi": 1
+      },
+      "external_Casimir_sum": "42",
+      "scalar_V4V4": "24*lambdaSigma1*zEta_im - 16*lambdaSigma2*zEta_im + 80*lambdaSigma3*zEta_im - 1312*lambdaSigma4*zEta_im + 6*lambdaSigmaphi1*zEta_im - 8*lambdaSigmaphi2*zEta_im + 48*zD_im*zEta_re - 48*zD_re*zEta_im",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "21*g10**2*xi*zEta_im",
+      "M02_field_conversion_exactly_once": "21*g10**2*zEta_im*(3 - xi)",
+      "partial_BFM_gauge_sum": "63*g10**2*zEta_im",
+      "total_residue": "63*g10**2*zEta_im + 24*lambdaSigma1*zEta_im - 16*lambdaSigma2*zEta_im + 80*lambdaSigma3*zEta_im - 1312*lambdaSigma4*zEta_im + 6*lambdaSigmaphi1*zEta_im - 8*lambdaSigmaphi2*zEta_im + 48*zD_im*zEta_re - 48*zD_re*zEta_im",
+      "xi_residual": "0"
+    },
+    "zD_re": {
+      "field_multiplicities": {
+        "Sigma": 2,
+        "phi": 2
+      },
+      "external_Casimir_sum": "34",
+      "scalar_V4V4": "2*lambdaPhiVector1*zD_re + 8*lambdaSigma1*zD_re + 80*lambdaSigma2*zD_re + 360*lambdaSigma3*zD_re + 320*lambdaSigma4*zD_re + 8*lambdaSigmaphi1*zD_re - 16*lambdaSigmaphi2*zD_re - z4_im*zK_im + z4_re*zK_re - 480*zEta_im**2 + 480*zEta_re**2",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "17*g10**2*xi*zD_re",
+      "M02_field_conversion_exactly_once": "17*g10**2*zD_re*(3 - xi)",
+      "partial_BFM_gauge_sum": "51*g10**2*zD_re",
+      "total_residue": "51*g10**2*zD_re + 2*lambdaPhiVector1*zD_re + 8*lambdaSigma1*zD_re + 80*lambdaSigma2*zD_re + 360*lambdaSigma3*zD_re + 320*lambdaSigma4*zD_re + 8*lambdaSigmaphi1*zD_re - 16*lambdaSigmaphi2*zD_re - z4_im*zK_im + z4_re*zK_re - 480*zEta_im**2 + 480*zEta_re**2",
+      "xi_residual": "0"
+    },
+    "zD_im": {
+      "field_multiplicities": {
+        "Sigma": 2,
+        "phi": 2
+      },
+      "external_Casimir_sum": "34",
+      "scalar_V4V4": "2*lambdaPhiVector1*zD_im + 8*lambdaSigma1*zD_im + 80*lambdaSigma2*zD_im + 360*lambdaSigma3*zD_im + 320*lambdaSigma4*zD_im + 8*lambdaSigmaphi1*zD_im - 16*lambdaSigmaphi2*zD_im + z4_im*zK_re + z4_re*zK_im + 960*zEta_im*zEta_re",
+      "quantum_vector_pure_g4": "0",
+      "Goldstone_pure_g4": "0",
+      "ghost_pure_g4": "0",
+      "Goldstone_mixed_g2_lambda": "17*g10**2*xi*zD_im",
+      "M02_field_conversion_exactly_once": "17*g10**2*zD_im*(3 - xi)",
+      "partial_BFM_gauge_sum": "51*g10**2*zD_im",
+      "total_residue": "51*g10**2*zD_im + 2*lambdaPhiVector1*zD_im + 8*lambdaSigma1*zD_im + 80*lambdaSigma2*zD_im + 360*lambdaSigma3*zD_im + 320*lambdaSigma4*zD_im + 8*lambdaSigmaphi1*zD_im - 16*lambdaSigmaphi2*zD_im + z4_im*zK_re + z4_re*zK_im + 960*zEta_im*zEta_re",
+      "xi_residual": "0"
+    }
+  },
+  "quartic_residues": {
+    "lambdaPhi1": "9*g10**4/4 + 60*g10**2*lambdaPhi1 + 248*lambdaPhi1**2 + 448*lambdaPhi1*lambdaPhi2/5 + 159*lambdaPhi2**2/25 + lambdaPhiS**2/2 + 252*lambdaPhiSigma1**2 - 56*lambdaPhiSigma1*lambdaPhiSigma2 + 53*lambdaPhiSigma2**2/4 + 5*lambdaPhiphi1**2 + lambdaPhiphi1*lambdaPhiphi2",
+    "lambdaPhi2": "15*g10**2*(g10**2 + 8*lambdaPhi2)/2 + 48*lambdaPhi1*lambdaPhi2 + 254*lambdaPhi2**2/5 - 25*lambdaPhiSigma2**2/2 + lambdaPhiphi2**2/2",
+    "lambdaPhiSigma1": "9*g10**2*(g10**2 + 15*lambdaPhiSigma1)/2 + 224*lambdaPhi1*lambdaPhiSigma1 - 24*lambdaPhi1*lambdaPhiSigma2 + 224*lambdaPhi2*lambdaPhiSigma1/5 - 26*lambdaPhi2*lambdaPhiSigma2/5 + lambdaPhiS*lambdaSigmaS + 8*lambdaPhiSigma1**2 + 1016*lambdaPhiSigma1*lambdaSigma1 + 2440*lambdaPhiSigma1*lambdaSigma2 + 2680*lambdaPhiSigma1*lambdaSigma3 + 4960*lambdaPhiSigma1*lambdaSigma4 + 11*lambdaPhiSigma2**2 - 112*lambdaPhiSigma2*lambdaSigma1 - 272*lambdaPhiSigma2*lambdaSigma2 - 288*lambdaPhiSigma2*lambdaSigma3 - 512*lambdaPhiSigma2*lambdaSigma4 + 10*lambdaPhiphi1*lambdaSigmaphi1 + 5*lambdaPhiphi1*lambdaSigmaphi2 + lambdaPhiphi2*lambdaSigmaphi1 + lambdaPhiphi2*lambdaSigmaphi2/2 + 4*z4_im**2 + 4*z4_re**2",
+    "lambdaPhiSigma2": "3*g10**4 + 135*g10**2*lambdaPhiSigma2/2 + 8*lambdaPhi1*lambdaPhiSigma2 - 2*lambdaPhi2*lambdaPhiSigma2 + 16*lambdaPhiSigma1*lambdaPhiSigma2 + 37*lambdaPhiSigma2**2 + 8*lambdaPhiSigma2*lambdaSigma1 - 8*lambdaPhiSigma2*lambdaSigma2 + 88*lambdaPhiSigma2*lambdaSigma3 + 352*lambdaPhiSigma2*lambdaSigma4 + 16*z4_im**2 + 16*z4_re**2",
+    "lambdaPhiphi1": "3*g10**2*(g10**2 + 29*lambdaPhiphi1)/2 + 224*lambdaPhi1*lambdaPhiphi1 + 108*lambdaPhi1*lambdaPhiphi2/5 + 224*lambdaPhi2*lambdaPhiphi1/5 + 53*lambdaPhi2*lambdaPhiphi2/25 + lambdaPhiS*lambdaVectorS + 504*lambdaPhiSigma1*lambdaSigmaphi1 + 252*lambdaPhiSigma1*lambdaSigmaphi2 - 56*lambdaPhiSigma2*lambdaSigmaphi1 - 28*lambdaPhiSigma2*lambdaSigmaphi2 + 22*lambdaPhiVector1*lambdaPhiphi1 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi1 + 4*lambdaPhiphi1**2 + lambdaPhiphi2**2/2",
+    "lambdaPhiphi2": "15*g10**4 + 87*g10**2*lambdaPhiphi2/2 + 8*lambdaPhi1*lambdaPhiphi2 + 118*lambdaPhi2*lambdaPhiphi2/5 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi2 + 8*lambdaPhiphi1*lambdaPhiphi2 + 33*lambdaPhiphi2**2/5 + 4*zK_im**2 + 4*zK_re**2",
+    "lambdaPhiS": "30*g10**2*lambdaPhiS + 224*lambdaPhi1*lambdaPhiS + 224*lambdaPhi2*lambdaPhiS/5 + 4*lambdaPhiS**2 + 4*lambdaPhiS*lambdaS + 504*lambdaPhiSigma1*lambdaSigmaS - 56*lambdaPhiSigma2*lambdaSigmaS + 10*lambdaPhiphi1*lambdaVectorS + lambdaPhiphi2*lambdaVectorS + 280*z4_im**2 + 280*z4_re**2 + 2*zK_im**2 + 2*zK_re**2",
+    "lambdaSigma1": "135*g10**4/16 + 75*g10**2*lambdaSigma1 + 54*lambdaPhiSigma1**2 - 12*lambdaPhiSigma1*lambdaPhiSigma2 + 3*lambdaPhiSigma2**2/2 + 1040*lambdaSigma1**2 + 4880*lambdaSigma1*lambdaSigma2 + 5360*lambdaSigma1*lambdaSigma3 + 9920*lambdaSigma1*lambdaSigma4 + 6920*lambdaSigma2**2 + 15760*lambdaSigma2*lambdaSigma3 + 24640*lambdaSigma2*lambdaSigma4 + 9320*lambdaSigma3**2 + 26560*lambdaSigma3*lambdaSigma4 + 33920*lambdaSigma4**2 + lambdaSigmaS**2/2 + 5*lambdaSigmaphi1**2 + 5*lambdaSigmaphi1*lambdaSigmaphi2 + 5*lambdaSigmaphi2**2/2 + 240*zEta_im**2 + 240*zEta_re**2",
+    "lambdaSigma2": "-3*g10**4 + 75*g10**2*lambdaSigma2 - lambdaPhiSigma2**2 + 48*lambdaSigma1*lambdaSigma2 - 360*lambdaSigma2**2 - 1168*lambdaSigma2*lambdaSigma3 - 320*lambdaSigma2*lambdaSigma4 - 1312*lambdaSigma3**2 - 1600*lambdaSigma3*lambdaSigma4 - 5120*lambdaSigma4**2 - lambdaSigmaphi2**2/2 - z4_im**2 - z4_re**2 - 2*zD_im**2 - 2*zD_re**2 - 88*zEta_im**2 - 88*zEta_re**2",
+    "lambdaSigma3": "3*g10**4/2 + 75*g10**2*lambdaSigma3 + lambdaPhiSigma2**2/2 + 48*lambdaSigma1*lambdaSigma3 + 32*lambdaSigma2**2 + 224*lambdaSigma2*lambdaSigma3 + 256*lambdaSigma2*lambdaSigma4 + 536*lambdaSigma3**2 + 1280*lambdaSigma3*lambdaSigma4 + 2816*lambdaSigma4**2 + z4_im**2 + z4_re**2 + 2*zD_im**2 + 2*zD_re**2 + 48*zEta_im**2 + 48*zEta_re**2",
+    "lambdaSigma4": "-3*g10**2*(g10**2 - 200*lambdaSigma4)/8 + lambdaPhiSigma2**2/8 + 48*lambdaSigma1*lambdaSigma4 - 8*lambdaSigma2**2 - 16*lambdaSigma2*lambdaSigma3 - 32*lambdaSigma2*lambdaSigma4 + 8*lambdaSigma3**2 + 224*lambdaSigma3*lambdaSigma4 - 480*lambdaSigma4**2 - 26*zEta_im**2 - 26*zEta_re**2",
+    "lambdaSigmaphi1": "15*g10**4/4 + 51*g10**2*lambdaSigmaphi1 + 108*lambdaPhiSigma1*lambdaPhiphi1 + 54*lambdaPhiSigma1*lambdaPhiphi2/5 - 12*lambdaPhiSigma2*lambdaPhiphi1 - 6*lambdaPhiSigma2*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaSigmaphi1 + 10*lambdaPhiVector1*lambdaSigmaphi2 + 4*lambdaPhiVector2*lambdaSigmaphi1 + 4*lambdaPhiVector2*lambdaSigmaphi2 + 1016*lambdaSigma1*lambdaSigmaphi1 + 504*lambdaSigma1*lambdaSigmaphi2 + 2440*lambdaSigma2*lambdaSigmaphi1 + 1384*lambdaSigma2*lambdaSigmaphi2 + 2680*lambdaSigma3*lambdaSigmaphi1 + 1576*lambdaSigma3*lambdaSigmaphi2 + 4960*lambdaSigma4*lambdaSigmaphi1 + 2464*lambdaSigma4*lambdaSigmaphi2 + lambdaSigmaS*lambdaVectorS + 4*lambdaSigmaphi1**2 + 4*lambdaSigmaphi2**2 + 96*zD_im**2 + 96*zD_re**2 + 1248*zEta_im**2 + 1248*zEta_re**2",
+    "lambdaSigmaphi2": "51*g10**2*lambdaSigmaphi2 + 2*lambdaPhiVector1*lambdaSigmaphi2 - 4*lambdaPhiVector2*lambdaSigmaphi2 + 8*lambdaSigma1*lambdaSigmaphi2 - 328*lambdaSigma2*lambdaSigmaphi2 - 472*lambdaSigma3*lambdaSigmaphi2 + 32*lambdaSigma4*lambdaSigmaphi2 + 8*lambdaSigmaphi1*lambdaSigmaphi2 + 4*lambdaSigmaphi2**2 - 96*zD_im**2 - 96*zD_re**2 - 1056*zEta_im**2 - 1056*zEta_re**2",
+    "lambdaPhiVector1": "15*g10**4/4 + 27*g10**2*lambdaPhiVector1 + 28*lambdaPhiVector1**2 + 8*lambdaPhiVector1*lambdaPhiVector2 + 8*lambdaPhiVector2**2 + 54*lambdaPhiphi1**2 + 54*lambdaPhiphi1*lambdaPhiphi2/5 + 83*lambdaPhiphi2**2/50 + 252*lambdaSigmaphi1**2 + 252*lambdaSigmaphi1*lambdaSigmaphi2 + 98*lambdaSigmaphi2**2 + lambdaVectorS**2/2 + 280*zD_im**2 + 280*zD_re**2 + zK_im**2 + zK_re**2",
+    "lambdaPhiVector2": "3*g10**2*(g10**2 + 9*lambdaPhiVector2) + 12*lambdaPhiVector1*lambdaPhiVector2 + 20*lambdaPhiVector2**2 + 7*lambdaPhiphi2**2/5 - 35*lambdaSigmaphi2**2 - 28*zD_im**2 - 28*zD_re**2 - zK_im**2/10 - zK_re**2/10",
+    "lambdaSigmaS": "75*g10**2*lambdaSigmaS/2 + 108*lambdaPhiS*lambdaPhiSigma1 - 12*lambdaPhiS*lambdaPhiSigma2 + 4*lambdaS*lambdaSigmaS + 1016*lambdaSigma1*lambdaSigmaS + 2440*lambdaSigma2*lambdaSigmaS + 2680*lambdaSigma3*lambdaSigmaS + 4960*lambdaSigma4*lambdaSigmaS + 4*lambdaSigmaS**2 + 10*lambdaSigmaphi1*lambdaVectorS + 5*lambdaSigmaphi2*lambdaVectorS + 120*z4_im**2 + 120*z4_re**2",
+    "lambdaVectorS": "27*g10**2*lambdaVectorS/2 + 108*lambdaPhiS*lambdaPhiphi1 + 54*lambdaPhiS*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaVectorS + 4*lambdaPhiVector2*lambdaVectorS + 4*lambdaS*lambdaVectorS + 504*lambdaSigmaS*lambdaSigmaphi1 + 252*lambdaSigmaS*lambdaSigmaphi2 + 2*lambdaVectorS**2 + 108*zK_im**2/5 + 108*zK_re**2/5",
+    "lambdaS": "54*lambdaPhiS**2 + 10*lambdaS**2 + 252*lambdaSigmaS**2 + 5*lambdaVectorS**2",
+    "z4_re": "105*g10**2*z4_re/2 + 2*lambdaPhiS*z4_re + 8*lambdaPhiSigma1*z4_re + 48*lambdaPhiSigma2*z4_re + 8*lambdaSigma1*z4_re + 80*lambdaSigma2*z4_re + 360*lambdaSigma3*z4_re + 320*lambdaSigma4*z4_re + 4*lambdaSigmaS*z4_re + 2*zD_im*zK_im + 2*zD_re*zK_re",
+    "z4_im": "105*g10**2*z4_im/2 + 2*lambdaPhiS*z4_im + 8*lambdaPhiSigma1*z4_im + 48*lambdaPhiSigma2*z4_im + 8*lambdaSigma1*z4_im + 80*lambdaSigma2*z4_im + 360*lambdaSigma3*z4_im + 320*lambdaSigma4*z4_im + 4*lambdaSigmaS*z4_im + 2*zD_im*zK_re - 2*zD_re*zK_im",
+    "zK_re": "57*g10**2*zK_re/2 + 2*lambdaPhiS*zK_re + 2*lambdaPhiVector1*zK_re + 4*lambdaPhiphi1*zK_re + 58*lambdaPhiphi2*zK_re/5 + 2*lambdaVectorS*zK_re + 280*z4_im*zD_im + 280*z4_re*zD_re",
+    "zK_im": "57*g10**2*zK_im/2 + 2*lambdaPhiS*zK_im + 2*lambdaPhiVector1*zK_im + 4*lambdaPhiphi1*zK_im + 58*lambdaPhiphi2*zK_im/5 + 2*lambdaVectorS*zK_im - 280*z4_im*zD_re + 280*z4_re*zD_im",
+    "zEta_re": "63*g10**2*zEta_re + 24*lambdaSigma1*zEta_re - 16*lambdaSigma2*zEta_re + 80*lambdaSigma3*zEta_re - 1312*lambdaSigma4*zEta_re + 6*lambdaSigmaphi1*zEta_re - 8*lambdaSigmaphi2*zEta_re + 48*zD_im*zEta_im + 48*zD_re*zEta_re",
+    "zEta_im": "63*g10**2*zEta_im + 24*lambdaSigma1*zEta_im - 16*lambdaSigma2*zEta_im + 80*lambdaSigma3*zEta_im - 1312*lambdaSigma4*zEta_im + 6*lambdaSigmaphi1*zEta_im - 8*lambdaSigmaphi2*zEta_im + 48*zD_im*zEta_re - 48*zD_re*zEta_im",
+    "zD_re": "51*g10**2*zD_re + 2*lambdaPhiVector1*zD_re + 8*lambdaSigma1*zD_re + 80*lambdaSigma2*zD_re + 360*lambdaSigma3*zD_re + 320*lambdaSigma4*zD_re + 8*lambdaSigmaphi1*zD_re - 16*lambdaSigmaphi2*zD_re - z4_im*zK_im + z4_re*zK_re - 480*zEta_im**2 + 480*zEta_re**2",
+    "zD_im": "51*g10**2*zD_im + 2*lambdaPhiVector1*zD_im + 8*lambdaSigma1*zD_im + 80*lambdaSigma2*zD_im + 360*lambdaSigma3*zD_im + 320*lambdaSigma4*zD_im + 8*lambdaSigmaphi1*zD_im - 16*lambdaSigmaphi2*zD_im + z4_im*zK_re + z4_re*zK_im + 960*zEta_im*zEta_re"
+  },
+  "projection": {
+    "basis": [
+      "lambdaPhi1",
+      "lambdaPhi2",
+      "lambdaPhiSigma1",
+      "lambdaPhiSigma2",
+      "lambdaPhiphi1",
+      "lambdaPhiphi2",
+      "lambdaPhiS",
+      "lambdaSigma1",
+      "lambdaSigma2",
+      "lambdaSigma3",
+      "lambdaSigma4",
+      "lambdaSigmaphi1",
+      "lambdaSigmaphi2",
+      "lambdaPhiVector1",
+      "lambdaPhiVector2",
+      "lambdaSigmaS",
+      "lambdaVectorS",
+      "lambdaS",
+      "z4_re",
+      "z4_im",
+      "zK_re",
+      "zK_im",
+      "zEta_re",
+      "zEta_im",
+      "zD_re",
+      "zD_im"
+    ],
+    "rank": 26,
+    "scalar_out_of_basis_residual": "0",
+    "gauge_orbit_out_of_basis_residual": "0",
+    "Hermitian_real_direction_basis": true,
+    "PQ_forbidden_residual": "0",
+    "xi_residual": "0",
+    "sample_xi_residuals": {
+      "1/2": "0",
+      "1": "0",
+      "2": "0"
+    }
+  },
+  "M04_degree_counting_regression": {
+    "goldstone_1PI_coefficient": "xi/2",
+    "M02_field_conversion_coefficient": "(3-xi)/2",
+    "sum": "3/2",
+    "residual": "0"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "method": "local_constant_background_supertrace_with_nonexceptional_replay_required",
+    "locality": "LOCAL_GAUGE_INVARIANT_QUARTIC_POLYNOMIAL"
+  },
+  "missing_for_UVP_M05": [
+    "inventory-independent complete scalar/gauge replay",
+    "freeze primary and replay before comparison",
+    "formal attempt-2 adjudication"
+  ],
+  "artifact_sha256": "5079dee6a83782825576ba48783a72d9b1122259892ce54e301d4bf6748fc308"
+}

@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "outcome": "M05_ZETA_SCALAR_SUBTHEORY_PASS",
+  "authority": "IMPLEMENTATION_REGRESSION_ONLY_NOT_UVP_M05_PASS",
+  "inventory": {
+    "parent_internal_real_directions": 328,
+    "factorized_zEta_terms": 151200,
+    "input_directions": [
+      "zEta_re",
+      "zEta_im"
+    ],
+    "output_directions_nonzero": [
+      "lambdaSigma1",
+      "lambdaSigma2",
+      "lambdaSigma3",
+      "lambdaSigma4",
+      "lambdaSigmaphi1",
+      "lambdaSigmaphi2",
+      "zD_re",
+      "zD_im"
+    ],
+    "full_projector_rank": 26,
+    "background_inventories": [
+      {
+        "background": 0,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 1,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 2,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 3,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 4,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 5,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 6,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 7,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 8,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 9,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 10,
+        "hessian_nonzeros": [
+          0,
+          0
+        ]
+      },
+      {
+        "background": 11,
+        "hessian_nonzeros": [
+          3768,
+          3768
+        ]
+      },
+      {
+        "background": 12,
+        "hessian_nonzeros": [
+          1824,
+          1584
+        ]
+      },
+      {
+        "background": 13,
+        "hessian_nonzeros": [
+          5688,
+          5448
+        ]
+      },
+      {
+        "background": 14,
+        "hessian_nonzeros": [
+          6432,
+          6312
+        ]
+      },
+      {
+        "background": 15,
+        "hessian_nonzeros": [
+          5376,
+          5496
+        ]
+      },
+      {
+        "background": 16,
+        "hessian_nonzeros": [
+          6896,
+          6968
+        ]
+      },
+      {
+        "background": 17,
+        "hessian_nonzeros": [
+          1920,
+          1920
+        ]
+      },
+      {
+        "background": 18,
+        "hessian_nonzeros": [
+          2256,
+          2616
+        ]
+      },
+      {
+        "background": 19,
+        "hessian_nonzeros": [
+          1800,
+          2040
+        ]
+      },
+      {
+        "background": 20,
+        "hessian_nonzeros": [
+          2136,
+          2136
+        ]
+      },
+      {
+        "background": 21,
+        "hessian_nonzeros": [
+          2540,
+          2420
+        ]
+      },
+      {
+        "background": 22,
+        "hessian_nonzeros": [
+          3384,
+          3384
+        ]
+      },
+      {
+        "background": 23,
+        "hessian_nonzeros": [
+          7992,
+          7752
+        ]
+      },
+      {
+        "background": 24,
+        "hessian_nonzeros": [
+          2904,
+          2904
+        ]
+      },
+      {
+        "background": 25,
+        "hessian_nonzeros": [
+          4152,
+          4152
+        ]
+      },
+      {
+        "background": 26,
+        "hessian_nonzeros": [
+          8968,
+          8968
+        ]
+      },
+      {
+        "background": 27,
+        "hessian_nonzeros": [
+          5208,
+          5328
+        ]
+      }
+    ]
+  },
+  "inventory_sha256": "2dc695700ccbbd91159150cf563019619d3ba9a0e6348ebd524a92308454b5d0",
+  "coefficient_tables": {
+    "lambdaSigma1": [
+      [
+        "240",
+        "0"
+      ],
+      [
+        "0",
+        "240"
+      ]
+    ],
+    "lambdaSigma2": [
+      [
+        "-88",
+        "0"
+      ],
+      [
+        "0",
+        "-88"
+      ]
+    ],
+    "lambdaSigma3": [
+      [
+        "48",
+        "0"
+      ],
+      [
+        "0",
+        "48"
+      ]
+    ],
+    "lambdaSigma4": [
+      [
+        "-26",
+        "0"
+      ],
+      [
+        "0",
+        "-26"
+      ]
+    ],
+    "lambdaSigmaphi1": [
+      [
+        "1248",
+        "0"
+      ],
+      [
+        "0",
+        "1248"
+      ]
+    ],
+    "lambdaSigmaphi2": [
+      [
+        "-1056",
+        "0"
+      ],
+      [
+        "0",
+        "-1056"
+      ]
+    ],
+    "zD_re": [
+      [
+        "480",
+        "0"
+      ],
+      [
+        "0",
+        "-480"
+      ]
+    ],
+    "zD_im": [
+      [
+        "0",
+        "480"
+      ],
+      [
+        "480",
+        "0"
+      ]
+    ]
+  },
+  "projection_rank": 26,
+  "projection_residual": "0",
+  "independent_backgrounds": 2,
+  "independent_background_residual": "0",
+  "direct_parent_oracle_regression_backgrounds": 3,
+  "direct_parent_oracle_residual": "0",
+  "zEta_direction_indices": [
+    22,
+    23
+  ],
+  "missing_for_M05": [
+    "combined 26-direction scalar assembly and cross-couplings",
+    "partial-BFM gauge completion",
+    "complete independent replay"
+  ],
+  "artifact_sha256": "3f64505f42fe07327abd4aa096b08ed2087a963d276880e364f6aaf512e59d1c"
+}

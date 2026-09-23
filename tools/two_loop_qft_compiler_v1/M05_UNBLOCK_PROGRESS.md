@@ -1,4 +1,4 @@
-# UVP_M05 unblock progress: exact non-Sigma scalar subtheory
+# UVP_M05 unblock progress: complete primary operator
 
 ## Authority boundary
 
@@ -12,99 +12,103 @@ ONE_LOOP_COUNTERTERM_COMPILER = BLOCKED
 Layer 6 authorized = false
 ```
 
-No M05 residue for the complete canonical theory is claimed here.
+No complete canonical M05 residue is promoted here.
 
-## Implemented contraction
+## Complete primary scalar contraction
 
-`m05_parent_scalar_kernel.py` implements the exact scalar one-loop quartic
-functional on the restricted `Phi+phi+S` scalar subtheory.  It uses
-
-```text
-R4(q,q,q,q) = (3/2) sum_AB V4(q,q,e_A,e_B)^2
-             = 6 Tr[H2(q)^2],
-```
-
-where `H2=d^2 V4` and the second equality accounts for
-`H2=V4(q,q,.,.)/2`.  All 76 real internal directions in the restricted
-subtheory are included.  The calculation is performed with sparse exact
-degree-four monomials and never materializes a dense rank-four field tensor.
-
-The exact projector covers these 11 real directions:
-
-- `lambdaPhi1`, `lambdaPhi2`;
-- `lambdaPhiphi1`, `lambdaPhiphi2`, `lambdaPhiS`;
-- `lambdaPhiVector1`, `lambdaPhiVector2`;
-- `lambdaVectorS`, `lambdaS`;
-- `Re(zK)`, `Im(zK)`.
-
-Its deterministic witness matrix has rank 11 and nonzero exact determinant.
-Every projected coefficient table round-trips to all eleven diagonal pole
-evaluations with zero exact residual.
-
-The independent bounded audit rebuilds the projector from the complete parent
-invariant oracle rather than the primary sparse monomial lists.  It also
-reproduces the independent radial `O(N)` controls
+The primary scalar implementation now covers every one of the 328 real
+internal scalar directions and all 26 real Hermitian quartic directions.  It
+uses the exact functional identity
 
 ```text
-delta_lambdaPhi1     = 248 lambdaPhi1^2       (N=54 normalization),
-delta_lambdaPhiVector1 = 28 lambdaPhiVector1^2 (N=20),
-delta_lambdaS|_(only lambdaS nonzero) = 10 lambdaS^2
+V_div^(scalar)|_4 = (1/4) Tr[H2(q)^2]
+R4(q,q,q,q)      = 6 Tr[H2(q)^2]
 ```
 
-in the frozen simple-pole convention.
+without materializing a dense `328^4` tensor.  The implementation includes:
 
-Artifacts:
+- the previously certified `Phi+phi+S` rank-11 subtheory;
+- all Sigma radial and mixed radial quartics;
+- `lambdaSigmaphi2`, `z4`, and `zD` in a real Hermitian basis;
+- the exact `lambdaPhiSigma2` factorized contraction;
+- all four independent pure-Sigma quartics;
+- the complete `zEta` real/imaginary structure;
+- every cross-coupling among the 26 quartic input directions.
 
-- primary subspace artifact: `uvp_m05_active_scalar_subspace.json`;
-- bounded independent audit: `uvp_m05_active_scalar_subspace_audit.json`.
+The complete scalar result is evaluated on the frozen exact rank-26
+projector plus two independent exact backgrounds.  It has rank 26, zero
+projection residual, and zero independent-background residual.  Its artifact
+is `uvp_m05_complete_scalar_v4v4.json`.
 
-The complete invariant projector is also now implemented independently of the
-pole calculation. `m05_rank26_projector.py` adds 15 deterministic exact
-Sigma-bearing witnesses (fixed Gaussian-integer form seeds) to the eleven
-subtheory witnesses. The resulting 26-by-26 matrix has exact rank 26 and a
-nonzero exact determinant. Its frozen artifact is
-`uvp_m05_rank26_projector.json`.
+Calculation-local subtheory artifacts retain separately auditable ledgers for
+the Sigma radial, Sigma bilinear, `Phi-Sigma`, pure-Sigma, and `zEta`
+contractions.  These are regression components, not separate scientific
+gates.
 
-The exact gauge-orbit quartic has also been projected.  With
-`K_ab(q)=<T_a q,T_b q>` in the canonical kinetic and generator conventions,
-`m05_gauge_orbit_quartic.py` finds
+## Complete primary partial-BFM gauge contribution
+
+`m05_partial_bfm_gauge_completion.py` derives the gauge completion from the
+frozen partial-BFM determinant and the exact gauge-orbit polynomial.  It keeps
+separate vector, Goldstone, ghost, Goldstone-mixed, and M02 external-field
+conversion entries.  The determinant weights are
 
 ```text
-Tr K^2 =
-  3 lambdaPhi1 + 10 lambdaPhi2
-  + 6 lambdaPhiSigma1 + 4 lambdaPhiSigma2
-  + 2 lambdaPhiphi1 + 20 lambdaPhiphi2
-  + 45/4 lambdaSigma1 - 4 lambdaSigma2
-  + 2 lambdaSigma3 - 1/2 lambdaSigma4
-  + 5 lambdaSigmaphi1
-  + 5 lambdaPhiVector1 + 4 lambdaPhiVector2,
+vector transverse   3/4
+vector longitudinal xi^2/4
+Goldstone pure      xi^2/4
+ghost              -xi^2/2
 ```
 
-where the symbols on the right denote the corresponding frozen invariant
-polynomials, not couplings.  A twenty-seventh exact background gives zero
-projection residual.  This fixes the group-theory polynomial needed by the
-gauge-generated `g10^4` term, but deliberately does not assign its loop
-prefactor or claim partial-BFM `xi` cancellation.
+so the pure gauge-orbit coefficient is `3/4`.  The Goldstone-mixed and M02
+field terms combine as
+
+```text
+xi/2 + (3-xi)/2 = 3/2,
+```
+
+giving exact `xi` cancellation in every promoted primary quartic residue.
+M02 field conversion is included exactly once.  The complete primary scalar
+plus gauge candidate is frozen in
+`uvp_m05_primary_complete_candidate.json`; its authority explicitly remains
+below a formal M05 pass.
+
+## Independent gauge replay
+
+`independent_m05_gauge_replay.py` uses a new deterministic rank-26 background
+set, the independently normalized 45-generator basis, its own coefficient-
+preserving five-form action, direct construction of the 328-real orbit Gram
+matrix, and a separate determinant degree-of-freedom ledger.  It imports
+neither the primary background set nor its orbit coefficients or gauge
+residue table before freezing its uncompared artifact.
+
+The replay reproduces every gauge-orbit coefficient and all 26 partial-BFM
+gauge residues with exact maximum residual zero and exact `xi` cancellation.
+The final component artifact is `uvp_m05_independent_gauge_replay.json`.
+
+During development this replay caught a real convention bug in its own first
+run: the legacy form-action helper casts generator coefficients to integers,
+which erased the Sigma orbit when supplied normalized generators.  That run
+never produced a promoted artifact.  The final replay implements the
+normalized five-form action independently and passes exactly.
 
 ## Remaining M05 blocker
 
-The restricted result is not the complete residue even for its eleven output
-directions, because the full canonical theory also contains Sigma-bearing
-vertices whose internal Sigma lines contribute.  The missing implementation
-is now localized to:
+The frozen M05 contract requires a complete inventory-independent replay of
+the scalar as well as gauge operator.  The complete scalar replay has not yet
+been implemented.  The primary component kernels cannot replay themselves,
+and the successful independent gauge replay cannot substitute for this
+missing scalar authority.
 
-1. the 252-real-direction Sigma contraction backend, including the four
-   independent `Sigma^2 Sigma*^2` tensors and the `zEta` structure;
-2. all mixed Sigma quartic contractions and the remaining 15 real invariant
-   directions;
-3. the partial-BFM vector/Goldstone/ghost four-point pole, including the
-   coefficient and sector decomposition of the now-projected gauge-orbit
-   quartic and exact `xi` cancellation;
-4. a complete inventory-independent replay of the 26-direction operator.
+The only remaining implementation blocker is therefore:
 
-Until all four exist, M05 attempt 2 must not be adjudicated and M06 remains
-locked.
+```text
+M05_INVENTORY_INDEPENDENT_COMPLETE_SCALAR_OPERATOR_REPLAY_MISSING
+```
 
-The machine-readable checkpoint is `m05_unblock_progress.json`. It records no
-new test authority and narrows the implementation blocker to
-`M05_SIGMA_V4V4_AND_PARTIAL_BFM_4PT_ASSEMBLY_MISSING`.
+Until that replay exists and agrees with the frozen primary operator, M05
+attempt 2 must not be adjudicated, M06--M13 remain locked, the counterterm
+compiler remains blocked, and Layer 6 remains unauthorized.
+
+The machine-readable checkpoint is `m05_unblock_progress.json`.  The separate
+`layer5b_m05_m13_preflight.json` records later implementation dependencies
+without granting any downstream scientific authority.

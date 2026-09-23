@@ -1,30 +1,52 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "outcome": "M05_UNBLOCK_IMPLEMENTATION_PROGRESS",
   "authority": "NO_NEW_TEST_AUTHORITY_M05_ATTEMPT1_REMAINS_BLOCKED",
   "completed_components": {
     "restricted_Phi_phi_S_scalar_V4V4": "d80e1ac459c01d0970c5c6d75cffa668eb28b6908a74ae62ad469826fad3d0bb",
     "restricted_independent_audit": "db71f62ab327ef4deb082f2bcbcb900a3422a4933c37ddec4b45caabd0def108",
     "full_rank26_projector": "e98b13e9da5f36d4055d5ba95534c6bf0aa14592c7e950f522fcf41a994898ea",
-    "gauge_orbit_quartic_projection": "d151fc27585f581a813e29b0c14a17611191c3021e6dcc09464b074207454bd3"
+    "gauge_orbit_quartic_projection": "d151fc27585f581a813e29b0c14a17611191c3021e6dcc09464b074207454bd3",
+    "Sigma_radial_regression": "2c807d853ba295c66e7d1f9df4f00bf61decd34bd2d3354f4be0cc09d73803ca",
+    "Sigma_bilinear_regression": "f1a9f07331c1f91457d6d3d6c30888fe65392d8b9f6b48c559a779e1674ee330",
+    "Phi_Sigma_mixed_regression": "e3ea07d84a7e4857fbfac35027fa20edb511b3cbec4a6a4f38cdb7e43a1f7af9",
+    "pure_Sigma_regression": "1b0f65929dbb297ad66d06e710169d4363df175c60bdf9f1b5500d6233466c48",
+    "zEta_regression": "3f64505f42fe07327abd4aa096b08ed2087a963d276880e364f6aaf512e59d1c",
+    "complete_primary_scalar_V4V4": "a6d6514afa5705d6dba45f114ed3934e47afe2c53058072014b641def060e591",
+    "complete_primary_scalar_plus_gauge": "5079dee6a83782825576ba48783a72d9b1122259892ce54e301d4bf6748fc308",
+    "independent_gauge_replay_uncompared": "c88c20b930d8cdc643116fb97fa7426d13416efe769699861980b6557721b6dc",
+    "independent_gauge_replay": "57aaf68672dbd628903c5fc346ba47ab88d57994291b20aba5169835f570e05a",
+    "M05_M13_preflight": "c7a146a69e148994ccc912ea8eb0a2754d5e8aacf8173f08046430f9a73c25cf"
   },
   "completed_counts": {
-    "restricted_internal_real_directions": 76,
-    "restricted_quartic_directions": 11,
-    "full_projector_rank": 26,
-    "gauge_orbit_nonzero_invariant_directions": 13
+    "parent_internal_real_directions": 328,
+    "quartic_input_directions": 26,
+    "quartic_output_directions": 26,
+    "primary_projector_rank": 26,
+    "primary_verification_backgrounds": 2,
+    "independent_gauge_projector_rank": 26,
+    "independent_gauge_residue_residual": "0",
+    "partial_BFM_xi_residual": "0"
   },
-  "current_blocker_code": "M05_SIGMA_V4V4_AND_PARTIAL_BFM_4PT_ASSEMBLY_MISSING",
+  "current_blocker_code": "M05_INVENTORY_INDEPENDENT_COMPLETE_SCALAR_OPERATOR_REPLAY_MISSING",
   "missing": [
-    "252-real-direction Sigma-containing V4V4 contractions",
-    "complete partial-BFM vector/Goldstone/ghost four-point pole prefactor and xi cancellation",
-    "complete inventory-independent 26-direction residue replay"
+    "complete inventory-independent scalar V4V4 operator replay across all 328 real internal directions",
+    "formal M05 attempt-2 adjudication after primary and complete replay are frozen"
   ],
+  "scientific_boundary": {
+    "primary_complete": true,
+    "independent_gauge_replay_complete": true,
+    "independent_complete_scalar_replay_complete": false,
+    "UVP_M05_pass_claimed": false
+  },
   "authoritative_ledger": {
     "progress": "31/39",
+    "passed": 30,
+    "blocked": 1,
+    "failed": 0,
     "UVP_M05": "BLOCKED_ATTEMPT1",
     "counterterm_compiler": "BLOCKED",
     "layer6_authorized": false
   },
-  "artifact_sha256": "0842668bd935ad5b8fd40bacb53340435343d0c6fa65f9a700601b668c3f9e25"
+  "artifact_sha256": "38f0958d4b319b1ab55f6e887ce9384bf0a1fb4f976edbee0d1fb728353093c0"
 }
