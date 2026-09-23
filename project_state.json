@@ -637,7 +637,11 @@
       "layer5a_M07_evidence_sha256": "eb7c43c884798d08d75e552dc74b00f03473ea31098d39ee077baad9edf35923",
       "layer5a_M08": "BLOCKED",
       "layer5a_M08_blocker_code": "M08_PARTIAL_BFM_QUANTUM_VECTOR_HEAVY_LIGHT_GHOST_XI_1PI_KERNEL_MISSING",
-      "layer5a_M08_evidence_sha256": "3d6b57b561146ee88af1ad885dd2aac08969e8763fcbe3b1354b259980b00b80"
+      "layer5a_M08_evidence_sha256": "3d6b57b561146ee88af1ad885dd2aac08969e8763fcbe3b1354b259980b00b80",
+      "layer5a_M08_implementation_preflight": "PRIMARY_AND_INDEPENDENT_TWO_POINT_OPERATORS_AGREE_BRST_3PT_PENDING_NO_ATTEMPT2",
+      "layer5a_M08_two_point_comparison_sha256": "f7795b159c313cf01d1b30a9ceb1be745cff32b86a844ed6526fb05ff894aec9",
+      "layer5a_M08_pre_BRST_heavy_gauge_parameter_blocks": 5,
+      "layer5a_M08_pre_BRST_light_gauge_parameter_blocks": 3
     },
     "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5B_ENGINE_27_OF_27_PASS_M02_M03_M04_M05_M06_M07_PASS_M08_IMPLEMENTATION_BLOCK_34_OF_39_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
   },

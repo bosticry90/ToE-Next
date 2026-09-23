@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_VECTOR_LORENTZ_INDEPENDENT_REPLAY_COMPLETE",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "method": "auxiliary_mass_large_momentum_Taylor_vacuum_poles",
+  "primary_Feynman_parameter_kernel_imported": false,
+  "coefficients": {
+    "vector_bubble_A_p2_metric": "rho/4 + sigma/4 - 25/12",
+    "vector_bubble_B_p_mu_p_nu": "-rho/4 - sigma/4 + 7/3",
+    "ghost_bubble_A_p2_metric": "-1/12",
+    "ghost_bubble_B_p_mu_p_nu": "-1/6"
+  },
+  "auxiliary_mass_residual": "0",
+  "external_order": "p_squared",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "IRR": "common_auxiliary_mass_with_local_Taylor_projection"
+  },
+  "artifact_sha256": "2ef08113da23822d71b5ee1a2a7d46485a37e92c67c564de53a542f56e0dc818"
+}

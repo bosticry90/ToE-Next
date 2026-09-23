@@ -77,7 +77,7 @@
   "layer5_parent_gauge_counterterm": "PASS_B10_MINUS_34_OVER_3_AND_BACKGROUND_WARD_IDENTITY",
   "layer5_tadpole_VEV_prescription": "FROZEN_FJ_LIKE_EXPLICIT_TADPOLE_SHIFT",
   "layer5_parent_operator_bare_expansion_closure": "PASS",
-  "layer5_parent_operator_radiative_pole_closure": "QUADRATIC_AND_CUBIC_SECTORS_PASS_BLOCKED_AT_M05_PARENT_QUARTIC_POLE_EXTRACTION",
+  "layer5_parent_operator_radiative_pole_closure": "PASS_RANK34_ZERO_OUT_OF_BASIS_RESIDUAL",
   "layer5_slot_structures_populated": 21,
   "layer5_slot_pole_residues_derived": 0,
   "layer5_missing_required_residues": [
@@ -172,5 +172,9 @@
   "layer5a_M07_evidence_sha256": "eb7c43c884798d08d75e552dc74b00f03473ea31098d39ee077baad9edf35923",
   "layer5a_M08": "BLOCKED",
   "layer5a_M08_blocker_code": "M08_PARTIAL_BFM_QUANTUM_VECTOR_HEAVY_LIGHT_GHOST_XI_1PI_KERNEL_MISSING",
-  "layer5a_M08_evidence_sha256": "3d6b57b561146ee88af1ad885dd2aac08969e8763fcbe3b1354b259980b00b80"
+  "layer5a_M08_evidence_sha256": "3d6b57b561146ee88af1ad885dd2aac08969e8763fcbe3b1354b259980b00b80",
+  "layer5a_M08_implementation_preflight": "PRIMARY_AND_INDEPENDENT_TWO_POINT_OPERATORS_AGREE_BRST_3PT_PENDING_NO_ATTEMPT2",
+  "layer5a_M08_two_point_comparison_sha256": "f7795b159c313cf01d1b30a9ceb1be745cff32b86a844ed6526fb05ff894aec9",
+  "layer5a_M08_pre_BRST_heavy_gauge_parameter_blocks": 5,
+  "layer5a_M08_pre_BRST_light_gauge_parameter_blocks": 3
 }

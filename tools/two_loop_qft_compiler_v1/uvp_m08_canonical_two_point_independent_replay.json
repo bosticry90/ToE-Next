@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_CANONICAL_TWO_POINT_INDEPENDENT_REPLAY_COMPLETE",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "method": "independent_raw_SO10_group_contractions_plus_auxiliary_mass_Taylor_Lorentz_poles",
+  "primary_canonical_assembly_imported": false,
+  "inputs": {
+    "independent_group_sha256": "4da57f2e8aaaa12d004a339891ca281f00fcd15d66ed56a8782dd82936750d7d",
+    "independent_Lorentz_sha256": "2ef08113da23822d71b5ee1a2a7d46485a37e92c67c564de53a542f56e0dc818"
+  },
+  "heavy_vector_blocks": [
+    {
+      "K_HHH_eigenvalue": "3",
+      "multiplicity": 12,
+      "loop_A": "5*eta_H/4 + 11*xi/4 + 13/12",
+      "loop_B": "-5*eta_H/4 - 11*xi/4 + 1/6",
+      "delta_Z_quantum_heavy_vector": "-5*eta_H/4 - 11*xi/4 - 13/12",
+      "multiplicative_delta_Z_xi_candidate": "-5*eta_H/4 - 3*xi/2 - 13/12"
+    },
+    {
+      "K_HHH_eigenvalue": "19/5",
+      "multiplicity": 12,
+      "loop_A": "21*eta_H/20 + 59*xi/20 + 61/60",
+      "loop_B": "-21*eta_H/20 - 59*xi/20 + 1/30",
+      "delta_Z_quantum_heavy_vector": "-21*eta_H/20 - 59*xi/20 - 61/60",
+      "multiplicative_delta_Z_xi_candidate": "-21*eta_H/20 - 19*xi/10 - 61/60"
+    },
+    {
+      "K_HHH_eigenvalue": "24/5",
+      "multiplicity": 6,
+      "loop_A": "4*eta_H/5 + 16*xi/5 + 14/15",
+      "loop_B": "-4*eta_H/5 - 16*xi/5 - 2/15",
+      "delta_Z_quantum_heavy_vector": "-4*eta_H/5 - 16*xi/5 - 14/15",
+      "multiplicative_delta_Z_xi_candidate": "-4*eta_H/5 - 12*xi/5 - 14/15"
+    },
+    {
+      "K_HHH_eigenvalue": "34/5",
+      "multiplicity": 2,
+      "loop_A": "3*eta_H/10 + 37*xi/10 + 23/30",
+      "loop_B": "-3*eta_H/10 - 37*xi/10 - 7/15",
+      "delta_Z_quantum_heavy_vector": "-3*eta_H/10 - 37*xi/10 - 23/30",
+      "multiplicative_delta_Z_xi_candidate": "-3*eta_H/10 - 17*xi/5 - 23/30"
+    },
+    {
+      "K_HHH_eigenvalue": "8",
+      "multiplicity": 1,
+      "loop_A": "4*xi + 2/3",
+      "loop_B": "-4*xi - 2/3",
+      "delta_Z_quantum_heavy_vector": "-4*xi - 2/3",
+      "multiplicative_delta_Z_xi_candidate": "-4*xi - 2/3"
+    }
+  ],
+  "light_vector_blocks": [
+    {
+      "K_LLL_eigenvalue": "0",
+      "multiplicity": 1,
+      "loop_A": "4*xi + 2/3",
+      "loop_B": "-4*xi - 2/3",
+      "delta_Z_quantum_light_vector": "-4*xi - 2/3",
+      "multiplicative_delta_Z_eta_H_candidate": "-4*xi - 2/3"
+    },
+    {
+      "K_LLL_eigenvalue": "2",
+      "multiplicity": 3,
+      "loop_A": "eta_H + 3*xi + 2/3",
+      "loop_B": "-eta_H - 3*xi - 2/3",
+      "delta_Z_quantum_light_vector": "-eta_H - 3*xi - 2/3",
+      "multiplicative_delta_Z_eta_H_candidate": "-eta_H - 3*xi - 2/3"
+    },
+    {
+      "K_LLL_eigenvalue": "3",
+      "multiplicity": 8,
+      "loop_A": "3*eta_H/2 + 5*xi/2 + 2/3",
+      "loop_B": "-3*eta_H/2 - 5*xi/2 - 2/3",
+      "delta_Z_quantum_light_vector": "-3*eta_H/2 - 5*xi/2 - 2/3",
+      "multiplicative_delta_Z_eta_H_candidate": "-3*eta_H/2 - 5*xi/2 - 2/3"
+    }
+  ],
+  "artifact_sha256": "49c74ca86723ae826c1fff63633beb55085b6f73a62a0bc2309debc59de54b5d"
+}

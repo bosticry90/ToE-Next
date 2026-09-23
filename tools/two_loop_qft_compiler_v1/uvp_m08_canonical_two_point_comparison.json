@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_CANONICAL_TWO_POINT_PRIMARY_REPLAY_AGREEMENT",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "primary_sha256": "4a4502e42eabf87c12b063fdda8fc8c92539feec3acc88662749796d7ef5ae65",
+  "replay_sha256": "49c74ca86723ae826c1fff63633beb55085b6f73a62a0bc2309debc59de54b5d",
+  "heavy_block_residuals": {
+    "3": {
+      "loop_A": "0",
+      "loop_B": "0",
+      "delta_Z_quantum_heavy_vector": "0",
+      "multiplicative_delta_Z_xi_candidate": "0"
+    },
+    "19/5": {
+      "loop_A": "0",
+      "loop_B": "0",
+      "delta_Z_quantum_heavy_vector": "0",
+      "multiplicative_delta_Z_xi_candidate": "0"
+    },
+    "24/5": {
+      "loop_A": "0",
+      "loop_B": "0",
+      "delta_Z_quantum_heavy_vector": "0",
+      "multiplicative_delta_Z_xi_candidate": "0"
+    },
+    "34/5": {
+      "loop_A": "0",
+      "loop_B": "0",
+      "delta_Z_quantum_heavy_vector": "0",
+      "multiplicative_delta_Z_xi_candidate": "0"
+    },
+    "8": {
+      "loop_A": "0",
+      "loop_B": "0",
+      "delta_Z_quantum_heavy_vector": "0",
+      "multiplicative_delta_Z_xi_candidate": "0"
+    }
+  },
+  "light_block_residuals": {
+    "0": {
+      "loop_A": "0",
+      "loop_B": "0",
+      "delta_Z_quantum_light_vector": "0",
+      "multiplicative_delta_Z_eta_H_candidate": "0"
+    },
+    "2": {
+      "loop_A": "0",
+      "loop_B": "0",
+      "delta_Z_quantum_light_vector": "0",
+      "multiplicative_delta_Z_eta_H_candidate": "0"
+    },
+    "3": {
+      "loop_A": "0",
+      "loop_B": "0",
+      "delta_Z_quantum_light_vector": "0",
+      "multiplicative_delta_Z_eta_H_candidate": "0"
+    }
+  },
+  "maximum_residual": "0",
+  "remaining_before_UVP_M08_retry": [
+    "complete BRST heavy/light ghost-vector three-point poles",
+    "aggregate BRST adjudication of the gauge-fixing parameter basis"
+  ],
+  "artifact_sha256": "f7795b159c313cf01d1b30a9ceb1be745cff32b86a844ed6526fb05ff894aec9"
+}

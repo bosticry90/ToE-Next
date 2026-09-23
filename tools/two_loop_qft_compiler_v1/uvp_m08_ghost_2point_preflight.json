@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_GHOST_2POINT_KERNEL_PREFLIGHT_COMPLETE",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "normalization": "delta_Z coefficient multiplying g10^2/(16*pi^2*epsilon_bar)",
+  "immutable_inputs": {
+    "partial_BFM_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+    "group_contraction_artifact_sha256": "f88a7d5091f2e07b7d36851145ef797420b3ffd67b69d18b0e3b8148de0216c5"
+  },
+  "primary_local_UV_projection": {
+    "transverse_p2": "1",
+    "transverse_p_dot_k": "-1/2",
+    "longitudinal_J1": "1/4",
+    "longitudinal_J2": "1/2"
+  },
+  "independent_Feynman_parameter_Gaussian_replay": {
+    "transverse": "1/2",
+    "longitudinal_insertion": "-1/4"
+  },
+  "kinematic_coefficient": "3/4 - xi/4",
+  "primary_minus_replay": "0",
+  "heavy_ghost_kinetic_operator": {
+    "formula": "(3-xi)/4*K_HHH + (3-eta_H)/4*K_HHL",
+    "group_matrix_sha256": "33781a34e2b8a560cbd12f30102c201b5ba75e267a5c5b36ad06b49ea4f5c5ee",
+    "light_vector_group_matrix_sha256": "5299662163e3b2b0f538f95106ea3f8d5010ce685dc37211f33a931a3ac02130",
+    "spectrum": [
+      {
+        "K_HHH_eigenvalue": "3",
+        "K_HHL_eigenvalue": "5/2",
+        "multiplicity": 12,
+        "kinetic_pole_eigenvalue": "-5*eta_H/8 - 3*xi/4 + 33/8"
+      },
+      {
+        "K_HHH_eigenvalue": "19/5",
+        "K_HHL_eigenvalue": "21/10",
+        "multiplicity": 12,
+        "kinetic_pole_eigenvalue": "-21*eta_H/40 - 19*xi/20 + 177/40"
+      },
+      {
+        "K_HHH_eigenvalue": "24/5",
+        "K_HHL_eigenvalue": "8/5",
+        "multiplicity": 6,
+        "kinetic_pole_eigenvalue": "-2*eta_H/5 - 6*xi/5 + 24/5"
+      },
+      {
+        "K_HHH_eigenvalue": "34/5",
+        "K_HHL_eigenvalue": "3/5",
+        "multiplicity": 2,
+        "kinetic_pole_eigenvalue": "-3*eta_H/20 - 17*xi/10 + 111/20"
+      },
+      {
+        "K_HHH_eigenvalue": "8",
+        "K_HHL_eigenvalue": "0",
+        "multiplicity": 1,
+        "kinetic_pole_eigenvalue": "6 - 2*xi"
+      }
+    ]
+  },
+  "light_ghost_kinetic_operator": {
+    "formula": "(3-eta_H)/4 * K_LLL",
+    "group_matrix_sha256": "079bbfdac79f229bc7303215b92c47939595733bf2b9d87bbd04526a7c37513e",
+    "spectrum": [
+      {
+        "group_eigenvalue": "0",
+        "multiplicity": 1,
+        "kinetic_pole_eigenvalue": "0"
+      },
+      {
+        "group_eigenvalue": "2",
+        "multiplicity": 3,
+        "kinetic_pole_eigenvalue": "3/2 - eta_H/2"
+      },
+      {
+        "group_eigenvalue": "3",
+        "multiplicity": 8,
+        "kinetic_pole_eigenvalue": "9/4 - 3*eta_H/4"
+      }
+    ]
+  },
+  "locality": {
+    "promoted_structure": "p_squared_times_ghost_bilinear",
+    "nonlocal_UV_structures": [],
+    "mass_terms_do_not_enter_kinetic_residue": true
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "nonexceptional_offshell_external_ghost_momentum",
+    "scaleless_parts_split": true
+  },
+  "audited_zero_p2_contributions": [
+    "heavy_ghost_mass",
+    "heavy_ghost_scalar_vertex",
+    "heavy_ghost_Goldstone_vertex",
+    "equivariant_quartic_heavy_ghost_tadpole"
+  ],
+  "covariant_derivative_expansion": {
+    "d_mu": "unbroken_H_covariant_derivative",
+    "heavy_ghost_light_quantum_vector_bubble_included": true,
+    "reference_equations": "partial_BFM_action Eqs. (3.31),(3.36)"
+  },
+  "remaining_before_UVP_M08_retry": [
+    "complete partial-BFM quantum-vector two-point pole operator",
+    "complete heavy/light ghost-vector BRST three-point pole operators",
+    "direct delta_xi extraction from the gauge-fixing two-point sector",
+    "inventory-independent replay of the complete M08 pole action"
+  ],
+  "artifact_sha256": "e9651af89b7ce3102f129264118e83ff5105d7e683ae0e1763c7da407bc78b71"
+}

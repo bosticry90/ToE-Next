@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_QUANTUM_VECTOR_2POINT_LORENTZ_PREFLIGHT_COMPLETE",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "method": "explicit_4d_pole_residue_of_d_dimensional_local_Feynman_parameter_tensor_reduction",
+  "normalization": "Lorentz coefficients before group factors and overall vertex-i convention; multiply 1/(16*pi^2*epsilon_bar)",
+  "kinematic_pole_coefficients": {
+    "vector_bubble_A_p2_metric": "rho/4 + sigma/4 - 25/12",
+    "vector_bubble_B_p_mu_p_nu": "-rho/4 - sigma/4 + 7/3",
+    "equal_gauge_vector_bubble_A": "xi/2 - 25/12",
+    "equal_gauge_vector_bubble_B": "7/3 - xi/2",
+    "ghost_bubble_A_p2_metric": "-1/12",
+    "ghost_bubble_B_p_mu_p_nu": "-1/6",
+    "formal_full_FP_sum_A": "xi/2 - 13/6",
+    "formal_full_FP_sum_B": "13/6 - xi/2",
+    "formal_full_FP_transversality_residual": "0",
+    "derived_ordinary_YM_delta_Z_Q": "13/6 - xi/2"
+  },
+  "scope_boundary": {
+    "group_factors_applied": false,
+    "scalar_and_fermion_loops_applied": false,
+    "partial_BFM_heavy_light_ghost_split_applied": false,
+    "overall_Minkowski_vertex_sign_fixed": false,
+    "delta_xi_extracted": false,
+    "independent_complete_replay": false
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "nonexceptional_Euclidean_external_momentum",
+    "locality": "degree_two_polynomial_in_external_momentum"
+  },
+  "artifact_sha256": "abec90143013475c5a134934a96fdb935266b3c132c16d02c95b65964b25c736"
+}
