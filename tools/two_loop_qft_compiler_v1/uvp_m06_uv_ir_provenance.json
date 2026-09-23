@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M06",
+  "attempt": 1,
+  "classification": "AGGREGATE_OF_LOCAL_ONE_LOOP_UV_POLE_OPERATORS",
+  "UV_poles": "INHERITED_FROM_PASSED_M03_M04_M05_LOCAL_PROJECTIONS",
+  "IR_poles": "NO_UNMATCHED_IR_POLE_IN_ANY_CONSTITUENT_OPERATOR",
+  "locality": "EXACT_POLYNOMIAL_DEGREE_2_3_4_DIRECT_SUM",
+  "artifact_sha256": "fdbe439a220b29aa797199e2966ba350b1652af666f197680adc1ca72a74ae25"
+}

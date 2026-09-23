@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M06",
+  "attempt": 1,
+  "contract_sha256": "6e256b9f8b2ed0e7243acc96d96daa854410673f59334b126446666d488ffe92",
+  "execution_plan_sha256": "54d792571e20239e7b586360fe04557154fc64a5942865896c35d34b89584101",
+  "primary_complete_pole_action": {
+    "grading": "parent_scalar_polynomial_degree_2_3_4",
+    "directions": {
+      "2": [
+        "mPhi2",
+        "mSigma2",
+        "mphi2",
+        "mS2"
+      ],
+      "3": [
+        "muPhi",
+        "muPhiPhi",
+        "z6_re",
+        "z6_im"
+      ],
+      "4": [
+        "lambdaPhi1",
+        "lambdaPhi2",
+        "lambdaPhiSigma1",
+        "lambdaPhiSigma2",
+        "lambdaPhiphi1",
+        "lambdaPhiphi2",
+        "lambdaPhiS",
+        "lambdaSigma1",
+        "lambdaSigma2",
+        "lambdaSigma3",
+        "lambdaSigma4",
+        "lambdaSigmaphi1",
+        "lambdaSigmaphi2",
+        "lambdaPhiVector1",
+        "lambdaPhiVector2",
+        "lambdaSigmaS",
+        "lambdaVectorS",
+        "lambdaS",
+        "z4_re",
+        "z4_im",
+        "zK_re",
+        "zK_im",
+        "zEta_re",
+        "zEta_im",
+        "zD_re",
+        "zD_im"
+      ]
+    },
+    "residues": {
+      "quadratic": {
+        "mPhi2": "30*g10**2*mPhi2 + 224*lambdaPhi1*mPhi2 + 224*lambdaPhi2*mPhi2/5 + lambdaPhiS*mS2 + 504*lambdaPhiSigma1*mSigma2 - 56*lambdaPhiSigma2*mSigma2 + 10*lambdaPhiphi1*mphi2 + lambdaPhiphi2*mphi2 + 126*muPhi**2/5 + muPhiPhi**2/2",
+        "mSigma2": "75*g10**2*mSigma2/2 + 108*lambdaPhiSigma1*mPhi2 - 12*lambdaPhiSigma2*mPhi2 + 1016*lambdaSigma1*mSigma2 + 2440*lambdaSigma2*mSigma2 + 2680*lambdaSigma3*mSigma2 + 4960*lambdaSigma4*mSigma2 + lambdaSigmaS*mS2 + 10*lambdaSigmaphi1*mphi2 + 5*lambdaSigmaphi2*mphi2",
+        "mphi2": "27*g10**2*mphi2/2 + 22*lambdaPhiVector1*mphi2 + 4*lambdaPhiVector2*mphi2 + 108*lambdaPhiphi1*mPhi2 + 54*lambdaPhiphi2*mPhi2/5 + 504*lambdaSigmaphi1*mSigma2 + 252*lambdaSigmaphi2*mSigma2 + lambdaVectorS*mS2 + 27*muPhiPhi**2/5 + 4*z6_im**2 + 4*z6_re**2",
+        "mS2": "108*lambdaPhiS*mPhi2 + 4*lambdaS*mS2 + 504*lambdaSigmaS*mSigma2 + 10*lambdaVectorS*mphi2 + 20*z6_im**2 + 20*z6_re**2"
+      },
+      "cubic": {
+        "muPhi": "45*g10**2*muPhi + 24*lambdaPhi1*muPhi + 354*lambdaPhi2*muPhi/5 + lambdaPhiphi2*muPhiPhi",
+        "muPhiPhi": "57*g10**2*muPhiPhi/2 + 2*lambdaPhiVector1*muPhiPhi + 4*lambdaPhiVector2*muPhiPhi + 4*lambdaPhiphi1*muPhiPhi + 84*lambdaPhiphi2*muPhi/5 + 58*lambdaPhiphi2*muPhiPhi/5 + 8*z6_im*zK_im + 8*z6_re*zK_re",
+        "z6_re": "27*g10**2*z6_re/2 + 2*lambdaPhiVector1*z6_re + 20*lambdaPhiVector2*z6_re + 2*lambdaVectorS*z6_re + 54*muPhiPhi*zK_re/5",
+        "z6_im": "27*g10**2*z6_im/2 + 2*lambdaPhiVector1*z6_im + 20*lambdaPhiVector2*z6_im + 2*lambdaVectorS*z6_im + 54*muPhiPhi*zK_im/5"
+      },
+      "quartic": {
+        "lambdaPhi1": "9*g10**4/4 + 60*g10**2*lambdaPhi1 + 248*lambdaPhi1**2 + 448*lambdaPhi1*lambdaPhi2/5 + 159*lambdaPhi2**2/25 + lambdaPhiS**2/2 + 252*lambdaPhiSigma1**2 - 56*lambdaPhiSigma1*lambdaPhiSigma2 + 53*lambdaPhiSigma2**2/4 + 5*lambdaPhiphi1**2 + lambdaPhiphi1*lambdaPhiphi2",
+        "lambdaPhi2": "15*g10**2*(g10**2 + 8*lambdaPhi2)/2 + 48*lambdaPhi1*lambdaPhi2 + 254*lambdaPhi2**2/5 - 25*lambdaPhiSigma2**2/2 + lambdaPhiphi2**2/2",
+        "lambdaPhiSigma1": "9*g10**2*(g10**2 + 15*lambdaPhiSigma1)/2 + 224*lambdaPhi1*lambdaPhiSigma1 - 24*lambdaPhi1*lambdaPhiSigma2 + 224*lambdaPhi2*lambdaPhiSigma1/5 - 26*lambdaPhi2*lambdaPhiSigma2/5 + lambdaPhiS*lambdaSigmaS + 8*lambdaPhiSigma1**2 + 1016*lambdaPhiSigma1*lambdaSigma1 + 2440*lambdaPhiSigma1*lambdaSigma2 + 2680*lambdaPhiSigma1*lambdaSigma3 + 4960*lambdaPhiSigma1*lambdaSigma4 + 11*lambdaPhiSigma2**2 - 112*lambdaPhiSigma2*lambdaSigma1 - 272*lambdaPhiSigma2*lambdaSigma2 - 288*lambdaPhiSigma2*lambdaSigma3 - 512*lambdaPhiSigma2*lambdaSigma4 + 10*lambdaPhiphi1*lambdaSigmaphi1 + 5*lambdaPhiphi1*lambdaSigmaphi2 + lambdaPhiphi2*lambdaSigmaphi1 + lambdaPhiphi2*lambdaSigmaphi2/2 + 4*z4_im**2 + 4*z4_re**2",
+        "lambdaPhiSigma2": "3*g10**4 + 135*g10**2*lambdaPhiSigma2/2 + 8*lambdaPhi1*lambdaPhiSigma2 - 2*lambdaPhi2*lambdaPhiSigma2 + 16*lambdaPhiSigma1*lambdaPhiSigma2 + 37*lambdaPhiSigma2**2 + 8*lambdaPhiSigma2*lambdaSigma1 - 8*lambdaPhiSigma2*lambdaSigma2 + 88*lambdaPhiSigma2*lambdaSigma3 + 352*lambdaPhiSigma2*lambdaSigma4 + 16*z4_im**2 + 16*z4_re**2",
+        "lambdaPhiphi1": "3*g10**2*(g10**2 + 29*lambdaPhiphi1)/2 + 224*lambdaPhi1*lambdaPhiphi1 + 108*lambdaPhi1*lambdaPhiphi2/5 + 224*lambdaPhi2*lambdaPhiphi1/5 + 53*lambdaPhi2*lambdaPhiphi2/25 + lambdaPhiS*lambdaVectorS + 504*lambdaPhiSigma1*lambdaSigmaphi1 + 252*lambdaPhiSigma1*lambdaSigmaphi2 - 56*lambdaPhiSigma2*lambdaSigmaphi1 - 28*lambdaPhiSigma2*lambdaSigmaphi2 + 22*lambdaPhiVector1*lambdaPhiphi1 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi1 + 4*lambdaPhiphi1**2 + lambdaPhiphi2**2/2",
+        "lambdaPhiphi2": "15*g10**4 + 87*g10**2*lambdaPhiphi2/2 + 8*lambdaPhi1*lambdaPhiphi2 + 118*lambdaPhi2*lambdaPhiphi2/5 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi2 + 8*lambdaPhiphi1*lambdaPhiphi2 + 33*lambdaPhiphi2**2/5 + 4*zK_im**2 + 4*zK_re**2",
+        "lambdaPhiS": "30*g10**2*lambdaPhiS + 224*lambdaPhi1*lambdaPhiS + 224*lambdaPhi2*lambdaPhiS/5 + 4*lambdaPhiS**2 + 4*lambdaPhiS*lambdaS + 504*lambdaPhiSigma1*lambdaSigmaS - 56*lambdaPhiSigma2*lambdaSigmaS + 10*lambdaPhiphi1*lambdaVectorS + lambdaPhiphi2*lambdaVectorS + 280*z4_im**2 + 280*z4_re**2 + 2*zK_im**2 + 2*zK_re**2",
+        "lambdaSigma1": "135*g10**4/16 + 75*g10**2*lambdaSigma1 + 54*lambdaPhiSigma1**2 - 12*lambdaPhiSigma1*lambdaPhiSigma2 + 3*lambdaPhiSigma2**2/2 + 1040*lambdaSigma1**2 + 4880*lambdaSigma1*lambdaSigma2 + 5360*lambdaSigma1*lambdaSigma3 + 9920*lambdaSigma1*lambdaSigma4 + 6920*lambdaSigma2**2 + 15760*lambdaSigma2*lambdaSigma3 + 24640*lambdaSigma2*lambdaSigma4 + 9320*lambdaSigma3**2 + 26560*lambdaSigma3*lambdaSigma4 + 33920*lambdaSigma4**2 + lambdaSigmaS**2/2 + 5*lambdaSigmaphi1**2 + 5*lambdaSigmaphi1*lambdaSigmaphi2 + 5*lambdaSigmaphi2**2/2 + 240*zEta_im**2 + 240*zEta_re**2",
+        "lambdaSigma2": "-3*g10**4 + 75*g10**2*lambdaSigma2 - lambdaPhiSigma2**2 + 48*lambdaSigma1*lambdaSigma2 - 360*lambdaSigma2**2 - 1168*lambdaSigma2*lambdaSigma3 - 320*lambdaSigma2*lambdaSigma4 - 1312*lambdaSigma3**2 - 1600*lambdaSigma3*lambdaSigma4 - 5120*lambdaSigma4**2 - lambdaSigmaphi2**2/2 - z4_im**2 - z4_re**2 - 2*zD_im**2 - 2*zD_re**2 - 88*zEta_im**2 - 88*zEta_re**2",
+        "lambdaSigma3": "3*g10**4/2 + 75*g10**2*lambdaSigma3 + lambdaPhiSigma2**2/2 + 48*lambdaSigma1*lambdaSigma3 + 32*lambdaSigma2**2 + 224*lambdaSigma2*lambdaSigma3 + 256*lambdaSigma2*lambdaSigma4 + 536*lambdaSigma3**2 + 1280*lambdaSigma3*lambdaSigma4 + 2816*lambdaSigma4**2 + z4_im**2 + z4_re**2 + 2*zD_im**2 + 2*zD_re**2 + 48*zEta_im**2 + 48*zEta_re**2",
+        "lambdaSigma4": "-3*g10**2*(g10**2 - 200*lambdaSigma4)/8 + lambdaPhiSigma2**2/8 + 48*lambdaSigma1*lambdaSigma4 - 8*lambdaSigma2**2 - 16*lambdaSigma2*lambdaSigma3 - 32*lambdaSigma2*lambdaSigma4 + 8*lambdaSigma3**2 + 224*lambdaSigma3*lambdaSigma4 - 480*lambdaSigma4**2 - 26*zEta_im**2 - 26*zEta_re**2",
+        "lambdaSigmaphi1": "15*g10**4/4 + 51*g10**2*lambdaSigmaphi1 + 108*lambdaPhiSigma1*lambdaPhiphi1 + 54*lambdaPhiSigma1*lambdaPhiphi2/5 - 12*lambdaPhiSigma2*lambdaPhiphi1 - 6*lambdaPhiSigma2*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaSigmaphi1 + 10*lambdaPhiVector1*lambdaSigmaphi2 + 4*lambdaPhiVector2*lambdaSigmaphi1 + 4*lambdaPhiVector2*lambdaSigmaphi2 + 1016*lambdaSigma1*lambdaSigmaphi1 + 504*lambdaSigma1*lambdaSigmaphi2 + 2440*lambdaSigma2*lambdaSigmaphi1 + 1384*lambdaSigma2*lambdaSigmaphi2 + 2680*lambdaSigma3*lambdaSigmaphi1 + 1576*lambdaSigma3*lambdaSigmaphi2 + 4960*lambdaSigma4*lambdaSigmaphi1 + 2464*lambdaSigma4*lambdaSigmaphi2 + lambdaSigmaS*lambdaVectorS + 4*lambdaSigmaphi1**2 + 4*lambdaSigmaphi2**2 + 96*zD_im**2 + 96*zD_re**2 + 1248*zEta_im**2 + 1248*zEta_re**2",
+        "lambdaSigmaphi2": "51*g10**2*lambdaSigmaphi2 + 2*lambdaPhiVector1*lambdaSigmaphi2 - 4*lambdaPhiVector2*lambdaSigmaphi2 + 8*lambdaSigma1*lambdaSigmaphi2 - 328*lambdaSigma2*lambdaSigmaphi2 - 472*lambdaSigma3*lambdaSigmaphi2 + 32*lambdaSigma4*lambdaSigmaphi2 + 8*lambdaSigmaphi1*lambdaSigmaphi2 + 4*lambdaSigmaphi2**2 - 96*zD_im**2 - 96*zD_re**2 - 1056*zEta_im**2 - 1056*zEta_re**2",
+        "lambdaPhiVector1": "15*g10**4/4 + 27*g10**2*lambdaPhiVector1 + 28*lambdaPhiVector1**2 + 8*lambdaPhiVector1*lambdaPhiVector2 + 8*lambdaPhiVector2**2 + 54*lambdaPhiphi1**2 + 54*lambdaPhiphi1*lambdaPhiphi2/5 + 83*lambdaPhiphi2**2/50 + 252*lambdaSigmaphi1**2 + 252*lambdaSigmaphi1*lambdaSigmaphi2 + 98*lambdaSigmaphi2**2 + lambdaVectorS**2/2 + 280*zD_im**2 + 280*zD_re**2 + zK_im**2 + zK_re**2",
+        "lambdaPhiVector2": "3*g10**2*(g10**2 + 9*lambdaPhiVector2) + 12*lambdaPhiVector1*lambdaPhiVector2 + 20*lambdaPhiVector2**2 + 7*lambdaPhiphi2**2/5 - 35*lambdaSigmaphi2**2 - 28*zD_im**2 - 28*zD_re**2 - zK_im**2/10 - zK_re**2/10",
+        "lambdaSigmaS": "75*g10**2*lambdaSigmaS/2 + 108*lambdaPhiS*lambdaPhiSigma1 - 12*lambdaPhiS*lambdaPhiSigma2 + 4*lambdaS*lambdaSigmaS + 1016*lambdaSigma1*lambdaSigmaS + 2440*lambdaSigma2*lambdaSigmaS + 2680*lambdaSigma3*lambdaSigmaS + 4960*lambdaSigma4*lambdaSigmaS + 4*lambdaSigmaS**2 + 10*lambdaSigmaphi1*lambdaVectorS + 5*lambdaSigmaphi2*lambdaVectorS + 120*z4_im**2 + 120*z4_re**2",
+        "lambdaVectorS": "27*g10**2*lambdaVectorS/2 + 108*lambdaPhiS*lambdaPhiphi1 + 54*lambdaPhiS*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaVectorS + 4*lambdaPhiVector2*lambdaVectorS + 4*lambdaS*lambdaVectorS + 504*lambdaSigmaS*lambdaSigmaphi1 + 252*lambdaSigmaS*lambdaSigmaphi2 + 2*lambdaVectorS**2 + 108*zK_im**2/5 + 108*zK_re**2/5",
+        "lambdaS": "54*lambdaPhiS**2 + 10*lambdaS**2 + 252*lambdaSigmaS**2 + 5*lambdaVectorS**2",
+        "z4_re": "105*g10**2*z4_re/2 + 2*lambdaPhiS*z4_re + 8*lambdaPhiSigma1*z4_re + 48*lambdaPhiSigma2*z4_re + 8*lambdaSigma1*z4_re + 80*lambdaSigma2*z4_re + 360*lambdaSigma3*z4_re + 320*lambdaSigma4*z4_re + 4*lambdaSigmaS*z4_re + 2*zD_im*zK_im + 2*zD_re*zK_re",
+        "z4_im": "105*g10**2*z4_im/2 + 2*lambdaPhiS*z4_im + 8*lambdaPhiSigma1*z4_im + 48*lambdaPhiSigma2*z4_im + 8*lambdaSigma1*z4_im + 80*lambdaSigma2*z4_im + 360*lambdaSigma3*z4_im + 320*lambdaSigma4*z4_im + 4*lambdaSigmaS*z4_im + 2*zD_im*zK_re - 2*zD_re*zK_im",
+        "zK_re": "57*g10**2*zK_re/2 + 2*lambdaPhiS*zK_re + 2*lambdaPhiVector1*zK_re + 4*lambdaPhiphi1*zK_re + 58*lambdaPhiphi2*zK_re/5 + 2*lambdaVectorS*zK_re + 280*z4_im*zD_im + 280*z4_re*zD_re",
+        "zK_im": "57*g10**2*zK_im/2 + 2*lambdaPhiS*zK_im + 2*lambdaPhiVector1*zK_im + 4*lambdaPhiphi1*zK_im + 58*lambdaPhiphi2*zK_im/5 + 2*lambdaVectorS*zK_im - 280*z4_im*zD_re + 280*z4_re*zD_im",
+        "zEta_re": "63*g10**2*zEta_re + 24*lambdaSigma1*zEta_re - 16*lambdaSigma2*zEta_re + 80*lambdaSigma3*zEta_re - 1312*lambdaSigma4*zEta_re + 6*lambdaSigmaphi1*zEta_re - 8*lambdaSigmaphi2*zEta_re + 48*zD_im*zEta_im + 48*zD_re*zEta_re",
+        "zEta_im": "63*g10**2*zEta_im + 24*lambdaSigma1*zEta_im - 16*lambdaSigma2*zEta_im + 80*lambdaSigma3*zEta_im - 1312*lambdaSigma4*zEta_im + 6*lambdaSigmaphi1*zEta_im - 8*lambdaSigmaphi2*zEta_im + 48*zD_im*zEta_re - 48*zD_re*zEta_im",
+        "zD_re": "51*g10**2*zD_re + 2*lambdaPhiVector1*zD_re + 8*lambdaSigma1*zD_re + 80*lambdaSigma2*zD_re + 360*lambdaSigma3*zD_re + 320*lambdaSigma4*zD_re + 8*lambdaSigmaphi1*zD_re - 16*lambdaSigmaphi2*zD_re - z4_im*zK_im + z4_re*zK_re - 480*zEta_im**2 + 480*zEta_re**2",
+        "zD_im": "51*g10**2*zD_im + 2*lambdaPhiVector1*zD_im + 8*lambdaSigma1*zD_im + 80*lambdaSigma2*zD_im + 360*lambdaSigma3*zD_im + 320*lambdaSigma4*zD_im + 8*lambdaSigmaphi1*zD_im - 16*lambdaSigmaphi2*zD_im + z4_im*zK_re + z4_re*zK_im + 960*zEta_im*zEta_re"
+      }
+    },
+    "block_ranks": {
+      "2": {
+        "rank": 4,
+        "residual": "0"
+      },
+      "3": {
+        "rank": 4,
+        "residual": "0"
+      },
+      "4": {
+        "rank": 26,
+        "residual": "0"
+      }
+    },
+    "rank": 34,
+    "out_of_basis_residual": "0"
+  },
+  "primary_operator_sha256": "5d920310846de61660417127ecdaeb0b6544ed6f86bd51064bfe0798c0695969",
+  "independent_graded_replay": {
+    "degree2_replay_sha256": "be79f0a0832dbdca8f06338bed6c48a87e48a2098588c467c96e6998a4167e8e",
+    "degree3_replay_sha256": "bd613c714482e89df429c8f0148f61c58fdd296a232ca98ea8fc4513f4bc4c4d",
+    "degree4_scalar_replay_sha256": "82e614139f12507d4da4c51cfaa998de92094cfdbbb67d28f947783f37355138",
+    "degree4_gauge_replay_sha256": "57aaf68672dbd628903c5fc346ba47ab88d57994291b20aba5169835f570e05a",
+    "graded_direction_counts": [
+      4,
+      4,
+      26
+    ],
+    "rank": 34,
+    "out_of_basis_residual": "0"
+  },
+  "replay_operator_sha256": "9c2a4b964fb3d617b7f250e772c934567404b2e7054544140f7e0eafc9645b5e",
+  "projection_rank": 34,
+  "out_of_basis_residual": "0",
+  "independent_verification_residual": "0",
+  "verdict": "PASS",
+  "artifact_sha256": "55bc296eaae34b4a3ff3d691bddccad0254ff45afac0adbe4633070d29acd9d3"
+}

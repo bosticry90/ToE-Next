@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M05",
+  "attempt": 2,
+  "classification": "UV_LOCAL_LOGARITHMIC_ONE_LOOP_FOUR_POINT_POLE",
+  "infrared_status": "NO_UNMATCHED_IR_POLE",
+  "auxiliary_mass_status": "NOT_REQUIRED_FOR_MASS_INDEPENDENT_QUARTIC_POLE",
+  "locality": "EXACT_QUADRILINEAR_PARENT_OPERATOR",
+  "artifact_sha256": "dbc155a9753f71ddca03d925b8ccaaab743350bcbc2854520a0410e18333a337"
+}

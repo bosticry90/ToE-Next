@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M08",
+  "attempt": 1,
+  "classification": "NOT_EVALUATED",
+  "UV_poles": null,
+  "IR_poles": null,
+  "reason": "M08_PARTIAL_BFM_QUANTUM_VECTOR_HEAVY_LIGHT_GHOST_XI_1PI_KERNEL_MISSING",
+  "artifact_sha256": "80251bb192251a1928dd45c86d1dd76ecd5542277979944af30d1c005e0042d3"
+}

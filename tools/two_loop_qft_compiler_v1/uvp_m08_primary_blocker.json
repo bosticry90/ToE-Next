@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M08",
+  "attempt": 1,
+  "method": "canonical_partial_BFM_1PI_capability_audit",
+  "partial_BFM_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "available_M08_specific_files_before_audit": [
+    "adjudicate_uvp_m08_blocked.py"
+  ],
+  "required_missing_capabilities": [
+    "canonical quantum-vector 1PI two-point pole through p^2",
+    "canonical heavy-ghost 1PI two-point pole through p^2",
+    "canonical light-ghost 1PI two-point pole through p^2",
+    "canonical ghost-quantum-vector BRST vertex pole",
+    "partial-BFM delta_xi extraction and ST solution",
+    "inventory-independent canonical replay"
+  ],
+  "control_C10_not_promotable_reason": "pure_Yang_Mills_control_does_not_resolve_heavy_vs_light_ghost_residues_in_the_partially_fixed_broken_parent_theory",
+  "residue_values": null,
+  "blocker_code": "M08_PARTIAL_BFM_QUANTUM_VECTOR_HEAVY_LIGHT_GHOST_XI_1PI_KERNEL_MISSING",
+  "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+  "artifact_sha256": "276d94af8d5bb2afe8dd8341f9e7312152136432621a490c2210c4e983359470"
+}

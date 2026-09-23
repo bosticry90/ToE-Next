@@ -7,17 +7,17 @@
   "authority": "ENGINE_GATE_AUTHORITY",
   "counters": {
     "total_required": 39,
-    "executed": 31,
-    "passed": 30,
+    "executed": 34,
+    "passed": 33,
     "blocked": 1,
     "failed": 0,
-    "not_run_or_locked": 8,
+    "not_run_or_locked": 5,
     "engine_required": 27,
     "engine_executed": 27,
     "engine_passed": 27,
     "canonical_required": 12,
-    "canonical_executed": 4,
-    "canonical_passed": 3
+    "canonical_executed": 7,
+    "canonical_passed": 6
   },
   "promotion": {
     "engine_gate": "PASS",
@@ -1158,35 +1158,68 @@
       "global_ordinal": 31,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "BLOCKED",
+      "status": "PASS",
       "authorization": "TERMINAL",
-      "attempt": 1,
+      "attempt": 2,
       "primary": {
         "state": "COMPLETE",
-        "method": "primary_capability_audit_after_M04_cubic_kernel_promotion",
-        "inventory_sha256": "dca306cdbba6d39ea91eafce4f863361043cda238fe9ff841285241ad9512e54",
-        "residue_sha256": "8a8f12d48348dc6834095b5d72d641ac356a7c74359ca8338977995bf442bd7c",
-        "uv_ir_provenance_sha256": "e04f49a963bec5e70c16376999cdc77ce6d22d20a312946c1c81514356bb2914"
+        "method": "complete_328_real_scalar_V4V4_plus_partial_BFM_gauge_assembly",
+        "inventory_sha256": "5bd69a6576f6c27b1212e6274c6511e5c1c986d8b6076831f8b90cd12e067683",
+        "residue_sha256": "02cf8b14421fa7539111f2fc61ee4a7aea52b9b6744251895e7d50bb201afe71",
+        "uv_ir_provenance_sha256": "dbc155a9753f71ddca03d925b8ccaaab743350bcbc2854520a0410e18333a337"
       },
       "replay": {
         "state": "COMPLETE",
-        "method": "independent_AST_and_artifact_manifest_capability_audit",
-        "inventory_sha256": "5e8450d892c3f5194c9b05101d43026c215611c8b7916b3c298605c51e0aedba",
-        "residue_sha256": "3df88260a7f9eed7231f1eb47ebd937e198213e69146da4b4d71d952afbb06d2",
-        "uv_ir_provenance_sha256": "e04f49a963bec5e70c16376999cdc77ce6d22d20a312946c1c81514356bb2914"
+        "method": "inventory_independent_parent_polynomial_reconstruction_plus_independent_partial_BFM_gauge_replay",
+        "inventory_sha256": "cc0ebe15dcc6eb5b31cdda816d28fe940f6f262933c49ccbbc44e2b02319acce",
+        "residue_sha256": "c5bf52425707b0260863f6c5b8fd518f714e548a5549d95ebb28183391865721",
+        "uv_ir_provenance_sha256": "dbc155a9753f71ddca03d925b8ccaaab743350bcbc2854520a0410e18333a337"
       },
       "derived_result": {
-        "residues_derived": false,
-        "blocker_code": "M05_EXHAUSTIVE_PARENT_SCALAR_4PT_CONTRACTION_PROJECTOR_MISSING",
-        "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
-        "evidence_sha256": "29998c0e5df9562ed5fa6e5bd109a2ea03c0a0730a8490ff8691be74e1d57859"
+        "quartic_residues": {
+          "lambdaPhi1": "9*g10**4/4 + 60*g10**2*lambdaPhi1 + 248*lambdaPhi1**2 + 448*lambdaPhi1*lambdaPhi2/5 + 159*lambdaPhi2**2/25 + lambdaPhiS**2/2 + 252*lambdaPhiSigma1**2 - 56*lambdaPhiSigma1*lambdaPhiSigma2 + 53*lambdaPhiSigma2**2/4 + 5*lambdaPhiphi1**2 + lambdaPhiphi1*lambdaPhiphi2",
+          "lambdaPhi2": "15*g10**2*(g10**2 + 8*lambdaPhi2)/2 + 48*lambdaPhi1*lambdaPhi2 + 254*lambdaPhi2**2/5 - 25*lambdaPhiSigma2**2/2 + lambdaPhiphi2**2/2",
+          "lambdaPhiSigma1": "9*g10**2*(g10**2 + 15*lambdaPhiSigma1)/2 + 224*lambdaPhi1*lambdaPhiSigma1 - 24*lambdaPhi1*lambdaPhiSigma2 + 224*lambdaPhi2*lambdaPhiSigma1/5 - 26*lambdaPhi2*lambdaPhiSigma2/5 + lambdaPhiS*lambdaSigmaS + 8*lambdaPhiSigma1**2 + 1016*lambdaPhiSigma1*lambdaSigma1 + 2440*lambdaPhiSigma1*lambdaSigma2 + 2680*lambdaPhiSigma1*lambdaSigma3 + 4960*lambdaPhiSigma1*lambdaSigma4 + 11*lambdaPhiSigma2**2 - 112*lambdaPhiSigma2*lambdaSigma1 - 272*lambdaPhiSigma2*lambdaSigma2 - 288*lambdaPhiSigma2*lambdaSigma3 - 512*lambdaPhiSigma2*lambdaSigma4 + 10*lambdaPhiphi1*lambdaSigmaphi1 + 5*lambdaPhiphi1*lambdaSigmaphi2 + lambdaPhiphi2*lambdaSigmaphi1 + lambdaPhiphi2*lambdaSigmaphi2/2 + 4*z4_im**2 + 4*z4_re**2",
+          "lambdaPhiSigma2": "3*g10**4 + 135*g10**2*lambdaPhiSigma2/2 + 8*lambdaPhi1*lambdaPhiSigma2 - 2*lambdaPhi2*lambdaPhiSigma2 + 16*lambdaPhiSigma1*lambdaPhiSigma2 + 37*lambdaPhiSigma2**2 + 8*lambdaPhiSigma2*lambdaSigma1 - 8*lambdaPhiSigma2*lambdaSigma2 + 88*lambdaPhiSigma2*lambdaSigma3 + 352*lambdaPhiSigma2*lambdaSigma4 + 16*z4_im**2 + 16*z4_re**2",
+          "lambdaPhiphi1": "3*g10**2*(g10**2 + 29*lambdaPhiphi1)/2 + 224*lambdaPhi1*lambdaPhiphi1 + 108*lambdaPhi1*lambdaPhiphi2/5 + 224*lambdaPhi2*lambdaPhiphi1/5 + 53*lambdaPhi2*lambdaPhiphi2/25 + lambdaPhiS*lambdaVectorS + 504*lambdaPhiSigma1*lambdaSigmaphi1 + 252*lambdaPhiSigma1*lambdaSigmaphi2 - 56*lambdaPhiSigma2*lambdaSigmaphi1 - 28*lambdaPhiSigma2*lambdaSigmaphi2 + 22*lambdaPhiVector1*lambdaPhiphi1 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi1 + 4*lambdaPhiphi1**2 + lambdaPhiphi2**2/2",
+          "lambdaPhiphi2": "15*g10**4 + 87*g10**2*lambdaPhiphi2/2 + 8*lambdaPhi1*lambdaPhiphi2 + 118*lambdaPhi2*lambdaPhiphi2/5 + 2*lambdaPhiVector1*lambdaPhiphi2 + 4*lambdaPhiVector2*lambdaPhiphi2 + 8*lambdaPhiphi1*lambdaPhiphi2 + 33*lambdaPhiphi2**2/5 + 4*zK_im**2 + 4*zK_re**2",
+          "lambdaPhiS": "30*g10**2*lambdaPhiS + 224*lambdaPhi1*lambdaPhiS + 224*lambdaPhi2*lambdaPhiS/5 + 4*lambdaPhiS**2 + 4*lambdaPhiS*lambdaS + 504*lambdaPhiSigma1*lambdaSigmaS - 56*lambdaPhiSigma2*lambdaSigmaS + 10*lambdaPhiphi1*lambdaVectorS + lambdaPhiphi2*lambdaVectorS + 280*z4_im**2 + 280*z4_re**2 + 2*zK_im**2 + 2*zK_re**2",
+          "lambdaSigma1": "135*g10**4/16 + 75*g10**2*lambdaSigma1 + 54*lambdaPhiSigma1**2 - 12*lambdaPhiSigma1*lambdaPhiSigma2 + 3*lambdaPhiSigma2**2/2 + 1040*lambdaSigma1**2 + 4880*lambdaSigma1*lambdaSigma2 + 5360*lambdaSigma1*lambdaSigma3 + 9920*lambdaSigma1*lambdaSigma4 + 6920*lambdaSigma2**2 + 15760*lambdaSigma2*lambdaSigma3 + 24640*lambdaSigma2*lambdaSigma4 + 9320*lambdaSigma3**2 + 26560*lambdaSigma3*lambdaSigma4 + 33920*lambdaSigma4**2 + lambdaSigmaS**2/2 + 5*lambdaSigmaphi1**2 + 5*lambdaSigmaphi1*lambdaSigmaphi2 + 5*lambdaSigmaphi2**2/2 + 240*zEta_im**2 + 240*zEta_re**2",
+          "lambdaSigma2": "-3*g10**4 + 75*g10**2*lambdaSigma2 - lambdaPhiSigma2**2 + 48*lambdaSigma1*lambdaSigma2 - 360*lambdaSigma2**2 - 1168*lambdaSigma2*lambdaSigma3 - 320*lambdaSigma2*lambdaSigma4 - 1312*lambdaSigma3**2 - 1600*lambdaSigma3*lambdaSigma4 - 5120*lambdaSigma4**2 - lambdaSigmaphi2**2/2 - z4_im**2 - z4_re**2 - 2*zD_im**2 - 2*zD_re**2 - 88*zEta_im**2 - 88*zEta_re**2",
+          "lambdaSigma3": "3*g10**4/2 + 75*g10**2*lambdaSigma3 + lambdaPhiSigma2**2/2 + 48*lambdaSigma1*lambdaSigma3 + 32*lambdaSigma2**2 + 224*lambdaSigma2*lambdaSigma3 + 256*lambdaSigma2*lambdaSigma4 + 536*lambdaSigma3**2 + 1280*lambdaSigma3*lambdaSigma4 + 2816*lambdaSigma4**2 + z4_im**2 + z4_re**2 + 2*zD_im**2 + 2*zD_re**2 + 48*zEta_im**2 + 48*zEta_re**2",
+          "lambdaSigma4": "-3*g10**2*(g10**2 - 200*lambdaSigma4)/8 + lambdaPhiSigma2**2/8 + 48*lambdaSigma1*lambdaSigma4 - 8*lambdaSigma2**2 - 16*lambdaSigma2*lambdaSigma3 - 32*lambdaSigma2*lambdaSigma4 + 8*lambdaSigma3**2 + 224*lambdaSigma3*lambdaSigma4 - 480*lambdaSigma4**2 - 26*zEta_im**2 - 26*zEta_re**2",
+          "lambdaSigmaphi1": "15*g10**4/4 + 51*g10**2*lambdaSigmaphi1 + 108*lambdaPhiSigma1*lambdaPhiphi1 + 54*lambdaPhiSigma1*lambdaPhiphi2/5 - 12*lambdaPhiSigma2*lambdaPhiphi1 - 6*lambdaPhiSigma2*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaSigmaphi1 + 10*lambdaPhiVector1*lambdaSigmaphi2 + 4*lambdaPhiVector2*lambdaSigmaphi1 + 4*lambdaPhiVector2*lambdaSigmaphi2 + 1016*lambdaSigma1*lambdaSigmaphi1 + 504*lambdaSigma1*lambdaSigmaphi2 + 2440*lambdaSigma2*lambdaSigmaphi1 + 1384*lambdaSigma2*lambdaSigmaphi2 + 2680*lambdaSigma3*lambdaSigmaphi1 + 1576*lambdaSigma3*lambdaSigmaphi2 + 4960*lambdaSigma4*lambdaSigmaphi1 + 2464*lambdaSigma4*lambdaSigmaphi2 + lambdaSigmaS*lambdaVectorS + 4*lambdaSigmaphi1**2 + 4*lambdaSigmaphi2**2 + 96*zD_im**2 + 96*zD_re**2 + 1248*zEta_im**2 + 1248*zEta_re**2",
+          "lambdaSigmaphi2": "51*g10**2*lambdaSigmaphi2 + 2*lambdaPhiVector1*lambdaSigmaphi2 - 4*lambdaPhiVector2*lambdaSigmaphi2 + 8*lambdaSigma1*lambdaSigmaphi2 - 328*lambdaSigma2*lambdaSigmaphi2 - 472*lambdaSigma3*lambdaSigmaphi2 + 32*lambdaSigma4*lambdaSigmaphi2 + 8*lambdaSigmaphi1*lambdaSigmaphi2 + 4*lambdaSigmaphi2**2 - 96*zD_im**2 - 96*zD_re**2 - 1056*zEta_im**2 - 1056*zEta_re**2",
+          "lambdaPhiVector1": "15*g10**4/4 + 27*g10**2*lambdaPhiVector1 + 28*lambdaPhiVector1**2 + 8*lambdaPhiVector1*lambdaPhiVector2 + 8*lambdaPhiVector2**2 + 54*lambdaPhiphi1**2 + 54*lambdaPhiphi1*lambdaPhiphi2/5 + 83*lambdaPhiphi2**2/50 + 252*lambdaSigmaphi1**2 + 252*lambdaSigmaphi1*lambdaSigmaphi2 + 98*lambdaSigmaphi2**2 + lambdaVectorS**2/2 + 280*zD_im**2 + 280*zD_re**2 + zK_im**2 + zK_re**2",
+          "lambdaPhiVector2": "3*g10**2*(g10**2 + 9*lambdaPhiVector2) + 12*lambdaPhiVector1*lambdaPhiVector2 + 20*lambdaPhiVector2**2 + 7*lambdaPhiphi2**2/5 - 35*lambdaSigmaphi2**2 - 28*zD_im**2 - 28*zD_re**2 - zK_im**2/10 - zK_re**2/10",
+          "lambdaSigmaS": "75*g10**2*lambdaSigmaS/2 + 108*lambdaPhiS*lambdaPhiSigma1 - 12*lambdaPhiS*lambdaPhiSigma2 + 4*lambdaS*lambdaSigmaS + 1016*lambdaSigma1*lambdaSigmaS + 2440*lambdaSigma2*lambdaSigmaS + 2680*lambdaSigma3*lambdaSigmaS + 4960*lambdaSigma4*lambdaSigmaS + 4*lambdaSigmaS**2 + 10*lambdaSigmaphi1*lambdaVectorS + 5*lambdaSigmaphi2*lambdaVectorS + 120*z4_im**2 + 120*z4_re**2",
+          "lambdaVectorS": "27*g10**2*lambdaVectorS/2 + 108*lambdaPhiS*lambdaPhiphi1 + 54*lambdaPhiS*lambdaPhiphi2/5 + 22*lambdaPhiVector1*lambdaVectorS + 4*lambdaPhiVector2*lambdaVectorS + 4*lambdaS*lambdaVectorS + 504*lambdaSigmaS*lambdaSigmaphi1 + 252*lambdaSigmaS*lambdaSigmaphi2 + 2*lambdaVectorS**2 + 108*zK_im**2/5 + 108*zK_re**2/5",
+          "lambdaS": "54*lambdaPhiS**2 + 10*lambdaS**2 + 252*lambdaSigmaS**2 + 5*lambdaVectorS**2",
+          "z4_re": "105*g10**2*z4_re/2 + 2*lambdaPhiS*z4_re + 8*lambdaPhiSigma1*z4_re + 48*lambdaPhiSigma2*z4_re + 8*lambdaSigma1*z4_re + 80*lambdaSigma2*z4_re + 360*lambdaSigma3*z4_re + 320*lambdaSigma4*z4_re + 4*lambdaSigmaS*z4_re + 2*zD_im*zK_im + 2*zD_re*zK_re",
+          "z4_im": "105*g10**2*z4_im/2 + 2*lambdaPhiS*z4_im + 8*lambdaPhiSigma1*z4_im + 48*lambdaPhiSigma2*z4_im + 8*lambdaSigma1*z4_im + 80*lambdaSigma2*z4_im + 360*lambdaSigma3*z4_im + 320*lambdaSigma4*z4_im + 4*lambdaSigmaS*z4_im + 2*zD_im*zK_re - 2*zD_re*zK_im",
+          "zK_re": "57*g10**2*zK_re/2 + 2*lambdaPhiS*zK_re + 2*lambdaPhiVector1*zK_re + 4*lambdaPhiphi1*zK_re + 58*lambdaPhiphi2*zK_re/5 + 2*lambdaVectorS*zK_re + 280*z4_im*zD_im + 280*z4_re*zD_re",
+          "zK_im": "57*g10**2*zK_im/2 + 2*lambdaPhiS*zK_im + 2*lambdaPhiVector1*zK_im + 4*lambdaPhiphi1*zK_im + 58*lambdaPhiphi2*zK_im/5 + 2*lambdaVectorS*zK_im - 280*z4_im*zD_re + 280*z4_re*zD_im",
+          "zEta_re": "63*g10**2*zEta_re + 24*lambdaSigma1*zEta_re - 16*lambdaSigma2*zEta_re + 80*lambdaSigma3*zEta_re - 1312*lambdaSigma4*zEta_re + 6*lambdaSigmaphi1*zEta_re - 8*lambdaSigmaphi2*zEta_re + 48*zD_im*zEta_im + 48*zD_re*zEta_re",
+          "zEta_im": "63*g10**2*zEta_im + 24*lambdaSigma1*zEta_im - 16*lambdaSigma2*zEta_im + 80*lambdaSigma3*zEta_im - 1312*lambdaSigma4*zEta_im + 6*lambdaSigmaphi1*zEta_im - 8*lambdaSigmaphi2*zEta_im + 48*zD_im*zEta_re - 48*zD_re*zEta_im",
+          "zD_re": "51*g10**2*zD_re + 2*lambdaPhiVector1*zD_re + 8*lambdaSigma1*zD_re + 80*lambdaSigma2*zD_re + 360*lambdaSigma3*zD_re + 320*lambdaSigma4*zD_re + 8*lambdaSigmaphi1*zD_re - 16*lambdaSigmaphi2*zD_re - z4_im*zK_im + z4_re*zK_re - 480*zEta_im**2 + 480*zEta_re**2",
+          "zD_im": "51*g10**2*zD_im + 2*lambdaPhiVector1*zD_im + 8*lambdaSigma1*zD_im + 80*lambdaSigma2*zD_im + 360*lambdaSigma3*zD_im + 320*lambdaSigma4*zD_im + 8*lambdaSigmaphi1*zD_im - 16*lambdaSigmaphi2*zD_im + z4_im*zK_re + z4_re*zK_im + 960*zEta_im*zEta_re"
+        },
+        "projection_rank": 26,
+        "maximum_residual": "0",
+        "attempt1_blocked_evidence_sha256": "29998c0e5df9562ed5fa6e5bd109a2ea03c0a0730a8490ff8691be74e1d57859",
+        "evidence_sha256": "851623326c7bae378dd81071193c4126c79dd8a0aa9918052a41fd223bb6d5d0"
       },
-      "verdict_reason": "required_exhaustive_parent_scalar_4pt_contraction_gauge_completion_and_projection_are_not_implemented",
+      "verdict_reason": "complete_quartic_operator_and_partial_BFM_gauge_assembly_match_inventory_independent_scalar_and_gauge_replays",
       "evidence_files": [
-        "uvp_m05_primary_blocker.json",
-        "uvp_m05_independent_blocker_replay.json",
-        "uvp_m05_uv_ir_provenance.json",
-        "uvp_m05_blocked_evidence.json"
+        "uvp_m05_blocked_evidence.json",
+        "uvp_m05_complete_scalar_v4v4.json",
+        "uvp_m05_primary_complete_candidate.json",
+        "uvp_m05_independent_scalar_replay_uncompared.json",
+        "uvp_m05_independent_scalar_replay.json",
+        "uvp_m05_independent_gauge_replay_uncompared.json",
+        "uvp_m05_independent_gauge_replay.json",
+        "uvp_m05_uv_ir_provenance_attempt2.json",
+        "uvp_m05_evidence_attempt2.json"
       ]
     },
     {
@@ -1194,78 +1227,102 @@
       "global_ordinal": 32,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "complete_degree_graded_34_direction_parent_pole_action_projection",
+        "inventory_sha256": "1678ea08e782d98beaf51488911b320c3953ff8dde2e006bea18382d30295c93",
+        "residue_sha256": "5d920310846de61660417127ecdaeb0b6544ed6f86bd51064bfe0798c0695969",
+        "uv_ir_provenance_sha256": "fdbe439a220b29aa797199e2966ba350b1652af666f197680adc1ca72a74ae25"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_degree_tagged_reassembly_from_frozen_operator_replays",
+        "inventory_sha256": "39fb94a9b3fa8b995bcd58c82a300f0ebc675593bca7c8532cad8ef6656e9443",
+        "residue_sha256": "9c2a4b964fb3d617b7f250e772c934567404b2e7054544140f7e0eafc9645b5e",
+        "uv_ir_provenance_sha256": "fdbe439a220b29aa797199e2966ba350b1652af666f197680adc1ca72a74ae25"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "projection_rank": 34,
+        "maximum_residual": "0",
+        "evidence_sha256": "55bc296eaae34b4a3ff3d691bddccad0254ff45afac0adbe4633070d29acd9d3"
+      },
+      "verdict_reason": "complete_calculated_parent_scalar_pole_action_has_exact_rank34_and_zero_out_of_basis_residual",
+      "evidence_files": [
+        "uvp_m06_evidence.json",
+        "uvp_m06_uv_ir_provenance.json"
+      ]
     },
     {
       "test_id": "UVP_M07",
       "global_ordinal": 33,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "PASS",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "complete_counterterm_action_complex_conjugation_substitution",
+        "inventory_sha256": "c2bb0f213c01cc46473b4cad878cb4e3248477880bf3388ef00620a7e636d8e8",
+        "residue_sha256": "5066270c1b28e3670f9f1021d526d414a218e954dd85c20869bba70fea63c447",
+        "uv_ir_provenance_sha256": "3201669fcb6ee3869ba1af538cb38e7c5bb6216d2ca092577a838c0f0f05bb88"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_monomial_imaginary_parity_audit",
+        "inventory_sha256": "c2bb0f213c01cc46473b4cad878cb4e3248477880bf3388ef00620a7e636d8e8",
+        "residue_sha256": "5066270c1b28e3670f9f1021d526d414a218e954dd85c20869bba70fea63c447",
+        "uv_ir_provenance_sha256": "3201669fcb6ee3869ba1af538cb38e7c5bb6216d2ca092577a838c0f0f05bb88"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "Hermiticity_residual": "0",
+        "PQ_forbidden_operator_residual": "0",
+        "evidence_sha256": "eb7c43c884798d08d75e552dc74b00f03473ea31098d39ee077baad9edf35923"
+      },
+      "verdict_reason": "complete_calculated_scalar_counterterm_action_is_Hermitian_and_generates_no_PQ_forbidden_operator",
+      "evidence_files": [
+        "uvp_m07_evidence.json",
+        "uvp_m07_uv_ir_provenance.json"
+      ]
     },
     {
       "test_id": "UVP_M08",
       "global_ordinal": 34,
       "phase": "CANONICAL_5B",
       "family": "CANONICAL",
-      "status": "NOT_RUN",
-      "authorization": "WAITING_PREDECESSOR",
-      "attempt": 0,
+      "status": "BLOCKED",
+      "authorization": "TERMINAL",
+      "attempt": 1,
       "primary": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "canonical_partial_BFM_1PI_capability_audit",
+        "inventory_sha256": "7b1c4ab75253e94bfbe517f1450e7469dabf80b866b3e492a6432d47ba06a71c",
+        "residue_sha256": "ecfa3f9cf410695ea697e4fcc8aa22ef6121dd7f60d32df63f168294903368b8",
+        "uv_ir_provenance_sha256": "80251bb192251a1928dd45c86d1dd76ecd5542277979944af30d1c005e0042d3"
       },
       "replay": {
-        "state": "NOT_RUN",
-        "method": null,
-        "inventory_sha256": null,
-        "residue_sha256": null,
-        "uv_ir_provenance_sha256": null
+        "state": "COMPLETE",
+        "method": "independent_contract_artifact_and_AST_surface_audit",
+        "inventory_sha256": "7b1c4ab75253e94bfbe517f1450e7469dabf80b866b3e492a6432d47ba06a71c",
+        "residue_sha256": "ecfa3f9cf410695ea697e4fcc8aa22ef6121dd7f60d32df63f168294903368b8",
+        "uv_ir_provenance_sha256": "80251bb192251a1928dd45c86d1dd76ecd5542277979944af30d1c005e0042d3"
       },
-      "derived_result": null,
-      "verdict_reason": null,
-      "evidence_files": []
+      "derived_result": {
+        "residues_derived": false,
+        "blocker_code": "M08_PARTIAL_BFM_QUANTUM_VECTOR_HEAVY_LIGHT_GHOST_XI_1PI_KERNEL_MISSING",
+        "classification": "IMPLEMENTATION_BLOCK_NOT_PHYSICS_FAIL",
+        "evidence_sha256": "3d6b57b561146ee88af1ad885dd2aac08969e8763fcbe3b1354b259980b00b80"
+      },
+      "verdict_reason": "canonical_partial_BFM_quantum_vector_heavy_light_ghost_and_xi_1PI_pole_kernel_not_implemented",
+      "evidence_files": [
+        "uvp_m08_primary_blocker.json",
+        "uvp_m08_independent_blocker_replay.json",
+        "uvp_m08_uv_ir_provenance.json",
+        "uvp_m08_blocked_evidence.json"
+      ]
     },
     {
       "test_id": "UVP_M09",
@@ -1398,5 +1455,5 @@
       "evidence_files": []
     }
   ],
-  "result_sha256": "aefb4d5a3ee6f5072baeba4f12fba231e1885abce4fd35a1f57d14f1761520bf"
+  "result_sha256": "992e34d8ae0854a7a345c1d4513dfa3be9004d4d2cf1c2135a46cdef7d193361"
 }

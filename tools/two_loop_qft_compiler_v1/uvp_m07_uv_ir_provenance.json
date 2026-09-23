@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "test_id": "UVP_M07",
+  "attempt": 1,
+  "classification": "ALGEBRAIC_CONSISTENCY_AUDIT_OF_CALCULATED_LOCAL_UV_POLE_ACTION",
+  "UV_poles": "INPUT_IS_COMPLETE_PASSED_M06_LOCAL_POLE_ACTION",
+  "IR_poles": "NOT_AN_ADDITIONAL_INTEGRAL_EXTRACTION",
+  "locality": "PRESERVED",
+  "artifact_sha256": "3201669fcb6ee3869ba1af538cb38e7c5bb6216d2ca092577a838c0f0f05bb88"
+}

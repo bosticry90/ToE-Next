@@ -455,7 +455,11 @@
       "preserved_two_loop_log_kernel": "PASS",
       "preserved_yukawa_convention": "YUKAWA_CONVENTION_V1",
       "scalar_vertex_oracle": "PASS",
-      "scalar_vertex_orders": [2, 3, 4],
+      "scalar_vertex_orders": [
+        2,
+        3,
+        4
+      ],
       "finite_C1_GS_comparison": "PREREGISTERED_BEFORE_RESULT",
       "finite_C1_GS": null,
       "diagram_generator": "TWO_LOOP_DIAGRAM_GENERATOR_PASS_VIA_TWO_LOOP_QFT_COMPILER_V1",
@@ -582,10 +586,9 @@
       "layer5a_M04_attempt1_blocker_code": "M04_EXHAUSTIVE_PARENT_SCALAR_3PT_CONTRACTION_PROJECTOR_MISSING",
       "layer5a_M04_attempt1_blocked_evidence_sha256": "683ffc450210b10fd381f45b6942d00fa7ec6fee818335bf5a2aaa9de30b2898",
       "layer5a_M04_evidence_sha256": "2e199c35a4f48e210a4de42178d45b1df9d622676956f968462b9ebb12b7018c",
-      "layer5a_M05": "BLOCKED",
-      "layer5a_M05_blocker_code": "M05_EXHAUSTIVE_PARENT_SCALAR_4PT_CONTRACTION_PROJECTOR_MISSING",
-      "layer5a_M05_evidence_sha256": "29998c0e5df9562ed5fa6e5bd109a2ea03c0a0730a8490ff8691be74e1d57859",
-      "layer5b_execution_checkpoint_sha256": "83c9a6340b175d15affa3baa5fec1f7cac19ec9cafba0a8b8fdae34e5d789ec4",
+      "layer5a_M05": "PASS_ATTEMPT2_26_REAL_PARENT_QUARTIC_RESIDUES",
+      "layer5a_M05_evidence_sha256": "851623326c7bae378dd81071193c4126c79dd8a0aa9918052a41fd223bb6d5d0",
+      "layer5b_execution_checkpoint_sha256": "1664c9e32607c5b9771f126e5130a04b2da05ff71951d2a8b79bf6d3168d5d40",
       "layer5a_execution_checkpoint_sha256": "8a31bb28df83b7417c5e98d019547ec95966fe3147330b2b05c9a58f7e4b0187",
       "layer5a_next_test": null,
       "UVP_P01": "PASS",
@@ -621,14 +624,22 @@
       "UVP_P05_rank6_normalized_residue_per_pairing": "1/192",
       "UVP_P05_maximum_pairing_or_contraction_residual": "0",
       "UVP_P05_evidence_sha256": "a2c8154d9d38d8d24fcf85f25b202bc7ea3c0ca7c45f34dd591c17990cda01da",
-      "layer5a_current_result_sha256": "aefb4d5a3ee6f5072baeba4f12fba231e1885abce4fd35a1f57d14f1761520bf",
+      "layer5a_current_result_sha256": "992e34d8ae0854a7a345c1d4513dfa3be9004d4d2cf1c2135a46cdef7d193361",
       "layer6_tensor_IBP_reduction_authorized": false,
       "counterterm_reduction_master_layers_started": false,
       "finite_C1_GS": null,
       "bfb_status": "BFB_UNRESOLVED",
-      "result": "tools/two_loop_qft_compiler_v1/LAYER5B_M04_M05_RESULT.md"
+      "result": "tools/two_loop_qft_compiler_v1/LAYER5B_M05_M08_RESULT.md",
+      "layer5a_execution_progress": "34_OF_39_ENGINE_27_OF_27",
+      "layer5a_M06": "PASS_RANK34_ZERO_OUT_OF_BASIS_RESIDUAL",
+      "layer5a_M06_evidence_sha256": "55bc296eaae34b4a3ff3d691bddccad0254ff45afac0adbe4633070d29acd9d3",
+      "layer5a_M07": "PASS_HERMITICITY_PQ_ZERO_RESIDUAL",
+      "layer5a_M07_evidence_sha256": "eb7c43c884798d08d75e552dc74b00f03473ea31098d39ee077baad9edf35923",
+      "layer5a_M08": "BLOCKED",
+      "layer5a_M08_blocker_code": "M08_PARTIAL_BFM_QUANTUM_VECTOR_HEAVY_LIGHT_GHOST_XI_1PI_KERNEL_MISSING",
+      "layer5a_M08_evidence_sha256": "3d6b57b561146ee88af1ad885dd2aac08969e8763fcbe3b1354b259980b00b80"
     },
-    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5B_ENGINE_27_OF_27_PASS_M02_M03_M04_PASS_M05_IMPLEMENTATION_BLOCK_31_OF_39_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
+    "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5B_ENGINE_27_OF_27_PASS_M02_M03_M04_M05_M06_M07_PASS_M08_IMPLEMENTATION_BLOCK_34_OF_39_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
   },
   "scientific_disposition": {
     "ccft_uefm": "CLOSED",
