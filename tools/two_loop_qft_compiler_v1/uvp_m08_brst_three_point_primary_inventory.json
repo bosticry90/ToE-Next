@@ -1,0 +1,2499 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_PRIMARY_BRST_THREE_POINT_INVENTORY_COMPLETE",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "immutable_partial_BFM_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "topology_equation": "n3+2*n4=3_for_E3_L1",
+  "enumeration_method": "action_signature_half_edge_pairing_then_graph_isomorphism_canonicalization",
+  "summary": {
+    "Gamma_ubarH_uH_VH": {
+      "canonical_records": 17,
+      "requires_UV_evaluation": 13,
+      "power_counted_zero": 4,
+      "topology_counts": {
+        "equivariant_quartic_ghost_bubble": 2,
+        "ghost_vector_triangle": 4,
+        "one_ghost_two_vector_triangle": 3,
+        "scalar_or_Goldstone_triangle": 2,
+        "seagull_cubic_swordfish": 6
+      }
+    },
+    "Gamma_ubarH_uH_qL": {
+      "canonical_records": 16,
+      "requires_UV_evaluation": 12,
+      "power_counted_zero": 4,
+      "topology_counts": {
+        "equivariant_quartic_ghost_bubble": 2,
+        "ghost_vector_triangle": 4,
+        "one_ghost_two_vector_triangle": 2,
+        "scalar_or_Goldstone_triangle": 2,
+        "seagull_cubic_swordfish": 6
+      }
+    },
+    "Gamma_cbarL_cL_qL": {
+      "canonical_records": 2,
+      "requires_UV_evaluation": 2,
+      "power_counted_zero": 0,
+      "topology_counts": {
+        "ghost_vector_triangle": 1,
+        "one_ghost_two_vector_triangle": 1
+      }
+    }
+  },
+  "records": {
+    "Gamma_ubarH_uH_VH": [
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "equivariant_quartic_ghost_bubble",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH4_ubar_u_ubar_u"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              3,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              2,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          }
+        ],
+        "quartic_ghost_channel": "direct",
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 1,
+        "statistics_sign": "-1",
+        "canonical_graph_sha256": "26ceec7f76db0254ca8ff77ba54e9f9f"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "equivariant_quartic_ghost_bubble",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH4_ubar_u_ubar_u"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              3,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              2,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          }
+        ],
+        "quartic_ghost_channel": "exchange",
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 1,
+        "statistics_sign": "-1",
+        "canonical_graph_sha256": "4d19eab23c40583101720ee47309cb44"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_G"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 2,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              2,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "G_H"
+            ],
+            "right": [
+              2,
+              2,
+              "G_H"
+            ],
+            "propagator": "G_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 2,
+        "UV_disposition": "POWER_COUNTED_UV_ZERO_NO_LOCAL_DIMENSION_ONE_GHOST_VECTOR_OPERATOR",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "aadd9cf5f36dda0bc3678ba583a92e08"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_S"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 2,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              2,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "S_phys"
+            ],
+            "right": [
+              2,
+              2,
+              "S_phys"
+            ],
+            "propagator": "S_phys"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 2,
+        "UV_disposition": "POWER_COUNTED_UV_ZERO_NO_LOCAL_DIMENSION_ONE_GHOST_VECTOR_OPERATOR",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "7b568dfa50e62927e61e8485367f67a0"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              2,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          },
+          {
+            "left": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              2,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "c95c2d5ed2668414351d5b952b755db6"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 2,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              2,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "q_L"
+            ],
+            "right": [
+              2,
+              2,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "f1c7840a1d2fc6b46138e823ced00b96"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V",
+          "YM_V_V_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 0,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              2,
+              1,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "V_H"
+            ],
+            "right": [
+              2,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "9de96d2f469d1ec1a8f0604858c0817a"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_q",
+          "YM_q_V_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 0,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 1,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              2,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "q_L"
+            ],
+            "right": [
+              2,
+              0,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "1efec477cca600106607f6ce77de1809"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_q",
+          "YM_q_V_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 1,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              2,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "q_L"
+            ],
+            "right": [
+              2,
+              0,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "2967af05f8fe05d09be7d456c420e95b"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "scalar_or_Goldstone_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_G",
+          "KIN_V_G_G"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 0,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "G_H"
+            ],
+            "right": [
+              2,
+              1,
+              "G_H"
+            ],
+            "propagator": "G_H"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "G_H"
+            ],
+            "right": [
+              2,
+              2,
+              "G_H"
+            ],
+            "propagator": "G_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 2,
+        "UV_disposition": "POWER_COUNTED_UV_ZERO_NO_LOCAL_DIMENSION_ONE_GHOST_VECTOR_OPERATOR",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "84824244b6cb449f11e00133ffff2570"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "scalar_or_Goldstone_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_S",
+          "KIN_V_S_S"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 0,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "S_phys"
+            ],
+            "right": [
+              2,
+              1,
+              "S_phys"
+            ],
+            "propagator": "S_phys"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "S_phys"
+            ],
+            "right": [
+              2,
+              2,
+              "S_phys"
+            ],
+            "propagator": "S_phys"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 2,
+        "UV_disposition": "POWER_COUNTED_UV_ZERO_NO_LOCAL_DIMENSION_ONE_GHOST_VECTOR_OPERATOR",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "b8e9494ed96978968f6b6360662789fb"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH4_ubar_u_V_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 1,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              3,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "7bf61f396b4c144ab2fc4a792d042f2c"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH4_ubar_u_V_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 0,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 1,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              3,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "fdfeb9e81dee637a059b418ec64da38a"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH4_ubar_u_V_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 0,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 1,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              1,
+              3,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "80f84a4b3d815de451ee7edd2c3cc782"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH4_ubar_u_V_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 1,
+            "slot": 2,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              1,
+              3,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "bcc9cfa537c21732662998ad0dffa32d"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "YM_V_V_V",
+          "HGH4_ubar_u_V_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 0,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "V_H"
+            ],
+            "right": [
+              1,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              3,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "0a8397f02762313d67260e5cb707f6e3"
+      },
+      {
+        "process": "Gamma_ubarH_uH_VH",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "YM_q_V_V",
+          "HGH4_ubar_u_V_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 1,
+            "field": "V_H"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "q_L"
+            ],
+            "right": [
+              1,
+              3,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "dac10ab538c285d6e36572a593d17583"
+      }
+    ],
+    "Gamma_ubarH_uH_qL": [
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "equivariant_quartic_ghost_bubble",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH4_ubar_u_ubar_u"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              3,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              2,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          }
+        ],
+        "quartic_ghost_channel": "direct",
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 1,
+        "statistics_sign": "-1",
+        "canonical_graph_sha256": "a590b87a3f94d6b3e740adbb63738222"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "equivariant_quartic_ghost_bubble",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH4_ubar_u_ubar_u"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              3,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              2,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          }
+        ],
+        "quartic_ghost_channel": "exchange",
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 1,
+        "statistics_sign": "-1",
+        "canonical_graph_sha256": "c6bc75f6ff7728f039d5eecdbff1a4a7"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              2,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          },
+          {
+            "left": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              2,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "c4811d25a44a852aa6da1a47a0c8413e"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_G"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 2,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              2,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "G_H"
+            ],
+            "right": [
+              2,
+              2,
+              "G_H"
+            ],
+            "propagator": "G_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 2,
+        "UV_disposition": "POWER_COUNTED_UV_ZERO_NO_LOCAL_DIMENSION_ONE_GHOST_VECTOR_OPERATOR",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "1f855232054b57050207a1f4ca449759"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_S"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 2,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              2,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "S_phys"
+            ],
+            "right": [
+              2,
+              2,
+              "S_phys"
+            ],
+            "propagator": "S_phys"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 2,
+        "UV_disposition": "POWER_COUNTED_UV_ZERO_NO_LOCAL_DIMENSION_ONE_GHOST_VECTOR_OPERATOR",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "bcd2411b6f152ad8c14f9ca22756931d"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              2,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              1,
+              2,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          },
+          {
+            "left": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              2,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "cc822e0365925eb1696b8fa0c003f91d"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V",
+          "YM_q_V_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 0,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              2,
+              1,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "V_H"
+            ],
+            "right": [
+              2,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "bb80765bcbe38d9c52d29ab492bae1bb"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_q",
+          "YM_q_q_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 0,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              2,
+              1,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "q_L"
+            ],
+            "right": [
+              2,
+              2,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "f88c1aecc3d5da3d766b41402bfc6fbe"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "scalar_or_Goldstone_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_G",
+          "KIN_q_G_G"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 0,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "G_H"
+            ],
+            "right": [
+              2,
+              1,
+              "G_H"
+            ],
+            "propagator": "G_H"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "G_H"
+            ],
+            "right": [
+              2,
+              2,
+              "G_H"
+            ],
+            "propagator": "G_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 2,
+        "UV_disposition": "POWER_COUNTED_UV_ZERO_NO_LOCAL_DIMENSION_ONE_GHOST_VECTOR_OPERATOR",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "50600bb0b605eaeb8c5c7ec313b4392d"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "scalar_or_Goldstone_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_S",
+          "KIN_q_S_S"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 0,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "S_phys"
+            ],
+            "right": [
+              2,
+              1,
+              "S_phys"
+            ],
+            "propagator": "S_phys"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "S_phys"
+            ],
+            "right": [
+              2,
+              2,
+              "S_phys"
+            ],
+            "propagator": "S_phys"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 2,
+        "UV_disposition": "POWER_COUNTED_UV_ZERO_NO_LOCAL_DIMENSION_ONE_GHOST_VECTOR_OPERATOR",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "bf05c97c3da516a3caa130dc4797337c"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH4_ubar_u_V_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 1,
+            "slot": 3,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "2cb1508ec4cbc7fe1e1a4a2670202362"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH4_ubar_u_V_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 0,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 1,
+            "slot": 3,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "33b6ed325eace56034efeb5a9d8d4682"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH4_ubar_u_q_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 1,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "u_H"
+            ],
+            "right": [
+              1,
+              0,
+              "ubar_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              1,
+              3,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "7f43ed802d625da70a967049f677c8d9"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH4_ubar_u_q_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 0,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 1,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              0,
+              "ubar_H"
+            ],
+            "right": [
+              1,
+              1,
+              "u_H"
+            ],
+            "propagator": "heavy_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              1,
+              3,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "d839dbfb4306cc7c7558db781a5b15fe"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "YM_q_V_V",
+          "HGH4_ubar_u_V_V"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 0,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "V_H"
+            ],
+            "right": [
+              1,
+              2,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "V_H"
+            ],
+            "right": [
+              1,
+              3,
+              "V_H"
+            ],
+            "propagator": "V_H"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "16363db53ae10f7e84614b1c42c1ae4c"
+      },
+      {
+        "process": "Gamma_ubarH_uH_qL",
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "YM_q_q_q",
+          "HGH4_ubar_u_q_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 1,
+            "slot": 0,
+            "field": "ubar_H"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "u_H"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 0,
+            "slot": 0,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "q_L"
+            ],
+            "right": [
+              1,
+              2,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              1,
+              3,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "3e0ffaed1b1708e622637d2b127b7fe1"
+      }
+    ],
+    "Gamma_cbarL_cL_qL": [
+      {
+        "process": "Gamma_cbarL_cL_qL",
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "LGH_cbar_c_q",
+          "LGH_cbar_c_q",
+          "LGH_cbar_c_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "cbar_L"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "c_L"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 2,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "c_L"
+            ],
+            "right": [
+              2,
+              0,
+              "cbar_L"
+            ],
+            "propagator": "light_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              1,
+              2,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          },
+          {
+            "left": [
+              1,
+              0,
+              "cbar_L"
+            ],
+            "right": [
+              2,
+              1,
+              "c_L"
+            ],
+            "propagator": "light_ghost"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "775fdebe996265a0768658e3d4b77eb1"
+      },
+      {
+        "process": "Gamma_cbarL_cL_qL",
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "LGH_cbar_c_q",
+          "LGH_cbar_c_q",
+          "YM_q_q_q"
+        ],
+        "external_attachments": [
+          {
+            "external_ordinal": 0,
+            "vertex": 0,
+            "slot": 0,
+            "field": "cbar_L"
+          },
+          {
+            "external_ordinal": 1,
+            "vertex": 1,
+            "slot": 1,
+            "field": "c_L"
+          },
+          {
+            "external_ordinal": 2,
+            "vertex": 2,
+            "slot": 0,
+            "field": "q_L"
+          }
+        ],
+        "internal_edges": [
+          {
+            "left": [
+              0,
+              1,
+              "c_L"
+            ],
+            "right": [
+              1,
+              0,
+              "cbar_L"
+            ],
+            "propagator": "light_ghost"
+          },
+          {
+            "left": [
+              0,
+              2,
+              "q_L"
+            ],
+            "right": [
+              2,
+              1,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          },
+          {
+            "left": [
+              1,
+              2,
+              "q_L"
+            ],
+            "right": [
+              2,
+              2,
+              "q_L"
+            ],
+            "propagator": "q_L"
+          }
+        ],
+        "quartic_ghost_channel": null,
+        "dimensionful_coupling_power": 0,
+        "UV_disposition": "REQUIRES_UV_EVALUATION",
+        "closed_ghost_loops": 0,
+        "statistics_sign": "1",
+        "canonical_graph_sha256": "81c7440f2570af147e0c9587d1e789fb"
+      }
+    ]
+  },
+  "completeness": {
+    "all_cubic_triangle_candidates_considered": true,
+    "all_cubic_quartic_bubble_candidates_considered": true,
+    "connected_and_1PI_required": true,
+    "ordered_quartic_ghost_channels": [
+      "direct",
+      "exchange"
+    ],
+    "scalar_and_Goldstone_candidates_retained": true
+  },
+  "inventory_sha256": "e992d56971e73349d650afe274c45ba6369f65d5334c070134766fea991308ac",
+  "artifact_sha256": "40d663d1e4c2276f3db920babe31acbac10ba5a4f0faa336089187cb165837e6"
+}

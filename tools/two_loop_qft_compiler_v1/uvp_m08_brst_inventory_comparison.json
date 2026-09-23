@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_BRST_PRIMARY_REPLAY_INVENTORY_AGREEMENT",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "primary_inventory_sha256": "e992d56971e73349d650afe274c45ba6369f65d5334c070134766fea991308ac",
+  "replay_inventory_sha256": "8e0665ad3095c3ae5d271c76dcd236be96a88653fc8efcd7382cdfd35556da24",
+  "comparison_basis": "topology_vertex_multiset_quartic_channel_UV_disposition",
+  "comparisons": {
+    "Gamma_ubarH_uH_VH": {
+      "primary_records": 17,
+      "replay_records": 17,
+      "primary_minus_replay": [],
+      "replay_minus_primary": [],
+      "semantic_multiset_sha256": "624fe8eb42e2d7b41926615b93b5c0a8960ca79f8dca39dd2611e474215e0910"
+    },
+    "Gamma_ubarH_uH_qL": {
+      "primary_records": 16,
+      "replay_records": 16,
+      "primary_minus_replay": [],
+      "replay_minus_primary": [],
+      "semantic_multiset_sha256": "82f95847b94a460a85c338eb988a1aee0c534aee43efe7d185a52da8a17cc602"
+    },
+    "Gamma_cbarL_cL_qL": {
+      "primary_records": 2,
+      "replay_records": 2,
+      "primary_minus_replay": [],
+      "replay_minus_primary": [],
+      "semantic_multiset_sha256": "0d05f148ff16636154ac0d4c894e311a1315dc753129de06be8cf61e0adbf219"
+    }
+  },
+  "maximum_set_difference": 0,
+  "artifact_sha256": "c3d19d7f830ad16754fca08975721573ae5b3fed7986784a26a6615a3669ff48"
+}

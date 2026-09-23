@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_BRST_INVENTORY_INDEPENDENT_REPLAY_COMPLETE",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "immutable_partial_BFM_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "method": "independent_triangle_and_double_edge_template_constraint_solver",
+  "primary_inventory_imported": false,
+  "primary_canonical_labels_imported": false,
+  "summary": {
+    "Gamma_ubarH_uH_VH": {
+      "canonical_records": 17,
+      "requires_UV_evaluation": 13,
+      "power_counted_zero": 4,
+      "topology_counts": {
+        "equivariant_quartic_ghost_bubble": 2,
+        "ghost_vector_triangle": 4,
+        "one_ghost_two_vector_triangle": 3,
+        "scalar_or_Goldstone_triangle": 2,
+        "seagull_cubic_swordfish": 6
+      }
+    },
+    "Gamma_ubarH_uH_qL": {
+      "canonical_records": 16,
+      "requires_UV_evaluation": 12,
+      "power_counted_zero": 4,
+      "topology_counts": {
+        "equivariant_quartic_ghost_bubble": 2,
+        "ghost_vector_triangle": 4,
+        "one_ghost_two_vector_triangle": 2,
+        "scalar_or_Goldstone_triangle": 2,
+        "seagull_cubic_swordfish": 6
+      }
+    },
+    "Gamma_cbarL_cL_qL": {
+      "canonical_records": 2,
+      "requires_UV_evaluation": 2,
+      "power_counted_zero": 0,
+      "topology_counts": {
+        "ghost_vector_triangle": 1,
+        "one_ghost_two_vector_triangle": 1
+      }
+    }
+  },
+  "records": {
+    "Gamma_ubarH_uH_VH": [
+      {
+        "topology": "equivariant_quartic_ghost_bubble",
+        "vertex_ids": [
+          "HGH4_ubar_u_ubar_u",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": "direct",
+        "power_counted_zero": false
+      },
+      {
+        "topology": "equivariant_quartic_ghost_bubble",
+        "vertex_ids": [
+          "HGH4_ubar_u_ubar_u",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": "exchange",
+        "power_counted_zero": false
+      },
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": true
+      },
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": true
+      },
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V",
+          "YM_V_V_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_q",
+          "YM_q_V_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_q",
+          "YM_q_V_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "scalar_or_Goldstone_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_G",
+          "KIN_V_G_G"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": true
+      },
+      {
+        "topology": "scalar_or_Goldstone_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_S",
+          "KIN_V_S_S"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": true
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_V",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_V",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_V",
+          "YM_V_V_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_q",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_q",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_q",
+          "YM_q_V_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      }
+    ],
+    "Gamma_ubarH_uH_qL": [
+      {
+        "topology": "equivariant_quartic_ghost_bubble",
+        "vertex_ids": [
+          "HGH4_ubar_u_ubar_u",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": "direct",
+        "power_counted_zero": false
+      },
+      {
+        "topology": "equivariant_quartic_ghost_bubble",
+        "vertex_ids": [
+          "HGH4_ubar_u_ubar_u",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": "exchange",
+        "power_counted_zero": false
+      },
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": true
+      },
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": true
+      },
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_V",
+          "HGH_ubar_u_V",
+          "YM_q_V_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_q",
+          "HGH_ubar_u_q",
+          "YM_q_q_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "scalar_or_Goldstone_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_G",
+          "HGH_ubar_u_G",
+          "KIN_q_G_G"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": true
+      },
+      {
+        "topology": "scalar_or_Goldstone_triangle",
+        "vertex_ids": [
+          "HGH_ubar_u_S",
+          "HGH_ubar_u_S",
+          "KIN_q_S_S"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": true
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_V",
+          "YM_q_V_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_q",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_V_q",
+          "HGH_ubar_u_V"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_q_q",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_q_q",
+          "HGH_ubar_u_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "seagull_cubic_swordfish",
+        "vertex_ids": [
+          "HGH4_ubar_u_q_q",
+          "YM_q_q_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      }
+    ],
+    "Gamma_cbarL_cL_qL": [
+      {
+        "topology": "ghost_vector_triangle",
+        "vertex_ids": [
+          "LGH_cbar_c_q",
+          "LGH_cbar_c_q",
+          "LGH_cbar_c_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      },
+      {
+        "topology": "one_ghost_two_vector_triangle",
+        "vertex_ids": [
+          "LGH_cbar_c_q",
+          "LGH_cbar_c_q",
+          "YM_q_q_q"
+        ],
+        "quartic_ghost_channel": null,
+        "power_counted_zero": false
+      }
+    ]
+  },
+  "inventory_sha256": "8e0665ad3095c3ae5d271c76dcd236be96a88653fc8efcd7382cdfd35556da24",
+  "artifact_sha256": "9dca2b0a0c527bcf7b52fcdf775eb42adf92bc66957119484806887fa346be60"
+}

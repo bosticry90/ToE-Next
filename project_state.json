@@ -638,10 +638,21 @@
       "layer5a_M08": "BLOCKED",
       "layer5a_M08_blocker_code": "M08_PARTIAL_BFM_QUANTUM_VECTOR_HEAVY_LIGHT_GHOST_XI_1PI_KERNEL_MISSING",
       "layer5a_M08_evidence_sha256": "3d6b57b561146ee88af1ad885dd2aac08969e8763fcbe3b1354b259980b00b80",
-      "layer5a_M08_implementation_preflight": "PRIMARY_AND_INDEPENDENT_TWO_POINT_OPERATORS_AGREE_BRST_3PT_PENDING_NO_ATTEMPT2",
+      "layer5a_M08_implementation_preflight": "PRIMARY_REPLAY_3PT_INVENTORIES_AGREE_PRIMARY_POLE_CANDIDATE_ST_NORMALIZATION_AND_INDEPENDENT_RESIDUE_REPLAY_PENDING_NO_ATTEMPT2",
       "layer5a_M08_two_point_comparison_sha256": "f7795b159c313cf01d1b30a9ceb1be745cff32b86a844ed6526fb05ff894aec9",
       "layer5a_M08_pre_BRST_heavy_gauge_parameter_blocks": 5,
-      "layer5a_M08_pre_BRST_light_gauge_parameter_blocks": 3
+      "layer5a_M08_pre_BRST_light_gauge_parameter_blocks": 3,
+      "layer5a_M08_BRST_vertex_surface_sha256": "d24684a980a3b47e4023397c30c16592c6b52384056642f4e17f8bcc04f7389f",
+      "layer5a_M08_BRST_primary_inventory_sha256": "e992d56971e73349d650afe274c45ba6369f65d5334c070134766fea991308ac",
+      "layer5a_M08_BRST_inventory_comparison_sha256": "c3d19d7f830ad16754fca08975721573ae5b3fed7986784a26a6615a3669ff48",
+      "layer5a_M08_BRST_Lorentz_preflight_sha256": "7e6e025043da457bc42e95ce50309d00d8b0841f98ab08a5cfc158bcd97e24ce",
+      "layer5a_M08_BRST_primary_pole_candidate_sha256": "1516c7d841af858320974fb9ec42f40b057988d11c5882c7a62ef3ad94328955",
+      "layer5a_M08_BRST_inventory_counts": {
+        "Gamma_ubarH_uH_VH": 17,
+        "Gamma_ubarH_uH_qL": 16,
+        "Gamma_cbarL_cL_qL": 2
+      },
+      "layer5a_M08_BRST_remaining_blocker": "COMPLETE_INDEPENDENT_RESIDUE_REPLAY_AND_CERTIFIED_ST_NORMALIZATION"
     },
     "active_focus": "TWO_LOOP_QFT_COMPILER_V1_LAYER5B_ENGINE_27_OF_27_PASS_M02_M03_M04_M05_M06_M07_PASS_M08_IMPLEMENTATION_BLOCK_34_OF_39_LAYER6_UNAUTHORIZED_FINITE_C1_GS_UNCOMPUTED"
   },

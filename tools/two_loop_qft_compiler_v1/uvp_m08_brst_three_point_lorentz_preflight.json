@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_BRST_THREE_POINT_LORENTZ_KERNEL_PREFLIGHT_COMPLETE",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "method": "auxiliary_mass_local_Taylor_projection_with_exact_4d_simple_pole_tensor_averages",
+  "external_basis": {
+    "p": [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "q": [
+      "0",
+      "1",
+      "0",
+      "0"
+    ]
+  },
+  "rules": {
+    "ordinary_FP": [
+      "1",
+      "0"
+    ],
+    "heavy_V_derivative_on_ghost": [
+      "0",
+      "1"
+    ],
+    "H_covariant_Laplacian": [
+      "1",
+      "-1"
+    ]
+  },
+  "kernels": {
+    "ordinary_FP": {
+      "ghost_triangle": [
+        "rho/4",
+        "0",
+        "0",
+        "0"
+      ],
+      "one_ghost_two_vector_triangle": [
+        "3*rho/4",
+        "0",
+        "0",
+        "0"
+      ],
+      "relative_graph_signs": "ghost_triangle-plus-vector_triangle",
+      "standard_equal_vertex_sum": [
+        "rho",
+        "0",
+        "0",
+        "0"
+      ],
+      "tree_projected_coefficient": "rho",
+      "tree_projection_residual": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "swordfish_external_antighost_on_seagull": [
+        "0",
+        "rho/4 - 3/4",
+        "0",
+        "0"
+      ],
+      "swordfish_external_ghost_on_seagull": [
+        "rho/4 + 3/4",
+        "0",
+        "0",
+        "0"
+      ],
+      "quartic_ghost_bubble": [
+        "-1/2",
+        "-1/2",
+        "0",
+        "0"
+      ]
+    },
+    "heavy_V_derivative_on_ghost": {
+      "ghost_triangle": [
+        "0",
+        "rho/4",
+        "0",
+        "0"
+      ],
+      "one_ghost_two_vector_triangle": [
+        "0",
+        "-3*rho/4",
+        "0",
+        "0"
+      ],
+      "relative_graph_signs": "ghost_triangle-plus-vector_triangle",
+      "standard_equal_vertex_sum": [
+        "0",
+        "-rho/2",
+        "0",
+        "0"
+      ],
+      "tree_projected_coefficient": "-rho/2",
+      "tree_projection_residual": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "swordfish_external_antighost_on_seagull": [
+        "0",
+        "rho/4 + 3/4",
+        "0",
+        "0"
+      ],
+      "swordfish_external_ghost_on_seagull": [
+        "rho/4 - 3/4",
+        "0",
+        "0",
+        "0"
+      ],
+      "quartic_ghost_bubble": [
+        "3/2",
+        "3/2",
+        "0",
+        "0"
+      ]
+    },
+    "H_covariant_Laplacian": {
+      "ghost_triangle": [
+        "rho",
+        "-rho",
+        "0",
+        "0"
+      ],
+      "one_ghost_two_vector_triangle": [
+        "3*rho/2",
+        "-3*rho/2",
+        "0",
+        "0"
+      ],
+      "relative_graph_signs": "ghost_triangle-plus-vector_triangle",
+      "standard_equal_vertex_sum": [
+        "5*rho/2",
+        "-5*rho/2",
+        "0",
+        "0"
+      ],
+      "tree_projected_coefficient": "5*rho/2",
+      "tree_projection_residual": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "swordfish_external_antighost_on_seagull": [
+        "0",
+        "-3/2",
+        "0",
+        "0"
+      ],
+      "swordfish_external_ghost_on_seagull": [
+        "3/2",
+        "0",
+        "0",
+        "0"
+      ],
+      "quartic_ghost_bubble": [
+        "-2",
+        "-2",
+        "0",
+        "0"
+      ]
+    }
+  },
+  "mixed_vector_swordfish": [
+    "3*rho/4 - 3*sigma/4",
+    "3*rho/4 - 3*sigma/4",
+    "0",
+    "0"
+  ],
+  "calibration": {
+    "ordinary_FP_ghost_triangle": "rho/4",
+    "ordinary_FP_vector_triangle": "3*rho/4",
+    "derived_Lorentz_sum": "rho",
+    "derived_color_factor_per_topology": "-C_A/2",
+    "derived_full_tree_coefficient": "-C_A*rho/2",
+    "expected_C10_value_imported_as_input": false
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "common_auxiliary_mass_before_local_expansion",
+    "promoted_terms": "local_first_derivative_only"
+  },
+  "artifact_sha256": "7e6e025043da457bc42e95ce50309d00d8b0841f98ab08a5cfc158bcd97e24ce"
+}
