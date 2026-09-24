@@ -232,3 +232,53 @@ HEAVY_CHANNEL_PARTIAL_GF_BRST_RESIDUE_REASSEMBLY_AND_COMPLETE_INDEPENDENT_REPLAY
 
 Authority therefore remains `34/39`, M08 attempt 1 remains `BLOCKED`, and
 M09--M13 remain unexecuted.
+
+## Corrected heavy-channel reassembly diagnostic
+
+The same partial-gauge-fixing differentiation has now been applied to the
+mixed heavy-vector/light-quantum-vector two-point kernel.  In the ordered
+group-factor convention `2 K_HHL`, the primary calculation gives
+
+```text
+A = eta_H/2 + xi/4 - 17/12
+B = -eta_H/2 + eta_H/(2 xi) - xi/4 + 7/6
+    - 3/(4 xi) - 3/(2 xi^2).
+```
+
+An independent auxiliary-mass/large-momentum implementation, which imports
+neither the primary Feynman-parameter reducer nor its qVV vertex code,
+reproduces both coefficients exactly.  The corrected heavy quantum-vector
+two-point operator therefore has a primary/replay residual of zero.
+
+The two heavy ghost--vector processes were also reassembled with the qVV
+vertices differentiated from `-(d.V)^2/(2 xi)`, and the identical-vector
+swordfish automorphism factor is now explicit.  This does not yet close the
+heavy three-point pole.  At `xi=eta_H=1`, the primary pole retains maximum
+out-of-tree residuals
+
+```text
+Gamma(ubar_H,u_H,V_H): p=3.91750397195, q=2.65631323454
+Gamma(ubar_H,u_H,q_L): p=2.46817240079, q=5.75906893517.
+```
+
+As a localization diagnostic only, all action-derived topology-family
+weights were allowed to vary simultaneously.  Even that non-authoritative
+fit cannot reproduce the counterterm tensor exactly: its best maximum
+residuals are approximately `0.2921` and `0.6114`.  Thus the remaining issue
+is not a single overall sign or graph-symmetry factor.  It requires either an
+additional correction in the heavy action-to-Feynman-rule normalization or
+an independently confirmed extra H-covariant counterterm structure.
+
+The corrected two-point-only gauge-parameter diagnostic continues to resolve
+five distinct heavy block candidates at unit gauge.  They are not promoted:
+the heavy three-point operator is not closed and the contract-required
+complete inventory-independent residue replay is still absent.  The precise
+remaining dependency is therefore
+
+```text
+HEAVY_BRST_THREE_POINT_OPERATOR_CLOSURE_AND_COMPLETE_INDEPENDENT_RESIDUE_REPLAY_INCOMPLETE
+```
+
+No formal M08 attempt 2 has been recorded.  Authority remains `34/39`, M08
+attempt 1 remains `BLOCKED`, M09--M13 remain unexecuted, and Layer 6 remains
+unauthorized.

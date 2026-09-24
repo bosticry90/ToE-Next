@@ -50,7 +50,7 @@
     "independent_replay": "ONE_LOOP_XI_CANCELLATION_INDEPENDENT_REPLAY_PASS",
     "maximum_symbolic_residual": "0"
   },
-  "next_gate": "ONE_LOOP_UV_POLE_EVALUATOR_FOR_LAYER5",
+  "next_gate": "RESOLVE_M08_HEAVY_BRST_OPERATOR_CLOSURE_AND_COMPLETE_INDEPENDENT_REPLAY",
   "layer3_outcome_preserved": "BACKGROUND_FIELD_PHYSICAL_VERTEX_LAYER_PASS",
   "layer4_topology_engine": "PASS_2_ONE_LOOP_9_TWO_LOOP_1PI",
   "layer4_topology_inventory_sha256": "778fe1a80234f7f5fc3c9cbdd02d465bf351f2958d509ef16fc9d2a6c0806021",
@@ -180,7 +180,7 @@
   "layer5a_M08": "BLOCKED",
   "layer5a_M08_blocker_code": "M08_PARTIAL_BFM_QUANTUM_VECTOR_HEAVY_LIGHT_GHOST_XI_1PI_KERNEL_MISSING",
   "layer5a_M08_evidence_sha256": "3d6b57b561146ee88af1ad885dd2aac08969e8763fcbe3b1354b259980b00b80",
-  "layer5a_M08_implementation_preflight": "LIGHT_ST_NORMALIZATION_CERTIFIED_PRIMARY_FUNCTIONAL_REPLAY_AGREE_HEAVY_PARTIAL_GF_BRST_REASSEMBLY_AND_COMPLETE_REPLAY_PENDING_NO_ATTEMPT2",
+  "layer5a_M08_implementation_preflight": "HEAVY_PARTIAL_GF_TWO_POINT_PRIMARY_REPLAY_AGREE_HEAVY_THREE_POINT_OPERATOR_CLOSURE_NONZERO_COMPLETE_RESIDUE_REPLAY_PENDING_NO_ATTEMPT2",
   "layer5a_M08_two_point_comparison_sha256": "f7795b159c313cf01d1b30a9ceb1be745cff32b86a844ed6526fb05ff894aec9",
   "layer5a_M08_pre_BRST_heavy_gauge_parameter_blocks": 5,
   "layer5a_M08_pre_BRST_light_gauge_parameter_blocks": 3,
@@ -188,8 +188,12 @@
   "layer5a_M08_BRST_primary_inventory_sha256": "e992d56971e73349d650afe274c45ba6369f65d5334c070134766fea991308ac",
   "layer5a_M08_BRST_inventory_comparison_sha256": "c3d19d7f830ad16754fca08975721573ae5b3fed7986784a26a6615a3669ff48",
   "layer5a_M08_BRST_Lorentz_preflight_sha256": "e13817acfb7c4742ecd4933018d614d8e7e5221ab87b4de748b7fc469ebbf23b",
-  "layer5a_M08_BRST_primary_pole_candidate_sha256": "895d4ef3f6b81ba0f0be2fc6a9b2d9fdd2855106a33d9e0f0426cdedb1d3f618",
-  "layer5a_M08_partial_gf_vector_kernel_sha256": "010be9d2d597e1e35ec18e23b34575bbdcbb6b4c0742771edba053d614d90e76",
+  "layer5a_M08_BRST_primary_pole_candidate_sha256": "d0fb3b36470416ad8480c7e1f00fbcf131299b3295822f1c86bb5919543f86a2",
+  "layer5a_M08_partial_gf_vector_kernel_sha256": "c4469682fc3d7c30223806c779720cd4e79aea5da3773f402c4af3480e01c33a",
+  "layer5a_M08_heavy_mixed_two_point_independent_replay_sha256": "2c140c7c2cff2381528eb84a8df8a853ce1a4e86ea51ef3b489058621fe6da01",
+  "layer5a_M08_corrected_heavy_block_diagnostic_sha256": "8f695d7eb7ee466bcaf7d1f6c12d0ef1b3c713e4149c088e357c1d06344f1ccb",
+  "layer5a_M08_heavy_mixed_two_point_primary_replay_residual": "0",
+  "layer5a_M08_heavy_three_point_operator_closure": "NONZERO_PRIMARY_RESIDUAL_NO_ADJUDICATION",
   "layer5a_M08_light_ST_normalization_sha256": "95c713423b3e12a3a39c1a72819675c6c69d1b5edb56259b8fb9cba4a270bd89",
   "layer5a_M08_light_ST_independent_replay_sha256": "1abc596a7060436bc5a597dbec39319e51e35559a27de8a0aaa6db49d04b5917",
   "layer5a_M08_light_ST_residual": "0",
@@ -198,5 +202,5 @@
     "Gamma_ubarH_uH_qL": 16,
     "Gamma_cbarL_cL_qL": 2
   },
-  "layer5a_M08_BRST_remaining_blocker": "HEAVY_CHANNEL_PARTIAL_GF_BRST_RESIDUE_REASSEMBLY_AND_COMPLETE_INDEPENDENT_REPLAY_MISSING"
+  "layer5a_M08_BRST_remaining_blocker": "HEAVY_BRST_THREE_POINT_OPERATOR_CLOSURE_AND_COMPLETE_INDEPENDENT_RESIDUE_REPLAY_INCOMPLETE"
 }

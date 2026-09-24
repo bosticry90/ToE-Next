@@ -107,6 +107,64 @@ def covariant_ghost_coefficients():
     return transverse, simplify(longitudinal - transverse)
 
 
+def gf_heavy_vertex_one(mu, a, b, gauge):
+    """External heavy V, internal heavy V(a) and light q(b)."""
+    # Color order is f(internal_V,internal_q,external_V), matching the mixed
+    # ordered-pair group tensor used by the canonical two-point assembly.
+    return (base.p[mu] * base.delta(b, a)
+            - base.k[a] * base.delta(b, mu)) / gauge
+
+
+def gf_heavy_vertex_two(nu, aa, bb, gauge):
+    """Second external-heavy vertex with all momenta reversed."""
+    return (-base.p[nu] * base.delta(bb, aa)
+            + base.k[aa] * base.delta(bb, nu)) / gauge
+
+
+def mixed_heavy_bubble_component(mu, nu, heavy_gauge, light_gauge,
+                                 gf_weight):
+    """Mixed V-q bubble for a heavy external quantum vector.
+
+    The conventional one-half graph factor is retained here; the canonical
+    group contraction is the ordered mixed sum ``2*K_HHL`` and therefore
+    supplies both V-q orientations exactly once.
+    """
+    result = Rational(0)
+    for a in range(base.DIMENSION):
+        for b in range(base.DIMENSION):
+            left = base.vertex_one(mu, a, b)
+            left += gf_weight * gf_heavy_vertex_one(
+                mu, a, b, heavy_gauge)
+            if left == 0:
+                continue
+            for aa in range(base.DIMENSION):
+                for bb in range(base.DIMENSION):
+                    right = base.vertex_two(nu, aa, bb)
+                    right += gf_weight * gf_heavy_vertex_two(
+                        nu, aa, bb, heavy_gauge)
+                    if right == 0:
+                        continue
+                    for na, pa in base.propagator_terms(
+                            a, aa, base.k, heavy_gauge):
+                        if na == 0:
+                            continue
+                        for nb, pb in base.propagator_terms(
+                                b, bb, base.kp, light_gauge):
+                            if nb == 0:
+                                continue
+                            result += base.integrate_local_pole(
+                                left * right * na * nb, pa, pb)
+    return simplify(Rational(1, 2) * result)
+
+
+def mixed_heavy_coefficients(gf_weight):
+    transverse = p2(mixed_heavy_bubble_component(
+        1, 1, rho, base.eta, gf_weight))
+    longitudinal = p2(mixed_heavy_bubble_component(
+        0, 0, rho, base.eta, gf_weight))
+    return transverse, simplify(longitudinal - transverse)
+
+
 def main():
     old_a, old_b = coefficients(Rational(0))
     new_a, new_b = coefficients(Rational(1))
@@ -116,6 +174,10 @@ def main():
     ghost_a, ghost_b = covariant_ghost_coefficients()
     complete_a = simplify(new_a + ghost_a)
     complete_b = simplify(new_b + ghost_b)
+    heavy_mixed_old_a, heavy_mixed_old_b = mixed_heavy_coefficients(
+        Rational(0))
+    heavy_mixed_new_a, heavy_mixed_new_b = mixed_heavy_coefficients(
+        Rational(1))
 
     payload = {
         "schema_version": 1,
@@ -140,6 +202,21 @@ def main():
             "A": str(complete_a), "B": str(complete_b),
             "transversality_residual": str(simplify(
                 complete_a + complete_b)),
+        },
+        "external_heavy_mixed_V_q_sector": {
+            "group_factor_convention": "ordered_sum_2*K_HHL",
+            "yang_mills_only": {
+                "A": str(heavy_mixed_old_a),
+                "B": str(heavy_mixed_old_b),
+            },
+            "yang_mills_plus_partial_gauge_fixing": {
+                "A": str(heavy_mixed_new_a),
+                "B": str(heavy_mixed_new_b),
+            },
+            "correction": {
+                "A": str(simplify(heavy_mixed_new_a-heavy_mixed_old_a)),
+                "B": str(simplify(heavy_mixed_new_b-heavy_mixed_old_b)),
+            },
         },
         "uv_ir": {
             "uv_pole": True,

@@ -73,6 +73,25 @@ def three_vector(i, j, mu, pa, pb, pc):
     return value
 
 
+def partial_gf_qvv(i, j, mu, pa, pb, pc, role, heavy_gauge):
+    """qVV vertex from ``-(d.V)^2/(2*heavy_gauge)``.
+
+    The stripped color tensor is ordered exactly as the Yang--Mills tensor
+    ``f(left,right,external)`` used by ``three_vector``.  ``role`` identifies
+    which of those three legs is the unbroken light connection q.
+    """
+    if role == "external_q_internal_VV":
+        return (pa[i] * (Rational(1) if mu == j else 0)
+                - pb[j] * (Rational(1) if mu == i else 0)) / heavy_gauge
+    if role == "external_V_internal_Vq":
+        return (pc[mu] * (Rational(1) if j == i else 0)
+                - pa[i] * (Rational(1) if j == mu else 0)) / heavy_gauge
+    if role == "external_V_internal_qV":
+        return (pb[j] * (Rational(1) if i == mu else 0)
+                - pc[mu] * (Rational(1) if i == j else 0)) / heavy_gauge
+    raise ValueError(role)
+
+
 def odd_double_factorial(value):
     if value <= 0:
         return 1
@@ -145,7 +164,7 @@ def ghost_triangle(ext_rule, internal_rule, gauge):
 
 
 def gauge_triangle(ext_rule, left_rule, right_rule, gauge_left,
-                   gauge_right):
+                   gauge_right, partial_gf_role=None, heavy_gauge=None):
     # ``ext_rule`` labels the external vector only through the tree projector;
     # the external vector attaches to the Yang--Mills vertex in this topology.
     del ext_rule
@@ -167,6 +186,11 @@ def gauge_triangle(ext_rule, left_rule, right_rule, gauge_left,
                 for beta in range(D):
                     for ib in range(D):
                         vertex = three_vector(ia, ib, mu, pa, pb, pc)
+                        if partial_gf_role is not None:
+                            assert heavy_gauge is not None
+                            vertex += partial_gf_qvv(
+                                ia, ib, mu, pa, pb, pc,
+                                partial_gf_role, heavy_gauge)
                         if vertex == 0:
                             continue
                         for ca, na, da in vector_propagator(
@@ -213,7 +237,8 @@ def swordfish_external_ghost_on_seagull(cubic_rule, gauge):
     return tuple(result)
 
 
-def vector_swordfish(gauge_left, gauge_right):
+def vector_swordfish(gauge_left, gauge_right, partial_gf_role=None,
+                     heavy_gauge=None, symmetry_factor=Rational(1)):
     # External ghosts sit on the seagull.  The external vector attaches to a
     # three-vector vertex.  The seagull Lorentz tensor contracts the two
     # internal vector indices.
@@ -227,6 +252,11 @@ def vector_swordfish(gauge_left, gauge_right):
             for ia in range(D):
                 for ib in range(D):
                     vertex = three_vector(ia, ib, mu, pa, pb, pc)
+                    if partial_gf_role is not None:
+                        assert heavy_gauge is not None
+                        vertex += partial_gf_qvv(
+                            ia, ib, mu, pa, pb, pc,
+                            partial_gf_role, heavy_gauge)
                     if vertex == 0:
                         continue
                     for ca, na, da in vector_propagator(
@@ -237,7 +267,10 @@ def vector_swordfish(gauge_left, gauge_right):
                             terms.append((ca * cb, vertex * na * nb,
                                           da + db))
         result.append(sum_terms(terms))
-    return tuple(result)
+    # Identical internal vectors have a two-edge interchange automorphism;
+    # mixed V-q lines do not.  The caller derives and supplies that graph
+    # symmetry factor from the field assignment.
+    return tuple(simplify(symmetry_factor * value) for value in result)
 
 
 def quartic_ghost_bubble(ext_rule):

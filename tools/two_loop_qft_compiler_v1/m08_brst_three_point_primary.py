@@ -154,9 +154,15 @@ def main():
         return float((3 - ev) / 4) * klll
 
     def z_q_h(xv, ev):
-        return (-float(xv / 4) * khhh - float(ev / 2) * khhl
-                - 2 * float(xv) * identity_h + khhh / 12
-                - 4 * identity_h / 3)
+        # Pure-H vector/ghost and matter pieces use the ordinary covariant
+        # kernel.  The ordered mixed V-q pair instead includes the qVV vertex
+        # obtained from -(d.V)^2/(2*xi).  The independently derived mixed
+        # transverse coefficient is eta_H/2+xi/4-17/12 per ordered-sum
+        # convention (2*K_HHL).
+        loop_a = (float(xv / 2 - Rational(13, 6)) * khhh
+                  + float(ev + xv / 2 - Rational(17, 6)) * khhl
+                  + 18 * identity_h)
+        return -loop_a
 
     def z_q_l(xv, ev):
         del xv
@@ -186,7 +192,27 @@ def main():
                 "maximum_color_entry": format(tensor_norm(row["color"]),
                                                 ".12g"),
             })
+        unit_gauge_piece_projections = []
+        for row in pieces:
+            cp, cq = pq_coefficients(row["lorentz"])
+            sign = row.get("sign", 1)
+            p_tensor = evaluate(sign * cp, Rational(1), Rational(1)) * row[
+                "color"]
+            q_tensor = evaluate(sign * cq, Rational(1), Rational(1)) * row[
+                "color"]
+            p_operator, p_residual = projected_operator(tree, p_tensor)
+            q_operator, q_residual = projected_operator(tree, q_tensor)
+            unit_gauge_piece_projections.append({
+                "topology": row["topology"],
+                "assignment": row["assignment"],
+                "p_operator_trace": format(float(np.trace(p_operator)), ".12g"),
+                "q_operator_trace": format(float(np.trace(q_operator)), ".12g"),
+                "p_out_of_tree_residual": format(p_residual, ".12g"),
+                "q_out_of_tree_residual": format(q_residual, ".12g"),
+            })
         samples = []
+        diagnostic_columns = []
+        diagnostic_target = []
         for xv, ev in ((Rational(1, 2), Rational(1, 2)),
                        (Rational(1), Rational(1)),
                        (Rational(2), Rational(2)),
@@ -207,6 +233,17 @@ def main():
             ap, bp = map(float, ext_rule)
             predicted_p = ap * predicted
             predicted_q = bp * predicted
+            per_piece = []
+            for row in pieces:
+                cp, cq = pq_coefficients(row["lorentz"])
+                sign = row.get("sign", 1)
+                per_piece.append(np.concatenate((
+                    (evaluate(sign * cp, xv, ev) * row["color"]).ravel(),
+                    (evaluate(sign * cq, xv, ev) * row["color"]).ravel(),
+                )))
+            diagnostic_columns.append(np.stack(per_piece, axis=1))
+            diagnostic_target.append(np.concatenate((
+                predicted_p.ravel(), predicted_q.ravel())))
             samples.append({
                 "xi": str(xv), "eta_H": str(ev),
                 "p_tree_operator_spectrum": [
@@ -226,9 +263,28 @@ def main():
                 "ST_actual_plus_counterterm_q_maximum_residual": format(
                     tensor_norm(qn + predicted_q), ".12g"),
             })
+        design = np.concatenate(diagnostic_columns, axis=0)
+        target = np.concatenate(diagnostic_target, axis=0)
+        weights, _, diagnostic_rank, singular = np.linalg.lstsq(
+            design, target, rcond=1e-11)
+        fit_residual = tensor_norm(design @ weights - target)
         processes[name] = {
             "tree_rule": [str(value) for value in ext_rule],
             "topology_ledger": ledger,
+            "unit_gauge_piece_projections": unit_gauge_piece_projections,
+            "non_authoritative_topology_weight_diagnostic": {
+                "purpose": (
+                    "localize_missing_sign_or_symmetry_factors_only;_not_a_"
+                    "calculation_and_never_used_for_M08_adjudication"
+                ),
+                "design_rank": int(diagnostic_rank),
+                "column_count": len(pieces),
+                "maximum_fit_residual": format(fit_residual, ".12g"),
+                "condition_singular_values": [
+                    format(float(value), ".12g") for value in singular],
+                "relative_weights_in_ledger_order": [
+                    format(float(value), ".12g") for value in weights],
+            },
             "factorized_pole_operator_sha256": digest(ledger),
             "sample_tree_operator_projections": samples,
         }
@@ -248,11 +304,15 @@ def main():
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_V_q", "color": vtri(th, tq, heavy, light, heavy),
          "lorentz": gauge_triangle(rules["H"], rules["H"],
-                                    rules["L_on_H"], xi, eta), "sign": -1},
+                                    rules["L_on_H"], xi, eta,
+                                    "external_V_internal_Vq", xi),
+         "sign": -1},
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_q_V", "color": vtri(tq, th, light, heavy, heavy),
          "lorentz": gauge_triangle(rules["H"], rules["L_on_H"],
-                                    rules["H"], eta, xi), "sign": -1},
+                                    rules["H"], eta, xi,
+                                    "external_V_internal_qV", xi),
+         "sign": -1},
         {"topology": "seagull_cubic_swordfish",
          "assignment": "VV_ext_antighost_on_seagull",
          "color": sghost_left(shh, th),
@@ -273,10 +333,12 @@ def main():
              rules["L_on_H"], eta)},
         {"topology": "seagull_cubic_swordfish",
          "assignment": "VV_three_vector", "color": svector(shh, heavy, heavy, heavy),
-         "lorentz": vector_swordfish(xi, xi)},
+         "lorentz": vector_swordfish(
+             xi, xi, symmetry_factor=Rational(1, 2))},
         {"topology": "seagull_cubic_swordfish",
          "assignment": "Vq_three_vector", "color": svector(shq, heavy, light, heavy),
-         "lorentz": vector_swordfish(xi, eta)},
+         "lorentz": vector_swordfish(
+             xi, eta, "external_V_internal_Vq", xi)},
         {"topology": "equivariant_quartic_ghost_bubble",
          "assignment": "direct", "color": quartic_direct(th),
          "lorentz": quartic_ghost_bubble(rules["H"]), "sign": -xi},
@@ -297,7 +359,8 @@ def main():
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_V_V", "color": vtri(th, th, heavy, heavy, light),
          "lorentz": gauge_triangle(rules["L_on_H"], rules["H"], rules["H"],
-                                    xi, xi), "sign": -1},
+                                    xi, xi, "external_q_internal_VV", xi),
+         "sign": -1},
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_q_q", "color": vtri(tq, tq, light, light, light),
          "lorentz": gauge_triangle(rules["L_on_H"], rules["L_on_H"],
@@ -324,10 +387,13 @@ def main():
              rules["L_on_H"], eta)},
         {"topology": "seagull_cubic_swordfish",
          "assignment": "VV_three_vector", "color": svector(shh, heavy, heavy, light),
-         "lorentz": vector_swordfish(xi, xi)},
+         "lorentz": vector_swordfish(
+             xi, xi, "external_q_internal_VV", xi,
+             symmetry_factor=Rational(1, 2))},
         {"topology": "seagull_cubic_swordfish",
          "assignment": "qq_three_vector", "color": svector(sqq, light, light, light),
-         "lorentz": vector_swordfish(eta, eta)},
+         "lorentz": vector_swordfish(
+             eta, eta, symmetry_factor=Rational(1, 2))},
         {"topology": "equivariant_quartic_ghost_bubble",
          "assignment": "direct", "color": quartic_direct(tq),
          "lorentz": quartic_ghost_bubble(rules["L_on_H"]), "sign": -xi},
@@ -355,7 +421,10 @@ def main():
     two_point_formulas = {
         "Z_uH": "(3-xi)/4*K_HHH+(3-eta_H)/4*K_HHL",
         "Z_cL": "(3-eta_H)/4*K_LLL",
-        "Z_QH": "-xi/4*K_HHH-eta_H/2*K_HHL-2*xi*I+K_HHH/12-4*I/3",
+        "Z_QH": (
+            "-(xi/2-13/6)*K_HHH-"
+            "(eta_H+xi/2-17/6)*K_HHL-18*I"
+        ),
         "Z_QL": (
             "(13/6-eta_H/2)*K_LLL+11/3*K_LHH-18*I"
         ),

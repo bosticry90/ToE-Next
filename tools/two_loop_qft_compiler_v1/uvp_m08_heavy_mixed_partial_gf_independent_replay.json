@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_HEAVY_MIXED_PARTIAL_GF_2POINT_INDEPENDENT_REPLAY",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "immutable_partial_BFM_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "method": "independent_auxiliary_mass_large_momentum_vacuum_expansion",
+  "primary_kernel_imported": false,
+  "primary_UV_reducer_imported": false,
+  "group_factor_convention": "ordered_sum_2*K_HHL",
+  "coefficients": {
+    "A": "eta_H/2 + xi/4 - 17/12",
+    "B": "-eta_H/2 + eta_H/(2*xi) - xi/4 + 7/6 - 3/(4*xi) - 3/(2*xi**2)"
+  },
+  "auxiliary_mass_residual": "0",
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "IRR": "common_auxiliary_mass_with_local_Taylor_projection"
+  },
+  "artifact_sha256": "2c140c7c2cff2381528eb84a8df8a853ce1a4e86ea51ef3b489058621fe6da01"
+}

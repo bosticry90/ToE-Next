@@ -30,11 +30,26 @@
     "B": "11/3",
     "transversality_residual": "0"
   },
+  "external_heavy_mixed_V_q_sector": {
+    "group_factor_convention": "ordered_sum_2*K_HHL",
+    "yang_mills_only": {
+      "A": "eta_H/4 + rho/4 - 25/12",
+      "B": "-eta_H/4 - rho/4 + 7/3"
+    },
+    "yang_mills_plus_partial_gauge_fixing": {
+      "A": "eta_H/2 + rho/4 - 17/12",
+      "B": "-eta_H/2 + eta_H/(2*rho) - rho/4 + 7/6 - 3/(4*rho) - 3/(2*rho**2)"
+    },
+    "correction": {
+      "A": "eta_H/4 + 2/3",
+      "B": "(-rho**2*(3*eta_H + 14) + 3*rho*(2*eta_H - 3) - 18)/(12*rho**2)"
+    }
+  },
   "uv_ir": {
     "uv_pole": true,
     "ir_pole": false,
     "regulator": "nonexceptional_Euclidean_external_momentum",
     "locality": "degree_two_polynomial"
   },
-  "artifact_sha256": "010be9d2d597e1e35ec18e23b34575bbdcbb6b4c0742771edba053d614d90e76"
+  "artifact_sha256": "c4469682fc3d7c30223806c779720cd4e79aea5da3773f402c4af3480e01c33a"
 }

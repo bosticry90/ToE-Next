@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_CORRECTED_HEAVY_BLOCK_DIAGNOSTIC_INCOMPLETE_BRST",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "method": "action_derived_partial_gf_mixed_vector_kernel_plus_frozen_ordinary_pure_heavy_ghost_and_matter_kernels",
+  "partial_gf_kernel_sha256": "c4469682fc3d7c30223806c779720cd4e79aea5da3773f402c4af3480e01c33a",
+  "partial_gf_independent_replay_sha256": "2c140c7c2cff2381528eb84a8df8a853ce1a4e86ea51ef3b489058621fe6da01",
+  "mixed_kernel_primary_replay_residual": {
+    "A": "0",
+    "B": "0"
+  },
+  "three_point_primary_candidate_sha256": "d0fb3b36470416ad8480c7e1f00fbcf131299b3295822f1c86bb5919543f86a2",
+  "mixed_kernel": {
+    "A": "eta_H/2 + xi/4 - 17/12",
+    "B": "(xi**2*(-6*eta_H - 3*xi + 14) + 3*xi*(2*eta_H - 3) - 18)/(12*xi**2)"
+  },
+  "heavy_blocks": [
+    {
+      "K_HHH_eigenvalue": "3",
+      "ordered_2K_HHL_eigenvalue": "5",
+      "multiplicity": 12,
+      "loop_A": "5*eta_H/2 + 11*xi/4 + 53/12",
+      "loop_B": "(-30*eta_H*xi**2 + 30*eta_H*xi - 33*xi**3 - 68*xi**2 - 45*xi - 90)/(12*xi**2)",
+      "delta_Z_QH": "-5*eta_H/2 - 11*xi/4 - 53/12",
+      "pre_BRST_multiplicative_delta_Z_xi_candidate": "-4*xi - 49/6 - 15/(2*xi)",
+      "xi_eta_equal_one_candidate": "-59/3"
+    },
+    {
+      "K_HHH_eigenvalue": "19/5",
+      "ordered_2K_HHL_eigenvalue": "21/5",
+      "multiplicity": 12,
+      "loop_A": "21*eta_H/10 + 59*xi/20 + 229/60",
+      "loop_B": "(-126*eta_H*xi**2 + 126*eta_H*xi - 177*xi**3 - 292*xi**2 - 189*xi - 378)/(60*xi**2)",
+      "delta_Z_QH": "-21*eta_H/10 - 59*xi/20 - 229/60",
+      "pre_BRST_multiplicative_delta_Z_xi_candidate": "-4*xi - 209/30 - 63/(10*xi)",
+      "xi_eta_equal_one_candidate": "-259/15"
+    },
+    {
+      "K_HHH_eigenvalue": "24/5",
+      "ordered_2K_HHL_eigenvalue": "16/5",
+      "multiplicity": 6,
+      "loop_A": "8*eta_H/5 + 16*xi/5 + 46/15",
+      "loop_B": "2*(-12*eta_H*xi**2 + 12*eta_H*xi - 24*xi**3 - 29*xi**2 - 18*xi - 36)/(15*xi**2)",
+      "delta_Z_QH": "-8*eta_H/5 - 16*xi/5 - 46/15",
+      "pre_BRST_multiplicative_delta_Z_xi_candidate": "-4*xi - 82/15 - 24/(5*xi)",
+      "xi_eta_equal_one_candidate": "-214/15"
+    },
+    {
+      "K_HHH_eigenvalue": "34/5",
+      "ordered_2K_HHL_eigenvalue": "6/5",
+      "multiplicity": 2,
+      "loop_A": "3*eta_H/5 + 37*xi/10 + 47/30",
+      "loop_B": "(-18*eta_H*xi**2 + 18*eta_H*xi - 111*xi**3 - 56*xi**2 - 27*xi - 54)/(30*xi**2)",
+      "delta_Z_QH": "-3*eta_H/5 - 37*xi/10 - 47/30",
+      "pre_BRST_multiplicative_delta_Z_xi_candidate": "-4*xi - 37/15 - 9/(5*xi)",
+      "xi_eta_equal_one_candidate": "-124/15"
+    },
+    {
+      "K_HHH_eigenvalue": "8",
+      "ordered_2K_HHL_eigenvalue": "0",
+      "multiplicity": 1,
+      "loop_A": "4*xi + 2/3",
+      "loop_B": "-4*xi - 2/3",
+      "delta_Z_QH": "-4*xi - 2/3",
+      "pre_BRST_multiplicative_delta_Z_xi_candidate": "-4*xi - 2/3",
+      "xi_eta_equal_one_candidate": "-14/3"
+    }
+  ],
+  "equal_unit_gauge_distinct_candidate_values": [
+    "-124/15",
+    "-14/3",
+    "-214/15",
+    "-259/15",
+    "-59/3"
+  ],
+  "equal_unit_gauge_block_count": 5,
+  "three_point_operator_closure_diagnostics": {
+    "Gamma_ubarH_uH_VH": {
+      "unit_gauge_p_out_of_tree_residual": "3.91750397195",
+      "unit_gauge_q_out_of_tree_residual": "2.65631323454",
+      "arbitrary_topology_weight_best_fit_residual": "0.292132767399"
+    },
+    "Gamma_ubarH_uH_qL": {
+      "unit_gauge_p_out_of_tree_residual": "2.46817240079",
+      "unit_gauge_q_out_of_tree_residual": "5.75906893517",
+      "arbitrary_topology_weight_best_fit_residual": "0.611385931158"
+    }
+  },
+  "single_xi_closure_adjudicated": false,
+  "reason": "heavy_three_point_operator_does_not_yet_close_and_complete_inventory_independent_residue_replay_is_absent",
+  "formal_M08_attempt2_authorized": false,
+  "artifact_sha256": "8f695d7eb7ee466bcaf7d1f6c12d0ef1b3c713e4149c088e357c1d06344f1ccb"
+}

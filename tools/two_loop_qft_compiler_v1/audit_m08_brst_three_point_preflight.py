@@ -82,8 +82,8 @@ def main():
     assert results["counters"]["not_run_or_locked"] == 5
     assert status["layer5a_M08"] == "BLOCKED"
     assert status["layer5a_M08_BRST_remaining_blocker"] == (
-        "HEAVY_CHANNEL_PARTIAL_GF_BRST_RESIDUE_REASSEMBLY_AND_COMPLETE_"
-        "INDEPENDENT_REPLAY_MISSING")
+        "HEAVY_BRST_THREE_POINT_OPERATOR_CLOSURE_AND_COMPLETE_INDEPENDENT_"
+        "RESIDUE_REPLAY_INCOMPLETE")
     node = project["scaffold"]["two_loop_qft_compiler_v1"]
     assert node["layer5a_M08"] == "BLOCKED"
     assert node["layer5a_M08_BRST_remaining_blocker"] == status[
