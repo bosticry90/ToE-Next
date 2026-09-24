@@ -159,8 +159,15 @@ def main():
                 - 4 * identity_h / 3)
 
     def z_q_l(xv, ev):
-        return (-float(ev / 2) * klll - float(xv / 2) * klhh
-                - 2 * identity_l / 3)
+        del xv
+        # The heavy-vector part must be derived with the qVV vertex from
+        # -(d.V)^2/(2*xi), and the heavy-ghost bubble uses the covariant-
+        # Laplacian current (pbar-pghost), not the ordinary FP current.
+        # Together they give +(11/3) K_LHH in delta Z_Q.  The expression is
+        # deliberately left sector-decomposed for the ST audit.
+        return (float(Rational(13, 6) - ev / 2) * klll
+                + float(Rational(11, 3)) * klhh
+                - 18 * identity_l)
 
     processes = {}
 
@@ -237,15 +244,15 @@ def main():
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_V_V", "color": vtri(th, th, heavy, heavy, heavy),
          "lorentz": gauge_triangle(rules["H"], rules["H"], rules["H"],
-                                    xi, xi)},
+                                    xi, xi), "sign": -1},
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_V_q", "color": vtri(th, tq, heavy, light, heavy),
          "lorentz": gauge_triangle(rules["H"], rules["H"],
-                                    rules["L_on_H"], xi, eta)},
+                                    rules["L_on_H"], xi, eta), "sign": -1},
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_q_V", "color": vtri(tq, th, light, heavy, heavy),
          "lorentz": gauge_triangle(rules["H"], rules["L_on_H"],
-                                    rules["H"], eta, xi)},
+                                    rules["H"], eta, xi), "sign": -1},
         {"topology": "seagull_cubic_swordfish",
          "assignment": "VV_ext_antighost_on_seagull",
          "color": sghost_left(shh, th),
@@ -290,11 +297,11 @@ def main():
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_V_V", "color": vtri(th, th, heavy, heavy, light),
          "lorentz": gauge_triangle(rules["L_on_H"], rules["H"], rules["H"],
-                                    xi, xi)},
+                                    xi, xi), "sign": -1},
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_q_q", "color": vtri(tq, tq, light, light, light),
          "lorentz": gauge_triangle(rules["L_on_H"], rules["L_on_H"],
-                                    rules["L_on_H"], eta, eta)},
+                                    rules["L_on_H"], eta, eta), "sign": -1},
         {"topology": "seagull_cubic_swordfish",
          "assignment": "Vq_ext_antighost_on_seagull",
          "color": np.einsum("imxe,mjx->ije", shq, th,
@@ -340,7 +347,7 @@ def main():
         {"topology": "one_ghost_two_vector_triangle",
          "assignment": "internal_q_q", "color": vtri(tl, tl, light, light, light),
          "lorentz": gauge_triangle(rules["L"], rules["L"], rules["L"],
-                                    eta, eta)},
+                                    eta, eta), "sign": -1},
     ]
     assemble("Gamma_cbarL_cL_qL", tl, rules["L"], pieces_l, z_c_l, z_q_l)
 
@@ -349,7 +356,9 @@ def main():
         "Z_uH": "(3-xi)/4*K_HHH+(3-eta_H)/4*K_HHL",
         "Z_cL": "(3-eta_H)/4*K_LLL",
         "Z_QH": "-xi/4*K_HHH-eta_H/2*K_HHL-2*xi*I+K_HHH/12-4*I/3",
-        "Z_QL": "-eta_H/2*K_LLL-xi/2*K_LHH-2*I/3",
+        "Z_QL": (
+            "(13/6-eta_H/2)*K_LLL+11/3*K_LHH-18*I"
+        ),
         "Z_g10": "-17/3*I",
     }
     matrix_hashes = {

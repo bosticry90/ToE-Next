@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_LIGHT_ST_FUNCTIONAL_INDEPENDENT_REPLAY_PASS",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "immutable_partial_BFM_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "primary_graph_inventory_imported": false,
+  "primary_symmetry_factors_imported": false,
+  "primary_Grassmann_signs_imported": false,
+  "primary_UV_expansion_imported": false,
+  "primary_tensor_reducer_imported": false,
+  "method": "covariant_operator_a2_trace_plus_independent_nonexceptional_triangle_and_color_orientation_reduction",
+  "functional_operator_certificate": {
+    "heavy_vector": "-d^2*delta_mu_nu-2*F_mu_nu",
+    "heavy_ghost": "-d^2_complex_Grassmann_scalar",
+    "vector_F2_coefficient": "-10/3",
+    "ghost_F2_coefficient": "-1/3",
+    "complete_heavy_sector": "-11/3",
+    "gauge_parameter_derivative": "0",
+    "transversality_residual": "0"
+  },
+  "light_vertex_counterterm_operator": "-eta_H*k_LLL/2",
+  "delta_Z_cL": "k_LLL*(3 - eta_H)/4",
+  "delta_Z_qL": "k_LLL*(13/6 - eta_H/2) - 11*k_LLL/3 + 34/3",
+  "delta_Z_g10": "-17/3",
+  "ST_residual": "0",
+  "coverage": "Gamma(cbar_L,c_L,q_L)_only",
+  "complete_M08_replay": false,
+  "artifact_sha256": "1abc596a7060436bc5a597dbec39319e51e35559a27de8a0aaa6db49d04b5917"
+}

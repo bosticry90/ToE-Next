@@ -90,8 +90,8 @@ def main():
     assert ledger["tests"][33]["attempt"] == 1
     assert status["layer5a_M08"] == "BLOCKED"
     assert status["next_gate"] == (
-        "COMPLETE_M08_INDEPENDENT_BRST_RESIDUE_REPLAY_AND_"
-        "CERTIFY_ST_NORMALIZATION"
+        "REASSEMBLE_M08_HEAVY_PARTIAL_GF_BRST_RESIDUES_AND_COMPLETE_"
+        "INDEPENDENT_REPLAY"
     )
     assert status["layer5a_M08_two_point_comparison_sha256"] == (
         comparison["artifact_sha256"]

@@ -164,3 +164,71 @@ COMPLETE_INDEPENDENT_RESIDUE_REPLAY_AND_CERTIFIED_ST_NORMALIZATION
 
 Consequently there is no M08 attempt 2.  The authoritative state remains
 `34/39`, M08 attempt 1 remains `BLOCKED`, and M09--M13 remain unexecuted.
+
+## Ordinary-light ST normalization correction
+
+The preceding BRST checkpoint exposed a normalization defect in the
+implementation rather than a nonzero physical ST residual.  Direct
+differentiation of the immutable heavy gauge-fixing operator shows that the
+light-vector two-point preflight had omitted the `q V V` interaction from
+
+```text
+-(d_mu V_i^mu)^2/(2 xi).
+```
+
+It had also evaluated the heavy-ghost loop with the ordinary FP current even
+though the immutable action contains `-ubar d^2 u`, whose differentiated
+current is `pbar-pghost`.  The corrected, separately auditable heavy
+H-matter kernels are
+
+```text
+covariantly gauge-fixed heavy vector: A=-10/3, B=+10/3
+heavy covariant-Laplacian ghost:      A=-1/3,  B=+1/3
+complete heavy sector:               A=-11/3, B=+11/3
+```
+
+so the result is transverse and independent of `xi`.  An independent
+covariant-operator/heat-kernel replay obtains the same coefficients without
+importing the primary graph inventory or UV projector.
+
+The three-point normalization audit found a second glue-layer issue.  With
+the explicit color orientation used by the action facade, the ordinary ghost
+triangle projects to `-K_LLL/2` while the Yang--Mills triangle projects to
+`+K_LLL/2`; the latter carries the relative cubic Feynman-rule minus.  After
+that sign is retained, their Lorentz coefficients `eta_H/4` and
+`3 eta_H/4` give
+
+```text
+delta Z_(q cbar c) = -eta_H/2 K_LLL.
+```
+
+Combining this vertex with the corrected two-point operators gives an exact
+ordinary-light Slavnov--Taylor residual of zero.  The formerly nonzero
+residual is now localized exactly as
+
+```text
+(3+xi)/4 K_LHH,
+```
+
+which is one half of the omitted two-point correction
+`(3+xi)/2 K_LHH`.  No coefficient was fitted to the identity.
+
+This correction invalidates the earlier description of the Yang--Mills-only
+two-point candidate as a complete partial-BFM result.  The old artifacts are
+retained as development evidence, while the corrected ordinary-light result
+and its independent functional replay are frozen separately.
+
+M08 is still not eligible for attempt 2.  The heavy BRST processes must be
+reassembled with the same action-derived partial-gauge-fixing vector
+vertices, and the complete residue-level replay of all three processes is
+still missing.  The corrected light gauge-parameter diagnostic also resolves
+three SM-adjoint block values (`34/3`, `22/3`, `16/3` at `eta_H=1`); the
+single-`eta_H` question remains unadjudicated until the full frozen M08
+criterion is available.  The precise remaining dependency is now
+
+```text
+HEAVY_CHANNEL_PARTIAL_GF_BRST_RESIDUE_REASSEMBLY_AND_COMPLETE_INDEPENDENT_REPLAY_MISSING
+```
+
+Authority therefore remains `34/39`, M08 attempt 1 remains `BLOCKED`, and
+M09--M13 remain unexecuted.

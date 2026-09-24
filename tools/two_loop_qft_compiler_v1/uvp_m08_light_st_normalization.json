@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_ORDINARY_LIGHT_ST_NORMALIZATION_CERTIFIED",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "immutable_partial_BFM_action_sha256": "2ea3aef2e227557db52ec31d9acb48d348dc07fe039001800240e4691ad58491",
+  "normalization_chain": {
+    "ghost_triangle_color_operator": "-K_LLL/2",
+    "ghost_triangle_Lorentz_coefficient": "eta_H/4",
+    "Yang_Mills_triangle_color_operator": "+K_LLL/2",
+    "Yang_Mills_cubic_relative_Feynman_rule_sign": "-1",
+    "Yang_Mills_triangle_Lorentz_coefficient": "3*eta_H/4",
+    "direct_q_cbar_c_counterterm_operator": "-eta_H*k_LLL/2",
+    "delta_Z_cL": "k_LLL*(3 - eta_H)/4",
+    "delta_Z_qL": "k_LLL*(13/6 - eta_H/2) - 11*k_LLL/3 + 34/3",
+    "delta_Z_g10_sector_decomposition": "-17/3",
+    "ST_counterterm_operator": "-eta_H*k_LLL/2",
+    "ST_residual": "0"
+  },
+  "localized_previous_residual": {
+    "operator": "-k_LLL*xi/4 - 3*k_LLL/4 + 2*xi + 6",
+    "missing_delta_Z_qL": "-k_LLL*xi/2 - 3*k_LLL/2 + 4*xi + 12",
+    "half_missing_delta_Z_qL": "-k_LLL*xi/4 - 3*k_LLL/4 + 2*xi + 6",
+    "identity_residual": "0",
+    "sources": [
+      "qVV_from_minus_(d_dot_V)^2_over_2xi",
+      "heavy_ghost_current_from_minus_ubar_d_squared_u",
+      "relative_Yang_Mills_cubic_Feynman_rule_sign"
+    ]
+  },
+  "block_checks": [
+    {
+      "K_LLL_eigenvalue": "0",
+      "K_LHH_eigenvalue": "8",
+      "multiplicity": 1,
+      "eta_H": "1/2",
+      "direct_vertex": "0",
+      "ST_counterterm": "0",
+      "residual": "0",
+      "delta_Z_qL": "34/3"
+    },
+    {
+      "K_LLL_eigenvalue": "0",
+      "K_LHH_eigenvalue": "8",
+      "multiplicity": 1,
+      "eta_H": "1",
+      "direct_vertex": "0",
+      "ST_counterterm": "0",
+      "residual": "0",
+      "delta_Z_qL": "34/3"
+    },
+    {
+      "K_LLL_eigenvalue": "0",
+      "K_LHH_eigenvalue": "8",
+      "multiplicity": 1,
+      "eta_H": "2",
+      "direct_vertex": "0",
+      "ST_counterterm": "0",
+      "residual": "0",
+      "delta_Z_qL": "34/3"
+    },
+    {
+      "K_LLL_eigenvalue": "2",
+      "K_LHH_eigenvalue": "6",
+      "multiplicity": 3,
+      "eta_H": "1/2",
+      "direct_vertex": "-1/2",
+      "ST_counterterm": "-1/2",
+      "residual": "0",
+      "delta_Z_qL": "47/6"
+    },
+    {
+      "K_LLL_eigenvalue": "2",
+      "K_LHH_eigenvalue": "6",
+      "multiplicity": 3,
+      "eta_H": "1",
+      "direct_vertex": "-1",
+      "ST_counterterm": "-1",
+      "residual": "0",
+      "delta_Z_qL": "22/3"
+    },
+    {
+      "K_LLL_eigenvalue": "2",
+      "K_LHH_eigenvalue": "6",
+      "multiplicity": 3,
+      "eta_H": "2",
+      "direct_vertex": "-2",
+      "ST_counterterm": "-2",
+      "residual": "0",
+      "delta_Z_qL": "19/3"
+    },
+    {
+      "K_LLL_eigenvalue": "3",
+      "K_LHH_eigenvalue": "5",
+      "multiplicity": 8,
+      "eta_H": "1/2",
+      "direct_vertex": "-3/4",
+      "ST_counterterm": "-3/4",
+      "residual": "0",
+      "delta_Z_qL": "73/12"
+    },
+    {
+      "K_LLL_eigenvalue": "3",
+      "K_LHH_eigenvalue": "5",
+      "multiplicity": 8,
+      "eta_H": "1",
+      "direct_vertex": "-3/2",
+      "ST_counterterm": "-3/2",
+      "residual": "0",
+      "delta_Z_qL": "16/3"
+    },
+    {
+      "K_LLL_eigenvalue": "3",
+      "K_LHH_eigenvalue": "5",
+      "multiplicity": 8,
+      "eta_H": "2",
+      "direct_vertex": "-3",
+      "ST_counterterm": "-3",
+      "residual": "0",
+      "delta_Z_qL": "23/6"
+    }
+  ],
+  "maximum_ST_residual": "0",
+  "light_gauge_parameter_diagnostic": {
+    "multiplicative_delta_eta_candidate_equals_delta_Z_qL": true,
+    "eta_H_equals_1_distinct_block_values": [
+      "16/3",
+      "22/3",
+      "34/3"
+    ],
+    "block_count": 3,
+    "single_eta_H_closure_adjudicated": false,
+    "reason": "the_frozen_contract_requires_the_complete_heavy_and_light_BRST_pole_action_and_independent_replay_before_adjudication"
+  },
+  "formal_M08_retry_authorized": false,
+  "remaining_before_retry": [
+    "reassemble_heavy_BRST_three_point_poles_with_all_partial_gauge_fixing_vertices",
+    "complete_inventory_independent_residue_replay_for_all_three_processes",
+    "adjudicate_single_xi_and_single_eta_H_basis_only_after_full_replay"
+  ],
+  "artifact_sha256": "95c713423b3e12a3a39c1a72819675c6c69d1b5edb56259b8fb9cba4a270bd89"
+}

@@ -62,7 +62,9 @@ def main():
 
     calibration = lorentz["calibration"]
     assert calibration["derived_Lorentz_sum"] == "rho"
-    assert calibration["derived_color_factor_per_topology"] == "-C_A/2"
+    assert calibration["ghost_triangle_color_projection"] == "-C_A/2"
+    assert calibration["Yang_Mills_triangle_color_projection"] == "+C_A/2"
+    assert calibration["Yang_Mills_cubic_relative_Feynman_rule_sign"] == "-1"
     assert calibration["derived_full_tree_coefficient"] == "-C_A*rho/2"
     assert not calibration["expected_C10_value_imported_as_input"]
     assert primary["formal_M08_retry_authorized"] is False
@@ -80,7 +82,8 @@ def main():
     assert results["counters"]["not_run_or_locked"] == 5
     assert status["layer5a_M08"] == "BLOCKED"
     assert status["layer5a_M08_BRST_remaining_blocker"] == (
-        "COMPLETE_INDEPENDENT_RESIDUE_REPLAY_AND_CERTIFIED_ST_NORMALIZATION")
+        "HEAVY_CHANNEL_PARTIAL_GF_BRST_RESIDUE_REASSEMBLY_AND_COMPLETE_"
+        "INDEPENDENT_REPLAY_MISSING")
     node = project["scaffold"]["two_loop_qft_compiler_v1"]
     assert node["layer5a_M08"] == "BLOCKED"
     assert node["layer5a_M08_BRST_remaining_blocker"] == status[

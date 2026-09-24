@@ -278,16 +278,22 @@ def main():
     for name, rule in rules.items():
         ghost = ghost_triangle(rule, rule, rho)
         gauge = gauge_triangle(rule, rule, rule, rho, rho)
-        # The two topology families add.  For the ordinary unsplit theory
-        # each independently carries the color tensor ``-C_A/2*f``; their
-        # Lorentz sum is rho and hence the full pole is ``-C_A*rho/2``.
+        # These are kinematic kernels only.  With the explicit color
+        # orientation used by the action facade the ghost triangle projects
+        # to -C_A/2 while the Yang--Mills triangle projects to +C_A/2; the
+        # latter carries the relative cubic-Feynman-rule sign at assembly.
+        # After that sign, the two topology families add to
+        # ``-C_A*rho/2`` in the ordinary unsplit calibration.
         total = tuple(simplify(ghost[index] + gauge[index])
                       for index in range(D))
         coefficient, residual = projected(total, tree[name])
         kernels[name] = {
             "ghost_triangle": serial(ghost),
             "one_ghost_two_vector_triangle": serial(gauge),
-            "relative_graph_signs": "ghost_triangle-plus-vector_triangle",
+            "relative_graph_signs": (
+                "kinematic_sum_only; assembly_applies_minus_to_the_"
+                "positive-oriented_Yang-Mills_color_contraction"
+            ),
             "standard_equal_vertex_sum": serial(total),
             "tree_projected_coefficient": str(coefficient),
             "tree_projection_residual": serial(residual),
@@ -322,7 +328,9 @@ def main():
             "ordinary_FP_ghost_triangle": "rho/4",
             "ordinary_FP_vector_triangle": "3*rho/4",
             "derived_Lorentz_sum": "rho",
-            "derived_color_factor_per_topology": "-C_A/2",
+            "ghost_triangle_color_projection": "-C_A/2",
+            "Yang_Mills_triangle_color_projection": "+C_A/2",
+            "Yang_Mills_cubic_relative_Feynman_rule_sign": "-1",
             "derived_full_tree_coefficient": "-C_A*rho/2",
             "expected_C10_value_imported_as_input": False,
         },

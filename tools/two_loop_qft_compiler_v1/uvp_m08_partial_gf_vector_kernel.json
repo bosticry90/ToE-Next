@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "outcome": "M08_PARTIAL_GF_QVV_VECTOR_KERNEL_DERIVED",
+  "authority": "IMPLEMENTATION_PREFLIGHT_NO_UVP_M08_AUTHORITY",
+  "source_operator": "-(d_mu V_i^mu)^2/(2*xi)",
+  "derivation": "direct_functional_differentiation_then_nonexceptional_Feynman_parameter_UV_projection",
+  "color_factor": "K_LHH_on_the_external_light_adjoint",
+  "yang_mills_only": {
+    "A": "rho/2 - 25/12",
+    "B": "7/3 - rho/2"
+  },
+  "yang_mills_plus_partial_gauge_fixing": {
+    "A": "-10/3",
+    "B": "10/3"
+  },
+  "adversarial_opposite_relative_sign": {
+    "A": "rho - 2/3",
+    "B": "5/3 - rho"
+  },
+  "partial_gauge_fixing_correction": {
+    "A": "-rho/2 - 5/4",
+    "B": "rho/2 + 1"
+  },
+  "heavy_covariant_laplacian_ghost": {
+    "A": "-1/3",
+    "B": "1/3"
+  },
+  "complete_heavy_H_matter_gauge_fixing_sector": {
+    "A": "-11/3",
+    "B": "11/3",
+    "transversality_residual": "0"
+  },
+  "uv_ir": {
+    "uv_pole": true,
+    "ir_pole": false,
+    "regulator": "nonexceptional_Euclidean_external_momentum",
+    "locality": "degree_two_polynomial"
+  },
+  "artifact_sha256": "010be9d2d597e1e35ec18e23b34575bbdcbb6b4c0742771edba053d614d90e76"
+}
